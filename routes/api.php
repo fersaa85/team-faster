@@ -19,20 +19,33 @@ use App\Http\Controllers\Venues\VenuesController;
 Route::group([
     'prefix' => 'auth'
 ], function () {
-    Route::post('login', [AuthController::class, 'login']);
+    //Route::post('login', [AuthController::class, 'login']);
     Route::post('signup',  [AuthController::class, 'signUp']);
 
     Route::group([
         'middleware' => 'auth:api'
     ], function() {
-        Route::get('logout', [AuthController::class, 'logout']);
-        Route::get('user', [AuthController::class, 'user']);
+      //  Route::get('logout', [AuthController::class, 'logout']);
+      //  Route::get('user', [AuthController::class, 'user']);
     });
 });
 
 Route::group([
     'prefix' => 'venues',
-    'middleware' => 'auth:api'
+    //'middleware' => 'auth:api'
 ], function() {
     Route::get('/', VenuesController::class);
+});
+
+Route::group([
+    'prefix' => 'workout',
+], function() {
+    Route::get('/{workoutId}', \App\Http\Controllers\Workout\WorkoutController::class);
+    Route::get('/count', \App\Http\Controllers\Workout\WorkoutCountController::class);
+});
+
+Route::group([
+    'prefix' => 'coaches',
+], function() {
+    Route::get('/', \App\Http\Controllers\Coaches\CoachesController::class);
 });
