@@ -75,6 +75,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="columns">
         <div class="column is-clickable img-container" style="position:relative; padding:0">
           <b-image
             responsive
@@ -93,8 +95,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="columns">
         <div class="column is-clickable img-container" style="position:relative; padding:0">
           <b-image
             responsive
@@ -131,6 +131,8 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="columns">
         <div class="column is-clickable img-container" style="position:relative; padding:0">
           <b-image
             responsive
@@ -158,11 +160,29 @@
           <div class="text-photo-title two-lines">
             <div class="photo-info">
               <span class="photo-info1">
-                RAUL
+                RAÚL
               </span>
               <br>
               <span class="puma-regular photo-info2">
                 @raul_vicotria
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="column is-clickable img-container" style="position:relative; padding:0">
+          <b-image
+            responsive
+            src="/assets/img/vlopez.jpg"
+            ratio="1by1"
+          ></b-image>
+          <div class="text-photo-title two-lines">
+            <div class="photo-info">
+              <span class="photo-info1">
+                Victor López
+              </span>
+              <br>
+              <span class="puma-regular photo-info2">
+                @nv1ctus
               </span>
             </div>
           </div>
@@ -189,7 +209,7 @@ export default {
 </script>
 <style lang="scss" scoped>
   .venues_photos{
-    margin: 0 20px;
+    margin: 0 40px;
     padding: 20px;
     background-color: black;
   }
