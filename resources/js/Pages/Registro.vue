@@ -55,7 +55,7 @@
               </p>
             </div>
             <div>
-
+              <RegisterForm/>
             </div>
           </div>
         </div>
@@ -132,82 +132,8 @@
                 </b-button>
               </p>
             </div>
-            <div v-if="showForm" class="has-text-left form-styles puma-regular">
-              <ValidationProvider rules="required" name="name" v-slot="{ errors, valid }">
-                <b-field
-                  label="Nombre(s)*"
-                  :type="{ 'is-danger': errors[0], 'is-success': valid }"
-                  :message="errors"
-                  class="field-style">
-                  <b-input
-                    v-model="name"
-                    autocomplete="name"
-                  >
-                  </b-input>
-                </b-field>
-              </ValidationProvider>
-              <ValidationProvider rules="required" name="lname" v-slot="{ errors, valid }">
-                <b-field
-                  label="Apellido*"
-                  :type="{ 'is-danger': errors[0], 'is-success': valid }"
-                  :message="errors"
-                  class="field-style">
-                  <b-input
-                    v-model="lastname"
-                    autocomplete="lname"
-                  >
-                  </b-input>
-                </b-field>
-              </ValidationProvider>
-              <ValidationProvider rules="required" name="birthday" v-slot="{ errors, valid }">
-                <b-field
-                  label="Fecha de nacimiento*"
-                  :message="errors"
-                  :type="{ 'is-danger': errors[0], 'is-success': valid }"
-                  class="field-style">
-                  <b-datepicker
-                    v-model="birthday"
-                    locale="es-MX"
-                    :max-date="maxDate"
-                    editable>
-                  </b-datepicker>
-                </b-field>
-              </ValidationProvider>
-              <ValidationProvider rules="required|email" name="email" v-slot="{ errors, valid }">
-                <b-field
-                  label="Correo electrónico*"
-                  class="field-style"
-                  :type="{ 'is-danger': errors[0], 'is-success': valid }"
-                  :message="errors"
-                >
-                  <b-input
-                    v-model="email"
-                    type="email"
-                    >
-                  </b-input>
-                </b-field>
-              </ValidationProvider>
-              <ValidationProvider rules="required|max:10|min:10" name="teléfono" v-slot="{ errors, valid }">
-                <b-field
-                  label="Celular*"
-                  :message="errors"
-                  :type="{ 'is-danger': errors[0], 'is-success': valid }"
-                  class="field-style"
-                >
-                  <b-input
-                    v-model="phone"
-                    type="number"
-                    autocomplete="tel"
-                    maxlength="10"
-                  >
-                  </b-input>
-                </b-field>
-              </ValidationProvider>
-              <div class="has-text-centered" style="padding-top: 36px;">
-                <b-button rounded class="register-button">
-                  Registrarse
-                </b-button>
-              </div>
+            <div v-if="showForm" class="has-text-left puma-regular">
+              <RegisterForm/>
             </div>
           </div>
         </div>
@@ -217,30 +143,20 @@
 </template>
 
 <script>
-import { ValidationObserver, ValidationProvider } from "vee-validate";
-
-export default {
-  name: 'registro',
-  components: {
-    ValidationObserver,
-    ValidationProvider,
-  },
-  data(){
-    const today = new Date()
-
-    return {
-      showForm: false,
-      maxDate: new Date(today.getFullYear() - 18, today.getMonth(), today.getDate()),
-      email: '',
-      name: '',
-      lastname: '',
-      birthday: null,
-      phone: '',
-    };
-  },
-  methods:{
+  import RegisterForm from '../Components/RegisterForm.vue';
+  export default {
+    name: 'registro',
+    components: {
+      RegisterForm
+    },
+    data(){
+      return {
+        showForm: false
+      };
+    },
+    methods:{
+    }
   }
-}
 </script>
 <style lang="scss" scoped>
   .registro{
@@ -356,26 +272,5 @@ export default {
       margin-top: -24px;
     }
   }
-  .form-styles{
-    padding-left: 7%;
-    padding-bottom: 48px;
-    padding-top: 48px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    .label{
-      color: black !important;
-    }
-    .field-style{
-      padding-top: 12px;
-    }
-  }
-  .register-button{
-    background-color: #c624f1;
-    border-color: #c624f1;
-    color: white;
-    font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
-    text-transform: uppercase;
-    padding: 5px 36px 0;
-  }
+
 </style>

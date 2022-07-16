@@ -77,44 +77,6 @@ body, html, #app, .app {
   text-align: center;
 }
 
-
-// h1 {
-//   font-size: 10em;
-//   margin-top: 0;
-// }
-// .logo {
-//   margin-top: 5px;
-// }
-// .navBar {
-//   padding: 5px;
-//   background-color: #FFF;
-//   &__link {
-//     display: flex;
-//     margin: 0;
-//     li {
-//       margin: 10px;
-//       list-style-type: none;
-//       font-size: 17px;
-//       a {
-//         text-decoration: none;
-//         color: #555555;
-//       }
-//     }
-//   }
-// }
-// button {
-//   padding: 10px;
-//   background-color: #FFF;
-//   border: 1px solid $font-color;
-//   color: $font-color;
-//   cursor: pointer;
-//   outline: none;
-//   width: 200px;
-// }
-// button:hover {
-//   background-color: #000;
-//   color: #FFF;
-// }
 .tm-puma{
   color: #c625f2;
   font-size: 12px;
@@ -123,5 +85,25 @@ body, html, #app, .app {
 .form-styles{
   .label{
     color: black !important;
+    font-family: 'FFDINforPUMA-Light','Helvetica Neue',Helvetica,Arial,sans-serif;
+    text-transform: uppercase;
+  }
+  .field-label.is-normal{
+    position: absolute;
+    z-index: 1;
+    padding-left: 8px;
+    padding-top: 11px;
+  }
+  .input{
+    padding-left: 190px;
+    padding-right: 1em;
   }
 }
+.registro{
+  .help.is-danger {
+    color: white;
+  }
+  .is-danger.input {
+    border-color: black;
+  }
+  }
