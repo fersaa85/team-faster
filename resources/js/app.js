@@ -10,6 +10,17 @@ import App from './App.vue';
 import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import "./vee-validate";
+import { gsap } from "gsap";
+
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+Vue.mixin({
+    created: function () {
+      this.gsap = gsap;
+    }
+  });
 
 Vue.use(VueRouter);
 Vue.use(Buefy);

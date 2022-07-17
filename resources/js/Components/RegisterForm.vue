@@ -1,5 +1,8 @@
 <template>
   <div class="form-styles">
+    <div class="form-title puma-bold">
+      Ingresa tus datos y reserva tu lugar
+    </div>
     <ValidationProvider rules="required" name="name" v-slot="{ errors, valid }">
       <b-field
         label="Nombre(s)"
@@ -88,7 +91,7 @@
 <script>
   import { ValidationObserver, ValidationProvider } from "vee-validate";
   export default {
-    name: 'registro',
+    name: 'registerForm',
     components: {
       ValidationObserver,
       ValidationProvider,
@@ -118,6 +121,7 @@
   }
   .form-styles{
     padding-left: 7%;
+    padding-right: 7%;
     padding-bottom: 48px;
     padding-top: 48px;
     max-width: 600px;
@@ -127,5 +131,13 @@
       padding-top: 12px;
       position: relative;
     }
+  }
+  .form-title{
+    font-size: 18px;
+    color: white;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 12px;
+    padding-top: 12px;
   }
 </style>
