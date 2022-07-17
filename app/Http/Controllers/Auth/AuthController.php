@@ -4,8 +4,10 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\UserStoreRequest;
-use App\Http\Resources\User\UserResource;
+use App\Http\Resources\User\VenueResource;
 use App\Models\User;
+use App\Models\Workout;
+use App\Models\WorkoutUser;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -19,17 +21,33 @@ class AuthController extends Controller
      */
     public function signUp(UserStoreRequest $request)
     {
+        $user = User::where("email", $request->email)->first();
 
-        $user = User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => bcrypt($request->password),
-            'last_name' => $request->last_name,
-            'phone' => $request->phone,
-            'birthday' => $request->birthday,
-        ]);
+        if($user === null){
+            $user = User::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'password' => bcrypt($request->password),
+                'last_name' => $request->last_name,
+                'phone' => $request->phone,
+                'birthday' => $request->birthday,
+            ]);
+        }
 
-        return new UserResource($user);
+        $workout = Workout::where('date_start', '>', date('Y-m-d H:i:s'))->first();
+        if(WorkoutUser::where('workout_id', $workout->id)->where('user_id', $user->id)->first() === null){
+            WorkoutUser::create([
+                'workout_id' => $workout->id,
+                'user_id' => $user->id,
+            ]);
+
+        }else{
+            dd('stop');
+        }
+
+
+
+        return new VenueResource($user);
     }
 
     /**
@@ -59,7 +77,7 @@ class AuthController extends Controller
                 'access_token' => $tokenResult->accessToken,
                 'token_type' => 'Bearer',
                 'expires_at' => Carbon::parse($token->expires_at)->toDateTimeString(),
-                'user' => new UserResource($user)
+                'user' => new VenueResource($user)
             ]);
         }
         else{
@@ -89,6 +107,6 @@ class AuthController extends Controller
     public function user(Request $request)
     {
         $user = auth('api')->user();
-        return new UserResource($user);
+        return new VenueResource($user);
     }
 }
