@@ -140,6 +140,241 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'home'
 });
@@ -162,7 +397,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".footer-styles[data-v-6a63e488] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.first-section[data-v-6a63e488] {\n  height: 800px;\n}\n.vertical-sect[data-v-6a63e488] {\n  height: 800px;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  margin: -114px 0 0;\n  padding-top: 114px;\n}\n.section-coaches[data-v-6a63e488] {\n  background: linear-gradient(90deg, #60a8f7, rgb(144, 106, 245) 38%, #b935f2);\n}\n.section-coaches .coaches-text1[data-v-6a63e488] {\n  color: black;\n  font-size: 213px;\n  line-height: 150px;\n}\n.section-coaches .coaches-text2[data-v-6a63e488] {\n  color: white;\n  font-size: 260px;\n  line-height: 220px;\n}\n.section-coaches .coaches-text3[data-v-6a63e488] {\n  color: black;\n  font-size: 111px;\n  line-height: 70px;\n}\n.section-coaches .coaches-text4[data-v-6a63e488] {\n  color: white;\n  font-size: 43px;\n  line-height: 43px;\n}\n.section-venues[data-v-6a63e488] {\n  background: #5fa9f7;\n}\n.section-galery[data-v-6a63e488] {\n  background: #c625f2;\n}\n.columns[data-v-6a63e488] {\n  margin: 0;\n}\n.columns .column[data-v-6a63e488] {\n  padding: 0;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".footer-styles[data-v-6a63e488] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.first-section[data-v-6a63e488] {\n  position: relative;\n  height: 800px;\n}\n.first-section .logo-container[data-v-6a63e488] {\n  top: 363px;\n  position: absolute;\n  width: 100%;\n  z-index: 1;\n}\n@media screen and (max-width: 1252px) {\n.first-section .logo-container[data-v-6a63e488] {\n    top: 270px;\n}\n}\n@media screen and (max-width: 1092px) {\n.first-section .logo-container[data-v-6a63e488] {\n    top: 240px;\n}\n}\n@media screen and (max-width: 867px) {\n.first-section .logo-container[data-v-6a63e488] {\n    top: 200px;\n}\n}\n.first-section .logo-container .logo-galery[data-v-6a63e488] {\n  width: 20%;\n  margin: auto;\n}\n.vertical-sect[data-v-6a63e488] {\n  height: 950px;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  margin: -181px 0 0;\n}\n.section-coaches[data-v-6a63e488] {\n  height: 950px;\n}\n.section-coaches .coaches1[data-v-6a63e488] {\n  height: 100%;\n  padding-top: 54px !important;\n  filter: grayscale(100%);\n}\n.section-coaches .coaches2[data-v-6a63e488] {\n  padding-top: 207px !important;\n  background: linear-gradient(135deg, #60a8f7, rgb(144, 106, 245) 38%, #b935f2);\n  height: 915px;\n}\n.section-coaches .coaches2 .coaches-text[data-v-6a63e488] {\n  padding-right: 52px !important;\n}\n@media screen and (max-width: 1080px) {\n.section-coaches .coaches2[data-v-6a63e488] {\n    padding-top: 230px !important;\n}\n}\n@media screen and (max-width: 980px) {\n.section-coaches .coaches2[data-v-6a63e488] {\n    padding-top: 240px !important;\n}\n}\n@media screen and (max-width: 850px) {\n.section-coaches .coaches2[data-v-6a63e488] {\n    padding-top: 260px !important;\n}\n}\n.section-coaches .coaches-text1[data-v-6a63e488] {\n  color: black;\n  font-size: 150px;\n  line-height: 150px;\n}\n@media screen and (max-width: 1080px) {\n.section-coaches .coaches-text1[data-v-6a63e488] {\n    font-size: 140px;\n    line-height: 140px;\n}\n}\n@media screen and (max-width: 980px) {\n.section-coaches .coaches-text1[data-v-6a63e488] {\n    font-size: 130px;\n    line-height: 130px;\n}\n}\n@media screen and (max-width: 850px) {\n.section-coaches .coaches-text1[data-v-6a63e488] {\n    font-size: 120px;\n    line-height: 120px;\n}\n}\n.section-coaches .coaches-text2[data-v-6a63e488] {\n  color: white;\n  font-size: 180px;\n  line-height: 112px;\n  padding-left: 51px;\n}\n@media screen and (max-width: 1080px) {\n.section-coaches .coaches-text2[data-v-6a63e488] {\n    font-size: 170px;\n    line-height: 102px;\n}\n}\n@media screen and (max-width: 980px) {\n.section-coaches .coaches-text2[data-v-6a63e488] {\n    font-size: 160px;\n    line-height: 92px;\n}\n}\n@media screen and (max-width: 850px) {\n.section-coaches .coaches-text2[data-v-6a63e488] {\n    font-size: 150px;\n    line-height: 82px;\n}\n}\n.section-coaches .coaches-text3[data-v-6a63e488] {\n  color: black;\n  font-size: 120px;\n  line-height: 133px;\n  padding-left: 50px;\n}\n@media screen and (max-width: 1080px) {\n.section-coaches .coaches-text3[data-v-6a63e488] {\n    font-size: 110px;\n    line-height: 123px;\n}\n}\n@media screen and (max-width: 980px) {\n.section-coaches .coaches-text3[data-v-6a63e488] {\n    font-size: 100px;\n    line-height: 113px;\n}\n}\n@media screen and (max-width: 850px) {\n.section-coaches .coaches-text3[data-v-6a63e488] {\n    font-size: 90px;\n    line-height: 103px;\n}\n}\n@media screen and (min-width: 769px) and (max-width: 784px) {\n.section-coaches .coaches-text3[data-v-6a63e488] {\n    padding-left: 0px;\n    text-align: right;\n}\n}\n.section-coaches .coaches-text4[data-v-6a63e488] {\n  color: white;\n  font-size: 80px;\n  line-height: 34px;\n  padding-left: 181px;\n}\n@media screen and (max-width: 1080px) {\n.section-coaches .coaches-text4[data-v-6a63e488] {\n    font-size: 70px;\n    line-height: 24px;\n}\n}\n@media screen and (max-width: 980px) {\n.section-coaches .coaches-text4[data-v-6a63e488] {\n    font-size: 60px;\n    line-height: 14px;\n}\n}\n@media screen and (max-width: 904px) {\n.section-coaches .coaches-text4[data-v-6a63e488] {\n    padding-left: 0;\n    text-align: right;\n}\n}\n@media screen and (max-width: 850px) {\n.section-coaches .coaches-text4[data-v-6a63e488] {\n    font-size: 50px;\n    line-height: 4px;\n}\n}\n.section-venues-up[data-v-6a63e488] {\n  height: 950px;\n  background: #5fa9f7;\n  padding-top: 178px;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  margin-top: -178px;\n}\n@media screen and (max-width: 1080px) {\n.section-venues-up[data-v-6a63e488] {\n    padding-top: 188px;\n}\n}\n@media screen and (max-width: 980px) {\n.section-venues-up[data-v-6a63e488] {\n    padding-top: 198px;\n}\n}\n@media screen and (max-width: 850px) {\n.section-venues-up[data-v-6a63e488] {\n    padding-top: 208px;\n}\n}\n.section-venues-up .section-venues1[data-v-6a63e488] {\n  font-size: 180px;\n  line-height: 150px;\n  color: black;\n  text-align: right;\n}\n@media screen and (max-width: 1080px) {\n.section-venues-up .section-venues1[data-v-6a63e488] {\n    font-size: 170px;\n    line-height: 140px;\n}\n}\n@media screen and (max-width: 980px) {\n.section-venues-up .section-venues1[data-v-6a63e488] {\n    font-size: 160px;\n    line-height: 130px;\n}\n}\n@media screen and (max-width: 850px) {\n.section-venues-up .section-venues1[data-v-6a63e488] {\n    font-size: 150px;\n    line-height: 120px;\n}\n}\n.section-venues-up .section-venues2[data-v-6a63e488] {\n  font-size: 80px;\n  line-height: 80px;\n  color: white;\n  text-align: left;\n  padding-left: 24px !important;\n  padding-top: 65px !important;\n}\n@media screen and (max-width: 1080px) {\n.section-venues-up .section-venues2[data-v-6a63e488] {\n    font-size: 70px;\n    line-height: 70px;\n}\n}\n@media screen and (max-width: 980px) {\n.section-venues-up .section-venues2[data-v-6a63e488] {\n    font-size: 60px;\n    line-height: 60px;\n}\n}\n@media screen and (max-width: 850px) {\n.section-venues-up .section-venues2[data-v-6a63e488] {\n    font-size: 50px;\n    line-height: 50px;\n}\n}\n.section-venues-up .section-venues2 span[data-v-6a63e488] {\n  font-size: 120px;\n  margin-top: 14px;\n  margin-left: 14px;\n  position: absolute;\n}\n@media screen and (max-width: 1080px) {\n.section-venues-up .section-venues2 span[data-v-6a63e488] {\n    font-size: 110px;\n}\n}\n@media screen and (max-width: 980px) {\n.section-venues-up .section-venues2 span[data-v-6a63e488] {\n    font-size: 100px;\n}\n}\n@media screen and (max-width: 850px) {\n.section-venues-up .section-venues2 span[data-v-6a63e488] {\n    font-size: 90px;\n}\n}\n.section-venues-down[data-v-6a63e488] {\n  height: 950px;\n  margin-top: -500px !important;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n}\n.section-venues-down .section-venues-down-img[data-v-6a63e488] {\n  filter: grayscale(100%);\n}\n.section-venues-down .venue-name[data-v-6a63e488] {\n  color: white;\n  position: absolute;\n  width: 100%;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n}\n.section-venues-down .venue-name.pos-1[data-v-6a63e488] {\n  top: 61%;\n}\n.section-venues-down .venue-name.pos-2[data-v-6a63e488] {\n  top: 58%;\n}\n.section-venues-down .venue-name.pos-3[data-v-6a63e488] {\n  top: 56%;\n}\n.section-venues-down .venue-name.pos-4[data-v-6a63e488] {\n  top: 54%;\n}\n.section-venues-down .venue-name.pos-5[data-v-6a63e488] {\n  top: 52%;\n}\n.section-venues-down .venue-name.pos-6[data-v-6a63e488] {\n  top: 50%;\n}\n.section-venues-down-text[data-v-6a63e488] {\n  position: absolute;\n  width: 100%;\n  padding-top: 146px;\n  font-size: 225px;\n  z-index: 1;\n  color: #c625f2;\n}\n@media screen and (max-width: 1471px) {\n.section-venues-down-text[data-v-6a63e488] {\n    padding-top: 10%;\n}\n}\n@media screen and (max-width: 1422px) {\n.section-venues-down-text[data-v-6a63e488] {\n    padding-top: 9%;\n}\n}\n@media screen and (max-width: 1355px) {\n.section-venues-down-text[data-v-6a63e488] {\n    padding-top: 8%;\n}\n}\n@media screen and (max-width: 1092px) {\n.section-venues-down-text[data-v-6a63e488] {\n    padding-top: 8%;\n    font-size: 215px;\n}\n}\n@media screen and (max-width: 1047px) {\n.section-venues-down-text[data-v-6a63e488] {\n    padding-top: 7.2%;\n}\n}\n@media screen and (max-width: 946px) {\n.section-venues-down-text[data-v-6a63e488] {\n    padding-top: 7.2%;\n    font-size: 205px;\n}\n}\n@media screen and (max-width: 912px) {\n.section-venues-down-text[data-v-6a63e488] {\n    padding-top: 7.2%;\n}\n}\n@media screen and (max-width: 890px) {\n.section-venues-down-text[data-v-6a63e488] {\n    padding-top: 7.2%;\n    font-size: 195px;\n}\n}\n@media screen and (max-width: 829px) {\n.section-venues-down-text[data-v-6a63e488] {\n    padding-top: 7.2%;\n    font-size: 175px;\n}\n}\n.second-section[data-v-6a63e488] {\n  background: black;\n  background: linear-gradient(60deg, black, rgb(185, 53, 242) 40%, #446fa9);\n  height: 750px;\n  margin-top: -336px !important;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  position: relative;\n}\n.second-section .join-text[data-v-6a63e488] {\n  padding-top: 218px;\n  width: 100%;\n  text-align: center;\n  font-size: 180px;\n  line-height: 150px;\n  background: linear-gradient(#7391f6, 62%, #b737f2);\n  -webkit-background-clip: text;\n  -webkit-background-clip: text;\n  background-clip: text;\n  color: transparent;\n}\n@media screen and (max-width: 1080px) {\n.second-section .join-text[data-v-6a63e488] {\n    font-size: 170px;\n    line-height: 140px;\n}\n}\n@media screen and (max-width: 980px) {\n.second-section .join-text[data-v-6a63e488] {\n    font-size: 160px;\n    line-height: 130px;\n}\n}\n@media screen and (max-width: 850px) {\n.second-section .join-text[data-v-6a63e488] {\n    font-size: 150px;\n    line-height: 120px;\n}\n}\n.second-section .join-txt-2[data-v-6a63e488] {\n  font-size: 120px;\n  line-height: 120px;\n}\n.second-section .join-txt-2.team-txt[data-v-6a63e488] {\n  margin-right: -20px;\n  vertical-align: top;\n}\n@media screen and (max-width: 1080px) {\n.second-section .join-txt-2[data-v-6a63e488] {\n    font-size: 110px;\n    line-height: 123px;\n}\n}\n@media screen and (max-width: 980px) {\n.second-section .join-txt-2[data-v-6a63e488] {\n    font-size: 100px;\n    line-height: 113px;\n}\n}\n@media screen and (max-width: 850px) {\n.second-section .join-txt-2[data-v-6a63e488] {\n    font-size: 90px;\n    line-height: 103px;\n}\n}\n@media screen and (min-width: 769px) and (max-width: 784px) {\n.second-section .join-txt-2[data-v-6a63e488] {\n    padding-left: 0px;\n    text-align: right;\n}\n}\n.second-section .join-text-r1[data-v-6a63e488] {\n  padding-top: 189px;\n  color: white;\n  font-size: 150px;\n  line-height: 150px;\n}\n@media screen and (max-width: 1080px) {\n.second-section .join-text-r1[data-v-6a63e488] {\n    font-size: 140px;\n    line-height: 140px;\n}\n}\n@media screen and (max-width: 980px) {\n.second-section .join-text-r1[data-v-6a63e488] {\n    font-size: 130px;\n    line-height: 130px;\n}\n}\n@media screen and (max-width: 850px) {\n.second-section .join-text-r1[data-v-6a63e488] {\n    font-size: 120px;\n    line-height: 120px;\n}\n}\n.second-section .join-text-r2[data-v-6a63e488] {\n  color: white;\n  font-size: 80px;\n  line-height: 34px;\n}\n@media screen and (max-width: 1080px) {\n.second-section .join-text-r2[data-v-6a63e488] {\n    font-size: 70px;\n    line-height: 24px;\n}\n}\n@media screen and (max-width: 980px) {\n.second-section .join-text-r2[data-v-6a63e488] {\n    font-size: 60px;\n    line-height: 14px;\n}\n}\n@media screen and (max-width: 904px) {\n.second-section .join-text-r2[data-v-6a63e488] {\n    padding-left: 0;\n    text-align: right;\n}\n}\n@media screen and (max-width: 850px) {\n.second-section .join-text-r2[data-v-6a63e488] {\n    font-size: 50px;\n    line-height: 4px;\n}\n}\n.second-section .register-button[data-v-6a63e488] {\n  margin-top: 50px;\n  background-color: #c624f1;\n  border-color: #c624f1;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  text-transform: uppercase;\n  padding: 3px 36px 0;\n}\n.second-section .bg2[data-v-6a63e488] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background-image: repeating-linear-gradient(-45deg, transparent, transparent 20px, black 20px, black 40px);\n  /* with multiple color stop lengths */\n  background-image: repeating-linear-gradient(11deg, transparent 0 14px, black 20px 5.5%);\n}\n.second-section .bg3[data-v-6a63e488] {\n  position: absolute;\n  width: 100%;\n  height: 100%;\n  top: 0;\n  left: 0;\n  background: linear-gradient(-159deg, transparent, 60%, #110315);\n}\n@media screen and (max-width: 1368px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -37% !important;\n}\n}\n@media screen and (max-width: 1368px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -40% !important;\n}\n}\n@media screen and (max-width: 1107px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -43% !important;\n}\n}\n@media screen and (max-width: 1069px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -46% !important;\n}\n}\n@media screen and (max-width: 1038px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -49% !important;\n}\n}\n@media screen and (max-width: 1006px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -52% !important;\n}\n}\n@media screen and (max-width: 978px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -55% !important;\n}\n}\n@media screen and (max-width: 951px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -58% !important;\n}\n}\n@media screen and (max-width: 923px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -61% !important;\n}\n}\n@media screen and (max-width: 899px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -64% !important;\n}\n}\n@media screen and (max-width: 877px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -67% !important;\n}\n}\n@media screen and (max-width: 853px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -71% !important;\n}\n}\n@media screen and (max-width: 826px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -74% !important;\n}\n}\n@media screen and (max-width: 808px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -77% !important;\n}\n}\n@media screen and (max-width: 787px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -81% !important;\n}\n}\n@media screen and (max-width: 765px) {\n.second-section[data-v-6a63e488] {\n    margin-top: -84% !important;\n}\n}\n.mobile-section[data-v-6a63e488] {\n  height: 950px;\n  margin-top: -500px !important;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n}\n@media screen and (max-width: 1471px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -37% !important;\n}\n}\n@media screen and (max-width: 1422px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -40% !important;\n}\n}\n@media screen and (max-width: 1355px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -43% !important;\n}\n}\n@media screen and (max-width: 1300px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -46% !important;\n}\n}\n@media screen and (max-width: 1252px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -49% !important;\n}\n}\n@media screen and (max-width: 1207px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -52% !important;\n}\n}\n@media screen and (max-width: 1164px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -55% !important;\n}\n}\n@media screen and (max-width: 1126px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -58% !important;\n}\n}\n@media screen and (max-width: 1092px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -62% !important;\n}\n}\n@media screen and (max-width: 1047px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -66% !important;\n}\n}\n@media screen and (max-width: 1003px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -68% !important;\n}\n}\n@media screen and (max-width: 987px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -72% !important;\n}\n}\n@media screen and (max-width: 946px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -76% !important;\n}\n}\n@media screen and (max-width: 912px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -79% !important;\n}\n}\n@media screen and (max-width: 890px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -82% !important;\n}\n}\n@media screen and (max-width: 867px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -85% !important;\n}\n}\n@media screen and (max-width: 845px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -88% !important;\n}\n}\n@media screen and (max-width: 829px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -91% !important;\n}\n}\n@media screen and (max-width: 787px) {\n.mobile-section[data-v-6a63e488] {\n    margin-top: -94% !important;\n}\n}\n.gallery-container[data-v-6a63e488] {\n  position: relative;\n}\n.gallery-container .logo-container[data-v-6a63e488] {\n  top: 335px;\n  position: absolute;\n  width: 100%;\n  z-index: 1;\n}\n@media screen and (max-width: 1252px) {\n.gallery-container .logo-container[data-v-6a63e488] {\n    top: 270px;\n}\n}\n@media screen and (max-width: 1092px) {\n.gallery-container .logo-container[data-v-6a63e488] {\n    top: 240px;\n}\n}\n@media screen and (max-width: 867px) {\n.gallery-container .logo-container[data-v-6a63e488] {\n    top: 200px;\n}\n}\n.gallery-container .logo-container .logo-galery[data-v-6a63e488] {\n  width: 20%;\n  margin: auto;\n}\n.gallery-container .cdmx-gallery[data-v-6a63e488] {\n  margin-top: -35px;\n  color: #5fa9f7;\n  font-size: 225px;\n}\n@media screen and (max-width: 1164px) {\n.gallery-container .cdmx-gallery[data-v-6a63e488] {\n    margin-top: -70px;\n}\n}\n@media screen and (max-width: 1092px) {\n.gallery-container .cdmx-gallery[data-v-6a63e488] {\n    font-size: 215px;\n}\n}\n@media screen and (max-width: 987px) {\n.gallery-container .cdmx-gallery[data-v-6a63e488] {\n    margin-top: -40px;\n    font-size: 150px;\n}\n}\n@media screen and (max-width: 890px) {\n.gallery-container .cdmx-gallery[data-v-6a63e488] {\n    font-size: 150px;\n}\n}\n@media screen and (max-width: 845px) {\n.gallery-container .cdmx-gallery[data-v-6a63e488] {\n    margin-top: -30px;\n    font-size: 125px;\n}\n}\n.section-galery-up[data-v-6a63e488] {\n  background: #c625f2;\n}\n.section-galery-up .container-txt1[data-v-6a63e488] {\n  padding-top: 158px !important;\n}\n@media screen and (max-width: 1207px) {\n.section-galery-up .container-txt1[data-v-6a63e488] {\n    padding-top: 142px !important;\n}\n}\n@media screen and (max-width: 1164px) {\n.section-galery-up .container-txt1[data-v-6a63e488] {\n    padding-top: 125px !important;\n}\n}\n@media screen and (max-width: 1047px) {\n.section-galery-up .container-txt1[data-v-6a63e488] {\n    padding-top: 118px !important;\n}\n}\n@media screen and (max-width: 1003px) {\n.section-galery-up .container-txt1[data-v-6a63e488] {\n    padding-top: 110px !important;\n}\n}\n@media screen and (max-width: 987px) {\n.section-galery-up .container-txt1[data-v-6a63e488] {\n    padding-top: 110px !important;\n}\n}\n@media screen and (max-width: 946px) {\n.section-galery-up .container-txt1[data-v-6a63e488] {\n    padding-top: 110px !important;\n}\n}\n@media screen and (max-width: 912px) {\n.section-galery-up .container-txt1[data-v-6a63e488] {\n    padding-top: 110px !important;\n}\n}\n@media screen and (max-width: 890px) {\n.section-galery-up .container-txt1[data-v-6a63e488] {\n    padding-top: 110px !important;\n}\n}\n.section-galery-up .section-galery-up-txt1[data-v-6a63e488] {\n  color: white;\n  font-size: 180px;\n  line-height: 112px;\n  text-align: left;\n  padding-top: 88px;\n  margin-left: 13%;\n}\n@media screen and (max-width: 1373px) {\n.section-galery-up .section-galery-up-txt1[data-v-6a63e488] {\n    font-size: 170px;\n    line-height: 102px;\n}\n}\n@media screen and (max-width: 1280px) {\n.section-galery-up .section-galery-up-txt1[data-v-6a63e488] {\n    font-size: 160px;\n    line-height: 92px;\n}\n}\n@media screen and (max-width: 1126px) {\n.section-galery-up .section-galery-up-txt1[data-v-6a63e488] {\n    font-size: 150px;\n    line-height: 82px;\n}\n}\n@media screen and (max-width: 987px) {\n.section-galery-up .section-galery-up-txt1[data-v-6a63e488] {\n    font-size: 140px;\n    line-height: 72px;\n}\n}\n@media screen and (max-width: 890px) {\n.section-galery-up .section-galery-up-txt1[data-v-6a63e488] {\n    font-size: 130px;\n    line-height: 62px;\n}\n}\n.section-galery-up .section-galery-up-txt2[data-v-6a63e488] {\n  color: black;\n  color: black;\n  font-size: 120px;\n  line-height: 133px;\n  text-align: left;\n  margin-left: 12%;\n}\n@media screen and (max-width: 1550px) {\n.section-galery-up .section-galery-up-txt2[data-v-6a63e488] {\n    font-size: 110px;\n    line-height: 123px;\n}\n}\n@media screen and (max-width: 1373px) {\n.section-galery-up .section-galery-up-txt2[data-v-6a63e488] {\n    font-size: 100px;\n    line-height: 113px;\n}\n}\n@media screen and (max-width: 1280px) {\n.section-galery-up .section-galery-up-txt2[data-v-6a63e488] {\n    font-size: 90px;\n    line-height: 103px;\n}\n}\n@media screen and (max-width: 1126px) {\n.section-galery-up .section-galery-up-txt2[data-v-6a63e488] {\n    font-size: 80px;\n    line-height: 93px;\n}\n}\n@media screen and (max-width: 987px) {\n.section-galery-up .section-galery-up-txt2[data-v-6a63e488] {\n    font-size: 70px;\n    line-height: 83px;\n}\n}\n@media screen and (max-width: 890px) {\n.section-galery-up .section-galery-up-txt2[data-v-6a63e488] {\n    font-size: 60px;\n    line-height: 73px;\n}\n}\n.section-galery-up .section-galery-up-txt3[data-v-6a63e488] {\n  color: black;\n  width: 60%;\n  text-align: right;\n  margin-right: 3%;\n  font-size: 28px;\n  padding-top: 6% !important;\n}\n@media screen and (max-width: 1355px) {\n.section-galery-up .section-galery-up-txt3[data-v-6a63e488] {\n    padding-top: 8% !important;\n}\n}\n@media screen and (max-width: 1047px) {\n.section-galery-up .section-galery-up-txt3[data-v-6a63e488] {\n    font-size: 25px;\n}\n}\n@media screen and (max-width: 890px) {\n.section-galery-up .section-galery-up-txt3[data-v-6a63e488] {\n    padding-top: 9% !important;\n    font-size: 22px;\n}\n}\n.section-galery-down[data-v-6a63e488] {\n  background: #c625f2;\n}\n.section-galery-down .over-photo[data-v-6a63e488] {\n  position: absolute;\n  width: 100%;\n  left: 0;\n  top: 0;\n  height: 100%;\n  text-align: left;\n  background: linear-gradient(rgba(96, 168, 247, 0.2), 11%, rgba(185, 53, 242, 0.5));\n}\n.section-team[data-v-6a63e488] {\n  height: 900px;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  background: black;\n  padding-top: 12%;\n  position: relative;\n}\n@media screen and (max-width: 1422px) {\n.section-team[data-v-6a63e488] {\n    padding-top: 15%;\n}\n}\n@media screen and (max-width: 1126px) {\n.section-team[data-v-6a63e488] {\n    padding-top: 18%;\n}\n}\n@media screen and (max-width: 987px) {\n.section-team[data-v-6a63e488] {\n    padding-top: 20%;\n}\n}\n@media screen and (max-width: 890px) {\n.section-team[data-v-6a63e488] {\n    padding-top: 22%;\n}\n}\n.section-team .logo-container[data-v-6a63e488] {\n  top: 40%;\n  position: absolute;\n  width: 50%;\n  z-index: 1;\n}\n@media screen and (max-width: 1700px) {\n.section-team .logo-container[data-v-6a63e488] {\n    top: 38%;\n}\n}\n@media screen and (max-width: 1550px) {\n.section-team .logo-container[data-v-6a63e488] {\n    top: 36%;\n}\n}\n@media screen and (max-width: 1373px) {\n.section-team .logo-container[data-v-6a63e488] {\n    top: 34%;\n}\n}\n@media screen and (max-width: 1280px) {\n.section-team .logo-container[data-v-6a63e488] {\n    top: 32%;\n}\n}\n@media screen and (max-width: 1126px) {\n.section-team .logo-container[data-v-6a63e488] {\n    top: 31%;\n}\n}\n@media screen and (max-width: 987px) {\n.section-team .logo-container[data-v-6a63e488] {\n    top: 30%;\n}\n}\n@media screen and (max-width: 890px) {\n.section-team .logo-container[data-v-6a63e488] {\n    top: 29%;\n}\n}\n.section-team .logo-container .logo-styles[data-v-6a63e488] {\n  width: 50%;\n  margin: auto;\n}\n.section-team .section-team1[data-v-6a63e488] {\n  color: #c625f2;\n  font-size: 120px;\n  line-height: 133px;\n  text-align: center;\n}\n@media screen and (max-width: 1550px) {\n.section-team .section-team1[data-v-6a63e488] {\n    font-size: 110px;\n    line-height: 123px;\n}\n}\n@media screen and (max-width: 1373px) {\n.section-team .section-team1[data-v-6a63e488] {\n    font-size: 100px;\n    line-height: 113px;\n}\n}\n@media screen and (max-width: 1280px) {\n.section-team .section-team1[data-v-6a63e488] {\n    font-size: 90px;\n    line-height: 103px;\n}\n}\n@media screen and (max-width: 1126px) {\n.section-team .section-team1[data-v-6a63e488] {\n    font-size: 80px;\n    line-height: 93px;\n}\n}\n@media screen and (max-width: 987px) {\n.section-team .section-team1[data-v-6a63e488] {\n    font-size: 70px;\n    line-height: 83px;\n}\n}\n@media screen and (max-width: 890px) {\n.section-team .section-team1[data-v-6a63e488] {\n    font-size: 60px;\n    line-height: 73px;\n}\n}\n.section-team .section-team-cont[data-v-6a63e488] {\n  background: linear-gradient(#4b85c3, black);\n  height: 100%;\n  width: 100%;\n  position: absolute;\n  top: 0;\n}\n.section-team .section-team2[data-v-6a63e488] {\n  position: relative;\n  color: #5fa9f7;\n  font-size: 24px;\n  max-width: 80%;\n  margin: auto;\n}\n@media screen and (max-width: 1280px) {\n.section-team .section-team2[data-v-6a63e488] {\n    font-size: 22px;\n}\n}\n@media screen and (max-width: 1126px) {\n.section-team .section-team2[data-v-6a63e488] {\n    font-size: 20px;\n}\n}\n@media screen and (max-width: 987px) {\n.section-team .section-team2[data-v-6a63e488] {\n    font-size: 18px;\n}\n}\n.section-team .section-team2 .team-fast[data-v-6a63e488] {\n  font-size: 80px;\n  line-height: 80px;\n  color: white;\n  text-align: left;\n  padding-left: 24px !important;\n  padding-top: 65px !important;\n}\n@media screen and (max-width: 1280px) {\n.section-team .section-team2 .team-fast[data-v-6a63e488] {\n    padding-left: 0 !important;\n}\n}\n@media screen and (max-width: 1080px) {\n.section-team .section-team2 .team-fast[data-v-6a63e488] {\n    font-size: 70px;\n    line-height: 70px;\n}\n}\n@media screen and (max-width: 980px) {\n.section-team .section-team2 .team-fast[data-v-6a63e488] {\n    font-size: 60px;\n    line-height: 60px;\n}\n}\n@media screen and (max-width: 850px) {\n.section-team .section-team2 .team-fast[data-v-6a63e488] {\n    font-size: 50px;\n    line-height: 50px;\n}\n}\n.section-team .section-team2 .team-fast span[data-v-6a63e488] {\n  font-size: 120px;\n  margin-top: 14px;\n  margin-left: 14px;\n  position: absolute;\n}\n@media screen and (max-width: 1080px) {\n.section-team .section-team2 .team-fast span[data-v-6a63e488] {\n    font-size: 110px;\n}\n}\n@media screen and (max-width: 1047px) {\n.section-team .section-team2 .team-fast span[data-v-6a63e488] {\n    font-size: 90px;\n}\n}\n@media screen and (max-width: 980px) {\n.section-team .section-team2 .team-fast span[data-v-6a63e488] {\n    font-size: 90px;\n}\n}\n@media screen and (max-width: 850px) {\n.section-team .section-team2 .team-fast span[data-v-6a63e488] {\n    font-size: 80px;\n}\n}\n.columns[data-v-6a63e488] {\n  margin: 0;\n}\n.columns .column[data-v-6a63e488] {\n  padding: 0;\n}\n.welcome[data-v-6a63e488] {\n  position: absolute;\n  bottom: 0.1vw;\n  right: 0;\n  width: 30%;\n  height: 524px;\n  color: white;\n  padding: 24px;\n  background: linear-gradient(rgba(198, 36, 242, 0.8), rgba(21, 12, 249, 0.8));\n}\n@media screen and (max-width: 1368px) {\n.welcome[data-v-6a63e488] {\n    bottom: 14.2vw;\n}\n}\n@media screen and (max-width: 1368px) {\n.welcome[data-v-6a63e488] {\n    bottom: 14.2vw;\n}\n}\n@media screen and (max-width: 1107px) {\n.welcome[data-v-6a63e488] {\n    bottom: 14.2vw;\n}\n}\n@media screen and (max-width: 1069px) {\n.welcome[data-v-6a63e488] {\n    bottom: 14.2vw;\n}\n}\n@media screen and (max-width: 1038px) {\n.welcome[data-v-6a63e488] {\n    bottom: 14.2vw;\n}\n}\n@media screen and (max-width: 1006px) {\n.welcome[data-v-6a63e488] {\n    bottom: 14.2vw;\n    width: 34%;\n}\n}\n@media screen and (max-width: 978px) {\n.welcome[data-v-6a63e488] {\n    bottom: 16.5vw;\n}\n}\n@media screen and (max-width: 951px) {\n.welcome[data-v-6a63e488] {\n    bottom: 18vw;\n}\n}\n@media screen and (max-width: 923px) {\n.welcome[data-v-6a63e488] {\n    bottom: 19vw;\n}\n}\n@media screen and (max-width: 899px) {\n.welcome[data-v-6a63e488] {\n    bottom: 22vw;\n    width: 35%;\n}\n}\n@media screen and (max-width: 877px) {\n.welcome[data-v-6a63e488] {\n    bottom: 24vw;\n    width: 36%;\n}\n}\n@media screen and (max-width: 853px) {\n.welcome[data-v-6a63e488] {\n    bottom: 24vw;\n    padding: 14px 16px;\n}\n}\n@media screen and (max-width: 826px) {\n.welcome[data-v-6a63e488] {\n    bottom: 26vw;\n}\n}\n@media screen and (max-width: 808px) {\n.welcome[data-v-6a63e488] {\n    bottom: 28vw;\n}\n}\n@media screen and (max-width: 788px) {\n.welcome[data-v-6a63e488] {\n    bottom: 30vw;\n    width: 40%;\n}\n}\n.welcome .welcome-title[data-v-6a63e488] {\n  font-size: 120px;\n  margin: -112px;\n}\n@media screen and (max-width: 1200px) {\n.welcome .welcome-title[data-v-6a63e488] {\n    font-size: 110px;\n}\n}\n@media screen and (max-width: 1041px) {\n.welcome .welcome-title[data-v-6a63e488] {\n    font-size: 100px;\n    margin: -100px;\n}\n}\n@media screen and (max-width: 980px) {\n.welcome .welcome-title[data-v-6a63e488] {\n    font-size: 90px;\n}\n}\n@media screen and (max-width: 900px) {\n.welcome .welcome-title[data-v-6a63e488] {\n    margin: -90px;\n    font-size: 80px;\n}\n}\n@media screen and (max-width: 853px) {\n.welcome .welcome-title[data-v-6a63e488] {\n    margin: -86px;\n    font-size: 80px;\n}\n}\n@media screen and (max-width: 808px) {\n.welcome .welcome-title[data-v-6a63e488] {\n    margin: -72px;\n    font-size: 70px;\n}\n}\n.welcome .welcome-text[data-v-6a63e488] {\n  font-size: 20px;\n  margin-top: 93px;\n}\n@media screen and (max-width: 1087px) {\n.welcome .welcome-text[data-v-6a63e488] {\n    font-size: 19px;\n}\n}\n@media screen and (max-width: 1041px) {\n.welcome .welcome-text[data-v-6a63e488] {\n    font-size: 18px;\n}\n}\n@media screen and (max-width: 1038px) {\n.welcome .welcome-text[data-v-6a63e488] {\n    margin-top: 78px;\n}\n}\n@media screen and (max-width: 853px) {\n.welcome .welcome-text[data-v-6a63e488] {\n    margin-top: 68px;\n}\n}\n@media screen and (max-width: 808px) {\n.welcome .welcome-text[data-v-6a63e488] {\n    margin-top: 54px;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -297,91 +532,464 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "home" }, [
-    _c("div", { staticClass: "first-section" }, [
-      _vm._v("\n    Bienvenidos\n  "),
-    ]),
+    _c(
+      "div",
+      { staticClass: "first-section" },
+      [
+        _c("b-image", {
+          staticStyle: { "margin-top": "0px" },
+          attrs: {
+            responsive: "",
+            src: "/assets/img/home1.jpg",
+            ratio: "2by1",
+          },
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "logo-container" }, [
+          _c(
+            "div",
+            { staticClass: "logo-galery" },
+            [
+              _c("b-image", {
+                attrs: {
+                  responsive: "",
+                  src: "/assets/img/logoTeamFaster.png",
+                  ratio: "1by1",
+                },
+              }),
+            ],
+            1
+          ),
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+      ],
+      1
+    ),
     _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _c("div", { staticClass: "vertical-sect section-coaches gotica-italic" }, [
-      _c("div", { staticClass: "columns" }, [
-        _c("div", { staticClass: "column coaches1" }, [
-          _c("div", { staticClass: "columns", staticStyle: { margin: "0" } }, [
-            _c(
-              "div",
-              { staticClass: "column", staticStyle: { padding: "0" } },
-              [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/CARLOS-@charlie.ro22.jpg",
-                    ratio: "1by1",
-                  },
-                }),
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "column", staticStyle: { padding: "0" } },
-              [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/CARLOS-@charlie.ro22.jpg",
-                    ratio: "1by1",
-                  },
-                }),
-              ],
-              1
-            ),
-          ]),
+    _c("div", { staticClass: "second-section" }, [
+      _c("div", { staticClass: "bg2" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "bg3" }, [
+        _c("div", { staticClass: "columns" }, [
+          _vm._m(1),
           _vm._v(" "),
-          _c("div", { staticClass: "columns", staticStyle: { margin: "0" } }, [
-            _c(
-              "div",
-              { staticClass: "column", staticStyle: { padding: "0" } },
-              [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/CARLOS-@charlie.ro22.jpg",
-                    ratio: "1by1",
-                  },
-                }),
-              ],
-              1
-            ),
+          _c("div", { staticClass: "column gotica-italic" }, [
+            _c("div", { staticClass: "join-text-r1" }, [
+              _vm._v("\n            Fuente de Xochipili\n          "),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "join-text-r2" }, [
+              _vm._v("\n            30 de julio\n          "),
+            ]),
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "column", staticStyle: { padding: "0" } },
               [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/CARLOS-@charlie.ro22.jpg",
-                    ratio: "1by1",
+                _c(
+                  "b-button",
+                  {
+                    staticClass: "register-button",
+                    attrs: { rounded: "", size: "is-medium" },
                   },
-                }),
+                  [_vm._v("\n              Registrarse\n            ")]
+                ),
               ],
               1
             ),
           ]),
         ]),
-        _vm._v(" "),
-        _vm._m(1),
       ]),
     ]),
     _vm._v(" "),
-    _vm._m(2),
+    _c("div", { staticClass: "vertical-sect section-coaches gotica-italic" }, [
+      _c("div", { staticClass: "columns" }, [
+        _c("div", { staticClass: "column coaches1" }, [
+          _c(
+            "div",
+            {
+              staticClass: "columns is-multiline",
+              staticStyle: { margin: "0" },
+            },
+            [
+              _c(
+                "div",
+                { staticClass: "column is-6", staticStyle: { padding: "0" } },
+                [
+                  _c("b-image", {
+                    attrs: {
+                      responsive: "",
+                      src: "/assets/img/JORGE-@jorgehuo.jpg",
+                      ratio: "1by1",
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "column is-6", staticStyle: { padding: "0" } },
+                [
+                  _c("b-image", {
+                    attrs: {
+                      responsive: "",
+                      src: "/assets/img/MAFER-@maferarreolaa.jpg",
+                      ratio: "1by1",
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "column is-6", staticStyle: { padding: "0" } },
+                [
+                  _c("b-image", {
+                    attrs: {
+                      responsive: "",
+                      src: "/assets/img/FRANCHESCA-@franchescasb.jpg",
+                      ratio: "1by1",
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "column is-6", staticStyle: { padding: "0" } },
+                [
+                  _c("b-image", {
+                    attrs: {
+                      responsive: "",
+                      src: "/assets/img/PABLO-@pablohutt.jpg",
+                      ratio: "1by1",
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "column is-6", staticStyle: { padding: "0" } },
+                [
+                  _c("b-image", {
+                    attrs: {
+                      responsive: "",
+                      src: "/assets/img/HOMERO-@HOMEROCASGRO.jpg",
+                      ratio: "1by1",
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "column is-6", staticStyle: { padding: "0" } },
+                [
+                  _c("b-image", {
+                    attrs: {
+                      responsive: "",
+                      src: "/assets/img/CARLOS-@charlie.ro22.jpg",
+                      ratio: "1by1",
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "column is-6", staticStyle: { padding: "0" } },
+                [
+                  _c("b-image", {
+                    attrs: {
+                      responsive: "",
+                      src: "/assets/img/DAVID-@dmckniight.jpg",
+                      ratio: "1by1",
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "column is-6", staticStyle: { padding: "0" } },
+                [
+                  _c("b-image", {
+                    attrs: {
+                      responsive: "",
+                      src: "/assets/img/RAUL-@raul_vicotria_.jpg",
+                      ratio: "1by1",
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "column is-6", staticStyle: { padding: "0" } },
+                [
+                  _c("b-image", {
+                    attrs: {
+                      responsive: "",
+                      src: "/assets/img/vlopez.jpg",
+                      ratio: "1by1",
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "column is-6", staticStyle: { padding: "0" } },
+                [
+                  _c("b-image", {
+                    attrs: {
+                      responsive: "",
+                      src: "/assets/img/JORGE-@jorgehuo.jpg",
+                      ratio: "1by1",
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]
+          ),
+        ]),
+        _vm._v(" "),
+        _vm._m(2),
+      ]),
+    ]),
     _vm._v(" "),
     _vm._m(3),
     _vm._v(" "),
-    _vm._m(4),
+    _c("div", { staticClass: "section-venues-down gotica-italic" }, [
+      _c("div", { staticClass: "section-venues-down-text" }, [
+        _vm._v("\n      CDMX\n    "),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "columns section-venues-down-img" }, [
+        _c(
+          "div",
+          { staticClass: "column", staticStyle: { position: "relative" } },
+          [
+            _c("b-image", {
+              staticStyle: { "margin-top": "150px" },
+              attrs: {
+                responsive: "",
+                src: "/assets/img/FuenteXochipili.jpg",
+                ratio: "2by4",
+              },
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "venue-name pos-1" }, [
+              _vm._v("\n          Fuente de Xochipili\n        "),
+            ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "column", staticStyle: { position: "relative" } },
+          [
+            _c("b-image", {
+              staticStyle: { "margin-top": "120px" },
+              attrs: {
+                responsive: "",
+                src: "/assets/img/FotoSantaFe.jpg",
+                ratio: "2by4",
+              },
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "venue-name pos-2" }, [
+              _vm._v("\n          Foro Santa Fe\n        "),
+            ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "column", staticStyle: { position: "relative" } },
+          [
+            _c("b-image", {
+              staticStyle: { "margin-top": "90px" },
+              attrs: {
+                responsive: "",
+                src: "/assets/img/ArtzPedregal.jpg",
+                ratio: "2by5",
+              },
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "venue-name pos-3" }, [
+              _vm._v("\n          Artz Pedregal\n        "),
+            ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "column", staticStyle: { position: "relative" } },
+          [
+            _c("b-image", {
+              staticStyle: { "margin-top": "60px" },
+              attrs: {
+                responsive: "",
+                src: "/assets/img/JardinBotanico.jpg",
+                ratio: "2by5",
+              },
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "venue-name pos-4" }, [
+              _vm._v("\n          Jardin Botánico Chapultepec\n        "),
+            ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "column", staticStyle: { position: "relative" } },
+          [
+            _c("b-image", {
+              staticStyle: { "margin-top": "30px" },
+              attrs: {
+                responsive: "",
+                src: "/assets/img/MonumentoRevolucion.jpg",
+                ratio: "2by5",
+              },
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "venue-name pos-5" }, [
+              _vm._v("\n          Monumento a la Revolución\n        "),
+            ]),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "column", staticStyle: { position: "relative" } },
+          [
+            _c("b-image", {
+              attrs: {
+                responsive: "",
+                src: "/assets/img/CarcamoDolores.jpg",
+                ratio: "2by5",
+              },
+            }),
+            _vm._v(" "),
+            _c("div", { staticClass: "venue-name pos-6" }, [
+              _vm._v("\n          Cárcamo de Dolores\n        "),
+            ]),
+          ],
+          1
+        ),
+      ]),
+    ]),
     _vm._v(" "),
-    _vm._m(5),
+    _c("div", { staticClass: "gallery-container" }, [
+      _c("div", { staticClass: "logo-container" }, [
+        _c(
+          "div",
+          { staticClass: "logo-galery" },
+          [
+            _c("b-image", {
+              attrs: {
+                responsive: "",
+                src: "/assets/img/logoTeamFaster.png",
+                ratio: "1by1",
+              },
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "cdmx-gallery gotica-italic" }, [
+          _vm._v("\n        CDMX\n      "),
+        ]),
+      ]),
+      _vm._v(" "),
+      _vm._m(4),
+      _vm._v(" "),
+      _c("div", { staticClass: "section-galery-down mobile-section" }, [
+        _c("div", { staticClass: "columns" }, [
+          _c(
+            "div",
+            { staticClass: "column", staticStyle: { position: "relative" } },
+            [
+              _c("b-image", {
+                staticStyle: { "margin-top": "89px" },
+                attrs: {
+                  responsive: "",
+                  src: "/assets/img/model1.jpg",
+                  ratio: "88by78",
+                },
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "over-photo" }),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "column", staticStyle: { position: "relative" } },
+            [
+              _c("b-image", {
+                attrs: {
+                  responsive: "",
+                  src: "/assets/img/model2.jpg",
+                  ratio: "6by5",
+                },
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "over-photo" }),
+            ],
+            1
+          ),
+        ]),
+      ]),
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "section-team mobile-section" }, [
+      _c("div", { staticClass: "columns" }, [
+        _c("div", { staticClass: "column section-team1 gotica-italic" }, [
+          _vm._v("\n        ¿Quiénes somos?\n      "),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "logo-container" }, [
+          _c(
+            "div",
+            { staticClass: "logo-styles" },
+            [
+              _c("b-image", {
+                attrs: {
+                  responsive: "",
+                  src: "/assets/img/logoTeamFaster.png",
+                  ratio: "1by1",
+                },
+              }),
+            ],
+            1
+          ),
+        ]),
+        _vm._v(" "),
+        _vm._m(5),
+      ]),
+    ]),
+    _vm._v(" "),
+    _vm._m(6),
   ])
 }
 var staticRenderFns = [
@@ -389,14 +997,50 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "vertical-sect" }, [
-      _c("div", [
-        _c("span", [_vm._v("Únete")]),
-        _vm._v(" "),
-        _c("span", [_vm._v("al")]),
+    return _c("div", { staticClass: "welcome" }, [
+      _c("div", { staticClass: "gotica-italic welcome-title" }, [
+        _vm._v("\n        Bienvenidos\n      "),
       ]),
       _vm._v(" "),
-      _c("div", [_c("span", [_vm._v("Team Faster")])]),
+      _c("div", { staticClass: "puma-regular welcome-text" }, [
+        _vm._v(
+          "\n        Aquí comienza la mejor experiencia de entrenamientos en combinación con coaches que te ayudarán a liberar tu potencial\n      "
+        ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column" }, [
+      _c("div", { staticClass: "gotica-italic join-text" }, [
+        _c("div", [
+          _c("span", [_vm._v("Únete")]),
+          _vm._v(" "),
+          _c(
+            "span",
+            {
+              staticClass: "join-txt-2",
+              staticStyle: { "margin-left": "-22px" },
+            },
+            [_vm._v("al")]
+          ),
+        ]),
+        _vm._v(" "),
+        _c("div", [
+          _c(
+            "span",
+            {
+              staticClass: "join-txt-2 team-txt",
+              staticStyle: { "margin-right": "-20px" },
+            },
+            [_vm._v("Team")]
+          ),
+          _vm._v(" "),
+          _c("span", [_vm._v("\n                Faster\n              ")]),
+        ]),
+      ]),
     ])
   },
   function () {
@@ -404,20 +1048,22 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "column coaches2" }, [
-      _c("div", { staticClass: "coaches-text1" }, [
-        _vm._v("\n          Nuestros\n        "),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "coaches-text2" }, [
-        _vm._v("\n          Coaches\n        "),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "coaches-text3" }, [
-        _vm._v("\n          Están listos...\n        "),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "coaches-text4" }, [
-        _vm._v("\n          Aceptas el reto\n        "),
+      _c("div", { staticClass: "coaches-text" }, [
+        _c("div", { staticClass: "coaches-text1" }, [
+          _vm._v("\n            Nuestros\n          "),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "coaches-text2" }, [
+          _vm._v("\n            Coaches\n          "),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "coaches-text3" }, [
+          _vm._v("\n            Están listos...\n          "),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "coaches-text4" }, [
+          _vm._v("\n            ¡Acepta el reto!\n          "),
+        ]),
       ]),
     ])
   },
@@ -425,18 +1071,21 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "vertical-sect section-venues" }, [
+    return _c("div", { staticClass: "section-venues-up gotica-italic" }, [
       _c("div", { staticClass: "columns" }, [
-        _c("div", { staticClass: "column" }, [
+        _c("div", { staticClass: "column section-venues1" }, [
           _c("div", [_vm._v("\n          Vive una\n        ")]),
           _vm._v(" "),
           _c("div", [_vm._v("\n          Experiencia\n        ")]),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
+        _c("div", { staticClass: "column section-venues2" }, [
           _c("div", [_vm._v("\n          Increíble y totalmente\n        ")]),
           _vm._v(" "),
-          _c("div", [_vm._v("\n          Segura al aire libre\n        ")]),
+          _c("div", [
+            _vm._v("\n          Segura al\n          "),
+            _c("span", [_vm._v("\n            aire libre\n          ")]),
+          ]),
         ]),
       ]),
     ])
@@ -445,36 +1094,61 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "vertical-sect section-galery" }, [
+    return _c("div", { staticClass: "section-galery-up mobile-section" }, [
       _c("div", { staticClass: "columns" }, [
-        _c("div", { staticClass: "column" }, [
-          _c("div", [_vm._v("\n          Presume\n        ")]),
+        _c("div", { staticClass: "column gotica-italic container-txt1" }, [
+          _c("div", { staticClass: "section-galery-up-txt1" }, [
+            _vm._v("\n            Presume\n          "),
+          ]),
           _vm._v(" "),
-          _c("div", [_vm._v("\n          Que eres parte de\n        ")]),
+          _c("div", { staticClass: "section-galery-up-txt2" }, [
+            _vm._v("\n            Que eres parte de\n          "),
+          ]),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
+        _c("div", { staticClass: "column section-galery-up-txt3 puma-bold" }, [
+          _vm._v("\n          Busca tu foto en el lugar "),
+          _c("br"),
+          _vm._v(" donde entrenaste con el Team "),
+          _c("br"),
+          _vm._v(" y si aún no estás inscrito "),
+          _c("br"),
+          _vm._v(" inspírate visitando la galería.\n        "),
+        ]),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column puma-bold" }, [
+      _c("div", { staticClass: "section-team-cont" }),
+      _vm._v(" "),
+      _c("div", { staticClass: "section-team2" }, [
+        _c("div", [
           _vm._v(
-            "\n        Busca tu foto en el lugar donde entrenaste con el Team y si aún no estás inscrito inspirate visitando la galería.\n      "
+            "\n            Team Faster eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar… somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos.\n          "
           ),
         ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "vertical-sect" }, [
-      _c("div", { staticClass: "columns" }, [
-        _c("div", { staticClass: "column" }, [
-          _vm._v("\n        ¿Quiénes somos?\n      "),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("div", [
+          _vm._v(
+            "\n            Tenemos un objetivo “compartir la pasión del entrenamiento en un lugar increíble con una ambiente relajado y guiado por coaches que harán de tu sesión la mejor forma de catalizar tu energía”.\n          "
+          ),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _c("div", [_vm._v("\n          ¡Forma parte\n        ")]),
+        _c("div", { staticClass: "team-fast gotica-italic" }, [
+          _c("div", [_vm._v("\n              ¡Forma parte\n            ")]),
           _vm._v(" "),
-          _c("div", [_vm._v("\n          del Team Faster\n        ")]),
+          _c("div", [
+            _vm._v("\n              del\n              "),
+            _c("span", [
+              _vm._v("\n                Team Faster!\n              "),
+            ]),
+          ]),
         ]),
       ]),
     ])
