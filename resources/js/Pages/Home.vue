@@ -132,6 +132,13 @@
 export default {
   name: 'home',
 
+    mounted() {
+        axios
+            .get('api/workout')
+            .then(({ data }) => {
+               console.log(data);
+            });
+    }
 }
 </script>
 <style lang="scss" scoped>

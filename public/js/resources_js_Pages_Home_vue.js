@@ -141,7 +141,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'home'
+  name: 'home',
+  mounted: function mounted() {
+    axios.get('api/workout').then(function (_ref) {
+      var data = _ref.data;
+      console.log(data);
+    });
+  }
 });
 
 /***/ }),

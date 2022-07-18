@@ -23,6 +23,7 @@ class VenueResource extends JsonResource
             'lat' => $this->lat,
             'lng' => $this->lng,
             'image' => $this->image,
+            'image_map' => $this->image_map,
         ];
     }
 }

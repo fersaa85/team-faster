@@ -118,7 +118,20 @@ __webpack_require__.r(__webpack_exports__);
       phone: ''
     };
   },
-  methods: {}
+  methods: {
+    handleSubmit: function handleSubmit() {
+      axios.post('api/auth/signup', {
+        email: this.email,
+        name: this.name,
+        last_name: this.lastname,
+        phone: this.phone,
+        age: this.age
+      }).then(function (_ref) {
+        var data = _ref.data;
+        return {};
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -386,16 +399,35 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       info: {
-        name: 'Fuente de Xochipili',
-        fecha: '25 de junio | 8:00 a 10:00 am',
-        lugar: 'xxxxxxxxxxxxxx',
-        tipo: 'Cardio Hit',
-        coach: 'Ceci Aguilera',
-        photo: 'FuenteXochipili.jpg',
-        map: 'MAP_FUENTE_X_min.jpg',
+        name: '',
+        fecha: '',
+        lugar: '',
+        tipo: '',
+        coach: '',
+        photo: '',
+        map: '',
         available: true
       }
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('api/workout').then(function (_ref) {
+      var data = _ref.data.data;
+      console.log(data);
+      _this.info = Object.assign({}, {
+        name: data.venue.name,
+        fecha: data.date_start,
+        lugar: data.venue.address,
+        tipo: data.description,
+        coach: data.coatch.name,
+        photo: data.venue.image,
+        map: data.venue.image_map,
+        available: true
+      });
+      console.log(_this.info);
+    });
   },
   methods: {}
 });
@@ -1047,7 +1079,11 @@ var render = function () {
         [
           _c(
             "b-button",
-            { staticClass: "register-button", attrs: { rounded: "" } },
+            {
+              staticClass: "register-button",
+              attrs: { rounded: "" },
+              on: { click: _vm.handleSubmit },
+            },
             [_vm._v("\n      Registrarse\n    ")]
           ),
         ],
