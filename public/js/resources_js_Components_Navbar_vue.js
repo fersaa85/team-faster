@@ -200,7 +200,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c("b-navbar", {
     staticClass: "gradient-bar",
-    attrs: { centered: "", spaced: "" },
+    attrs: { centered: "", "fixed-top": "", spaced: "" },
     scopedSlots: _vm._u([
       {
         key: "brand",

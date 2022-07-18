@@ -3,8 +3,9 @@
     <div class="first-section">
       <b-image
         responsive
-        src="/assets/img/home1.jpg"
-        ratio="2by1"
+        class="fondo-home"
+        src="/assets/img/FONDO_HOME.jpg"
+        ratio="300by170"
         style="margin-top: 0px;"
       ></b-image>
       <div class="logo-container">
@@ -33,10 +34,10 @@
             <div class="gotica-italic join-text">
               <div>
                 <span>Únete</span>
-                <span class="join-txt-2" style="margin-left:-22px;">al</span>
+                <span class="join-txt-2 txt-al">al</span>
               </div>
               <div>
-                <span class="join-txt-2 team-txt" style="margin-right:-20px;">Team</span>
+                <span class="join-txt-2 team-txt">Team</span>
                 <span>
                   Faster
                 </span>
@@ -68,6 +69,22 @@
     </div>
     <div class="vertical-sect section-coaches gotica-italic">
       <div class="columns">
+        <div class="column coaches2 is-hidden-tablet">
+          <div class="coaches-text">
+            <div class="coaches-text1">
+              Nuestros
+            </div>
+            <div class="coaches-text2">
+              Coaches
+            </div>
+            <div class="coaches-text3">
+              Están listos...
+            </div>
+            <div class="coaches-text4">
+              ¡Acepta el reto!
+            </div>
+          </div>
+        </div>
         <div class="column coaches1">
           <div class="columns is-multiline" style="margin: 0;">
             <div class="column is-6" style="padding:0">
@@ -142,7 +159,7 @@
             </div>
           </div>
         </div>
-        <div class="column coaches2">
+        <div class="column coaches2 is-hidden-mobile">
           <div class="coaches-text">
             <div class="coaches-text1">
               Nuestros
@@ -377,24 +394,69 @@ export default {
   }
   .first-section{
     position: relative;
-    height: 800px;
+    height: 830px;
+    // @media screen and (max-width: 768px) {
+    //   height: 951px;
+    //   .fondo-home{
+    //     padding-top: 70% !important;
+    //     padding-left: 10%;
+    //     width: 112%;
+    //   }
+    // }
+    // @media screen and (max-width: 768px) {
+    //   height: 1004px;
+    //   .fondo-home{
+    //     padding-top: 74% !important;
+    //     padding-left: 10%;
+    //     width: 112%;
+    //   }
+    // }
+    @media screen and (max-width: 768px) {
+      height: 1080px;
+      .fondo-home{
+        padding-top: 152% !important;
+        padding-left: 10%;
+        width: 210%;
+      }
+    }
     .logo-container{
-        top: 363px;
+        top: 224px;
         position: absolute;
         width: 100%;
         z-index: 1;
+        @media screen and (max-width: 1463px) {
+          top: 176px;
+        }
         @media screen and (max-width: 1252px) {
-          top: 270px;
+          top: 166px;
+        }
+        @media screen and (max-width: 1156px) {
+          top: 150px;
         }
         @media screen and (max-width: 1092px) {
-          top: 240px;
+          top: 135px;
         }
-        @media screen and (max-width: 867px) {
-          top: 200px;
+        @media screen and (max-width: 1000px) {
+          top: 125px;
         }
+        @media screen and (max-width: 978px) {
+          top: 115px;
+        }
+        @media screen and (max-width: 875px) {
+          top: 95px;
+        }
+        @media screen and (max-width: 768px) {
+        top: 80px;
+        } 
+        @media screen and (max-width: 610px) {
+        top: 70px;
+        } 
         .logo-galery{
           width: 20%;
           margin: auto;
+          @media screen and (max-width: 768px) {
+            width: 30%;
+          }
         }
       }
   }
@@ -426,6 +488,10 @@ export default {
       }
       @media screen and (max-width: 850px) {
         padding-top: 260px !important;
+      }
+      @media screen and (max-width: 768px) {
+        padding-top: 260px !important;
+        height: 915px;
       }
     }
     .coaches-text1{
@@ -522,6 +588,9 @@ export default {
     }
     @media screen and (max-width: 850px) {
       padding-top: 208px;
+    }
+    @media screen and (max-width: 768px) {
+      padding-top: 150px;
     }
     .section-venues1{
       font-size: 180px;
@@ -653,7 +722,7 @@ export default {
     background: black;
     background: linear-gradient(60deg, black, rgba(185, 53, 242, 1) 40%, #446fa9);
     height: 750px;
-    margin-top: -336px !important;
+    // margin-top: -336px !important;
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     position: relative;
     .logoPuma{
@@ -682,13 +751,28 @@ export default {
         font-size: 150px;
         line-height: 120px;
       }
+      @media screen and (max-width: 768px) {
+        font-size: 95px;
+        line-height: 60px;
+        padding-top: 197px;
+      }
     }
     .join-txt-2{
       font-size: 120px;
       line-height: 120px;
+      &.txt-al{
+        margin-left:-22px;
+        @media screen and (max-width: 768px) {
+          margin-left:-12px;
+        }
+      }
       &.team-txt{
         margin-right: -20px;
         vertical-align: top;
+        @media screen and (max-width: 768px) {
+          margin-right: -12px;
+          line-height: 35px;
+        }
       }
       @media screen and (max-width: 1080px) {
         font-size: 110px;
@@ -705,6 +789,10 @@ export default {
       @media screen and (min-width: 769px) and (max-width: 784px) {
         padding-left: 0px;
         text-align: right;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 60px;
+        line-height: 85px;
       }
     }
     .join-text-r1{
@@ -724,6 +812,11 @@ export default {
         font-size: 120px;
         line-height: 120px;
       }
+      @media screen and (max-width: 768px) {
+        padding-top: 30px;
+        font-size: 80px;
+        line-height: 100px;
+      }
     }
     .join-text-r2{
       color: white;
@@ -735,15 +828,10 @@ export default {
       }
       @media screen and (max-width: 980px) {
         font-size: 60px;
-        line-height: 14px;
-      }
-      @media screen and (max-width: 904px) {
-        padding-left: 0;
-        text-align: right;
       }
       @media screen and (max-width: 850px) {
         font-size: 50px;
-        line-height: 4px;
+        line-height: 14px;
       }
     }
     .register-button{
@@ -779,53 +867,146 @@ export default {
       left: 0;
       background: linear-gradient(-159deg, transparent, 60%, #110315);
     }
-    @media screen and (max-width: 1368px) {
-      margin-top: -37% !important;
+    @media screen and (max-width: 1800px) {
+      margin-top: -1% !important;
     }
-    @media screen and (max-width: 1368px) {
-      margin-top: -40% !important;
+    @media screen and (max-width: 1762px) {
+      margin-top: -2% !important;
     }
-    @media screen and (max-width: 1107px) {
-      margin-top: -43% !important;
+    @media screen and (max-width: 1734px) {
+      margin-top: -3% !important;
     }
-    @media screen and (max-width: 1069px) {
+    @media screen and (max-width: 1704px) {
+      margin-top: -4% !important;
+    }
+    @media screen and (max-width: 1680px) {
+      margin-top: -5% !important;
+    }
+    @media screen and (max-width: 1639px) {
+      margin-top: -6% !important;
+    }
+    @media screen and (max-width: 1612px) {
+      margin-top: -7% !important;
+    }
+    @media screen and (max-width: 1576px) {
+      margin-top: -9% !important;
+    }
+    @media screen and (max-width: 1529px) {
+      margin-top: -11% !important;
+    }
+    @media screen and (max-width: 1481px) {
+      margin-top: -12% !important;
+    }
+    @media screen and (max-width: 1462px) {
+      margin-top: -15% !important;
+    }
+    @media screen and (max-width: 1381px) {
+      margin-top: -18% !important;
+    }
+    @media screen and (max-width: 1328px) {
+      margin-top: -21% !important;
+    }
+    @media screen and (max-width: 1272px) {
+      margin-top: -24% !important;
+    }
+    @media screen and (max-width: 1224px) {
+      margin-top: -27% !important;
+    }
+    @media screen and (max-width: 1177px) {
+      margin-top: -31% !important;
+    }
+    @media screen and (max-width: 1122px) {
+      margin-top: -35% !important;
+    }
+    @media screen and (max-width: 1073px) {
+      margin-top: -38% !important;
+    }
+    @media screen and (max-width: 1040px) {
+      margin-top: -42% !important;
+    }
+    @media screen and (max-width: 1000px) {
       margin-top: -46% !important;
     }
-    @media screen and (max-width: 1038px) {
-      margin-top: -49% !important;
+    @media screen and (max-width: 962px) {
+      margin-top: -50% !important;
     }
-    @media screen and (max-width: 1006px) {
-      margin-top: -52% !important;
+    @media screen and (max-width: 928px) {
+      margin-top: -54% !important;
     }
-    @media screen and (max-width: 978px) {
-      margin-top: -55% !important;
+    @media screen and (max-width: 894px) {
+      margin-top: -57% !important;
     }
-    @media screen and (max-width: 951px) {
-      margin-top: -58% !important;
-    }
-    @media screen and (max-width: 923px) {
+    @media screen and (max-width: 871px) {
       margin-top: -61% !important;
     }
-    @media screen and (max-width: 899px) {
-      margin-top: -64% !important;
+    @media screen and (max-width: 842px) {
+      margin-top: -65% !important;
     }
-    @media screen and (max-width: 877px) {
-      margin-top: -67% !important;
+    @media screen and (max-width: 816px) {
+      margin-top: -69% !important;
     }
-    @media screen and (max-width: 853px) {
-      margin-top: -71% !important;
+    @media screen and (max-width: 789px) {
+      margin-top: -73% !important;
     }
-    @media screen and (max-width: 826px) {
-      margin-top: -74% !important;
+    @media screen and (max-width: 768px) {
+      margin-top: -78% !important;
     }
-    @media screen and (max-width: 808px) {
-      margin-top: -77% !important;
-    }
-    @media screen and (max-width: 787px) {
+    @media screen and (max-width: 766px) {
       margin-top: -81% !important;
     }
-    @media screen and (max-width: 765px) {
-      margin-top: -84% !important;
+    @media screen and (max-width: 750px) {
+      margin-top: -85% !important;
+    }
+    @media screen and (max-width: 730px) {
+      margin-top: -89% !important;
+    }
+    @media screen and (max-width: 710px) {
+      margin-top: -93% !important;
+    }
+    @media screen and (max-width: 691px) {
+      margin-top: -97% !important;
+    }
+    @media screen and (max-width: 673px) {
+      margin-top: -100% !important;
+    }
+    @media screen and (max-width: 661px) {
+      margin-top: -104% !important;
+    }
+    @media screen and (max-width: 646px) {
+      margin-top: -111% !important;
+    }
+    @media screen and (max-width: 621px) {
+      margin-top: -115% !important;
+    }
+    @media screen and (max-width: 607px) {
+      margin-top: -120% !important;
+    }
+    @media screen and (max-width: 592px) {
+      margin-top: -125% !important;
+    }
+    @media screen and (max-width: 577px) {
+      margin-top: -134% !important;
+    }
+    @media screen and (max-width: 566px) {
+      margin-top: -140% !important;
+    }
+    @media screen and (max-width: 551px) {
+      margin-top: -145% !important;
+    }
+    @media screen and (max-width: 539px) {
+      margin-top: -150% !important;
+    }
+    @media screen and (max-width: 527px) {
+      margin-top: -155% !important;
+    }
+    @media screen and (max-width: 515px) {
+      margin-top: -160% !important;
+    }
+    @media screen and (max-width: 506px) {
+      margin-top: -175% !important;
+    }
+    @media screen and (max-width: 373px) {
+      margin-top: -190% !important;
     }
   }
   .mobile-section{
@@ -1207,51 +1388,47 @@ export default {
   }
   .welcome{
     position: absolute;
-    bottom: 0.1vw;
+    bottom: -10vw;
     right: 0;
     width: 30%;
     height: 524px;
     color: white;
     padding: 24px;
     background: linear-gradient(rgb(198 36 242 / 80%), rgb(21 12 249 / 80%));
-    @media screen and (max-width: 1368px) {
-      bottom: 14.2vw;
+    @media screen and (max-width: 1614px) {
+      bottom: -7vw;
+    }
+    @media screen and (max-width: 1384px) {
+      bottom: 0vw;
     }
     @media screen and (max-width: 1368px) {
-      bottom: 14.2vw;
+      bottom: 0vw;
     }
-    @media screen and (max-width: 1107px) {
-      bottom: 14.2vw;
+    @media screen and (max-width: 1251px) {
+      bottom: 5vw;
     }
-    @media screen and (max-width: 1069px) {
-      bottom: 14.2vw;
-    }
-    @media screen and (max-width: 1038px) {
-      bottom: 14.2vw;
-    }
-    @media screen and (max-width: 1006px) {
-      bottom: 14.2vw;
+    @media screen and (max-width: 1178px) {
       width: 34%;
     }
-    @media screen and (max-width: 978px) {
-      bottom: 16.5vw;
-    }
-    @media screen and (max-width: 951px) {
-      bottom: 18vw;
-    }
-    @media screen and (max-width: 923px) {
-      bottom: 19vw;
-    }
-    @media screen and (max-width: 899px) {
-      bottom: 22vw;
+    @media screen and (max-width: 1125px) {
       width: 35%;
+      bottom: 6vw;
     }
-    @media screen and (max-width: 877px) {
-      bottom: 24vw;
+    @media screen and (max-width: 1002px) {
+      bottom: 8vw;
+    }
+    @media screen and (max-width: 958px) {
+      bottom: 11vw;
+    }
+    @media screen and (max-width: 933px) {
+      bottom: 14vw;
+    }
+    @media screen and (max-width: 894px) {
+      bottom: 16vw;
       width: 36%;
     }
-    @media screen and (max-width: 853px) {
-      bottom: 24vw;
+    @media screen and (max-width: 875px) {
+      bottom: 18vw;
       padding: 14px 16px;
     }
     @media screen and (max-width: 826px) {
@@ -1259,10 +1436,6 @@ export default {
     }
     @media screen and (max-width: 808px) {
       bottom: 28vw;
-    }
-    @media screen and (max-width: 788px) {
-      bottom: 30vw;
-      width: 40%;
     }
 
     .welcome-title{
@@ -1292,8 +1465,11 @@ export default {
       }
     }
     .welcome-text{
-      font-size: 20px;
+      font-size: 25px;
       margin-top: 93px;
+      @media screen and (max-width: 1514px) {
+        font-size: 22px;
+      }
       @media screen and (max-width: 1087px) {
         font-size: 19px;
       }

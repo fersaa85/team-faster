@@ -1,5 +1,5 @@
 <template>
-  <b-navbar centered spaced class="gradient-bar">
+  <b-navbar centered fixed-top spaced class="gradient-bar">
     <template #brand>
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <img
