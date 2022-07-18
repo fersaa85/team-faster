@@ -116,7 +116,13 @@
                     phone: this.phone,
                     age: this.age,
             })
-                .then(({ data }) => ({}) );
+                .then(() => {
+                    this.$emit('success');
+                })
+                .catch((error) => {
+                    console.log(error.response);
+                    this.$emit('errors', error.response);
+                });
         }
     }
   }

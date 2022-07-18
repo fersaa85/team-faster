@@ -21,6 +21,37 @@
     </div>
     <div class="venues_photos">
       <div class="columns ">
+        <template v-if="venues.length && Object.keys(workout).length">
+          <div v-for="venue in venues.slice(0, 3)" class="column is-clickable" style="position:relative;">
+            <b-image
+                    responsive
+                    :src="`/assets/img/${venue.thumbnail}`"
+                    ratio="1by1"
+            ></b-image>
+            <div class="text-photo-title venue-active">
+              {{ venue.name }}
+              <br>
+
+              <template v-if="venue.id == workout.venue.id">
+                <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
+                  ¡Regístrate ahora!
+                </b-button>
+              </template>
+              <!--
+              <span class="puma-regular">
+                ¡Regístrate ahora!
+              </span>
+              -->
+            </div>
+            <div class="text-photo-date">
+              {{ venue.workout ? venue.workout.date_start : '-' }}
+            </div>
+            <!-- <div class="text-photo-register">
+              ¡registrate ahora!
+            </div> -->
+          </div>
+        </template>
+        <!--
         <div class="column is-clickable" style="position:relative;">
           <b-image
             responsive
@@ -37,9 +68,6 @@
           <div class="text-photo-date">
             30 de julio
           </div>
-          <!-- <div class="text-photo-register">
-            ¡registrate ahora!
-          </div> -->
         </div>
         <div class="column is-clickable" style="position:relative;">
           <b-image
@@ -56,9 +84,6 @@
           <div class="text-photo-date">
             27 de agosto
           </div>
-          <!-- <div class="text-photo-register">
-            registro pendiente
-          </div> -->
         </div>
         <div class="column is-clickable" style="position:relative;">
           <b-image
@@ -72,10 +97,7 @@
           <div class="text-photo-date">
             24 de septiembre
           </div>
-          <!-- <div class="text-photo-register">
-            registro pendiente
-          </div> -->
-        </div>
+          -->
       </div>
       <div class="columns">
         <div class="column is-clickable" style="position:relative;">
@@ -143,7 +165,35 @@
 
 <script>
 export default {
-  name: 'venues'
+  name: 'venues',
+    data() {
+        return {
+            workout: {},
+            venues: []
+        };
+    },
+    mounted() {
+        axios
+            .get('api/workout')
+            .then(({ data }) => {
+                this.workout = Object.assign({}, data.data);
+                console.log( this.workout);
+            });
+
+
+        axios
+            .get('api/venues')
+            .then(({ data }) => {
+                this.venues = [].concat(data.data);
+            });
+    },
+    methods:  {
+        handleGoTo(e){
+            e.preventDefault();
+            this.$router.push('/registro');
+        }
+    }
+
 }
 </script>
 <style lang="scss" scoped>
