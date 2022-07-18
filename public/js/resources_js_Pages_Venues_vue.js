@@ -111,71 +111,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
   data: function data() {
@@ -458,86 +393,79 @@ var render = function () {
         2
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "columns" }, [
-        _c(
-          "div",
-          {
-            staticClass: "column is-clickable",
-            staticStyle: { position: "relative" },
-          },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/FOTO_FUENTE_X_min.jpg",
-                ratio: "1by1",
-              },
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-title" }, [
-              _vm._v("\n          Fuente de Xochipili\n        "),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-date" }, [
-              _vm._v("\n          30 de julio\n        "),
-            ]),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "column is-clickable",
-            staticStyle: { position: "relative" },
-          },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/FOTO_ARTZ_P_min.jpg",
-                ratio: "1by1",
-              },
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-title" }, [
-              _vm._v("\n          Artz Pedregal\n        "),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-date" }, [
-              _vm._v("\n          30 de julio\n        "),
-            ]),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "column is-clickable",
-            staticStyle: { position: "relative" },
-          },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/FOTO_MONUMENTO_R_min.jpg",
-                ratio: "1by1",
-              },
-            }),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-date" }, [
-              _vm._v("\n          30 de julio\n        "),
-            ]),
-          ],
-          1
-        ),
-      ]),
+      _c(
+        "div",
+        { staticClass: "columns" },
+        [
+          _vm.venues.length && Object.keys(_vm.workout).length
+            ? _vm._l(_vm.venues.slice(3, 6), function (venue) {
+                return _c(
+                  "div",
+                  {
+                    staticClass: "column is-clickable",
+                    staticStyle: { position: "relative" },
+                  },
+                  [
+                    _c("b-image", {
+                      attrs: {
+                        responsive: "",
+                        src: "/assets/img/" + venue.thumbnail,
+                        ratio: "1by1",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "text-photo-title venue-active" },
+                      [
+                        _vm._v(
+                          "\n            " +
+                            _vm._s(venue.name) +
+                            "\n            "
+                        ),
+                        _c("br"),
+                        _vm._v(" "),
+                        venue.id == _vm.workout.venue.id
+                          ? [
+                              _c(
+                                "b-button",
+                                {
+                                  staticClass: "register-button",
+                                  attrs: { rounded: "", size: "is-medium" },
+                                  on: { click: _vm.handleGoTo },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                ¡Regístrate ahora!\n              "
+                                  ),
+                                ]
+                              ),
+                            ]
+                          : _vm._e(),
+                      ],
+                      2
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-photo-date" }, [
+                      _vm._v(
+                        "\n            " +
+                          _vm._s(
+                            venue.workout ? venue.workout.date_start : "-"
+                          ) +
+                          "\n          "
+                      ),
+                    ]),
+                  ],
+                  1
+                )
+              })
+            : _vm._e(),
+        ],
+        2
+      ),
     ]),
     _vm._v(" "),
-    _vm._m(2),
+    _vm._m(1),
   ])
 }
 var staticRenderFns = [
@@ -553,16 +481,6 @@ var staticRenderFns = [
       _c("div", { staticClass: "title-venues2" }, [
         _vm._v("\n        experiencia\n      "),
       ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-photo-title two-lines" }, [
-      _vm._v("\n          Monumento a "),
-      _c("br"),
-      _vm._v(" la Revolución\n        "),
     ])
   },
   function () {
