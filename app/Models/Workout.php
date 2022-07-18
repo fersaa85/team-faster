@@ -29,8 +29,8 @@ class Workout extends Model
     /**
      * Get the user that owns the phone.
      */
-    public function coache()
+    public function coatch()
     {
-        return $this->belongsTo(Coache::class, 'coache_id', 'id');
+        return $this->belongsTo(Coatch::class, 'coatch_id', 'id');
     }
 }

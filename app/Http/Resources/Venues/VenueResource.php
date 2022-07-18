@@ -3,6 +3,7 @@
 namespace App\Http\Resources\Venues;
 
 use Illuminate\Http\Resources\Json\JsonResource;
+use App\Models\Workout;
 
 class VenueResource extends JsonResource
 {
@@ -23,6 +24,9 @@ class VenueResource extends JsonResource
             'lat' => $this->lat,
             'lng' => $this->lng,
             'image' => $this->image,
+            'image_map' => $this->image_map,
+            'thumbnail' => $this->thumbnail,
+            'workout' => Workout::where('venue_id', $this->id)->first()
         ];
     }
 }

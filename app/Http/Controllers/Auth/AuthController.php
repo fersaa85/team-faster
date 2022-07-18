@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Requests\LoginRequest;
 use App\Http\Requests\UserStoreRequest;
-use App\Http\Resources\User\VenueResource;
+use App\Http\Resources\User\UserResource;
 use App\Models\User;
 use App\Models\Workout;
 use App\Models\WorkoutUser;
@@ -27,10 +27,11 @@ class AuthController extends Controller
             $user = User::create([
                 'name' => $request->name,
                 'email' => $request->email,
-                'password' => bcrypt($request->password),
+                'password' => '',
                 'last_name' => $request->last_name,
                 'phone' => $request->phone,
-                'birthday' => $request->birthday,
+                //'birthday' => $request->birthday,
+                'age' => $request->age,
             ]);
         }
 
@@ -45,9 +46,7 @@ class AuthController extends Controller
             dd('stop');
         }
 
-
-
-        return new VenueResource($user);
+        return new UserResource($user);
     }
 
     /**

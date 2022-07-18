@@ -118,7 +118,25 @@ __webpack_require__.r(__webpack_exports__);
       phone: ''
     };
   },
-  methods: {}
+  methods: {
+    handleSubmit: function handleSubmit() {
+      var _this = this;
+
+      axios.post('api/auth/signup', {
+        email: this.email,
+        name: this.name,
+        last_name: this.lastname,
+        phone: this.phone,
+        age: this.age
+      }).then(function () {
+        _this.$emit('success');
+      })["catch"](function (error) {
+        console.log(error.response);
+
+        _this.$emit('errors', error.response);
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -134,6 +152,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Components_RegisterForm_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Components/RegisterForm.vue */ "./resources/js/Components/RegisterForm.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -236,7 +279,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      showForm: false
+      showForm: false,
+      success: false,
+      errors: false,
+      errorsMsg: 'errorMsg'
     };
   },
   mounted: function mounted() {
@@ -306,6 +352,18 @@ __webpack_require__.r(__webpack_exports__);
         ease: "sine.out(1, 0.3)",
         display: "block"
       });
+    },
+    handleSuccess: function handleSuccess() {
+      this.success = true;
+      this.errors = false;
+    },
+    handleErrors: function handleErrors(_ref) {
+      var data = _ref.data;
+      Object.values(data.errors).forEach(function callback(currentValue, index) {
+        this.errorsMsg = currentValue[0];
+      }, this);
+      this.success = false;
+      this.errors = true;
     }
   }
 });
@@ -386,16 +444,35 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       info: {
-        name: 'Fuente de Xochipili',
-        fecha: '25 de junio | 8:00 a 10:00 am',
-        lugar: 'xxxxxxxxxxxxxx',
-        tipo: 'Cardio Hit',
-        coach: 'Ceci Aguilera',
-        photo: 'FuenteXochipili.jpg',
-        map: 'MAP_FUENTE_X_min.jpg',
+        name: '',
+        fecha: '',
+        lugar: '',
+        tipo: '',
+        coach: '',
+        photo: '',
+        map: '',
         available: true
       }
     };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('api/workout').then(function (_ref) {
+      var data = _ref.data.data;
+      console.log(data);
+      _this.info = Object.assign({}, {
+        name: data.venue.name,
+        fecha: data.date_start,
+        lugar: data.venue.address,
+        tipo: data.description,
+        coach: data.coatch.name,
+        photo: data.venue.image,
+        map: data.venue.image_map,
+        available: true
+      });
+      console.log(_this.info);
+    });
   },
   methods: {}
 });
@@ -441,7 +518,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".info-margin[data-v-3d7ff93c] {\n  padding-right: 7%;\n}\n.soldOut[data-v-3d7ff93c] {\n  color: white;\n  padding-left: 7%;\n  margin-top: 40px;\n  padding-bottom: 40px;\n  font-size: 43px;\n}\n@media screen and (max-width: 1407px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 33px;\n}\n}\n@media screen and (max-width: 1023px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 30px;\n}\n}\n.title-1[data-v-3d7ff93c] {\n  font-size: 125px;\n  padding-top: 50px;\n  color: white;\n  line-height: 125px;\n}\n@media screen and (max-width: 1407px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 100px;\n    line-height: 100px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 90px;\n    line-height: 90px;\n}\n}\n.title-2[data-v-3d7ff93c] {\n  font-size: 90px;\n  color: black;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 65px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3[data-v-3d7ff93c] {\n  font-size: 100px;\n  color: black;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 75px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3.notAvailable[data-v-3d7ff93c] {\n  padding-top: 50px;\n}\n.info-block[data-v-3d7ff93c] {\n  padding-top: 20px;\n  font-size: 20px;\n}\n@media screen and (max-width: 1407px) {\n.info-block[data-v-3d7ff93c] {\n    padding-top: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.info-block[data-v-3d7ff93c] {\n    font-size: 18px;\n}\n}\n.info-block .info-block-title[data-v-3d7ff93c] {\n  color: white;\n}\n.info-block .info-block-text[data-v-3d7ff93c] {\n  color: black;\n}\n.info-block .button[data-v-3d7ff93c] {\n  margin-bottom: 80px;\n  background-color: #46aaff;\n  border-color: #46aaff;\n  color: white;\n  text-transform: uppercase;\n  font-size: 18px;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  padding: 5px 36px 0;\n}\n@media screen and (max-width: 1407px) {\n.info-block .button[data-v-3d7ff93c] {\n    padding: 4px 36px 0;\n    font-size: 16px;\n}\n}\n.register-form[data-v-3d7ff93c], .register-form-tablet[data-v-3d7ff93c] {\n  background-color: black;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  padding-top: 72px;\n  margin-top: 29px;\n  min-height: 61vh;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".info-margin[data-v-3d7ff93c] {\n  padding-right: 7%;\n}\n.soldOut[data-v-3d7ff93c] {\n  color: white;\n  padding-left: 7%;\n  margin-top: 40px;\n  padding-bottom: 40px;\n  font-size: 43px;\n}\n@media screen and (max-width: 1407px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 33px;\n}\n}\n@media screen and (max-width: 1023px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 30px;\n}\n}\n.title-1[data-v-3d7ff93c] {\n  font-size: 125px;\n  padding-top: 50px;\n  color: white;\n  line-height: 125px;\n}\n@media screen and (max-width: 1407px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 100px;\n    line-height: 100px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 90px;\n    line-height: 90px;\n}\n}\n.title-2[data-v-3d7ff93c] {\n  font-size: 90px;\n  color: black;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 65px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3[data-v-3d7ff93c] {\n  font-size: 100px;\n  color: black;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 75px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3.notAvailable[data-v-3d7ff93c] {\n  padding-top: 50px;\n}\n.info-block[data-v-3d7ff93c] {\n  padding-top: 20px;\n  font-size: 20px;\n}\n@media screen and (max-width: 1407px) {\n.info-block[data-v-3d7ff93c] {\n    padding-top: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.info-block[data-v-3d7ff93c] {\n    font-size: 18px;\n}\n}\n.info-block .info-block-title[data-v-3d7ff93c] {\n  color: white;\n}\n.info-block .info-block-text[data-v-3d7ff93c] {\n  color: black;\n}\n.info-block .button[data-v-3d7ff93c] {\n  margin-bottom: 80px;\n  background-color: #46aaff;\n  border-color: #46aaff;\n  color: white;\n  text-transform: uppercase;\n  font-size: 18px;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  padding: 5px 36px 0;\n}\n@media screen and (max-width: 1407px) {\n.info-block .button[data-v-3d7ff93c] {\n    padding: 4px 36px 0;\n    font-size: 16px;\n}\n}\n.register-form[data-v-3d7ff93c], .register-form-tablet[data-v-3d7ff93c] {\n  background-color: black;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  padding-top: 72px;\n  margin-top: 29px;\n  min-height: 61vh;\n}\n.alert[data-v-3d7ff93c] {\n  position: relative;\n  padding: 0.75rem 1.25rem;\n  margin-bottom: 1rem;\n  border: 1px solid transparent;\n  border-radius: 0.25rem;\n  text-align: center;\n}\n.alert-success[data-v-3d7ff93c] {\n  color: #155724;\n  background-color: #d4edda;\n  border-color: #c3e6cb;\n}\n.alert-danger[data-v-3d7ff93c] {\n  color: #721c24;\n  background-color: #f8d7da;\n  border-color: #f5c6cb;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1047,7 +1124,11 @@ var render = function () {
         [
           _c(
             "b-button",
-            { staticClass: "register-button", attrs: { rounded: "" } },
+            {
+              staticClass: "register-button",
+              attrs: { rounded: "" },
+              on: { click: _vm.handleSubmit },
+            },
             [_vm._v("\n      Registrarse\n    ")]
           ),
         ],
@@ -1105,87 +1186,103 @@ var render = function () {
       { staticClass: "puma-bold", staticStyle: { "padding-top": "36px" } },
       [
         _c("div", { staticClass: "info-margin" }, [
-          _c("div", { staticClass: "info-block" }, [
-            _c("p", { staticClass: "info-block-title" }, [
-              _vm._v("\n          ¿Cuándo?\n        "),
+          _c("div", { staticClass: "columns" }, [
+            _c("div", { staticClass: "column" }, [
+              _c("div", { staticClass: "info-block" }, [
+                _c("p", { staticClass: "info-block-title" }, [
+                  _vm._v("\n              ¿Cuándo?\n            "),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "info-block-text" }, [
+                  _vm._v(
+                    "\n              " + _vm._s(_vm.fecha) + "\n            "
+                  ),
+                ]),
+              ]),
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "info-block-text" }, [
-              _vm._v("\n          " + _vm._s(_vm.fecha) + "\n        "),
+            _c("div", { staticClass: "column" }, [
+              _c("div", { staticClass: "info-block" }, [
+                _c("p", { staticClass: "info-block-title" }, [
+                  _vm._v("\n              Dónde?\n            "),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "info-block-text" }, [
+                  _vm._v(
+                    "\n              " + _vm._s(_vm.lugar) + "\n            "
+                  ),
+                ]),
+              ]),
             ]),
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "info-block" }, [
-            _c("p", { staticClass: "info-block-title" }, [
-              _vm._v("\n          Dónde?\n        "),
+          _c("div", { staticClass: "columns" }, [
+            _c("div", { staticClass: "column" }, [
+              _c("div", { staticClass: "info-block" }, [
+                _c("p", { staticClass: "info-block-title" }, [
+                  _vm._v("\n              Experiencia workout\n            "),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "info-block-text" }, [
+                  _vm._v(
+                    "\n              " + _vm._s(_vm.tipo) + "\n            "
+                  ),
+                ]),
+              ]),
             ]),
             _vm._v(" "),
-            _c("p", { staticClass: "info-block-text" }, [
-              _vm._v("\n          " + _vm._s(_vm.lugar) + "\n        "),
+            _c("div", { staticClass: "column" }, [
+              _c("div", { staticClass: "info-block" }, [
+                _c("p", { staticClass: "info-block-title" }, [
+                  _vm._v("\n              Coach participante\n            "),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "info-block-text" }, [
+                  _vm._v(
+                    "\n              " + _vm._s(_vm.coach) + "\n            "
+                  ),
+                ]),
+              ]),
             ]),
           ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "info-block" }, [
-            _c("p", { staticClass: "info-block-title" }, [
-              _vm._v("\n          Experiencia workout\n        "),
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "info-block-text" }, [
-              _vm._v("\n          " + _vm._s(_vm.tipo) + "\n        "),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "info-block" }, [
-            _c("p", { staticClass: "info-block-title" }, [
-              _vm._v("\n          Coach participante\n        "),
-            ]),
-            _vm._v(" "),
-            _c("p", { staticClass: "info-block-text" }, [
-              _vm._v("\n          " + _vm._s(_vm.coach) + "\n        "),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: !_vm.showForm,
-                  expression: "!showForm",
-                },
-              ],
-              staticClass: "info-block is-hidden-mobile",
-            },
-            [
-              _vm.available
-                ? _c(
-                    "p",
-                    { staticStyle: { "padding-top": "36px" } },
-                    [
-                      _c(
-                        "b-button",
-                        {
-                          attrs: { rounded: "" },
-                          on: { click: _vm.showFormAction },
-                        },
-                        [_vm._v("\n            Asistir a evento\n          ")]
-                      ),
-                    ],
-                    1
-                  )
-                : _c("p", { staticClass: "soldOut puma-regular" }, [
-                    _vm._v("\n          Lugares agotados\n        "),
-                  ]),
-            ]
-          ),
         ]),
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "register-form is-hidden-mobile" },
-          [_c("RegisterForm")],
+          { staticClass: "is-hidden-mobile" },
+          [
+            _vm.success
+              ? _c(
+                  "div",
+                  {
+                    staticClass: "alert alert-success",
+                    attrs: { role: "alert" },
+                  },
+                  [
+                    _c("b", [
+                      _vm._v(
+                        "Gracias por registrarse al evento.¡Te esperamos!"
+                      ),
+                    ]),
+                  ]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _vm.errors
+              ? _c(
+                  "div",
+                  {
+                    staticClass: "alert alert-danger",
+                    attrs: { role: "alert" },
+                  },
+                  [_c("b", [_vm._v(_vm._s(_vm.errorsMsg))])]
+                )
+              : _vm._e(),
+            _vm._v(" "),
+            _c("RegisterForm", {
+              on: { success: _vm.handleSuccess, errors: _vm.handleErrors },
+            }),
+          ],
           1
         ),
         _vm._v(" "),
