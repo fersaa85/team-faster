@@ -111,51 +111,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'venues'
+  name: 'venues',
+  data: function data() {
+    return {
+      workout: {},
+      venues: []
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('api/workout').then(function (_ref) {
+      var data = _ref.data;
+      _this.workout = Object.assign({}, data.data);
+      console.log(_this.workout);
+    });
+    axios.get('api/venues').then(function (_ref2) {
+      var data = _ref2.data;
+      _this.venues = [].concat(data.data);
+    });
+  },
+  methods: {
+    handleGoTo: function handleGoTo(e) {
+      e.preventDefault();
+      this.$router.push('/registro');
+    }
+  }
 });
 
 /***/ }),
@@ -340,162 +322,150 @@ var render = function () {
     ),
     _vm._v(" "),
     _c("div", { staticClass: "venues_photos" }, [
-      _c("div", { staticClass: "columns " }, [
-        _c(
-          "div",
-          {
-            staticClass: "column is-clickable",
-            staticStyle: { position: "relative" },
-          },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/FOTO_FORO_S_min.jpg",
-                ratio: "1by1",
-              },
-            }),
-            _vm._v(" "),
-            _vm._m(1),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-date" }, [
-              _vm._v("\n          30 de julio\n        "),
-            ]),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "column is-clickable",
-            staticStyle: { position: "relative" },
-          },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/FOTO_JARDIN_CHA_min.jpg",
-                ratio: "1by1",
-              },
-            }),
-            _vm._v(" "),
-            _vm._m(2),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-date" }, [
-              _vm._v("\n          27 de agosto\n        "),
-            ]),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "column is-clickable",
-            staticStyle: { position: "relative" },
-          },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/FOTO_CARCAMO_D_min.jpg",
-                ratio: "1by1",
-              },
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-title" }, [
-              _vm._v("\n          Cárcamo de Dolores\n        "),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-date" }, [
-              _vm._v("\n          24 de septiembre\n        "),
-            ]),
-          ],
-          1
-        ),
-      ]),
+      _c(
+        "div",
+        { staticClass: "columns " },
+        [
+          _vm.venues.length && Object.keys(_vm.workout).length
+            ? _vm._l(_vm.venues.slice(0, 3), function (venue) {
+                return _c(
+                  "div",
+                  {
+                    staticClass: "column is-clickable",
+                    staticStyle: { position: "relative" },
+                  },
+                  [
+                    _c("b-image", {
+                      attrs: {
+                        responsive: "",
+                        src: "/assets/img/" + venue.thumbnail,
+                        ratio: "1by1",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "text-photo-title venue-active" },
+                      [
+                        _vm._v(
+                          "\n            " +
+                            _vm._s(venue.name) +
+                            "\n            "
+                        ),
+                        _c("br"),
+                        _vm._v(" "),
+                        venue.id == _vm.workout.venue.id
+                          ? [
+                              _c(
+                                "b-button",
+                                {
+                                  staticClass: "register-button",
+                                  attrs: { rounded: "", size: "is-medium" },
+                                  on: { click: _vm.handleGoTo },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                ¡Regístrate ahora!\n              "
+                                  ),
+                                ]
+                              ),
+                            ]
+                          : _vm._e(),
+                      ],
+                      2
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-photo-date" }, [
+                      _vm._v(
+                        "\n            " +
+                          _vm._s(
+                            venue.workout ? venue.workout.date_start : "-"
+                          ) +
+                          "\n          "
+                      ),
+                    ]),
+                  ],
+                  1
+                )
+              })
+            : _vm._e(),
+        ],
+        2
+      ),
       _vm._v(" "),
-      _c("div", { staticClass: "columns" }, [
-        _c(
-          "div",
-          {
-            staticClass: "column is-clickable",
-            staticStyle: { position: "relative" },
-          },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/FOTO_FUENTE_X_min.jpg",
-                ratio: "1by1",
-              },
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-title" }, [
-              _vm._v("\n          Fuente de Xochipili\n        "),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-date" }, [
-              _vm._v("\n          30 de julio\n        "),
-            ]),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "column is-clickable",
-            staticStyle: { position: "relative" },
-          },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/FOTO_ARTZ_P_min.jpg",
-                ratio: "1by1",
-              },
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-title" }, [
-              _vm._v("\n          Artz Pedregal\n        "),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-date" }, [
-              _vm._v("\n          30 de julio\n        "),
-            ]),
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "column is-clickable",
-            staticStyle: { position: "relative" },
-          },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/FOTO_MONUMENTO_R_min.jpg",
-                ratio: "1by1",
-              },
-            }),
-            _vm._v(" "),
-            _vm._m(3),
-            _vm._v(" "),
-            _c("div", { staticClass: "text-photo-date" }, [
-              _vm._v("\n          30 de julio\n        "),
-            ]),
-          ],
-          1
-        ),
-      ]),
+      _c(
+        "div",
+        { staticClass: "columns" },
+        [
+          _vm.venues.length && Object.keys(_vm.workout).length
+            ? _vm._l(_vm.venues.slice(3, 6), function (venue) {
+                return _c(
+                  "div",
+                  {
+                    staticClass: "column is-clickable",
+                    staticStyle: { position: "relative" },
+                  },
+                  [
+                    _c("b-image", {
+                      attrs: {
+                        responsive: "",
+                        src: "/assets/img/" + venue.thumbnail,
+                        ratio: "1by1",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "text-photo-title venue-active" },
+                      [
+                        _vm._v(
+                          "\n            " +
+                            _vm._s(venue.name) +
+                            "\n            "
+                        ),
+                        _c("br"),
+                        _vm._v(" "),
+                        venue.id == _vm.workout.venue.id
+                          ? [
+                              _c(
+                                "b-button",
+                                {
+                                  staticClass: "register-button",
+                                  attrs: { rounded: "", size: "is-medium" },
+                                  on: { click: _vm.handleGoTo },
+                                },
+                                [
+                                  _vm._v(
+                                    "\n                ¡Regístrate ahora!\n              "
+                                  ),
+                                ]
+                              ),
+                            ]
+                          : _vm._e(),
+                      ],
+                      2
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "text-photo-date" }, [
+                      _vm._v(
+                        "\n            " +
+                          _vm._s(
+                            venue.workout ? venue.workout.date_start : "-"
+                          ) +
+                          "\n          "
+                      ),
+                    ]),
+                  ],
+                  1
+                )
+              })
+            : _vm._e(),
+        ],
+        2
+      ),
     ]),
     _vm._v(" "),
-    _vm._m(4),
+    _vm._m(1),
   ])
 }
 var staticRenderFns = [
@@ -511,48 +481,6 @@ var staticRenderFns = [
       _c("div", { staticClass: "title-venues2" }, [
         _vm._v("\n        experiencia\n      "),
       ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-photo-title venue-active" }, [
-      _vm._v("\n          Foro Santa Fe\n          "),
-      _c("br"),
-      _vm._v(" "),
-      _c("span", { staticClass: "puma-regular" }, [
-        _vm._v("\n            ¡regístrate ahora!\n          "),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "text-photo-title two-lines venue-active-third" },
-      [
-        _vm._v("\n          Jardín botánico "),
-        _c("br"),
-        _vm._v(" Chapultepec "),
-        _c("br"),
-        _vm._v(" "),
-        _c("span", { staticClass: "puma-regular" }, [
-          _vm._v("\n            ¡regístrate ahora!\n          "),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-photo-title two-lines" }, [
-      _vm._v("\n          Monumento a "),
-      _c("br"),
-      _vm._v(" la Revolución\n        "),
     ])
   },
   function () {

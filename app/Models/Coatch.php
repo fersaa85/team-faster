@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 
 
-class Coache extends Model
+class Coatch extends Model
 {
+    public $table = 'coatchs';
     /**
      * The attributes that are mass assignable.
      *

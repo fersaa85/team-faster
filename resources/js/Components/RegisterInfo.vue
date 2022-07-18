@@ -13,51 +13,76 @@
     </div>
     <div class="puma-bold" style="padding-top: 36px;">
       <div class="info-margin">
-        <div class="info-block">
-          <p class="info-block-title">
-            ¿Cuándo?
-          </p>
-          <p class="info-block-text">
-            {{ fecha }}
-          </p>
+        <div class="columns">
+          <div class="column">
+            <div class="info-block">
+              <p class="info-block-title">
+                ¿Cuándo?
+              </p>
+              <p class="info-block-text">
+                {{ fecha }}
+              </p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="info-block">
+              <p class="info-block-title">
+                Dónde?
+              </p>
+              <p class="info-block-text">
+                {{ lugar }}
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="info-block">
-          <p class="info-block-title">
-            Dónde?
-          </p>
-          <p class="info-block-text">
-            {{ lugar }}
-          </p>
+
+        <div class="columns">
+          <div class="column">
+            <div class="info-block">
+              <p class="info-block-title">
+                Experiencia workout
+              </p>
+              <p class="info-block-text">
+                {{ tipo }}
+              </p>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="info-block">
+              <p class="info-block-title">
+                Coach participante
+              </p>
+              <p class="info-block-text">
+                {{ coach }}
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="info-block">
-          <p class="info-block-title">
-            Experiencia workout
-          </p>
-          <p class="info-block-text">
-            {{ tipo }}
-          </p>
-        </div>
-        <div class="info-block">
-          <p class="info-block-title">
-            Coach participante
-          </p>
-          <p class="info-block-text">
-            {{ coach }}
-          </p>
-        </div>
-        <div v-show="!showForm" class="info-block is-hidden-mobile">
-          <p v-if="available" style="padding-top: 36px;">
-            <b-button rounded @click="showFormAction">
-              Asistir a evento
-            </b-button>
-          </p>
+
+
+        <!--
+        <div class="info-block is-hidden-mobile">
+          <p v-if="available" style="padding-top: 36px;"></p>
           <p v-else class="soldOut puma-regular">
             Lugares agotados
           </p>
         </div>
+        -->
       </div>
-      <div class="register-form is-hidden-mobile">
-        <RegisterForm/>
+
+      <div class="is-hidden-mobile">
+        <div v-if="success"class="alert alert-success" role="alert">
+          <b>Gracias por registrarse al evento.¡Te esperamos!</b>
+        </div>
+        <div v-if="errors"class="alert alert-danger" role="alert">
+            <b>{{ errorsMsg }}</b>
+        </div>
+        <RegisterForm
+          @success="handleSuccess"
+          @errors="handleErrors"
+        />
       </div>
       <div class="register-form-tablet is-hidden-tablet">
         <RegisterForm/>
@@ -103,6 +128,9 @@ import RegisterForm from '../Components/RegisterForm.vue';
     data(){
       return {
         showForm: false,
+        success: false,
+        errors: false,
+        errorsMsg: 'errorMsg'
       };
     },
     mounted(){
@@ -156,6 +184,17 @@ import RegisterForm from '../Components/RegisterForm.vue';
             ".register-form",
             {autoAlpha: 1, duration: 1, y:0, ease: "sine.out(1, 0.3)", display:"block" }
           );
+      },
+      handleSuccess(){
+        this.success = true;
+        this.errors = false;
+      },
+      handleErrors({ data }){
+           Object.values( data.errors ).forEach(function callback(currentValue, index){
+               this.errorsMsg = currentValue[0];
+           }, this);
+          this.success = false;
+          this.errors = true;
       }
     }
   }
@@ -256,5 +295,26 @@ import RegisterForm from '../Components/RegisterForm.vue';
     padding-top: 72px;
     margin-top: 29px;
     min-height: 61vh;
+  }
+
+  .alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    text-align: center;
+  }
+
+  .alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+  }
+
+  .alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
   }
 </style>

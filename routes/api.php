@@ -40,7 +40,8 @@ Route::group([
 Route::group([
     'prefix' => 'workout',
 ], function() {
-    Route::get('/{workoutId}', \App\Http\Controllers\Workout\WorkoutController::class);
+    Route::get('/', \App\Http\Controllers\Workout\WorkoutController::class);
+    //Route::get('/{workoutId}', \App\Http\Controllers\Workout\WorkoutController::class);
     Route::get('/count', \App\Http\Controllers\Workout\WorkoutCountController::class);
 });
 

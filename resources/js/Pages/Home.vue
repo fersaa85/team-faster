@@ -59,8 +59,8 @@
               30 de julio
             </div>
             <div>
-              <b-button rounded class="register-button" size="is-medium">
-                Registrarse
+              <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
+                  Registrarse
               </b-button>
             </div>
           </div>
@@ -384,6 +384,20 @@
 export default {
   name: 'home',
 
+    mounted() {
+        axios
+            .get('api/workout')
+            .then(({ data }) => {
+               console.log(data);
+            });
+    },
+
+    methods:{
+        handleGoTo(e){
+            e.preventDefault();
+            this.$router.push('/registro');
+        }
+    }
 }
 </script>
 <style lang="scss" scoped>
@@ -1436,6 +1450,10 @@ export default {
     }
     @media screen and (max-width: 808px) {
       bottom: 28vw;
+    }
+
+    .color-white{
+      color: #ffffff;
     }
 
     .welcome-title{
