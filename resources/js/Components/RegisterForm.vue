@@ -81,7 +81,7 @@
       </b-field>
     </ValidationProvider>
     <div class="has-text-centered" style="padding-top: 36px;">
-      <b-button rounded class="register-button">
+      <b-button rounded class="register-button" @click="handleSubmit">
         Registrarse
       </b-button>
     </div>
@@ -107,6 +107,17 @@
       };
     },
     methods:{
+        handleSubmit(){
+            axios
+                .post('api/auth/signup', {
+                    email: this.email,
+                    name: this.name,
+                    last_name: this.lastname,
+                    phone: this.phone,
+                    age: this.age,
+            })
+                .then(({ data }) => ({}) );
+        }
     }
   }
 </script>

@@ -62,17 +62,37 @@
     data(){
       return {
         info:{
-          name: 'Fuente de Xochipili',
-          fecha: '25 de junio | 8:00 a 10:00 am',
-          lugar: 'xxxxxxxxxxxxxx',
-          tipo: 'Cardio Hit',
-          coach: 'Ceci Aguilera',
-          photo: 'FuenteXochipili.jpg',
-          map: 'MAP_FUENTE_X_min.jpg',
+          name: '',
+          fecha: '',
+          lugar: '',
+          tipo: '',
+          coach: '',
+          photo: '',
+          map: '',
           available:true
         }
       };
     },
+    mounted() {
+        axios
+            .get('api/workout')
+            .then(({ data: { data } }) => {
+                console.log(data);
+                this.info = Object.assign({}, {
+                    name: data.venue.name,
+                    fecha: data.date_start,
+                    lugar: data.venue.address,
+                    tipo:  data.description,
+                    coach:  data.coatch.name,
+                    photo: data.venue.image,
+                    map: data.venue.image_map,
+                    available: true
+                });
+
+                console.log( this.info);
+            });
+    },
+
     methods:{
     }
   }

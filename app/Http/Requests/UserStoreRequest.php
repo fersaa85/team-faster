@@ -32,10 +32,11 @@ class UserStoreRequest extends FormRequest
         return [
             'name' => 'required|string',
             'email' => ['required', 'string', 'email', $uniqueByWorkoutRule],
-            'password' => 'required|string',
+            //'password' => 'required|string',
             'last_name' => 'required|string',
             'phone' => 'required|string|regex:/[0-9]{10}/',
-            'birthday' => ['required', 'before:' . Carbon::now()->subYears(18)->format('Y-m-d') ],
+            'age' => 'required|integer',
+            //'birthday' => ['required', 'before:' . Carbon::now()->subYears(18)->format('Y-m-d') ],
         ];
     }
 }
