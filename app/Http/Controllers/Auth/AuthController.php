@@ -12,6 +12,7 @@ use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Routing\Controller;
+use ReCaptcha\ReCaptcha as GoogleRecaptcha;
 
 
 class AuthController extends Controller
@@ -21,6 +22,16 @@ class AuthController extends Controller
      */
     public function signUp(UserStoreRequest $request)
     {
+
+        $recaptcha = (new GoogleRecaptcha('6LdhsyggAAAAAL0d8vonQxrfI4UdlizR0GHtW7u9'))
+            ->verify($request->input('g-recaptcha-response'), $request->ip());
+
+        if (!$recaptcha->isSuccess()) {
+            return response()->json([
+                'message' => $recaptcha->getErrorCodes()
+            ], 401);
+        }
+
         $user = User::where("email", $request->email)->first();
 
         if($user === null){

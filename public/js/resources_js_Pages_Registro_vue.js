@@ -128,7 +128,8 @@ __webpack_require__.r(__webpack_exports__);
       name: '',
       lastname: '',
       phone: '',
-      disabled: true
+      disabled: true,
+      gRecaptchaResponse: null
     };
   },
   methods: {
@@ -136,6 +137,7 @@ __webpack_require__.r(__webpack_exports__);
       var _this = this;
 
       axios.post('api/auth/signup', {
+        "g-recaptcha-response": this.gRecaptchaResponse,
         email: this.email,
         name: this.name,
         last_name: this.lastname,
@@ -151,15 +153,19 @@ __webpack_require__.r(__webpack_exports__);
     },
     verifyMethod: function verifyMethod(e) {
       this.disabled = false;
+      this.gRecaptchaResponse = e;
       console.log('verifyMethod', e);
     },
     expiredMethod: function expiredMethod(e) {
+      this.gRecaptchaResponse = null;
       console.log('expiredMethod', e);
     },
     renderMethod: function renderMethod(e) {
+      this.gRecaptchaResponse = null;
       console.log('renderMethod', e);
     },
     errorMethod: function errorMethod(e) {
+      this.gRecaptchaResponse = null;
       console.log('errorMethod', e);
     }
   }
@@ -477,7 +483,6 @@ __webpack_require__.r(__webpack_exports__);
 
     axios.get('api/workout').then(function (_ref) {
       var data = _ref.data.data;
-      console.log(data);
       _this.info = Object.assign({}, {
         name: data.venue.name,
         fecha: data.date_start,
@@ -1142,7 +1147,7 @@ var render = function () {
           _c("vue-recaptcha", {
             attrs: {
               id: "recaptcha",
-              sitekey: "6LfAWP8gAAAAAGyhGMmUv2HzGiRGTU0bniSSHCO8",
+              sitekey: "6LdhsyggAAAAACsHnT4M66nGsy0xwI5mT8LDEgdL",
             },
             on: {
               verify: _vm.verifyMethod,

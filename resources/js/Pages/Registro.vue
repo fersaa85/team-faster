@@ -77,7 +77,6 @@
         axios
             .get('api/workout')
             .then(({ data: { data } }) => {
-                console.log(data);
                 this.info = Object.assign({}, {
                     name: data.venue.name,
                     fecha: data.date_start,

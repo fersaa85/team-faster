@@ -35,6 +35,12 @@
  */
 
 /*!
+ * vue-add-to-calendar v1.0.7 
+ * (c) 2021 nicolasbeauvais
+ * Released under the MIT License.
+ */
+
+/*!
  * vuex v3.6.2
  * (c) 2021 Evan You
  * @license MIT

@@ -83,7 +83,7 @@
     <div class="has-text-centered" style="padding-top: 36px;">
       <vue-recaptcha
          id="recaptcha"
-         sitekey="6LfAWP8gAAAAAGyhGMmUv2HzGiRGTU0bniSSHCO8"
+         sitekey="6LdhsyggAAAAACsHnT4M66nGsy0xwI5mT8LDEgdL"
          @verify="verifyMethod"
          @expired="expiredMethod"
          @render="renderMethod"
@@ -116,12 +116,14 @@
         lastname: '',
         phone: '',
         disabled: true,
+        gRecaptchaResponse: null
       };
     },
     methods:{
         handleSubmit(){
             axios
                 .post('api/auth/signup', {
+                    "g-recaptcha-response": this.gRecaptchaResponse,
                     email: this.email,
                     name: this.name,
                     last_name: this.lastname,
@@ -138,15 +140,19 @@
         },
         verifyMethod(e){
             this.disabled = false;
+            this.gRecaptchaResponse=e;
             console.log('verifyMethod', e);
         },
         expiredMethod(e){
+            this.gRecaptchaResponse=null;
             console.log('expiredMethod', e);
         },
         renderMethod(e){
+            this.gRecaptchaResponse=null;
             console.log('renderMethod', e);
         },
         errorMethod(e){
+            this.gRecaptchaResponse=null;
             console.log('errorMethod', e);
         }
 
