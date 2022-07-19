@@ -29,7 +29,7 @@
                       :src="`/assets/img/${venue.thumbnail}`"
                       ratio="1by1"
               ></b-image>
-              <div class="text-photo-title venue-active">
+              <div class="text-photo-title" :class="{'venue-active': venue.id == workout.venue.id}">
                 {{ venue.name }}
                 <br>
 
@@ -50,6 +50,14 @@
             </div>
           </div>
         </template>
+        <template v-else>
+          <div class="column empty">
+          </div>
+          <div class="column empty">
+          </div>
+          <div class="column empty">
+          </div>
+        </template>
       </div>
       <div class="columns">
         <template v-if="venues.length && Object.keys(workout).length">
@@ -59,7 +67,7 @@
                     :src="`/assets/img/${venue.thumbnail}`"
                     ratio="1by1"
             ></b-image>
-            <div class="text-photo-title venue-active">
+            <div class="text-photo-title" :class="{'venue-active': venue.id == workout.venue.id}">
               {{ venue.name }}
               <br>
 
@@ -82,15 +90,28 @@
             </div> -->
           </div>
         </template>
+        <template v-else>
+          <div class="column empty">
+          </div>
+          <div class="column empty">
+          </div>
+          <div class="column empty">
+          </div>
+        </template>
       </div>
     </div>
-    <div class="footer-styles">
-      <div class="columns">
-        <div class="column tm-puma has-text-left">
+    <<div class="footer-styles">
+      <div class="columns" style="margin: 0;">
+        <div class="column tm-puma has-text-left" >
           @2022 puma. Todos los derechos reservados
         </div>
         <div class="column tm-puma has-text-right">
-          redes
+
+          <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png"  width="30px"/></a>
+          <a href="https://twitter.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png"  width="30px"/></a>
+          <a href="https://www.instagram.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png"  width="30px"/></a>
+          <a href="https://www.youtube.com/puma" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png"  width="30px"/></a>
+
         </div>
       </div>
     </div>
@@ -143,6 +164,26 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+  .register-button{
+    // background-color: #c624f1;
+    border-color: white;
+    // color: white;
+    // font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
+    // text-transform: uppercase;
+    // padding: 3px 36px 0;
+    // span{
+    //   line-height: 1.25rem;
+    // }
+    @media screen and (max-width: 1024px) {
+      font-size: 1rem !important;
+    }
+    @media screen and (max-width: 940px) {
+      font-size: 0.9rem !important;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 1.25rem !important;
+    }
+  }
   .venues_photos{
     margin: 0 20px;
     padding: 20px;
@@ -196,11 +237,12 @@ export default {
     top: 50%;
     text-transform: uppercase;
     font-size: 18px;
+    padding: 0 12px;
     &.two-lines{
       top: 47%;
     }
     &.venue-active{
-      top: 47%;
+      top: 43%;
     }
     &.venue-active-third{
       top: 42%;
@@ -254,7 +296,9 @@ export default {
     -webkit-animation: fadein 3s; /* Safari and Chrome */
     -o-animation: fadein 3s; /* Opera */
   }
-
+  .empty{
+    height: 30vw;
+  }
 
   @keyframes fadein {
     from {

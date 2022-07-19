@@ -19,7 +19,7 @@
         Venues
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/galeria' }" class="nav-bar-button" :class="{'button-active':  $route.name =='galeria'}">
-        Galeria
+        Galería
       </b-navbar-item>
     </template>
     <template #end>

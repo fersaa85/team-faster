@@ -458,6 +458,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'registro',
@@ -481,6 +487,8 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
+    this.setElement(this.$refs.img1);
+    this.setElement(this.$refs.img2);
     axios.get('api/workout').then(function (_ref) {
       var data = _ref.data.data;
       _this.info = Object.assign({}, {
@@ -496,7 +504,26 @@ __webpack_require__.r(__webpack_exports__);
       console.log(_this.info);
     });
   },
-  methods: {}
+  methods: {
+    setElement: function setElement(el) {
+      this.gsap.to(el, {
+        autoAlpha: 0,
+        duration: 0
+      });
+    },
+    showElement: function showElement(el, delay) {
+      this.gsap.to(el, {
+        autoAlpha: 1,
+        duration: 0.5
+      });
+    },
+    load1: function load1() {
+      this.showElement(this.$refs.img1);
+    },
+    load2: function load2() {
+      this.showElement(this.$refs.img2);
+    }
+  }
 });
 
 /***/ }),
@@ -563,7 +590,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-8bdab548] {\n  height: 100vh;\n}\n.img-blackwhite[data-v-8bdab548] {\n  filter: grayscale(100%);\n}\n.clip[data-v-8bdab548] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-8bdab548] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-8bdab548] {\n  padding: 0;\n  background-image: linear-gradient(45deg, #7f7efd, #ca06fa);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-8bdab548] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-8bdab548] {\n  margin: 0;\n}\n.registro[data-v-8bdab548] {\n  background: black;\n}\n.tm-puma[data-v-8bdab548] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-8bdab548] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-8bdab548] {\n    margin-top: -24px;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-8bdab548] {\n  height: 100vh;\n}\n.img-blackwhite[data-v-8bdab548] {\n  filter: grayscale(100%);\n}\n.clip[data-v-8bdab548] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-8bdab548] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-8bdab548] {\n  padding: 0;\n  background-image: linear-gradient(45deg, #7f7efd, #ca06fa);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-8bdab548] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-8bdab548] {\n  margin: 0;\n}\n.registro[data-v-8bdab548] {\n  background: black;\n}\n.tm-puma[data-v-8bdab548] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-8bdab548] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-8bdab548] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-8bdab548] {\n  height: 50vw;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1383,33 +1410,62 @@ var render = function () {
       _c("div", { staticClass: "column column-imgs" }, [
         _c(
           "div",
-          { staticClass: "img-blackwhite" },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/" + _vm.info.photo,
-                ratio: "14by10",
+          {
+            directives: [
+              {
+                name: "show",
+                rawName: "v-show",
+                value: _vm.info && _vm.info.photo,
+                expression: "info && info.photo",
               },
-            }),
-          ],
-          1
+            ],
+          },
+          [
+            _c(
+              "div",
+              { ref: "img1", staticClass: "img-blackwhite" },
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/" + _vm.info.photo,
+                    ratio: "14by10",
+                  },
+                  on: { load: _vm.load1 },
+                }),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { ref: "img2", staticClass: "clip" },
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/" + _vm.info.map,
+                    ratio: "15by13",
+                  },
+                  on: { load: _vm.load2 },
+                }),
+              ],
+              1
+            ),
+          ]
         ),
         _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "clip" },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/" + _vm.info.map,
-                ratio: "15by13",
-              },
-            }),
+        _c("div", {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: !_vm.info || !_vm.info.photo,
+              expression: "!info || !info.photo",
+            },
           ],
-          1
-        ),
+          staticClass: "emptyPhoto",
+        }),
         _vm._v(" "),
         _c("div", { staticClass: "tm-puma has-text-right" }, [
           _vm._v("\n        @2022 puma. Todos los derechos reservados\n      "),

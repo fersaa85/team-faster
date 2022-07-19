@@ -16,19 +16,25 @@
         </div>
       </div>
       <div class="column column-imgs">
-        <div class="img-blackwhite">
-          <b-image
-            responsive
-            :src="'/assets/img/' + info.photo"
-            ratio="14by10"
-          ></b-image>
+        <div v-show="info && info.photo">
+          <div class="img-blackwhite" ref="img1">
+            <b-image
+              responsive
+              :src="'/assets/img/' + info.photo"
+              ratio="14by10"
+              @load="load1"
+            ></b-image>
+          </div>
+          <div class="clip" ref="img2">
+            <b-image
+              responsive
+              :src="'/assets/img/'+ info.map"
+              ratio="15by13"
+              @load="load2"
+            ></b-image>
+          </div>
         </div>
-        <div class="clip">
-          <b-image
-            responsive
-            :src="'/assets/img/'+ info.map"
-            ratio="15by13"
-          ></b-image>
+        <div v-show="!info || !info.photo" class="emptyPhoto">
         </div>
         <div class="tm-puma has-text-right">
           @2022 puma. Todos los derechos reservados
@@ -74,6 +80,8 @@
       };
     },
     mounted() {
+      this.setElement(this.$refs.img1);
+      this.setElement(this.$refs.img2);
         axios
             .get('api/workout')
             .then(({ data: { data } }) => {
@@ -93,6 +101,24 @@
     },
 
     methods:{
+      setElement(el){
+            this.gsap.to(
+                el,
+                { autoAlpha: 0, duration: 0}
+            );
+        },
+        showElement(el, delay){
+            this.gsap.to(
+                el,
+                { autoAlpha: 1, duration: 0.5 }
+            );
+        },
+        load1(){
+          this.showElement(this.$refs.img1);
+        },
+        load2(){
+          this.showElement(this.$refs.img2);
+        }
     }
   }
 </script>
@@ -139,5 +165,7 @@
       margin-top: -24px;
     }
   }
-
+  .emptyPhoto{
+    height: 50vw;
+  }
 </style>

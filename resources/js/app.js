@@ -14,6 +14,9 @@ import { gsap } from "gsap";
 
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+import 'viewerjs/dist/viewer.css'
+import VueViewer from 'v-viewer'
+
 var AddToCalendar = require('vue-add-to-calendar');
 Vue.use(AddToCalendar);
 
@@ -27,6 +30,7 @@ Vue.mixin({
 
 Vue.use(VueRouter);
 Vue.use(Buefy);
+Vue.use(VueViewer)
 
 const app = new Vue({
   el: '#app',

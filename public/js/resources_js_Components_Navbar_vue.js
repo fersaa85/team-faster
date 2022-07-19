@@ -260,7 +260,7 @@ var render = function () {
                 class: { "button-active": _vm.$route.name == "galeria" },
                 attrs: { tag: "router-link", to: { path: "/galeria" } },
               },
-              [_vm._v("\n      Galeria\n    ")]
+              [_vm._v("\n      Galería\n    ")]
             ),
           ]
         },
