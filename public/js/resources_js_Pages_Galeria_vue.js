@@ -19,6 +19,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'galeria'
 });
@@ -109,18 +130,62 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "about" }, [
+  return _c(
+    "div",
+    { staticClass: "about" },
+    [
       _c("h2", [_vm._v("\n    Galería\n  ")]),
-    ])
-  },
-]
+      _vm._v(" "),
+      _c("add-to-calendar", {
+        attrs: {
+          title: "VueConf",
+          location: "WROCŁAW, POLAND",
+          start: new Date(),
+          end: new Date(new Date().setDate(new Date().getDate() + 1)),
+          details: "The first Official Vue.js Conference in the world!",
+        },
+        inlineTemplate: {
+          render: function () {
+            var _vm = this
+            var _h = _vm.$createElement
+            var _c = _vm._self._c || _h
+            return _c(
+              "div",
+              [
+                _c("google-calendar", { attrs: { id: "google-calendar" } }, [
+                  _c("i", { staticClass: "fa fa-google" }),
+                  _vm._v(" Add to Google calendar\n      "),
+                ]),
+                _vm._v(" "),
+                _c(
+                  "microsoft-calendar",
+                  { attrs: { id: "microsoft-calendar" } },
+                  [
+                    _c("i", { staticClass: "fa fa-windows" }),
+                    _vm._v(" Add to Microsoft live calendar\n      "),
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "office365-calendar",
+                  { attrs: { id: "office365-calendar" } },
+                  [
+                    _c("i", { staticClass: "fa fa-windows" }),
+                    _vm._v(" Add to Office365 outlook calendar\n      "),
+                  ]
+                ),
+              ],
+              1
+            )
+          },
+          staticRenderFns: [],
+        },
+      }),
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 

@@ -14,6 +14,9 @@ import { gsap } from "gsap";
 
 import ScrollTrigger from "gsap/ScrollTrigger";
 
+var AddToCalendar = require('vue-add-to-calendar');
+Vue.use(AddToCalendar);
+
 gsap.registerPlugin(ScrollTrigger);
 
 Vue.mixin({

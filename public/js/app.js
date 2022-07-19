@@ -1927,7 +1927,7 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
 /* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
 /* harmony import */ var _Router_index__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Router/index */ "./resources/js/Router/index.js");
 /* harmony import */ var _Store_index__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Store/index */ "./resources/js/Store/index.js");
@@ -1935,8 +1935,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var buefy__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! buefy */ "./node_modules/buefy/dist/esm/index.js");
 /* harmony import */ var buefy_dist_buefy_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! buefy/dist/buefy.css */ "./node_modules/buefy/dist/buefy.css");
 /* harmony import */ var _vee_validate__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./vee-validate */ "./resources/js/vee-validate.js");
-/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
-/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gsap/ScrollTrigger */ "./node_modules/gsap/ScrollTrigger.js");
+/* harmony import */ var gsap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! gsap */ "./node_modules/gsap/index.js");
+/* harmony import */ var gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! gsap/ScrollTrigger */ "./node_modules/gsap/ScrollTrigger.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
@@ -1949,15 +1949,19 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
-gsap__WEBPACK_IMPORTED_MODULE_5__.gsap.registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_6__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_7__["default"].mixin({
+
+var AddToCalendar = __webpack_require__(/*! vue-add-to-calendar */ "./node_modules/vue-add-to-calendar/dist/vue-add-to-calendar.common.js");
+
+vue__WEBPACK_IMPORTED_MODULE_5__["default"].use(AddToCalendar);
+gsap__WEBPACK_IMPORTED_MODULE_6__.gsap.registerPlugin(gsap_ScrollTrigger__WEBPACK_IMPORTED_MODULE_7__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_5__["default"].mixin({
   created: function created() {
-    this.gsap = gsap__WEBPACK_IMPORTED_MODULE_5__.gsap;
+    this.gsap = gsap__WEBPACK_IMPORTED_MODULE_6__.gsap;
   }
 });
-vue__WEBPACK_IMPORTED_MODULE_7__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_8__["default"]);
-vue__WEBPACK_IMPORTED_MODULE_7__["default"].use(buefy__WEBPACK_IMPORTED_MODULE_9__["default"]);
-var app = new vue__WEBPACK_IMPORTED_MODULE_7__["default"]({
+vue__WEBPACK_IMPORTED_MODULE_5__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_8__["default"]);
+vue__WEBPACK_IMPORTED_MODULE_5__["default"].use(buefy__WEBPACK_IMPORTED_MODULE_9__["default"]);
+var app = new vue__WEBPACK_IMPORTED_MODULE_5__["default"]({
   el: '#app',
   router: _Router_index__WEBPACK_IMPORTED_MODULE_0__["default"],
   store: _Store_index__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -51922,6 +51926,204 @@ var version = '3.4.14';
 
 
 
+
+/***/ }),
+
+/***/ "./node_modules/vue-add-to-calendar/dist/vue-add-to-calendar.common.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/vue-add-to-calendar/dist/vue-add-to-calendar.common.js ***!
+  \*****************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+/*!
+ * vue-add-to-calendar v1.0.7 
+ * (c) 2021 nicolasbeauvais
+ * Released under the MIT License.
+ */
+
+
+var AddToCalendarMixin = {
+  template: "<a :href=\"$parent.calendarUrl(calendar)\" :class=\"calendarClass\" target=\"_blank\"><slot></slot></a>",
+
+  computed: {
+    calendarClass: function calendarClass () {
+      return ['vue-add-to-calendar', ((this.calendar) + "-calendar")];
+    }
+  }
+};
+
+var calendars = {
+  google: {
+    url: 'http://www.google.com/calendar/render?action=TEMPLATE&trp=false',
+    parameters: function parameters (title, location, details, start, end) {
+      var parameters = {
+        text: title,
+        location: location,
+        details: details
+      };
+
+      if (start && end) {
+        parameters.dates = start + "/" + end;
+      }
+
+      return parameters;
+    }
+  },
+
+  microsoft: {
+    url: 'https://outlook.live.com/owa/?rru=addevent',
+    parameters: function parameters$1 (title, location, details, start, end) {
+      return {
+        subject: title,
+        location: location,
+        body: details,
+        startdt: start,
+        enddt: end
+      };
+    }
+  },
+
+  office365: {
+    url: 'https://outlook.office.com/owa/?path=/calendar/action/compose&rru=addevent',
+    parameters: function parameters$2 (title, location, details, start, end) {
+      return {
+        subject: title,
+        location: location,
+        body: details,
+        startdt: start,
+        enddt: end
+      };
+    }
+  }
+};
+
+var AddToCalendar = {
+  props: {
+    /**
+     * Event title.
+     * @var string
+     */
+    title: {
+      type: String,
+      default: ''
+    },
+
+    /**
+     * Event location.
+     * @var string
+     */
+    location: {
+      type: String,
+      default: ''
+    },
+
+    /**
+     * Event details.
+     * @var string
+     */
+    details: {
+      type: String,
+      default: ''
+    },
+
+    /**
+     * Event start.
+     * @var date
+     */
+    start: {
+      type: Date,
+      default: null
+    },
+
+    /**
+     * Event end.
+     * @var date
+     */
+    end: {
+      type: Date,
+      default: null
+    }
+  },
+
+  data: function data () {
+    return {
+      /**
+       * Available calendars.
+       * @param object
+       */
+      calendars: calendars
+    };
+  },
+
+  methods: {
+    /**
+     * Returns generated calendar url.
+     *
+     * @param calendar.
+     */
+    calendarUrl: function calendarUrl (calendar) {
+      var url = this.calendars[calendar].url;
+      var parameters = this.calendars[calendar].parameters(
+        this.formatString(this.title),
+        this.formatString(this.location),
+        this.formatString(this.details),
+        this.formatDate(this.start),
+        this.formatDate(this.end)
+      );
+
+      for (var key in parameters) {
+        if (parameters.hasOwnProperty(key) && parameters[key]) {
+          url += "&" + key + "=" + (parameters[key]);
+        }
+      }
+
+      return url;
+    },
+
+    formatString: function formatString (string) {
+      return encodeURIComponent(string).replace(/%20/g, '+');
+    },
+
+    formatDate: function formatDate (date) {
+      return date ? date.toISOString().replace(/-|:|\.\d+/g, '') : null;
+    }
+  },
+
+  mounted: function mounted () {
+    //
+  },
+
+  /**
+   * Set component aliases for buttons and links.
+   */
+  components: {
+    'google-calendar': {
+      mixins: [AddToCalendarMixin],
+      data: function () { return { calendar: 'google' }; }
+    },
+    'microsoft-calendar': {
+      mixins: [AddToCalendarMixin],
+      data: function () { return { calendar: 'microsoft' }; }
+    },
+    'office365-calendar': {
+      mixins: [AddToCalendarMixin],
+      data: function () { return { calendar: 'office365' }; }
+    }
+  }
+};
+
+AddToCalendar.version = '1.0.7';
+
+AddToCalendar.install = function (Vue) {
+  Vue.component('add-to-calendar', AddToCalendar);
+};
+
+if (typeof window !== 'undefined') {
+  window.AddToCalendar = AddToCalendar;
+}
+
+module.exports = AddToCalendar;
 
 /***/ }),
 

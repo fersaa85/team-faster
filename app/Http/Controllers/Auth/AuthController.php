@@ -43,7 +43,9 @@ class AuthController extends Controller
             ]);
 
         }else{
-            dd('stop');
+            return response()->json([
+                'message' => 'Ya te encuetras registrado'
+            ], 401);
         }
 
         return new UserResource($user);

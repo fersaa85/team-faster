@@ -22,39 +22,38 @@
     <div class="venues_photos">
       <div class="columns ">
         <template v-if="venues.length && Object.keys(workout).length">
-          <div v-for="venue in venues.slice(0, 3)" class="column is-clickable" style="position:relative;">
-            <b-image
-                    responsive
-                    :src="`/assets/img/${venue.thumbnail}`"
-                    ratio="1by1"
-            ></b-image>
-            <div class="text-photo-title venue-active">
-              {{ venue.name }}
-              <br>
+          <div v-for="(venue, key) in venues.slice(0, 3)" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
+            <div>
+              <b-image
+                      responsive
+                      :src="`/assets/img/${venue.thumbnail}`"
+                      ratio="1by1"
+              ></b-image>
+              <div class="text-photo-title venue-active">
+                {{ venue.name }}
+                <br>
 
-              <template v-if="venue.id == workout.venue.id">
-                <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
+                <template v-if="venue.id == workout.venue.id">
+                  <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
+                    ¡Regístrate ahora!
+                  </b-button>
+                </template>
+                <!--
+                <span class="puma-regular">
                   ¡Regístrate ahora!
-                </b-button>
-              </template>
-              <!--
-              <span class="puma-regular">
-                ¡Regístrate ahora!
-              </span>
-              -->
+                </span>
+                -->
+              </div>
+              <div class="text-photo-date">
+                {{ venue.workout ? venue.workout.date_start : '-' }}
+              </div>
             </div>
-            <div class="text-photo-date">
-              {{ venue.workout ? venue.workout.date_start : '-' }}
-            </div>
-            <!-- <div class="text-photo-register">
-              ¡registrate ahora!
-            </div> -->
           </div>
         </template>
       </div>
       <div class="columns">
         <template v-if="venues.length && Object.keys(workout).length">
-          <div v-for="venue in venues.slice(3, 6)" class="column is-clickable" style="position:relative;">
+          <div v-for="(venue, key)  in venues.slice(3, 6)" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
             <b-image
                     responsive
                     :src="`/assets/img/${venue.thumbnail}`"
@@ -126,7 +125,19 @@ export default {
         handleGoTo(e){
             e.preventDefault();
             this.$router.push('/registro');
-        }
+        },
+        setElement(el){
+            this.gsap.to(
+                el,
+                { autoAlpha: 0, scale:0.8, duration: 0}
+            );
+        },
+        showElement(el, delay){
+            this.gsap.to(
+                el,
+                { autoAlpha: 1, scale:1, duration: 3.5, delay:delay }
+            );
+        },
     }
 
 }
@@ -221,5 +232,60 @@ export default {
     padding-left: 20px;
     padding-top: 20px;
     color: #d700fb;
+  }
+
+  .venue0{
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+  }
+
+  .venue1{
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+  }
+
+  .venue2{
+    animation: fadein 3s;
+    -moz-animation: fadein 3s; /* Firefox */
+    -webkit-animation: fadein 3s; /* Safari and Chrome */
+    -o-animation: fadein 3s; /* Opera */
+  }
+
+
+  @keyframes fadein {
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  @-moz-keyframes fadein { /* Firefox */
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  @-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+      opacity:0;
+    }
+    to {
+      opacity:1;
+    }
+  }
+  @-o-keyframes fadein { /* Opera */
+    from {
+      opacity:0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 </style>

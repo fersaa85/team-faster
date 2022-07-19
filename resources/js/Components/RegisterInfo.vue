@@ -61,15 +61,6 @@
           </div>
         </div>
 
-
-        <!--
-        <div class="info-block is-hidden-mobile">
-          <p v-if="available" style="padding-top: 36px;"></p>
-          <p v-else class="soldOut puma-regular">
-            Lugares agotados
-          </p>
-        </div>
-        -->
       </div>
 
       <div class="is-hidden-mobile">

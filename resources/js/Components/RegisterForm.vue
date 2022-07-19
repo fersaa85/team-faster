@@ -81,7 +81,16 @@
       </b-field>
     </ValidationProvider>
     <div class="has-text-centered" style="padding-top: 36px;">
-      <b-button rounded class="register-button" @click="handleSubmit">
+      <vue-recaptcha
+         id="recaptcha"
+         sitekey="6LfAWP8gAAAAAGyhGMmUv2HzGiRGTU0bniSSHCO8"
+         @verify="verifyMethod"
+         @expired="expiredMethod"
+         @render="renderMethod"
+         @error="errorMethod"
+      >
+      </vue-recaptcha>
+      <b-button rounded class="register-button" @click="handleSubmit" :disabled="disabled">
         Registrarse
       </b-button>
     </div>
@@ -90,11 +99,13 @@
 
 <script>
   import { ValidationObserver, ValidationProvider } from "vee-validate";
+  import { VueRecaptcha } from 'vue-recaptcha';
   export default {
     name: 'registerForm',
     components: {
       ValidationObserver,
       ValidationProvider,
+      VueRecaptcha
     },
     data(){
 
@@ -104,6 +115,7 @@
         name: '',
         lastname: '',
         phone: '',
+        disabled: true,
       };
     },
     methods:{
@@ -123,7 +135,21 @@
                     console.log(error.response);
                     this.$emit('errors', error.response);
                 });
+        },
+        verifyMethod(e){
+            this.disabled = false;
+            console.log('verifyMethod', e);
+        },
+        expiredMethod(e){
+            console.log('expiredMethod', e);
+        },
+        renderMethod(e){
+            console.log('renderMethod', e);
+        },
+        errorMethod(e){
+            console.log('errorMethod', e);
         }
+
     }
   }
 </script>
