@@ -110,7 +110,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
   data: function data() {
@@ -136,6 +135,21 @@ __webpack_require__.r(__webpack_exports__);
     handleGoTo: function handleGoTo(e) {
       e.preventDefault();
       this.$router.push('/registro');
+    },
+    setElement: function setElement(el) {
+      this.gsap.to(el, {
+        autoAlpha: 0,
+        scale: 0.8,
+        duration: 0
+      });
+    },
+    showElement: function showElement(el, delay) {
+      this.gsap.to(el, {
+        autoAlpha: 1,
+        scale: 1,
+        duration: 3.5,
+        delay: delay
+      });
     }
   }
 });
@@ -158,7 +172,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".venues_photos[data-v-0629e8cd] {\n  margin: 0 20px;\n  padding: 20px;\n  background-color: black;\n}\n.venues[data-v-0629e8cd] {\n  background: linear-gradient(90deg, #60a8f7, rgb(144, 106, 245) 38%, #b935f2);\n}\n.title-venues[data-v-0629e8cd] {\n  font-size: 100px;\n  color: black;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-0629e8cd] {\n    font-size: 90px;\n    color: black;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-0629e8cd] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-0629e8cd] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-0629e8cd] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-0629e8cd] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-0629e8cd] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-0629e8cd] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.text-photo-title[data-v-0629e8cd] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  left: 0;\n  top: 50%;\n  text-transform: uppercase;\n  font-size: 18px;\n}\n.text-photo-title.two-lines[data-v-0629e8cd] {\n  top: 47%;\n}\n.text-photo-title.venue-active[data-v-0629e8cd] {\n  top: 47%;\n}\n.text-photo-title.venue-active-third[data-v-0629e8cd] {\n  top: 42%;\n}\n.text-photo-date[data-v-0629e8cd] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Regular\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: right;\n  left: 0;\n  bottom: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-right: 20px;\n  padding-bottom: 12px;\n}\n.text-photo-register[data-v-0629e8cd] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: left;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-left: 20px;\n  padding-top: 20px;\n  color: #d700fb;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".venues_photos[data-v-0629e8cd] {\n  margin: 0 20px;\n  padding: 20px;\n  background-color: black;\n}\n.venues[data-v-0629e8cd] {\n  background: linear-gradient(90deg, #60a8f7, rgb(144, 106, 245) 38%, #b935f2);\n}\n.title-venues[data-v-0629e8cd] {\n  font-size: 100px;\n  color: black;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-0629e8cd] {\n    font-size: 90px;\n    color: black;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-0629e8cd] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-0629e8cd] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-0629e8cd] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-0629e8cd] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-0629e8cd] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-0629e8cd] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.text-photo-title[data-v-0629e8cd] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  left: 0;\n  top: 50%;\n  text-transform: uppercase;\n  font-size: 18px;\n}\n.text-photo-title.two-lines[data-v-0629e8cd] {\n  top: 47%;\n}\n.text-photo-title.venue-active[data-v-0629e8cd] {\n  top: 47%;\n}\n.text-photo-title.venue-active-third[data-v-0629e8cd] {\n  top: 42%;\n}\n.text-photo-date[data-v-0629e8cd] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Regular\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: right;\n  left: 0;\n  bottom: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-right: 20px;\n  padding-bottom: 12px;\n}\n.text-photo-register[data-v-0629e8cd] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: left;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-left: 20px;\n  padding-top: 20px;\n  color: #d700fb;\n}\n.venue0[data-v-0629e8cd] {\n  animation: fadein-data-v-0629e8cd 1s;\n  -moz-animation: fadein-data-v-0629e8cd 1s; /* Firefox */\n  -webkit-animation: fadein-data-v-0629e8cd 1s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-0629e8cd 1s; /* Opera */\n}\n.venue1[data-v-0629e8cd] {\n  animation: fadein-data-v-0629e8cd 2s;\n  -moz-animation: fadein-data-v-0629e8cd 2s; /* Firefox */\n  -webkit-animation: fadein-data-v-0629e8cd 2s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-0629e8cd 2s; /* Opera */\n}\n.venue2[data-v-0629e8cd] {\n  animation: fadein-data-v-0629e8cd 3s;\n  -moz-animation: fadein-data-v-0629e8cd 3s; /* Firefox */\n  -webkit-animation: fadein-data-v-0629e8cd 3s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-0629e8cd 3s; /* Opera */\n}\n@keyframes fadein-data-v-0629e8cd {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@-webkit-keyframes fadein-data-v-0629e8cd { /* Safari and Chrome */\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -327,65 +341,71 @@ var render = function () {
         { staticClass: "columns " },
         [
           _vm.venues.length && Object.keys(_vm.workout).length
-            ? _vm._l(_vm.venues.slice(0, 3), function (venue) {
+            ? _vm._l(_vm.venues.slice(0, 3), function (venue, key) {
                 return _c(
                   "div",
                   {
                     staticClass: "column is-clickable",
+                    class: "venue" + key,
                     staticStyle: { position: "relative" },
                   },
                   [
-                    _c("b-image", {
-                      attrs: {
-                        responsive: "",
-                        src: "/assets/img/" + venue.thumbnail,
-                        ratio: "1by1",
-                      },
-                    }),
-                    _vm._v(" "),
                     _c(
                       "div",
-                      { staticClass: "text-photo-title venue-active" },
                       [
-                        _vm._v(
-                          "\n            " +
-                            _vm._s(venue.name) +
-                            "\n            "
-                        ),
-                        _c("br"),
+                        _c("b-image", {
+                          attrs: {
+                            responsive: "",
+                            src: "/assets/img/" + venue.thumbnail,
+                            ratio: "1by1",
+                          },
+                        }),
                         _vm._v(" "),
-                        venue.id == _vm.workout.venue.id
-                          ? [
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "register-button",
-                                  attrs: { rounded: "", size: "is-medium" },
-                                  on: { click: _vm.handleGoTo },
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                ¡Regístrate ahora!\n              "
+                        _c(
+                          "div",
+                          { staticClass: "text-photo-title venue-active" },
+                          [
+                            _vm._v(
+                              "\n              " +
+                                _vm._s(venue.name) +
+                                "\n              "
+                            ),
+                            _c("br"),
+                            _vm._v(" "),
+                            venue.id == _vm.workout.venue.id
+                              ? [
+                                  _c(
+                                    "b-button",
+                                    {
+                                      staticClass: "register-button",
+                                      attrs: { rounded: "", size: "is-medium" },
+                                      on: { click: _vm.handleGoTo },
+                                    },
+                                    [
+                                      _vm._v(
+                                        "\n                  ¡Regístrate ahora!\n                "
+                                      ),
+                                    ]
                                   ),
                                 ]
-                              ),
-                            ]
-                          : _vm._e(),
+                              : _vm._e(),
+                          ],
+                          2
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "text-photo-date" }, [
+                          _vm._v(
+                            "\n              " +
+                              _vm._s(
+                                venue.workout ? venue.workout.date_start : "-"
+                              ) +
+                              "\n            "
+                          ),
+                        ]),
                       ],
-                      2
+                      1
                     ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "text-photo-date" }, [
-                      _vm._v(
-                        "\n            " +
-                          _vm._s(
-                            venue.workout ? venue.workout.date_start : "-"
-                          ) +
-                          "\n          "
-                      ),
-                    ]),
-                  ],
-                  1
+                  ]
                 )
               })
             : _vm._e(),
@@ -398,11 +418,12 @@ var render = function () {
         { staticClass: "columns" },
         [
           _vm.venues.length && Object.keys(_vm.workout).length
-            ? _vm._l(_vm.venues.slice(3, 6), function (venue) {
+            ? _vm._l(_vm.venues.slice(3, 6), function (venue, key) {
                 return _c(
                   "div",
                   {
                     staticClass: "column is-clickable",
+                    class: "venue" + key,
                     staticStyle: { position: "relative" },
                   },
                   [

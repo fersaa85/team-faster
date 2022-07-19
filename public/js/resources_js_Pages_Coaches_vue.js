@@ -216,7 +216,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'venues'
+  name: 'venues',
+  mounted: function mounted() {
+    this.setElement(this.$refs.coach1);
+    this.showElement(this.$refs.coach1, 1 * 0.8);
+    this.setElement(this.$refs.coach2);
+    this.showElement(this.$refs.coach2, 2 * 0.8);
+    this.setElement(this.$refs.coach3);
+    this.showElement(this.$refs.coach3, 3 * 0.8);
+    this.setElement(this.$refs.coach4);
+    this.showElement(this.$refs.coach4, 4 * 0.8);
+    this.setElement(this.$refs.coach5);
+    this.showElement(this.$refs.coach5, 5 * 0.8);
+    this.setElement(this.$refs.coach6);
+    this.showElement(this.$refs.coach6, 6 * 0.8);
+    this.setElement(this.$refs.coach7);
+    this.showElement(this.$refs.coach7, 7 * 0.8);
+    this.setElement(this.$refs.coach8);
+    this.showElement(this.$refs.coach8, 8 * 0.8);
+    this.setElement(this.$refs.coach9);
+    this.showElement(this.$refs.coach9, 9 * 0.8);
+  },
+  methods: {
+    setElement: function setElement(el) {
+      this.gsap.to(el, {
+        autoAlpha: 0,
+        scale: 0.2,
+        duration: 0
+      });
+    },
+    showElement: function showElement(el, delay) {
+      this.gsap.to(el, {
+        autoAlpha: 1,
+        scale: 1,
+        duration: 2.5,
+        delay: delay,
+        ease: "elastic.out(1, 0.3)"
+      });
+    }
+  }
 });
 
 /***/ }),
@@ -405,7 +443,8 @@ var render = function () {
         _c(
           "div",
           {
-            staticClass: "column is-clickable img-container",
+            ref: "coach1",
+            staticClass: "column is-clickable img-container coach-1",
             staticStyle: { position: "relative", padding: "0" },
           },
           [
@@ -425,6 +464,7 @@ var render = function () {
         _c(
           "div",
           {
+            ref: "coach2",
             staticClass: "column is-clickable img-container",
             staticStyle: { position: "relative", padding: "0" },
           },
@@ -445,6 +485,7 @@ var render = function () {
         _c(
           "div",
           {
+            ref: "coach3",
             staticClass: "column is-clickable img-container",
             staticStyle: { position: "relative", padding: "0" },
           },
@@ -467,6 +508,7 @@ var render = function () {
         _c(
           "div",
           {
+            ref: "coach4",
             staticClass: "column is-clickable img-container",
             staticStyle: { position: "relative", padding: "0" },
           },
@@ -487,6 +529,7 @@ var render = function () {
         _c(
           "div",
           {
+            ref: "coach5",
             staticClass: "column is-clickable img-container",
             staticStyle: { position: "relative", padding: "0" },
           },
@@ -507,6 +550,7 @@ var render = function () {
         _c(
           "div",
           {
+            ref: "coach6",
             staticClass: "column is-clickable img-container",
             staticStyle: { position: "relative", padding: "0" },
           },
@@ -529,6 +573,7 @@ var render = function () {
         _c(
           "div",
           {
+            ref: "coach7",
             staticClass: "column is-clickable img-container",
             staticStyle: { position: "relative", padding: "0" },
           },
@@ -549,6 +594,7 @@ var render = function () {
         _c(
           "div",
           {
+            ref: "coach8",
             staticClass: "column is-clickable img-container",
             staticStyle: { position: "relative", padding: "0" },
           },
@@ -569,6 +615,7 @@ var render = function () {
         _c(
           "div",
           {
+            ref: "coach9",
             staticClass: "column is-clickable img-container",
             staticStyle: { position: "relative", padding: "0" },
           },

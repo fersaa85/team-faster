@@ -21,7 +21,7 @@
     </div>
     <div class="venues_photos">
       <div class="columns ">
-        <div class="column is-clickable img-container" style="position:relative; padding:0">
+        <div class="column is-clickable img-container coach-1" ref="coach1" style="position:relative; padding:0">
           <b-image
             responsive
             src="/assets/img/CARLOS-@charlie.ro22.jpg"
@@ -39,7 +39,7 @@
             </div>
           </div>
         </div>
-        <div class="column is-clickable img-container" style="position:relative; padding:0">
+        <div class="column is-clickable img-container" ref="coach2" style="position:relative; padding:0">
           <b-image
             responsive
             src="/assets/img/DAVID-@dmckniight.jpg"
@@ -57,7 +57,7 @@
             </div>
           </div>
         </div>
-        <div class="column is-clickable img-container" style="position:relative; padding:0">
+        <div class="column is-clickable img-container" ref="coach3" style="position:relative; padding:0">
           <b-image
             responsive
             src="/assets/img/FRANCHESCA-@franchescasb.jpg"
@@ -77,7 +77,7 @@
         </div>
       </div>
       <div class="columns">
-        <div class="column is-clickable img-container" style="position:relative; padding:0">
+        <div class="column is-clickable img-container" ref="coach4" style="position:relative; padding:0">
           <b-image
             responsive
             src="/assets/img/HOMERO-@HOMEROCASGRO.jpg"
@@ -95,7 +95,7 @@
             </div>
           </div>
         </div>
-        <div class="column is-clickable img-container" style="position:relative; padding:0">
+        <div class="column is-clickable img-container" ref="coach5" style="position:relative; padding:0">
           <b-image
             responsive
             src="/assets/img/JORGE-@jorgehuo.jpg"
@@ -113,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="column is-clickable img-container" style="position:relative; padding:0">
+        <div class="column is-clickable img-container" ref="coach6" style="position:relative; padding:0">
           <b-image
             responsive
             src="/assets/img/MAFER-@maferarreolaa.jpg"
@@ -133,7 +133,7 @@
         </div>
       </div>
       <div class="columns">
-        <div class="column is-clickable img-container" style="position:relative; padding:0">
+        <div class="column is-clickable img-container" ref="coach7" style="position:relative; padding:0">
           <b-image
             responsive
             src="/assets/img/PABLO-@pablohutt.jpg"
@@ -151,7 +151,7 @@
             </div>
           </div>
         </div>
-        <div class="column is-clickable img-container" style="position:relative; padding:0">
+        <div class="column is-clickable img-container" ref="coach8" style="position:relative; padding:0">
           <b-image
             responsive
             src="/assets/img/RAUL-@raul_vicotria_.jpg"
@@ -169,7 +169,7 @@
             </div>
           </div>
         </div>
-        <div class="column is-clickable img-container" style="position:relative; padding:0">
+        <div class="column is-clickable img-container" ref="coach9" style="position:relative; padding:0">
           <b-image
             responsive
             src="/assets/img/vlopez.jpg"
@@ -204,7 +204,45 @@
 
 <script>
 export default {
-  name: 'venues'
+  name: 'venues',
+  mounted(){
+      this.setElement(this.$refs.coach1);
+      this.showElement(this.$refs.coach1, (1*0.8));
+      this.setElement(this.$refs.coach2);
+      this.showElement(this.$refs.coach2, (2*0.8));
+      this.setElement(this.$refs.coach3);
+      this.showElement(this.$refs.coach3, (3*0.8));
+
+      this.setElement(this.$refs.coach4);
+      this.showElement(this.$refs.coach4, (4*0.8));
+      this.setElement(this.$refs.coach5);
+      this.showElement(this.$refs.coach5, (5*0.8));
+      this.setElement(this.$refs.coach6);
+      this.showElement(this.$refs.coach6, (6*0.8));
+
+
+      this.setElement(this.$refs.coach7);
+      this.showElement(this.$refs.coach7, (7*0.8));
+      this.setElement(this.$refs.coach8);
+      this.showElement(this.$refs.coach8, (8*0.8));
+      this.setElement(this.$refs.coach9);
+      this.showElement(this.$refs.coach9, (9*0.8));
+  },
+  methods:{
+      setElement(el){
+          this.gsap.to(
+              el,
+              { autoAlpha: 0, scale:0.2, duration: 0}
+          );
+      },
+      showElement(el, delay){
+          this.gsap.to(
+              el,
+              { autoAlpha: 1, scale:1, duration: 2.5, delay:delay, ease: "elastic.out(1, 0.3)"}
+          );
+      },
+  }
+
 }
 </script>
 <style lang="scss" scoped>
