@@ -215,6 +215,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
   mounted: function mounted() {
@@ -448,17 +469,28 @@ var render = function () {
             staticStyle: { position: "relative", padding: "0" },
           },
           [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/CARLOS-@charlie.ro22.jpg",
-                ratio: "1by1",
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/charlie.ro22/",
+                  target: "_blank",
+                },
               },
-            }),
-            _vm._v(" "),
-            _vm._m(1),
-          ],
-          1
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/CARLOS-@charlie.ro22.jpg",
+                    ratio: "1by1",
+                  },
+                }),
+                _vm._v(" "),
+                _vm._m(1),
+              ],
+              1
+            ),
+          ]
         ),
         _vm._v(" "),
         _c(
@@ -469,17 +501,28 @@ var render = function () {
             staticStyle: { position: "relative", padding: "0" },
           },
           [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/DAVID-@dmckniight.jpg",
-                ratio: "1by1",
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/dmckniight/",
+                  target: "_blank",
+                },
               },
-            }),
-            _vm._v(" "),
-            _vm._m(2),
-          ],
-          1
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/DAVID-@dmckniight.jpg",
+                    ratio: "1by1",
+                  },
+                }),
+                _vm._v(" "),
+                _vm._m(2),
+              ],
+              1
+            ),
+          ]
         ),
         _vm._v(" "),
         _c(
@@ -490,17 +533,28 @@ var render = function () {
             staticStyle: { position: "relative", padding: "0" },
           },
           [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/FRANCHESCA-@franchescasb.jpg",
-                ratio: "1by1",
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/franchescasb/",
+                  target: "_blank",
+                },
               },
-            }),
-            _vm._v(" "),
-            _vm._m(3),
-          ],
-          1
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/FRANCHESCA-@franchescasb.jpg",
+                    ratio: "1by1",
+                  },
+                }),
+                _vm._v(" "),
+                _vm._m(3),
+              ],
+              1
+            ),
+          ]
         ),
       ]),
       _vm._v(" "),
@@ -513,17 +567,28 @@ var render = function () {
             staticStyle: { position: "relative", padding: "0" },
           },
           [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/HOMERO-@HOMEROCASGRO.jpg",
-                ratio: "1by1",
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/homerocasgro/",
+                  target: "_blank",
+                },
               },
-            }),
-            _vm._v(" "),
-            _vm._m(4),
-          ],
-          1
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/HOMERO-@HOMEROCASGRO.jpg",
+                    ratio: "1by1",
+                  },
+                }),
+                _vm._v(" "),
+                _vm._m(4),
+              ],
+              1
+            ),
+          ]
         ),
         _vm._v(" "),
         _c(
@@ -534,17 +599,28 @@ var render = function () {
             staticStyle: { position: "relative", padding: "0" },
           },
           [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/JORGE-@jorgehuo.jpg",
-                ratio: "1by1",
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/jorgehuo/",
+                  target: "_blank",
+                },
               },
-            }),
-            _vm._v(" "),
-            _vm._m(5),
-          ],
-          1
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/JORGE-@jorgehuo.jpg",
+                    ratio: "1by1",
+                  },
+                }),
+                _vm._v(" "),
+                _vm._m(5),
+              ],
+              1
+            ),
+          ]
         ),
         _vm._v(" "),
         _c(
@@ -555,17 +631,28 @@ var render = function () {
             staticStyle: { position: "relative", padding: "0" },
           },
           [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/MAFER-@maferarreolaa.jpg",
-                ratio: "1by1",
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/maferarreolaa/",
+                  target: "_blank",
+                },
               },
-            }),
-            _vm._v(" "),
-            _vm._m(6),
-          ],
-          1
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/MAFER-@maferarreolaa.jpg",
+                    ratio: "1by1",
+                  },
+                }),
+                _vm._v(" "),
+                _vm._m(6),
+              ],
+              1
+            ),
+          ]
         ),
       ]),
       _vm._v(" "),
@@ -578,17 +665,28 @@ var render = function () {
             staticStyle: { position: "relative", padding: "0" },
           },
           [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/PABLO-@pablohutt.jpg",
-                ratio: "1by1",
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/pablohutt/",
+                  target: "_blank",
+                },
               },
-            }),
-            _vm._v(" "),
-            _vm._m(7),
-          ],
-          1
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/PABLO-@pablohutt.jpg",
+                    ratio: "1by1",
+                  },
+                }),
+                _vm._v(" "),
+                _vm._m(7),
+              ],
+              1
+            ),
+          ]
         ),
         _vm._v(" "),
         _c(
@@ -599,17 +697,28 @@ var render = function () {
             staticStyle: { position: "relative", padding: "0" },
           },
           [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/RAUL-@raul_vicotria_.jpg",
-                ratio: "1by1",
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/raul_victoria_/",
+                  target: "_blank",
+                },
               },
-            }),
-            _vm._v(" "),
-            _vm._m(8),
-          ],
-          1
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/RAUL-@raul_vicotria_.jpg",
+                    ratio: "1by1",
+                  },
+                }),
+                _vm._v(" "),
+                _vm._m(8),
+              ],
+              1
+            ),
+          ]
         ),
         _vm._v(" "),
         _c(
@@ -620,17 +729,28 @@ var render = function () {
             staticStyle: { position: "relative", padding: "0" },
           },
           [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/vlopez.jpg",
-                ratio: "1by1",
+            _c(
+              "a",
+              {
+                attrs: {
+                  href: "https://www.instagram.com/nv1ctus/",
+                  target: "_blank",
+                },
               },
-            }),
-            _vm._v(" "),
-            _vm._m(9),
-          ],
-          1
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/vlopez.jpg",
+                    ratio: "1by1",
+                  },
+                }),
+                _vm._v(" "),
+                _vm._m(9),
+              ],
+              1
+            ),
+          ]
         ),
       ]),
     ]),
@@ -660,13 +780,13 @@ var staticRenderFns = [
     return _c("div", { staticClass: "text-photo-title venue-active" }, [
       _c("div", { staticClass: "photo-info" }, [
         _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n              CARLOS\n            "),
+          _vm._v("\n                CARLOS\n              "),
         ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c("span", { staticClass: "puma-regular photo-info2" }, [
-          _vm._v("\n              @charlie.ro22\n            "),
+          _vm._v("\n                @charlie.ro22\n              "),
         ]),
       ]),
     ])
@@ -678,13 +798,13 @@ var staticRenderFns = [
     return _c("div", { staticClass: "text-photo-title venue-active" }, [
       _c("div", { staticClass: "photo-info" }, [
         _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n              DAVID\n            "),
+          _vm._v("\n                DAVID\n              "),
         ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c("span", { staticClass: "puma-regular photo-info2" }, [
-          _vm._v("\n              @dmckniight\n            "),
+          _vm._v("\n                @dmckniight\n              "),
         ]),
       ]),
     ])
@@ -699,13 +819,13 @@ var staticRenderFns = [
       [
         _c("div", { staticClass: "photo-info" }, [
           _c("span", { staticClass: "photo-info1" }, [
-            _vm._v("\n              FRANCHESCA\n            "),
+            _vm._v("\n                FRANCHESCA\n              "),
           ]),
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
           _c("span", { staticClass: "puma-regular photo-info2" }, [
-            _vm._v("\n              @franchescasb\n            "),
+            _vm._v("\n                @franchescasb\n              "),
           ]),
         ]),
       ]
@@ -718,13 +838,13 @@ var staticRenderFns = [
     return _c("div", { staticClass: "text-photo-title" }, [
       _c("div", { staticClass: "photo-info" }, [
         _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n              HOMERO\n            "),
+          _vm._v("\n                HOMERO\n              "),
         ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c("span", { staticClass: "puma-regular photo-info2" }, [
-          _vm._v("\n              @homerocasgro\n            "),
+          _vm._v("\n                @homerocasgro\n              "),
         ]),
       ]),
     ])
@@ -736,13 +856,13 @@ var staticRenderFns = [
     return _c("div", { staticClass: "text-photo-title" }, [
       _c("div", { staticClass: "photo-info" }, [
         _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n              JORGE\n            "),
+          _vm._v("\n                JORGE\n              "),
         ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c("span", { staticClass: "puma-regular photo-info2" }, [
-          _vm._v("\n              @jorgehuo\n            "),
+          _vm._v("\n                @jorgehuo\n              "),
         ]),
       ]),
     ])
@@ -754,13 +874,13 @@ var staticRenderFns = [
     return _c("div", { staticClass: "text-photo-title venue-active" }, [
       _c("div", { staticClass: "photo-info" }, [
         _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n              MAFER\n            "),
+          _vm._v("\n                MAFER\n              "),
         ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c("span", { staticClass: "puma-regular photo-info2" }, [
-          _vm._v("\n              @maferarreolaa\n            "),
+          _vm._v("\n                @maferarreolaa\n              "),
         ]),
       ]),
     ])
@@ -772,13 +892,13 @@ var staticRenderFns = [
     return _c("div", { staticClass: "text-photo-title" }, [
       _c("div", { staticClass: "photo-info" }, [
         _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n              PABLO\n            "),
+          _vm._v("\n                PABLO\n              "),
         ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c("span", { staticClass: "puma-regular photo-info2" }, [
-          _vm._v("\n              @pablohutt\n            "),
+          _vm._v("\n                @pablohutt\n              "),
         ]),
       ]),
     ])
@@ -790,13 +910,13 @@ var staticRenderFns = [
     return _c("div", { staticClass: "text-photo-title two-lines" }, [
       _c("div", { staticClass: "photo-info" }, [
         _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n              RAÚL\n            "),
+          _vm._v("\n                RAÚL\n              "),
         ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c("span", { staticClass: "puma-regular photo-info2" }, [
-          _vm._v("\n              @raul_vicotria\n            "),
+          _vm._v("\n                @raul_vicotria\n              "),
         ]),
       ]),
     ])
@@ -808,13 +928,13 @@ var staticRenderFns = [
     return _c("div", { staticClass: "text-photo-title two-lines" }, [
       _c("div", { staticClass: "photo-info" }, [
         _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n              Victor López\n            "),
+          _vm._v("\n                Victor López\n              "),
         ]),
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
         _c("span", { staticClass: "puma-regular photo-info2" }, [
-          _vm._v("\n              @nv1ctus\n            "),
+          _vm._v("\n                @nv1ctus\n              "),
         ]),
       ]),
     ])
@@ -830,7 +950,78 @@ var staticRenderFns = [
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "column tm-puma has-text-right" }, [
-          _vm._v("\n        redes\n      "),
+          _c(
+            "a",
+            {
+              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+              attrs: {
+                href: "https://www.facebook.com/PUMAMexico",
+                target: "_blank",
+              },
+            },
+            [
+              _c("img", {
+                attrs: {
+                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
+                  width: "30px",
+                },
+              }),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+              attrs: {
+                href: "https://twitter.com/pumamexico/",
+                target: "_blank",
+              },
+            },
+            [
+              _c("img", {
+                attrs: {
+                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
+                  width: "30px",
+                },
+              }),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+              attrs: {
+                href: "https://www.instagram.com/pumamexico/",
+                target: "_blank",
+              },
+            },
+            [
+              _c("img", {
+                attrs: {
+                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
+                  width: "30px",
+                },
+              }),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+              attrs: { href: "https://www.youtube.com/puma", target: "_blank" },
+            },
+            [
+              _c("img", {
+                attrs: {
+                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
+                  width: "30px",
+                },
+              }),
+            ]
+          ),
         ]),
       ]),
     ])

@@ -24,11 +24,13 @@
           ></b-image>
         </div>
         <div class="clip">
-          <b-image
-            responsive
-            :src="'/assets/img/'+ info.map"
-            ratio="15by13"
-          ></b-image>
+          <a :href="info.google_maps" target="_blank">
+            <b-image
+                    responsive
+                    :src="'/assets/img/'+ info.map"
+                    ratio="15by13"
+            ></b-image>
+          </a>
         </div>
         <div class="tm-puma has-text-right">
           @2022 puma. Todos los derechos reservados
@@ -69,6 +71,7 @@
           coach: '',
           photo: '',
           map: '',
+          google_maps: '',
           available:true
         }
       };
@@ -85,6 +88,7 @@
                     coach:  data.coatch.name,
                     photo: data.venue.image,
                     map: data.venue.image_map,
+                    google_maps: data.venue.google_maps,
                     available: true
                 });
 
