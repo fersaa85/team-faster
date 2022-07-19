@@ -13,6 +13,6 @@
         <app></app>
         </div>
 
-        <script src="{{ mix('js/app.js') }}"></script>
+        <script src="{{ mix('js/app.js') }}?v=0.1"></script>
     </body>
 </html>

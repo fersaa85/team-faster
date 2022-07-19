@@ -1,15 +1,18 @@
 <template>
   <div class="home">
     <div class="first-section">
-      <b-image
-        responsive
-        class="fondo-home"
-        src="/assets/img/FONDO_HOME.jpg"
-        ratio="300by170"
-        style="margin-top: 0px;"
-      ></b-image>
+      <div ref="fondoInicio">
+        <b-image
+          responsive
+          class="fondo-home"
+          src="/assets/img/FONDO_HOME.jpg"
+          ratio="300by170"
+          style="margin-top: 0px;"
+          @load="loadfondoHome"
+        ></b-image>
+      </div>
       <div class="logo-container">
-        <div class="logo-galery">
+        <div class="logo-galery" ref="logoInicio">
           <b-image
             responsive
             src="/assets/img/logoTeamFaster.png"
@@ -32,11 +35,13 @@
         <div class="columns">
           <div class="column">
             <div class="gotica-italic join-text">
-              <div>
-                <span>Únete</span>
-                <span class="join-txt-2 txt-al">al</span>
+              <div ref="uneteAl">
+                <div>
+                  <span>Únete</span>
+                  <span class="join-txt-2 txt-al">al</span>
+                </div>
               </div>
-              <div>
+              <div ref="teamFaster">
                 <span class="join-txt-2 team-txt">Team</span>
                 <span>
                   Faster
@@ -53,12 +58,12 @@
           </div>
           <div class="column gotica-italic">
             <div class="join-text-r1">
-              Fuente de Xochipili
+              {{ info.name }}
             </div>
             <div class="join-text-r2">
-              30 de julio
+              {{ info.fecha }}
             </div>
-            <div>
+            <div ref="buttonRegistrarse">
               <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
                   Registrarse
               </b-button>
@@ -69,16 +74,16 @@
     </div>
       <div class="vertical-sect coaches2 is-hidden-tablet gotica-italic">
           <div class="coaches-text">
-            <div class="coaches-text1">
+            <div ref="coachesText1" class="coaches-text1">
               Nuestros
             </div>
-            <div class="coaches-text2">
+            <div ref="coachesText2" class="coaches-text2">
               Coaches
             </div>
-            <div class="coaches-text3">
+            <div ref="coachesText3" class="coaches-text3">
               Están listos...
             </div>
-            <div class="coaches-text4">
+            <div ref="coachesText4" class="coaches-text4">
               ¡Acepta el reto!
             </div>
           </div>
@@ -161,16 +166,16 @@
         </div>
         <div class="column coaches2 is-hidden-mobile">
           <div class="coaches-text">
-            <div class="coaches-text1">
+            <div ref="coachesText1D" class="coaches-text1">
               Nuestros
             </div>
-            <div class="coaches-text2">
+            <div ref="coachesText2D" class="coaches-text2">
               Coaches
             </div>
-            <div class="coaches-text3">
+            <div ref="coachesText3D" class="coaches-text3">
               Están listos...
             </div>
-            <div class="coaches-text4">
+            <div ref="coachesText4D" class="coaches-text4">
               ¡Acepta el reto!
             </div>
           </div>
@@ -286,7 +291,7 @@
     </div>
     <div class="gallery-container">
       <div class="logo-container">
-        <div class="logo-galery">
+        <div ref="logoGalery" class="logo-galery">
           <b-image
             responsive
             src="/assets/img/logoTeamFaster.png"
@@ -366,10 +371,10 @@
               Tenemos un objetivo “compartir la pasión del entrenamiento en un lugar increíble con una ambiente relajado y guiado por coaches que harán de tu sesión la mejor forma de catalizar tu energía”.
             </div>
             <div class="team-fast gotica-italic">
-              <div>
+              <div ref="teamFast1">
                 ¡Forma parte
               </div>
-              <div>
+              <div ref="teamFast2">
                 del
                 <span>
                   Team Faster!
@@ -387,7 +392,11 @@
         </div>
         <div class="column tm-puma has-text-right">
 
-          
+          <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png"  width="30px"/></a>
+          <a href="https://twitter.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png"  width="30px"/></a>
+          <a href="https://www.instagram.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png"  width="30px"/></a>
+          <a href="https://www.youtube.com/puma" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png"  width="30px"/></a>
+
         </div>
       </div>
     </div>
@@ -399,19 +408,267 @@
 export default {
   name: 'home',
 
+    data(){
+      return {
+          info:{}
+      };
+    },
     mounted() {
+      this.setLogoInicio();
+      this.setFondoInicio();
+      this.setWelcome();
+      // this.setuneteAl();
+      this.setTeamFaster();
+      this.setTitleVenue();
+      this.setCoachesText();
+      this.setCoachesImg();
+      this.setVive();
         axios
             .get('api/workout')
-            .then(({ data }) => {
-               console.log(data);
+            .then(({ data: { data } }) => {
+                this.info = Object.assign({}, {
+                    name: data.venue.name,
+                    fecha: data.date_start,
+                    lugar: data.venue.address,
+                    tipo:  data.description,
+                    coach:  data.coatch.name,
+                    photo: data.venue.image,
+                    map: data.venue.image_map,
+                    available: true
+                });
             });
     },
 
     methods:{
+      // setuneteAl(){
+      //   this.gsap.from(this.$refs.uneteAl, {
+      //     scrollTrigger: this.$refs.uneteAl, // start the animation when ".box" enters the viewport (once)
+      //     y:100,
+      //     autoAlpha:0,
+      //     duration:1,
+      //     delay:0.2,
+      //     ease: "Power2.easeOut"
+      //   });
+      // },
+      setTeamFaster(){
+        this.gsap.from(".join-text", {
+          scrollTrigger: ".join-text-r2", // start the animation when ".box" enters the viewport (once)
+          x:-100,
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.2,
+          ease: "Power2.easeOut"
+        });
+      },
+      setTitleVenue(){
+        this.gsap.from(".join-text-r1", {
+          scrollTrigger: ".join-text-r2", // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.8,
+          ease: "Power2.easeIn"
+        });
+        this.gsap.from(".join-text-r2", {
+          scrollTrigger: ".join-text-r2", // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.8,
+          ease: "Power2.easeIn"
+        });
+        this.gsap.from(this.$refs.buttonRegistrarse, {
+          scrollTrigger: this.$refs.buttonRegistrarse, // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.8,
+          y:50,
+          ease: "Power2.easeOut"
+        });
+      },
+      setCoachesText(){
+        this.gsap.from(this.$refs.coachesText1, {
+          scrollTrigger: this.$refs.coachesText1,
+          autoAlpha:0,
+          duration:0.8,
+          x:-80,
+          ease: "Power2.easeOut"
+        });
+        this.gsap.from(this.$refs.coachesText2, {
+          scrollTrigger: this.$refs.coachesText2,
+          autoAlpha:0,
+          duration:0.8,
+          x:80,
+          delay:0.4,
+          ease: "Power2.easeOut"
+        });
+        this.gsap.from(this.$refs.coachesText3, {
+          scrollTrigger: this.$refs.coachesText3, // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.6,
+          ease: "Power2.easeIn"
+        });
+        this.gsap.from(this.$refs.coachesText4, {
+          scrollTrigger:this.$refs.coachesText4, // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.8,
+          y:80,
+          ease: "Power2.easeOut"
+        });
+        this.gsap.from(this.$refs.coachesText1D, {
+          scrollTrigger: this.$refs.coachesText1D,
+          autoAlpha:0,
+          duration:0.8,
+          x:-80,
+          delay:0,
+          ease: "Power2.easeOut"
+        });
+        this.gsap.from(this.$refs.coachesText2D, {
+          scrollTrigger: this.$refs.coachesText2D,
+          autoAlpha:0,
+          duration:0.8,
+          x:80,
+          delay:0.4,
+          ease: "Power2.easeOut"
+        });
+        this.gsap.from(this.$refs.coachesText3D, {
+          scrollTrigger: this.$refs.coachesText3D, // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.6,
+          ease: "Power2.easeIn"
+        });
+        this.gsap.from(this.$refs.coachesText4D, {
+          scrollTrigger:this.$refs.coachesText4D, // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.8,
+          y:80,
+          ease: "Power2.easeOut"
+        });
+      },
+      setCoachesImg(){
+        this.gsap.from(".coaches1", {
+          scrollTrigger:{
+            trigger:this.$refs.coachesText4D, // start the animation when ".box" enters the viewport (once)
+            toggleActions: "play complete reverse"
+          },
+          duration:1.5,
+          delay:0.5,
+          yPercent:-37,
+          ease: "Power2.easeOut"
+        });
+      },
+      setVive(){
+        this.gsap.from(".section-venues1", {
+          scrollTrigger: ".section-venues1", // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.6,
+          scaleX:0.9,
+          scaleY:0.9,
+          delay:0.4,
+          ease: "Power2.easeIn"
+        });
+        this.gsap.from(".section-venues2", {
+          scrollTrigger: ".section-venues2", // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.6,
+          delay:1,
+          ease: "Power2.easeIn"
+        });
+        this.gsap.from(".section-venues-down-img", {
+          scrollTrigger: ".section-galery-up-txt3", // start the animation when ".box" enters the viewport (once)
+          duration:0.6,
+          delay:1,
+          scaleX:1.2,
+          scaleY:1.2,
+        });
+        this.gsap.from(this.$refs.logoGalery, {
+          scrollTrigger: this.$refs.logoGalery, // start the animation when ".box" enters the viewport (once)
+          duration:0.6,
+          delay:0.2,
+          scaleX:0,
+          scaleY:0,
+          autoAlpha:0,
+        });
+        this.gsap.from(".cdmx-gallery", {
+          scrollTrigger: ".cdmx-gallery", // start the animation when ".box" enters the viewport (once)
+          duration:0.6,
+          autoAlpha:0,
+          delay:0.2,
+          ease: "Power2.easeIn"
+        });
+        this.gsap.from(".section-galery-up-txt3", {
+          scrollTrigger: this.$refs.logoGalery, // start the animation when ".box" enters the viewport (once)
+          duration:0.6,
+          autoAlpha:0,
+          delay:0.4,
+          x:80,
+          ease: "Power2.easeIn"
+        });
+        this.gsap.from(this.$refs.teamFast1, {
+          scrollTrigger: this.$refs.teamFast1, // start the animation when ".box" enters the viewport (once)
+          duration:0.6,
+          autoAlpha:0,
+          delay:0.2,
+          y:-50,
+          ease: "Power2.easeOut"
+        });
+        this.gsap.from(this.$refs.teamFast2, {
+          scrollTrigger: this.$refs.teamFast2, // start the animation when ".box" enters the viewport (once)
+          duration:0.6,
+          autoAlpha:0,
+          delay:0.6,
+          x:-50,
+          ease: "Power2.easeOut"
+        });
+      },
         handleGoTo(e){
             e.preventDefault();
             this.$router.push('/registro');
-        }
+        },
+        loadfondoHome(){
+          console.log('loadfondoHome');
+          this.showFondoInicio();
+          this.showLogoInicio();
+        },
+
+        setLogoInicio(){
+          this.gsap.to(
+            this.$refs.logoInicio,
+            {autoAlpha: 0, duration: 0, scaleX:0, scaleY:0 }
+          );
+        },
+        setFondoInicio(){
+          console.log('fondoInicio');
+          this.gsap.to(
+            this.$refs.fondoInicio,
+            {autoAlpha: 0, duration: 0 }
+          );
+        },
+        setWelcome(){
+          this.gsap.to(
+            ".welcome",
+            {autoAlpha: 0, duration: 0, y:400, }
+          );
+        },
+
+        showFondoInicio(){
+          this.gsap.to(
+            this.$refs.fondoInicio,
+            {autoAlpha: 1, duration: 0.8, ease: "Power2.easeIn" }
+          );
+        },
+        showLogoInicio(){
+          this.gsap.to(
+            this.$refs.logoInicio,
+            {autoAlpha: 1, duration: 0.8, scaleX:1, scaleY:1, delay:0.2, ease: "Power2.easeOut", onComplete: this.showWelcome }
+          );
+        },
+        showWelcome(){
+          this.gsap.to(
+            ".welcome",
+            {autoAlpha: 1, duration: 1, y:0, ease: "Power2.easeOut" }
+          );
+        },
     }
 }
 </script>
@@ -924,7 +1181,6 @@ export default {
       font-size: 180px;
       line-height: 150px;
       background: linear-gradient(#7391f6, 62%, #b737f2);
-      -webkit-background-clip: text;
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
