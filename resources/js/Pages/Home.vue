@@ -67,9 +67,7 @@
         </div>
       </div>
     </div>
-    <div class="vertical-sect section-coaches gotica-italic">
-      <div class="columns">
-        <div class="column coaches2 is-hidden-tablet">
+      <div class="vertical-sect coaches2 is-hidden-tablet gotica-italic">
           <div class="coaches-text">
             <div class="coaches-text1">
               Nuestros
@@ -85,6 +83,8 @@
             </div>
           </div>
         </div>
+    <div class="vertical-sect section-coaches gotica-italic">
+      <div class="columns">
         <div class="column coaches1">
           <div class="columns is-multiline" style="margin: 0;">
             <div class="column is-6" style="padding:0">
@@ -108,49 +108,49 @@
                 ratio="1by1"       
               ></b-image>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
                 src="/assets/img/PABLO-@pablohutt.jpg"
                 ratio="1by1"       
               ></b-image>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
                 src="/assets/img/HOMERO-@HOMEROCASGRO.jpg"
                 ratio="1by1"       
               ></b-image>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
                 src="/assets/img/CARLOS-@charlie.ro22.jpg"
                 ratio="1by1"       
               ></b-image>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
                 src="/assets/img/DAVID-@dmckniight.jpg"
                 ratio="1by1"       
               ></b-image>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
                 src="/assets/img/RAUL-@raul_vicotria_.jpg"
                 ratio="1by1"       
               ></b-image>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
                 src="/assets/img/vlopez.jpg"
                 ratio="1by1"       
               ></b-image>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
                 src="/assets/img/JORGE-@jorgehuo.jpg"
@@ -204,61 +204,71 @@
       <div class="section-venues-down-text">
         CDMX
       </div>
-      <div class="columns section-venues-down-img">
-        <div class="column" style="position: relative;">
+      <div class="columns section-venues-down-img is-mobile is-multiline ">
+        <div class="column is-4-mobile" style="position: relative;">
           <b-image
             responsive
             src="/assets/img/FuenteXochipili.jpg"
             ratio="2by4"
-            style="margin-top: 150px;"
+            class="img1-v"
           ></b-image>
-          <div class="venue-name pos-1">
+          <!--
+          <div class="venue-name pos-1 is-hidden-mobile">
             Fuente de Xochipili
           </div>
+          -->
         </div>
-        <div class="column" style="position: relative;">
+        <div class="column is-4-mobile" style="position: relative;">
           <b-image
             responsive
             src="/assets/img/FotoSantaFe.jpg"
             ratio="2by4"
-            style="margin-top: 120px;"
+            class="img2-v"
           ></b-image>
-          <div class="venue-name pos-2">
+          <!--
+          <div class="venue-name pos-2 is-hidden-mobile">
             Foro Santa Fe
           </div>
+          -->
         </div>
-        <div class="column" style="position: relative;">
+        <div class="column is-4-mobile" style="position: relative;">
           <b-image
             responsive
             src="/assets/img/ArtzPedregal.jpg"
             ratio="2by5"
-            style="margin-top: 90px;"
+            class="img3-v"
           ></b-image>
-          <div class="venue-name pos-3">
+          <!--
+          <div class="venue-name pos-3 is-hidden-mobile">
             Artz Pedregal
           </div>
+          -->
         </div>
-        <div class="column" style="position: relative;">
+        <div class="column is-4-mobile" style="position: relative;">
           <b-image
             responsive
             src="/assets/img/JardinBotanico.jpg"
             ratio="2by5"
-            style="margin-top: 60px;"
+            class="img4-v"
           ></b-image>
-          <div class="venue-name pos-4">
+          <!--
+          <div class="venue-name pos-4 is-hidden-mobile">
             Jardin Botánico Chapultepec
           </div>
+          -->
         </div>
         <div class="column" style="position: relative;">
           <b-image
             responsive
             src="/assets/img/MonumentoRevolucion.jpg"
             ratio="2by5"
-            style="margin-top: 30px;"
+            class="img5-v"
           ></b-image>
-          <div class="venue-name pos-5">
+          <!--
+          <div class="venue-name pos-5 is-hidden-mobile">
             Monumento a la Revolución
           </div>
+          -->
         </div>
         <div class="column" style="position: relative;">
           <b-image
@@ -266,9 +276,11 @@
             src="/assets/img/CarcamoDolores.jpg"
             ratio="2by5"
           ></b-image>
-          <div class="venue-name pos-6">
+          <!--
+          <div class="venue-name pos-6 is-hidden-mobile">
             Cárcamo de Dolores
           </div>
+          -->
         </div>
       </div>
     </div>
@@ -302,21 +314,23 @@
       </div>
       <div class="section-galery-down mobile-section">
         <div class="columns">
-          <div class="column" style="position: relative;">
+          <div class="column is-hidden-mobile" style="position: relative;">
             <b-image
               responsive
               src="/assets/img/model1.jpg"
               ratio="88by78"
               style="margin-top: 89px;"
+              class="model-1"
             ></b-image>
             <div class="over-photo">
             </div>
           </div>
-          <div class="column" style="position: relative;">
+          <div class="column" style="position: relative; overflow: hidden;">
             <b-image
               responsive
               src="/assets/img/model2.jpg"
               ratio="6by5"
+              class="model-2"
             ></b-image>
             <div class="over-photo">
             </div>
@@ -372,7 +386,8 @@
           @2022 puma. Todos los derechos reservados
         </div>
         <div class="column tm-puma has-text-right">
-          redes
+
+          
         </div>
       </div>
     </div>
@@ -409,22 +424,7 @@ export default {
   .first-section{
     position: relative;
     height: 830px;
-    // @media screen and (max-width: 768px) {
-    //   height: 951px;
-    //   .fondo-home{
-    //     padding-top: 70% !important;
-    //     padding-left: 10%;
-    //     width: 112%;
-    //   }
-    // }
-    // @media screen and (max-width: 768px) {
-    //   height: 1004px;
-    //   .fondo-home{
-    //     padding-top: 74% !important;
-    //     padding-left: 10%;
-    //     width: 112%;
-    //   }
-    // }
+    overflow: hidden;
     @media screen and (max-width: 768px) {
       height: 1080px;
       .fondo-home{
@@ -487,11 +487,54 @@ export default {
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
     }
+    @media screen and (max-width: 768px) {
+      clip-path: none;
+      height: 100%;
+      margin-top: -26%;
+    }
+    @media screen and (max-width: 687px) {
+      margin-top: -28%;
+    }
+    @media screen and (max-width: 635px) {
+      margin-top: -30%;
+    }
+    @media screen and (max-width: 599px) {
+      margin-top: -32%;
+    }
+    @media screen and (max-width: 561px) {
+      margin-top: -34%;
+    }
+    @media screen and (max-width: 527px) {
+      margin-top: -36%;
+    }
+    @media screen and (max-width: 527px) {
+      margin-top: -38%;
+    }
+    @media screen and (max-width: 469px) {
+      margin-top: -40%;
+    }
+    @media screen and (max-width: 443px) {
+      margin-top: -43%;
+    }
+    @media screen and (max-width: 415px) {
+      margin-top: -46%;
+    }
+    @media screen and (max-width: 387px) {
+      margin-top: -49%;
+    }
+  }
     .coaches2{
       padding-top: 207px !important;
       background: linear-gradient(135deg, #60a8f7, rgba(144,106,245,1) 38%, #b935f2);
       height: 915px;
-      .coaches-text{
+      @media screen and (max-width: 768px) {
+        padding-top: 230px !important;
+        clip-path: polygon(0 19%, 100% 0%, 100% 85%, 0% 100%);
+        z-index: 1;
+        position: relative;
+        height: 750px !important;
+      }
+    .coaches-text{
         padding-right: 52px !important;
       }
       @media screen and (max-width: 1080px) {
@@ -524,6 +567,10 @@ export default {
         font-size: 120px;
         line-height: 120px;
       }
+      @media screen and (max-width: 768px) {
+        font-size: 90px;
+        line-height: 90px;
+      }
     }
     .coaches-text2{
       color: white;
@@ -540,6 +587,10 @@ export default {
       }
       @media screen and (max-width: 850px) {
         font-size: 150px;
+        line-height: 82px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 130px;
         line-height: 82px;
       }
     }
@@ -564,6 +615,10 @@ export default {
         padding-left: 0px;
         text-align: right;
       }
+      @media screen and (max-width: 768px) {
+        font-size: 80px;
+        line-height: 103px;
+      }
     }
     .coaches-text4{
       color: white;
@@ -586,8 +641,11 @@ export default {
         font-size: 50px;
         line-height: 4px;
       }
+      @media screen and (max-width: 768px) {
+        padding-left: 0;
+        padding-right: 4%;
+      }
     }
-  }
   .section-venues-up{
     height: 950px;
     background: #5fa9f7;
@@ -604,7 +662,7 @@ export default {
       padding-top: 208px;
     }
     @media screen and (max-width: 768px) {
-      padding-top: 150px;
+      padding-top: 110px;
     }
     .section-venues1{
       font-size: 180px;
@@ -622,6 +680,11 @@ export default {
       @media screen and (max-width: 850px) {
         font-size: 150px;
         line-height: 120px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-right: 6%;
+        font-size: 120px;
+        line-height: 90px;
       }
     }
     .section-venues2{
@@ -642,6 +705,9 @@ export default {
       @media screen and (max-width: 850px) {
         font-size: 50px;
         line-height: 50px;
+      }
+      @media screen and (max-width: 768px) {
+        padding-top: 45px !important;
       }
       span{
         font-size: 120px;
@@ -664,9 +730,86 @@ export default {
     height: 950px;
     margin-top: -500px !important;
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
+    @media screen and (max-width: 768px) {
+      height: 237vw;
+      clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 768px) {
+      height: 235vw;
+      clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 693px) {
+      height: 233vw;
+      clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 643px) {
+      height: 230vw;
+      clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 585px) {
+      height: 227vw;
+      clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 539px) {
+      height: 224vw;
+      clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 493px) {
+      height: 221vw;
+      clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 459px) {
+      height: 219vw;
+      clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 428px) {
+      height: 216vw;
+      clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 406px) {
+      height: 213vw;
+      clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 378px) {
+      height: 210vw;
+      clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 350px) {
+      height: 207vw;
+      clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
+    }
+    @media screen and (max-width: 338px) {
+      height: 202vw;
+      clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
+    }
     .section-venues-down-img{
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
+      @media screen and (min-width: 769px) {
+        .img1-v{
+          margin-top: 150px;
+        }
+        .img2-v{
+          margin-top: 120px;
+        }
+        .img3-v{
+          margin-top: 90px;
+        }
+        .img4-v{
+          margin-top: 60px;
+        }
+        .img5-v{
+          margin-top: 30px;
+        }
+      }
+      @media screen and (max-width: 768px) {
+        .img1-v{
+          padding-top: 250% !important;
+        }
+        .img2-v{
+          padding-top: 250% !important;
+        }
+      }
     }
     .venue-name{
       color: white;
@@ -730,13 +873,45 @@ export default {
       @media screen and (max-width: 829px) {
         padding-top: 7.2%;
         font-size: 175px;
-      } 
+      }
+      @media screen and (max-width: 768px) {
+        padding-top: 59%;
+        font-size: 225px;
+      }
+      @media screen and (max-width: 635px) {
+        padding-top: 57%;
+        font-size: 225px;
+      }
+      @media screen and (max-width: 580px) {
+        padding-top: 55%;
+        font-size: 225px;
+      }
+      @media screen and (max-width: 520px) {
+        padding-top: 53%;
+        font-size: 225px;
+      }
+      @media screen and (max-width: 450px) {
+        padding-top: 48%;
+        font-size: 225px;
+      }
+      @media screen and (max-width: 400px) {
+        padding-top: 45%;
+        font-size: 210px;
+      }
+      @media screen and (max-width: 370px) {
+        padding-top: 42%;
+        font-size: 210px;
+      }
+      @media screen and (max-width: 337px) {
+        padding-top: 39%;
+        font-size: 200px;
+      }
     }
   .second-section{
     background: black;
     background: linear-gradient(60deg, black, rgba(185, 53, 242, 1) 40%, #446fa9);
     height: 750px;
-    // margin-top: -336px !important;
+    margin-top: -7.5% !important;
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     position: relative;
     .logoPuma{
@@ -768,7 +943,7 @@ export default {
       @media screen and (max-width: 768px) {
         font-size: 95px;
         line-height: 60px;
-        padding-top: 197px;
+        padding-top: 170px;
       }
     }
     .join-txt-2{
@@ -811,20 +986,34 @@ export default {
     }
     .join-text-r1{
       padding-top: 189px;
+      padding-left: 4px;
+      padding-right: 4px;
       color: white;
       font-size: 150px;
       line-height: 150px;
-      @media screen and (max-width: 1080px) {
+      @media screen and (max-width: 1391px) {
         font-size: 140px;
         line-height: 140px;
       }
-      @media screen and (max-width: 980px) {
+      @media screen and (max-width: 1273px) {
         font-size: 130px;
         line-height: 130px;
       }
-      @media screen and (max-width: 850px) {
+      @media screen and (max-width: 1225px) {
         font-size: 120px;
         line-height: 120px;
+      }
+      @media screen and (max-width: 1100px) {
+        font-size: 100px;
+        line-height: 100px;
+      }
+      @media screen and (max-width: 986px) {
+        font-size: 90px;
+        line-height: 90px;
+      }
+      @media screen and (max-width: 860px) {
+        font-size: 80px;
+        line-height: 90px;
       }
       @media screen and (max-width: 768px) {
         padding-top: 30px;
@@ -881,29 +1070,32 @@ export default {
       left: 0;
       background: linear-gradient(-159deg, transparent, 60%, #110315);
     }
-    @media screen and (max-width: 1800px) {
-      margin-top: -1% !important;
+    @media screen and (max-width: 1857px) {
+      margin-top: -8% !important;
     }
-    @media screen and (max-width: 1762px) {
-      margin-top: -2% !important;
+    @media screen and (max-width: 1764px) {
+      margin-top: -8.5% !important;
     }
-    @media screen and (max-width: 1734px) {
-      margin-top: -3% !important;
-    }
+    // @media screen and (max-width: 1734px) {
+    //   margin-top: -3% !important;
+    // }
     @media screen and (max-width: 1704px) {
-      margin-top: -4% !important;
+      margin-top: -9% !important;
     }
     @media screen and (max-width: 1680px) {
-      margin-top: -5% !important;
+      margin-top: -9% !important;
     }
     @media screen and (max-width: 1639px) {
-      margin-top: -6% !important;
+      margin-top: -9% !important;
     }
     @media screen and (max-width: 1612px) {
-      margin-top: -7% !important;
+      margin-top: -9% !important;
+    }
+    @media screen and (max-width: 1595px) {
+      margin-top: -10% !important;
     }
     @media screen and (max-width: 1576px) {
-      margin-top: -9% !important;
+      margin-top: -10% !important;
     }
     @media screen and (max-width: 1529px) {
       margin-top: -11% !important;
@@ -963,64 +1155,61 @@ export default {
       margin-top: -73% !important;
     }
     @media screen and (max-width: 768px) {
-      margin-top: -78% !important;
+      margin-top: -40% !important;
     }
     @media screen and (max-width: 766px) {
-      margin-top: -81% !important;
-    }
-    @media screen and (max-width: 750px) {
-      margin-top: -85% !important;
-    }
-    @media screen and (max-width: 730px) {
-      margin-top: -89% !important;
-    }
-    @media screen and (max-width: 710px) {
-      margin-top: -93% !important;
-    }
-    @media screen and (max-width: 691px) {
-      margin-top: -97% !important;
+      margin-top: -40% !important;
     }
     @media screen and (max-width: 673px) {
-      margin-top: -100% !important;
+      margin-top: -40% !important;
     }
-    @media screen and (max-width: 661px) {
-      margin-top: -104% !important;
+    @media screen and (max-width: 652px) {
+      margin-top: -60% !important;
     }
-    @media screen and (max-width: 646px) {
-      margin-top: -111% !important;
+    @media screen and (max-width: 594px) {
+      margin-top: -70% !important;
     }
-    @media screen and (max-width: 621px) {
-      margin-top: -115% !important;
+    @media screen and (max-width: 568px) {
+      margin-top: -90% !important;
     }
-    @media screen and (max-width: 607px) {
+    @media screen and (max-width: 523px) {
+      margin-top: -110% !important;
+    }
+    @media screen and (max-width: 468px) {
       margin-top: -120% !important;
     }
-    @media screen and (max-width: 592px) {
-      margin-top: -125% !important;
+    @media screen and (max-width: 452px) {
+      margin-top: -130% !important;
     }
-    @media screen and (max-width: 577px) {
-      margin-top: -134% !important;
-    }
-    @media screen and (max-width: 566px) {
+    @media screen and (max-width: 436px) {
       margin-top: -140% !important;
     }
-    @media screen and (max-width: 551px) {
-      margin-top: -145% !important;
-    }
-    @media screen and (max-width: 539px) {
+    @media screen and (max-width: 424px) {
       margin-top: -150% !important;
     }
-    @media screen and (max-width: 527px) {
-      margin-top: -155% !important;
-    }
-    @media screen and (max-width: 515px) {
+    @media screen and (max-width: 400px) {
       margin-top: -160% !important;
     }
-    @media screen and (max-width: 506px) {
-      margin-top: -175% !important;
+    @media screen and (max-width: 392px) {
+      margin-top: -180% !important;
+    }
+    @media screen and (max-width: 380px) {
+      margin-top: -180% !important;
     }
     @media screen and (max-width: 373px) {
       margin-top: -190% !important;
+    }
+    @media screen and (max-width: 360px) {
+      margin-top: -200% !important;
+    }
+    @media screen and (max-width: 352px) {
+      margin-top: -210% !important;
+    }
+    @media screen and (max-width: 344px) {
+      margin-top: -220% !important;
+    }
+    @media screen and (max-width: 332px) {
+      margin-top: -230% !important;
     }
   }
   .mobile-section{
@@ -1101,9 +1290,18 @@ export default {
         @media screen and (max-width: 867px) {
           top: 200px;
         }
+        @media screen and (max-width: 768px) {
+          top: 330px;
+        }
+        @media screen and (max-width: 689px) {
+          top: 350px;
+        }
         .logo-galery{
           width: 20%;
           margin: auto;
+          @media screen and (max-width: 768px) {
+            width: 30%;
+          }
         }
       }
       .cdmx-gallery{
@@ -1127,11 +1325,21 @@ export default {
           margin-top: -30px;
           font-size: 125px;
         }
-
+        @media screen and (max-width: 768px) {
+          margin-top: -30px;
+          font-size: 100px;
+        }
+        @media screen and (max-width: 768px) {
+          margin-top: -30px;
+          font-size: 100px;
+        }
       }
     }
   .section-galery-up{
     background: #c625f2;
+    @media screen and (max-width: 768px) {
+      clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
+    }
     .container-txt1{
       padding-top: 158px !important;
       @media screen and (max-width: 1207px) {
@@ -1186,9 +1394,14 @@ export default {
         font-size: 130px;
         line-height: 62px;
       }
+      @media screen and (max-width: 768px) {
+        margin: 0 1%;
+        line-height: 80px;
+        text-align: center ;
+        padding-top: 65px;
+      }
     }
     .section-galery-up-txt2{
-      color: black;
       color: black;
       font-size: 120px;
       line-height: 133px;
@@ -1218,6 +1431,14 @@ export default {
         font-size: 60px;
         line-height: 73px;
       }
+      @media screen and (max-width: 890px) {
+        font-size: 60px;
+        line-height: 73px;
+      }
+      @media screen and (max-width: 890px) {
+        font-size: 60px;
+        line-height: 78px;
+      }
     }
     .section-galery-up-txt3{
       color: black;
@@ -1236,10 +1457,119 @@ export default {
         padding-top: 9% !important;
         font-size: 22px;
       }
+      @media screen and (max-width: 768px) {
+        text-align: center;
+        margin-left:1%;
+        margin-right:1%;
+        width: 100%;
+        padding-top: 46% !important;
+      }
+      @media screen and (max-width: 689px) {
+        padding-top: 48% !important;
+      }
+      @media screen and (max-width: 597px) {
+        padding-top: 52% !important;
+      }
+      @media screen and (max-width: 514px) {
+        padding-top: 55% !important;
+      }
+      @media screen and (max-width: 514px) {
+        padding-top: 60% !important;
+      }
+      @media screen and (max-width: 453px) {
+        padding-top: 70% !important;
+      }
     }
   }
   .section-galery-down{
     background: #c625f2;
+    @media screen and (max-width: 768px) {
+      margin-top: -24% !important ;
+      .model-2{
+        padding-top: 153% !important;
+      }
+    }
+    @media screen and (max-width: 717px) {
+      .model-2{
+        padding-top: 200% !important;
+        width: 116%;
+      }
+    }
+    @media screen and (max-width: 600px) {
+      .model-2{
+        padding-top: 212% !important;
+        width: 179%;
+      }
+    }
+    @media screen and (max-width: 447px) {
+      .model-2{
+        padding-top: 235% !important;
+        width: 179%;
+      }
+    }
+    @media screen and (max-width: 408px) {
+      .model-2{
+        padding-top: 255% !important;
+        width: 190%;
+      }
+    }
+    @media screen and (max-width: 377px) {
+      .model-2{
+        padding-top: 275% !important;
+        width: 190%;
+      }
+    }
+    @media screen and (max-width: 346px) {
+      .model-2{
+        padding-top: 295% !important;
+        width: 190%;
+      }
+    }
+    @media screen and (max-width: 752px) {
+      margin-top: -25% !important ;
+    }
+    @media screen and (max-width: 717px) {
+      margin-top: -26% !important ;
+    }
+    @media screen and (max-width: 692px) {
+      margin-top: -27% !important ;
+    }
+    @media screen and (max-width: 669px) {
+      margin-top: -28% !important ;
+    }
+    @media screen and (max-width: 647px) {
+      margin-top: -29% !important ;
+    }
+    @media screen and (max-width: 620px) {
+      margin-top: -31% !important ;
+    }
+    @media screen and (max-width: 583px) {
+      margin-top: -34% !important ;
+    }
+    @media screen and (max-width: 530px) {
+      margin-top: -36% !important ;
+    }
+    @media screen and (max-width: 502px) {
+      margin-top: -40% !important ;
+    }
+    @media screen and (max-width: 447px) {
+      margin-top: -43% !important ;
+    }
+    @media screen and (max-width: 420px) {
+      margin-top: -46% !important ;
+    }
+    @media screen and (max-width: 392px) {
+      margin-top: -49% !important ;
+    }
+    @media screen and (max-width: 365px) {
+      margin-top: -53% !important ;
+    }
+    @media screen and (max-width: 353px) {
+      margin-top: -56% !important ;
+    }
+    @media screen and (max-width: 325px) {
+      margin-top: -61% !important ;
+    }
     .over-photo{
       position: absolute;
       width: 100%;
@@ -1268,6 +1598,28 @@ export default {
     @media screen and (max-width: 890px) {
       padding-top:22% ;
     }
+    @media screen and (max-width: 768px) {
+      margin-top: -36% !important ;
+      height: 1000px;
+    }
+    @media screen and (max-width: 474px) {
+      margin-top: -38% !important ;
+    }
+    @media screen and (max-width: 450px) {
+      margin-top: -45% !important ;
+    }
+    @media screen and (max-width: 383px) {
+      margin-top: -49% !important ;
+    }
+    @media screen and (max-width: 346px) {
+      margin-top: -52% !important ;
+    }
+    @media screen and (max-width: 324px) {
+      margin-top: -65% !important ;
+    }
+    @media screen and (max-width: 308px) {
+      margin-top: -80% !important ;
+    }
     .logo-container{
       top: 40%;
       position: absolute;
@@ -1294,9 +1646,16 @@ export default {
       @media screen and (max-width: 890px) {
         top: 29%;
       }
+      @media screen and (max-width: 768px) {
+        position:relative ;
+        width: 100%;
+      }
       .logo-styles{
         width: 50%;
         margin: auto;
+        @media screen and (max-width: 768px) {
+          width: 25%;
+        }
       }
     }
     .section-team1{
@@ -1328,6 +1687,28 @@ export default {
         font-size: 60px;
         line-height: 73px;
       }
+      @media screen and (max-width: 768px) {
+        font-size: 60px;
+        line-height: 73px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 26px;
+      }
+      @media screen and (max-width: 568px) {
+        margin-top: 20px;
+      }
+      @media screen and (max-width: 568px) {
+        margin-top: 30px;
+      }
+      @media screen and (max-width: 468px) {
+        margin-top: 50px;
+      }
+      @media screen and (max-width: 388px) {
+        margin-top: 70px;
+      }
+      @media screen and (max-width: 308px) {
+        margin-top: 90px;
+      }
     }
     .section-team-cont{
       background: linear-gradient(#4b85c3,black);
@@ -1350,6 +1731,9 @@ export default {
       }
       @media screen and (max-width: 987px) {
         font-size: 18px;
+      }
+      @media screen and (max-width: 768px) {
+        padding-top: 50px;
       }
       .team-fast{
         font-size: 80px;
@@ -1402,7 +1786,7 @@ export default {
   }
   .welcome{
     position: absolute;
-    bottom: -10vw;
+    bottom: -9vw;
     right: 0;
     width: 30%;
     height: 524px;
@@ -1450,6 +1834,11 @@ export default {
     }
     @media screen and (max-width: 808px) {
       bottom: 28vw;
+    }
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      top: 70vw;
+      height: 80vh;
     }
 
     .color-white{
