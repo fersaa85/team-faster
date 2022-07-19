@@ -46,6 +46,7 @@
             :coach="info.coach"
             :photo="info.photo"
             :map="info.map"
+            :couches="info.couches"
             :available="info.available"
           />
         </div>
@@ -83,6 +84,7 @@
                 this.info = Object.assign({}, {
                     name: data.venue.name,
                     fecha: data.date_start,
+                    couches: data.couches ? JSON.parse(data.couches) : [],
                     lugar: data.venue.address,
                     tipo:  data.description,
                     coach:  data.coatch.name,
