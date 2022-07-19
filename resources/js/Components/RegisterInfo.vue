@@ -49,19 +49,6 @@
             </div>
           </div>
 
-          <template v-if="couches && couches.length">
-            <div class="column">
-              <div class="info-block">
-                <p class="info-block-title">
-                  Coaches participantes
-                </p>
-                <p v-for="coach in couches" class="info-block-text">
-                  {{ coach }}
-                </p>
-              </div>
-            </div>
-          </template>
-          <template v-else>
             <div class="column">
               <div class="info-block">
                 <p class="info-block-title">
@@ -72,7 +59,6 @@
                 </p>
               </div>
             </div>
-          </template>
 
         </div>
 
