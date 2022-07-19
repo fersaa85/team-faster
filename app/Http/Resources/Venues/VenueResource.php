@@ -26,6 +26,7 @@ class VenueResource extends JsonResource
             'image' => $this->image,
             'image_map' => $this->image_map,
             'thumbnail' => $this->thumbnail,
+            'google_maps' => $this->google_maps,
             'workout' => Workout::where('venue_id', $this->id)->first()
         ];
     }

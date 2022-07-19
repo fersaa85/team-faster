@@ -458,6 +458,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'registro',
@@ -474,6 +476,7 @@ __webpack_require__.r(__webpack_exports__);
         coach: '',
         photo: '',
         map: '',
+        google_maps: '',
         available: true
       }
     };
@@ -491,6 +494,7 @@ __webpack_require__.r(__webpack_exports__);
         coach: data.coatch.name,
         photo: data.venue.image,
         map: data.venue.image_map,
+        google_maps: data.venue.google_maps,
         available: true
       });
       console.log(_this.info);
@@ -1396,20 +1400,22 @@ var render = function () {
           1
         ),
         _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "clip" },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/" + _vm.info.map,
-                ratio: "15by13",
-              },
-            }),
-          ],
-          1
-        ),
+        _c("div", { staticClass: "clip" }, [
+          _c(
+            "a",
+            { attrs: { href: _vm.info.google_maps, target: "_blank" } },
+            [
+              _c("b-image", {
+                attrs: {
+                  responsive: "",
+                  src: "/assets/img/" + _vm.info.map,
+                  ratio: "15by13",
+                },
+              }),
+            ],
+            1
+          ),
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "tm-puma has-text-right" }, [
           _vm._v("\n        @2022 puma. Todos los derechos reservados\n      "),
