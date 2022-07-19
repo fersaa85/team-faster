@@ -26,12 +26,14 @@
             ></b-image>
           </div>
           <div class="clip" ref="img2">
-            <b-image
-              responsive
-              :src="'/assets/img/'+ info.map"
-              ratio="15by13"
-              @load="load2"
-            ></b-image>
+            <a :href="info.google_maps" target="_blank">
+              <b-image
+                      responsive
+                      :src="'/assets/img/'+ info.map"
+                      ratio="15by13"
+                      @load="load2"
+              ></b-image>
+            </a>
           </div>
         </div>
         <div v-show="!info || !info.photo" class="emptyPhoto">
@@ -50,6 +52,7 @@
             :coach="info.coach"
             :photo="info.photo"
             :map="info.map"
+            :couches="info.couches"
             :available="info.available"
           />
         </div>
@@ -75,6 +78,7 @@
           coach: '',
           photo: '',
           map: '',
+          google_maps: '',
           available:true
         }
       };
@@ -88,11 +92,13 @@
                 this.info = Object.assign({}, {
                     name: data.venue.name,
                     fecha: data.date_start,
+                    couches: data.couches ? JSON.parse(data.couches) : [],
                     lugar: data.venue.address,
                     tipo:  data.description,
                     coach:  data.coatch.name,
                     photo: data.venue.image,
                     map: data.venue.image_map,
+                    google_maps: data.venue.google_maps,
                     available: true
                 });
 

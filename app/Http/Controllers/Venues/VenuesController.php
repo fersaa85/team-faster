@@ -11,6 +11,6 @@ class VenuesController extends Controller
 {
   public function __invoke()
   {
-      return new VenueResourceCollection(Venue::get());
+      return new VenueResourceCollection(Venue::orderBy('order', 'ASC')->get());
   }
 }
