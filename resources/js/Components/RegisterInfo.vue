@@ -49,16 +49,17 @@
             </div>
           </div>
 
-          <div class="column">
-            <div class="info-block">
-              <p class="info-block-title">
-                Coach participante
-              </p>
-              <p class="info-block-text">
-                {{ coach }}
-              </p>
+            <div class="column">
+              <div class="info-block">
+                <p class="info-block-title">
+                  Coach participante
+                </p>
+                <p class="info-block-text">
+                  {{ coach }}
+                </p>
+              </div>
             </div>
-          </div>
+
         </div>
 
       </div>
@@ -114,6 +115,10 @@ import RegisterForm from '../Components/RegisterForm.vue';
       available: {
         type: Boolean,
         required: true
+      },
+      couches: {
+          type: Array,
+          defautl: () => []
       }
     },
     data(){
