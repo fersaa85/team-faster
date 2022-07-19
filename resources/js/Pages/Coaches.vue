@@ -22,180 +22,212 @@
     <div class="venues_photos">
       <div class="columns ">
         <div class="column is-clickable img-container coach-1" ref="coach1" style="position:relative; padding:0">
-          <b-image
-            responsive
-            src="/assets/img/CARLOS-@charlie.ro22.jpg"
-            ratio="1by1"
-          ></b-image>
-          <div class="text-photo-title venue-active">
-            <div class="photo-info">
-              <span class="photo-info1">
-                CARLOS
-              </span>
-              <br>
-              <span class="puma-regular photo-info2">
-                @charlie.ro22
-              </span>
+          <a href="https://www.instagram.com/charlie.ro22" target="_blank">
+            <b-image
+              responsive
+              src="/assets/img/CARLOS-@charlie.ro22.jpg"
+              ratio="1by1"
+              @load="loadedImg1"
+            ></b-image>
+            <div class="text-photo-title venue-active">
+              <div class="photo-info">
+                <span class="photo-info1">
+                  CARLOS
+                </span>
+                <br>
+                <span class="puma-regular photo-info2">
+                  @charlie.ro22
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="column is-clickable img-container" ref="coach2" style="position:relative; padding:0">
-          <b-image
-            responsive
-            src="/assets/img/DAVID-@dmckniight.jpg"
-            ratio="1by1"
-          ></b-image>
-          <div class="text-photo-title venue-active">
-            <div class="photo-info">
-              <span class="photo-info1">
-                DAVID
-              </span>
-              <br>
-              <span class="puma-regular photo-info2">
-                @dmckniight
-              </span>
+          <a href="https://www.instagram.com/dmckniight" target="_blank">
+            <b-image
+              responsive
+              src="/assets/img/DAVID-@dmckniight.jpg"
+              ratio="1by1"
+              @load="loadedImg2"
+            ></b-image>
+            <div class="text-photo-title venue-active">
+              <div class="photo-info">
+                <span class="photo-info1">
+                  DAVID
+                </span>
+                <br>
+                <span class="puma-regular photo-info2">
+                  @dmckniight
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="column is-clickable img-container" ref="coach3" style="position:relative; padding:0">
-          <b-image
-            responsive
-            src="/assets/img/FRANCHESCA-@franchescasb.jpg"
-            ratio="1by1"
-          ></b-image>
-          <div class="text-photo-title two-lines venue-active-third">
-            <div class="photo-info">
-              <span class="photo-info1">
-                FRANCHESCA
-              </span>
-              <br>
-              <span class="puma-regular photo-info2">
-                @franchescasb
-              </span>
+          <a href="https://www.instagram.com/franchescasb" target="_blank">
+            <b-image
+              responsive
+              src="/assets/img/FRANCHESCA-@franchescasb.jpg"
+              ratio="1by1"
+              @load="loadedImg3"
+            ></b-image>
+            <div class="text-photo-title two-lines venue-active-third">
+              <div class="photo-info">
+                <span class="photo-info1">
+                  FRANCHESCA
+                </span>
+                <br>
+                <span class="puma-regular photo-info2">
+                  @franchescasb
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="columns">
         <div class="column is-clickable img-container" ref="coach4" style="position:relative; padding:0">
-          <b-image
-            responsive
-            src="/assets/img/HOMERO-@HOMEROCASGRO.jpg"
-            ratio="1by1"
-          ></b-image>
-          <div class="text-photo-title">
-            <div class="photo-info">
-              <span class="photo-info1">
-                HOMERO
-              </span>
-              <br>
-              <span class="puma-regular photo-info2">
-                @homerocasgro
-              </span>
+          <a href="https://www.instagram.com/HOMEROCASGRO" target="_blank">
+            <b-image
+              responsive
+              src="/assets/img/HOMERO-@HOMEROCASGRO.jpg"
+              ratio="1by1"
+              @load="loadedImg4"
+            ></b-image>
+            <div class="text-photo-title">
+              <div class="photo-info">
+                <span class="photo-info1">
+                  HOMERO
+                </span>
+                <br>
+                <span class="puma-regular photo-info2">
+                  @homerocasgro
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="column is-clickable img-container" ref="coach5" style="position:relative; padding:0">
-          <b-image
-            responsive
-            src="/assets/img/JORGE-@jorgehuo.jpg"
-            ratio="1by1"
-          ></b-image>
-          <div class="text-photo-title">
-            <div class="photo-info">
-              <span class="photo-info1">
-                JORGE
-              </span>
-              <br>
-              <span class="puma-regular photo-info2">
-                @jorgehuo
-              </span>
+          <a href="https://www.instagram.com/jorgehuo" target="_blank">
+            <b-image
+              responsive
+              src="/assets/img/JORGE-@jorgehuo.jpg"
+              ratio="1by1"
+              @load="loadedImg5"
+            ></b-image>
+            <div class="text-photo-title">
+              <div class="photo-info">
+                <span class="photo-info1">
+                  JORGE
+                </span>
+                <br>
+                <span class="puma-regular photo-info2">
+                  @jorgehuo
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="column is-clickable img-container" ref="coach6" style="position:relative; padding:0">
-          <b-image
-            responsive
-            src="/assets/img/MAFER-@maferarreolaa.jpg"
-            ratio="1by1"
-          ></b-image>
-          <div class="text-photo-title venue-active">
-            <div class="photo-info">
-              <span class="photo-info1">
-                MAFER
-              </span>
-              <br>
-              <span class="puma-regular photo-info2">
-                @maferarreolaa
-              </span>
+          <a href="https://www.instagram.com/maferarreolaa" target="_blank">
+            <b-image
+              responsive
+              src="/assets/img/MAFER-@maferarreolaa.jpg"
+              ratio="1by1"
+              @load="loadedImg6"
+            ></b-image>
+            <div class="text-photo-title venue-active">
+              <div class="photo-info">
+                <span class="photo-info1">
+                  MAFER
+                </span>
+                <br>
+                <span class="puma-regular photo-info2">
+                  @maferarreolaa
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <div class="columns">
         <div class="column is-clickable img-container" ref="coach7" style="position:relative; padding:0">
-          <b-image
-            responsive
-            src="/assets/img/PABLO-@pablohutt.jpg"
-            ratio="1by1"
-          ></b-image>
-          <div class="text-photo-title">
-            <div class="photo-info">
-              <span class="photo-info1">
-                PABLO
-              </span>
-              <br>
-              <span class="puma-regular photo-info2">
-                @pablohutt
-              </span>
+          <a href="https://www.instagram.com/pablohutt" target="_blank">
+            <b-image
+              responsive
+              src="/assets/img/PABLO-@pablohutt.jpg"
+              ratio="1by1"
+              @load="loadedImg7"
+            ></b-image>
+            <div class="text-photo-title">
+              <div class="photo-info">
+                <span class="photo-info1">
+                  PABLO
+                </span>
+                <br>
+                <span class="puma-regular photo-info2">
+                  @pablohutt
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="column is-clickable img-container" ref="coach8" style="position:relative; padding:0">
-          <b-image
-            responsive
-            src="/assets/img/RAUL-@raul_vicotria_.jpg"
-            ratio="1by1"
-          ></b-image>
-          <div class="text-photo-title two-lines">
-            <div class="photo-info">
-              <span class="photo-info1">
-                RAÚL
-              </span>
-              <br>
-              <span class="puma-regular photo-info2">
-                @raul_vicotria
-              </span>
+          <a href="https://www.instagram.com/raul_victoria_" target="_blank">
+            <b-image
+              responsive
+              src="/assets/img/RAUL-@raul_vicotria_.jpg"
+              ratio="1by1"
+              @load="loadedImg8"
+            ></b-image>
+            <div class="text-photo-title two-lines">
+              <div class="photo-info">
+                <span class="photo-info1">
+                  RAÚL
+                </span>
+                <br>
+                <span class="puma-regular photo-info2">
+                  @raul_victoria_
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
         <div class="column is-clickable img-container" ref="coach9" style="position:relative; padding:0">
-          <b-image
-            responsive
-            src="/assets/img/vlopez.jpg"
-            ratio="1by1"
-          ></b-image>
-          <div class="text-photo-title two-lines">
-            <div class="photo-info">
-              <span class="photo-info1">
-                Victor López
-              </span>
-              <br>
-              <span class="puma-regular photo-info2">
-                @nv1ctus
-              </span>
+          <a href="https://www.instagram.com/nv1ctus" target="_blank">
+            <b-image
+              responsive
+              src="/assets/img/vlopez.jpg"
+              ratio="1by1"
+              @load="loadedImg9"
+            ></b-image>
+            <div class="text-photo-title two-lines">
+              <div class="photo-info">
+                <span class="photo-info1">
+                  Victor López
+                </span>
+                <br>
+                <span class="puma-regular photo-info2">
+                  @nv1ctus
+                </span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
     <div class="footer-styles">
-      <div class="columns">
-        <div class="column tm-puma has-text-left">
+      <div class="columns" style="margin: 0;">
+        <div class="column tm-puma has-text-left" >
           @2022 puma. Todos los derechos reservados
         </div>
         <div class="column tm-puma has-text-right">
-          redes
+
+          <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png"  width="30px"/></a>
+          <a href="https://twitter.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png"  width="30px"/></a>
+          <a href="https://www.instagram.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png"  width="30px"/></a>
+          <a href="https://www.youtube.com/puma" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png"  width="30px"/></a>
+
         </div>
       </div>
     </div>
@@ -207,32 +239,50 @@ export default {
   name: 'venues',
   mounted(){
       this.setElement(this.$refs.coach1);
-      this.showElement(this.$refs.coach1, (1*0.8));
+      
       this.setElement(this.$refs.coach2);
-      this.showElement(this.$refs.coach2, (2*0.8));
       this.setElement(this.$refs.coach3);
-      this.showElement(this.$refs.coach3, (3*0.8));
 
       this.setElement(this.$refs.coach4);
-      this.showElement(this.$refs.coach4, (4*0.8));
       this.setElement(this.$refs.coach5);
-      this.showElement(this.$refs.coach5, (5*0.8));
       this.setElement(this.$refs.coach6);
-      this.showElement(this.$refs.coach6, (6*0.8));
-
 
       this.setElement(this.$refs.coach7);
-      this.showElement(this.$refs.coach7, (7*0.8));
       this.setElement(this.$refs.coach8);
-      this.showElement(this.$refs.coach8, (8*0.8));
       this.setElement(this.$refs.coach9);
-      this.showElement(this.$refs.coach9, (9*0.8));
   },
   methods:{
+    loadedImg1(){
+      this.showElement(this.$refs.coach1, (1*0.8));
+    },
+    loadedImg2(){
+      this.showElement(this.$refs.coach2, (2*0.8));
+    },
+    loadedImg3(){
+      this.showElement(this.$refs.coach3, (3*0.8));
+    },
+    loadedImg4(){
+      this.showElement(this.$refs.coach4, (4*0.8));
+    },
+    loadedImg5(){
+      this.showElement(this.$refs.coach5, (5*0.8));
+    },
+    loadedImg6(){
+      this.showElement(this.$refs.coach6, (6*0.8));
+    },
+    loadedImg7(){
+      this.showElement(this.$refs.coach7, (7*0.8));
+    },
+    loadedImg8(){
+      this.showElement(this.$refs.coach8, (8*0.8));
+    },
+    loadedImg9(){
+      this.showElement(this.$refs.coach9, (9*0.8));
+    },
       setElement(el){
           this.gsap.to(
               el,
-              { autoAlpha: 0, scale:0.2, duration: 0}
+              { autoAlpha: 0, scale:0.5, duration: 0}
           );
       },
       showElement(el, delay){
@@ -261,7 +311,6 @@ export default {
     text-align: right;
     @media screen and (max-width: 768px) {
       font-size: 90px;
-      color: black;
       line-height: 80px;
       text-align: center;
     }
