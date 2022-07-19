@@ -268,6 +268,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'registerInfo',
@@ -298,6 +313,12 @@ __webpack_require__.r(__webpack_exports__);
     available: {
       type: Boolean,
       required: true
+    },
+    couches: {
+      type: Array,
+      defautl: function defautl() {
+        return [];
+      }
     }
   },
   data: function data() {
@@ -460,6 +481,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'registro',
@@ -489,6 +511,7 @@ __webpack_require__.r(__webpack_exports__);
       _this.info = Object.assign({}, {
         name: data.venue.name,
         fecha: data.date_start,
+        couches: data.couches ? JSON.parse(data.couches) : [],
         lugar: data.venue.address,
         tipo: data.description,
         coach: data.coatch.name,
@@ -1255,35 +1278,73 @@ var render = function () {
             ]),
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "columns" }, [
-            _c("div", { staticClass: "column" }, [
-              _c("div", { staticClass: "info-block" }, [
-                _c("p", { staticClass: "info-block-title" }, [
-                  _vm._v("\n              Experiencia workout\n            "),
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "info-block-text" }, [
-                  _vm._v(
-                    "\n              " + _vm._s(_vm.tipo) + "\n            "
-                  ),
-                ]),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "column" }, [
-              _c("div", { staticClass: "info-block" }, [
-                _c("p", { staticClass: "info-block-title" }, [
-                  _vm._v("\n              Coach participante\n            "),
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "info-block-text" }, [
-                  _vm._v(
-                    "\n              " + _vm._s(_vm.coach) + "\n            "
-                  ),
+          _c(
+            "div",
+            { staticClass: "columns" },
+            [
+              _c("div", { staticClass: "column" }, [
+                _c("div", { staticClass: "info-block" }, [
+                  _c("p", { staticClass: "info-block-title" }, [
+                    _vm._v("\n              Experiencia workout\n            "),
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "info-block-text" }, [
+                    _vm._v(
+                      "\n              " + _vm._s(_vm.tipo) + "\n            "
+                    ),
+                  ]),
                 ]),
               ]),
-            ]),
-          ]),
+              _vm._v(" "),
+              _vm.couches && _vm.couches.length
+                ? [
+                    _c("div", { staticClass: "column" }, [
+                      _c(
+                        "div",
+                        { staticClass: "info-block" },
+                        [
+                          _c("p", { staticClass: "info-block-title" }, [
+                            _vm._v(
+                              "\n                Coaches participantes\n              "
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _vm._l(_vm.couches, function (coach) {
+                            return _c("p", { staticClass: "info-block-text" }, [
+                              _vm._v(
+                                "\n                " +
+                                  _vm._s(coach) +
+                                  "\n              "
+                              ),
+                            ])
+                          }),
+                        ],
+                        2
+                      ),
+                    ]),
+                  ]
+                : [
+                    _c("div", { staticClass: "column" }, [
+                      _c("div", { staticClass: "info-block" }, [
+                        _c("p", { staticClass: "info-block-title" }, [
+                          _vm._v(
+                            "\n                Coach participante\n              "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("p", { staticClass: "info-block-text" }, [
+                          _vm._v(
+                            "\n                " +
+                              _vm._s(_vm.coach) +
+                              "\n              "
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                  ],
+            ],
+            2
+          ),
         ]),
         _vm._v(" "),
         _c(
@@ -1439,6 +1500,7 @@ var render = function () {
                   coach: _vm.info.coach,
                   photo: _vm.info.photo,
                   map: _vm.info.map,
+                  couches: _vm.info.couches,
                   available: _vm.info.available,
                 },
               }),
