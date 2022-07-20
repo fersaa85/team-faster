@@ -236,6 +236,7 @@
 export default {
   name: 'venues',
   mounted(){
+    window.scrollTo(0, 0);
       this.setElement(this.$refs.coach1);
       
       this.setElement(this.$refs.coach2);

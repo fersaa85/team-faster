@@ -121,3 +121,19 @@ body, html, #app, .app {
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
+
+.recaptcha-container{
+  div{
+    margin: auto;
+  }
+}
+.calendars{
+  a{
+      color: #5fa9f7;
+  }
+}
+.modal.is-active{
+  @media screen and (max-width: 768px) {
+    overflow-y: auto;
+  }
+}

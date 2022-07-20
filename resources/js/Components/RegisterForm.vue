@@ -83,6 +83,7 @@
     <div class="has-text-centered" style="padding-top: 36px;">
       <vue-recaptcha
          id="recaptcha"
+         class="recaptcha-container"
          sitekey="6LdhsyggAAAAACsHnT4M66nGsy0xwI5mT8LDEgdL"
          @verify="verifyMethod"
          @expired="expiredMethod"
@@ -131,7 +132,16 @@
                     age: this.age,
             })
                 .then(() => {
-                    this.$emit('success');
+                  this.$emit('success', {
+                      email: this.email,
+                      name: this.name,
+                      lastname: this.lastname
+                  });
+                  this.age='';
+                  this.email= '';
+                  this.name= '';
+                  this.lastname= '';
+                  this.phone= '';
                 })
                 .catch((error) => {
                     console.log(error.response);
@@ -167,6 +177,7 @@
     font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     padding: 3px 36px 0;
+    margin-top: 26px;
   }
   .form-styles{
     padding-left: 7%;
