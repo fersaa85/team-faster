@@ -65,28 +65,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'galeria',
   data: function data() {
@@ -98,6 +76,9 @@ __webpack_require__.r(__webpack_exports__);
       },
       images: ["/assets/gallery/22AW_RT_Essentials_Mens_Train-All-Day_7697_RGB.jpg", "/assets/gallery/22AW_RT_Essentials_Mens_Train-All-Day_7792_RGB.jpg", "/assets/gallery/22AW_RT_Essentials_Mens_Train-All-Day_7886_RGB.jpg", "/assets/gallery/22AW_RT_Essentials_Train-All-Day-Group_8024_RGB.jpg", "/assets/gallery/22AW_RT_Essentials_Womens_Train-All-Day_7608_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Castlerock-Mens_Q3_Model_1474_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Castlerock-Mens_Q3_Model_1769_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Castlerock-Mens_Q3_Model_1832_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Castlerock-Mens_Q3_Model_1914_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deco-Glam-Wns_Q4_Model_2185_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deco-Glam-Wns_Q4_Model_2579_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deco-Glam-Wns_Q4_Model_2674_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deco-Glam-Wns_Q4_Model_2753_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deep-Olive-Mens_Q4_Model_3227_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deep-Olive-Mens_Q4_Model_3314_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_Q3-Group_0129_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_Q4-Group_3637_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_Q4-Group_3642_RGB.jpg", "/assets/gallery/22AW_RT_Puma-Fit_Q4-Group_3805_RGB.jpg", "/assets/gallery/22SS_RT_Essentials_Mens_PNA-Look-1_088_RGB.jpg", "/assets/gallery/22SS_RT_Essentials_Womens_PNA-Look-1_045_RGB.jpg", "/assets/gallery/22SS_RT_Model_PWRFrame-TR-Black-Cherry-Tomato_Q1_166_RGB.jpg", "/assets/gallery/22SS_RT_Model_PWRFrame-TR-Black-Cherry-Tomato_Q1_1460_RGB.jpg", "/assets/gallery/22SS_RT_Model_PWRFrame-TR-Black-Cherry-Tomato_Q1_1880_RGB.jpg", "/assets/gallery/22SS_RT_Sam-Kwant_Fuse-Puma-Black_Q2_4024_extended.jpg"]
     };
+  },
+  mounted: function mounted() {
+    window.scrollTo(0, 0);
   },
   methods: {
     show: function show() {

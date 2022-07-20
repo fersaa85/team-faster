@@ -49,28 +49,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <add-to-calendar title="VueConf"
-                     location="WROCŁAW, POLAND"
-                     :start="new Date()"
-                     :end="new Date((new Date).setDate((new Date).getDate() + 1))"
-                     details="The first Official Vue.js Conference in the world!"
-                     inline-template>
-      <div>
-
-        <google-calendar id="google-calendar">
-          <i class="fa fa-google"></i> Add to Google calendar
-        </google-calendar>
-
-        <microsoft-calendar id="microsoft-calendar">
-          <i class="fa fa-windows"></i> Add to Microsoft live calendar
-        </microsoft-calendar>
-
-        <office365-calendar id="office365-calendar">
-          <i class="fa fa-windows"></i> Add to Office365 outlook calendar
-        </office365-calendar>
-      </div>
-    </add-to-calendar> -->
   </div>
 </template>
 
@@ -112,6 +90,9 @@ export default {
           "/assets/gallery/22SS_RT_Sam-Kwant_Fuse-Puma-Black_Q2_4024_extended.jpg"
         ]
       };
+    },
+    mounted() {
+      window.scrollTo(0, 0)
     },
     methods: {
       show() {
