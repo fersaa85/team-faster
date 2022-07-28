@@ -128,6 +128,7 @@ export default {
         };
     },
     mounted() {
+      window.scrollTo(0, 0)
         axios
             .get('api/workout')
             .then(({ data }) => {

@@ -426,6 +426,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
+    window.scrollTo(0, 0);
     this.setLogoInicio();
     this.setFondoInicio();
     this.setWelcome(); // this.setuneteAl();

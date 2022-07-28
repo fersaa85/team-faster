@@ -9,15 +9,17 @@
       </b-navbar-item>
     </template>
     <template #start>
-      <b-navbar-item tag="router-link" :to="{ path: '/registro' }" class="nav-bar-button" :class="{'button-active':  $route.name =='registro'}">
+      <b-navbar-item tag="router-link" :to="{ path: '/venues' }" class="nav-bar-button" :class="{'button-active':  $route.name =='registro'}">
         Registro
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/coaches' }" class="nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
         Coaches
       </b-navbar-item>
+      <!--
       <b-navbar-item tag="router-link" :to="{ path: '/venues' }" class="nav-bar-button" :class="{'button-active':  $route.name =='venues'}">
         Venues
       </b-navbar-item>
+      -->
       <b-navbar-item tag="router-link" :to="{ path: '/galeria' }" class="nav-bar-button" :class="{'button-active':  $route.name =='galeria'}">
         Galería
       </b-navbar-item>

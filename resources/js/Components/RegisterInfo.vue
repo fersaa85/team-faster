@@ -1,5 +1,20 @@
 <template>
   <div>
+    <b-modal
+            v-model="isModalActive"
+            has-modal-card
+            trap-focus
+            :destroy-on-hide="true"
+            aria-role="dialog"
+            aria-label="Example Modal"
+            close-button-aria-label="Close"
+            :can-cancel="['escape']"
+            aria-modal
+        >
+          <template #default="props">
+              <SuccessModal :info="{name, fecha, lugar, tipo, coach, nameUser, mail}" @close="props.close"/>
+          </template>
+    </b-modal>
     <div class="gotica-italic info-margin">
       <p v-if="available" class="title-1">
         Reserva sin costo,
@@ -65,19 +80,22 @@
       </div>
 
       <div class="is-hidden-mobile">
-        <div v-if="success"class="alert alert-success" role="alert">
+        <!-- <div v-if="success" class="alert alert-success" role="alert">
           <b>Gracias por registrarse al evento.¡Te esperamos!</b>
         </div>
-        <div v-if="errors"class="alert alert-danger" role="alert">
+        <div v-if="errors" class="alert alert-danger" role="alert">
             <b>{{ errorsMsg }}</b>
-        </div>
+        </div> -->
         <RegisterForm
           @success="handleSuccess"
           @errors="handleErrors"
         />
       </div>
       <div class="register-form-tablet is-hidden-tablet">
-        <RegisterForm/>
+        <RegisterForm
+          @success="handleSuccess"
+          @errors="handleErrors"
+        />
       </div>
     </div>
   </div>
@@ -85,11 +103,13 @@
 
 <script>
 import RegisterForm from '../Components/RegisterForm.vue';
+import SuccessModal from '../Components/Success.vue';
 
   export default {
     name: 'registerInfo',
     components: {
-      RegisterForm
+      RegisterForm,
+      SuccessModal
     },
     props: {
       name: {
@@ -126,7 +146,10 @@ import RegisterForm from '../Components/RegisterForm.vue';
         showForm: false,
         success: false,
         errors: false,
-        errorsMsg: 'errorMsg'
+        errorsMsg: 'errorMsg',
+        isModalActive: false,
+        nameUser:'',
+        mail:''
       };
     },
     mounted(){
@@ -181,9 +204,12 @@ import RegisterForm from '../Components/RegisterForm.vue';
             {autoAlpha: 1, duration: 1, y:0, ease: "sine.out(1, 0.3)", display:"block" }
           );
       },
-      handleSuccess(){
+      handleSuccess(e){
+        this.nameUser= e.name + ' ' + e.lastname;
+        this.mail = e.email;
         this.success = true;
         this.errors = false;
+        this.isModalActive = true;
       },
       handleErrors({ data }){
            Object.values( data.errors ).forEach(function callback(currentValue, index){
@@ -191,6 +217,12 @@ import RegisterForm from '../Components/RegisterForm.vue';
            }, this);
           this.success = false;
           this.errors = true;
+          this.$buefy.toast.open({
+            duration: 4000,
+            message: this.errorsMsg,
+            position: 'is-bottom',
+            type: 'is-danger'
+          })
       }
     }
   }
