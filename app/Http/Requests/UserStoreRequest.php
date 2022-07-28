@@ -26,7 +26,8 @@ class UserStoreRequest extends FormRequest
      */
     public function rules()
     {
-        $workout = Workout::where('date_start', '>', date('Y-m-d H:i:s'))->first();
+        //$workout = Workout::where('date_start', '>', date('Y-m-d H:i:s'))->first();
+        $workout = Workout::where('venue_id',  app('request')->get('venue_id'))->first();
         $uniqueByWorkoutRule = (new UniqueByWorkoutRule())->table('workout_users')->workoutId($workout->id);
 
         return [
@@ -34,8 +35,9 @@ class UserStoreRequest extends FormRequest
             'email' => ['required', 'string', 'email', $uniqueByWorkoutRule],
             //'password' => 'required|string',
             'last_name' => 'required|string',
-            'phone' => 'required|string|regex:/[0-9]{10}/',
+            'phone' => 'string|regex:/[0-9]{10}/',
             'age' => 'required|integer',
+            'size' => 'required|string',
             //'birthday' => ['required', 'before:' . Carbon::now()->subYears(18)->format('Y-m-d') ],
         ];
     }
