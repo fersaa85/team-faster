@@ -36,7 +36,7 @@
                 <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
                   ¡Regístrate ahora!
                 </b-button>
-               
+
               </div>
               <div class="text-photo-date">
                 {{ venue.workout ? venue.workout.date_start : '-' }}
