@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/signup-email', function () {
+    return view('mails.signup');
+});
 Route::get('/{any?}', function () {
     return view('welcome');
 });
