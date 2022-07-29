@@ -22,14 +22,14 @@
     <div class="venues_photos">
       <div class="columns ">
         <template v-if="venues.length && Object.keys(workout).length">
-          <div v-for="(venue, key) in venues.slice(0, 3)" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
+          <div v-for="(venue, key) in venues.slice(0, 3)" :key="key" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
             <div>
               <b-image
                       responsive
                       :src="`/assets/img/${venue.thumbnail}`"
                       ratio="1by1"
               ></b-image>
-              <div class="text-photo-title" :class="{'venue-active': venue.id == workout.venue.id}">
+              <div class="text-photo-title venue-active">
                 {{ venue.name }}
                 <br>
 
@@ -55,13 +55,13 @@
       </div>
       <div class="columns">
         <template v-if="venues.length && Object.keys(workout).length">
-          <div v-for="(venue, key)  in venues.slice(3, 6)" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
+          <div v-for="(venue, key)  in venues.slice(3, 6)" :key="key" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
             <b-image
                     responsive
                     :src="`/assets/img/${venue.thumbnail}`"
                     ratio="1by1"
             ></b-image>
-            <div class="text-photo-title" :class="{'venue-active': venue.id == workout.venue.id}">
+            <div class="text-photo-title venue-active" :class="{'venue-active': venue.id == workout.venue.id}">
               {{ venue.name }}
               <br>
 
@@ -89,7 +89,7 @@
         </template>
       </div>
     </div>
-    <<div class="footer-styles">
+    <div class="footer-styles">
       <div class="columns" style="margin: 0;">
         <div class="column tm-puma has-text-left" >
           @2022 puma. Todos los derechos reservados
@@ -177,9 +177,11 @@ export default {
     margin: 0 20px;
     padding: 20px;
     background-color: black;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
   }
   .venues{
-    background: linear-gradient(90deg, #60a8f7, rgba(144,106,245,1) 38%, #b935f2);
+    background: linear-gradient(90deg, #6d6e79, #ebebed);
   }
   .title-venues{
     font-size: 100px;
@@ -214,7 +216,7 @@ export default {
   }
   .footer-styles{
     padding: 96px 24px 48px;
-    background: linear-gradient(transparent, 35%, #110315);
+    background: linear-gradient( transparent, black 45%, black);
     opacity: 1;
   }
   .text-photo-title{
@@ -262,7 +264,6 @@ export default {
     font-size: 18px;
     padding-left: 20px;
     padding-top: 20px;
-    color: #d700fb;
   }
 
   .venue0{

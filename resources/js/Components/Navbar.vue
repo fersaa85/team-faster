@@ -73,6 +73,12 @@ export default {
         &:hover{
           color: white;
         }
+        &:focus{
+          color: white;
+        }
+        &:focus-within{
+          color: white;
+        }
         &.button-active{
           color: white;
         }

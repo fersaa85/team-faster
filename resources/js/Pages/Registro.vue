@@ -147,7 +147,7 @@
   }
   .column-info{
     padding: 0;
-    background-image: linear-gradient(45deg, #7f7efd, #ca06fa);
+    background-image: linear-gradient(45deg, #6d6e79, #ebebed);
     @media screen and (min-width: 769px) {
       min-height: 100vh;
     }
