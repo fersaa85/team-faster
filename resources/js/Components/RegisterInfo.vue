@@ -247,7 +247,7 @@ import SuccessModal from '../Components/Success.vue';
     .title-1{
     font-size: 125px;
     padding-top: 50px;
-    color: white;
+    color: #66676e;
     line-height: 125px;
     @media screen and (max-width: 1407px) {
       font-size: 100px;
