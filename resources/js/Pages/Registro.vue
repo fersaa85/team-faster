@@ -83,29 +83,29 @@
         }
       };
     },
-    mounted() {
-      window.scrollTo(0, 0);
-      this.setElement(this.$refs.img1);
-      this.setElement(this.$refs.img2);
-        axios
-            .get('/api/workout/'+this.$route.params.venueId)
-            .then(({ data: { data } }) => {
-                this.info = Object.assign({}, {
-                    name: data.venue.name,
-                    fecha: data.date_start,
-                    couches: data.couches ? JSON.parse(data.couches) : [],
-                    lugar: data.venue.address,
-                    tipo:  data.description,
-                    coach:  data.coatch.name,
-                    photo: data.venue.image,
-                    map: data.venue.image_map,
-                    google_maps: data.venue.google_maps,
-                    available: true
-                });
+    // mounted() {
+    //   window.scrollTo(0, 0);
+    //   this.setElement(this.$refs.img1);
+    //   this.setElement(this.$refs.img2);
+    //     axios
+    //         .get('/api/workout/'+this.$route.params.venueId)
+    //         .then(({ data: { data } }) => {
+    //             this.info = Object.assign({}, {
+    //                 name: data.venue.name,
+    //                 fecha: data.date_start,
+    //                 couches: data.couches ? JSON.parse(data.couches) : [],
+    //                 lugar: data.venue.address,
+    //                 tipo:  data.description,
+    //                 coach:  data.coatch.name,
+    //                 photo: data.venue.image,
+    //                 map: data.venue.image_map,
+    //                 google_maps: data.venue.google_maps,
+    //                 available: true
+    //             });
 
-                console.log( this.info);
-            });
-    },
+    //             console.log( this.info);
+    //         });
+    // },
 
     methods:{
       setElement(el){
@@ -134,8 +134,8 @@
     height: 100vh;
   }
   .img-blackwhite{
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(60%);
   }
   .clip {
     margin-top: -17%;
@@ -147,7 +147,7 @@
   }
   .column-info{
     padding: 0;
-    background-image: linear-gradient(45deg, #7f7efd, #ca06fa);
+    background-image: linear-gradient(45deg, #6d6e79, #ebebed);
     @media screen and (min-width: 769px) {
       min-height: 100vh;
     }

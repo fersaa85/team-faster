@@ -196,8 +196,8 @@
 </script>
 <style lang="scss" scoped>
   .register-button{
-    background-color: #c624f1;
-    border-color: #c624f1;
+    background-color: #66676e;
+    border-color: #66676e;
     color: white;
     font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     text-transform: uppercase;

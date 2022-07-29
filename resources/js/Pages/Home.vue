@@ -37,14 +37,14 @@
             <div class="gotica-italic join-text">
               <div ref="uneteAl">
                 <div>
-                  <span>Únete</span>
+                  <span>¡Únete</span>
                   <span class="join-txt-2 txt-al">al</span>
                 </div>
               </div>
               <div ref="teamFaster">
                 <span class="join-txt-2 team-txt">Team</span>
                 <span>
-                  Faster
+                  Faster!
                 </span>
               </div>
             </div>
@@ -198,7 +198,7 @@
           </div>
           <div>
             Segura al
-            <span>
+            <span class="txt-aire">
               aire libre
             </span>
           </div>
@@ -783,7 +783,7 @@ export default {
   }
     .coaches2{
       padding-top: 207px !important;
-      background: linear-gradient(135deg, #60a8f7, rgba(144,106,245,1) 38%, #b935f2);
+      background: linear-gradient(135deg, #6b6c77, #242127);
       height: 915px;
       @media screen and (max-width: 768px) {
         padding-top: 230px !important;
@@ -906,7 +906,7 @@ export default {
     }
   .section-venues-up{
     height: 950px;
-    background: #5fa9f7;
+    background: black;
     padding-top: 178px;
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     margin-top: -178px;
@@ -925,7 +925,7 @@ export default {
     .section-venues1{
       font-size: 180px;
       line-height: 150px;
-      color: black;
+      color: white;
       text-align:right;
       @media screen and (max-width: 1080px) {
         font-size: 170px;
@@ -941,14 +941,17 @@ export default {
       }
       @media screen and (max-width: 768px) {
         margin-right: 6%;
-        font-size: 120px;
+        font-size: 110px;
         line-height: 90px;
       }
+    }
+    .txt-aire{
+      color: white;
     }
     .section-venues2{
       font-size: 80px;
       line-height: 80px;
-      color: white;
+      color: #6d6e79;
       text-align: left;
       padding-left: 24px !important;
       padding-top: 65px !important;
@@ -985,6 +988,7 @@ export default {
     }
   }
   .section-venues-down{
+    overflow: hidden;
     height: 950px;
     margin-top: -500px !important;
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
@@ -1041,8 +1045,8 @@ export default {
       clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     }
     .section-venues-down-img{
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
+      -webkit-filter: grayscale(80%);
+      filter: grayscale(80%);
       @media screen and (min-width: 769px) {
         .img1-v{
           margin-top: 150px;
@@ -1100,7 +1104,8 @@ export default {
       padding-top: 146px;
       font-size: 225px;
       z-index: 1;
-      color: #c625f2;
+      color: white;
+      text-shadow: -4px 3px 0px #000000;
       @media screen and (max-width: 1471px) {
         padding-top: 10%;
       }
@@ -1167,7 +1172,7 @@ export default {
     }
   .second-section{
     background: black;
-    background: linear-gradient(60deg, black, rgba(185, 53, 242, 1) 40%, #446fa9);
+    background: linear-gradient(60deg, black, #9b98a2 40%, #a1a1a1);
     height: 750px;
     margin-top: -7.5% !important;
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
@@ -1181,7 +1186,7 @@ export default {
       text-align: center;
       font-size: 180px;
       line-height: 150px;
-      background: linear-gradient(#7391f6, 62%, #b737f2);
+      background: linear-gradient(#82838e, 62%, #dedee0);
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
@@ -1296,8 +1301,8 @@ export default {
     }
     .register-button{
       margin-top: 50px;
-      background-color: #c624f1;
-      border-color: #c624f1;
+      background-color: #6d6e79;
+      border-color: #6d6e79;
       color: white;
       font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
       text-transform: uppercase;
@@ -1325,7 +1330,7 @@ export default {
       height: 100%;
       top: 0;
       left: 0;
-      background: linear-gradient(-159deg, transparent, 60%, #110315);
+      background: linear-gradient(-159deg, transparent, 60%, black);
     }
     @media screen and (max-width: 1857px) {
       margin-top: -8% !important;
@@ -1563,7 +1568,8 @@ export default {
       }
       .cdmx-gallery{
         margin-top: -35px;
-        color: #5fa9f7;
+        color: #6d6e79;
+        text-shadow: -4px 3px 0px #000000;
         font-size: 225px;
         @media screen and (max-width: 1164px) {
           margin-top: -70px;
@@ -1593,7 +1599,7 @@ export default {
       }
     }
   .section-galery-up{
-    background: #c625f2;
+    background: black;
     @media screen and (max-width: 768px) {
       clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     }
@@ -1659,7 +1665,7 @@ export default {
       }
     }
     .section-galery-up-txt2{
-      color: black;
+      color: #6d6e79;
       font-size: 120px;
       line-height: 133px;
       text-align: left;
@@ -1698,7 +1704,7 @@ export default {
       }
     }
     .section-galery-up-txt3{
-      color: black;
+      color: white;
       width: 60%;
       text-align: right;
       margin-right: 3%;
@@ -1739,7 +1745,9 @@ export default {
     }
   }
   .section-galery-down{
-    background: #c625f2;
+    background: black;
+    -webkit-filter: grayscale(60%);
+      filter: grayscale(60%);
     @media screen and (max-width: 768px) {
       margin-top: -24% !important ;
       .model-2{
@@ -1834,7 +1842,7 @@ export default {
       top: 0;
       height: 100%;
       text-align: left;
-      background: linear-gradient(rgba(96, 168, 247, 0.2),11%, rgba(185, 53, 242, 0.5));
+      background: linear-gradient(rgba(96, 168, 247, 0.2),11%, transparent);
     }
   }
   .section-team{
@@ -1916,7 +1924,7 @@ export default {
       }
     }
     .section-team1{
-      color:#c625f2;
+      color:white;
       font-size: 120px;
       line-height: 133px;
       text-align: center;
@@ -1968,7 +1976,7 @@ export default {
       }
     }
     .section-team-cont{
-      background: linear-gradient(#4b85c3,black);
+      background: linear-gradient(#55575f,black);
       height: 100%;
       width: 100%;
       position: absolute;
@@ -1976,7 +1984,7 @@ export default {
     }
     .section-team2{
       position: relative;
-      color: #5fa9f7;
+      color: white;
       font-size: 24px;
       max-width: 80%;
       margin: auto;
@@ -2049,7 +2057,7 @@ export default {
     height: 524px;
     color: white;
     padding: 24px;
-    background: linear-gradient(rgb(198 36 242 / 80%), rgb(21 12 249 / 80%));
+    background: linear-gradient(transparent, 35%, #110315);
     @media screen and (max-width: 1614px) {
       bottom: -7vw;
     }
