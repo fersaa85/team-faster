@@ -3,10 +3,10 @@
     <div class="columns" style="padding-top: 40px; padding-bottom: 40px;">
       <div class="column gotica-italic title-venues">
         <div class="title-venues1">
-          Vive una
+          Galería
         </div>
         <div class="title-venues2">
-          experiencia
+          De fotos
         </div>
       </div>
       <div class="column">
@@ -20,26 +20,27 @@
       </div>
     </div>
     <div class="venues_photos">
-      <div class="columns ">
+      <div class="columns " style="margin-bottom: 60px;">
         <template v-if="venues.length && Object.keys(workout).length">
           <div v-for="(venue, key) in venues.slice(0, 3)" :key="key" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
             <div>
               <b-image
                       responsive
                       :src="`/assets/img/${venue.thumbnail}`"
-                      ratio="1by1"
+                      ratio="2by1"
               ></b-image>
+              
               <div class="text-photo-title venue-active">
                 {{ venue.name }}
-                <br>
-
-                <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
-                  ¡Regístrate ahora!
-                </b-button>
-
-              </div>
-              <div class="text-photo-date">
-                {{ venue.workout ? venue.workout.date_start : '-' }}
+                
+                <div class="text-photo-date">
+                  {{ venue.workout ? venue.workout.date_start : '-' }}
+                </div>
+                <div>
+                  <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
+                    Ver Galería
+                  </b-button>
+                </div>
               </div>
             </div>
           </div>
@@ -59,20 +60,18 @@
             <b-image
                     responsive
                     :src="`/assets/img/${venue.thumbnail}`"
-                    ratio="1by1"
+                    ratio="2by1"
             ></b-image>
             <div class="text-photo-title venue-active" :class="{'venue-active': venue.id == workout.venue.id}">
               {{ venue.name }}
-              <br>
-
-
-              <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
-                ¡Regístrate ahora!
-              </b-button>
-
-            </div>
-            <div class="text-photo-date">
-              {{ venue.workout ? venue.workout.date_start : '-' }}
+              <div class="text-photo-date">
+                {{ venue.workout ? venue.workout.date_start : '-' }}
+              </div>
+              <div>
+                <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
+                    Ver Galería
+                </b-button>
+              </div>
             </div>
             <!-- <div class="text-photo-register">
               ¡registrate ahora!
@@ -134,7 +133,7 @@ export default {
     },
     methods:  {
         handleGoTo(venueId){
-            this.$router.push('/registro/'+venueId);
+            this.$router.push('/galeria/'+venueId);
         },
         setElement(el){
             this.gsap.to(
@@ -181,11 +180,12 @@ export default {
     filter: grayscale(100%);
   }
   .venues{
-    background: linear-gradient(90deg, #6d6e79, #ebebed);
+    background: black;
+    color: white;
   }
   .title-venues{
     font-size: 100px;
-    color: black;
+    color: white;
     line-height: 90px;
     text-align: right;
     @media screen and (max-width: 768px) {
@@ -220,36 +220,24 @@ export default {
     opacity: 1;
   }
   .text-photo-title{
-    position: absolute;
     color: white;
     font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     width: 100%;
     left: 0;
     top: 50%;
     text-transform: uppercase;
-    font-size: 18px;
-    padding: 0 12px;
-    &.two-lines{
-      top: 47%;
-    }
-    &.venue-active{
-      top: 43%;
-    }
-    &.venue-active-third{
-      top: 42%;
-    }
+    font-size: 24px;
+    padding: 24px 12px;
   }
   .text-photo-date{
-    position: absolute;
     color: white;
     font-family: "FFDINforPUMA-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 100%;
-    text-align: right;
+    text-align: center;
     left: 0;
     bottom: 0;
     text-transform: uppercase;
     font-size: 18px;
-    padding-right: 20px;
     padding-bottom: 12px;
   }
   .text-photo-register{
