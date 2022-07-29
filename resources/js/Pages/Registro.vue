@@ -84,11 +84,11 @@
       };
     },
     mounted() {
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
       this.setElement(this.$refs.img1);
       this.setElement(this.$refs.img2);
         axios
-            .get('api/workout')
+            .get('/api/workout/'+this.$route.params.venueId)
             .then(({ data: { data } }) => {
                 this.info = Object.assign({}, {
                     name: data.venue.name,

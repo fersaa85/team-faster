@@ -129,8 +129,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
   data: function data() {
@@ -154,9 +152,8 @@ __webpack_require__.r(__webpack_exports__);
     });
   },
   methods: {
-    handleGoTo: function handleGoTo(e) {
-      e.preventDefault();
-      this.$router.push('/registro');
+    handleGoTo: function handleGoTo(venueId) {
+      this.$router.push('/registro/' + venueId);
     },
     setElement: function setElement(el) {
       this.gsap.to(el, {
@@ -399,25 +396,29 @@ var render = function () {
                             ),
                             _c("br"),
                             _vm._v(" "),
-                            venue.id == _vm.workout.venue.id
-                              ? [
-                                  _c(
-                                    "b-button",
-                                    {
-                                      staticClass: "register-button",
-                                      attrs: { rounded: "", size: "is-medium" },
-                                      on: { click: _vm.handleGoTo },
-                                    },
-                                    [
-                                      _vm._v(
-                                        "\n                  ¡Regístrate ahora!\n                "
-                                      ),
-                                    ]
-                                  ),
-                                ]
-                              : _vm._e(),
+                            _c(
+                              "b-button",
+                              {
+                                staticClass: "register-button",
+                                attrs: {
+                                  rounded: "",
+                                  size: "is-medium",
+                                  "data-id": venue.id,
+                                },
+                                on: {
+                                  click: function ($event) {
+                                    return _vm.handleGoTo(venue.id)
+                                  },
+                                },
+                              },
+                              [
+                                _vm._v(
+                                  "\n                ¡Regístrate ahora!\n              "
+                                ),
+                              ]
+                            ),
                           ],
-                          2
+                          1
                         ),
                         _vm._v(" "),
                         _c("div", { staticClass: "text-photo-date" }, [
