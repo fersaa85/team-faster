@@ -1863,8 +1863,7 @@ var routes = [{
   path: '/registro/:venueId',
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_Pages_Registro_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Registro.vue */ "./resources/js/Pages/Registro.vue"));
-  },
-  name: 'registro'
+  }
 }, {
   path: '/coaches',
   component: function component() {
@@ -1872,13 +1871,13 @@ var routes = [{
   },
   name: 'coaches'
 }, {
-  path: '/venues',
+  path: '/registro',
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_Pages_Venues_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Venues.vue */ "./resources/js/Pages/Venues.vue"));
   },
-  name: 'venues'
+  name: 'registro'
 }, {
-  path: '/galeria',
+  path: '/galeria/:venueId',
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_Pages_Galeria_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Galeria.vue */ "./resources/js/Pages/Galeria.vue"));
   },
@@ -1901,6 +1900,18 @@ var routes = [{
   meta: {
     scrollToTop: true
   }
+}, {
+  path: '/albums',
+  name: 'albums',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Albums_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Albums.vue */ "./resources/js/Pages/Albums.vue"));
+  },
+  meta: {
+    scrollToTop: true
+  }
+}, {
+  path: '*',
+  redirect: '/'
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
 
@@ -73310,7 +73321,7 @@ var index = {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Home_vue":1,"resources_js_Pages_Registro_vue":1,"resources_js_Pages_Coaches_vue":1,"resources_js_Pages_Venues_vue":1,"resources_js_Pages_Galeria_vue":1,"resources_js_Pages_Blog_vue":1,"resources_js_Pages_Post_vue":1,"resources_js_Components_Navbar_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_Home_vue":1,"resources_js_Pages_Registro_vue":1,"resources_js_Pages_Coaches_vue":1,"resources_js_Pages_Venues_vue":1,"resources_js_Pages_Galeria_vue":1,"resources_js_Pages_Blog_vue":1,"resources_js_Pages_Post_vue":1,"resources_js_Pages_Albums_vue":1,"resources_js_Components_Navbar_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

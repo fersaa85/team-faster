@@ -27,6 +27,7 @@
               responsive
               src="/assets/img/CARLOS-@charlie.ro22.jpg"
               ratio="1by1"
+              class="img-blackwhite"
               @load="loadedImg1"
             ></b-image>
             <div class="text-photo-title venue-active">
@@ -48,6 +49,7 @@
               responsive
               src="/assets/img/DAVID-@dmckniight.jpg"
               ratio="1by1"
+              class="img-blackwhite"
               @load="loadedImg2"
             ></b-image>
             <div class="text-photo-title venue-active">
@@ -69,6 +71,7 @@
               responsive
               src="/assets/img/FRANCHESCA-@franchescasb.jpg"
               ratio="1by1"
+              class="img-blackwhite"
               @load="loadedImg3"
             ></b-image>
             <div class="text-photo-title two-lines venue-active-third">
@@ -92,6 +95,7 @@
               responsive
               src="/assets/img/HOMERO-@HOMEROCASGRO.jpg"
               ratio="1by1"
+              class="img-blackwhite"
               @load="loadedImg4"
             ></b-image>
             <div class="text-photo-title">
@@ -113,6 +117,7 @@
               responsive
               src="/assets/img/JORGE-@jorgehuo.jpg"
               ratio="1by1"
+              class="img-blackwhite"
               @load="loadedImg5"
             ></b-image>
             <div class="text-photo-title">
@@ -134,6 +139,7 @@
               responsive
               src="/assets/img/MAFER-@maferarreolaa.jpg"
               ratio="1by1"
+              class="img-blackwhite"
               @load="loadedImg6"
             ></b-image>
             <div class="text-photo-title venue-active">
@@ -157,6 +163,7 @@
               responsive
               src="/assets/img/PABLO-@pablohutt.jpg"
               ratio="1by1"
+              class="img-blackwhite"
               @load="loadedImg7"
             ></b-image>
             <div class="text-photo-title">
@@ -178,6 +185,7 @@
               responsive
               src="/assets/img/RAUL-@raul_vicotria_.jpg"
               ratio="1by1"
+              class="img-blackwhite"
               @load="loadedImg8"
             ></b-image>
             <div class="text-photo-title two-lines">
@@ -199,6 +207,7 @@
               responsive
               src="/assets/img/vlopez.jpg"
               ratio="1by1"
+              class="img-blackwhite"
               @load="loadedImg9"
             ></b-image>
             <div class="text-photo-title two-lines">
@@ -296,9 +305,12 @@ export default {
 </script>
 <style lang="scss" scoped>
   .venues_photos{
-    margin: 0 40px;
+    margin: 0 160px;
     padding: 20px;
     background-color: black;
+    @media screen and (max-width: 768px) {
+      margin: 0 40px;
+    }
   }
   .venues{
     background: black;
@@ -370,4 +382,8 @@ export default {
     visibility: visible;
     opacity: 1;
   }
+  // .img-blackwhite{
+  //   -webkit-filter: grayscale(60%);
+  //   filter: grayscale(60%);
+  // }
 </style>

@@ -9,7 +9,7 @@
       </b-navbar-item>
     </template>
     <template #start>
-      <b-navbar-item tag="router-link" :to="{ path: '/venues' }" class="nav-bar-button" :class="{'button-active':  $route.name =='registro'}">
+      <b-navbar-item tag="router-link" :to="{ path: '/registro' }" class="nav-bar-button" :class="{'button-active':  $route.name =='registro'}">
         Registro
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/coaches' }" class="nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
@@ -23,7 +23,7 @@
       <b-navbar-item tag="router-link" :to="{ path: '/blog' }" class="nav-bar-button" :class="{'button-active':  $route.name =='blog'}">
         Blog
       </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/galeria' }" class="nav-bar-button" :class="{'button-active':  $route.name =='galeria'}">
+      <b-navbar-item tag="router-link" :to="{ path: '/albums' }" class="nav-bar-button" :class="{'button-active':  $route.name =='galeria'}">
         Galería
       </b-navbar-item>
     </template>

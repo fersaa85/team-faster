@@ -734,29 +734,28 @@ __webpack_require__.r(__webpack_exports__);
       }
     };
   },
-  mounted: function mounted() {
-    var _this = this;
-
-    window.scrollTo(0, 0);
-    this.setElement(this.$refs.img1);
-    this.setElement(this.$refs.img2);
-    axios.get('/api/workout/' + this.$route.params.venueId).then(function (_ref) {
-      var data = _ref.data.data;
-      _this.info = Object.assign({}, {
-        name: data.venue.name,
-        fecha: data.date_start,
-        couches: data.couches ? JSON.parse(data.couches) : [],
-        lugar: data.venue.address,
-        tipo: data.description,
-        coach: data.coatch.name,
-        photo: data.venue.image,
-        map: data.venue.image_map,
-        google_maps: data.venue.google_maps,
-        available: true
-      });
-      console.log(_this.info);
-    });
-  },
+  // mounted() {
+  //   window.scrollTo(0, 0);
+  //   this.setElement(this.$refs.img1);
+  //   this.setElement(this.$refs.img2);
+  //     axios
+  //         .get('/api/workout/'+this.$route.params.venueId)
+  //         .then(({ data: { data } }) => {
+  //             this.info = Object.assign({}, {
+  //                 name: data.venue.name,
+  //                 fecha: data.date_start,
+  //                 couches: data.couches ? JSON.parse(data.couches) : [],
+  //                 lugar: data.venue.address,
+  //                 tipo:  data.description,
+  //                 coach:  data.coatch.name,
+  //                 photo: data.venue.image,
+  //                 map: data.venue.image_map,
+  //                 google_maps: data.venue.google_maps,
+  //                 available: true
+  //             });
+  //             console.log( this.info);
+  //         });
+  // },
   methods: {
     setElement: function setElement(el) {
       this.gsap.to(el, {
@@ -866,7 +865,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-8bdab548] {\n  height: 100vh;\n}\n.img-blackwhite[data-v-8bdab548] {\n  filter: grayscale(100%);\n}\n.clip[data-v-8bdab548] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-8bdab548] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-8bdab548] {\n  padding: 0;\n  background-image: linear-gradient(45deg, #6d6e79, #ebebed);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-8bdab548] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-8bdab548] {\n  margin: 0;\n}\n.registro[data-v-8bdab548] {\n  background: black;\n}\n.tm-puma[data-v-8bdab548] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-8bdab548] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-8bdab548] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-8bdab548] {\n  height: 50vw;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-8bdab548] {\n  height: 100vh;\n}\n.img-blackwhite[data-v-8bdab548] {\n  filter: grayscale(60%);\n}\n.clip[data-v-8bdab548] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-8bdab548] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-8bdab548] {\n  padding: 0;\n  background-image: linear-gradient(45deg, #6d6e79, #ebebed);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-8bdab548] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-8bdab548] {\n  margin: 0;\n}\n.registro[data-v-8bdab548] {\n  background: black;\n}\n.tm-puma[data-v-8bdab548] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-8bdab548] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-8bdab548] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-8bdab548] {\n  height: 50vw;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
