@@ -80,6 +80,22 @@
         </b-input>
       </b-field>
     </ValidationProvider>
+    <ValidationProvider rules="required" name="Talla" v-slot="{ errors, valid }">
+
+        <b-select
+           placeholder="Talla"
+           v-model="size"
+
+        >
+          <option
+                  v-for="option in sizes"
+                  :value="option.id"
+                  :key="option.id">
+            {{ option.label }}
+          </option>
+        </b-select>
+
+    </ValidationProvider>
     <div class="has-text-centered" style="padding-top: 36px;">
       <vue-recaptcha
          id="recaptcha"
@@ -117,19 +133,28 @@
         lastname: '',
         phone: '',
         disabled: true,
-        gRecaptchaResponse: null
+        gRecaptchaResponse: null,
+        sizes: [
+            {"id":'S',"label": "Chico"},
+            {"id":'M',"label": "Mediano"},
+            {"id":'L',"label": "Grande"},
+            {"id":'XL',"label": "Extra grande"}
+        ],
+        size: {}
       };
     },
     methods:{
         handleSubmit(){
             axios
-                .post('api/auth/signup', {
+                .post('api/auth/signup/'. this.$route.params.venueId, {
                     "g-recaptcha-response": this.gRecaptchaResponse,
                     email: this.email,
                     name: this.name,
                     last_name: this.lastname,
                     phone: this.phone,
                     age: this.age,
+                    size: this.size,
+                    venue_id: this.$route.params.venueId
             })
                 .then(() => {
                   this.$emit('success', {

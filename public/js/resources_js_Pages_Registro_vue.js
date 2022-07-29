@@ -113,6 +113,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -130,20 +146,36 @@ __webpack_require__.r(__webpack_exports__);
       lastname: '',
       phone: '',
       disabled: true,
-      gRecaptchaResponse: null
+      gRecaptchaResponse: null,
+      sizes: [{
+        "id": 'S',
+        "label": "Chico"
+      }, {
+        "id": 'M',
+        "label": "Mediano"
+      }, {
+        "id": 'L',
+        "label": "Grande"
+      }, {
+        "id": 'XL',
+        "label": "Extra grande"
+      }],
+      size: {}
     };
   },
   methods: {
     handleSubmit: function handleSubmit() {
       var _this = this;
 
-      axios.post('api/auth/signup', {
+      axios.post('api/auth/signup/'["this"].$route.params.venueId, {
         "g-recaptcha-response": this.gRecaptchaResponse,
         email: this.email,
         name: this.name,
         last_name: this.lastname,
         phone: this.phone,
-        age: this.age
+        age: this.age,
+        size: this.size,
+        venue_id: this.$route.params.venueId
       }).then(function () {
         _this.$emit('success', {
           email: _this.email,
@@ -708,7 +740,7 @@ __webpack_require__.r(__webpack_exports__);
     window.scrollTo(0, 0);
     this.setElement(this.$refs.img1);
     this.setElement(this.$refs.img2);
-    axios.get('api/workout').then(function (_ref) {
+    axios.get('/api/workout/' + this.$route.params.venueId).then(function (_ref) {
       var data = _ref.data.data;
       _this.info = Object.assign({}, {
         name: data.venue.name,
@@ -1513,6 +1545,46 @@ var render = function () {
                     }),
                   ],
                   1
+                ),
+              ]
+            },
+          },
+        ]),
+      }),
+      _vm._v(" "),
+      _c("ValidationProvider", {
+        attrs: { rules: "required", name: "Talla" },
+        scopedSlots: _vm._u([
+          {
+            key: "default",
+            fn: function (ref) {
+              var errors = ref.errors
+              var valid = ref.valid
+              return [
+                _c(
+                  "b-select",
+                  {
+                    attrs: { placeholder: "Talla" },
+                    model: {
+                      value: _vm.size,
+                      callback: function ($$v) {
+                        _vm.size = $$v
+                      },
+                      expression: "size",
+                    },
+                  },
+                  _vm._l(_vm.sizes, function (option) {
+                    return _c(
+                      "option",
+                      { key: option.id, domProps: { value: option.id } },
+                      [
+                        _vm._v(
+                          "\n          " + _vm._s(option.label) + "\n        "
+                        ),
+                      ]
+                    )
+                  }),
+                  0
                 ),
               ]
             },

@@ -33,16 +33,10 @@
                 {{ venue.name }}
                 <br>
 
-                <template v-if="venue.id == workout.venue.id">
-                  <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
-                    ¡Regístrate ahora!
-                  </b-button>
-                </template>
-                <!--
-                <span class="puma-regular">
+                <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
                   ¡Regístrate ahora!
-                </span>
-                -->
+                </b-button>
+
               </div>
               <div class="text-photo-date">
                 {{ venue.workout ? venue.workout.date_start : '-' }}
@@ -71,16 +65,11 @@
               {{ venue.name }}
               <br>
 
-              <template v-if="venue.id == workout.venue.id">
-                <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
-                  ¡Regístrate ahora!
-                </b-button>
-              </template>
-              <!--
-              <span class="puma-regular">
+
+              <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
                 ¡Regístrate ahora!
-              </span>
-              -->
+              </b-button>
+
             </div>
             <div class="text-photo-date">
               {{ venue.workout ? venue.workout.date_start : '-' }}
@@ -144,9 +133,8 @@ export default {
             });
     },
     methods:  {
-        handleGoTo(e){
-            e.preventDefault();
-            this.$router.push('/registro');
+        handleGoTo(venueId){
+            this.$router.push('/registro/'+venueId);
         },
         setElement(el){
             this.gsap.to(

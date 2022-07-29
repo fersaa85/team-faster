@@ -5,7 +5,7 @@ const routes = [
     name: 'home'
   },
   {
-    path: '/registro',
+    path: '/registro/:venueId',
     component: () => import('../Pages/Registro.vue'),
     name: 'registro'
   },
@@ -23,7 +23,19 @@ const routes = [
     path: '/galeria',
     component: () => import('../Pages/Galeria.vue'),
     name: 'galeria'
-  }
+  },
+  {
+     path: '/blog',
+     name: 'blog',
+     component: () => import('../Pages/Blog.vue'),
+     meta: { scrollToTop: true }
+  },
+  {
+     path: '/blog/:slug',
+     name: 'post',
+     component: () => import('../Pages/Post.vue'),
+     meta: { scrollToTop: true }
+  },
 ]
 
 export default routes;

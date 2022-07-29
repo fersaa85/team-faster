@@ -20,7 +20,7 @@ Route::group([
     'prefix' => 'auth'
 ], function () {
     //Route::post('login', [AuthController::class, 'login']);
-    Route::post('signup',  [AuthController::class, 'signUp']);
+    Route::post('signup/{venueId}',  [AuthController::class, 'signUp']);
 
     Route::group([
         'middleware' => 'auth:api'
@@ -41,12 +41,19 @@ Route::group([
     'prefix' => 'workout',
 ], function() {
     Route::get('/', \App\Http\Controllers\Workout\WorkoutController::class);
-    //Route::get('/{workoutId}', \App\Http\Controllers\Workout\WorkoutController::class);
     Route::get('/count', \App\Http\Controllers\Workout\WorkoutCountController::class);
+    Route::get('/{workoutId}', \App\Http\Controllers\Workout\WorkoutController::class);
 });
 
 Route::group([
     'prefix' => 'coaches',
 ], function() {
     Route::get('/', \App\Http\Controllers\Coaches\CoachesController::class);
+});
+
+Route::group([
+    'prefix' => 'blog',
+], function() {
+    Route::get('/', \App\Http\Controllers\Blog\BlogListsController::class);
+    Route::get('/{slug}', \App\Http\Controllers\Blog\PostController::class);
 });
