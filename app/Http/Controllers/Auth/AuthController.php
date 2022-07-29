@@ -64,7 +64,7 @@ class AuthController extends Controller
 
         Mail::to($user->email)->send(new SignUpEmail($objData));
         if(WorkoutUser::where('workout_id', $workout->id)->where('user_id', $user->id)->first() === null){
-            $slug = "{$workout->venue->slug}-".WorkoutUser::where('workout_id', $workout->id)->count();
+            $slug = "{$workout->venue->slug}-" . (WorkoutUser::where('workout_id', $workout->id)->count() + 1);
             WorkoutUser::create([
                 'workout_id' => $workout->id,
                 'user_id' => $user->id,
