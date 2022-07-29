@@ -64,7 +64,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".gradient-bar[data-v-4a80dbca] {\n  background: rgb(96, 169, 247);\n  background: linear-gradient(90deg, rgb(96, 169, 247) 0%, rgb(144, 106, 245) 38%, rgb(215, 0, 251) 100%);\n  color: black;\n}\na[data-v-4a80dbca] {\n  font-family: \"FFDINforPUMA-Regular\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: normal;\n  font-style: normal;\n  text-transform: uppercase;\n}\n@media screen and (min-width: 1024px) {\n.navbar-item img[data-v-4a80dbca] {\n    max-height: unset;\n    height: 52px;\n}\n.navbar.is-spaced a.navbar-item[data-v-4a80dbca] {\n    padding-bottom: 0;\n    padding-top: 0;\n}\n#item-end[data-v-4a80dbca] {\n    width: 90.94px;\n}\n.nav-bar-button[data-v-4a80dbca] {\n    font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 20px;\n    padding-top: 0.5rem !important;\n    background-color: transparent !important;\n}\n.nav-bar-button[data-v-4a80dbca]:hover {\n    color: black;\n}\n.nav-bar-button.button-active[data-v-4a80dbca] {\n    color: black;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".gradient-bar[data-v-4a80dbca] {\n  background: rgb(96, 169, 247);\n  background: black;\n  color: white;\n}\na[data-v-4a80dbca] {\n  font-family: \"FFDINforPUMA-Regular\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-weight: normal;\n  font-style: normal;\n  text-transform: uppercase;\n}\n@media screen and (min-width: 1024px) {\n.navbar-item img[data-v-4a80dbca] {\n    max-height: unset;\n    height: 52px;\n}\n.navbar.is-spaced a.navbar-item[data-v-4a80dbca] {\n    padding-bottom: 0;\n    padding-top: 0;\n}\n#item-end[data-v-4a80dbca] {\n    width: 90.94px;\n}\n.nav-bar-button[data-v-4a80dbca] {\n    font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n    font-size: 20px;\n    padding-top: 0.5rem !important;\n    background-color: transparent !important;\n    color: #a8a5af;\n}\n.nav-bar-button[data-v-4a80dbca]:hover {\n    color: white;\n}\n.nav-bar-button.button-active[data-v-4a80dbca] {\n    color: white;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -211,7 +211,10 @@ var render = function () {
               { attrs: { tag: "router-link", to: { path: "/" } } },
               [
                 _c("img", {
-                  attrs: { src: "/assets/img/pumaLogo.png", alt: "Puma" },
+                  attrs: {
+                    src: "/assets/img/SITE_PUMA_LOGO_PUMA.png",
+                    alt: "Puma",
+                  },
                 }),
               ]
             ),
