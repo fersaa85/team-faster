@@ -7,7 +7,6 @@ const routes = [
   {
     path: '/registro/:venueId',
     component: () => import('../Pages/Registro.vue'),
-    name: 'registro'
   },
   {
     path: '/coaches',
@@ -15,12 +14,12 @@ const routes = [
     name: 'coaches'
   },
   {
-    path: '/venues',
+    path: '/registro',
     component: () => import('../Pages/Venues.vue'),
-    name: 'venues'
+    name: 'registro'
   },
   {
-    path: '/galeria',
+    path: '/galeria/:venueId',
     component: () => import('../Pages/Galeria.vue'),
     name: 'galeria'
   },
@@ -36,6 +35,13 @@ const routes = [
      component: () => import('../Pages/Post.vue'),
      meta: { scrollToTop: true }
   },
+  {
+     path: '/albums',
+     name: 'albums',
+     component: () => import('../Pages/Albums.vue'),
+     meta: { scrollToTop: true }
+  },
+  { path: '*', redirect: '/' }
 ]
 
 export default routes;

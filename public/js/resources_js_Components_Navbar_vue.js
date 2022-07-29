@@ -236,7 +236,7 @@ var render = function () {
               {
                 staticClass: "nav-bar-button",
                 class: { "button-active": _vm.$route.name == "registro" },
-                attrs: { tag: "router-link", to: { path: "/venues" } },
+                attrs: { tag: "router-link", to: { path: "/registro" } },
               },
               [_vm._v("\n      Registro\n    ")]
             ),
@@ -266,7 +266,7 @@ var render = function () {
               {
                 staticClass: "nav-bar-button",
                 class: { "button-active": _vm.$route.name == "galeria" },
-                attrs: { tag: "router-link", to: { path: "/galeria" } },
+                attrs: { tag: "router-link", to: { path: "/albums" } },
               },
               [_vm._v("\n      Galería\n    ")]
             ),
