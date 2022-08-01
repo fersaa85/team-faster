@@ -80,12 +80,15 @@
         </b-input>
       </b-field>
     </ValidationProvider>
-    <ValidationProvider rules="required" name="Talla" v-slot="{ errors, valid }">
-
+    <b-field
+       label=""
+       horizontal
+       class="field-style"
+        >
         <b-select
-           placeholder="Talla"
            v-model="size"
-
+           placeholder="SELECCIONAR TALLA"
+           expanded
         >
           <option
                   v-for="option in sizes"
@@ -94,8 +97,7 @@
             {{ option.label }}
           </option>
         </b-select>
-
-    </ValidationProvider>
+    </b-field>
     <div class="has-text-centered" style="padding-top: 36px;">
       <vue-recaptcha
          id="recaptcha"
@@ -140,7 +142,7 @@
             {"id":'L',"label": "Grande"},
             {"id":'XL',"label": "Extra grande"}
         ],
-        size: {}
+        size: null
       };
     },
     methods:{

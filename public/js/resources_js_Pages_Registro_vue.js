@@ -129,6 +129,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -160,7 +162,7 @@ __webpack_require__.r(__webpack_exports__);
         "id": 'XL',
         "label": "Extra grande"
       }],
-      size: {}
+      size: null
     };
   },
   methods: {
@@ -1551,45 +1553,34 @@ var render = function () {
         ]),
       }),
       _vm._v(" "),
-      _c("ValidationProvider", {
-        attrs: { rules: "required", name: "Talla" },
-        scopedSlots: _vm._u([
-          {
-            key: "default",
-            fn: function (ref) {
-              var errors = ref.errors
-              var valid = ref.valid
-              return [
-                _c(
-                  "b-select",
-                  {
-                    attrs: { placeholder: "Talla" },
-                    model: {
-                      value: _vm.size,
-                      callback: function ($$v) {
-                        _vm.size = $$v
-                      },
-                      expression: "size",
-                    },
-                  },
-                  _vm._l(_vm.sizes, function (option) {
-                    return _c(
-                      "option",
-                      { key: option.id, domProps: { value: option.id } },
-                      [
-                        _vm._v(
-                          "\n          " + _vm._s(option.label) + "\n        "
-                        ),
-                      ]
-                    )
-                  }),
-                  0
-                ),
-              ]
+      _c(
+        "b-field",
+        { staticClass: "field-style", attrs: { label: "", horizontal: "" } },
+        [
+          _c(
+            "b-select",
+            {
+              attrs: { placeholder: "SELECCIONAR TALLA", expanded: "" },
+              model: {
+                value: _vm.size,
+                callback: function ($$v) {
+                  _vm.size = $$v
+                },
+                expression: "size",
+              },
             },
-          },
-        ]),
-      }),
+            _vm._l(_vm.sizes, function (option) {
+              return _c(
+                "option",
+                { key: option.id, domProps: { value: option.id } },
+                [_vm._v("\n          " + _vm._s(option.label) + "\n        ")]
+              )
+            }),
+            0
+          ),
+        ],
+        1
+      ),
       _vm._v(" "),
       _c(
         "div",
