@@ -21,7 +21,7 @@
     </div>
     <div class="venues_photos">
       <div class="columns ">
-        <template v-if="venues.length && Object.keys(workout).length">
+        <template v-if="venues.length">
           <div v-for="(venue, key) in venues.slice(0, 3)" :key="key" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
             <div>
               <b-image
@@ -33,7 +33,7 @@
                 {{ venue.name }}
                 <br>
 
-                <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
+                <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.slug)">
                   ¡Regístrate ahora!
                 </b-button>
 
@@ -54,19 +54,19 @@
         </template>
       </div>
       <div class="columns">
-        <template v-if="venues.length && Object.keys(workout).length">
+        <template v-if="venues.length">
           <div v-for="(venue, key)  in venues.slice(3, 6)" :key="key" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
             <b-image
                     responsive
                     :src="`/assets/img/${venue.thumbnail}`"
                     ratio="1by1"
             ></b-image>
-            <div class="text-photo-title venue-active" :class="{'venue-active': venue.id == workout.venue.id}">
+            <div class="text-photo-title venue-active">
               {{ venue.name }}
               <br>
 
 
-              <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
+              <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.slug)">
                 ¡Regístrate ahora!
               </b-button>
 
@@ -112,19 +112,11 @@ export default {
   name: 'venues',
     data() {
         return {
-            workout: {},
             venues: []
         };
     },
     mounted() {
-      window.scrollTo(0, 0)
-        axios
-            .get('api/workout')
-            .then(({ data }) => {
-                this.workout = Object.assign({}, data.data);
-                console.log( this.workout);
-            });
-
+      window.scrollTo(0, 0);
 
         axios
             .get('api/venues')
@@ -133,8 +125,8 @@ export default {
             });
     },
     methods:  {
-        handleGoTo(venueId){
-            this.$router.push('/registro/'+venueId);
+        handleGoTo(slug){
+            this.$router.push('/registro/'+slug);
         },
         setElement(el){
             this.gsap.to(

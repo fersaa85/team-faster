@@ -382,11 +382,12 @@ export default {
 
     data(){
       return {
-          info:{}
+          info:{},
+          slug: ''
       };
     },
     mounted() {
-      window.scrollTo(0, 0)
+      window.scrollTo(0, 0);
       this.setLogoInicio();
       this.setFondoInicio();
       this.setWelcome();
@@ -399,6 +400,7 @@ export default {
         axios
             .get('api/workout')
             .then(({ data: { data } }) => {
+                this.slug = data.venue.slug;
                 this.info = Object.assign({}, {
                     name: data.venue.name,
                     fecha: data.date_start,
@@ -596,7 +598,7 @@ export default {
       },
         handleGoTo(e){
             e.preventDefault();
-            this.$router.push('/registro');
+            this.$router.push('/registro/'+this.slug);
         },
         loadfondoHome(){
           console.log('loadfondoHome');

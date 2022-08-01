@@ -42,7 +42,7 @@ Route::group([
 ], function() {
     Route::get('/', \App\Http\Controllers\Workout\WorkoutController::class);
     Route::get('/count', \App\Http\Controllers\Workout\WorkoutCountController::class);
-    Route::get('/{workoutId}', \App\Http\Controllers\Workout\WorkoutController::class);
+    Route::get('/{slug}', \App\Http\Controllers\Workout\WorkoutController::class);
 });
 
 Route::group([

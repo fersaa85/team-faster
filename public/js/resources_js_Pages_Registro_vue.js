@@ -734,28 +734,28 @@ __webpack_require__.r(__webpack_exports__);
       }
     };
   },
-  // mounted() {
-  //   window.scrollTo(0, 0);
-  //   this.setElement(this.$refs.img1);
-  //   this.setElement(this.$refs.img2);
-  //     axios
-  //         .get('/api/workout/'+this.$route.params.venueId)
-  //         .then(({ data: { data } }) => {
-  //             this.info = Object.assign({}, {
-  //                 name: data.venue.name,
-  //                 fecha: data.date_start,
-  //                 couches: data.couches ? JSON.parse(data.couches) : [],
-  //                 lugar: data.venue.address,
-  //                 tipo:  data.description,
-  //                 coach:  data.coatch.name,
-  //                 photo: data.venue.image,
-  //                 map: data.venue.image_map,
-  //                 google_maps: data.venue.google_maps,
-  //                 available: true
-  //             });
-  //             console.log( this.info);
-  //         });
-  // },
+  mounted: function mounted() {
+    var _this = this;
+
+    window.scrollTo(0, 0);
+    this.setElement(this.$refs.img1);
+    this.setElement(this.$refs.img2);
+    axios.get('/api/workout/' + this.$route.params.slug).then(function (_ref) {
+      var data = _ref.data.data;
+      _this.info = Object.assign({}, {
+        name: data.venue.name,
+        fecha: data.date_start,
+        couches: data.couches ? JSON.parse(data.couches) : [],
+        lugar: data.venue.address,
+        tipo: data.description,
+        coach: data.coatch.name,
+        photo: data.venue.image,
+        map: data.venue.image_map,
+        google_maps: data.venue.google_maps,
+        available: true
+      });
+    });
+  },
   methods: {
     setElement: function setElement(el) {
       this.gsap.to(el, {
