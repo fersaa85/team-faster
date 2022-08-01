@@ -124,7 +124,6 @@ __webpack_require__.r(__webpack_exports__);
   name: 'venues',
   data: function data() {
     return {
-      workout: {},
       venues: []
     };
   },
@@ -132,19 +131,14 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     window.scrollTo(0, 0);
-    axios.get('api/workout').then(function (_ref) {
+    axios.get('api/venues').then(function (_ref) {
       var data = _ref.data;
-      _this.workout = Object.assign({}, data.data);
-      console.log(_this.workout);
-    });
-    axios.get('api/venues').then(function (_ref2) {
-      var data = _ref2.data;
       _this.venues = [].concat(data.data);
     });
   },
   methods: {
-    handleGoTo: function handleGoTo(venueId) {
-      this.$router.push('/registro/' + venueId);
+    handleGoTo: function handleGoTo(slug) {
+      this.$router.push('/registro/' + slug);
     },
     setElement: function setElement(el) {
       this.gsap.to(el, {
@@ -350,7 +344,7 @@ var render = function () {
         "div",
         { staticClass: "columns " },
         [
-          _vm.venues.length && Object.keys(_vm.workout).length
+          _vm.venues.length
             ? _vm._l(_vm.venues.slice(0, 3), function (venue, key) {
                 return _c(
                   "div",
@@ -394,7 +388,7 @@ var render = function () {
                                 },
                                 on: {
                                   click: function ($event) {
-                                    return _vm.handleGoTo(venue.id)
+                                    return _vm.handleGoTo(venue.slug)
                                   },
                                 },
                               },
@@ -438,7 +432,7 @@ var render = function () {
         "div",
         { staticClass: "columns" },
         [
-          _vm.venues.length && Object.keys(_vm.workout).length
+          _vm.venues.length
             ? _vm._l(_vm.venues.slice(3, 6), function (venue, key) {
                 return _c(
                   "div",
@@ -459,12 +453,7 @@ var render = function () {
                     _vm._v(" "),
                     _c(
                       "div",
-                      {
-                        staticClass: "text-photo-title venue-active",
-                        class: {
-                          "venue-active": venue.id == _vm.workout.venue.id,
-                        },
-                      },
+                      { staticClass: "text-photo-title venue-active" },
                       [
                         _vm._v(
                           "\n            " +
@@ -484,7 +473,7 @@ var render = function () {
                             },
                             on: {
                               click: function ($event) {
-                                return _vm.handleGoTo(venue.id)
+                                return _vm.handleGoTo(venue.slug)
                               },
                             },
                           },

@@ -10,10 +10,10 @@ use Illuminate\Routing\Controller;
 
 class WorkoutController extends Controller
 {
-    public function __invoke($workoutId = null)
+    public function __invoke($slug = null)
     {
-        return new WorkoutResource( $workoutId ?
-            Workout::where('venue_id',$workoutId )->first() :
+        return new WorkoutResource( $slug ?
+            Workout::join('venues', 'workouts.venue_id', '=',  'venues.id')->where('slug',$slug )->select('workouts.*')->first() :
             Workout::where('date_start', '>', date('Y-m-d H:i:s'))->first() );
     }
 }

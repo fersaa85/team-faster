@@ -392,7 +392,8 @@ __webpack_require__.r(__webpack_exports__);
   name: 'home',
   data: function data() {
     return {
-      info: {}
+      info: {},
+      slug: ''
     };
   },
   mounted: function mounted() {
@@ -410,6 +411,7 @@ __webpack_require__.r(__webpack_exports__);
     this.setVive();
     axios.get('api/workout').then(function (_ref) {
       var data = _ref.data.data;
+      _this.slug = data.venue.slug;
       _this.info = Object.assign({}, {
         name: data.venue.name,
         fecha: data.date_start,
@@ -623,7 +625,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     handleGoTo: function handleGoTo(e) {
       e.preventDefault();
-      this.$router.push('/registro');
+      this.$router.push('/registro/' + this.slug);
     },
     loadfondoHome: function loadfondoHome() {
       console.log('loadfondoHome');

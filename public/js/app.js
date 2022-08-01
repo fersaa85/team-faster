@@ -1860,7 +1860,7 @@ var routes = [{
   },
   name: 'home'
 }, {
-  path: '/registro/:venueId',
+  path: '/registro/:slug',
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_Pages_Registro_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Registro.vue */ "./resources/js/Pages/Registro.vue"));
   }

@@ -59,6 +59,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -230,69 +231,41 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "venues" },
-    [
-      _c(
-        "div",
-        {
-          staticClass: "columns",
-          staticStyle: { "padding-top": "40px", "padding-bottom": "40px" },
-        },
-        [
-          _vm._m(0),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _c(
-              "div",
-              { staticClass: "title-image" },
-              [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/logoTeamFaster.png",
-                    ratio: "1by1",
-                  },
-                }),
-              ],
-              1
-            ),
-          ]),
-        ]
-      ),
-      _vm._v(" "),
-      _c("h1", { staticStyle: { color: "#ffffff", "font-size": "55px" } }, [
-        _vm._v("Proximamente"),
-      ]),
-      _vm._v(" "),
-      _vm._l(_vm.posts, function (post) {
-        return _c(
-          "div",
-          [
-            _c("p", [_vm._v(_vm._s(post.title))]),
-            _vm._v(" "),
-            _c(
-              "b-navbar-item",
-              {
-                staticClass: "nav-bar-button",
-                class: { "button-active": _vm.$route.name == "blog" },
+  return _c("div", { staticClass: "venues" }, [
+    _c(
+      "div",
+      {
+        staticClass: "columns",
+        staticStyle: { "padding-top": "40px", "padding-bottom": "40px" },
+      },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("div", { staticClass: "column" }, [
+          _c(
+            "div",
+            { staticClass: "title-image" },
+            [
+              _c("b-image", {
                 attrs: {
-                  tag: "router-link",
-                  to: { path: "/blog/" + post.slug },
+                  responsive: "",
+                  src: "/assets/img/logoTeamFaster.png",
+                  ratio: "1by1",
                 },
-              },
-              [_vm._v("\n            " + _vm._s(post.title) + "\n        ")]
-            ),
-          ],
-          1
-        )
-      }),
-      _vm._v(" "),
-      _vm._m(1),
-    ],
-    2
-  )
+              }),
+            ],
+            1
+          ),
+        ]),
+      ]
+    ),
+    _vm._v(" "),
+    _c("h1", { staticStyle: { color: "#ffffff", "font-size": "55px" } }, [
+      _vm._v("Proximamente"),
+    ]),
+    _vm._v(" "),
+    _vm._m(1),
+  ])
 }
 var staticRenderFns = [
   function () {

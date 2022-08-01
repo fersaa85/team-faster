@@ -5,7 +5,7 @@ const routes = [
     name: 'home'
   },
   {
-    path: '/registro/:venueId',
+    path: '/registro/:slug',
     component: () => import('../Pages/Registro.vue'),
   },
   {
