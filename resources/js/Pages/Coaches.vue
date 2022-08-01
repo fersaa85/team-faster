@@ -25,7 +25,7 @@
           <a href="https://www.instagram.com/charlie.ro22/" target="_blank">
             <b-image
               responsive
-              src="/assets/img/CARLOS-@charlie.ro22.jpg"
+              src="/assets/img/Carloss.png"
               ratio="1by1"
               class="img-blackwhite"
               @load="loadedImg1"
@@ -47,7 +47,7 @@
           <a href="https://www.instagram.com/dmckniight/" target="_blank">
             <b-image
               responsive
-              src="/assets/img/DAVID-@dmckniight.jpg"
+              src="/assets/img/David.png"
               ratio="1by1"
               class="img-blackwhite"
               @load="loadedImg2"
@@ -93,7 +93,7 @@
           <a href="https://www.instagram.com/HOMEROCASGRO" target="_blank">
             <b-image
               responsive
-              src="/assets/img/HOMERO-@HOMEROCASGRO.jpg"
+              src="/assets/img/Homero.png"
               ratio="1by1"
               class="img-blackwhite"
               @load="loadedImg4"
@@ -115,7 +115,7 @@
           <a href="https://www.instagram.com/jorgehuo/" target="_blank">
             <b-image
               responsive
-              src="/assets/img/JORGE-@jorgehuo.jpg"
+              src="/assets/img/Jorge.png"
               ratio="1by1"
               class="img-blackwhite"
               @load="loadedImg5"
