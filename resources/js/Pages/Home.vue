@@ -123,21 +123,21 @@
             <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
-                src="/assets/img/HOMERO-@HOMEROCASGRO.jpg"
+                src="/assets/img/Homero.png"
                 ratio="1by1"       
               ></b-image>
             </div>
             <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
-                src="/assets/img/CARLOS-@charlie.ro22.jpg"
+                src="/assets/img/Carloss.png"
                 ratio="1by1"       
               ></b-image>
             </div>
             <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
-                src="/assets/img/DAVID-@dmckniight.jpg"
+                src="/assets/img/David.png"
                 ratio="1by1"       
               ></b-image>
             </div>
@@ -158,7 +158,7 @@
             <div class="column is-6 is-hidden-mobile" style="padding:0">
               <b-image
                 responsive
-                src="/assets/img/JORGE-@jorgehuo.jpg"
+                src="/assets/img/Jorge.png"
                 ratio="1by1"       
               ></b-image>
             </div>
@@ -217,12 +217,8 @@
             ratio="2by4"
             class="img1-v"
           ></b-image>
-          <!--
-          <div class="venue-name pos-1 is-hidden-mobile">
-            Fuente de Xochipili
-          </div>
-          -->
         </div>
+        <!--
         <div class="column is-4-mobile" style="position: relative;">
           <b-image
             responsive
@@ -230,12 +226,8 @@
             ratio="2by4"
             class="img2-v"
           ></b-image>
-          <!--
-          <div class="venue-name pos-2 is-hidden-mobile">
-            Foro Santa Fe
-          </div>
-          -->
         </div>
+        -->
         <div class="column is-4-mobile" style="position: relative;">
           <b-image
             responsive
@@ -243,11 +235,6 @@
             ratio="2by5"
             class="img3-v"
           ></b-image>
-          <!--
-          <div class="venue-name pos-3 is-hidden-mobile">
-            Artz Pedregal
-          </div>
-          -->
         </div>
         <div class="column is-4-mobile" style="position: relative;">
           <b-image
@@ -256,11 +243,6 @@
             ratio="2by5"
             class="img4-v"
           ></b-image>
-          <!--
-          <div class="venue-name pos-4 is-hidden-mobile">
-            Jardin Botánico Chapultepec
-          </div>
-          -->
         </div>
         <div class="column" style="position: relative;">
           <b-image
@@ -269,11 +251,6 @@
             ratio="2by5"
             class="img5-v"
           ></b-image>
-          <!--
-          <div class="venue-name pos-5 is-hidden-mobile">
-            Monumento a la Revolución
-          </div>
-          -->
         </div>
         <div class="column" style="position: relative;">
           <b-image
@@ -281,11 +258,6 @@
             src="/assets/img/CarcamoDolores.jpg"
             ratio="2by5"
           ></b-image>
-          <!--
-          <div class="venue-name pos-6 is-hidden-mobile">
-            Cárcamo de Dolores
-          </div>
-          -->
         </div>
       </div>
     </div>

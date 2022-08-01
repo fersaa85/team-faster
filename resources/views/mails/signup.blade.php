@@ -68,22 +68,22 @@
                             <table role="presentation" style="float: right; width:100px;border:none;border-spacing:0;text-align:right;font-family:Arial,sans-serif";>
                                     <tr style="text-align:right;">
                                         <td style="vertical-align:bottom">
-                                            <a href="https://www.facebook.com/PUMAMexico" style="text-decoration:none; text-align: left;">
+                                            <a href="https://www.facebook.com/PUMAMexico" style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
                                                 <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="https://twitter.com/pumamexico/"style="text-decoration:none; text-align: left;">
+                                            <a href="https://twitter.com/pumamexico/"style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
                                                 <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="https://www.instagram.com/pumamexico/" style="text-decoration:none; text-align: left;">
+                                            <a href="https://www.instagram.com/pumamexico/" style="text-decoration:none; text-align: left;vpadding-right: 5px; padding-left: 5px;">
                                                 <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
                                         <td>
                                         <td>
-                                            <a href="https://www.youtube.com/puma" style="text-decoration:none; text-align: left;">
+                                            <a href="https://www.youtube.com/puma" style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
                                                 <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
                                         </td>

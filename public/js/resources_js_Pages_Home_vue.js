@@ -388,34 +388,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'home',
   data: function data() {
@@ -1061,7 +1033,7 @@ var render = function () {
                   _c("b-image", {
                     attrs: {
                       responsive: "",
-                      src: "/assets/img/HOMERO-@HOMEROCASGRO.jpg",
+                      src: "/assets/img/Homero.png",
                       ratio: "1by1",
                     },
                   }),
@@ -1079,7 +1051,7 @@ var render = function () {
                   _c("b-image", {
                     attrs: {
                       responsive: "",
-                      src: "/assets/img/CARLOS-@charlie.ro22.jpg",
+                      src: "/assets/img/Carloss.png",
                       ratio: "1by1",
                     },
                   }),
@@ -1097,7 +1069,7 @@ var render = function () {
                   _c("b-image", {
                     attrs: {
                       responsive: "",
-                      src: "/assets/img/DAVID-@dmckniight.jpg",
+                      src: "/assets/img/David.png",
                       ratio: "1by1",
                     },
                   }),
@@ -1151,7 +1123,7 @@ var render = function () {
                   _c("b-image", {
                     attrs: {
                       responsive: "",
-                      src: "/assets/img/JORGE-@jorgehuo.jpg",
+                      src: "/assets/img/Jorge.png",
                       ratio: "1by1",
                     },
                   }),
@@ -1210,25 +1182,6 @@ var render = function () {
                 attrs: {
                   responsive: "",
                   src: "/assets/img/FuenteXochipili.jpg",
-                  ratio: "2by4",
-                },
-              }),
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "column is-4-mobile",
-              staticStyle: { position: "relative" },
-            },
-            [
-              _c("b-image", {
-                staticClass: "img2-v",
-                attrs: {
-                  responsive: "",
-                  src: "/assets/img/FotoSantaFe.jpg",
                   ratio: "2by4",
                 },
               }),

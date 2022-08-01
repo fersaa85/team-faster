@@ -519,7 +519,7 @@ var render = function () {
                   staticClass: "img-blackwhite",
                   attrs: {
                     responsive: "",
-                    src: "/assets/img/CARLOS-@charlie.ro22.jpg",
+                    src: "/assets/img/Carloss.png",
                     ratio: "1by1",
                   },
                   on: { load: _vm.loadedImg1 },
@@ -553,7 +553,7 @@ var render = function () {
                   staticClass: "img-blackwhite",
                   attrs: {
                     responsive: "",
-                    src: "/assets/img/DAVID-@dmckniight.jpg",
+                    src: "/assets/img/David.png",
                     ratio: "1by1",
                   },
                   on: { load: _vm.loadedImg2 },
@@ -623,7 +623,7 @@ var render = function () {
                   staticClass: "img-blackwhite",
                   attrs: {
                     responsive: "",
-                    src: "/assets/img/HOMERO-@HOMEROCASGRO.jpg",
+                    src: "/assets/img/Homero.png",
                     ratio: "1by1",
                   },
                   on: { load: _vm.loadedImg4 },
@@ -657,7 +657,7 @@ var render = function () {
                   staticClass: "img-blackwhite",
                   attrs: {
                     responsive: "",
-                    src: "/assets/img/JORGE-@jorgehuo.jpg",
+                    src: "/assets/img/Jorge.png",
                     ratio: "1by1",
                   },
                   on: { load: _vm.loadedImg5 },

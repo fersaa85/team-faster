@@ -30,7 +30,7 @@ Vue.mixin({
 
 Vue.use(VueRouter);
 Vue.use(Buefy);
-Vue.use(VueViewer)
+Vue.use(VueViewer);
 
 const app = new Vue({
   el: '#app',
