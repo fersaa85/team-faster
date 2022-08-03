@@ -20,19 +20,20 @@
       </div>
     </div>
     <div class="gallery-container">
-      <viewer :options="options" :images="images">
-        <template #default="scope">
-        <div class="columns is-multiline">
-          <div v-for="src in scope.images" :key="src" :ref="src" class="column is-3">
-            <b-image
-              :src="src" 
-              responsive
-              @load="loaded(src)"
-            ></b-image>
+      <template>
+        <div class="app-container">
+          <div id="lightgallery">
+            <a
+              v-for="(src, idx) in items"
+              :key="idx"
+              className="gallery-item"
+              :data-src="src"
+            >
+              <img class="img-responsive" :src="src" />
+            </a>
           </div>
         </div>
-        </template>
-      </viewer>
+      </template>
     </div>
     <div class="footer-styles">
       <div class="columns" style="margin: 0;">
@@ -53,16 +54,33 @@
 </template>
 
 <script>
+import $ from "jquery";
+import 'lightgallery.js'
+import 'lightgallery.js/dist/css/lightgallery.css'
+import 'lightgallery.js/src/sass/lg-variables.scss'
+// import 'lightgallery.js/src/sass/lg-thumbnail.scss'
+// import 'lightgallery.js/src/sass/lg-zoom.scss'
+import 'justifiedGallery/dist/css/justifiedGallery.css'
+// import lgThumbnail from 'lightgallery.js'
+// import lgZoom from 'lightgallery.js'
+import 'justifiedGallery/dist/js/jquery.justifiedGallery.js'
+
+// import 'lg-thumbnail/dist/lg-thumbnail.min.js'
+// import lgThumbnail from 'lightgallery/plugins/thumbnail'
+
 export default {
   name: 'galeria',
   data() {
       return {
-        options: {
-            toolbar: true,
-            initialViewIndex: 1,
-            title: false
-        },
-        images: [
+        items: [
+          "/assets/img/David.png",
+          "/assets/img/FRANCHESCA-@franchescasb.jpg",
+          "/assets/img/Homero.png",
+          "/assets/img/Jorge.png",
+          "/assets/img/MAFER-@maferarreolaa.jpg",
+          "/assets/img/PABLO-@pablohutt.jpg",
+          "/assets/img/RAUL-@raul_vicotria_.jpg",
+          "/assets/img/vlopez.jpg",
           "/assets/gallery/22AW_RT_Essentials_Mens_Train-All-Day_7697_RGB.jpg",
           "/assets/gallery/22AW_RT_Essentials_Mens_Train-All-Day_7792_RGB.jpg",
           "/assets/gallery/22AW_RT_Essentials_Mens_Train-All-Day_7886_RGB.jpg",
@@ -93,6 +111,30 @@ export default {
     },
     mounted() {
       window.scrollTo(0, 0)
+      $("#lightgallery")
+        .justifiedGallery({
+          captions: false,
+          rowHeight: 300,
+          margins: 5
+        })
+        .on("jg.complete", function () {
+          window.lightGallery(
+            document.getElementById("lightgallery"),
+            {
+              autoplayFirstVideo: false,
+              // plugins:[lgThumbnail, lgZoom],
+              pager: false,
+              galleryId: "nature",
+              mobileSettings: {
+                controls: false,
+                showCloseIcon: false,
+                download: false,
+                rotate: false
+              }
+            }
+          );
+        });
+
     },
     methods: {
       show() {
