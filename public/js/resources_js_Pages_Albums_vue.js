@@ -362,6 +362,13 @@ var render = function () {
                   [
                     _c(
                       "div",
+                      {
+                        on: {
+                          click: function ($event) {
+                            return _vm.handleGoTo(venue.id)
+                          },
+                        },
+                      },
                       [
                         _c("b-image", {
                           attrs: {
@@ -440,7 +447,7 @@ var render = function () {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "columns" },
+        { staticClass: "columns", staticStyle: { margin: "0 20px" } },
         [
           _vm.venues.length && Object.keys(_vm.workout).length
             ? _vm._l(_vm.venues.slice(3, 6), function (venue, key) {

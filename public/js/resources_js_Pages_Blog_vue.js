@@ -260,9 +260,19 @@ var render = function () {
       ]
     ),
     _vm._v(" "),
-    _c("h1", { staticStyle: { color: "#ffffff", "font-size": "55px" } }, [
-      _vm._v("Proximamente"),
-    ]),
+    _c(
+      "h1",
+      {
+        staticClass: "puma-regular",
+        staticStyle: {
+          color: "#ffffff",
+          "padding-top": "80px",
+          "font-size": "50px",
+          "min-height": "45vh",
+        },
+      },
+      [_vm._v("Próximamente")]
+    ),
     _vm._v(" "),
     _vm._m(1),
   ])

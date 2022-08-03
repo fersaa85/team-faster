@@ -23,7 +23,7 @@
       <div class="columns " style="margin-bottom: 60px;">
         <template v-if="venues.length && Object.keys(workout).length">
           <div v-for="(venue, key) in venues.slice(0, 3)" :key="key" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
-            <div>
+            <div @click="handleGoTo(venue.id)">
               <b-image
                       responsive
                       :src="`/assets/img/${venue.thumbnail}`"
