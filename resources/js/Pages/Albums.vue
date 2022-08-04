@@ -54,9 +54,9 @@
           </div>
         </template>
       </div>
-      <div class="columns">
+      <div class="columns is-centered">
         <template v-if="venues.length && Object.keys(workout).length">
-          <div v-for="(venue, key)  in venues.slice(3, 6)" :key="key" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
+          <div v-for="(venue, key)  in venues.slice(3, 6)" :key="key" class="column is-clickable is-4" :class="`venue${key}`"  style="position:relative;">
             <b-image
                     responsive
                     :src="`/assets/img/${venue.thumbnail}`"
@@ -190,7 +190,6 @@ export default {
     text-align: right;
     @media screen and (max-width: 768px) {
       font-size: 90px;
-      color: black;
       line-height: 80px;
       text-align: center;
     }
