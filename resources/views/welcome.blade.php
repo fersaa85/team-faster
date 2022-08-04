@@ -15,6 +15,6 @@
         </div>
         
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="{{ mix('js/app.js') }}?v=1.0.5"></script>
+        <script src="{{ mix('js/app.js') }}?v=1.0.6"></script>
     </body>
 </html>

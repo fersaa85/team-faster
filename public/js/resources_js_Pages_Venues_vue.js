@@ -430,7 +430,7 @@ var render = function () {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "columns" },
+        { staticClass: "columns is-centered" },
         [
           _vm.venues.length
             ? _vm._l(_vm.venues.slice(3, 6), function (venue, key) {
@@ -438,7 +438,7 @@ var render = function () {
                   "div",
                   {
                     key: key,
-                    staticClass: "column is-clickable",
+                    staticClass: "column is-clickable is-4",
                     class: "venue" + key,
                     staticStyle: { position: "relative" },
                   },
