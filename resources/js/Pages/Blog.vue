@@ -21,7 +21,7 @@
         </div>
 
 
-        <h1 style="color: #ffffff; font-size: 55px">Proximamente</h1>
+        <h1 class="puma-regular" style="color: #ffffff; padding-top: 80px; font-size: 50px; min-height: 45vh;">Próximamente</h1>
 
         <!--
         <div v-for="post in posts">

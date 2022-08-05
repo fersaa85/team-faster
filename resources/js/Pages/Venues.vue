@@ -81,7 +81,7 @@
           </div>
         </template>
       </div>
-      <div class="columns">
+      <div class="columns is-centered">
         <template v-if="venues.length">
           <div v-for="(venue, key)  in venues.slice(3, 6)" :key="key"  class="column is-4"  :class="`venue${key}`"  style="position:relative;">
             <div>
