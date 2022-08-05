@@ -134,7 +134,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" style="padding-left: 0px; padding-right: 0px; padding-top:20px;">
-                           <img src="http://tiempocreativo.com.mx/assets/img/FONDO_HOME.jpg" width="600" alt="" style="width:100%;height:auto;display:block;border:none;text-decoration:none;color:#363636;">
+                           <img src="http://tiempocreativo.com.mx/assets/img/PUMA_FONDO_HOME_2.jpg" width="600" alt="" style="width:100%;height:auto;display:block;border:none;text-decoration:none;color:#363636;">
                         </td>
                     </tr>
                     <tr>

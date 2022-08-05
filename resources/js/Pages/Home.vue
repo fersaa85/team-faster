@@ -5,7 +5,7 @@
         <b-image
           responsive
           class="fondo-home"
-          src="/assets/img/FONDO_HOME.jpg"
+          src="/assets/img/PUMA_FONDO_HOME_2.jpg"
           ratio="300by170"
           style="margin-top: 0px;"
           @load="loadfondoHome"
@@ -58,14 +58,15 @@
           </div>
           <div class="column gotica-italic">
             <div class="join-text-r1">
-              {{ info.name }}
+              <!-- {{ info.name }} -->
             </div>
-            <div class="join-text-r2">
-              {{ info.fecha }}
+
+            <div class="join-text-r2 puma-regular text-welcome">
+              Vuélvete parte de nuestra familia teamfaster y entrena como los grandes en alguna de las sedes que tenemos preparadas para ti
             </div>
             <div ref="buttonRegistrarse">
               <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
-                  Registrarse
+                Conoce nuestras sedes
               </b-button>
             </div>
           </div>
@@ -95,7 +96,7 @@
             <div class="column is-6" style="padding:0">
               <b-image
                 responsive
-                src="/assets/img/JORGE-@jorgehuo.jpg"
+                src="/assets/img/Jorge.png"
                 ratio="1by1"       
               ></b-image>
             </div>
@@ -336,7 +337,7 @@
           </div>
           <div class="section-team2">
             <div>
-              Team Faster eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar… somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos.
+              Team Faster eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am para ir a entrenar… somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos.
             </div>
             <br>
             <div>
@@ -598,7 +599,7 @@ export default {
       },
         handleGoTo(e){
             e.preventDefault();
-            this.$router.push('/registro/'+this.slug);
+            this.$router.push('/registro');
         },
         loadfondoHome(){
           console.log('loadfondoHome');
@@ -1259,18 +1260,11 @@ export default {
     }
     .join-text-r2{
       color: white;
-      font-size: 80px;
-      line-height: 34px;
       @media screen and (max-width: 1080px) {
-        font-size: 70px;
-        line-height: 24px;
       }
       @media screen and (max-width: 980px) {
-        font-size: 60px;
       }
       @media screen and (max-width: 850px) {
-        font-size: 50px;
-        line-height: 14px;
       }
     }
     .register-button{
@@ -2131,6 +2125,29 @@ export default {
       @media screen and (max-width: 808px) {
         margin-top: 54px;
       }
+    }
+
+  }
+
+  .text-welcome{
+    font-size: 25px;
+    @media screen and (max-width: 1514px) {
+      font-size: 22px;
+    }
+    @media screen and (max-width: 1087px) {
+      font-size: 19px;
+    }
+    @media screen and (max-width: 1041px) {
+      font-size: 18px;
+    }
+    @media screen and (max-width: 1038px) {
+      margin-top: 78px;
+    }
+    @media screen and (max-width: 853px) {
+      margin-top: 68px;
+    }
+    @media screen and (max-width: 808px) {
+      margin-top: 54px;
     }
   }
 </style>
