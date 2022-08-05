@@ -75,7 +75,7 @@
           fecha: '',
           lugar: '',
           tipo: '',
-          coach: '',
+          coach: {},
           photo: '',
           map: '',
           google_maps: '',
@@ -90,13 +90,14 @@
          axios
              .get('/api/workout/'+this.$route.params.slug)
              .then(({ data: { data } }) => {
+                 console.log(data.coatch);
                  this.info = Object.assign({}, {
                      name: data.venue.name,
                      fecha: data.date_start,
                      couches: data.couches ? JSON.parse(data.couches) : [],
                      lugar: data.venue.address,
                      tipo:  data.description,
-                     coach:  data.coatch.name,
+                     coach: data.coatch,
                      photo: data.venue.image,
                      map: data.venue.image_map,
                      google_maps: data.venue.google_maps,

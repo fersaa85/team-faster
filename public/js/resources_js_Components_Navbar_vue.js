@@ -47,8 +47,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'navbar'
+  name: 'navbar',
+  methods: {
+    handleGoTo: function handleGoTo(e) {
+      e.preventDefault();
+      this.$router.push('/registro');
+    }
+  }
 });
 
 /***/ }),
@@ -235,6 +245,16 @@ var render = function () {
               "b-navbar-item",
               {
                 staticClass: "nav-bar-button",
+                class: { "button-active": _vm.$route.name == "home" },
+                attrs: { tag: "router-link", to: { path: "/" } },
+              },
+              [_vm._v("\n      Inicio\n    ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "b-navbar-item",
+              {
+                staticClass: "nav-bar-button",
                 class: { "button-active": _vm.$route.name == "registro" },
                 attrs: { tag: "router-link", to: { path: "/registro" } },
               },
@@ -278,7 +298,15 @@ var render = function () {
         key: "end",
         fn: function () {
           return [
-            _c("b-navbar-item", { attrs: { tag: "div", id: "item-end" } }),
+            _c(
+              "b-button",
+              {
+                staticClass: "register-button",
+                attrs: { rounded: "", size: "is-medium" },
+                on: { click: _vm.handleGoTo },
+              },
+              [_vm._v("\n      ¡Inscríbite aqui!\n    ")]
+            ),
           ]
         },
         proxy: true,

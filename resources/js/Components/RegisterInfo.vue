@@ -70,7 +70,10 @@
                   Coach participante
                 </p>
                 <p class="info-block-text">
-                  {{ coach }}
+                  {{ coach.name }}<br />
+                  <a :href="coach.instagram" target="_blank" class="puma-regular photo-info2 color-black">
+                      {{ coach.description }}
+                  </a>
                 </p>
               </div>
             </div>
@@ -129,8 +132,9 @@ import SuccessModal from '../Components/Success.vue';
         required: true
       },
       coach: {
-        type: String,
-        required: true
+        type: Object,
+        required: true,
+        default: () => ({})
       },
       available: {
         type: Boolean,
@@ -138,7 +142,7 @@ import SuccessModal from '../Components/Success.vue';
       },
       couches: {
           type: Array,
-          defautl: () => []
+          default: () => []
       }
     },
     data(){
@@ -344,5 +348,10 @@ import SuccessModal from '../Components/Success.vue';
     color: #721c24;
     background-color: #f8d7da;
     border-color: #f5c6cb;
+  }
+
+  .color-black{
+    font-weight: bold;
+    color: #000000;
   }
 </style>

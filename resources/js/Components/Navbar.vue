@@ -9,6 +9,9 @@
       </b-navbar-item>
     </template>
     <template #start>
+      <b-navbar-item tag="router-link" :to="{ path: '/' }" class="nav-bar-button" :class="{'button-active':  $route.name =='home'}">
+        Inicio
+      </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/registro' }" class="nav-bar-button" :class="{'button-active':  $route.name =='registro'}">
         Registro
       </b-navbar-item>
@@ -28,15 +31,22 @@
       </b-navbar-item>
     </template>
     <template #end>
-      <b-navbar-item tag="div" id="item-end">
-      </b-navbar-item>
+      <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
+        ¡Inscríbite aqui!
+      </b-button>
     </template>
   </b-navbar>
 </template>
 
 <script>
 export default {
-  name: 'navbar'
+    name: 'navbar',
+    methods: {
+        handleGoTo(e){
+            e.preventDefault();
+            this.$router.push('/registro');
+        },
+    }
 }
 </script>
 <style lang="scss" scoped>
