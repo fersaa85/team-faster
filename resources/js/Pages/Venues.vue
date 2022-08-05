@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="venues_photos">
-      <div class="columns ">
+      <div class="columns">
         <template v-if="venues.length">
           <div v-for="(venue, key) in venues.slice(0, 3)" :key="key" class="column is-4" :class="`venue${key}`"  style="position:relative;">
               <div>
@@ -81,7 +81,7 @@
           </div>
         </template>
       </div>
-      <div class="columns is-centered">
+      <div class="columns mt-5 mb-5">
         <template v-if="venues.length">
           <div v-for="(venue, key)  in venues.slice(3, 6)" :key="key"  class="column is-4"  :class="`venue${key}`"  style="position:relative;">
             <div>
