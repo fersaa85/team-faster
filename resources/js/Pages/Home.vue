@@ -648,6 +648,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.home{
+  max-width: 100vw;
+  overflow-x: hidden;
+}
   .footer-styles{
     padding: 96px 24px 48px;
     background: linear-gradient(transparent, 35%, #110315);
@@ -894,7 +898,8 @@ export default {
       padding-top: 208px;
     }
     @media screen and (max-width: 768px) {
-      padding-top: 110px;
+      padding-top: 130px;
+      height: 1000px;
     }
     .section-venues1{
       font-size: 180px;
@@ -1147,7 +1152,7 @@ export default {
   .second-section{
     background: black;
     background: linear-gradient(60deg, black, #9b98a2 40%, #a1a1a1);
-    height: 750px;
+    height: 860px;
     margin-top: -7.5% !important;
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     position: relative;
