@@ -61,7 +61,7 @@
               <!-- {{ info.name }} -->
             </div>
 
-            <div class="join-text-r2 puma-regular text-welcome">
+            <div class="join-text-r2 puma-regular">
               Vuélvete parte de nuestra familia teamfaster y entrena como los grandes en alguna de las sedes que tenemos preparadas para ti
             </div>
             <div ref="buttonRegistrarse">
@@ -91,13 +91,14 @@
         </div>
     <div class="vertical-sect section-coaches gotica-italic">
       <div class="columns">
-        <div class="column coaches1">
+        <div class="column coaches1 is-hidden-tablet ">
           <div class="columns is-multiline" style="margin: 0;">
             <div class="column is-6" style="padding:0">
               <b-image
                 responsive
-                src="/assets/img/Jorge.png"
-                ratio="1by1"       
+                src="/assets/img/RAUL-@raul_vicotria_.jpg"
+                ratio="1by1"
+                class="first-coach"
               ></b-image>
             </div>
             <div class="column is-6" style="padding:0">
@@ -114,52 +115,106 @@
                 ratio="1by1"       
               ></b-image>
             </div>
-            <div class="column is-6 is-hidden-mobile" style="padding:0">
+          </div>
+        </div>
+        <div ref="coachesImgs" class="column coaches1 is-hidden-mobile">
+          <div class="columns is-multiline" style="margin: 0;">
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/RAUL-@raul_vicotria_.jpg"
+                ratio="1by1"
+                class="first-coach"
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/MAFER-@maferarreolaa.jpg"
+                ratio="1by1"       
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/FRANCHESCA-@franchescasb.jpg"
+                ratio="1by1"       
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
               <b-image
                 responsive
                 src="/assets/img/PABLO-@pablohutt.jpg"
                 ratio="1by1"       
               ></b-image>
             </div>
-            <div class="column is-6 is-hidden-mobile" style="padding:0">
-              <b-image
-                responsive
-                src="/assets/img/Homero.png"
-                ratio="1by1"       
-              ></b-image>
-            </div>
-            <div class="column is-6 is-hidden-mobile" style="padding:0">
-              <b-image
-                responsive
-                src="/assets/img/Carloss.png"
-                ratio="1by1"       
-              ></b-image>
-            </div>
-            <div class="column is-6 is-hidden-mobile" style="padding:0">
-              <b-image
-                responsive
-                src="/assets/img/David.png"
-                ratio="1by1"       
-              ></b-image>
-            </div>
-            <div class="column is-6 is-hidden-mobile" style="padding:0">
-              <b-image
-                responsive
-                src="/assets/img/RAUL-@raul_vicotria_.jpg"
-                ratio="1by1"       
-              ></b-image>
-            </div>
-            <div class="column is-6 is-hidden-mobile" style="padding:0">
+            <div class="column is-6" style="padding:0">
               <b-image
                 responsive
                 src="/assets/img/vlopez.jpg"
                 ratio="1by1"       
               ></b-image>
             </div>
-            <div class="column is-6 is-hidden-mobile" style="padding:0">
+            <div class="column is-6" style="padding:0">
               <b-image
                 responsive
                 src="/assets/img/Jorge.png"
+                ratio="1by1"       
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/David.png"
+                ratio="1by1"       
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/Carloss.png"
+                ratio="1by1"       
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/Homero.png"
+                ratio="1by1"       
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/Jorge.png"
+                ratio="1by1"       
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/PABLO-@pablohutt.jpg"
+                ratio="1by1"       
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/MAFER-@maferarreolaa.jpg"
+                ratio="1by1"       
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/David.png"
+                ratio="1by1"       
+              ></b-image>
+            </div>
+            <div class="column is-6" style="padding:0">
+              <b-image
+                responsive
+                src="/assets/img/vlopez.jpg"
                 ratio="1by1"       
               ></b-image>
             </div>
@@ -360,10 +415,10 @@
     </div>
     <div class="footer-styles">
       <div class="columns">
-        <div class="column tm-puma has-text-left">
+        <div class="column tm-puma footer-1">
           @2022 puma. Todos los derechos reservados
         </div>
-        <div class="column tm-puma has-text-right">
+        <div class="column tm-puma footer-2">
 
           <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png"  width="30px"/></a>
           <a href="https://twitter.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png"  width="30px"/></a>
@@ -522,7 +577,7 @@ export default {
         });
       },
       setCoachesImg(){
-        this.gsap.from(".coaches1", {
+        this.gsap.from(this.$refs.coachesImgs, {
           scrollTrigger:{
             trigger:this.$refs.coachesText4D, // start the animation when ".box" enters the viewport (once)
             toggleActions: "play complete reverse"
@@ -657,6 +712,19 @@ export default {
     padding: 96px 24px 48px;
     background: linear-gradient(transparent, 35%, #110315);
     opacity: 1;
+    .footer-1{
+      text-align: left;
+      @media screen and (max-width: 768px) {
+        text-align:center;
+      }
+    }
+    .footer-2{
+      text-align: right;
+      @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        text-align:center;
+      }
+    }
   }
   .first-section{
     position: relative;
@@ -972,28 +1040,25 @@ export default {
     height: 950px;
     margin-top: -500px !important;
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
+
     @media screen and (max-width: 768px) {
-      height: 237vw;
-      clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
-    }
-    @media screen and (max-width: 768px) {
-      height: 235vw;
+      height: 198vw;
       clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 693px) {
-      height: 233vw;
+      // height: 233vw;
       clip-path: polygon(0 11%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 643px) {
-      height: 230vw;
+      // height: 230vw;
       clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 585px) {
-      height: 227vw;
+      // height: 227vw;
       clip-path: polygon(0 12%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 539px) {
-      height: 224vw;
+      // height: 224vw;
       clip-path: polygon(0 13%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 493px) {
@@ -1001,27 +1066,27 @@ export default {
       clip-path: polygon(0 14%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 459px) {
-      height: 219vw;
+      // height: 219vw;
       clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 428px) {
-      height: 216vw;
+      // height: 216vw;
       clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 406px) {
-      height: 213vw;
+      // height: 213vw;
       clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 378px) {
-      height: 210vw;
+      // height: 210vw;
       clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 350px) {
-      height: 207vw;
+      // height: 207vw;
       clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     }
     @media screen and (max-width: 338px) {
-      height: 202vw;
+      // height: 202vw;
       clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     }
     .section-venues-down-img{
@@ -1153,10 +1218,16 @@ export default {
   .second-section{
     background: black;
     background: linear-gradient(60deg, black, #9b98a2 40%, #a1a1a1);
-    height: 860px;
+    height: 750px;
     margin-top: -7.5% !important;
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
     position: relative;
+    @media screen and (max-width: 1297px) {
+      height: 800px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 860px;
+    }
     .logoPuma{
 
     }
@@ -1265,7 +1336,10 @@ export default {
     }
     .join-text-r2{
       color: white;
-      @media screen and (max-width: 1080px) {
+      padding: 4%;
+      font-size: 30px;
+      @media screen and (max-width: 1038px) {
+        font-size: 25px;
       }
       @media screen and (max-width: 980px) {
       }
@@ -1526,10 +1600,10 @@ export default {
           top: 200px;
         }
         @media screen and (max-width: 768px) {
-          top: 330px;
+          top: 233px;
         }
         @media screen and (max-width: 689px) {
-          top: 350px;
+          top: 233px;
         }
         .logo-galery{
           width: 20%;
@@ -1574,7 +1648,8 @@ export default {
   .section-galery-up{
     background: black;
     @media screen and (max-width: 768px) {
-      clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
+      clip-path: none;
+      height: 850px;
     }
     .container-txt1{
       padding-top: 158px !important;
@@ -1602,6 +1677,10 @@ export default {
       @media screen and (max-width: 890px) {
         padding-top: 110px !important;
       }
+      @media screen and (max-width: 768px) {
+        padding-top: 0 !important;
+      }
+
     }
     .section-galery-up-txt1{
       color: white;
@@ -1634,7 +1713,7 @@ export default {
         margin: 0 1%;
         line-height: 80px;
         text-align: center ;
-        padding-top: 65px;
+        padding-top: 40px;
       }
     }
     .section-galery-up-txt2{
@@ -1926,26 +2005,27 @@ export default {
         line-height: 73px;
       }
       @media screen and (max-width: 768px) {
+        margin-top: 20px;
         font-size: 60px;
         line-height: 73px;
         position: relative;
         z-index: 1;
         margin-bottom: 26px;
       }
-      @media screen and (max-width: 568px) {
-        margin-top: 20px;
-      }
-      @media screen and (max-width: 568px) {
-        margin-top: 30px;
-      }
-      @media screen and (max-width: 468px) {
+      @media screen and (max-width: 600px) {
         margin-top: 50px;
       }
+      @media screen and (max-width: 568px) {
+        margin-top: 60px;
+      }
+      @media screen and (max-width: 468px) {
+        margin-top: 80px;
+      }
       @media screen and (max-width: 388px) {
-        margin-top: 70px;
+        margin-top: 100px;
       }
       @media screen and (max-width: 308px) {
-        margin-top: 90px;
+        margin-top: 100px;
       }
     }
     .section-team-cont{

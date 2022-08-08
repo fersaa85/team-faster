@@ -37,10 +37,10 @@
     </div>
     <div class="footer-styles">
       <div class="columns" style="margin: 0;">
-        <div class="column tm-puma has-text-left" >
+        <div class="column tm-puma footer-1" >
           @2022 puma. Todos los derechos reservados
         </div>
-        <div class="column tm-puma has-text-right">
+        <div class="column tm-puma footer-2">
 
           <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png"  width="30px"/></a>
           <a href="https://twitter.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png"  width="30px"/></a>
@@ -199,5 +199,18 @@ export default {
     padding: 96px 20px 48px;
     background: linear-gradient(transparent, 35%, #110315);
     opacity: 1;
+    .footer-1{
+      text-align: left;
+      @media screen and (max-width: 768px) {
+        text-align:center;
+      }
+    }
+    .footer-2{
+      text-align: right;
+      @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        text-align:center;
+      }
+    }
   }
 </style>

@@ -226,7 +226,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".date[data-v-0629e8cd] {\n  font-size: 26px;\n  font-weight: bold;\n  text-transform: uppercase;\n}\n.register-button[data-v-0629e8cd] {\n  border-color: white;\n}\n@media screen and (max-width: 1024px) {\n.register-button[data-v-0629e8cd] {\n    font-size: 1rem !important;\n}\n}\n@media screen and (max-width: 940px) {\n.register-button[data-v-0629e8cd] {\n    font-size: 0.9rem !important;\n}\n}\n@media screen and (max-width: 768px) {\n.register-button[data-v-0629e8cd] {\n    font-size: 1.25rem !important;\n}\n}\n.color-white[data-v-0629e8cd] {\n  color: #ffffff;\n}\n.venues_photos[data-v-0629e8cd] {\n  margin: 0 20px;\n  padding: 20px;\n  background-color: black;\n}\n.venues[data-v-0629e8cd] {\n  background: linear-gradient(90deg, #6d6e79, #ebebed);\n}\n.title-venues[data-v-0629e8cd] {\n  font-size: 100px;\n  color: black;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-0629e8cd] {\n    font-size: 90px;\n    color: black;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-0629e8cd] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-0629e8cd] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-0629e8cd] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-0629e8cd] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-0629e8cd] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-0629e8cd] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, black 45%, black);\n  opacity: 1;\n}\n.text-photo-title[data-v-0629e8cd] {\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding: 0 12px;\n}\n.text-photo-date[data-v-0629e8cd] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Regular\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: right;\n  left: 0;\n  bottom: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-right: 20px;\n  padding-bottom: 12px;\n}\n.text-photo-register[data-v-0629e8cd] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: left;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-left: 20px;\n  padding-top: 20px;\n}\n.venue0[data-v-0629e8cd] {\n  animation: fadein-data-v-0629e8cd 1s;\n  -moz-animation: fadein-data-v-0629e8cd 1s; /* Firefox */\n  -webkit-animation: fadein-data-v-0629e8cd 1s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-0629e8cd 1s; /* Opera */\n}\n.venue1[data-v-0629e8cd] {\n  animation: fadein-data-v-0629e8cd 2s;\n  -moz-animation: fadein-data-v-0629e8cd 2s; /* Firefox */\n  -webkit-animation: fadein-data-v-0629e8cd 2s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-0629e8cd 2s; /* Opera */\n}\n.venue2[data-v-0629e8cd] {\n  animation: fadein-data-v-0629e8cd 3s;\n  -moz-animation: fadein-data-v-0629e8cd 3s; /* Firefox */\n  -webkit-animation: fadein-data-v-0629e8cd 3s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-0629e8cd 3s; /* Opera */\n}\n.empty[data-v-0629e8cd] {\n  height: 30vw;\n}\n@keyframes fadein-data-v-0629e8cd {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@-webkit-keyframes fadein-data-v-0629e8cd { /* Safari and Chrome */\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".date[data-v-0629e8cd] {\n  font-size: 26px;\n  font-weight: bold;\n  text-transform: uppercase;\n}\n.register-button[data-v-0629e8cd] {\n  border-color: white;\n}\n@media screen and (max-width: 1024px) {\n.register-button[data-v-0629e8cd] {\n    font-size: 1rem !important;\n}\n}\n@media screen and (max-width: 940px) {\n.register-button[data-v-0629e8cd] {\n    font-size: 0.9rem !important;\n}\n}\n@media screen and (max-width: 768px) {\n.register-button[data-v-0629e8cd] {\n    font-size: 1.25rem !important;\n}\n}\n.color-white[data-v-0629e8cd] {\n  color: #ffffff;\n}\n.venues_photos[data-v-0629e8cd] {\n  margin: 0 20px;\n  padding: 20px;\n  background-color: black;\n}\n.venues[data-v-0629e8cd] {\n  background: linear-gradient(90deg, #6d6e79, #ebebed);\n  overflow-x: hidden;\n}\n.title-venues[data-v-0629e8cd] {\n  font-size: 100px;\n  color: black;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-0629e8cd] {\n    font-size: 90px;\n    color: black;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-0629e8cd] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-0629e8cd] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-0629e8cd] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-0629e8cd] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-0629e8cd] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-0629e8cd] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, black 45%, black);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-0629e8cd] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-0629e8cd] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-0629e8cd] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-0629e8cd] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n@media screen and (max-width: 768px) {\n.contain-register-button[data-v-0629e8cd] {\n    text-align: center;\n    margin-bottom: 24px;\n}\n}\n.text-photo-title[data-v-0629e8cd] {\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding: 0 12px;\n}\n@media screen and (max-width: 768px) {\n.text-photo-title[data-v-0629e8cd] {\n    text-align: center;\n}\n}\n.text-photo-date[data-v-0629e8cd] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Regular\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: right;\n  left: 0;\n  bottom: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-right: 20px;\n  padding-bottom: 12px;\n}\n.text-photo-register[data-v-0629e8cd] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: left;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-left: 20px;\n  padding-top: 20px;\n}\n.venue0[data-v-0629e8cd] {\n  animation: fadein-data-v-0629e8cd 1s;\n  -moz-animation: fadein-data-v-0629e8cd 1s; /* Firefox */\n  -webkit-animation: fadein-data-v-0629e8cd 1s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-0629e8cd 1s; /* Opera */\n}\n.venue1[data-v-0629e8cd] {\n  animation: fadein-data-v-0629e8cd 2s;\n  -moz-animation: fadein-data-v-0629e8cd 2s; /* Firefox */\n  -webkit-animation: fadein-data-v-0629e8cd 2s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-0629e8cd 2s; /* Opera */\n}\n.venue2[data-v-0629e8cd] {\n  animation: fadein-data-v-0629e8cd 3s;\n  -moz-animation: fadein-data-v-0629e8cd 3s; /* Firefox */\n  -webkit-animation: fadein-data-v-0629e8cd 3s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-0629e8cd 3s; /* Opera */\n}\n.empty[data-v-0629e8cd] {\n  height: 30vw;\n}\n@keyframes fadein-data-v-0629e8cd {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@-webkit-keyframes fadein-data-v-0629e8cd { /* Safari and Chrome */\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -392,7 +392,7 @@ var render = function () {
     _c("div", { staticClass: "venues_photos" }, [
       _c(
         "div",
-        { staticClass: "columns " },
+        { staticClass: "columns" },
         [
           _vm.venues.length
             ? _vm._l(_vm.venues.slice(0, 3), function (venue, key) {
@@ -461,6 +461,7 @@ var render = function () {
                               _vm._v(" "),
                               _c(
                                 "div",
+                                { staticClass: "contain-register-button" },
                                 [
                                   _c(
                                     "b-button",
@@ -507,7 +508,7 @@ var render = function () {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "columns is-centered" },
+        { staticClass: "columns mt-5 mb-5" },
         [
           _vm.venues.length
             ? _vm._l(_vm.venues.slice(3, 6), function (venue, key) {
@@ -515,11 +516,7 @@ var render = function () {
                   "div",
                   {
                     key: key,
-<<<<<<< HEAD
                     staticClass: "column is-4",
-=======
-                    staticClass: "column is-clickable is-4",
->>>>>>> 4ec4e8b9268a8d52c5e24c04b962931b574d6657
                     class: "venue" + key,
                     staticStyle: { position: "relative" },
                   },
@@ -580,6 +577,7 @@ var render = function () {
                               _vm._v(" "),
                               _c(
                                 "div",
+                                { staticClass: "contain-register-button" },
                                 [
                                   _c(
                                     "b-button",
@@ -649,11 +647,11 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "footer-styles" }, [
       _c("div", { staticClass: "columns", staticStyle: { margin: "0" } }, [
-        _c("div", { staticClass: "column tm-puma has-text-left" }, [
+        _c("div", { staticClass: "column tm-puma footer-1" }, [
           _vm._v("\n        @2022 puma. Todos los derechos reservados\n      "),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column tm-puma has-text-right" }, [
+        _c("div", { staticClass: "column tm-puma footer-2" }, [
           _c(
             "a",
             {

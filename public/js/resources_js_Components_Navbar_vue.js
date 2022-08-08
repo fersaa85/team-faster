@@ -305,7 +305,7 @@ var render = function () {
                 attrs: { rounded: "", size: "is-medium" },
                 on: { click: _vm.handleGoTo },
               },
-              [_vm._v("\n      ¡Inscríbite aqui!\n    ")]
+              [_vm._v("\n      ¡Inscríbete aquí!\n    ")]
             ),
           ]
         },

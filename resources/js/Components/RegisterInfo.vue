@@ -305,6 +305,9 @@ import SuccessModal from '../Components/Success.vue';
     }
     .info-block-text{
       color:black;
+      @media screen and (max-width: 1407px) {
+        padding-left: 7%;
+      }
     }
     .button{
       margin-bottom: 80px;
@@ -324,7 +327,7 @@ import SuccessModal from '../Components/Success.vue';
   .register-form, .register-form-tablet{
     background-color: black;
     clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);
-    padding-top: 72px;
+    padding-top: 125px;
     margin-top: 29px;
     min-height: 61vh;
   }
