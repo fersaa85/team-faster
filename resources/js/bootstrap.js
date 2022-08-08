@@ -9,7 +9,7 @@ window._ = require('lodash');
 window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-window.axios.defaults.baseURL = 'https://tiempocreativo.com.mx/';
+// window.axios.defaults.baseURL = 'https://tiempocreativo.com.mx/';
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
