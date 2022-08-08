@@ -169,7 +169,7 @@ __webpack_require__.r(__webpack_exports__);
     handleSubmit: function handleSubmit() {
       var _this = this;
 
-      axios.post('api/auth/signup/'["this"].$route.params.venueId, {
+      axios.post('api/auth/signup/', this.$route.params.venueId, {
         "g-recaptcha-response": this.gRecaptchaResponse,
         email: this.email,
         name: this.name,
@@ -2031,8 +2031,8 @@ var render = function () {
                   _c("p", { staticClass: "info-block-text" }, [
                     _vm._v(
                       "\n                    " +
-                        _vm._s(_vm.info.coach) +
-                        "\n                    "
+                        _vm._s(_vm.info.coach.name) +
+                        " \n                    "
                     ),
                   ]),
                 ]),

@@ -270,88 +270,95 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "footer-styles" }, [
-      _c("div", { staticClass: "columns", staticStyle: { margin: "0" } }, [
-        _c("div", { staticClass: "column tm-puma footer-1" }, [
-          _vm._v(
-            "\n                @2022 puma. Todos los derechos reservados\n            "
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "column tm-puma footer-2" }, [
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: {
-                href: "https://www.facebook.com/PUMAMexico",
-                target: "_blank",
-              },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
-                  width: "30px",
-                },
-              }),
-            ]
-          ),
+      _c(
+        "div",
+        { staticClass: "columns is-vcentered", staticStyle: { margin: "0" } },
+        [
+          _c("div", { staticClass: "column tm-puma footer-1" }, [
+            _vm._v(
+              "\n                @2022 puma. Todos los derechos reservados\n            "
+            ),
+          ]),
           _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: {
-                href: "https://twitter.com/pumamexico/",
-                target: "_blank",
+          _c("div", { staticClass: "column tm-puma footer-2" }, [
+            _c(
+              "a",
+              {
+                staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+                attrs: {
+                  href: "https://www.facebook.com/PUMAMexico",
+                  target: "_blank",
+                },
               },
-            },
-            [
-              _c("img", {
+              [
+                _c("img", {
+                  attrs: {
+                    src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
+                    width: "30px",
+                  },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticStyle: { "margin-left": "5px", "margin-right": "5px" },
                 attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
-                  width: "30px",
+                  href: "https://twitter.com/pumamexico/",
+                  target: "_blank",
                 },
-              }),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: {
-                href: "https://www.instagram.com/pumamexico/",
-                target: "_blank",
               },
-            },
-            [
-              _c("img", {
+              [
+                _c("img", {
+                  attrs: {
+                    src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
+                    width: "30px",
+                  },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticStyle: { "margin-left": "5px", "margin-right": "5px" },
                 attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
-                  width: "30px",
+                  href: "https://www.instagram.com/pumamexico/",
+                  target: "_blank",
                 },
-              }),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: { href: "https://www.youtube.com/puma", target: "_blank" },
-            },
-            [
-              _c("img", {
+              },
+              [
+                _c("img", {
+                  attrs: {
+                    src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
+                    width: "30px",
+                  },
+                }),
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticStyle: { "margin-left": "5px", "margin-right": "5px" },
                 attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
-                  width: "30px",
+                  href: "https://www.youtube.com/puma",
+                  target: "_blank",
                 },
-              }),
-            ]
-          ),
-        ]),
-      ]),
+              },
+              [
+                _c("img", {
+                  attrs: {
+                    src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
+                    width: "30px",
+                  },
+                }),
+              ]
+            ),
+          ]),
+        ]
+      ),
     ])
   },
 ]

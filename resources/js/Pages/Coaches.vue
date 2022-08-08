@@ -226,7 +226,7 @@
       </div>
     </div>
     <div class="footer-styles">
-      <div class="columns" style="margin: 0;">
+      <div class="columns is-vcentered" style="margin: 0;">
         <div class="column tm-puma footer-1" >
           @2022 puma. Todos los derechos reservados
         </div>
@@ -390,6 +390,7 @@ export default {
     }
     .photo-info2{
       font-size: 20px;
+      text-transform: lowercase;
     }
   }
   .img-container:hover .text-photo-title{

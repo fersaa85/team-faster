@@ -148,7 +148,7 @@
     methods:{
         handleSubmit(){
             axios
-                .post('api/auth/signup/'. this.$route.params.venueId, {
+                .post('api/auth/signup/', this.$route.params.venueId, {
                     "g-recaptcha-response": this.gRecaptchaResponse,
                     email: this.email,
                     name: this.name,

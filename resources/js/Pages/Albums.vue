@@ -34,7 +34,8 @@
                 {{ venue.name }}
                 
                 <div class="text-photo-date">
-                  {{ venue.workout ? venue.workout.date_start : '-' }}
+                  {{ venue.workout ? handleFormatDay(venue.workout.date_start) : '-' }}
+                  {{ venue.workout ? handleFormatMonth(venue.workout.date_start) : '-' }}
                 </div>
                 <div>
                   <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
@@ -65,7 +66,8 @@
             <div class="text-photo-title venue-active" :class="{'venue-active': venue.id == workout.venue.id}">
               {{ venue.name }}
               <div class="text-photo-date">
-                {{ venue.workout ? venue.workout.date_start : '-' }}
+                {{ venue.workout ? handleFormatDay(venue.workout.date_start) : '-' }}
+                {{ venue.workout ? handleFormatMonth(venue.workout.date_start) : '-' }}
               </div>
               <div>
                 <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
@@ -89,7 +91,7 @@
       </div>
     </div>
     <div class="footer-styles">
-      <div class="columns" style="margin: 0;">
+      <div class="columns is-vcentered" style="margin: 0;">
         <div class="column tm-puma footer-1" >
           @2022 puma. Todos los derechos reservados
         </div>
@@ -147,6 +149,26 @@ export default {
                 { autoAlpha: 1, scale:1, duration: 3.5, delay:delay }
             );
         },
+        handleFormatDay(date){
+           var datetime = date.split(' ');
+           let splitDate = datetime[0].split('-');
+           console.log(splitDate[2]);
+           return splitDate[2];
+        },
+        handleFormatMonth(date){
+            var datetime = date.split(' ');
+            let splitDate = datetime[0].split('-');
+
+            let months = {
+                '07': 'jul',
+                '08': 'ago',
+                '09': 'sep',
+                '10': 'oct',
+                '11': 'nov',
+                '12': 'dic'
+            };
+            return months[splitDate[1]];
+        }
     }
 
 }
@@ -158,7 +180,7 @@ export default {
     // color: white;
     // font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     // text-transform: uppercase;
-    // padding: 3px 36px 0;
+    padding: 4px 36px 0;
     // span{
     //   line-height: 1.25rem;
     // }
