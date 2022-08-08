@@ -32,7 +32,7 @@
     </template>
     <template #end>
       <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
-        ¡Inscríbite aqui!
+        ¡Inscríbete aquí!
       </b-button>
     </template>
   </b-navbar>

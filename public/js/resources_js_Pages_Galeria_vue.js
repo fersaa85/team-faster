@@ -179,7 +179,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".gallery-container[data-v-2f39cd3e] {\n  margin: 0 40px;\n}\n.gallery[data-v-2f39cd3e] {\n  background: black;\n  min-height: 100vh;\n}\n.title-venues[data-v-2f39cd3e] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-2f39cd3e] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-venues2[data-v-2f39cd3e] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-2f39cd3e] {\n    font-size: 115px;\n}\n}\n.title-image[data-v-2f39cd3e] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-2f39cd3e] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-2f39cd3e] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.footer-styles[data-v-2f39cd3e] {\n  width: 100%;\n  margin: 0;\n  padding: 96px 20px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".gallery-container[data-v-2f39cd3e] {\n  margin: 0 40px;\n}\n.gallery[data-v-2f39cd3e] {\n  background: black;\n  min-height: 100vh;\n}\n.title-venues[data-v-2f39cd3e] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-2f39cd3e] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-venues2[data-v-2f39cd3e] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-2f39cd3e] {\n    font-size: 115px;\n}\n}\n.title-image[data-v-2f39cd3e] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-2f39cd3e] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-2f39cd3e] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.footer-styles[data-v-2f39cd3e] {\n  width: 100%;\n  margin: 0;\n  padding: 96px 20px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-2f39cd3e] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-2f39cd3e] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-2f39cd3e] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-2f39cd3e] {\n    margin-top: 20px;\n    text-align: center;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -14435,11 +14435,11 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "footer-styles" }, [
       _c("div", { staticClass: "columns", staticStyle: { margin: "0" } }, [
-        _c("div", { staticClass: "column tm-puma has-text-left" }, [
+        _c("div", { staticClass: "column tm-puma footer-1" }, [
           _vm._v("\n        @2022 puma. Todos los derechos reservados\n      "),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column tm-puma has-text-right" }, [
+        _c("div", { staticClass: "column tm-puma footer-2" }, [
           _c(
             "a",
             {

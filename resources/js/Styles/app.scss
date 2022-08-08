@@ -140,3 +140,14 @@ body, html, #app, .app {
 .lg-img-wrap{
   left: -50% !important;
 }
+.first-coach{
+  img.has-ratio{
+    top:80px !important;
+    @media screen and (max-width: 768px) {
+      top: 15px !important;
+    }
+    @media screen and (max-width: 345px) {
+      top: 0px !important;
+    }
+  }
+}

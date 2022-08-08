@@ -38,7 +38,7 @@
                   </div>
                   <div class="column is-9 color-white" style="text-align: left">
                     <div class="text-photo-title venue-active">{{ venue.name }}</div>
-                    <div>
+                    <div class="contain-register-button">
                       <b-button rounded class="register-button mt-2"  :data-id="venue.id" @click="handleGoTo(venue.slug)">
                         ¡Regístrate ahora!
                       </b-button>
@@ -99,7 +99,7 @@
                 </div>
                 <div class="column is-9 color-white" style="text-align: left">
                   <div class="text-photo-title venue-active">{{ venue.name }}</div>
-                  <div>
+                  <div class="contain-register-button">
                     <b-button rounded class="register-button mt-2"  :data-id="venue.id" @click="handleGoTo(venue.slug)">
                       ¡Regístrate ahora!
                     </b-button>
@@ -122,10 +122,10 @@
     </div>
     <div class="footer-styles">
       <div class="columns" style="margin: 0;">
-        <div class="column tm-puma has-text-left" >
+        <div class="column tm-puma footer-1" >
           @2022 puma. Todos los derechos reservados
         </div>
-        <div class="column tm-puma has-text-right">
+        <div class="column tm-puma footer-2">
 
           <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png"  width="30px"/></a>
           <a href="https://twitter.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png"  width="30px"/></a>
@@ -232,6 +232,7 @@ export default {
   }
   .venues{
     background: linear-gradient(90deg, #6d6e79, #ebebed);
+    overflow-x: hidden;
   }
   .title-venues{
     font-size: 100px;
@@ -268,6 +269,25 @@ export default {
     padding: 96px 24px 48px;
     background: linear-gradient( transparent, black 45%, black);
     opacity: 1;
+    .footer-1{
+      text-align: left;
+      @media screen and (max-width: 768px) {
+        text-align:center;
+      }
+    }
+    .footer-2{
+      text-align: right;
+      @media screen and (max-width: 768px) {
+        margin-top: 20px;
+        text-align:center;
+      }
+    }
+  }
+  .contain-register-button{
+    @media screen and (max-width: 768px) {
+      text-align:center;
+      margin-bottom: 24px;
+    }
   }
   .text-photo-title{
     color: white;
@@ -276,6 +296,9 @@ export default {
     text-transform: uppercase;
     font-size: 18px;
     padding: 0 12px;
+    @media screen and (max-width: 768px) {
+      text-align:center;
+    }
   }
   .text-photo-date{
     position: absolute;
