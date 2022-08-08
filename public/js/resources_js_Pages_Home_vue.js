@@ -1534,7 +1534,7 @@ var render = function () {
             _vm._v(" "),
             _c("div", [
               _vm._v(
-                "\n            Tenemos un objetivo “compartir la pasión del entrenamiento en un lugar increíble con una ambiente relajado y guiado por coaches que harán de tu sesión la mejor forma de catalizar tu energía”.\n          "
+                "\n            Tenemos un objetivo, compartir la pasión del entrenamiento en un lugar increíble con una ambiente relajado y guiado por coaches que harán de tu sesión la mejor forma de catalizar tu energía.\n          "
               ),
             ]),
             _vm._v(" "),

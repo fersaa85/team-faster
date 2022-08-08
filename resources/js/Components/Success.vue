@@ -99,7 +99,7 @@
                         Coach participante
                         </p>
                         <p class="info-block-text">
-                        {{ info.coach }}
+                        {{ info.coach.name }} 
                         </p>
                     </div>
                     </div>

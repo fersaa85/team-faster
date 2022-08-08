@@ -396,7 +396,7 @@
             </div>
             <br>
             <div>
-              Tenemos un objetivo “compartir la pasión del entrenamiento en un lugar increíble con una ambiente relajado y guiado por coaches que harán de tu sesión la mejor forma de catalizar tu energía”.
+              Tenemos un objetivo, compartir la pasión del entrenamiento en un lugar increíble con una ambiente relajado y guiado por coaches que harán de tu sesión la mejor forma de catalizar tu energía.
             </div>
             <div class="team-fast gotica-italic">
               <div ref="teamFast1">

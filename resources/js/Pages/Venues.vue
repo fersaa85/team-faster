@@ -121,7 +121,7 @@
       </div>
     </div>
     <div class="footer-styles">
-      <div class="columns" style="margin: 0;">
+      <div class="columns is-vcentered" style="margin: 0;">
         <div class="column tm-puma footer-1" >
           @2022 puma. Todos los derechos reservados
         </div>
@@ -208,7 +208,7 @@ export default {
     // color: white;
     // font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     // text-transform: uppercase;
-    // padding: 3px 36px 0;
+    padding: 3px 36px 0;
     // span{
     //   line-height: 1.25rem;
     // }

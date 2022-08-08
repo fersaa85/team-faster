@@ -94,4 +94,7 @@ export default {
         }
       }
     }
+  .register-button{
+    padding: 3px 36px 0;
+  }
 </style>

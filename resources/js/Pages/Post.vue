@@ -23,7 +23,7 @@
             <h1 style="color: #ffffff; font-size: 55px">Proximamente</h1>
 
             <div class="footer-styles">
-                <div class="columns" style="margin: 0;">
+                <div class="columns is-vcentered" style="margin: 0;">
                     <div class="column tm-puma footer-1" >
                         @2022 puma. Todos los derechos reservados
                     </div>

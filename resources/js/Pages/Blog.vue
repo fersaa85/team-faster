@@ -1,6 +1,6 @@
 <template>
     <div class="venues">
-        <div class="columns" style="padding-top: 40px; padding-bottom: 40px;">
+        <div class="columns is-vcentered" style="padding-top: 40px; padding-bottom: 40px;">
             <div class="column gotica-italic title-venues">
                 <div class="title-venues1">
                     Blog
@@ -21,7 +21,7 @@
         </div>
 
 
-        <h1 class="puma-regular" style="color: #ffffff; padding-top: 80px; font-size: 50px; min-height: 45vh;">Próximamente</h1>
+        <h1 class="puma-regular" style="color: #ffffff; padding-top: 80px; font-size: 40px; min-height: 45vh;">Próximamente</h1>
 
         <!--
         <div v-for="post in posts">
@@ -33,7 +33,7 @@
          -->
 
         <div class="footer-styles">
-            <div class="columns" style="margin: 0;">
+            <div class="columns is-vcentered" style="margin: 0;">
                 <div class="column tm-puma footer-1" >
                     @2022 puma. Todos los derechos reservados
                 </div>
