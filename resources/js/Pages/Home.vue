@@ -414,7 +414,7 @@
       </div>
     </div>
     <div class="footer-styles">
-      <div class="columns">
+      <div class="columns is-vcentered">
         <div class="column tm-puma footer-1">
           @2022 puma. Todos los derechos reservados
         </div>
