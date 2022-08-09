@@ -1643,7 +1643,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "footer-styles" }, [
-      _c("div", { staticClass: "columns" }, [
+      _c("div", { staticClass: "columns is-vcentered" }, [
         _c("div", { staticClass: "column tm-puma footer-1" }, [
           _vm._v("\n        @2022 puma. Todos los derechos reservados\n      "),
         ]),
