@@ -28,6 +28,7 @@
               :key="idx"
               className="gallery-item"
               :data-src="src"
+              data-tweet-text="Team Faster"
             >
               <img class="img-responsive" :src="src" />
             </a>
@@ -55,18 +56,14 @@
 
 <script>
 import $ from "jquery";
-import 'lightgallery.js'
-import 'lightgallery.js/dist/css/lightgallery.css'
-import 'lightgallery.js/src/sass/lg-variables.scss'
-// import 'lightgallery.js/src/sass/lg-thumbnail.scss'
-// import 'lightgallery.js/src/sass/lg-zoom.scss'
+import 'lightgallery/css/lightgallery.css'
+import 'lightgallery/css/lg-share.css'
+import 'lightgallery/css/lg-zoom.css'
+import lightGallery from 'lightgallery/lightgallery.min.js'
+import lgShare from 'lightgallery/plugins/share/lg-share.min.js'
+import lgZoom from 'lightgallery/plugins/zoom/lg-zoom.min.js'
 import 'justifiedGallery/dist/css/justifiedGallery.css'
-// import lgThumbnail from 'lightgallery.js'
-// import lgZoom from 'lightgallery.js'
 import 'justifiedGallery/dist/js/jquery.justifiedGallery.js'
-
-// import 'lg-thumbnail/dist/lg-thumbnail.min.js'
-// import lgThumbnail from 'lightgallery/plugins/thumbnail'
 
 export default {
   name: 'galeria',
@@ -118,11 +115,11 @@ export default {
           margins: 5
         })
         .on("jg.complete", function () {
-          window.lightGallery(
+          lightGallery(
             document.getElementById("lightgallery"),
             {
               autoplayFirstVideo: false,
-              // plugins:[lgThumbnail, lgZoom],
+              plugins: [lgShare, lgZoom],
               pager: false,
               galleryId: "nature",
               mobileSettings: {

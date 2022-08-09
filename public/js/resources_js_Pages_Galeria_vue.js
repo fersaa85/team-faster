@@ -13,13 +13,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var lightgallery_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lightgallery.js */ "./node_modules/lightgallery.js/lib/js/lightgallery.js");
-/* harmony import */ var lightgallery_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(lightgallery_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var lightgallery_js_dist_css_lightgallery_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lightgallery.js/dist/css/lightgallery.css */ "./node_modules/lightgallery.js/dist/css/lightgallery.css");
-/* harmony import */ var lightgallery_js_src_sass_lg_variables_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lightgallery.js/src/sass/lg-variables.scss */ "./node_modules/lightgallery.js/src/sass/lg-variables.scss");
-/* harmony import */ var justifiedGallery_dist_css_justifiedGallery_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! justifiedGallery/dist/css/justifiedGallery.css */ "./node_modules/justifiedGallery/dist/css/justifiedGallery.css");
-/* harmony import */ var justifiedGallery_dist_js_jquery_justifiedGallery_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! justifiedGallery/dist/js/jquery.justifiedGallery.js */ "./node_modules/justifiedGallery/dist/js/jquery.justifiedGallery.js");
-/* harmony import */ var justifiedGallery_dist_js_jquery_justifiedGallery_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(justifiedGallery_dist_js_jquery_justifiedGallery_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var lightgallery_css_lightgallery_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lightgallery/css/lightgallery.css */ "./node_modules/lightgallery/css/lightgallery.css");
+/* harmony import */ var lightgallery_css_lg_share_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lightgallery/css/lg-share.css */ "./node_modules/lightgallery/css/lg-share.css");
+/* harmony import */ var lightgallery_css_lg_zoom_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lightgallery/css/lg-zoom.css */ "./node_modules/lightgallery/css/lg-zoom.css");
+/* harmony import */ var lightgallery_lightgallery_min_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lightgallery/lightgallery.min.js */ "./node_modules/lightgallery/lightgallery.min.js");
+/* harmony import */ var lightgallery_lightgallery_min_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lightgallery_lightgallery_min_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var lightgallery_plugins_share_lg_share_min_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lightgallery/plugins/share/lg-share.min.js */ "./node_modules/lightgallery/plugins/share/lg-share.min.js");
+/* harmony import */ var lightgallery_plugins_share_lg_share_min_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lightgallery_plugins_share_lg_share_min_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var lightgallery_plugins_zoom_lg_zoom_min_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lightgallery/plugins/zoom/lg-zoom.min.js */ "./node_modules/lightgallery/plugins/zoom/lg-zoom.min.js");
+/* harmony import */ var lightgallery_plugins_zoom_lg_zoom_min_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(lightgallery_plugins_zoom_lg_zoom_min_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var justifiedGallery_dist_css_justifiedGallery_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! justifiedGallery/dist/css/justifiedGallery.css */ "./node_modules/justifiedGallery/dist/css/justifiedGallery.css");
+/* harmony import */ var justifiedGallery_dist_js_jquery_justifiedGallery_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! justifiedGallery/dist/js/jquery.justifiedGallery.js */ "./node_modules/justifiedGallery/dist/js/jquery.justifiedGallery.js");
+/* harmony import */ var justifiedGallery_dist_js_jquery_justifiedGallery_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(justifiedGallery_dist_js_jquery_justifiedGallery_js__WEBPACK_IMPORTED_MODULE_8__);
+//
 //
 //
 //
@@ -78,14 +84,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
- // import 'lightgallery.js/src/sass/lg-thumbnail.scss'
-// import 'lightgallery.js/src/sass/lg-zoom.scss'
 
- // import lgThumbnail from 'lightgallery.js'
-// import lgZoom from 'lightgallery.js'
 
- // import 'lg-thumbnail/dist/lg-thumbnail.min.js'
-// import lgThumbnail from 'lightgallery/plugins/thumbnail'
+
+
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'galeria',
@@ -101,9 +104,9 @@ __webpack_require__.r(__webpack_exports__);
       rowHeight: 300,
       margins: 5
     }).on("jg.complete", function () {
-      window.lightGallery(document.getElementById("lightgallery"), {
+      lightgallery_lightgallery_min_js__WEBPACK_IMPORTED_MODULE_4___default()(document.getElementById("lightgallery"), {
         autoplayFirstVideo: false,
-        // plugins:[lgThumbnail, lgZoom],
+        plugins: [(lightgallery_plugins_share_lg_share_min_js__WEBPACK_IMPORTED_MODULE_5___default()), (lightgallery_plugins_zoom_lg_zoom_min_js__WEBPACK_IMPORTED_MODULE_6___default())],
         pager: false,
         galleryId: "nature",
         mobileSettings: {
@@ -135,30 +138,6 @@ __webpack_require__.r(__webpack_exports__);
     }
   }
 });
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/lightgallery.js/src/sass/lg-variables.scss":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/lightgallery.js/src/sass/lg-variables.scss ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-// Imports
-
-var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "", ""]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
 
 /***/ }),
 
@@ -210,10 +189,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, "/*!\n * justifiedGallery - v3.8.1\n * 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery.js/dist/css/lightgallery.css":
-/*!************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery.js/dist/css/lightgallery.css ***!
-  \************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery/css/lg-share.css":
+/*!************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery/css/lg-share.css ***!
+  \************************************************************************************************************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -221,24 +200,68 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".lg-outer .lg-dropdown-overlay {\n  background-color: rgba(0, 0, 0, 0.25);\n  bottom: 0;\n  cursor: default;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  z-index: 1081;\n  opacity: 0;\n  visibility: hidden;\n  will-change: visibility, opacity;\n  transition: visibility 0s linear 0.18s, opacity 0.18s linear 0s;\n}\n\n.lg-outer.lg-dropdown-active .lg-dropdown,\n.lg-outer.lg-dropdown-active .lg-dropdown-overlay {\n  transition-delay: 0s;\n  transform: translate3d(0, 0px, 0);\n  opacity: 1;\n  visibility: visible;\n}\n\n.lg-outer.lg-dropdown-active .lg-share {\n  color: #fff;\n}\n\n.lg-outer .lg-dropdown {\n  background-color: #fff;\n  border-radius: 2px;\n  font-size: 14px;\n  list-style-type: none;\n  margin: 0;\n  padding: 10px 0;\n  position: absolute;\n  right: 0;\n  text-align: left;\n  top: 50px;\n  opacity: 0;\n  visibility: hidden;\n  transform: translate3d(0, 5px, 0);\n  will-change: visibility, opacity, transform;\n  transition: transform 0.18s linear 0s, visibility 0s linear 0.5s, opacity 0.18s linear 0s;\n}\n\n.lg-outer .lg-dropdown:after {\n  content: '';\n  display: block;\n  height: 0;\n  width: 0;\n  position: absolute;\n  border: 8px solid transparent;\n  border-bottom-color: #fff;\n  right: 16px;\n  top: -16px;\n}\n\n.lg-outer .lg-dropdown > li:last-child {\n  margin-bottom: 0px;\n}\n\n.lg-outer .lg-dropdown > li:hover a {\n  color: #333;\n}\n\n.lg-outer .lg-dropdown a {\n  color: #333;\n  display: block;\n  white-space: pre;\n  padding: 4px 12px;\n  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;\n  font-size: 12px;\n}\n\n.lg-outer .lg-dropdown a:hover {\n  background-color: rgba(0, 0, 0, 0.07);\n}\n\n.lg-outer .lg-dropdown .lg-dropdown-text {\n  display: inline-block;\n  line-height: 1;\n  margin-top: -3px;\n  vertical-align: middle;\n}\n\n.lg-outer .lg-dropdown .lg-icon {\n  color: #333;\n  display: inline-block;\n  float: none;\n  font-size: 20px;\n  height: auto;\n  line-height: 1;\n  margin-right: 8px;\n  padding: 0;\n  vertical-align: middle;\n  width: auto;\n}\n\n.lg-outer .lg-share {\n  position: relative;\n}\n\n.lg-outer .lg-share:after {\n  content: '\\e80d';\n}\n\n.lg-outer .lg-share-facebook .lg-icon {\n  color: #3b5998;\n}\n\n.lg-outer .lg-share-facebook .lg-icon:after {\n  content: '\\e904';\n}\n\n.lg-outer .lg-share-twitter .lg-icon {\n  color: #00aced;\n}\n\n.lg-outer .lg-share-twitter .lg-icon:after {\n  content: '\\e907';\n}\n\n.lg-outer .lg-share-pinterest .lg-icon {\n  color: #cb2027;\n}\n\n.lg-outer .lg-share-pinterest .lg-icon:after {\n  content: '\\e906';\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery/css/lg-zoom.css":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery/css/lg-zoom.css ***!
+  \***********************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+// Imports
+
+var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".lg-outer.lg-css3.lg-zoom-dragging .lg-item.lg-complete.lg-zoomable .lg-img-wrap,\n.lg-outer.lg-css3.lg-zoom-dragging .lg-item.lg-complete.lg-zoomable .lg-image {\n  transition-duration: 0ms !important;\n}\n\n.lg-outer.lg-use-transition-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {\n  will-change: transform;\n  transition: transform 0.5s cubic-bezier(0.12, 0.415, 0.01, 1.19) 0s;\n}\n\n.lg-outer.lg-use-transition-for-zoom.lg-zoom-drag-transition .lg-item.lg-complete.lg-zoomable .lg-img-wrap {\n  will-change: transform;\n  transition: transform 0.8s cubic-bezier(0, 0, 0.25, 1) 0s;\n}\n\n.lg-outer .lg-item.lg-complete.lg-zoomable .lg-img-wrap {\n  transform: translate3d(0, 0, 0);\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.lg-outer .lg-item.lg-complete.lg-zoomable .lg-image,\n.lg-outer .lg-item.lg-complete.lg-zoomable .lg-dummy-img {\n  transform: scale3d(1, 1, 1);\n  will-change: opacity, transform;\n  transition: transform 0.5s cubic-bezier(0.12, 0.415, 0.01, 1.19) 0s, opacity 0.15s !important;\n  transform-origin: 0 0;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.lg-icon.lg-zoom-in:after {\n  content: '\\e311';\n}\n\n.lg-icon.lg-actual-size {\n  font-size: 20px;\n}\n\n.lg-icon.lg-actual-size:after {\n  content: '\\e033';\n}\n\n.lg-icon.lg-zoom-out {\n  opacity: 0.5;\n  pointer-events: none;\n}\n\n.lg-icon.lg-zoom-out:after {\n  content: '\\e312';\n}\n\n.lg-zoomed .lg-icon.lg-zoom-out {\n  opacity: 1;\n  pointer-events: auto;\n}\n\n.lg-outer[data-lg-slide-type='video'] .lg-zoom-in,\n.lg-outer[data-lg-slide-type='video'] .lg-actual-size,\n.lg-outer[data-lg-slide-type='video'] .lg-zoom-out, .lg-outer[data-lg-slide-type='iframe'] .lg-zoom-in,\n.lg-outer[data-lg-slide-type='iframe'] .lg-actual-size,\n.lg-outer[data-lg-slide-type='iframe'] .lg-zoom-out, .lg-outer.lg-first-slide-loading .lg-zoom-in,\n.lg-outer.lg-first-slide-loading .lg-actual-size,\n.lg-outer.lg-first-slide-loading .lg-zoom-out {\n  opacity: 0.75;\n  pointer-events: none;\n}\n", ""]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery/css/lightgallery.css":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery/css/lightgallery.css ***!
+  \****************************************************************************************************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
 /* harmony import */ var _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _fonts_lg_ttf_22t19m__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../fonts/lg.ttf?22t19m */ "./node_modules/lightgallery.js/dist/fonts/lg.ttf?22t19m");
-/* harmony import */ var _fonts_lg_ttf_22t19m__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fonts_lg_ttf_22t19m__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _fonts_lg_woff_22t19m__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../fonts/lg.woff?22t19m */ "./node_modules/lightgallery.js/dist/fonts/lg.woff?22t19m");
-/* harmony import */ var _fonts_lg_woff_22t19m__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fonts_lg_woff_22t19m__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _fonts_lg_svg_22t19m__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../fonts/lg.svg?22t19m */ "./node_modules/lightgallery.js/dist/fonts/lg.svg?22t19m");
-/* harmony import */ var _fonts_lg_svg_22t19m__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fonts_lg_svg_22t19m__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _img_vimeo_play_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../img/vimeo-play.png */ "./node_modules/lightgallery.js/dist/img/vimeo-play.png");
-/* harmony import */ var _img_vimeo_play_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_img_vimeo_play_png__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _img_video_play_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../img/video-play.png */ "./node_modules/lightgallery.js/dist/img/video-play.png");
-/* harmony import */ var _img_video_play_png__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_img_video_play_png__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _img_youtube_play_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../img/youtube-play.png */ "./node_modules/lightgallery.js/dist/img/youtube-play.png");
-/* harmony import */ var _img_youtube_play_png__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_img_youtube_play_png__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _img_loading_gif__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../img/loading.gif */ "./node_modules/lightgallery.js/dist/img/loading.gif");
-/* harmony import */ var _img_loading_gif__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_img_loading_gif__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _fonts_lg_woff2_io9a6k__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../fonts/lg.woff2?io9a6k */ "./node_modules/lightgallery/fonts/lg.woff2?io9a6k");
+/* harmony import */ var _fonts_lg_woff2_io9a6k__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_fonts_lg_woff2_io9a6k__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _fonts_lg_ttf_io9a6k__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../fonts/lg.ttf?io9a6k */ "./node_modules/lightgallery/fonts/lg.ttf?io9a6k");
+/* harmony import */ var _fonts_lg_ttf_io9a6k__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_fonts_lg_ttf_io9a6k__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _fonts_lg_woff_io9a6k__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../fonts/lg.woff?io9a6k */ "./node_modules/lightgallery/fonts/lg.woff?io9a6k");
+/* harmony import */ var _fonts_lg_woff_io9a6k__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fonts_lg_woff_io9a6k__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _fonts_lg_svg_io9a6k__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../fonts/lg.svg?io9a6k */ "./node_modules/lightgallery/fonts/lg.svg?io9a6k");
+/* harmony import */ var _fonts_lg_svg_io9a6k__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fonts_lg_svg_io9a6k__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _images_loading_gif__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../images/loading.gif */ "./node_modules/lightgallery/images/loading.gif");
+/* harmony import */ var _images_loading_gif__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_images_loading_gif__WEBPACK_IMPORTED_MODULE_6__);
 // Imports
 
 
@@ -247,18 +270,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
 var ___CSS_LOADER_EXPORT___ = _css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_fonts_lg_ttf_22t19m__WEBPACK_IMPORTED_MODULE_2___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_1___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_fonts_lg_woff_22t19m__WEBPACK_IMPORTED_MODULE_3___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_2___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_fonts_lg_svg_22t19m__WEBPACK_IMPORTED_MODULE_4___default()), { hash: "#lg" });
-var ___CSS_LOADER_URL_REPLACEMENT_3___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_img_vimeo_play_png__WEBPACK_IMPORTED_MODULE_5___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_4___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_img_video_play_png__WEBPACK_IMPORTED_MODULE_6___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_5___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_img_youtube_play_png__WEBPACK_IMPORTED_MODULE_7___default()));
-var ___CSS_LOADER_URL_REPLACEMENT_6___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_img_loading_gif__WEBPACK_IMPORTED_MODULE_8___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_fonts_lg_woff2_io9a6k__WEBPACK_IMPORTED_MODULE_2___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_1___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_fonts_lg_ttf_io9a6k__WEBPACK_IMPORTED_MODULE_3___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_2___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_fonts_lg_woff_io9a6k__WEBPACK_IMPORTED_MODULE_4___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_3___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_fonts_lg_svg_io9a6k__WEBPACK_IMPORTED_MODULE_5___default()), { hash: "#lg" });
+var ___CSS_LOADER_URL_REPLACEMENT_4___ = _css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_1___default()((_images_loading_gif__WEBPACK_IMPORTED_MODULE_6___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: 'lg';\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"truetype\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"svg\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: block;\n}\n\n.lg-icon {\n  /* use !important to prevent issues with browser extensions that change fonts */\n  font-family: 'lg' !important;\n  speak: never;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.lg-actions .lg-next, .lg-actions .lg-prev {\n  background-color: rgba(0, 0, 0, 0.45);\n  border-radius: 2px;\n  color: #999;\n  cursor: pointer;\n  display: block;\n  font-size: 22px;\n  margin-top: -10px;\n  padding: 8px 10px 9px;\n  position: absolute;\n  top: 50%;\n  z-index: 1080;\n  outline: none;\n  border: none;\n  background-color: transparent;\n}\n\n.lg-actions .lg-next.disabled, .lg-actions .lg-prev.disabled {\n  pointer-events: none;\n  opacity: 0.5;\n}\n\n.lg-actions .lg-next:hover, .lg-actions .lg-prev:hover {\n  color: #FFF;\n}\n\n.lg-actions .lg-next {\n  right: 20px;\n}\n\n.lg-actions .lg-next:before {\n  content: \"\\e095\";\n}\n\n.lg-actions .lg-prev {\n  left: 20px;\n}\n\n.lg-actions .lg-prev:after {\n  content: \"\\e094\";\n}\n\n@-webkit-keyframes lg-right-end {\n  0% {\n    left: 0;\n  }\n  50% {\n    left: -30px;\n  }\n  100% {\n    left: 0;\n  }\n}\n\n@keyframes lg-right-end {\n  0% {\n    left: 0;\n  }\n  50% {\n    left: -30px;\n  }\n  100% {\n    left: 0;\n  }\n}\n\n@-webkit-keyframes lg-left-end {\n  0% {\n    left: 0;\n  }\n  50% {\n    left: 30px;\n  }\n  100% {\n    left: 0;\n  }\n}\n\n@keyframes lg-left-end {\n  0% {\n    left: 0;\n  }\n  50% {\n    left: 30px;\n  }\n  100% {\n    left: 0;\n  }\n}\n\n.lg-outer.lg-right-end .lg-object {\n  -webkit-animation: lg-right-end 0.3s;\n  animation: lg-right-end 0.3s;\n  position: relative;\n}\n\n.lg-outer.lg-left-end .lg-object {\n  -webkit-animation: lg-left-end 0.3s;\n  animation: lg-left-end 0.3s;\n  position: relative;\n}\n\n.lg-toolbar {\n  z-index: 1082;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n  background-color: rgba(0, 0, 0, 0.45);\n}\n\n.lg-toolbar .lg-icon {\n  color: #999;\n  cursor: pointer;\n  float: right;\n  font-size: 24px;\n  height: 47px;\n  line-height: 27px;\n  padding: 10px 0;\n  text-align: center;\n  width: 50px;\n  text-decoration: none !important;\n  outline: medium none;\n  background: none;\n  border: none;\n  box-shadow: none;\n  transition: color 0.2s linear;\n}\n\n.lg-toolbar .lg-icon:hover {\n  color: #FFF;\n}\n\n.lg-toolbar .lg-close:after {\n  content: \"\\e070\";\n}\n\n.lg-toolbar .lg-download:after {\n  content: \"\\e0f2\";\n}\n\n.lg-sub-html {\n  background-color: rgba(0, 0, 0, 0.45);\n  bottom: 0;\n  color: #EEE;\n  font-size: 16px;\n  left: 0;\n  padding: 10px 40px;\n  position: fixed;\n  right: 0;\n  text-align: center;\n  z-index: 1080;\n}\n\n.lg-sub-html h4 {\n  margin: 0;\n  font-size: 13px;\n  font-weight: bold;\n}\n\n.lg-sub-html p {\n  font-size: 12px;\n  margin: 5px 0 0;\n}\n\n#lg-counter {\n  color: #999;\n  display: inline-block;\n  font-size: 16px;\n  padding-left: 20px;\n  padding-top: 12px;\n  vertical-align: middle;\n}\n\n.lg-toolbar, .lg-prev, .lg-next {\n  opacity: 1;\n  transition: transform 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.35s cubic-bezier(0, 0, 0.25, 1) 0s, color 0.2s linear;\n}\n\n.lg-hide-items .lg-prev {\n  opacity: 0;\n  transform: translate3d(-10px, 0, 0);\n}\n\n.lg-hide-items .lg-next {\n  opacity: 0;\n  transform: translate3d(10px, 0, 0);\n}\n\n.lg-hide-items .lg-toolbar {\n  opacity: 0;\n  transform: translate3d(0, -10px, 0);\n}\n\nbody:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-object {\n  transform: scale3d(0.5, 0.5, 0.5);\n  opacity: 0;\n  transition: transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 250ms cubic-bezier(0, 0, 0.25, 1) !important;\n  transform-origin: 50% 50%;\n}\n\nbody:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object {\n  transform: scale3d(1, 1, 1);\n  opacity: 1;\n}\n\n.lg-outer .lg-thumb-outer {\n  background-color: #0D0A0A;\n  bottom: 0;\n  position: absolute;\n  width: 100%;\n  z-index: 1080;\n  max-height: 350px;\n  transform: translate3d(0, 100%, 0);\n  transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;\n}\n\n.lg-outer .lg-thumb-outer.lg-grab .lg-thumb-item {\n  cursor: -webkit-grab;\n  cursor: -o-grab;\n  cursor: -ms-grab;\n  cursor: grab;\n}\n\n.lg-outer .lg-thumb-outer.lg-grabbing .lg-thumb-item {\n  cursor: move;\n  cursor: -webkit-grabbing;\n  cursor: -o-grabbing;\n  cursor: -ms-grabbing;\n  cursor: grabbing;\n}\n\n.lg-outer .lg-thumb-outer.lg-dragging .lg-thumb {\n  transition-duration: 0s !important;\n}\n\n.lg-outer.lg-thumb-open .lg-thumb-outer {\n  transform: translate3d(0, 0%, 0);\n}\n\n.lg-outer .lg-thumb {\n  padding: 10px 0;\n  height: 100%;\n  margin-bottom: -5px;\n}\n\n.lg-outer .lg-thumb-item {\n  border-radius: 5px;\n  cursor: pointer;\n  float: left;\n  overflow: hidden;\n  height: 100%;\n  border: 2px solid #FFF;\n  border-radius: 4px;\n  margin-bottom: 5px;\n}\n\n@media (min-width: 1025px) {\n  .lg-outer .lg-thumb-item {\n    transition: border-color 0.25s ease;\n  }\n}\n\n.lg-outer .lg-thumb-item.active, .lg-outer .lg-thumb-item:hover {\n  border-color: #a90707;\n}\n\n.lg-outer .lg-thumb-item img {\n  width: 100%;\n  height: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n}\n\n.lg-outer.lg-has-thumb .lg-item {\n  padding-bottom: 120px;\n}\n\n.lg-outer.lg-can-toggle .lg-item {\n  padding-bottom: 0;\n}\n\n.lg-outer.lg-pull-caption-up .lg-sub-html {\n  transition: bottom 0.25s ease;\n}\n\n.lg-outer.lg-pull-caption-up.lg-thumb-open .lg-sub-html {\n  bottom: 100px;\n}\n\n.lg-outer .lg-toggle-thumb {\n  background-color: #0D0A0A;\n  border-radius: 2px 2px 0 0;\n  color: #999;\n  cursor: pointer;\n  font-size: 24px;\n  height: 39px;\n  line-height: 27px;\n  padding: 5px 0;\n  position: absolute;\n  right: 20px;\n  text-align: center;\n  top: -39px;\n  width: 50px;\n  outline: medium none;\n  border: none;\n}\n\n.lg-outer .lg-toggle-thumb:after {\n  content: \"\\e1ff\";\n}\n\n.lg-outer .lg-toggle-thumb:hover {\n  color: #FFF;\n}\n\n.lg-outer .lg-video-cont {\n  display: inline-block;\n  vertical-align: middle;\n  max-width: 1140px;\n  max-height: 100%;\n  width: 100%;\n  padding: 0 5px;\n}\n\n.lg-outer .lg-video {\n  width: 100%;\n  height: 0;\n  padding-bottom: 56.25%;\n  overflow: hidden;\n  position: relative;\n}\n\n.lg-outer .lg-video .lg-object {\n  display: inline-block;\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100% !important;\n  height: 100% !important;\n}\n\n.lg-outer .lg-video .lg-video-play {\n  width: 84px;\n  height: 59px;\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  margin-left: -42px;\n  margin-top: -30px;\n  z-index: 1080;\n  cursor: pointer;\n}\n\n.lg-outer .lg-has-vimeo .lg-video-play {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat scroll 0 0 transparent;\n}\n\n.lg-outer .lg-has-vimeo:hover .lg-video-play {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") no-repeat scroll 0 -58px transparent;\n}\n\n.lg-outer .lg-has-html5 .lg-video-play {\n  background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") no-repeat scroll 0 0;\n  height: 64px;\n  margin-left: -32px;\n  margin-top: -32px;\n  width: 64px;\n  opacity: 0.8;\n}\n\n.lg-outer .lg-has-html5:hover .lg-video-play {\n  opacity: 1;\n}\n\n.lg-outer .lg-has-youtube .lg-video-play {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") no-repeat scroll 0 0 transparent;\n}\n\n.lg-outer .lg-has-youtube:hover .lg-video-play {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") no-repeat scroll 0 -60px transparent;\n}\n\n.lg-outer .lg-video-object {\n  width: 100% !important;\n  height: 100% !important;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n\n.lg-outer .lg-has-video .lg-video-object {\n  visibility: hidden;\n}\n\n.lg-outer .lg-has-video.lg-video-playing .lg-object, .lg-outer .lg-has-video.lg-video-playing .lg-video-play {\n  display: none;\n}\n\n.lg-outer .lg-has-video.lg-video-playing .lg-video-object {\n  visibility: visible;\n}\n\n.lg-progress-bar {\n  background-color: #333;\n  height: 5px;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n  z-index: 1083;\n  opacity: 0;\n  transition: opacity 0.08s ease 0s;\n}\n\n.lg-progress-bar .lg-progress {\n  background-color: #a90707;\n  height: 5px;\n  width: 0;\n}\n\n.lg-progress-bar.lg-start .lg-progress {\n  width: 100%;\n}\n\n.lg-show-autoplay .lg-progress-bar {\n  opacity: 1;\n}\n\n.lg-autoplay-button:after {\n  content: \"\\e01d\";\n}\n\n.lg-show-autoplay .lg-autoplay-button:after {\n  content: \"\\e01a\";\n}\n\n.lg-outer.lg-css3.lg-zoom-dragging .lg-item.lg-complete.lg-zoomable .lg-img-wrap, .lg-outer.lg-css3.lg-zoom-dragging .lg-item.lg-complete.lg-zoomable .lg-image {\n  transition-duration: 0s;\n}\n\n.lg-outer.lg-use-transition-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {\n  transition: transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;\n}\n\n.lg-outer.lg-use-left-for-zoom .lg-item.lg-complete.lg-zoomable .lg-img-wrap {\n  transition: left 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, top 0.3s cubic-bezier(0, 0, 0.25, 1) 0s;\n}\n\n.lg-outer .lg-item.lg-complete.lg-zoomable .lg-img-wrap {\n  transform: translate3d(0, 0, 0);\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.lg-outer .lg-item.lg-complete.lg-zoomable .lg-image {\n  transform: scale3d(1, 1, 1);\n  transition: transform 0.3s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.15s !important;\n  transform-origin: 0 0;\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n#lg-zoom-in:after {\n  content: \"\\e311\";\n}\n\n#lg-actual-size {\n  font-size: 20px;\n}\n\n#lg-actual-size:after {\n  content: \"\\e033\";\n}\n\n#lg-zoom-out {\n  opacity: 0.5;\n  pointer-events: none;\n}\n\n#lg-zoom-out:after {\n  content: \"\\e312\";\n}\n\n.lg-zoomed #lg-zoom-out {\n  opacity: 1;\n  pointer-events: auto;\n}\n\n.lg-outer .lg-pager-outer {\n  bottom: 60px;\n  left: 0;\n  position: absolute;\n  right: 0;\n  text-align: center;\n  z-index: 1080;\n  height: 10px;\n}\n\n.lg-outer .lg-pager-outer.lg-pager-hover .lg-pager-cont {\n  overflow: visible;\n}\n\n.lg-outer .lg-pager-cont {\n  cursor: pointer;\n  display: inline-block;\n  overflow: hidden;\n  position: relative;\n  vertical-align: top;\n  margin: 0 5px;\n}\n\n.lg-outer .lg-pager-cont:hover .lg-pager-thumb-cont {\n  opacity: 1;\n  transform: translate3d(0, 0, 0);\n}\n\n.lg-outer .lg-pager-cont.lg-pager-active .lg-pager {\n  box-shadow: 0 0 0 2px white inset;\n}\n\n.lg-outer .lg-pager-thumb-cont {\n  background-color: #fff;\n  color: #FFF;\n  bottom: 100%;\n  height: 83px;\n  left: 0;\n  margin-bottom: 20px;\n  margin-left: -60px;\n  opacity: 0;\n  padding: 5px;\n  position: absolute;\n  width: 120px;\n  border-radius: 3px;\n  transition: opacity 0.15s ease 0s, transform 0.15s ease 0s;\n  transform: translate3d(0, 5px, 0);\n}\n\n.lg-outer .lg-pager-thumb-cont img {\n  width: 100%;\n  height: 100%;\n}\n\n.lg-outer .lg-pager {\n  background-color: rgba(255, 255, 255, 0.5);\n  border-radius: 50%;\n  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.7) inset;\n  display: block;\n  height: 12px;\n  transition: box-shadow 0.3s ease 0s;\n  width: 12px;\n}\n\n.lg-outer .lg-pager:hover, .lg-outer .lg-pager:focus {\n  box-shadow: 0 0 0 8px white inset;\n}\n\n.lg-outer .lg-caret {\n  border-left: 10px solid transparent;\n  border-right: 10px solid transparent;\n  border-top: 10px dashed;\n  bottom: -10px;\n  display: inline-block;\n  height: 0;\n  left: 50%;\n  margin-left: -5px;\n  position: absolute;\n  vertical-align: middle;\n  width: 0;\n}\n\n.lg-fullscreen:after {\n  content: \"\\e20c\";\n}\n\n.lg-fullscreen-on .lg-fullscreen:after {\n  content: \"\\e20d\";\n}\n\n.lg-outer #lg-dropdown-overlay {\n  background-color: rgba(0, 0, 0, 0.25);\n  bottom: 0;\n  cursor: default;\n  left: 0;\n  position: fixed;\n  right: 0;\n  top: 0;\n  z-index: 1081;\n  opacity: 0;\n  visibility: hidden;\n  transition: visibility 0s linear 0.18s, opacity 0.18s linear 0s;\n}\n\n.lg-outer.lg-dropdown-active .lg-dropdown, .lg-outer.lg-dropdown-active #lg-dropdown-overlay {\n  transition-delay: 0s;\n  transform: translate3d(0, 0px, 0);\n  opacity: 1;\n  visibility: visible;\n}\n\n.lg-outer.lg-dropdown-active #lg-share {\n  color: #FFF;\n}\n\n.lg-outer .lg-dropdown {\n  background-color: #fff;\n  border-radius: 2px;\n  font-size: 14px;\n  list-style-type: none;\n  margin: 0;\n  padding: 10px 0;\n  position: absolute;\n  right: 0;\n  text-align: left;\n  top: 50px;\n  opacity: 0;\n  visibility: hidden;\n  transform: translate3d(0, 5px, 0);\n  transition: transform 0.18s linear 0s, visibility 0s linear 0.5s, opacity 0.18s linear 0s;\n}\n\n.lg-outer .lg-dropdown:after {\n  content: \"\";\n  display: block;\n  height: 0;\n  width: 0;\n  position: absolute;\n  border: 8px solid transparent;\n  border-bottom-color: #FFF;\n  right: 16px;\n  top: -16px;\n}\n\n.lg-outer .lg-dropdown > li:last-child {\n  margin-bottom: 0px;\n}\n\n.lg-outer .lg-dropdown > li:hover a, .lg-outer .lg-dropdown > li:hover .lg-icon {\n  color: #333;\n}\n\n.lg-outer .lg-dropdown a {\n  color: #333;\n  display: block;\n  white-space: pre;\n  padding: 4px 12px;\n  font-family: \"Open Sans\",\"Helvetica Neue\",Helvetica,Arial,sans-serif;\n  font-size: 12px;\n}\n\n.lg-outer .lg-dropdown a:hover {\n  background-color: rgba(0, 0, 0, 0.07);\n}\n\n.lg-outer .lg-dropdown .lg-dropdown-text {\n  display: inline-block;\n  line-height: 1;\n  margin-top: -3px;\n  vertical-align: middle;\n}\n\n.lg-outer .lg-dropdown .lg-icon {\n  color: #333;\n  display: inline-block;\n  float: none;\n  font-size: 20px;\n  height: auto;\n  line-height: 1;\n  margin-right: 8px;\n  padding: 0;\n  vertical-align: middle;\n  width: auto;\n}\n\n.lg-outer #lg-share {\n  position: relative;\n}\n\n.lg-outer #lg-share:after {\n  content: \"\\e80d\";\n}\n\n.lg-outer #lg-share-facebook .lg-icon {\n  color: #3b5998;\n}\n\n.lg-outer #lg-share-facebook .lg-icon:after {\n  content: \"\\e904\";\n}\n\n.lg-outer #lg-share-twitter .lg-icon {\n  color: #00aced;\n}\n\n.lg-outer #lg-share-twitter .lg-icon:after {\n  content: \"\\e907\";\n}\n\n.lg-outer #lg-share-googleplus .lg-icon {\n  color: #dd4b39;\n}\n\n.lg-outer #lg-share-googleplus .lg-icon:after {\n  content: \"\\e905\";\n}\n\n.lg-outer #lg-share-pinterest .lg-icon {\n  color: #cb2027;\n}\n\n.lg-outer #lg-share-pinterest .lg-icon:after {\n  content: \"\\e906\";\n}\n\n.lg-outer .lg-img-rotate {\n  position: absolute;\n  padding: 0 5px;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  transition: transform 0.3s cubic-bezier(0.32, 0, 0.67, 0) 0s;\n}\n\n.lg-rotate-left:after {\n  content: \"\\e900\";\n}\n\n.lg-rotate-right:after {\n  content: \"\\e901\";\n}\n\n.lg-icon.lg-flip-hor, .lg-icon.lg-flip-ver {\n  font-size: 26px;\n}\n\n.lg-flip-hor:after {\n  content: \"\\e902\";\n}\n\n.lg-flip-ver:after {\n  content: \"\\e903\";\n}\n\n.lg-group {\n  *zoom: 1;\n}\n\n.lg-group:before, .lg-group:after {\n  display: table;\n  content: \"\";\n  line-height: 0;\n}\n\n.lg-group:after {\n  clear: both;\n}\n\n.lg-outer {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 1050;\n  opacity: 0;\n  outline: none;\n  transition: opacity 0.15s ease 0s;\n}\n\n.lg-outer * {\n  box-sizing: border-box;\n}\n\n.lg-outer.lg-visible {\n  opacity: 1;\n}\n\n.lg-outer.lg-css3 .lg-item.lg-prev-slide, .lg-outer.lg-css3 .lg-item.lg-next-slide, .lg-outer.lg-css3 .lg-item.lg-current {\n  transition-duration: inherit !important;\n  transition-timing-function: inherit !important;\n}\n\n.lg-outer.lg-css3.lg-dragging .lg-item.lg-prev-slide, .lg-outer.lg-css3.lg-dragging .lg-item.lg-next-slide, .lg-outer.lg-css3.lg-dragging .lg-item.lg-current {\n  transition-duration: 0s !important;\n  opacity: 1;\n}\n\n.lg-outer.lg-grab img.lg-object {\n  cursor: -webkit-grab;\n  cursor: -o-grab;\n  cursor: -ms-grab;\n  cursor: grab;\n}\n\n.lg-outer.lg-grabbing img.lg-object {\n  cursor: move;\n  cursor: -webkit-grabbing;\n  cursor: -o-grabbing;\n  cursor: -ms-grabbing;\n  cursor: grabbing;\n}\n\n.lg-outer .lg {\n  height: 100%;\n  width: 100%;\n  position: relative;\n  overflow: hidden;\n  margin-left: auto;\n  margin-right: auto;\n  max-width: 100%;\n  max-height: 100%;\n}\n\n.lg-outer .lg-inner {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n  white-space: nowrap;\n}\n\n.lg-outer .lg-item {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") no-repeat scroll center center transparent;\n  display: none !important;\n}\n\n.lg-outer.lg-css3 .lg-prev-slide, .lg-outer.lg-css3 .lg-current, .lg-outer.lg-css3 .lg-next-slide {\n  display: inline-block !important;\n}\n\n.lg-outer.lg-css .lg-current {\n  display: inline-block !important;\n}\n\n.lg-outer .lg-item, .lg-outer .lg-img-wrap {\n  display: inline-block;\n  text-align: center;\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}\n\n.lg-outer .lg-item:before, .lg-outer .lg-img-wrap:before {\n  content: \"\";\n  display: inline-block;\n  height: 50%;\n  width: 1px;\n  margin-right: -1px;\n}\n\n.lg-outer .lg-img-wrap {\n  position: absolute;\n  padding: 0 5px;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n}\n\n.lg-outer .lg-item.lg-complete {\n  background-image: none;\n}\n\n.lg-outer .lg-item.lg-current {\n  z-index: 1060;\n}\n\n.lg-outer .lg-image {\n  display: inline-block;\n  vertical-align: middle;\n  max-width: 100%;\n  max-height: 100%;\n  width: auto !important;\n  height: auto !important;\n}\n\n.lg-outer.lg-show-after-load .lg-item .lg-object, .lg-outer.lg-show-after-load .lg-item .lg-video-play {\n  opacity: 0;\n  transition: opacity 0.15s ease 0s;\n}\n\n.lg-outer.lg-show-after-load .lg-item.lg-complete .lg-object, .lg-outer.lg-show-after-load .lg-item.lg-complete .lg-video-play {\n  opacity: 1;\n}\n\n.lg-outer .lg-empty-html {\n  display: none;\n}\n\n.lg-outer.lg-hide-download #lg-download {\n  display: none;\n}\n\n.lg-backdrop {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 1040;\n  background-color: #000;\n  opacity: 0;\n  transition: opacity 0.15s ease 0s;\n}\n\n.lg-backdrop.in {\n  opacity: 1;\n}\n\n.lg-css3.lg-no-trans .lg-prev-slide, .lg-css3.lg-no-trans .lg-next-slide, .lg-css3.lg-no-trans .lg-current {\n  transition: none 0s ease 0s !important;\n}\n\n.lg-css3.lg-use-css3 .lg-item {\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.lg-css3.lg-use-left .lg-item {\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.lg-css3.lg-fade .lg-item {\n  opacity: 0;\n}\n\n.lg-css3.lg-fade .lg-item.lg-current {\n  opacity: 1;\n}\n\n.lg-css3.lg-fade .lg-item.lg-prev-slide, .lg-css3.lg-fade .lg-item.lg-next-slide, .lg-css3.lg-fade .lg-item.lg-current {\n  transition: opacity 0.1s ease 0s;\n}\n\n.lg-css3.lg-slide.lg-use-css3 .lg-item {\n  opacity: 0;\n}\n\n.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide {\n  transform: translate3d(-100%, 0, 0);\n}\n\n.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide {\n  transform: translate3d(100%, 0, 0);\n}\n\n.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {\n  transform: translate3d(0, 0, 0);\n  opacity: 1;\n}\n\n.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {\n  transition: transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;\n}\n\n.lg-css3.lg-slide.lg-use-left .lg-item {\n  opacity: 0;\n  position: absolute;\n  left: 0;\n}\n\n.lg-css3.lg-slide.lg-use-left .lg-item.lg-prev-slide {\n  left: -100%;\n}\n\n.lg-css3.lg-slide.lg-use-left .lg-item.lg-next-slide {\n  left: 100%;\n}\n\n.lg-css3.lg-slide.lg-use-left .lg-item.lg-current {\n  left: 0;\n  opacity: 1;\n}\n\n.lg-css3.lg-slide.lg-use-left .lg-item.lg-prev-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-left .lg-item.lg-current {\n  transition: left 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: 'lg';\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"truetype\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"woff\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"svg\");\n  font-weight: normal;\n  font-style: normal;\n  font-display: block;\n}\n\n.lg-icon {\n  /* use !important to prevent issues with browser extensions that change fonts */\n  font-family: 'lg' !important;\n  speak: never;\n  font-style: normal;\n  font-weight: normal;\n  font-variant: normal;\n  text-transform: none;\n  line-height: 1;\n  /* Better Font Rendering =========== */\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\n.lg-container {\n  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';\n}\n\n.lg-next,\n.lg-prev {\n  background-color: rgba(0, 0, 0, 0.45);\n  border-radius: 2px;\n  color: #999;\n  cursor: pointer;\n  display: block;\n  font-size: 22px;\n  margin-top: -10px;\n  padding: 8px 10px 9px;\n  position: absolute;\n  top: 50%;\n  z-index: 1080;\n  outline: none;\n  border: none;\n}\n\n.lg-next.disabled,\n.lg-prev.disabled {\n  opacity: 0 !important;\n  cursor: default;\n}\n\n.lg-next:hover:not(.disabled),\n.lg-prev:hover:not(.disabled) {\n  color: #fff;\n}\n\n.lg-single-item .lg-next, .lg-single-item\n.lg-prev {\n  display: none;\n}\n\n.lg-next {\n  right: 20px;\n}\n\n.lg-next:before {\n  content: '\\e095';\n}\n\n.lg-prev {\n  left: 20px;\n}\n\n.lg-prev:after {\n  content: '\\e094';\n}\n\n@-webkit-keyframes lg-right-end {\n  0% {\n    left: 0;\n  }\n  50% {\n    left: -30px;\n  }\n  100% {\n    left: 0;\n  }\n}\n\n@keyframes lg-right-end {\n  0% {\n    left: 0;\n  }\n  50% {\n    left: -30px;\n  }\n  100% {\n    left: 0;\n  }\n}\n\n@-webkit-keyframes lg-left-end {\n  0% {\n    left: 0;\n  }\n  50% {\n    left: 30px;\n  }\n  100% {\n    left: 0;\n  }\n}\n\n@keyframes lg-left-end {\n  0% {\n    left: 0;\n  }\n  50% {\n    left: 30px;\n  }\n  100% {\n    left: 0;\n  }\n}\n\n.lg-outer.lg-right-end .lg-object {\n  -webkit-animation: lg-right-end 0.3s;\n  animation: lg-right-end 0.3s;\n  position: relative;\n}\n\n.lg-outer.lg-left-end .lg-object {\n  -webkit-animation: lg-left-end 0.3s;\n  animation: lg-left-end 0.3s;\n  position: relative;\n}\n\n.lg-toolbar {\n  z-index: 1082;\n  left: 0;\n  position: absolute;\n  top: 0;\n  width: 100%;\n}\n\n.lg-media-overlap .lg-toolbar {\n  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4));\n}\n\n.lg-toolbar .lg-icon {\n  color: #999;\n  cursor: pointer;\n  float: right;\n  font-size: 24px;\n  height: 47px;\n  line-height: 27px;\n  padding: 10px 0;\n  text-align: center;\n  width: 50px;\n  text-decoration: none !important;\n  outline: medium none;\n  will-change: color;\n  transition: color 0.2s linear;\n  background: none;\n  border: none;\n  box-shadow: none;\n}\n\n.lg-toolbar .lg-icon.lg-icon-18 {\n  font-size: 18px;\n}\n\n.lg-toolbar .lg-icon:hover {\n  color: #fff;\n}\n\n.lg-toolbar .lg-close:after {\n  content: '\\e070';\n}\n\n.lg-toolbar .lg-maximize {\n  font-size: 22px;\n}\n\n.lg-toolbar .lg-maximize:after {\n  content: '\\e90a';\n}\n\n.lg-toolbar .lg-download:after {\n  content: '\\e0f2';\n}\n\n.lg-sub-html {\n  color: #eee;\n  font-size: 16px;\n  padding: 10px 40px;\n  text-align: center;\n  z-index: 1080;\n  opacity: 0;\n  transition: opacity 0.2s ease-out 0s;\n}\n\n.lg-sub-html h4 {\n  margin: 0;\n  font-size: 13px;\n  font-weight: bold;\n}\n\n.lg-sub-html p {\n  font-size: 12px;\n  margin: 5px 0 0;\n}\n\n.lg-sub-html a {\n  color: inherit;\n}\n\n.lg-sub-html a:hover {\n  text-decoration: underline;\n}\n\n.lg-media-overlap .lg-sub-html {\n  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));\n}\n\n.lg-item .lg-sub-html {\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n\n.lg-error-msg {\n  font-size: 14px;\n  color: #999;\n}\n\n.lg-counter {\n  color: #999;\n  display: inline-block;\n  font-size: 16px;\n  padding-left: 20px;\n  padding-top: 12px;\n  height: 47px;\n  vertical-align: middle;\n}\n\n.lg-closing .lg-toolbar,\n.lg-closing .lg-prev,\n.lg-closing .lg-next,\n.lg-closing .lg-sub-html {\n  opacity: 0;\n  transition: transform 0.08 cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.08 cubic-bezier(0, 0, 0.25, 1) 0s, color 0.08 linear;\n}\n\nbody:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable) .lg-img-wrap,\nbody:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable) .lg-video-cont {\n  opacity: 0;\n  transform: scale3d(0.5, 0.5, 0.5);\n  will-change: transform, opacity;\n  transition: transform 250ms cubic-bezier(0, 0, 0.25, 1) 0s, opacity 250ms cubic-bezier(0, 0, 0.25, 1) !important;\n}\n\nbody:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-complete .lg-img-wrap,\nbody:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-complete .lg-video-cont {\n  opacity: 1;\n  transform: scale3d(1, 1, 1);\n}\n\n.lg-icon:focus-visible {\n  color: #fff;\n  border-radius: 3px;\n  outline: 1px dashed rgba(255, 255, 255, 0.6);\n}\n\n.lg-toolbar .lg-icon:focus-visible {\n  border-radius: 8px;\n  outline-offset: -5px;\n}\n\n.lg-group:after {\n  content: '';\n  display: table;\n  clear: both;\n}\n\n.lg-container {\n  display: none;\n  outline: none;\n}\n\n.lg-container.lg-show {\n  display: block;\n}\n\n.lg-on {\n  scroll-behavior: unset;\n}\n\n.lg-overlay-open {\n  overflow: hidden;\n}\n\n.lg-toolbar,\n.lg-prev,\n.lg-next,\n.lg-pager-outer,\n.lg-hide-sub-html .lg-sub-html {\n  opacity: 0;\n  will-change: transform, opacity;\n  transition: transform 0.25s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.25s cubic-bezier(0, 0, 0.25, 1) 0s;\n}\n\n.lg-show-in .lg-toolbar,\n.lg-show-in .lg-prev,\n.lg-show-in .lg-next,\n.lg-show-in .lg-pager-outer {\n  opacity: 1;\n}\n\n.lg-show-in.lg-hide-sub-html .lg-sub-html {\n  opacity: 1;\n}\n\n.lg-show-in .lg-hide-items .lg-prev {\n  opacity: 0;\n  transform: translate3d(-10px, 0, 0);\n}\n\n.lg-show-in .lg-hide-items .lg-next {\n  opacity: 0;\n  transform: translate3d(10px, 0, 0);\n}\n\n.lg-show-in .lg-hide-items .lg-toolbar {\n  opacity: 0;\n  transform: translate3d(0, -10px, 0);\n}\n\n.lg-show-in .lg-hide-items.lg-hide-sub-html .lg-sub-html {\n  opacity: 0;\n  transform: translate3d(0, 20px, 0);\n}\n\n.lg-outer {\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 1050;\n  text-align: left;\n  opacity: 0.001;\n  outline: none;\n  will-change: auto;\n  overflow: hidden;\n  transition: opacity 0.15s ease 0s;\n}\n\n.lg-outer * {\n  box-sizing: border-box;\n}\n\n.lg-outer.lg-zoom-from-image {\n  opacity: 1;\n}\n\n.lg-outer.lg-visible {\n  opacity: 1;\n}\n\n.lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-prev-slide, .lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-next-slide, .lg-outer.lg-css3 .lg-item:not(.lg-start-end-progress).lg-current {\n  transition-duration: inherit !important;\n  transition-timing-function: inherit !important;\n}\n\n.lg-outer.lg-css3.lg-dragging .lg-item.lg-prev-slide, .lg-outer.lg-css3.lg-dragging .lg-item.lg-next-slide, .lg-outer.lg-css3.lg-dragging .lg-item.lg-current {\n  transition-duration: 0s !important;\n  opacity: 1;\n}\n\n.lg-outer.lg-grab img.lg-object {\n  cursor: -webkit-grab;\n  cursor: -o-grab;\n  cursor: -ms-grab;\n  cursor: grab;\n}\n\n.lg-outer.lg-grabbing img.lg-object {\n  cursor: move;\n  cursor: -webkit-grabbing;\n  cursor: -o-grabbing;\n  cursor: -ms-grabbing;\n  cursor: grabbing;\n}\n\n.lg-outer .lg-content {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n}\n\n.lg-outer .lg-inner {\n  width: 100%;\n  position: absolute;\n  left: 0;\n  top: 0;\n  bottom: 0;\n  transition: opacity 0s;\n  white-space: nowrap;\n}\n\n.lg-outer .lg-item {\n  display: none !important;\n}\n\n.lg-outer .lg-item:not(.lg-start-end-progress) {\n  background: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") no-repeat scroll center center transparent;\n}\n\n.lg-outer.lg-css3 .lg-prev-slide,\n.lg-outer.lg-css3 .lg-current,\n.lg-outer.lg-css3 .lg-next-slide {\n  display: inline-block !important;\n}\n\n.lg-outer.lg-css .lg-current {\n  display: inline-block !important;\n}\n\n.lg-outer .lg-item,\n.lg-outer .lg-img-wrap {\n  display: inline-block;\n  text-align: center;\n  position: absolute;\n  width: 100%;\n  height: 100%;\n}\n\n.lg-outer .lg-item:before,\n.lg-outer .lg-img-wrap:before {\n  content: '';\n  display: inline-block;\n  height: 100%;\n  vertical-align: middle;\n}\n\n.lg-outer .lg-img-wrap {\n  position: absolute;\n  left: 0;\n  right: 0;\n  top: 0;\n  bottom: 0;\n  white-space: nowrap;\n  font-size: 0;\n}\n\n.lg-outer .lg-item.lg-complete {\n  background-image: none;\n}\n\n.lg-outer .lg-item.lg-current {\n  z-index: 1060;\n}\n\n.lg-outer .lg-object {\n  display: inline-block;\n  vertical-align: middle;\n  max-width: 100%;\n  max-height: 100%;\n  width: auto;\n  height: auto;\n  position: relative;\n}\n\n.lg-outer .lg-empty-html.lg-sub-html,\n.lg-outer .lg-empty-html .lg-sub-html {\n  display: none;\n}\n\n.lg-outer.lg-hide-download .lg-download {\n  opacity: 0.75;\n  pointer-events: none;\n}\n\n.lg-outer .lg-first-slide .lg-dummy-img {\n  position: absolute;\n  top: 50%;\n  left: 50%;\n}\n\n.lg-outer.lg-components-open:not(.lg-zoomed) .lg-components {\n  transform: translate3d(0, 0%, 0);\n  opacity: 1;\n}\n\n.lg-outer.lg-components-open:not(.lg-zoomed) .lg-sub-html {\n  opacity: 1;\n  transition: opacity 0.2s ease-out 0.15s;\n}\n\n.lg-backdrop {\n  position: fixed;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 1040;\n  background-color: #000;\n  opacity: 0;\n  will-change: auto;\n  transition: opacity 333ms ease-in 0s;\n}\n\n.lg-backdrop.in {\n  opacity: 1;\n}\n\n.lg-css3.lg-no-trans .lg-prev-slide,\n.lg-css3.lg-no-trans .lg-next-slide,\n.lg-css3.lg-no-trans .lg-current {\n  transition: none 0s ease 0s !important;\n}\n\n.lg-css3.lg-use-css3 .lg-item {\n  -webkit-backface-visibility: hidden;\n  backface-visibility: hidden;\n}\n\n.lg-css3.lg-fade .lg-item {\n  opacity: 0;\n}\n\n.lg-css3.lg-fade .lg-item.lg-current {\n  opacity: 1;\n}\n\n.lg-css3.lg-fade .lg-item.lg-prev-slide, .lg-css3.lg-fade .lg-item.lg-next-slide, .lg-css3.lg-fade .lg-item.lg-current {\n  transition: opacity 0.1s ease 0s;\n}\n\n.lg-css3.lg-use-css3 .lg-item.lg-start-progress {\n  transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0s;\n}\n\n.lg-css3.lg-use-css3 .lg-item.lg-start-end-progress {\n  transition: transform 1s cubic-bezier(0, 0, 0.25, 1) 0s;\n}\n\n.lg-css3.lg-slide.lg-use-css3 .lg-item {\n  opacity: 0;\n}\n\n.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide {\n  transform: translate3d(-100%, 0, 0);\n}\n\n.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide {\n  transform: translate3d(100%, 0, 0);\n}\n\n.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {\n  transform: translate3d(0, 0, 0);\n  opacity: 1;\n}\n\n.lg-css3.lg-slide.lg-use-css3 .lg-item.lg-prev-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-next-slide, .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {\n  transition: transform 1s cubic-bezier(0, 0, 0.25, 1) 0s, opacity 0.1s ease 0s;\n}\n\n.lg-container {\n  display: none;\n}\n\n.lg-container.lg-show {\n  display: block;\n}\n\n.lg-container.lg-dragging-vertical .lg-backdrop {\n  transition-duration: 0s !important;\n}\n\n.lg-container.lg-dragging-vertical .lg-css3 .lg-item.lg-current {\n  transition-duration: 0s !important;\n  opacity: 1;\n}\n\n.lg-inline .lg-backdrop,\n.lg-inline .lg-outer {\n  position: absolute;\n}\n\n.lg-inline .lg-backdrop {\n  z-index: 1;\n}\n\n.lg-inline .lg-outer {\n  z-index: 2;\n}\n\n.lg-inline .lg-maximize:after {\n  content: '\\e909';\n}\n\n.lg-components {\n  transform: translate3d(0, 100%, 0);\n  will-change: transform;\n  transition: transform 0.35s ease-out 0s;\n  z-index: 1080;\n  position: absolute;\n  bottom: 0;\n  right: 0;\n  left: 0;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -309,73 +328,53 @@ module.exports = function (url, options) {
 
 /***/ }),
 
-/***/ "./node_modules/lightgallery.js/dist/img/loading.gif":
-/*!***********************************************************!*\
-  !*** ./node_modules/lightgallery.js/dist/img/loading.gif ***!
-  \***********************************************************/
+/***/ "./node_modules/lightgallery/images/loading.gif":
+/*!******************************************************!*\
+  !*** ./node_modules/lightgallery/images/loading.gif ***!
+  \******************************************************/
 /***/ ((module) => {
 
-module.exports = "/images/vendor/lightgallery.js/dist/loading.gif?621cc8ad61b6eb26c7165eb447f3d8fd";
+module.exports = "/images/vendor/lightgallery/loading.gif?fcba57cdb89652f9bb54271cc5a9cc0e";
 
 /***/ }),
 
-/***/ "./node_modules/lightgallery.js/dist/img/video-play.png":
-/*!**************************************************************!*\
-  !*** ./node_modules/lightgallery.js/dist/img/video-play.png ***!
-  \**************************************************************/
+/***/ "./node_modules/lightgallery/fonts/lg.svg?io9a6k":
+/*!*******************************************************!*\
+  !*** ./node_modules/lightgallery/fonts/lg.svg?io9a6k ***!
+  \*******************************************************/
 /***/ ((module) => {
 
-module.exports = "/images/vendor/lightgallery.js/dist/video-play.png?53bb7d07ece69125950d8abb17356920";
+module.exports = "/fonts/vendor/lightgallery/lg.svg?09cd8e9be7081f2166444cce393fe968";
 
 /***/ }),
 
-/***/ "./node_modules/lightgallery.js/dist/img/vimeo-play.png":
-/*!**************************************************************!*\
-  !*** ./node_modules/lightgallery.js/dist/img/vimeo-play.png ***!
-  \**************************************************************/
+/***/ "./node_modules/lightgallery/fonts/lg.ttf?io9a6k":
+/*!*******************************************************!*\
+  !*** ./node_modules/lightgallery/fonts/lg.ttf?io9a6k ***!
+  \*******************************************************/
 /***/ ((module) => {
 
-module.exports = "/images/vendor/lightgallery.js/dist/vimeo-play.png?6c87992d63b09bc8c161a7f28419d3df";
+module.exports = "/fonts/vendor/lightgallery/lg.ttf?747d038541bfc6bb8ea9118bed9c160e";
 
 /***/ }),
 
-/***/ "./node_modules/lightgallery.js/dist/img/youtube-play.png":
-/*!****************************************************************!*\
-  !*** ./node_modules/lightgallery.js/dist/img/youtube-play.png ***!
-  \****************************************************************/
+/***/ "./node_modules/lightgallery/fonts/lg.woff2?io9a6k":
+/*!*********************************************************!*\
+  !*** ./node_modules/lightgallery/fonts/lg.woff2?io9a6k ***!
+  \*********************************************************/
 /***/ ((module) => {
 
-module.exports = "/images/vendor/lightgallery.js/dist/youtube-play.png?8921bc9cdd0eaf56ec89be386b2a7f7f";
+module.exports = "/fonts/vendor/lightgallery/lg.woff2?64b800aa30714fd916dce5018ba7ad76";
 
 /***/ }),
 
-/***/ "./node_modules/lightgallery.js/dist/fonts/lg.svg?22t19m":
-/*!***************************************************************!*\
-  !*** ./node_modules/lightgallery.js/dist/fonts/lg.svg?22t19m ***!
-  \***************************************************************/
+/***/ "./node_modules/lightgallery/fonts/lg.woff?io9a6k":
+/*!********************************************************!*\
+  !*** ./node_modules/lightgallery/fonts/lg.woff?io9a6k ***!
+  \********************************************************/
 /***/ ((module) => {
 
-module.exports = "/fonts/vendor/lightgallery.js/dist/lg.svg?adb7aeef16adb8599e2d261b9a3a9f1e";
-
-/***/ }),
-
-/***/ "./node_modules/lightgallery.js/dist/fonts/lg.ttf?22t19m":
-/*!***************************************************************!*\
-  !*** ./node_modules/lightgallery.js/dist/fonts/lg.ttf?22t19m ***!
-  \***************************************************************/
-/***/ ((module) => {
-
-module.exports = "/fonts/vendor/lightgallery.js/dist/lg.ttf?a53dcc5ea47fe7d1d9fc881ff489f409";
-
-/***/ }),
-
-/***/ "./node_modules/lightgallery.js/dist/fonts/lg.woff?22t19m":
-/*!****************************************************************!*\
-  !*** ./node_modules/lightgallery.js/dist/fonts/lg.woff?22t19m ***!
-  \****************************************************************/
-/***/ ((module) => {
-
-module.exports = "/fonts/vendor/lightgallery.js/dist/lg.woff?0add59587d07387b771f49d3f91a92af";
+module.exports = "/fonts/vendor/lightgallery/lg.woff?356a0e9cb064c7a196c612ebf7523686";
 
 /***/ }),
 
@@ -12508,1650 +12507,57 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
 /***/ }),
 
-/***/ "./node_modules/lightgallery.js/lib/js/lg-utils.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/lightgallery.js/lib/js/lg-utils.js ***!
-  \*********************************************************/
-/***/ (function(module, exports) {
+/***/ "./node_modules/lightgallery/lightgallery.min.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/lightgallery/lightgallery.min.js ***!
+  \*******************************************************/
+/***/ (function(module) {
 
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
-    if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-    } else { var mod; }
-})(this, function (exports) {
-    'use strict';
+/**
+ * lightgallery | 2.5.0 | June 13th 2022
+ * http://www.lightgalleryjs.com/
+ * Copyright (c) 2020 Sachin Neravath;
+ * @license GPLv3
+ */
 
-    Object.defineProperty(exports, "__esModule", {
-        value: true
-    });
+!function(t,e){ true?module.exports=e():0}(this,(function(){"use strict";var t=function(){return(t=Object.assign||function(t){for(var e,i=1,s=arguments.length;i<s;i++)for(var n in e=arguments[i])Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n]);return t}).apply(this,arguments)};var e="lgAfterAppendSlide",i="lgInit",s="lgHasVideo",n="lgContainerResize",o="lgUpdateSlides",r="lgAfterAppendSubHtml",l="lgBeforeOpen",a="lgAfterOpen",d="lgSlideItemLoad",g="lgBeforeSlide",h="lgAfterSlide",c="lgPosterClick",u="lgDragStart",m="lgDragMove",p="lgDragEnd",f="lgBeforeNextSlide",y="lgBeforePrevSlide",v="lgBeforeClose",b="lgAfterClose",I={mode:"lg-slide",easing:"ease",speed:400,licenseKey:"0000-0000-000-0000",height:"100%",width:"100%",addClass:"",startClass:"lg-start-zoom",backdropDuration:300,container:"",startAnimationDuration:400,zoomFromOrigin:!0,hideBarsDelay:0,showBarsAfter:1e4,slideDelay:0,supportLegacyBrowser:!0,allowMediaOverlap:!1,videoMaxSize:"1280-720",loadYouTubePoster:!0,defaultCaptionHeight:0,ariaLabelledby:"",ariaDescribedby:"",resetScrollPosition:!0,hideScrollbar:!1,closable:!0,swipeToClose:!0,closeOnTap:!0,showCloseIcon:!0,showMaximizeIcon:!1,loop:!0,escKey:!0,keyPress:!0,trapFocus:!0,controls:!0,slideEndAnimation:!0,hideControlOnEnd:!1,mousewheel:!1,getCaptionFromTitleOrAlt:!0,appendSubHtmlTo:".lg-sub-html",subHtmlSelectorRelative:!1,preload:2,numberOfSlideItemsInDom:10,selector:"",selectWithin:"",nextHtml:"",prevHtml:"",index:0,iframeWidth:"100%",iframeHeight:"100%",iframeMaxWidth:"100%",iframeMaxHeight:"100%",download:!0,counter:!0,appendCounterTo:".lg-toolbar",swipeThreshold:50,enableSwipe:!0,enableDrag:!0,dynamic:!1,dynamicEl:[],extraProps:[],exThumbImage:"",isMobile:void 0,mobileSettings:{controls:!1,showCloseIcon:!1,download:!1},plugins:[],strings:{closeGallery:"Close gallery",toggleMaximize:"Toggle maximize",previousSlide:"Previous slide",nextSlide:"Next slide",download:"Download",playVideo:"Play video"}};var C=function(){function t(t){return this.cssVenderPrefixes=["TransitionDuration","TransitionTimingFunction","Transform","Transition"],this.selector=this._getSelector(t),this.firstElement=this._getFirstEl(),this}return t.generateUUID=function(){return"xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,(function(t){var e=16*Math.random()|0;return("x"==t?e:3&e|8).toString(16)}))},t.prototype._getSelector=function(t,e){return void 0===e&&(e=document),"string"!=typeof t?t:(e=e||document,"#"===t.substring(0,1)?e.querySelector(t):e.querySelectorAll(t))},t.prototype._each=function(t){return this.selector?(void 0!==this.selector.length?[].forEach.call(this.selector,t):t(this.selector,0),this):this},t.prototype._setCssVendorPrefix=function(t,e,i){var s=e.replace(/-([a-z])/gi,(function(t,e){return e.toUpperCase()}));-1!==this.cssVenderPrefixes.indexOf(s)?(t.style[s.charAt(0).toLowerCase()+s.slice(1)]=i,t.style["webkit"+s]=i,t.style["moz"+s]=i,t.style["ms"+s]=i,t.style["o"+s]=i):t.style[s]=i},t.prototype._getFirstEl=function(){return this.selector&&void 0!==this.selector.length?this.selector[0]:this.selector},t.prototype.isEventMatched=function(t,e){var i=e.split(".");return t.split(".").filter((function(t){return t})).every((function(t){return-1!==i.indexOf(t)}))},t.prototype.attr=function(t,e){return void 0===e?this.firstElement?this.firstElement.getAttribute(t):"":(this._each((function(i){i.setAttribute(t,e)})),this)},t.prototype.find=function(t){return x(this._getSelector(t,this.selector))},t.prototype.first=function(){return this.selector&&void 0!==this.selector.length?x(this.selector[0]):x(this.selector)},t.prototype.eq=function(t){return x(this.selector[t])},t.prototype.parent=function(){return x(this.selector.parentElement)},t.prototype.get=function(){return this._getFirstEl()},t.prototype.removeAttr=function(t){var e=t.split(" ");return this._each((function(t){e.forEach((function(e){return t.removeAttribute(e)}))})),this},t.prototype.wrap=function(t){if(!this.firstElement)return this;var e=document.createElement("div");return e.className=t,this.firstElement.parentNode.insertBefore(e,this.firstElement),this.firstElement.parentNode.removeChild(this.firstElement),e.appendChild(this.firstElement),this},t.prototype.addClass=function(t){return void 0===t&&(t=""),this._each((function(e){t.split(" ").forEach((function(t){t&&e.classList.add(t)}))})),this},t.prototype.removeClass=function(t){return this._each((function(e){t.split(" ").forEach((function(t){t&&e.classList.remove(t)}))})),this},t.prototype.hasClass=function(t){return!!this.firstElement&&this.firstElement.classList.contains(t)},t.prototype.hasAttribute=function(t){return!!this.firstElement&&this.firstElement.hasAttribute(t)},t.prototype.toggleClass=function(t){return this.firstElement?(this.hasClass(t)?this.removeClass(t):this.addClass(t),this):this},t.prototype.css=function(t,e){var i=this;return this._each((function(s){i._setCssVendorPrefix(s,t,e)})),this},t.prototype.on=function(e,i){var s=this;return this.selector?(e.split(" ").forEach((function(e){Array.isArray(t.eventListeners[e])||(t.eventListeners[e]=[]),t.eventListeners[e].push(i),s.selector.addEventListener(e.split(".")[0],i)})),this):this},t.prototype.once=function(t,e){var i=this;return this.on(t,(function(){i.off(t),e(t)})),this},t.prototype.off=function(e){var i=this;return this.selector?(Object.keys(t.eventListeners).forEach((function(s){i.isEventMatched(e,s)&&(t.eventListeners[s].forEach((function(t){i.selector.removeEventListener(s.split(".")[0],t)})),t.eventListeners[s]=[])})),this):this},t.prototype.trigger=function(t,e){if(!this.firstElement)return this;var i=new CustomEvent(t.split(".")[0],{detail:e||null});return this.firstElement.dispatchEvent(i),this},t.prototype.load=function(t){var e=this;return fetch(t).then((function(t){return t.text()})).then((function(t){e.selector.innerHTML=t})),this},t.prototype.html=function(t){return void 0===t?this.firstElement?this.firstElement.innerHTML:"":(this._each((function(e){e.innerHTML=t})),this)},t.prototype.append=function(t){return this._each((function(e){"string"==typeof t?e.insertAdjacentHTML("beforeend",t):e.appendChild(t)})),this},t.prototype.prepend=function(t){return this._each((function(e){e.insertAdjacentHTML("afterbegin",t)})),this},t.prototype.remove=function(){return this._each((function(t){t.parentNode.removeChild(t)})),this},t.prototype.empty=function(){return this._each((function(t){t.innerHTML=""})),this},t.prototype.scrollTop=function(t){return void 0!==t?(document.body.scrollTop=t,document.documentElement.scrollTop=t,this):window.pageYOffset||document.documentElement.scrollTop||document.body.scrollTop||0},t.prototype.scrollLeft=function(t){return void 0!==t?(document.body.scrollLeft=t,document.documentElement.scrollLeft=t,this):window.pageXOffset||document.documentElement.scrollLeft||document.body.scrollLeft||0},t.prototype.offset=function(){if(!this.firstElement)return{left:0,top:0};var t=this.firstElement.getBoundingClientRect(),e=x("body").style().marginLeft;return{left:t.left-parseFloat(e)+this.scrollLeft(),top:t.top+this.scrollTop()}},t.prototype.style=function(){return this.firstElement?this.firstElement.currentStyle||window.getComputedStyle(this.firstElement):{}},t.prototype.width=function(){var t=this.style();return this.firstElement.clientWidth-parseFloat(t.paddingLeft)-parseFloat(t.paddingRight)},t.prototype.height=function(){var t=this.style();return this.firstElement.clientHeight-parseFloat(t.paddingTop)-parseFloat(t.paddingBottom)},t.eventListeners={},t}();function x(t){return function(){if("function"==typeof window.CustomEvent)return!1;window.CustomEvent=function(t,e){e=e||{bubbles:!1,cancelable:!1,detail:null};var i=document.createEvent("CustomEvent");return i.initCustomEvent(t,e.bubbles,e.cancelable,e.detail),i}}(),Element.prototype.matches||(Element.prototype.matches=Element.prototype.msMatchesSelector||Element.prototype.webkitMatchesSelector),new C(t)}var w=["src","sources","subHtml","subHtmlUrl","html","video","poster","slideName","responsive","srcset","sizes","iframe","downloadUrl","download","width","facebookShareUrl","tweetText","iframeTitle","twitterShareUrl","pinterestShareUrl","pinterestText","fbHtml","disqusIdentifier","disqusUrl"];function S(t){return"href"===t?"src":t=(t=(t=t.replace("data-","")).charAt(0).toLowerCase()+t.slice(1)).replace(/-([a-z])/g,(function(t){return t[1].toUpperCase()}))}var T=function(t,e,i,s){void 0===i&&(i=0);var n=x(t).attr("data-lg-size")||s;if(n){var o=n.split(",");if(o[1])for(var r=window.innerWidth,l=0;l<o.length;l++){var a=o[l];if(parseInt(a.split("-")[2],10)>r){n=a;break}l===o.length-1&&(n=a)}var d=n.split("-"),g=parseInt(d[0],10),h=parseInt(d[1],10),c=e.width(),u=e.height()-i,m=Math.min(c,g),p=Math.min(u,h),f=Math.min(m/g,p/h);return{width:g*f,height:h*f}}},E=function(t,e,i,s,n){if(n){var o=x(t).find("img").first();if(o.get()){var r=e.get().getBoundingClientRect(),l=r.width,a=e.height()-(i+s),d=o.width(),g=o.height(),h=o.style(),c=(l-d)/2-o.offset().left+(parseFloat(h.paddingLeft)||0)+(parseFloat(h.borderLeft)||0)+x(window).scrollLeft()+r.left,u=(a-g)/2-o.offset().top+(parseFloat(h.paddingTop)||0)+(parseFloat(h.borderTop)||0)+x(window).scrollTop()+i;return"translate3d("+(c*=-1)+"px, "+(u*=-1)+"px, 0) scale3d("+d/n.width+", "+g/n.height+", 1)"}}},O=function(t,e,i,s,n,o){return'<div class="lg-video-cont lg-has-iframe" style="width:'+t+"; max-width:"+i+"; height: "+e+"; max-height:"+s+'">\n                    <iframe class="lg-object" frameborder="0" '+(o?'title="'+o+'"':"")+' src="'+n+'"  allowfullscreen="true"></iframe>\n                </div>'},D=function(t,e,i,s,n,o){var r="<img "+i+" "+(s?'srcset="'+s+'"':"")+"  "+(n?'sizes="'+n+'"':"")+' class="lg-object lg-image" data-index="'+t+'" src="'+e+'" />',l="";o&&(l=("string"==typeof o?JSON.parse(o):o).map((function(t){var e="";return Object.keys(t).forEach((function(i){e+=" "+i+'="'+t[i]+'"'})),"<source "+e+"></source>"})));return""+l+r},L=function(t){for(var e=[],i=[],s="",n=0;n<t.length;n++){var o=t[n].split(" ");""===o[0]&&o.splice(0,1),i.push(o[0]),e.push(o[1])}for(var r=window.innerWidth,l=0;l<e.length;l++)if(parseInt(e[l],10)>r){s=i[l];break}return s},z=function(t){return!!t&&(!!t.complete&&0!==t.naturalWidth)},M=function(t,e,i,s,n){return'<div class="lg-video-cont '+(n&&n.youtube?"lg-has-youtube":n&&n.vimeo?"lg-has-vimeo":"lg-has-html5")+'" style="'+i+'">\n                <div class="lg-video-play-button">\n                <svg\n                    viewBox="0 0 20 20"\n                    preserveAspectRatio="xMidYMid"\n                    focusable="false"\n                    aria-labelledby="'+s+'"\n                    role="img"\n                    class="lg-video-play-icon"\n                >\n                    <title>'+s+'</title>\n                    <polygon class="lg-video-play-icon-inner" points="1,0 20,10 1,20"></polygon>\n                </svg>\n                <svg class="lg-video-play-icon-bg" viewBox="0 0 50 50" focusable="false">\n                    <circle cx="50%" cy="50%" r="20"></circle></svg>\n                <svg class="lg-video-play-icon-circle" viewBox="0 0 50 50" focusable="false">\n                    <circle cx="50%" cy="50%" r="20"></circle>\n                </svg>\n            </div>\n            '+(e||"")+'\n            <img class="lg-object lg-video-poster" src="'+t+'" />\n        </div>'},G=function(t){var e=t.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])');return[].filter.call(e,(function(t){var e=window.getComputedStyle(t);return"none"!==e.display&&"hidden"!==e.visibility}))},k=function(t,e,i,s){var n=[],o=function(){for(var t=0,e=0,i=arguments.length;e<i;e++)t+=arguments[e].length;var s=Array(t),n=0;for(e=0;e<i;e++)for(var o=arguments[e],r=0,l=o.length;r<l;r++,n++)s[n]=o[r];return s}(w,e);return[].forEach.call(t,(function(t){for(var e={},r=0;r<t.attributes.length;r++){var l=t.attributes[r];if(l.specified){var a=S(l.name),d="";o.indexOf(a)>-1&&(d=a),d&&(e[d]=l.value)}}var g=x(t),h=g.find("img").first().attr("alt"),c=g.attr("title"),u=s?g.attr(s):g.find("img").first().attr("src");e.thumb=u,i&&!e.subHtml&&(e.subHtml=c||h||""),e.alt=h||c||"",n.push(e)})),n},A=function(){return/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)},P=function(t,e,i){if(!t)return e?{html5:!0}:void console.error("lightGallery :- data-src is not provided on slide item "+(i+1)+". Please make sure the selector property is properly configured. More info - https://www.lightgalleryjs.com/demos/html-markup/");var s=t.match(/\/\/(?:www\.)?youtu(?:\.be|be\.com|be-nocookie\.com)\/(?:watch\?v=|embed\/)?([a-z0-9\-\_\%]+)([\&|?][\S]*)*/i),n=t.match(/\/\/(?:www\.)?(?:player\.)?vimeo.com\/(?:video\/)?([0-9a-z\-_]+)(.*)?/i),o=t.match(/https?:\/\/(.+)?(wistia\.com|wi\.st)\/(medias|embed)\/([0-9a-z\-_]+)(.*)/);return s?{youtube:s}:n?{vimeo:n}:o?{wistia:o}:void 0},B=0,F=function(){function w(t,e){if(this.lgOpened=!1,this.index=0,this.plugins=[],this.lGalleryOn=!1,this.lgBusy=!1,this.currentItemsInDom=[],this.prevScrollTop=0,this.bodyPaddingRight=0,this.isDummyImageRemoved=!1,this.dragOrSwipeEnabled=!1,this.mediaContainerPosition={top:0,bottom:0},!t)return this;if(B++,this.lgId=B,this.el=t,this.LGel=x(t),this.generateSettings(e),this.buildModules(),this.settings.dynamic&&void 0!==this.settings.dynamicEl&&!Array.isArray(this.settings.dynamicEl))throw"When using dynamic mode, you must also define dynamicEl as an Array.";return this.galleryItems=this.getItems(),this.normalizeSettings(),this.init(),this.validateLicense(),this}return w.prototype.generateSettings=function(e){if(this.settings=t(t({},I),e),this.settings.isMobile&&"function"==typeof this.settings.isMobile?this.settings.isMobile():A()){var i=t(t({},this.settings.mobileSettings),this.settings.mobileSettings);this.settings=t(t({},this.settings),i)}},w.prototype.normalizeSettings=function(){this.settings.slideEndAnimation&&(this.settings.hideControlOnEnd=!1),this.settings.closable||(this.settings.swipeToClose=!1),this.zoomFromOrigin=this.settings.zoomFromOrigin,this.settings.dynamic&&(this.zoomFromOrigin=!1),this.settings.container||(this.settings.container=document.body),this.settings.preload=Math.min(this.settings.preload,this.galleryItems.length)},w.prototype.init=function(){var t=this;this.addSlideVideoInfo(this.galleryItems),this.buildStructure(),this.LGel.trigger(i,{instance:this}),this.settings.keyPress&&this.keyPress(),setTimeout((function(){t.enableDrag(),t.enableSwipe(),t.triggerPosterClick()}),50),this.arrow(),this.settings.mousewheel&&this.mousewheel(),this.settings.dynamic||this.openGalleryOnItemClick()},w.prototype.openGalleryOnItemClick=function(){for(var t=this,e=function(e){var s=i.items[e],n=x(s),o=C.generateUUID();n.attr("data-lg-id",o).on("click.lgcustom-item-"+o,(function(i){i.preventDefault();var n=t.settings.index||e;t.openGallery(n,s)}))},i=this,s=0;s<this.items.length;s++)e(s)},w.prototype.buildModules=function(){var t=this;this.settings.plugins.forEach((function(e){t.plugins.push(new e(t,x))}))},w.prototype.validateLicense=function(){this.settings.licenseKey?"0000-0000-000-0000"===this.settings.licenseKey&&console.warn("lightGallery: "+this.settings.licenseKey+" license key is not valid for production use"):console.error("Please provide a valid license key")},w.prototype.getSlideItem=function(t){return x(this.getSlideItemId(t))},w.prototype.getSlideItemId=function(t){return"#lg-item-"+this.lgId+"-"+t},w.prototype.getIdName=function(t){return t+"-"+this.lgId},w.prototype.getElementById=function(t){return x("#"+this.getIdName(t))},w.prototype.manageSingleSlideClassName=function(){this.galleryItems.length<2?this.outer.addClass("lg-single-item"):this.outer.removeClass("lg-single-item")},w.prototype.buildStructure=function(){var t=this;if(!(this.$container&&this.$container.get())){var e="",i="";this.settings.controls&&(e='<button type="button" id="'+this.getIdName("lg-prev")+'" aria-label="'+this.settings.strings.previousSlide+'" class="lg-prev lg-icon"> '+this.settings.prevHtml+' </button>\n                <button type="button" id="'+this.getIdName("lg-next")+'" aria-label="'+this.settings.strings.nextSlide+'" class="lg-next lg-icon"> '+this.settings.nextHtml+" </button>"),".lg-item"!==this.settings.appendSubHtmlTo&&(i='<div class="lg-sub-html" role="status" aria-live="polite"></div>');var s="";this.settings.allowMediaOverlap&&(s+="lg-media-overlap ");var n=this.settings.ariaLabelledby?'aria-labelledby="'+this.settings.ariaLabelledby+'"':"",o=this.settings.ariaDescribedby?'aria-describedby="'+this.settings.ariaDescribedby+'"':"",r="lg-container "+this.settings.addClass+" "+(document.body!==this.settings.container?"lg-inline":""),l=this.settings.closable&&this.settings.showCloseIcon?'<button type="button" aria-label="'+this.settings.strings.closeGallery+'" id="'+this.getIdName("lg-close")+'" class="lg-close lg-icon"></button>':"",a=this.settings.showMaximizeIcon?'<button type="button" aria-label="'+this.settings.strings.toggleMaximize+'" id="'+this.getIdName("lg-maximize")+'" class="lg-maximize lg-icon"></button>':"",d='\n        <div class="'+r+'" id="'+this.getIdName("lg-container")+'" tabindex="-1" aria-modal="true" '+n+" "+o+' role="dialog"\n        >\n            <div id="'+this.getIdName("lg-backdrop")+'" class="lg-backdrop"></div>\n\n            <div id="'+this.getIdName("lg-outer")+'" class="lg-outer lg-use-css3 lg-css3 lg-hide-items '+s+' ">\n\n              <div id="'+this.getIdName("lg-content")+'" class="lg-content">\n                <div id="'+this.getIdName("lg-inner")+'" class="lg-inner">\n                </div>\n                '+e+'\n              </div>\n                <div id="'+this.getIdName("lg-toolbar")+'" class="lg-toolbar lg-group">\n                    '+a+"\n                    "+l+"\n                    </div>\n                    "+(".lg-outer"===this.settings.appendSubHtmlTo?i:"")+'\n                <div id="'+this.getIdName("lg-components")+'" class="lg-components">\n                    '+(".lg-sub-html"===this.settings.appendSubHtmlTo?i:"")+"\n                </div>\n            </div>\n        </div>\n        ";x(this.settings.container).append(d),document.body!==this.settings.container&&x(this.settings.container).css("position","relative"),this.outer=this.getElementById("lg-outer"),this.$lgComponents=this.getElementById("lg-components"),this.$backdrop=this.getElementById("lg-backdrop"),this.$container=this.getElementById("lg-container"),this.$inner=this.getElementById("lg-inner"),this.$content=this.getElementById("lg-content"),this.$toolbar=this.getElementById("lg-toolbar"),this.$backdrop.css("transition-duration",this.settings.backdropDuration+"ms");var g=this.settings.mode+" ";this.manageSingleSlideClassName(),this.settings.enableDrag&&(g+="lg-grab "),this.outer.addClass(g),this.$inner.css("transition-timing-function",this.settings.easing),this.$inner.css("transition-duration",this.settings.speed+"ms"),this.settings.download&&this.$toolbar.append('<a id="'+this.getIdName("lg-download")+'" target="_blank" rel="noopener" aria-label="'+this.settings.strings.download+'" download class="lg-download lg-icon"></a>'),this.counter(),x(window).on("resize.lg.global"+this.lgId+" orientationchange.lg.global"+this.lgId,(function(){t.refreshOnResize()})),this.hideBars(),this.manageCloseGallery(),this.toggleMaximize(),this.initModules()}},w.prototype.refreshOnResize=function(){if(this.lgOpened){var t=this.galleryItems[this.index].__slideVideoInfo;this.mediaContainerPosition=this.getMediaContainerPosition();var e=this.mediaContainerPosition,i=e.top,s=e.bottom;if(this.currentImageSize=T(this.items[this.index],this.outer,i+s,t&&this.settings.videoMaxSize),t&&this.resizeVideoSlide(this.index,this.currentImageSize),this.zoomFromOrigin&&!this.isDummyImageRemoved){var o=this.getDummyImgStyles(this.currentImageSize);this.outer.find(".lg-current .lg-dummy-img").first().attr("style",o)}this.LGel.trigger(n)}},w.prototype.resizeVideoSlide=function(t,e){var i=this.getVideoContStyle(e);this.getSlideItem(t).find(".lg-video-cont").attr("style",i)},w.prototype.updateSlides=function(t,e){if(this.index>t.length-1&&(this.index=t.length-1),1===t.length&&(this.index=0),t.length){var i=this.galleryItems[e].src;this.galleryItems=t,this.updateControls(),this.$inner.empty(),this.currentItemsInDom=[];var s=0;this.galleryItems.some((function(t,e){return t.src===i&&(s=e,!0)})),this.currentItemsInDom=this.organizeSlideItems(s,-1),this.loadContent(s,!0),this.getSlideItem(s).addClass("lg-current"),this.index=s,this.updateCurrentCounter(s),this.LGel.trigger(o)}else this.closeGallery()},w.prototype.getItems=function(){if(this.items=[],this.settings.dynamic)return this.settings.dynamicEl||[];if("this"===this.settings.selector)this.items.push(this.el);else if(this.settings.selector)if("string"==typeof this.settings.selector)if(this.settings.selectWithin){var t=x(this.settings.selectWithin);this.items=t.find(this.settings.selector).get()}else this.items=this.el.querySelectorAll(this.settings.selector);else this.items=this.settings.selector;else this.items=this.el.children;return k(this.items,this.settings.extraProps,this.settings.getCaptionFromTitleOrAlt,this.settings.exThumbImage)},w.prototype.shouldHideScrollbar=function(){return this.settings.hideScrollbar&&document.body===this.settings.container},w.prototype.hideScrollbar=function(){if(this.shouldHideScrollbar()){this.bodyPaddingRight=parseFloat(x("body").style().paddingRight);var t=document.documentElement.getBoundingClientRect(),e=window.innerWidth-t.width;x(document.body).css("padding-right",e+this.bodyPaddingRight+"px"),x(document.body).addClass("lg-overlay-open")}},w.prototype.resetScrollBar=function(){this.shouldHideScrollbar()&&(x(document.body).css("padding-right",this.bodyPaddingRight+"px"),x(document.body).removeClass("lg-overlay-open"))},w.prototype.openGallery=function(t,e){var i=this;if(void 0===t&&(t=this.settings.index),!this.lgOpened){this.lgOpened=!0,this.outer.removeClass("lg-hide-items"),this.hideScrollbar(),this.$container.addClass("lg-show");var s=this.getItemsToBeInsertedToDom(t,t);this.currentItemsInDom=s;var n="";s.forEach((function(t){n=n+'<div id="'+t+'" class="lg-item"></div>'})),this.$inner.append(n),this.addHtml(t);var o="";this.mediaContainerPosition=this.getMediaContainerPosition();var r=this.mediaContainerPosition,d=r.top,g=r.bottom;this.settings.allowMediaOverlap||this.setMediaContainerPosition(d,g);var h=this.galleryItems[t].__slideVideoInfo;this.zoomFromOrigin&&e&&(this.currentImageSize=T(e,this.outer,d+g,h&&this.settings.videoMaxSize),o=E(e,this.outer,d,g,this.currentImageSize)),this.zoomFromOrigin&&o||(this.outer.addClass(this.settings.startClass),this.getSlideItem(t).removeClass("lg-complete"));var c=this.settings.zoomFromOrigin?100:this.settings.backdropDuration;setTimeout((function(){i.outer.addClass("lg-components-open")}),c),this.index=t,this.LGel.trigger(l),this.getSlideItem(t).addClass("lg-current"),this.lGalleryOn=!1,this.prevScrollTop=x(window).scrollTop(),setTimeout((function(){if(i.zoomFromOrigin&&o){var e=i.getSlideItem(t);e.css("transform",o),setTimeout((function(){e.addClass("lg-start-progress lg-start-end-progress").css("transition-duration",i.settings.startAnimationDuration+"ms"),i.outer.addClass("lg-zoom-from-image")})),setTimeout((function(){e.css("transform","translate3d(0, 0, 0)")}),100)}setTimeout((function(){i.$backdrop.addClass("in"),i.$container.addClass("lg-show-in")}),10),setTimeout((function(){i.settings.trapFocus&&document.body===i.settings.container&&i.trapFocus()}),i.settings.backdropDuration+50),i.zoomFromOrigin&&o||setTimeout((function(){i.outer.addClass("lg-visible")}),i.settings.backdropDuration),i.slide(t,!1,!1,!1),i.LGel.trigger(a)})),document.body===this.settings.container&&x("html").addClass("lg-on")}},w.prototype.getMediaContainerPosition=function(){if(this.settings.allowMediaOverlap)return{top:0,bottom:0};var t=this.$toolbar.get().clientHeight||0,e=this.outer.find(".lg-components .lg-sub-html").get(),i=this.settings.defaultCaptionHeight||e&&e.clientHeight||0,s=this.outer.find(".lg-thumb-outer").get();return{top:t,bottom:(s?s.clientHeight:0)+i}},w.prototype.setMediaContainerPosition=function(t,e){void 0===t&&(t=0),void 0===e&&(e=0),this.$content.css("top",t+"px").css("bottom",e+"px")},w.prototype.hideBars=function(){var t=this;setTimeout((function(){t.outer.removeClass("lg-hide-items"),t.settings.hideBarsDelay>0&&(t.outer.on("mousemove.lg click.lg touchstart.lg",(function(){t.outer.removeClass("lg-hide-items"),clearTimeout(t.hideBarTimeout),t.hideBarTimeout=setTimeout((function(){t.outer.addClass("lg-hide-items")}),t.settings.hideBarsDelay)})),t.outer.trigger("mousemove.lg"))}),this.settings.showBarsAfter)},w.prototype.initPictureFill=function(t){if(this.settings.supportLegacyBrowser)try{picturefill({elements:[t.get()]})}catch(t){console.warn("lightGallery :- If you want srcset or picture tag to be supported for older browser please include picturefil javascript library in your document.")}},w.prototype.counter=function(){if(this.settings.counter){var t='<div class="lg-counter" role="status" aria-live="polite">\n                <span id="'+this.getIdName("lg-counter-current")+'" class="lg-counter-current">'+(this.index+1)+' </span> /\n                <span id="'+this.getIdName("lg-counter-all")+'" class="lg-counter-all">'+this.galleryItems.length+" </span></div>";this.outer.find(this.settings.appendCounterTo).append(t)}},w.prototype.addHtml=function(t){var e,i;if(this.galleryItems[t].subHtmlUrl?i=this.galleryItems[t].subHtmlUrl:e=this.galleryItems[t].subHtml,!i)if(e){var s=e.substring(0,1);"."!==s&&"#"!==s||(e=this.settings.subHtmlSelectorRelative&&!this.settings.dynamic?x(this.items).eq(t).find(e).first().html():x(e).first().html())}else e="";if(".lg-item"!==this.settings.appendSubHtmlTo)i?this.outer.find(".lg-sub-html").load(i):this.outer.find(".lg-sub-html").html(e);else{var n=x(this.getSlideItemId(t));i?n.load(i):n.append('<div class="lg-sub-html">'+e+"</div>")}null!=e&&(""===e?this.outer.find(this.settings.appendSubHtmlTo).addClass("lg-empty-html"):this.outer.find(this.settings.appendSubHtmlTo).removeClass("lg-empty-html")),this.LGel.trigger(r,{index:t})},w.prototype.preload=function(t){for(var e=1;e<=this.settings.preload&&!(e>=this.galleryItems.length-t);e++)this.loadContent(t+e,!1);for(var i=1;i<=this.settings.preload&&!(t-i<0);i++)this.loadContent(t-i,!1)},w.prototype.getDummyImgStyles=function(t){return t?"width:"+t.width+"px;\n                margin-left: -"+t.width/2+"px;\n                margin-top: -"+t.height/2+"px;\n                height:"+t.height+"px":""},w.prototype.getVideoContStyle=function(t){return t?"width:"+t.width+"px;\n                height:"+t.height+"px":""},w.prototype.getDummyImageContent=function(t,e,i){var s;if(this.settings.dynamic||(s=x(this.items).eq(e)),s){var n=void 0;if(!(n=this.settings.exThumbImage?s.attr(this.settings.exThumbImage):s.find("img").first().attr("src")))return"";var o="<img "+i+' style="'+this.getDummyImgStyles(this.currentImageSize)+'" class="lg-dummy-img" src="'+n+'" />';return t.addClass("lg-first-slide"),this.outer.addClass("lg-first-slide-loading"),o}return""},w.prototype.setImgMarkup=function(t,e,i){var s=this.galleryItems[i],n=s.alt,o=s.srcset,r=s.sizes,l=s.sources,a=n?'alt="'+n+'"':"",d='<picture class="lg-img-wrap"> '+(this.isFirstSlideWithZoomAnimation()?this.getDummyImageContent(e,i,a):D(i,t,a,o,r,l))+"</picture>";e.prepend(d)},w.prototype.onSlideObjectLoad=function(t,e,i,s){var n=t.find(".lg-object").first();z(n.get())||e?i():(n.on("load.lg error.lg",(function(){i&&i()})),n.on("error.lg",(function(){s&&s()})))},w.prototype.onLgObjectLoad=function(t,e,i,s,n,o){var r=this;this.onSlideObjectLoad(t,o,(function(){r.triggerSlideItemLoad(t,e,i,s,n)}),(function(){t.addClass("lg-complete lg-complete_"),t.html('<span class="lg-error-msg">Oops... Failed to load content...</span>')}))},w.prototype.triggerSlideItemLoad=function(t,e,i,s,n){var o=this,r=this.galleryItems[e],l=n&&"video"===this.getSlideType(r)&&!r.poster?s:0;setTimeout((function(){t.addClass("lg-complete lg-complete_"),o.LGel.trigger(d,{index:e,delay:i||0,isFirstSlide:n})}),l)},w.prototype.isFirstSlideWithZoomAnimation=function(){return!(this.lGalleryOn||!this.zoomFromOrigin||!this.currentImageSize)},w.prototype.addSlideVideoInfo=function(t){var e=this;t.forEach((function(t,i){t.__slideVideoInfo=P(t.src,!!t.video,i),t.__slideVideoInfo&&e.settings.loadYouTubePoster&&!t.poster&&t.__slideVideoInfo.youtube&&(t.poster="//img.youtube.com/vi/"+t.__slideVideoInfo.youtube[1]+"/maxresdefault.jpg")}))},w.prototype.loadContent=function(t,i){var n=this,o=this.galleryItems[t],r=x(this.getSlideItemId(t)),l=o.poster,a=o.srcset,d=o.sizes,g=o.sources,h=o.src,c=o.video,u=c&&"string"==typeof c?JSON.parse(c):c;if(o.responsive){var m=o.responsive.split(",");h=L(m)||h}var p=o.__slideVideoInfo,f="",y=!!o.iframe,v=!this.lGalleryOn,b=0;if(v&&(b=this.zoomFromOrigin&&this.currentImageSize?this.settings.startAnimationDuration+10:this.settings.backdropDuration+10),!r.hasClass("lg-loaded")){if(p){var I=this.mediaContainerPosition,C=I.top,w=I.bottom,S=T(this.items[t],this.outer,C+w,p&&this.settings.videoMaxSize);f=this.getVideoContStyle(S)}if(y){var E=O(this.settings.iframeWidth,this.settings.iframeHeight,this.settings.iframeMaxWidth,this.settings.iframeMaxHeight,h,o.iframeTitle);r.prepend(E)}else if(l){var z="";v&&this.zoomFromOrigin&&this.currentImageSize&&(z=this.getDummyImageContent(r,t,""));E=M(l,z||"",f,this.settings.strings.playVideo,p);r.prepend(E)}else if(p){E='<div class="lg-video-cont " style="'+f+'"></div>';r.prepend(E)}else if(this.setImgMarkup(h,r,t),a||g){var G=r.find(".lg-object");this.initPictureFill(G)}(l||p)&&this.LGel.trigger(s,{index:t,src:h,html5Video:u,hasPoster:!!l}),this.LGel.trigger(e,{index:t}),this.lGalleryOn&&".lg-item"===this.settings.appendSubHtmlTo&&this.addHtml(t)}var k=0;b&&!x(document.body).hasClass("lg-from-hash")&&(k=b),this.isFirstSlideWithZoomAnimation()&&(setTimeout((function(){r.removeClass("lg-start-end-progress lg-start-progress").removeAttr("style")}),this.settings.startAnimationDuration+100),r.hasClass("lg-loaded")||setTimeout((function(){if("image"===n.getSlideType(o)){var e=o.alt,i=e?'alt="'+e+'"':"";if(r.find(".lg-img-wrap").append(D(t,h,i,a,d,o.sources)),a||g){var s=r.find(".lg-object");n.initPictureFill(s)}}("image"===n.getSlideType(o)||"video"===n.getSlideType(o)&&l)&&(n.onLgObjectLoad(r,t,b,k,!0,!1),n.onSlideObjectLoad(r,!(!p||!p.html5||l),(function(){n.loadContentOnFirstSlideLoad(t,r,k)}),(function(){n.loadContentOnFirstSlideLoad(t,r,k)})))}),this.settings.startAnimationDuration+100)),r.addClass("lg-loaded"),this.isFirstSlideWithZoomAnimation()&&("video"!==this.getSlideType(o)||l)||this.onLgObjectLoad(r,t,b,k,v,!(!p||!p.html5||l)),this.zoomFromOrigin&&this.currentImageSize||!r.hasClass("lg-complete_")||this.lGalleryOn||setTimeout((function(){r.addClass("lg-complete")}),this.settings.backdropDuration),this.lGalleryOn=!0,!0===i&&(r.hasClass("lg-complete_")?this.preload(t):r.find(".lg-object").first().on("load.lg error.lg",(function(){n.preload(t)})))},w.prototype.loadContentOnFirstSlideLoad=function(t,e,i){var s=this;setTimeout((function(){e.find(".lg-dummy-img").remove(),e.removeClass("lg-first-slide"),s.outer.removeClass("lg-first-slide-loading"),s.isDummyImageRemoved=!0,s.preload(t)}),i+300)},w.prototype.getItemsToBeInsertedToDom=function(t,e,i){var s=this;void 0===i&&(i=0);var n=[],o=Math.max(i,3);o=Math.min(o,this.galleryItems.length);var r="lg-item-"+this.lgId+"-"+e;if(this.galleryItems.length<=3)return this.galleryItems.forEach((function(t,e){n.push("lg-item-"+s.lgId+"-"+e)})),n;if(t<(this.galleryItems.length-1)/2){for(var l=t;l>t-o/2&&l>=0;l--)n.push("lg-item-"+this.lgId+"-"+l);var a=n.length;for(l=0;l<o-a;l++)n.push("lg-item-"+this.lgId+"-"+(t+l+1))}else{for(l=t;l<=this.galleryItems.length-1&&l<t+o/2;l++)n.push("lg-item-"+this.lgId+"-"+l);for(a=n.length,l=0;l<o-a;l++)n.push("lg-item-"+this.lgId+"-"+(t-l-1))}return this.settings.loop&&(t===this.galleryItems.length-1?n.push("lg-item-"+this.lgId+"-0"):0===t&&n.push("lg-item-"+this.lgId+"-"+(this.galleryItems.length-1))),-1===n.indexOf(r)&&n.push("lg-item-"+this.lgId+"-"+e),n},w.prototype.organizeSlideItems=function(t,e){var i=this,s=this.getItemsToBeInsertedToDom(t,e,this.settings.numberOfSlideItemsInDom);return s.forEach((function(t){-1===i.currentItemsInDom.indexOf(t)&&i.$inner.append('<div id="'+t+'" class="lg-item"></div>')})),this.currentItemsInDom.forEach((function(t){-1===s.indexOf(t)&&x("#"+t).remove()})),s},w.prototype.getPreviousSlideIndex=function(){var t=0;try{var e=this.outer.find(".lg-current").first().attr("id");t=parseInt(e.split("-")[3])||0}catch(e){t=0}return t},w.prototype.setDownloadValue=function(t){if(this.settings.download){var e=this.galleryItems[t];if(!1===e.downloadUrl||"false"===e.downloadUrl)this.outer.addClass("lg-hide-download");else{var i=this.getElementById("lg-download");this.outer.removeClass("lg-hide-download"),i.attr("href",e.downloadUrl||e.src),e.download&&i.attr("download",e.download)}}},w.prototype.makeSlideAnimation=function(t,e,i){var s=this;this.lGalleryOn&&i.addClass("lg-slide-progress"),setTimeout((function(){s.outer.addClass("lg-no-trans"),s.outer.find(".lg-item").removeClass("lg-prev-slide lg-next-slide"),"prev"===t?(e.addClass("lg-prev-slide"),i.addClass("lg-next-slide")):(e.addClass("lg-next-slide"),i.addClass("lg-prev-slide")),setTimeout((function(){s.outer.find(".lg-item").removeClass("lg-current"),e.addClass("lg-current"),s.outer.removeClass("lg-no-trans")}),50)}),this.lGalleryOn?this.settings.slideDelay:0)},w.prototype.slide=function(t,e,i,s){var n=this,o=this.getPreviousSlideIndex();if(this.currentItemsInDom=this.organizeSlideItems(t,o),!this.lGalleryOn||o!==t){var r=this.galleryItems.length;if(!this.lgBusy){this.settings.counter&&this.updateCurrentCounter(t);var l=this.getSlideItem(t),a=this.getSlideItem(o),d=this.galleryItems[t],c=d.__slideVideoInfo;if(this.outer.attr("data-lg-slide-type",this.getSlideType(d)),this.setDownloadValue(t),c){var u=this.mediaContainerPosition,m=u.top,p=u.bottom,f=T(this.items[t],this.outer,m+p,c&&this.settings.videoMaxSize);this.resizeVideoSlide(t,f)}if(this.LGel.trigger(g,{prevIndex:o,index:t,fromTouch:!!e,fromThumb:!!i}),this.lgBusy=!0,clearTimeout(this.hideBarTimeout),this.arrowDisable(t),s||(t<o?s="prev":t>o&&(s="next")),e){this.outer.find(".lg-item").removeClass("lg-prev-slide lg-current lg-next-slide");var y=void 0,v=void 0;r>2?(y=t-1,v=t+1,(0===t&&o===r-1||t===r-1&&0===o)&&(v=0,y=r-1)):(y=0,v=1),"prev"===s?this.getSlideItem(v).addClass("lg-next-slide"):this.getSlideItem(y).addClass("lg-prev-slide"),l.addClass("lg-current")}else this.makeSlideAnimation(s,l,a);this.lGalleryOn?setTimeout((function(){n.loadContent(t,!0),".lg-item"!==n.settings.appendSubHtmlTo&&n.addHtml(t)}),this.settings.speed+50+(e?0:this.settings.slideDelay)):this.loadContent(t,!0),setTimeout((function(){n.lgBusy=!1,a.removeClass("lg-slide-progress"),n.LGel.trigger(h,{prevIndex:o,index:t,fromTouch:e,fromThumb:i})}),(this.lGalleryOn?this.settings.speed+100:100)+(e?0:this.settings.slideDelay))}this.index=t}},w.prototype.updateCurrentCounter=function(t){this.getElementById("lg-counter-current").html(t+1+"")},w.prototype.updateCounterTotal=function(){this.getElementById("lg-counter-all").html(this.galleryItems.length+"")},w.prototype.getSlideType=function(t){return t.__slideVideoInfo?"video":t.iframe?"iframe":"image"},w.prototype.touchMove=function(t,e,i){var s=e.pageX-t.pageX,n=e.pageY-t.pageY,o=!1;if(this.swipeDirection?o=!0:Math.abs(s)>15?(this.swipeDirection="horizontal",o=!0):Math.abs(n)>15&&(this.swipeDirection="vertical",o=!0),o){var r=this.getSlideItem(this.index);if("horizontal"===this.swipeDirection){null==i||i.preventDefault(),this.outer.addClass("lg-dragging"),this.setTranslate(r,s,0);var l=r.get().offsetWidth,a=15*l/100-Math.abs(10*s/100);this.setTranslate(this.outer.find(".lg-prev-slide").first(),-l+s-a,0),this.setTranslate(this.outer.find(".lg-next-slide").first(),l+s+a,0)}else if("vertical"===this.swipeDirection&&this.settings.swipeToClose){null==i||i.preventDefault(),this.$container.addClass("lg-dragging-vertical");var d=1-Math.abs(n)/window.innerHeight;this.$backdrop.css("opacity",d);var g=1-Math.abs(n)/(2*window.innerWidth);this.setTranslate(r,0,n,g,g),Math.abs(n)>100&&this.outer.addClass("lg-hide-items").removeClass("lg-components-open")}}},w.prototype.touchEnd=function(t,e,i){var s,n=this;"lg-slide"!==this.settings.mode&&this.outer.addClass("lg-slide"),setTimeout((function(){n.$container.removeClass("lg-dragging-vertical"),n.outer.removeClass("lg-dragging lg-hide-items").addClass("lg-components-open");var o=!0;if("horizontal"===n.swipeDirection){s=t.pageX-e.pageX;var r=Math.abs(t.pageX-e.pageX);s<0&&r>n.settings.swipeThreshold?(n.goToNextSlide(!0),o=!1):s>0&&r>n.settings.swipeThreshold&&(n.goToPrevSlide(!0),o=!1)}else if("vertical"===n.swipeDirection){if(s=Math.abs(t.pageY-e.pageY),n.settings.closable&&n.settings.swipeToClose&&s>100)return void n.closeGallery();n.$backdrop.css("opacity",1)}if(n.outer.find(".lg-item").removeAttr("style"),o&&Math.abs(t.pageX-e.pageX)<5){var l=x(i.target);n.isPosterElement(l)&&n.LGel.trigger(c)}n.swipeDirection=void 0})),setTimeout((function(){n.outer.hasClass("lg-dragging")||"lg-slide"===n.settings.mode||n.outer.removeClass("lg-slide")}),this.settings.speed+100)},w.prototype.enableSwipe=function(){var t=this,e={},i={},s=!1,n=!1;this.settings.enableSwipe&&(this.$inner.on("touchstart.lg",(function(i){t.dragOrSwipeEnabled=!0;var s=t.getSlideItem(t.index);!x(i.target).hasClass("lg-item")&&!s.get().contains(i.target)||t.outer.hasClass("lg-zoomed")||t.lgBusy||1!==i.targetTouches.length||(n=!0,t.touchAction="swipe",t.manageSwipeClass(),e={pageX:i.targetTouches[0].pageX,pageY:i.targetTouches[0].pageY})})),this.$inner.on("touchmove.lg",(function(o){n&&"swipe"===t.touchAction&&1===o.targetTouches.length&&(i={pageX:o.targetTouches[0].pageX,pageY:o.targetTouches[0].pageY},t.touchMove(e,i,o),s=!0)})),this.$inner.on("touchend.lg",(function(o){if("swipe"===t.touchAction){if(s)s=!1,t.touchEnd(i,e,o);else if(n){var r=x(o.target);t.isPosterElement(r)&&t.LGel.trigger(c)}t.touchAction=void 0,n=!1}})))},w.prototype.enableDrag=function(){var t=this,e={},i={},s=!1,n=!1;this.settings.enableDrag&&(this.outer.on("mousedown.lg",(function(i){t.dragOrSwipeEnabled=!0;var n=t.getSlideItem(t.index);(x(i.target).hasClass("lg-item")||n.get().contains(i.target))&&(t.outer.hasClass("lg-zoomed")||t.lgBusy||(i.preventDefault(),t.lgBusy||(t.manageSwipeClass(),e={pageX:i.pageX,pageY:i.pageY},s=!0,t.outer.get().scrollLeft+=1,t.outer.get().scrollLeft-=1,t.outer.removeClass("lg-grab").addClass("lg-grabbing"),t.LGel.trigger(u))))})),x(window).on("mousemove.lg.global"+this.lgId,(function(o){s&&t.lgOpened&&(n=!0,i={pageX:o.pageX,pageY:o.pageY},t.touchMove(e,i),t.LGel.trigger(m))})),x(window).on("mouseup.lg.global"+this.lgId,(function(o){if(t.lgOpened){var r=x(o.target);n?(n=!1,t.touchEnd(i,e,o),t.LGel.trigger(p)):t.isPosterElement(r)&&t.LGel.trigger(c),s&&(s=!1,t.outer.removeClass("lg-grabbing").addClass("lg-grab"))}})))},w.prototype.triggerPosterClick=function(){var t=this;this.$inner.on("click.lg",(function(e){!t.dragOrSwipeEnabled&&t.isPosterElement(x(e.target))&&t.LGel.trigger(c)}))},w.prototype.manageSwipeClass=function(){var t=this.index+1,e=this.index-1;this.settings.loop&&this.galleryItems.length>2&&(0===this.index?e=this.galleryItems.length-1:this.index===this.galleryItems.length-1&&(t=0)),this.outer.find(".lg-item").removeClass("lg-next-slide lg-prev-slide"),e>-1&&this.getSlideItem(e).addClass("lg-prev-slide"),this.getSlideItem(t).addClass("lg-next-slide")},w.prototype.goToNextSlide=function(t){var e=this,i=this.settings.loop;t&&this.galleryItems.length<3&&(i=!1),this.lgBusy||(this.index+1<this.galleryItems.length?(this.index++,this.LGel.trigger(f,{index:this.index}),this.slide(this.index,!!t,!1,"next")):i?(this.index=0,this.LGel.trigger(f,{index:this.index}),this.slide(this.index,!!t,!1,"next")):this.settings.slideEndAnimation&&!t&&(this.outer.addClass("lg-right-end"),setTimeout((function(){e.outer.removeClass("lg-right-end")}),400)))},w.prototype.goToPrevSlide=function(t){var e=this,i=this.settings.loop;t&&this.galleryItems.length<3&&(i=!1),this.lgBusy||(this.index>0?(this.index--,this.LGel.trigger(y,{index:this.index,fromTouch:t}),this.slide(this.index,!!t,!1,"prev")):i?(this.index=this.galleryItems.length-1,this.LGel.trigger(y,{index:this.index,fromTouch:t}),this.slide(this.index,!!t,!1,"prev")):this.settings.slideEndAnimation&&!t&&(this.outer.addClass("lg-left-end"),setTimeout((function(){e.outer.removeClass("lg-left-end")}),400)))},w.prototype.keyPress=function(){var t=this;x(window).on("keydown.lg.global"+this.lgId,(function(e){t.lgOpened&&!0===t.settings.escKey&&27===e.keyCode&&(e.preventDefault(),t.settings.allowMediaOverlap&&t.outer.hasClass("lg-can-toggle")&&t.outer.hasClass("lg-components-open")?t.outer.removeClass("lg-components-open"):t.closeGallery()),t.lgOpened&&t.galleryItems.length>1&&(37===e.keyCode&&(e.preventDefault(),t.goToPrevSlide()),39===e.keyCode&&(e.preventDefault(),t.goToNextSlide()))}))},w.prototype.arrow=function(){var t=this;this.getElementById("lg-prev").on("click.lg",(function(){t.goToPrevSlide()})),this.getElementById("lg-next").on("click.lg",(function(){t.goToNextSlide()}))},w.prototype.arrowDisable=function(t){if(!this.settings.loop&&this.settings.hideControlOnEnd){var e=this.getElementById("lg-prev"),i=this.getElementById("lg-next");t+1===this.galleryItems.length?i.attr("disabled","disabled").addClass("disabled"):i.removeAttr("disabled").removeClass("disabled"),0===t?e.attr("disabled","disabled").addClass("disabled"):e.removeAttr("disabled").removeClass("disabled")}},w.prototype.setTranslate=function(t,e,i,s,n){void 0===s&&(s=1),void 0===n&&(n=1),t.css("transform","translate3d("+e+"px, "+i+"px, 0px) scale3d("+s+", "+n+", 1)")},w.prototype.mousewheel=function(){var t=this,e=0;this.outer.on("wheel.lg",(function(i){if(i.deltaY&&!(t.galleryItems.length<2)){i.preventDefault();var s=(new Date).getTime();s-e<1e3||(e=s,i.deltaY>0?t.goToNextSlide():i.deltaY<0&&t.goToPrevSlide())}}))},w.prototype.isSlideElement=function(t){return t.hasClass("lg-outer")||t.hasClass("lg-item")||t.hasClass("lg-img-wrap")},w.prototype.isPosterElement=function(t){var e=this.getSlideItem(this.index).find(".lg-video-play-button").get();return t.hasClass("lg-video-poster")||t.hasClass("lg-video-play-button")||e&&e.contains(t.get())},w.prototype.toggleMaximize=function(){var t=this;this.getElementById("lg-maximize").on("click.lg",(function(){t.$container.toggleClass("lg-inline"),t.refreshOnResize()}))},w.prototype.invalidateItems=function(){for(var t=0;t<this.items.length;t++){var e=x(this.items[t]);e.off("click.lgcustom-item-"+e.attr("data-lg-id"))}},w.prototype.trapFocus=function(){var t=this;this.$container.get().focus({preventScroll:!0}),x(window).on("keydown.lg.global"+this.lgId,(function(e){if(t.lgOpened&&("Tab"===e.key||9===e.keyCode)){var i=G(t.$container.get()),s=i[0],n=i[i.length-1];e.shiftKey?document.activeElement===s&&(n.focus(),e.preventDefault()):document.activeElement===n&&(s.focus(),e.preventDefault())}}))},w.prototype.manageCloseGallery=function(){var t=this;if(this.settings.closable){var e=!1;this.getElementById("lg-close").on("click.lg",(function(){t.closeGallery()})),this.settings.closeOnTap&&(this.outer.on("mousedown.lg",(function(i){var s=x(i.target);e=!!t.isSlideElement(s)})),this.outer.on("mousemove.lg",(function(){e=!1})),this.outer.on("mouseup.lg",(function(i){var s=x(i.target);t.isSlideElement(s)&&e&&(t.outer.hasClass("lg-dragging")||t.closeGallery())})))}},w.prototype.closeGallery=function(t){var e=this;if(!this.lgOpened||!this.settings.closable&&!t)return 0;this.LGel.trigger(v),this.settings.resetScrollPosition&&!this.settings.hideScrollbar&&x(window).scrollTop(this.prevScrollTop);var i,s=this.items[this.index];if(this.zoomFromOrigin&&s){var n=this.mediaContainerPosition,o=n.top,r=n.bottom,l=this.galleryItems[this.index],a=l.__slideVideoInfo,d=l.poster,g=T(s,this.outer,o+r,a&&d&&this.settings.videoMaxSize);i=E(s,this.outer,o,r,g)}this.zoomFromOrigin&&i?(this.outer.addClass("lg-closing lg-zoom-from-image"),this.getSlideItem(this.index).addClass("lg-start-end-progress").css("transition-duration",this.settings.startAnimationDuration+"ms").css("transform",i)):(this.outer.addClass("lg-hide-items"),this.outer.removeClass("lg-zoom-from-image")),this.destroyModules(),this.lGalleryOn=!1,this.isDummyImageRemoved=!1,this.zoomFromOrigin=this.settings.zoomFromOrigin,clearTimeout(this.hideBarTimeout),this.hideBarTimeout=!1,x("html").removeClass("lg-on"),this.outer.removeClass("lg-visible lg-components-open"),this.$backdrop.removeClass("in").css("opacity",0);var h=this.zoomFromOrigin&&i?Math.max(this.settings.startAnimationDuration,this.settings.backdropDuration):this.settings.backdropDuration;return this.$container.removeClass("lg-show-in"),setTimeout((function(){e.zoomFromOrigin&&i&&e.outer.removeClass("lg-zoom-from-image"),e.$container.removeClass("lg-show"),e.resetScrollBar(),e.$backdrop.removeAttr("style").css("transition-duration",e.settings.backdropDuration+"ms"),e.outer.removeClass("lg-closing "+e.settings.startClass),e.getSlideItem(e.index).removeClass("lg-start-end-progress"),e.$inner.empty(),e.lgOpened&&e.LGel.trigger(b,{instance:e}),e.$container.get()&&e.$container.get().blur(),e.lgOpened=!1}),h+100),h+100},w.prototype.initModules=function(){this.plugins.forEach((function(t){try{t.init()}catch(t){console.warn("lightGallery:- make sure lightGallery module is properly initiated")}}))},w.prototype.destroyModules=function(t){this.plugins.forEach((function(e){try{t?e.destroy():e.closeGallery&&e.closeGallery()}catch(t){console.warn("lightGallery:- make sure lightGallery module is properly destroyed")}}))},w.prototype.refresh=function(t){this.settings.dynamic||this.invalidateItems(),this.galleryItems=t||this.getItems(),this.updateControls(),this.openGalleryOnItemClick(),this.LGel.trigger(o)},w.prototype.updateControls=function(){this.addSlideVideoInfo(this.galleryItems),this.updateCounterTotal(),this.manageSingleSlideClassName()},w.prototype.destroy=function(){var t=this,e=this.closeGallery(!0);return setTimeout((function(){t.destroyModules(!0),t.settings.dynamic||t.invalidateItems(),x(window).off(".lg.global"+t.lgId),t.LGel.off(".lg"),t.$container.remove()}),e),e},w}();return function(t,e){return new F(t,e)}}));
 
-    var utils = {
-        getAttribute: function getAttribute(el, label) {
-            return el[label];
-        },
-
-        setAttribute: function setAttribute(el, label, value) {
-            el[label] = value;
-        },
-        wrap: function wrap(el, className) {
-            if (!el) {
-                return;
-            }
-
-            var wrapper = document.createElement('div');
-            wrapper.className = className;
-            el.parentNode.insertBefore(wrapper, el);
-            el.parentNode.removeChild(el);
-            wrapper.appendChild(el);
-        },
-
-        addClass: function addClass(el, className) {
-            if (!el) {
-                return;
-            }
-
-            if (el.classList) {
-                el.classList.add(className);
-            } else {
-                el.className += ' ' + className;
-            }
-        },
-
-        removeClass: function removeClass(el, className) {
-            if (!el) {
-                return;
-            }
-
-            if (el.classList) {
-                el.classList.remove(className);
-            } else {
-                el.className = el.className.replace(new RegExp('(^|\\b)' + className.split(' ').join('|') + '(\\b|$)', 'gi'), ' ');
-            }
-        },
-
-        hasClass: function hasClass(el, className) {
-            if (el.classList) {
-                return el.classList.contains(className);
-            } else {
-                return new RegExp('(^| )' + className + '( |$)', 'gi').test(el.className);
-            }
-        },
-
-        // ex Transform
-        // ex TransitionTimingFunction
-        setVendor: function setVendor(el, property, value) {
-            if (!el) {
-                return;
-            }
-
-            el.style[property.charAt(0).toLowerCase() + property.slice(1)] = value;
-            el.style['webkit' + property] = value;
-            el.style['moz' + property] = value;
-            el.style['ms' + property] = value;
-            el.style['o' + property] = value;
-        },
-
-        trigger: function trigger(el, event) {
-            var detail = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-
-            if (!el) {
-                return;
-            }
-
-            var customEvent = new CustomEvent(event, {
-                detail: detail
-            });
-            el.dispatchEvent(customEvent);
-        },
-
-        Listener: {
-            uid: 0
-        },
-        on: function on(el, events, fn) {
-            var _this = this;
-
-            if (!el) {
-                return;
-            }
-
-            events.split(' ').forEach(function (event) {
-                var _id = _this.getAttribute(el, 'lg-event-uid') || '';
-                utils.Listener.uid++;
-                _id += '&' + utils.Listener.uid;
-                _this.setAttribute(el, 'lg-event-uid', _id);
-                utils.Listener[event + utils.Listener.uid] = fn;
-                el.addEventListener(event.split('.')[0], fn, false);
-            });
-        },
-
-        off: function off(el, event) {
-            if (!el) {
-                return;
-            }
-
-            var _id = this.getAttribute(el, 'lg-event-uid');
-            if (_id) {
-                _id = _id.split('&');
-                for (var i = 0; i < _id.length; i++) {
-                    if (_id[i]) {
-                        var _event = event + _id[i];
-                        if (_event.substring(0, 1) === '.') {
-                            for (var key in utils.Listener) {
-                                if (utils.Listener.hasOwnProperty(key)) {
-                                    if (key.split('.').indexOf(_event.split('.')[1]) > -1) {
-                                        el.removeEventListener(key.split('.')[0], utils.Listener[key]);
-                                        this.setAttribute(el, 'lg-event-uid', this.getAttribute(el, 'lg-event-uid').replace('&' + _id[i], ''));
-                                        delete utils.Listener[key];
-                                    }
-                                }
-                            }
-                        } else {
-                            el.removeEventListener(_event.split('.')[0], utils.Listener[_event]);
-                            this.setAttribute(el, 'lg-event-uid', this.getAttribute(el, 'lg-event-uid').replace('&' + _id[i], ''));
-                            delete utils.Listener[_event];
-                        }
-                    }
-                }
-            }
-        },
-
-        param: function param(obj) {
-            return Object.keys(obj).map(function (k) {
-                return encodeURIComponent(k) + '=' + encodeURIComponent(obj[k]);
-            }).join('&');
-        }
-    };
-
-    exports.default = utils;
-});
 
 /***/ }),
 
-/***/ "./node_modules/lightgallery.js/lib/js/lightgallery.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/lightgallery.js/lib/js/lightgallery.js ***!
-  \*************************************************************/
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;(function (global, factory) {
-    if (true) {
-        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! ./lg-utils */ "./node_modules/lightgallery.js/lib/js/lg-utils.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
-		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
-		(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
-		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-    } else { var mod; }
-})(this, function (_lgUtils) {
-    'use strict';
-
-    var _lgUtils2 = _interopRequireDefault(_lgUtils);
-
-    function _interopRequireDefault(obj) {
-        return obj && obj.__esModule ? obj : {
-            default: obj
-        };
-    }
-
-    var _extends = Object.assign || function (target) {
-        for (var i = 1; i < arguments.length; i++) {
-            var source = arguments[i];
-
-            for (var key in source) {
-                if (Object.prototype.hasOwnProperty.call(source, key)) {
-                    target[key] = source[key];
-                }
-            }
-        }
-
-        return target;
-    };
-
-    /** Polyfill the CustomEvent() constructor functionality in Internet Explorer 9 and higher */
-    (function () {
-
-        if (typeof window.CustomEvent === 'function') {
-            return false;
-        }
-
-        function CustomEvent(event, params) {
-            params = params || {
-                bubbles: false,
-                cancelable: false,
-                detail: undefined
-            };
-            var evt = document.createEvent('CustomEvent');
-            evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
-            return evt;
-        }
-
-        CustomEvent.prototype = window.Event.prototype;
-
-        window.CustomEvent = CustomEvent;
-    })();
-
-    window.utils = _lgUtils2.default;
-    window.lgData = {
-        uid: 0
-    };
-
-    window.lgModules = {};
-    var defaults = {
-
-        mode: 'lg-slide',
-
-        // Ex : 'ease'
-        cssEasing: 'ease',
-
-        //'for jquery animation'
-        easing: 'linear',
-        speed: 600,
-        height: '100%',
-        width: '100%',
-        addClass: '',
-        startClass: 'lg-start-zoom',
-        backdropDuration: 150,
-
-        // Set 0, if u don't want to hide the controls 
-        hideBarsDelay: 6000,
-
-        useLeft: false,
-
-        // aria-labelledby attribute fot gallery
-        ariaLabelledby: '',
-
-        //aria-describedby attribute for gallery
-        ariaDescribedby: '',
-
-        closable: true,
-        loop: true,
-        escKey: true,
-        keyPress: true,
-        controls: true,
-        slideEndAnimatoin: true,
-        hideControlOnEnd: false,
-        mousewheel: false,
-
-        getCaptionFromTitleOrAlt: true,
-
-        // .lg-item || '.lg-sub-html'
-        appendSubHtmlTo: '.lg-sub-html',
-
-        subHtmlSelectorRelative: false,
-
-        /**
-         * @desc number of preload slides
-         * will exicute only after the current slide is fully loaded.
-         *
-         * @ex you clicked on 4th image and if preload = 1 then 3rd slide and 5th
-         * slide will be loaded in the background after the 4th slide is fully loaded..
-         * if preload is 2 then 2nd 3rd 5th 6th slides will be preloaded.. ... ...
-         *
-         */
-        preload: 1,
-        showAfterLoad: true,
-        selector: '',
-        selectWithin: '',
-        nextHtml: '',
-        prevHtml: '',
-
-        // 0, 1
-        index: false,
-
-        iframeMaxWidth: '100%',
-
-        download: true,
-        counter: true,
-        appendCounterTo: '.lg-toolbar',
-
-        swipeThreshold: 50,
-        enableSwipe: true,
-        enableDrag: true,
-
-        dynamic: false,
-        dynamicEl: [],
-        galleryId: 1,
-        supportLegacyBrowser: true
-    };
-
-    function Plugin(element, options) {
-
-        // Current lightGallery element
-        this.el = element;
-
-        // lightGallery settings
-        this.s = _extends({}, defaults, options);
-
-        // When using dynamic mode, ensure dynamicEl is an array
-        if (this.s.dynamic && this.s.dynamicEl !== 'undefined' && this.s.dynamicEl.constructor === Array && !this.s.dynamicEl.length) {
-            throw 'When using dynamic mode, you must also define dynamicEl as an Array.';
-        }
-
-        // lightGallery modules
-        this.modules = {};
-
-        // false when lightgallery complete first slide;
-        this.lGalleryOn = false;
-
-        this.lgBusy = false;
-
-        // Timeout function for hiding controls;
-        this.hideBartimeout = false;
-
-        // To determine browser supports for touch events;
-        this.isTouch = 'ontouchstart' in document.documentElement;
-
-        // Disable hideControlOnEnd if sildeEndAnimation is true
-        if (this.s.slideEndAnimatoin) {
-            this.s.hideControlOnEnd = false;
-        }
-
-        this.items = [];
-
-        // Gallery items
-        if (this.s.dynamic) {
-            this.items = this.s.dynamicEl;
-        } else {
-            if (this.s.selector === 'this') {
-                this.items.push(this.el);
-            } else if (this.s.selector !== '') {
-                if (this.s.selectWithin) {
-                    this.items = document.querySelector(this.s.selectWithin).querySelectorAll(this.s.selector);
-                } else {
-                    this.items = this.el.querySelectorAll(this.s.selector);
-                }
-            } else {
-                this.items = this.el.children;
-            }
-        }
-
-        // .lg-item
-
-        this.___slide = '';
-
-        // .lg-outer
-        this.outer = '';
-
-        this.init();
-
-        return this;
-    }
-
-    Plugin.prototype.init = function () {
-
-        var _this = this;
-
-        // s.preload should not be more than $item.length
-        if (_this.s.preload > _this.items.length) {
-            _this.s.preload = _this.items.length;
-        }
-
-        // if dynamic option is enabled execute immediately
-        var _hash = window.location.hash;
-        if (_hash.indexOf('lg=' + this.s.galleryId) > 0) {
-
-            _this.index = parseInt(_hash.split('&slide=')[1], 10);
-
-            _lgUtils2.default.addClass(document.body, 'lg-from-hash');
-            if (!_lgUtils2.default.hasClass(document.body, 'lg-on')) {
-                _lgUtils2.default.addClass(document.body, 'lg-on');
-                setTimeout(function () {
-                    _this.build(_this.index);
-                });
-            }
-        }
-
-        if (_this.s.dynamic) {
-
-            _lgUtils2.default.trigger(this.el, 'onBeforeOpen');
-
-            _this.index = _this.s.index || 0;
-
-            // prevent accidental double execution
-            if (!_lgUtils2.default.hasClass(document.body, 'lg-on')) {
-                _lgUtils2.default.addClass(document.body, 'lg-on');
-                setTimeout(function () {
-                    _this.build(_this.index);
-                });
-            }
-        } else {
-
-            for (var i = 0; i < _this.items.length; i++) {
-
-                /*jshint loopfunc: true */
-                (function (index) {
-
-                    // Using different namespace for click because click event should not unbind if selector is same object('this')
-                    _lgUtils2.default.on(_this.items[index], 'click.lgcustom', function (e) {
-
-                        e.preventDefault();
-
-                        _lgUtils2.default.trigger(_this.el, 'onBeforeOpen');
-
-                        _this.index = _this.s.index || index;
-
-                        if (!_lgUtils2.default.hasClass(document.body, 'lg-on')) {
-                            _this.build(_this.index);
-                            _lgUtils2.default.addClass(document.body, 'lg-on');
-                        }
-                    });
-                })(i);
-            }
-        }
-    };
-
-    Plugin.prototype.build = function (index) {
-
-        var _this = this;
-
-        _this.structure();
-
-        for (var key in window.lgModules) {
-            _this.modules[key] = new window.lgModules[key](_this.el);
-        }
-
-        // initiate slide function
-        _this.slide(index, false, false);
-
-        if (_this.s.keyPress) {
-            _this.keyPress();
-        }
-
-        if (_this.items.length > 1) {
-
-            _this.arrow();
-
-            setTimeout(function () {
-                _this.enableDrag();
-                _this.enableSwipe();
-            }, 50);
-
-            if (_this.s.mousewheel) {
-                _this.mousewheel();
-            }
-        }
-
-        _this.counter();
-
-        _this.closeGallery();
-
-        _lgUtils2.default.trigger(_this.el, 'onAfterOpen');
-
-        // Hide controllers if mouse doesn't move for some period
-        if (_this.s.hideBarsDelay > 0) {
-
-            // Hide controls if user doesn't use mouse or touch after opening gallery
-            var initialHideBarTimeout = setTimeout(function () {
-                _lgUtils2.default.addClass(_this.outer, 'lg-hide-items');
-            }, _this.s.hideBarsDelay);
-            _lgUtils2.default.on(_this.outer, 'mousemove.lg click.lg touchstart.lg', function () {
-
-                // Cancel initalHideBarTimout if user uses mouse or touch events
-                // Before it fires
-                clearTimeout(initialHideBarTimeout);
-
-                _lgUtils2.default.removeClass(_this.outer, 'lg-hide-items');
-
-                clearTimeout(_this.hideBartimeout);
-
-                // Timeout will be cleared on each slide movement also
-                _this.hideBartimeout = setTimeout(function () {
-                    _lgUtils2.default.addClass(_this.outer, 'lg-hide-items');
-                }, _this.s.hideBarsDelay);
-            });
-        }
-    };
-
-    Plugin.prototype.structure = function () {
-        var list = '';
-        var controls = '';
-        var i = 0;
-        var subHtmlCont = '';
-        var template;
-        var _this = this;
-
-        document.body.insertAdjacentHTML('beforeend', '<div class="lg-backdrop"></div>');
-        _lgUtils2.default.setVendor(document.querySelector('.lg-backdrop'), 'TransitionDuration', this.s.backdropDuration + 'ms');
-
-        // Create gallery items
-        for (i = 0; i < this.items.length; i++) {
-            list += '<div class="lg-item"></div>';
-        }
-
-        // Create controlls
-        if (this.s.controls && this.items.length > 1) {
-            controls = '<div class="lg-actions">' + '<button type="button" aria-label="Previous slide" class="lg-prev lg-icon">' + this.s.prevHtml + '</button>' + '<button type="button" aria-label="Next slide" class="lg-next lg-icon">' + this.s.nextHtml + '</button>' + '</div>';
-        }
-
-        if (this.s.appendSubHtmlTo === '.lg-sub-html') {
-            subHtmlCont = '<div role="status" aria-live="polite" class="lg-sub-html"></div>';
-        }
-
-        var ariaLabelledby = this.s.ariaLabelledby ? 'aria-labelledby="' + this.s.ariaLabelledby + '"' : '';
-        var ariaDescribedby = this.s.ariaDescribedby ? 'aria-describedby="' + this.s.ariaDescribedby + '"' : '';
-
-        template = '<div tabindex="-1" aria-modal="true" ' + ariaLabelledby + ' ' + ariaDescribedby + ' role="dialog" class="lg-outer ' + this.s.addClass + ' ' + this.s.startClass + '">' + '<div class="lg" style="width:' + this.s.width + '; height:' + this.s.height + '">' + '<div class="lg-inner">' + list + '</div>' + '<div class="lg-toolbar lg-group">' + '<button type="button" aria-label="Close gallery" class="lg-close lg-icon"></button>' + '</div>' + controls + subHtmlCont + '</div>' + '</div>';
-
-        document.body.insertAdjacentHTML('beforeend', template);
-        this.outer = document.querySelector('.lg-outer');
-        this.outer.focus();
-        this.___slide = this.outer.querySelectorAll('.lg-item');
-
-        if (this.s.useLeft) {
-            _lgUtils2.default.addClass(this.outer, 'lg-use-left');
-
-            // Set mode lg-slide if use left is true;
-            this.s.mode = 'lg-slide';
-        } else {
-            _lgUtils2.default.addClass(this.outer, 'lg-use-css3');
-        }
-
-        // For fixed height gallery
-        _this.setTop();
-        _lgUtils2.default.on(window, 'resize.lg orientationchange.lg', function () {
-            setTimeout(function () {
-                _this.setTop();
-            }, 100);
-        });
-
-        // add class lg-current to remove initial transition
-        _lgUtils2.default.addClass(this.___slide[this.index], 'lg-current');
-
-        // add Class for css support and transition mode
-        if (this.doCss()) {
-            _lgUtils2.default.addClass(this.outer, 'lg-css3');
-        } else {
-            _lgUtils2.default.addClass(this.outer, 'lg-css');
-
-            // Set speed 0 because no animation will happen if browser doesn't support css3
-            this.s.speed = 0;
-        }
-
-        _lgUtils2.default.addClass(this.outer, this.s.mode);
-
-        if (this.s.enableDrag && this.items.length > 1) {
-            _lgUtils2.default.addClass(this.outer, 'lg-grab');
-        }
-
-        if (this.s.showAfterLoad) {
-            _lgUtils2.default.addClass(this.outer, 'lg-show-after-load');
-        }
-
-        if (this.doCss()) {
-            var inner = this.outer.querySelector('.lg-inner');
-            _lgUtils2.default.setVendor(inner, 'TransitionTimingFunction', this.s.cssEasing);
-            _lgUtils2.default.setVendor(inner, 'TransitionDuration', this.s.speed + 'ms');
-        }
-
-        setTimeout(function () {
-            _lgUtils2.default.addClass(document.querySelector('.lg-backdrop'), 'in');
-        });
-
-        setTimeout(function () {
-            _lgUtils2.default.addClass(_this.outer, 'lg-visible');
-        }, this.s.backdropDuration);
-
-        if (this.s.download) {
-            this.outer.querySelector('.lg-toolbar').insertAdjacentHTML('beforeend', '<a id="lg-download" aria-label="Download" target="_blank" download class="lg-download lg-icon"></a>');
-        }
-
-        // Store the current scroll top value to scroll back after closing the gallery..
-        this.prevScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    };
-
-    // For fixed height gallery
-    Plugin.prototype.setTop = function () {
-        if (this.s.height !== '100%') {
-            var wH = window.innerHeight;
-            var top = (wH - parseInt(this.s.height, 10)) / 2;
-            var lGallery = this.outer.querySelector('.lg');
-            if (wH >= parseInt(this.s.height, 10)) {
-                lGallery.style.top = top + 'px';
-            } else {
-                lGallery.style.top = '0px';
-            }
-        }
-    };
-
-    // Find css3 support
-    Plugin.prototype.doCss = function () {
-        // check for css animation support
-        var support = function support() {
-            var transition = ['transition', 'MozTransition', 'WebkitTransition', 'OTransition', 'msTransition', 'KhtmlTransition'];
-            var root = document.documentElement;
-            var i = 0;
-            for (i = 0; i < transition.length; i++) {
-                if (transition[i] in root.style) {
-                    return true;
-                }
-            }
-        };
-
-        if (support()) {
-            return true;
-        }
-
-        return false;
-    };
-
-    /**
-     *  @desc Check the given src is video
-     *  @param {String} src
-     *  @return {Object} video type
-     *  Ex:{ youtube  :  ["//www.youtube.com/watch?v=c0asJgSyxcY", "c0asJgSyxcY"] }
-     */
-    Plugin.prototype.isVideo = function (src, index) {
-
-        var html;
-        if (this.s.dynamic) {
-            html = this.s.dynamicEl[index].html;
-        } else {
-            html = this.items[index].getAttribute('data-html');
-        }
-
-        if (!src && html) {
-            return {
-                html5: true
-            };
-        }
-
-        var youtube = src.match(/\/\/(?:www\.)?youtu(?:\.be|be\.com|be-nocookie\.com)\/(?:watch\?v=|embed\/)?([a-z0-9\-\_\%]+)/i);
-        var vimeo = src.match(/\/\/(?:www\.)?vimeo.com\/([0-9a-z\-_]+)/i);
-        var dailymotion = src.match(/\/\/(?:www\.)?dai.ly\/([0-9a-z\-_]+)/i);
-        var vk = src.match(/\/\/(?:www\.)?(?:vk\.com|vkontakte\.ru)\/(?:video_ext\.php\?)(.*)/i);
-
-        if (youtube) {
-            return {
-                youtube: youtube
-            };
-        } else if (vimeo) {
-            return {
-                vimeo: vimeo
-            };
-        } else if (dailymotion) {
-            return {
-                dailymotion: dailymotion
-            };
-        } else if (vk) {
-            return {
-                vk: vk
-            };
-        }
-    };
-
-    /**
-     *  @desc Create image counter
-     *  Ex: 1/10
-     */
-    Plugin.prototype.counter = function () {
-        if (this.s.counter) {
-            this.outer.querySelector(this.s.appendCounterTo).insertAdjacentHTML('beforeend', '<div id="lg-counter" role="status" aria-live="polite"><span id="lg-counter-current">' + (parseInt(this.index, 10) + 1) + '</span> / <span id="lg-counter-all">' + this.items.length + '</span></div>');
-        }
-    };
-
-    /**
-     *  @desc add sub-html into the slide
-     *  @param {Number} index - index of the slide
-     */
-    Plugin.prototype.addHtml = function (index) {
-        var subHtml = null;
-        var currentEle;
-        if (this.s.dynamic) {
-            subHtml = this.s.dynamicEl[index].subHtml;
-        } else {
-            currentEle = this.items[index];
-            subHtml = currentEle.getAttribute('data-sub-html');
-            if (this.s.getCaptionFromTitleOrAlt && !subHtml) {
-                subHtml = currentEle.getAttribute('title');
-                if (subHtml && currentEle.querySelector('img')) {
-                    subHtml = currentEle.querySelector('img').getAttribute('alt');
-                }
-            }
-        }
-
-        if (typeof subHtml !== 'undefined' && subHtml !== null) {
-
-            // get first letter of subhtml
-            // if first letter starts with . or # get the html form the jQuery object
-            var fL = subHtml.substring(0, 1);
-            if (fL === '.' || fL === '#') {
-                if (this.s.subHtmlSelectorRelative && !this.s.dynamic) {
-                    subHtml = currentEle.querySelector(subHtml).innerHTML;
-                } else {
-                    subHtml = document.querySelector(subHtml).innerHTML;
-                }
-            }
-        } else {
-            subHtml = '';
-        }
-
-        if (this.s.appendSubHtmlTo === '.lg-sub-html') {
-            this.outer.querySelector(this.s.appendSubHtmlTo).innerHTML = subHtml;
-        } else {
-            this.___slide[index].insertAdjacentHTML('beforeend', subHtml);
-        }
-
-        // Add lg-empty-html class if title doesn't exist
-        if (typeof subHtml !== 'undefined' && subHtml !== null) {
-            if (subHtml === '') {
-                _lgUtils2.default.addClass(this.outer.querySelector(this.s.appendSubHtmlTo), 'lg-empty-html');
-            } else {
-                _lgUtils2.default.removeClass(this.outer.querySelector(this.s.appendSubHtmlTo), 'lg-empty-html');
-            }
-        }
-
-        _lgUtils2.default.trigger(this.el, 'onAfterAppendSubHtml', {
-            index: index
-        });
-    };
-
-    /**
-     *  @desc Preload slides
-     *  @param {Number} index - index of the slide
-     */
-    Plugin.prototype.preload = function (index) {
-        var i = 1;
-        var j = 1;
-        for (i = 1; i <= this.s.preload; i++) {
-            if (i >= this.items.length - index) {
-                break;
-            }
-
-            this.loadContent(index + i, false, 0);
-        }
-
-        for (j = 1; j <= this.s.preload; j++) {
-            if (index - j < 0) {
-                break;
-            }
-
-            this.loadContent(index - j, false, 0);
-        }
-    };
-
-    /**
-     *  @desc Load slide content into slide.
-     *  @param {Number} index - index of the slide.
-     *  @param {Boolean} rec - if true call loadcontent() function again.
-     *  @param {Boolean} delay - delay for adding complete class. it is 0 except first time.
-     */
-    Plugin.prototype.loadContent = function (index, rec, delay) {
-
-        var _this = this;
-        var _hasPoster = false;
-        var _img;
-        var _src;
-        var _poster;
-        var _srcset;
-        var _sizes;
-        var _html;
-        var _alt;
-        var getResponsiveSrc = function getResponsiveSrc(srcItms) {
-            var rsWidth = [];
-            var rsSrc = [];
-            for (var i = 0; i < srcItms.length; i++) {
-                var __src = srcItms[i].split(' ');
-
-                // Manage empty space
-                if (__src[0] === '') {
-                    __src.splice(0, 1);
-                }
-
-                rsSrc.push(__src[0]);
-                rsWidth.push(__src[1]);
-            }
-
-            var wWidth = window.innerWidth;
-            for (var j = 0; j < rsWidth.length; j++) {
-                if (parseInt(rsWidth[j], 10) > wWidth) {
-                    _src = rsSrc[j];
-                    break;
-                }
-            }
-        };
-
-        if (_this.s.dynamic) {
-
-            if (_this.s.dynamicEl[index].poster) {
-                _hasPoster = true;
-                _poster = _this.s.dynamicEl[index].poster;
-            }
-
-            _html = _this.s.dynamicEl[index].html;
-            _src = _this.s.dynamicEl[index].src;
-            _alt = _this.s.dynamicEl[index].alt;
-
-            if (_this.s.dynamicEl[index].responsive) {
-                var srcDyItms = _this.s.dynamicEl[index].responsive.split(',');
-                getResponsiveSrc(srcDyItms);
-            }
-
-            _srcset = _this.s.dynamicEl[index].srcset;
-            _sizes = _this.s.dynamicEl[index].sizes;
-        } else {
-
-            if (_this.items[index].getAttribute('data-poster')) {
-                _hasPoster = true;
-                _poster = _this.items[index].getAttribute('data-poster');
-            }
-
-            _html = _this.items[index].getAttribute('data-html');
-            _src = _this.items[index].getAttribute('href') || _this.items[index].getAttribute('data-src');
-            _alt = _this.items[index].getAttribute('title');
-
-            if (_this.items[index].querySelector('img')) {
-                _alt = _alt || _this.items[index].querySelector('img').getAttribute('alt');
-            }
-
-            if (_this.items[index].getAttribute('data-responsive')) {
-                var srcItms = _this.items[index].getAttribute('data-responsive').split(',');
-                getResponsiveSrc(srcItms);
-            }
-
-            _srcset = _this.items[index].getAttribute('data-srcset');
-            _sizes = _this.items[index].getAttribute('data-sizes');
-        }
-
-        //if (_src || _srcset || _sizes || _poster) {
-
-        var iframe = false;
-        if (_this.s.dynamic) {
-            if (_this.s.dynamicEl[index].iframe) {
-                iframe = true;
-            }
-        } else {
-            if (_this.items[index].getAttribute('data-iframe') === 'true') {
-                iframe = true;
-            }
-        }
-
-        var _isVideo = _this.isVideo(_src, index);
-        if (!_lgUtils2.default.hasClass(_this.___slide[index], 'lg-loaded')) {
-            if (iframe) {
-                _this.___slide[index].insertAdjacentHTML('afterbegin', '<div class="lg-video-cont" style="max-width:' + _this.s.iframeMaxWidth + '"><div class="lg-video"><iframe class="lg-object" frameborder="0" src="' + _src + '"  allowfullscreen="true"></iframe></div></div>');
-            } else if (_hasPoster) {
-                var videoClass = '';
-                if (_isVideo && _isVideo.youtube) {
-                    videoClass = 'lg-has-youtube';
-                } else if (_isVideo && _isVideo.vimeo) {
-                    videoClass = 'lg-has-vimeo';
-                } else {
-                    videoClass = 'lg-has-html5';
-                }
-
-                _this.___slide[index].insertAdjacentHTML('beforeend', '<div class="lg-video-cont ' + videoClass + ' "><div class="lg-video"><span class="lg-video-play"></span><img class="lg-object lg-has-poster" src="' + _poster + '" /></div></div>');
-            } else if (_isVideo) {
-                _this.___slide[index].insertAdjacentHTML('beforeend', '<div class="lg-video-cont "><div class="lg-video"></div></div>');
-                _lgUtils2.default.trigger(_this.el, 'hasVideo', {
-                    index: index,
-                    src: _src,
-                    html: _html
-                });
-            } else {
-                _alt = _alt ? 'alt="' + _alt + '"' : '';
-                _this.___slide[index].insertAdjacentHTML('beforeend', '<div class="lg-img-wrap"><img class="lg-object lg-image" ' + _alt + ' src="' + _src + '" /></div>');
-            }
-
-            _lgUtils2.default.trigger(_this.el, 'onAferAppendSlide', {
-                index: index
-            });
-
-            _img = _this.___slide[index].querySelector('.lg-object');
-            if (_sizes) {
-                _img.setAttribute('sizes', _sizes);
-            }
-
-            if (_srcset) {
-                _img.setAttribute('srcset', _srcset);
-
-                if (this.s.supportLegacyBrowser) {
-                    try {
-                        picturefill({
-                            elements: [_img[0]]
-                        });
-                    } catch (e) {
-                        console.warn('If you want srcset to be supported for older browsers, ' + 'please include picturefil javascript library in your document.');
-                    }
-                }
-            }
-
-            if (this.s.appendSubHtmlTo !== '.lg-sub-html') {
-                _this.addHtml(index);
-            }
-
-            _lgUtils2.default.addClass(_this.___slide[index], 'lg-loaded');
-        }
-
-        _lgUtils2.default.on(_this.___slide[index].querySelector('.lg-object'), 'load.lg error.lg', function () {
-
-            // For first time add some delay for displaying the start animation.
-            var _speed = 0;
-
-            // Do not change the delay value because it is required for zoom plugin.
-            // If gallery opened from direct url (hash) speed value should be 0
-            if (delay && !_lgUtils2.default.hasClass(document.body, 'lg-from-hash')) {
-                _speed = delay;
-            }
-
-            setTimeout(function () {
-                _lgUtils2.default.addClass(_this.___slide[index], 'lg-complete');
-
-                _lgUtils2.default.trigger(_this.el, 'onSlideItemLoad', {
-                    index: index,
-                    delay: delay || 0
-                });
-            }, _speed);
-        });
-
-        // @todo check load state for html5 videos
-        if (_isVideo && _isVideo.html5 && !_hasPoster) {
-            _lgUtils2.default.addClass(_this.___slide[index], 'lg-complete');
-        }
-
-        if (rec === true) {
-            if (!_lgUtils2.default.hasClass(_this.___slide[index], 'lg-complete')) {
-                _lgUtils2.default.on(_this.___slide[index].querySelector('.lg-object'), 'load.lg error.lg', function () {
-                    _this.preload(index);
-                });
-            } else {
-                _this.preload(index);
-            }
-        }
-
-        //}
-    };
-
-    /**
-    *   @desc slide function for lightgallery
-        ** Slide() gets call on start
-        ** ** Set lg.on true once slide() function gets called.
-        ** Call loadContent() on slide() function inside setTimeout
-        ** ** On first slide we do not want any animation like slide of fade
-        ** ** So on first slide( if lg.on if false that is first slide) loadContent() should start loading immediately
-        ** ** Else loadContent() should wait for the transition to complete.
-        ** ** So set timeout s.speed + 50
-    <=> ** loadContent() will load slide content in to the particular slide
-        ** ** It has recursion (rec) parameter. if rec === true loadContent() will call preload() function.
-        ** ** preload will execute only when the previous slide is fully loaded (images iframe)
-        ** ** avoid simultaneous image load
-    <=> ** Preload() will check for s.preload value and call loadContent() again accoring to preload value
-        ** loadContent()  <====> Preload();
-    
-    *   @param {Number} index - index of the slide
-    *   @param {Boolean} fromTouch - true if slide function called via touch event or mouse drag
-    *   @param {Boolean} fromThumb - true if slide function called via thumbnail click
-    */
-    Plugin.prototype.slide = function (index, fromTouch, fromThumb) {
-
-        var _prevIndex = 0;
-        for (var i = 0; i < this.___slide.length; i++) {
-            if (_lgUtils2.default.hasClass(this.___slide[i], 'lg-current')) {
-                _prevIndex = i;
-                break;
-            }
-        }
-
-        var _this = this;
-
-        // Prevent if multiple call
-        // Required for hsh plugin
-        if (_this.lGalleryOn && _prevIndex === index) {
-            return;
-        }
-
-        var _length = this.___slide.length;
-        var _time = _this.lGalleryOn ? this.s.speed : 0;
-        var _next = false;
-        var _prev = false;
-
-        if (!_this.lgBusy) {
-
-            if (this.s.download) {
-                var _src;
-                if (_this.s.dynamic) {
-                    _src = _this.s.dynamicEl[index].downloadUrl !== false && (_this.s.dynamicEl[index].downloadUrl || _this.s.dynamicEl[index].src);
-                } else {
-                    _src = _this.items[index].getAttribute('data-download-url') !== 'false' && (_this.items[index].getAttribute('data-download-url') || _this.items[index].getAttribute('href') || _this.items[index].getAttribute('data-src'));
-                }
-
-                if (_src) {
-                    document.getElementById('lg-download').setAttribute('href', _src);
-                    _lgUtils2.default.removeClass(_this.outer, 'lg-hide-download');
-                } else {
-                    _lgUtils2.default.addClass(_this.outer, 'lg-hide-download');
-                }
-            }
-
-            _lgUtils2.default.trigger(_this.el, 'onBeforeSlide', {
-                prevIndex: _prevIndex,
-                index: index,
-                fromTouch: fromTouch,
-                fromThumb: fromThumb
-            });
-
-            _this.lgBusy = true;
-
-            clearTimeout(_this.hideBartimeout);
-
-            // Add title if this.s.appendSubHtmlTo === lg-sub-html
-            if (this.s.appendSubHtmlTo === '.lg-sub-html') {
-
-                // wait for slide animation to complete
-                setTimeout(function () {
-                    _this.addHtml(index);
-                }, _time);
-            }
-
-            this.arrowDisable(index);
-
-            if (!fromTouch) {
-
-                // remove all transitions
-                _lgUtils2.default.addClass(_this.outer, 'lg-no-trans');
-
-                for (var j = 0; j < this.___slide.length; j++) {
-                    _lgUtils2.default.removeClass(this.___slide[j], 'lg-prev-slide');
-                    _lgUtils2.default.removeClass(this.___slide[j], 'lg-next-slide');
-                }
-
-                if (index < _prevIndex) {
-                    _prev = true;
-                    if (index === 0 && _prevIndex === _length - 1 && !fromThumb) {
-                        _prev = false;
-                        _next = true;
-                    }
-                } else if (index > _prevIndex) {
-                    _next = true;
-                    if (index === _length - 1 && _prevIndex === 0 && !fromThumb) {
-                        _prev = true;
-                        _next = false;
-                    }
-                }
-
-                if (_prev) {
-
-                    //prevslide
-                    _lgUtils2.default.addClass(this.___slide[index], 'lg-prev-slide');
-                    _lgUtils2.default.addClass(this.___slide[_prevIndex], 'lg-next-slide');
-                } else if (_next) {
-
-                    // next slide
-                    _lgUtils2.default.addClass(this.___slide[index], 'lg-next-slide');
-                    _lgUtils2.default.addClass(this.___slide[_prevIndex], 'lg-prev-slide');
-                }
-
-                // give 50 ms for browser to add/remove class
-                setTimeout(function () {
-                    _lgUtils2.default.removeClass(_this.outer.querySelector('.lg-current'), 'lg-current');
-
-                    //_this.$slide.eq(_prevIndex).removeClass('lg-current');
-                    _lgUtils2.default.addClass(_this.___slide[index], 'lg-current');
-
-                    // reset all transitions
-                    _lgUtils2.default.removeClass(_this.outer, 'lg-no-trans');
-                }, 50);
-            } else {
-
-                var touchPrev = index - 1;
-                var touchNext = index + 1;
-
-                if (index === 0 && _prevIndex === _length - 1) {
-
-                    // next slide
-                    touchNext = 0;
-                    touchPrev = _length - 1;
-                } else if (index === _length - 1 && _prevIndex === 0) {
-
-                    // prev slide
-                    touchNext = 0;
-                    touchPrev = _length - 1;
-                }
-
-                _lgUtils2.default.removeClass(_this.outer.querySelector('.lg-prev-slide'), 'lg-prev-slide');
-                _lgUtils2.default.removeClass(_this.outer.querySelector('.lg-current'), 'lg-current');
-                _lgUtils2.default.removeClass(_this.outer.querySelector('.lg-next-slide'), 'lg-next-slide');
-                _lgUtils2.default.addClass(_this.___slide[touchPrev], 'lg-prev-slide');
-                _lgUtils2.default.addClass(_this.___slide[touchNext], 'lg-next-slide');
-                _lgUtils2.default.addClass(_this.___slide[index], 'lg-current');
-            }
-
-            if (_this.lGalleryOn) {
-                setTimeout(function () {
-                    _this.loadContent(index, true, 0);
-                }, this.s.speed + 50);
-
-                setTimeout(function () {
-                    _this.lgBusy = false;
-                    _lgUtils2.default.trigger(_this.el, 'onAfterSlide', {
-                        prevIndex: _prevIndex,
-                        index: index,
-                        fromTouch: fromTouch,
-                        fromThumb: fromThumb
-                    });
-                }, this.s.speed);
-            } else {
-                _this.loadContent(index, true, _this.s.backdropDuration);
-
-                _this.lgBusy = false;
-                _lgUtils2.default.trigger(_this.el, 'onAfterSlide', {
-                    prevIndex: _prevIndex,
-                    index: index,
-                    fromTouch: fromTouch,
-                    fromThumb: fromThumb
-                });
-            }
-
-            _this.lGalleryOn = true;
-
-            if (this.s.counter) {
-                if (document.getElementById('lg-counter-current')) {
-                    document.getElementById('lg-counter-current').innerHTML = index + 1;
-                }
-            }
-        }
-    };
-
-    /**
-     *  @desc Go to next slide
-     *  @param {Boolean} fromTouch - true if slide function called via touch event
-     */
-    Plugin.prototype.goToNextSlide = function (fromTouch) {
-        var _this = this;
-        if (!_this.lgBusy) {
-            if (_this.index + 1 < _this.___slide.length) {
-                _this.index++;
-                _lgUtils2.default.trigger(_this.el, 'onBeforeNextSlide', {
-                    index: _this.index
-                });
-                _this.slide(_this.index, fromTouch, false);
-            } else {
-                if (_this.s.loop) {
-                    _this.index = 0;
-                    _lgUtils2.default.trigger(_this.el, 'onBeforeNextSlide', {
-                        index: _this.index
-                    });
-                    _this.slide(_this.index, fromTouch, false);
-                } else if (_this.s.slideEndAnimatoin) {
-                    _lgUtils2.default.addClass(_this.outer, 'lg-right-end');
-                    setTimeout(function () {
-                        _lgUtils2.default.removeClass(_this.outer, 'lg-right-end');
-                    }, 400);
-                }
-            }
-        }
-    };
-
-    /**
-     *  @desc Go to previous slide
-     *  @param {Boolean} fromTouch - true if slide function called via touch event
-     */
-    Plugin.prototype.goToPrevSlide = function (fromTouch) {
-        var _this = this;
-        if (!_this.lgBusy) {
-            if (_this.index > 0) {
-                _this.index--;
-                _lgUtils2.default.trigger(_this.el, 'onBeforePrevSlide', {
-                    index: _this.index,
-                    fromTouch: fromTouch
-                });
-                _this.slide(_this.index, fromTouch, false);
-            } else {
-                if (_this.s.loop) {
-                    _this.index = _this.items.length - 1;
-                    _lgUtils2.default.trigger(_this.el, 'onBeforePrevSlide', {
-                        index: _this.index,
-                        fromTouch: fromTouch
-                    });
-                    _this.slide(_this.index, fromTouch, false);
-                } else if (_this.s.slideEndAnimatoin) {
-                    _lgUtils2.default.addClass(_this.outer, 'lg-left-end');
-                    setTimeout(function () {
-                        _lgUtils2.default.removeClass(_this.outer, 'lg-left-end');
-                    }, 400);
-                }
-            }
-        }
-    };
-
-    Plugin.prototype.keyPress = function () {
-        var _this = this;
-        if (this.items.length > 1) {
-            _lgUtils2.default.on(window, 'keyup.lg', function (e) {
-                if (_this.items.length > 1) {
-                    if (e.keyCode === 37) {
-                        e.preventDefault();
-                        _this.goToPrevSlide();
-                    }
-
-                    if (e.keyCode === 39) {
-                        e.preventDefault();
-                        _this.goToNextSlide();
-                    }
-                }
-            });
-        }
-
-        _lgUtils2.default.on(window, 'keydown.lg', function (e) {
-            if (_this.s.escKey === true && e.keyCode === 27) {
-                e.preventDefault();
-                if (!_lgUtils2.default.hasClass(_this.outer, 'lg-thumb-open')) {
-                    _this.destroy();
-                } else {
-                    _lgUtils2.default.removeClass(_this.outer, 'lg-thumb-open');
-                }
-            }
-        });
-    };
-
-    Plugin.prototype.arrow = function () {
-        var _this = this;
-        _lgUtils2.default.on(this.outer.querySelector('.lg-prev'), 'click.lg', function () {
-            _this.goToPrevSlide();
-        });
-
-        _lgUtils2.default.on(this.outer.querySelector('.lg-next'), 'click.lg', function () {
-            _this.goToNextSlide();
-        });
-    };
-
-    Plugin.prototype.arrowDisable = function (index) {
-
-        // Disable arrows if s.hideControlOnEnd is true
-        if (!this.s.loop && this.s.hideControlOnEnd) {
-            var next = this.outer.querySelector('.lg-next');
-            var prev = this.outer.querySelector('.lg-prev');
-            if (index + 1 < this.___slide.length) {
-                next.removeAttribute('disabled');
-                _lgUtils2.default.removeClass(next, 'disabled');
-            } else {
-                next.setAttribute('disabled', 'disabled');
-                _lgUtils2.default.addClass(next, 'disabled');
-            }
-
-            if (index > 0) {
-                prev.removeAttribute('disabled');
-                _lgUtils2.default.removeClass(prev, 'disabled');
-            } else {
-                prev.setAttribute('disabled', 'disabled');
-                _lgUtils2.default.addClass(prev, 'disabled');
-            }
-        }
-    };
-
-    Plugin.prototype.setTranslate = function (el, xValue, yValue) {
-        // jQuery supports Automatic CSS prefixing since jQuery 1.8.0
-        if (this.s.useLeft) {
-            el.style.left = xValue;
-        } else {
-            _lgUtils2.default.setVendor(el, 'Transform', 'translate3d(' + xValue + 'px, ' + yValue + 'px, 0px)');
-        }
-    };
-
-    Plugin.prototype.touchMove = function (startCoords, endCoords) {
-
-        var distance = endCoords - startCoords;
-
-        if (Math.abs(distance) > 15) {
-            // reset opacity and transition duration
-            _lgUtils2.default.addClass(this.outer, 'lg-dragging');
-
-            // move current slide
-            this.setTranslate(this.___slide[this.index], distance, 0);
-
-            // move next and prev slide with current slide
-            this.setTranslate(document.querySelector('.lg-prev-slide'), -this.___slide[this.index].clientWidth + distance, 0);
-            this.setTranslate(document.querySelector('.lg-next-slide'), this.___slide[this.index].clientWidth + distance, 0);
-        }
-    };
-
-    Plugin.prototype.touchEnd = function (distance) {
-        var _this = this;
-
-        // keep slide animation for any mode while dragg/swipe
-        if (_this.s.mode !== 'lg-slide') {
-            _lgUtils2.default.addClass(_this.outer, 'lg-slide');
-        }
-
-        for (var i = 0; i < this.___slide.length; i++) {
-            if (!_lgUtils2.default.hasClass(this.___slide[i], 'lg-current') && !_lgUtils2.default.hasClass(this.___slide[i], 'lg-prev-slide') && !_lgUtils2.default.hasClass(this.___slide[i], 'lg-next-slide')) {
-                this.___slide[i].style.opacity = '0';
-            }
-        }
-
-        // set transition duration
-        setTimeout(function () {
-            _lgUtils2.default.removeClass(_this.outer, 'lg-dragging');
-            if (distance < 0 && Math.abs(distance) > _this.s.swipeThreshold) {
-                _this.goToNextSlide(true);
-            } else if (distance > 0 && Math.abs(distance) > _this.s.swipeThreshold) {
-                _this.goToPrevSlide(true);
-            } else if (Math.abs(distance) < 5) {
-
-                // Trigger click if distance is less than 5 pix
-                _lgUtils2.default.trigger(_this.el, 'onSlideClick');
-            }
-
-            for (var i = 0; i < _this.___slide.length; i++) {
-                _this.___slide[i].removeAttribute('style');
-            }
-        });
-
-        // remove slide class once drag/swipe is completed if mode is not slide
-        setTimeout(function () {
-            if (!_lgUtils2.default.hasClass(_this.outer, 'lg-dragging') && _this.s.mode !== 'lg-slide') {
-                _lgUtils2.default.removeClass(_this.outer, 'lg-slide');
-            }
-        }, _this.s.speed + 100);
-    };
-
-    Plugin.prototype.enableSwipe = function () {
-        var _this = this;
-        var startCoords = 0;
-        var endCoords = 0;
-        var isMoved = false;
-
-        if (_this.s.enableSwipe && _this.isTouch && _this.doCss()) {
-
-            for (var i = 0; i < _this.___slide.length; i++) {
-                /*jshint loopfunc: true */
-                _lgUtils2.default.on(_this.___slide[i], 'touchstart.lg', function (e) {
-                    if (!_lgUtils2.default.hasClass(_this.outer, 'lg-zoomed') && !_this.lgBusy) {
-                        e.preventDefault();
-                        _this.manageSwipeClass();
-                        startCoords = e.targetTouches[0].pageX;
-                    }
-                });
-            }
-
-            for (var j = 0; j < _this.___slide.length; j++) {
-                /*jshint loopfunc: true */
-                _lgUtils2.default.on(_this.___slide[j], 'touchmove.lg', function (e) {
-                    if (!_lgUtils2.default.hasClass(_this.outer, 'lg-zoomed')) {
-                        e.preventDefault();
-                        endCoords = e.targetTouches[0].pageX;
-                        _this.touchMove(startCoords, endCoords);
-                        isMoved = true;
-                    }
-                });
-            }
-
-            for (var k = 0; k < _this.___slide.length; k++) {
-                /*jshint loopfunc: true */
-                _lgUtils2.default.on(_this.___slide[k], 'touchend.lg', function () {
-                    if (!_lgUtils2.default.hasClass(_this.outer, 'lg-zoomed')) {
-                        if (isMoved) {
-                            isMoved = false;
-                            _this.touchEnd(endCoords - startCoords);
-                        } else {
-                            _lgUtils2.default.trigger(_this.el, 'onSlideClick');
-                        }
-                    }
-                });
-            }
-        }
-    };
-
-    Plugin.prototype.enableDrag = function () {
-        var _this = this;
-        var startCoords = 0;
-        var endCoords = 0;
-        var isDraging = false;
-        var isMoved = false;
-        if (_this.s.enableDrag && !_this.isTouch && _this.doCss()) {
-            for (var i = 0; i < _this.___slide.length; i++) {
-                /*jshint loopfunc: true */
-                _lgUtils2.default.on(_this.___slide[i], 'mousedown.lg', function (e) {
-                    // execute only on .lg-object
-                    if (!_lgUtils2.default.hasClass(_this.outer, 'lg-zoomed')) {
-                        if (_lgUtils2.default.hasClass(e.target, 'lg-object') || _lgUtils2.default.hasClass(e.target, 'lg-video-play')) {
-                            e.preventDefault();
-
-                            if (!_this.lgBusy) {
-                                _this.manageSwipeClass();
-                                startCoords = e.pageX;
-                                isDraging = true;
-
-                                // ** Fix for webkit cursor issue https://code.google.com/p/chromium/issues/detail?id=26723
-                                _this.outer.scrollLeft += 1;
-                                _this.outer.scrollLeft -= 1;
-
-                                // *
-
-                                _lgUtils2.default.removeClass(_this.outer, 'lg-grab');
-                                _lgUtils2.default.addClass(_this.outer, 'lg-grabbing');
-
-                                _lgUtils2.default.trigger(_this.el, 'onDragstart');
-                            }
-                        }
-                    }
-                });
-            }
-
-            _lgUtils2.default.on(window, 'mousemove.lg', function (e) {
-                if (isDraging) {
-                    isMoved = true;
-                    endCoords = e.pageX;
-                    _this.touchMove(startCoords, endCoords);
-                    _lgUtils2.default.trigger(_this.el, 'onDragmove');
-                }
-            });
-
-            _lgUtils2.default.on(window, 'mouseup.lg', function (e) {
-                if (isMoved) {
-                    isMoved = false;
-                    _this.touchEnd(endCoords - startCoords);
-                    _lgUtils2.default.trigger(_this.el, 'onDragend');
-                } else if (_lgUtils2.default.hasClass(e.target, 'lg-object') || _lgUtils2.default.hasClass(e.target, 'lg-video-play')) {
-                    _lgUtils2.default.trigger(_this.el, 'onSlideClick');
-                }
-
-                // Prevent execution on click
-                if (isDraging) {
-                    isDraging = false;
-                    _lgUtils2.default.removeClass(_this.outer, 'lg-grabbing');
-                    _lgUtils2.default.addClass(_this.outer, 'lg-grab');
-                }
-            });
-        }
-    };
-
-    Plugin.prototype.manageSwipeClass = function () {
-        var touchNext = this.index + 1;
-        var touchPrev = this.index - 1;
-        var length = this.___slide.length;
-        if (this.s.loop) {
-            if (this.index === 0) {
-                touchPrev = length - 1;
-            } else if (this.index === length - 1) {
-                touchNext = 0;
-            }
-        }
-
-        for (var i = 0; i < this.___slide.length; i++) {
-            _lgUtils2.default.removeClass(this.___slide[i], 'lg-next-slide');
-            _lgUtils2.default.removeClass(this.___slide[i], 'lg-prev-slide');
-        }
-
-        if (touchPrev > -1) {
-            _lgUtils2.default.addClass(this.___slide[touchPrev], 'lg-prev-slide');
-        }
-
-        _lgUtils2.default.addClass(this.___slide[touchNext], 'lg-next-slide');
-    };
-
-    Plugin.prototype.mousewheel = function () {
-        var _this = this;
-        _lgUtils2.default.on(_this.outer, 'mousewheel.lg', function (e) {
-
-            if (!e.deltaY) {
-                return;
-            }
-
-            if (e.deltaY > 0) {
-                _this.goToPrevSlide();
-            } else {
-                _this.goToNextSlide();
-            }
-
-            e.preventDefault();
-        });
-    };
-
-    Plugin.prototype.closeGallery = function () {
-
-        var _this = this;
-        var mousedown = false;
-        _lgUtils2.default.on(this.outer.querySelector('.lg-close'), 'click.lg', function () {
-            _this.destroy();
-        });
-
-        if (_this.s.closable) {
-
-            // If you drag the slide and release outside gallery gets close on chrome
-            // for preventing this check mousedown and mouseup happened on .lg-item or lg-outer
-            _lgUtils2.default.on(_this.outer, 'mousedown.lg', function (e) {
-
-                if (_lgUtils2.default.hasClass(e.target, 'lg-outer') || _lgUtils2.default.hasClass(e.target, 'lg-item') || _lgUtils2.default.hasClass(e.target, 'lg-img-wrap')) {
-                    mousedown = true;
-                } else {
-                    mousedown = false;
-                }
-            });
-
-            _lgUtils2.default.on(_this.outer, 'mouseup.lg', function (e) {
-
-                if (_lgUtils2.default.hasClass(e.target, 'lg-outer') || _lgUtils2.default.hasClass(e.target, 'lg-item') || _lgUtils2.default.hasClass(e.target, 'lg-img-wrap') && mousedown) {
-                    if (!_lgUtils2.default.hasClass(_this.outer, 'lg-dragging')) {
-                        _this.destroy();
-                    }
-                }
-            });
-        }
-    };
-
-    Plugin.prototype.destroy = function (d) {
-
-        var _this = this;
-
-        if (!d) {
-            _lgUtils2.default.trigger(_this.el, 'onBeforeClose');
-        }
-
-        document.body.scrollTop = _this.prevScrollTop;
-        document.documentElement.scrollTop = _this.prevScrollTop;
-
-        /**
-         * if d is false or undefined destroy will only close the gallery
-         * plugins instance remains with the element
-         *
-         * if d is true destroy will completely remove the plugin
-         */
-
-        if (d) {
-            if (!_this.s.dynamic) {
-                // only when not using dynamic mode is $items a jquery collection
-
-                for (var i = 0; i < this.items.length; i++) {
-                    _lgUtils2.default.off(this.items[i], '.lg');
-                    _lgUtils2.default.off(this.items[i], '.lgcustom');
-                }
-            }
-
-            var lguid = _this.el.getAttribute('lg-uid');
-            delete window.lgData[lguid];
-            _this.el.removeAttribute('lg-uid');
-        }
-
-        // Unbind all events added by lightGallery
-        _lgUtils2.default.off(this.el, '.lgtm');
-
-        // Distroy all lightGallery modules
-        for (var key in window.lgModules) {
-            if (_this.modules[key]) {
-                _this.modules[key].destroy(d);
-            }
-        }
-
-        this.lGalleryOn = false;
-
-        clearTimeout(_this.hideBartimeout);
-        this.hideBartimeout = false;
-        _lgUtils2.default.off(window, '.lg');
-        _lgUtils2.default.removeClass(document.body, 'lg-on');
-        _lgUtils2.default.removeClass(document.body, 'lg-from-hash');
-
-        if (_this.outer) {
-            _lgUtils2.default.removeClass(_this.outer, 'lg-visible');
-        }
-
-        _lgUtils2.default.removeClass(document.querySelector('.lg-backdrop'), 'in');
-        setTimeout(function () {
-            try {
-                if (_this.outer) {
-                    _this.outer.parentNode.removeChild(_this.outer);
-                }
-
-                if (document.querySelector('.lg-backdrop')) {
-                    document.querySelector('.lg-backdrop').parentNode.removeChild(document.querySelector('.lg-backdrop'));
-                }
-
-                if (!d) {
-                    _lgUtils2.default.trigger(_this.el, 'onCloseAfter');
-                }
-                _this.el.focus();
-            } catch (err) {}
-        }, _this.s.backdropDuration + 50);
-    };
-
-    window.lightGallery = function (el, options) {
-        if (!el) {
-            return;
-        }
-
-        try {
-            if (!el.getAttribute('lg-uid')) {
-                var uid = 'lg' + window.lgData.uid++;
-                window.lgData[uid] = new Plugin(el, options);
-                el.setAttribute('lg-uid', uid);
-            } else {
-                window.lgData[el.getAttribute('lg-uid')].init();
-            }
-        } catch (err) {
-            console.error('lightGallery has not initiated properly', err);
-        }
-    };
-});
-
-/***/ }),
-
-/***/ "./node_modules/lightgallery.js/src/sass/lg-variables.scss":
+/***/ "./node_modules/lightgallery/plugins/share/lg-share.min.js":
 /*!*****************************************************************!*\
-  !*** ./node_modules/lightgallery.js/src/sass/lg-variables.scss ***!
+  !*** ./node_modules/lightgallery/plugins/share/lg-share.min.js ***!
   \*****************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (function(module) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_lg_variables_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!../../../postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!../../../sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./lg-variables.scss */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[2]!./node_modules/sass-loader/dist/cjs.js??clonedRuleSet-12[0].rules[0].use[3]!./node_modules/lightgallery.js/src/sass/lg-variables.scss");
+/**
+ * lightgallery | 2.5.0 | June 13th 2022
+ * http://www.lightgalleryjs.com/
+ * Copyright (c) 2020 Sachin Neravath;
+ * @license GPLv3
+ */
 
-            
-
-var options = {};
-
-options.insert = "head";
-options.singleton = false;
-
-var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_lg_variables_scss__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+!function(t,e){ true?module.exports=e():0}(this,(function(){"use strict";var t=function(){return(t=Object.assign||function(t){for(var e,r=1,o=arguments.length;r<o;r++)for(var n in e=arguments[r])Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n]);return t}).apply(this,arguments)};function e(){for(var t=0,e=0,r=arguments.length;e<r;e++)t+=arguments[e].length;var o=Array(t),n=0;for(e=0;e<r;e++)for(var i=arguments[e],s=0,a=i.length;s<a;s++,n++)o[n]=i[s];return o}var r={share:!0,facebook:!0,facebookDropdownText:"Facebook",twitter:!0,twitterDropdownText:"Twitter",pinterest:!0,pinterestDropdownText:"Pinterest",additionalShareOptions:[],sharePluginStrings:{share:"Share"}};function o(t){return"//www.facebook.com/sharer/sharer.php?u="+encodeURIComponent(t.facebookShareUrl||window.location.href)}function n(t){var e=encodeURIComponent(t.twitterShareUrl||window.location.href);return"//twitter.com/intent/tweet?text="+t.tweetText+"&url="+e}function i(t){var e=t.pinterestText,r=encodeURIComponent(t.src);return"http://www.pinterest.com/pin/create/button/?url="+encodeURIComponent(t.pinterestShareUrl||window.location.href)+"&media="+r+"&description="+e}var s="lgAfterSlide";return function(){function a(e){return this.shareOptions=[],this.core=e,this.settings=t(t({},r),this.core.settings),this}return a.prototype.init=function(){this.settings.share&&(this.shareOptions=e(this.getDefaultShareOptions(),this.settings.additionalShareOptions),this.setLgShareMarkup(),this.core.outer.find(".lg-share .lg-dropdown").append(this.getShareListHtml()),this.core.LGel.on(s+".share",this.onAfterSlide.bind(this)))},a.prototype.getShareListHtml=function(){var t="";return this.shareOptions.forEach((function(e){t+=e.dropdownHTML})),t},a.prototype.setLgShareMarkup=function(){var t=this;this.core.$toolbar.append('<button type="button" aria-label="'+this.settings.sharePluginStrings.share+'" aria-haspopup="true" aria-expanded="false" class="lg-share lg-icon">\n                <ul class="lg-dropdown" style="position: absolute;"></ul></button>'),this.core.outer.append('<div class="lg-dropdown-overlay"></div>'),this.core.outer.find(".lg-share").first().on("click.lg",(function(){t.core.outer.toggleClass("lg-dropdown-active"),t.core.outer.hasClass("lg-dropdown-active")?t.core.outer.attr("aria-expanded",!0):t.core.outer.attr("aria-expanded",!1)})),this.core.outer.find(".lg-dropdown-overlay").first().on("click.lg",(function(){t.core.outer.removeClass("lg-dropdown-active"),t.core.outer.attr("aria-expanded",!1)}))},a.prototype.onAfterSlide=function(t){var e=this,r=t.detail.index,o=this.core.galleryItems[r];setTimeout((function(){e.shareOptions.forEach((function(t){var r=t.selector;e.core.outer.find(r).attr("href",t.generateLink(o))}))}),100)},a.prototype.getShareListItemHTML=function(t,e){return'<li><a class="lg-share-'+t+'" rel="noopener" target="_blank"><span class="lg-icon"></span><span class="lg-dropdown-text">'+e+"</span></a></li>"},a.prototype.getDefaultShareOptions=function(){return e(this.settings.facebook?[{type:"facebook",generateLink:o,dropdownHTML:this.getShareListItemHTML("facebook",this.settings.facebookDropdownText),selector:".lg-share-facebook"}]:[],this.settings.twitter?[{type:"twitter",generateLink:n,dropdownHTML:this.getShareListItemHTML("twitter",this.settings.twitterDropdownText),selector:".lg-share-twitter"}]:[],this.settings.pinterest?[{type:"pinterest",generateLink:i,dropdownHTML:this.getShareListItemHTML("pinterest",this.settings.pinterestDropdownText),selector:".lg-share-pinterest"}]:[])},a.prototype.destroy=function(){this.core.outer.find(".lg-dropdown-overlay").remove(),this.core.outer.find(".lg-share").remove(),this.core.LGel.off(".lg.share"),this.core.LGel.off(".share")},a}()}));
 
 
+/***/ }),
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_2_sass_loader_dist_cjs_js_clonedRuleSet_12_0_rules_0_use_3_lg_variables_scss__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+/***/ "./node_modules/lightgallery/plugins/zoom/lg-zoom.min.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/lightgallery/plugins/zoom/lg-zoom.min.js ***!
+  \***************************************************************/
+/***/ (function(module) {
+
+/**
+ * lightgallery | 2.5.0 | June 13th 2022
+ * http://www.lightgalleryjs.com/
+ * Copyright (c) 2020 Sachin Neravath;
+ * @license GPLv3
+ */
+
+!function(t,e){ true?module.exports=e():0}(this,(function(){"use strict";var t=function(){return(t=Object.assign||function(t){for(var e,o=1,i=arguments.length;o<i;o++)for(var s in e=arguments[o])Object.prototype.hasOwnProperty.call(e,s)&&(t[s]=e[s]);return t}).apply(this,arguments)},e={scale:1,zoom:!0,actualSize:!0,showZoomInOutIcons:!1,actualSizeIcons:{zoomIn:"lg-zoom-in",zoomOut:"lg-zoom-out"},enableZoomAfter:300,zoomPluginStrings:{zoomIn:"Zoom in",zoomOut:"Zoom out",viewActualSize:"View actual size"}},o="lgContainerResize",i="lgBeforeOpen",s="lgAfterOpen",a="lgSlideItemLoad",r="lgAfterSlide",n="lgRotateLeft",l="lgRotateRight",g="lgFlipHorizontal",c="lgFlipVertical";return function(){function h(o,i){return this.core=o,this.$LG=i,this.settings=t(t({},e),this.core.settings),this}return h.prototype.buildTemplates=function(){var t=this.settings.showZoomInOutIcons?'<button id="'+this.core.getIdName("lg-zoom-in")+'" type="button" aria-label="'+this.settings.zoomPluginStrings.zoomIn+'" class="lg-zoom-in lg-icon"></button><button id="'+this.core.getIdName("lg-zoom-out")+'" type="button" aria-label="'+this.settings.zoomPluginStrings.zoomIn+'" class="lg-zoom-out lg-icon"></button>':"";this.settings.actualSize&&(t+='<button id="'+this.core.getIdName("lg-actual-size")+'" type="button" aria-label="'+this.settings.zoomPluginStrings.viewActualSize+'" class="'+this.settings.actualSizeIcons.zoomIn+' lg-icon"></button>'),this.core.outer.addClass("lg-use-transition-for-zoom"),this.core.$toolbar.first().append(t)},h.prototype.enableZoom=function(t){var e=this,o=this.settings.enableZoomAfter+t.detail.delay;this.$LG("body").first().hasClass("lg-from-hash")&&t.detail.delay?o=0:this.$LG("body").first().removeClass("lg-from-hash"),this.zoomableTimeout=setTimeout((function(){e.isImageSlide()&&(e.core.getSlideItem(t.detail.index).addClass("lg-zoomable"),t.detail.index===e.core.index&&e.setZoomEssentials())}),o+30)},h.prototype.enableZoomOnSlideItemLoad=function(){this.core.LGel.on(a+".zoom",this.enableZoom.bind(this))},h.prototype.getModifier=function(t,e,o){var i=t;t=Math.abs(t);var s=this.getCurrentTransform(o);if(!s)return 1;var a=1;if("X"===e){var r=Math.sign(parseFloat(s[0]));0===t||180===t?a=1:90===t&&(a=-90===i&&1===r||90===i&&-1===r?-1:1),a*=r}else{var n=Math.sign(parseFloat(s[3]));if(0===t||180===t)a=1;else if(90===t){var l=parseFloat(s[1]),g=parseFloat(s[2]);a=Math.sign(l*g*i*n)}a*=n}return a},h.prototype.getImageSize=function(t,e,o){return 90===Math.abs(e)&&(o="x"===o?"y":"x"),t[{y:"offsetHeight",x:"offsetWidth"}[o]]},h.prototype.getDragCords=function(t,e){return 90===e?{x:t.pageY,y:t.pageX}:{x:t.pageX,y:t.pageY}},h.prototype.getSwipeCords=function(t,e){var o=t.targetTouches[0].pageX,i=t.targetTouches[0].pageY;return 90===e?{x:i,y:o}:{x:o,y:i}},h.prototype.getDragAllowedAxises=function(t,e){e=e||this.scale||1;var o=this.imageYSize*e>this.containerRect.height,i=this.imageXSize*e>this.containerRect.width;return 90===t?{allowX:o,allowY:i}:{allowX:i,allowY:o}},h.prototype.getCurrentTransform=function(t){if(t){var e=window.getComputedStyle(t,null),o=e.getPropertyValue("-webkit-transform")||e.getPropertyValue("-moz-transform")||e.getPropertyValue("-ms-transform")||e.getPropertyValue("-o-transform")||e.getPropertyValue("transform")||"none";return"none"!==o?o.split("(")[1].split(")")[0].split(","):void 0}},h.prototype.getCurrentRotation=function(t){if(!t)return 0;var e=this.getCurrentTransform(t);return e?Math.round(Math.atan2(parseFloat(e[1]),parseFloat(e[0]))*(180/Math.PI)):0},h.prototype.setZoomEssentials=function(){var t=this.core.getSlideItem(this.core.index).find(".lg-image").first(),e=this.core.getSlideItem(this.core.index).find(".lg-img-rotate").first().get();this.rotateValue=this.getCurrentRotation(e),this.imageYSize=this.getImageSize(t.get(),this.rotateValue,"y"),this.imageXSize=this.getImageSize(t.get(),this.rotateValue,"x"),this.containerRect=this.core.outer.get().getBoundingClientRect(),this.modifierX=this.getModifier(this.rotateValue,"X",e),this.modifierY=this.getModifier(this.rotateValue,"Y",e)},h.prototype.zoomImage=function(t){var e,o,i=(this.containerRect.width-this.imageXSize)/2+this.containerRect.left,s=this.core.mediaContainerPosition,a=s.top,r=s.bottom,n=Math.abs(a-r)/2,l=(this.containerRect.height-this.imageYSize-n*this.modifierX)/2+this.scrollTop+this.containerRect.top;1===t&&(this.positionChanged=!1);var g=this.getDragAllowedAxises(Math.abs(this.rotateValue),t),c=g.allowY,h=g.allowX;this.positionChanged&&(e=this.left/(this.scale-1),o=this.top/(this.scale-1),this.pageX=Math.abs(e)+i,this.pageY=Math.abs(o)+l,this.positionChanged=!1);var m=this.getPossibleSwipeDragCords(this.rotateValue,t),u=(t-1)*(i-this.pageX),d=(t-1)*(l-this.pageY);h?this.isBeyondPossibleLeft(u,m.minX)?u=m.minX:this.isBeyondPossibleRight(u,m.maxX)&&(u=m.maxX):t>1&&(u<m.minX?u=m.minX:u>m.maxX&&(u=m.maxX)),c?this.isBeyondPossibleTop(d,m.minY)?d=m.minY:this.isBeyondPossibleBottom(d,m.maxY)&&(d=m.maxY):t>1&&(d<m.minY?d=m.minY:d>m.maxY&&(d=m.maxY)),this.setZoomStyles({x:u,y:d,scale:t})},h.prototype.setZoomStyles=function(t){var e=this.core.getSlideItem(this.core.index).find(".lg-image").first(),o=this.core.outer.find(".lg-current .lg-dummy-img").first(),i=e.parent();this.scale=t.scale,e.css("transform","scale3d("+t.scale+", "+t.scale+", 1)"),o.css("transform","scale3d("+t.scale+", "+t.scale+", 1)");var s="translate3d("+t.x+"px, "+t.y+"px, 0)";i.css("transform",s),this.left=t.x,this.top=t.y},h.prototype.setActualSize=function(t,e){var o=this;if(this.isImageSlide()&&!this.core.outer.hasClass("lg-first-slide-loading")){var i=this.getCurrentImageActualSizeScale();this.core.outer.hasClass("lg-zoomed")?this.scale=1:this.scale=this.getScale(i),this.setPageCords(e),this.beginZoom(this.scale),this.zoomImage(this.scale),setTimeout((function(){o.core.outer.removeClass("lg-grabbing").addClass("lg-grab")}),10)}},h.prototype.getNaturalWidth=function(t){var e=this.core.getSlideItem(t).find(".lg-image").first(),o=this.core.galleryItems[t].width;return o?parseFloat(o):e.get().naturalWidth},h.prototype.getActualSizeScale=function(t,e){return t>e?t/e||2:1},h.prototype.getCurrentImageActualSizeScale=function(){var t=this.core.getSlideItem(this.core.index).find(".lg-image").first().get().offsetWidth,e=this.getNaturalWidth(this.core.index)||t;return this.getActualSizeScale(e,t)},h.prototype.getPageCords=function(t){var e={};if(t)e.x=t.pageX||t.targetTouches[0].pageX,e.y=t.pageY||t.targetTouches[0].pageY;else{var o=this.core.outer.get().getBoundingClientRect();e.x=o.width/2+o.left,e.y=o.height/2+this.scrollTop+o.top}return e},h.prototype.setPageCords=function(t){var e=this.getPageCords(t);this.pageX=e.x,this.pageY=e.y},h.prototype.beginZoom=function(t){(this.core.outer.removeClass("lg-zoom-drag-transition lg-zoom-dragging"),t>1)?(this.core.outer.addClass("lg-zoomed"),this.core.getElementById("lg-actual-size").removeClass(this.settings.actualSizeIcons.zoomIn).addClass(this.settings.actualSizeIcons.zoomOut)):this.resetZoom();return t>1},h.prototype.getScale=function(t){var e=this.getCurrentImageActualSizeScale();return t<1?t=1:t>e&&(t=e),t},h.prototype.init=function(){var t=this;if(this.settings.zoom){this.buildTemplates(),this.enableZoomOnSlideItemLoad();var e=null;this.core.outer.on("dblclick.lg",(function(e){t.$LG(e.target).hasClass("lg-image")&&t.setActualSize(t.core.index,e)})),this.core.outer.on("touchstart.lg",(function(o){var i=t.$LG(o.target);1===o.targetTouches.length&&i.hasClass("lg-image")&&(e?(clearTimeout(e),e=null,o.preventDefault(),t.setActualSize(t.core.index,o)):e=setTimeout((function(){e=null}),300))})),this.core.LGel.on(o+".zoom "+l+".zoom "+n+".zoom "+g+".zoom "+c+".zoom",(function(){t.core.lgOpened&&t.isImageSlide()&&(t.setPageCords(),t.setZoomEssentials(),t.zoomImage(t.scale))})),this.$LG(window).on("scroll.lg.zoom.global"+this.core.lgId,(function(){t.core.lgOpened&&(t.scrollTop=t.$LG(window).scrollTop())})),this.core.getElementById("lg-zoom-out").on("click.lg",(function(){t.core.outer.find(".lg-current .lg-image").get()&&(t.scale-=t.settings.scale,t.scale=t.getScale(t.scale),t.beginZoom(t.scale),t.zoomImage(t.scale))})),this.core.getElementById("lg-zoom-in").on("click.lg",(function(){t.zoomIn()})),this.core.getElementById("lg-actual-size").on("click.lg",(function(){t.setActualSize(t.core.index)})),this.core.LGel.on(i+".zoom",(function(){t.core.outer.find(".lg-item").removeClass("lg-zoomable")})),this.core.LGel.on(s+".zoom",(function(){t.scrollTop=t.$LG(window).scrollTop(),t.pageX=t.core.outer.width()/2,t.pageY=t.core.outer.height()/2+t.scrollTop,t.scale=1})),this.core.LGel.on(r+".zoom",(function(e){var o=e.detail.prevIndex;t.scale=1,t.positionChanged=!1,t.resetZoom(o),t.isImageSlide()&&t.setZoomEssentials()})),this.zoomDrag(),this.pinchZoom(),this.zoomSwipe(),this.zoomableTimeout=!1,this.positionChanged=!1}},h.prototype.zoomIn=function(t){this.isImageSlide()&&(t?this.scale=t:this.scale+=this.settings.scale,this.scale=this.getScale(this.scale),this.beginZoom(this.scale),this.zoomImage(this.scale))},h.prototype.resetZoom=function(t){this.core.outer.removeClass("lg-zoomed lg-zoom-drag-transition");var e=this.core.getElementById("lg-actual-size"),o=this.core.getSlideItem(void 0!==t?t:this.core.index);e.removeClass(this.settings.actualSizeIcons.zoomOut).addClass(this.settings.actualSizeIcons.zoomIn),o.find(".lg-img-wrap").first().removeAttr("style"),o.find(".lg-image").first().removeAttr("style"),this.scale=1,this.left=0,this.top=0,this.setPageCords()},h.prototype.getTouchDistance=function(t){return Math.sqrt((t.targetTouches[0].pageX-t.targetTouches[1].pageX)*(t.targetTouches[0].pageX-t.targetTouches[1].pageX)+(t.targetTouches[0].pageY-t.targetTouches[1].pageY)*(t.targetTouches[0].pageY-t.targetTouches[1].pageY))},h.prototype.pinchZoom=function(){var t=this,e=0,o=!1,i=1,s=this.core.getSlideItem(this.core.index);this.core.$inner.on("touchstart.lg",(function(o){s=t.core.getSlideItem(t.core.index),t.isImageSlide()&&(2!==o.targetTouches.length||t.core.outer.hasClass("lg-first-slide-loading")||!t.$LG(o.target).hasClass("lg-item")&&!s.get().contains(o.target)||(i=t.scale||1,t.core.outer.removeClass("lg-zoom-drag-transition lg-zoom-dragging"),t.core.touchAction="pinch",e=t.getTouchDistance(o)))})),this.core.$inner.on("touchmove.lg",(function(a){if(2===a.targetTouches.length&&"pinch"===t.core.touchAction&&(t.$LG(a.target).hasClass("lg-item")||s.get().contains(a.target))){a.preventDefault();var r=t.getTouchDistance(a),n=e-r;!o&&Math.abs(n)>5&&(o=!0),o&&(t.scale=Math.max(1,i+.008*-n),t.zoomImage(t.scale))}})),this.core.$inner.on("touchend.lg",(function(i){"pinch"===t.core.touchAction&&(t.$LG(i.target).hasClass("lg-item")||s.get().contains(i.target))&&(o=!1,e=0,t.scale<=1?t.resetZoom():(t.scale=t.getScale(t.scale),t.zoomImage(t.scale),t.core.outer.addClass("lg-zoomed")),t.core.touchAction=void 0)}))},h.prototype.touchendZoom=function(t,e,o,i,s,a){var r=e.x-t.x,n=e.y-t.y,l=Math.abs(r)/s+1,g=Math.abs(n)/s+1;l>2&&(l+=1),g>2&&(g+=1),r*=l,n*=g;var c=this.core.getSlideItem(this.core.index).find(".lg-img-wrap").first(),h={};h.x=this.left+r*this.modifierX,h.y=this.top+n*this.modifierY;var m=this.getPossibleSwipeDragCords(a);(Math.abs(r)>15||Math.abs(n)>15)&&(i&&(this.isBeyondPossibleTop(h.y,m.minY)?h.y=m.minY:this.isBeyondPossibleBottom(h.y,m.maxY)&&(h.y=m.maxY)),o&&(this.isBeyondPossibleLeft(h.x,m.minX)?h.x=m.minX:this.isBeyondPossibleRight(h.x,m.maxX)&&(h.x=m.maxX)),i?this.top=h.y:h.y=this.top,o?this.left=h.x:h.x=this.left,this.setZoomSwipeStyles(c,h),this.positionChanged=!0)},h.prototype.getZoomSwipeCords=function(t,e,o,i,s){var a={};if(i){if(a.y=this.top+(e.y-t.y)*this.modifierY,this.isBeyondPossibleTop(a.y,s.minY)){var r=s.minY-a.y;a.y=s.minY-r/6}else if(this.isBeyondPossibleBottom(a.y,s.maxY)){var n=a.y-s.maxY;a.y=s.maxY+n/6}}else a.y=this.top;if(o){if(a.x=this.left+(e.x-t.x)*this.modifierX,this.isBeyondPossibleLeft(a.x,s.minX)){var l=s.minX-a.x;a.x=s.minX-l/6}else if(this.isBeyondPossibleRight(a.x,s.maxX)){var g=a.x-s.maxX;a.x=s.maxX+g/6}}else a.x=this.left;return a},h.prototype.isBeyondPossibleLeft=function(t,e){return t>=e},h.prototype.isBeyondPossibleRight=function(t,e){return t<=e},h.prototype.isBeyondPossibleTop=function(t,e){return t>=e},h.prototype.isBeyondPossibleBottom=function(t,e){return t<=e},h.prototype.isImageSlide=function(){var t=this.core.galleryItems[this.core.index];return"image"===this.core.getSlideType(t)},h.prototype.getPossibleSwipeDragCords=function(t,e){var o=e||this.scale||1,i=Math.abs(o),s=this.core.mediaContainerPosition,a=s.top,r=s.bottom,n=Math.abs(a-r)/2,l=(this.imageYSize-this.containerRect.height)/2+n*this.modifierX,g=this.containerRect.height-this.imageYSize*i+l,c=(this.imageXSize-this.containerRect.width)/2,h=this.containerRect.width-this.imageXSize*i+c,m={minY:l,maxY:g,minX:c,maxX:h};return 90===Math.abs(t)&&(m={minY:c,maxY:h,minX:l,maxX:g}),m},h.prototype.setZoomSwipeStyles=function(t,e){t.css("transform","translate3d("+e.x+"px, "+e.y+"px, 0)")},h.prototype.zoomSwipe=function(){var t,e,o=this,i={},s={},a=!1,r=!1,n=!1,l=new Date,g=(new Date,this.core.getSlideItem(this.core.index));this.core.$inner.on("touchstart.lg",(function(s){if(o.isImageSlide()&&(g=o.core.getSlideItem(o.core.index),(o.$LG(s.target).hasClass("lg-item")||g.get().contains(s.target))&&1===s.targetTouches.length&&o.core.outer.hasClass("lg-zoomed"))){s.preventDefault(),l=new Date,o.core.touchAction="zoomSwipe",e=o.core.getSlideItem(o.core.index).find(".lg-img-wrap").first();var a=o.getDragAllowedAxises(Math.abs(o.rotateValue));n=a.allowY,((r=a.allowX)||n)&&(i=o.getSwipeCords(s,Math.abs(o.rotateValue))),t=o.getPossibleSwipeDragCords(o.rotateValue),o.core.outer.addClass("lg-zoom-dragging lg-zoom-drag-transition")}})),this.core.$inner.on("touchmove.lg",(function(l){if(1===l.targetTouches.length&&"zoomSwipe"===o.core.touchAction&&(o.$LG(l.target).hasClass("lg-item")||g.get().contains(l.target))){l.preventDefault(),o.core.touchAction="zoomSwipe",s=o.getSwipeCords(l,Math.abs(o.rotateValue));var c=o.getZoomSwipeCords(i,s,r,n,t);(Math.abs(s.x-i.x)>15||Math.abs(s.y-i.y)>15)&&(a=!0,o.setZoomSwipeStyles(e,c))}})),this.core.$inner.on("touchend.lg",(function(t){if("zoomSwipe"===o.core.touchAction&&(o.$LG(t.target).hasClass("lg-item")||g.get().contains(t.target))){if(o.core.touchAction=void 0,o.core.outer.removeClass("lg-zoom-dragging"),!a)return;a=!1;var e=(new Date).valueOf()-l.valueOf();o.touchendZoom(i,s,r,n,e,o.rotateValue)}}))},h.prototype.zoomDrag=function(){var t,e,o,i,s=this,a={},r={},n=!1,l=!1,g=!1,c=!1;this.core.outer.on("mousedown.lg.zoom",(function(e){if(s.isImageSlide()){var r=s.core.getSlideItem(s.core.index);if(s.$LG(e.target).hasClass("lg-item")||r.get().contains(e.target)){t=new Date,i=s.core.getSlideItem(s.core.index).find(".lg-img-wrap").first();var l=s.getDragAllowedAxises(Math.abs(s.rotateValue));c=l.allowY,g=l.allowX,s.core.outer.hasClass("lg-zoomed")&&s.$LG(e.target).hasClass("lg-object")&&(g||c)&&(e.preventDefault(),a=s.getDragCords(e,Math.abs(s.rotateValue)),o=s.getPossibleSwipeDragCords(s.rotateValue),n=!0,s.core.outer.get().scrollLeft+=1,s.core.outer.get().scrollLeft-=1,s.core.outer.removeClass("lg-grab").addClass("lg-grabbing lg-zoom-drag-transition lg-zoom-dragging"))}}})),this.$LG(window).on("mousemove.lg.zoom.global"+this.core.lgId,(function(t){if(n){l=!0,r=s.getDragCords(t,Math.abs(s.rotateValue));var e=s.getZoomSwipeCords(a,r,g,c,o);s.setZoomSwipeStyles(i,e)}})),this.$LG(window).on("mouseup.lg.zoom.global"+this.core.lgId,(function(o){if(n){if(e=new Date,n=!1,s.core.outer.removeClass("lg-zoom-dragging"),l&&(a.x!==r.x||a.y!==r.y)){r=s.getDragCords(o,Math.abs(s.rotateValue));var i=e.valueOf()-t.valueOf();s.touchendZoom(a,r,g,c,i,s.rotateValue)}l=!1}s.core.outer.removeClass("lg-grabbing").addClass("lg-grab")}))},h.prototype.closeGallery=function(){this.resetZoom()},h.prototype.destroy=function(){this.$LG(window).off(".lg.zoom.global"+this.core.lgId),this.core.LGel.off(".lg.zoom"),this.core.LGel.off(".zoom"),clearTimeout(this.zoomableTimeout),this.zoomableTimeout=!1},h}()}));
+
 
 /***/ }),
 
@@ -14215,10 +12621,10 @@ var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMP
 
 /***/ }),
 
-/***/ "./node_modules/lightgallery.js/dist/css/lightgallery.css":
-/*!****************************************************************!*\
-  !*** ./node_modules/lightgallery.js/dist/css/lightgallery.css ***!
-  \****************************************************************/
+/***/ "./node_modules/lightgallery/css/lg-share.css":
+/*!****************************************************!*\
+  !*** ./node_modules/lightgallery/css/lg-share.css ***!
+  \****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -14226,9 +12632,69 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
 /* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_lightgallery_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./lightgallery.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery.js/dist/css/lightgallery.css");
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_lg_share_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./lg-share.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery/css/lg-share.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_lg_share_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_lg_share_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/lightgallery/css/lg-zoom.css":
+/*!***************************************************!*\
+  !*** ./node_modules/lightgallery/css/lg-zoom.css ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_lg_zoom_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./lg-zoom.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery/css/lg-zoom.css");
+
+            
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_lg_zoom_css__WEBPACK_IMPORTED_MODULE_1__["default"], options);
+
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_lg_zoom_css__WEBPACK_IMPORTED_MODULE_1__["default"].locals || {});
+
+/***/ }),
+
+/***/ "./node_modules/lightgallery/css/lightgallery.css":
+/*!********************************************************!*\
+  !*** ./node_modules/lightgallery/css/lightgallery.css ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _css_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_1_postcss_loader_dist_cjs_js_clonedRuleSet_9_0_rules_0_use_2_lightgallery_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !!../../css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!../../postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./lightgallery.css */ "./node_modules/css-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??clonedRuleSet-9[0].rules[0].use[2]!./node_modules/lightgallery/css/lightgallery.css");
 
             
 
@@ -14395,7 +12861,11 @@ var render = function () {
                   "a",
                   {
                     key: idx,
-                    attrs: { className: "gallery-item", "data-src": src },
+                    attrs: {
+                      className: "gallery-item",
+                      "data-src": src,
+                      "data-tweet-text": "Team Faster",
+                    },
                   },
                   [
                     _c("img", {
