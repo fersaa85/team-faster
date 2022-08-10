@@ -265,7 +265,7 @@ export default {
   }
   .text-photo-date{
     color: white;
-    font-family: "FFDINforPUMA-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "FFDINforPUMA-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 100%;
     text-align: center;
     left: 0;

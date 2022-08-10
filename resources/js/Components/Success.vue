@@ -114,7 +114,7 @@
                     :details="info.name + ' - ' +info.coach"
                     inline-template
                 >
-                    <div class="puma-regular calendars">
+                    <div class="puma-bold calendars">
                         <google-calendar id="google-calendar" style="padding-right: 16px;">
                             <i class="fab fa-google"></i>
                             Añadir a Google calendar
@@ -152,8 +152,15 @@ export default {
 </script>
 <style lang="scss" scoped>
     .card{
+        @media screen and (min-width: 769px) {
+            max-height: 92vh;
+            overflow-y: auto;
+        }
         @media screen and (max-width: 768px) {
             padding-top: 268px;
+        }
+        @media screen and (max-height: 740px) {
+            padding-top: 425px;
         }
     }
     .logoCointainer{

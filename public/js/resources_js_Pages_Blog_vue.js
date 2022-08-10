@@ -263,7 +263,7 @@ var render = function () {
     _c(
       "h1",
       {
-        staticClass: "puma-regular",
+        staticClass: "puma-bold",
         staticStyle: {
           color: "#ffffff",
           "padding-top": "80px",

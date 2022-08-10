@@ -303,7 +303,7 @@ export default {
   .text-photo-date{
     position: absolute;
     color: white;
-    font-family: "FFDINforPUMA-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "FFDINforPUMA-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 100%;
     text-align: right;
     left: 0;
