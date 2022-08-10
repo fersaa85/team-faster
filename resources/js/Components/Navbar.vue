@@ -57,7 +57,7 @@ export default {
     color: white;
   }
   a{
-    font-family: 'FFDINforPUMA-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: normal;
     font-style: normal;
     text-transform: uppercase;

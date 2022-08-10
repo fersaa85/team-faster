@@ -71,7 +71,7 @@
                 </p>
                 <p class="info-block-text">
                   {{ coach.name }}<br />
-                  <a :href="coach.instagram" target="_blank" class="puma-regular photo-info2 color-black">
+                  <a :href="coach.instagram" target="_blank" class="puma-bold photo-info2 color-black">
                       {{ coach.description }}
                   </a>
                 </p>
