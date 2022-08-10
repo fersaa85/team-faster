@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" translate="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,6 +14,6 @@
         <app></app>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="{{ mix('js/app.js') }}?v=1.0.8"></script>
+        <script src="{{ mix('js/app.js') }}?v=1.0.9"></script>
     </body>
 </html>
