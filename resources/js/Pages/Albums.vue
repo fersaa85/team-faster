@@ -204,6 +204,7 @@ export default {
   .venues{
     background: black;
     color: white;
+    overflow-x: hidden;
   }
   .title-venues{
     font-size: 100px;
