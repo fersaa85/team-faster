@@ -8,13 +8,6 @@ $font-color: #555555;
 }
 
 @font-face {
-  font-family: "FFDINforPUMA-Regular";
-  src: url("/assets/fonts/FFDINforPUMA-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "GoticaModerna-KK-Italic";
   src: url("/assets/fonts/GoticaModerna-KK-Italic.ttf") format("truetype");
   font-weight: normal;
@@ -23,11 +16,6 @@ $font-color: #555555;
 
 .puma-bold{
   font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
-  font-weight: normal;
-  font-style: normal;
-}
-.puma-regular{
-  font-family: 'FFDINforPUMA-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -43,7 +31,7 @@ body, html, #app, .app {
   margin: 0;
   background-color: black;
   text-align: center;
-  font-family: 'FFDINforPUMA-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
 .tm-puma{
@@ -54,7 +42,7 @@ body, html, #app, .app {
 .form-styles{
   .label{
     color: black !important;
-    font-family: 'FFDINforPUMA-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     text-transform: uppercase;
   }
   .field-label.is-normal{

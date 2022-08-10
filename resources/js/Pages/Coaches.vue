@@ -36,7 +36,7 @@
                   CARLOS
                 </span>
                 <br>
-                <span class="puma-regular photo-info2">
+                <span class="puma-bold photo-info2">
                   @charlie.ro22
                 </span>
               </div>
@@ -58,7 +58,7 @@
                   DAVID
                 </span>
                 <br>
-                <span class="puma-regular photo-info2">
+                <span class="puma-bold photo-info2">
                   @dmckniight
                 </span>
               </div>
@@ -80,7 +80,7 @@
                   FRANCHESCA
                 </span>
                 <br>
-                <span class="puma-regular photo-info2">
+                <span class="puma-bold photo-info2">
                   @franchescasb
                 </span>
               </div>
@@ -93,9 +93,8 @@
           <a href="https://www.instagram.com/HOMEROCASGRO" target="_blank">
             <b-image
               responsive
-              src="/assets/img/Homero.png"
+              src="/assets/img/HomeroCastillo.png"
               ratio="1by1"
-              class="img-blackwhite"
               @load="loadedImg4"
             ></b-image>
             <div class="text-photo-title">
@@ -104,7 +103,7 @@
                   HOMERO
                 </span>
                 <br>
-                <span class="puma-regular photo-info2">
+                <span class="puma-bold photo-info2">
                   @homerocasgro
                 </span>
               </div>
@@ -126,7 +125,7 @@
                   JORGE
                 </span>
                 <br>
-                <span class="puma-regular photo-info2">
+                <span class="puma-bold photo-info2">
                   @jorgehuo
                 </span>
               </div>
@@ -148,7 +147,7 @@
                   MAFER
                 </span>
                 <br>
-                <span class="puma-regular photo-info2">
+                <span class="puma-bold photo-info2">
                   @maferarreolaa
                 </span>
               </div>
@@ -161,9 +160,8 @@
           <a href="https://www.instagram.com/pablohutt/" target="_blank">
             <b-image
               responsive
-              src="/assets/img/PABLO-@pablohutt.jpg"
+              src="/assets/img/PabloHutt.jpg"
               ratio="1by1"
-              class="img-blackwhite"
               @load="loadedImg7"
             ></b-image>
             <div class="text-photo-title">
@@ -172,7 +170,7 @@
                   PABLO
                 </span>
                 <br>
-                <span class="puma-regular photo-info2">
+                <span class="puma-bold photo-info2">
                   @pablohutt
                 </span>
               </div>
@@ -183,9 +181,8 @@
           <a href="https://www.instagram.com/raul_victoria_/" target="_blank">
             <b-image
               responsive
-              src="/assets/img/RAUL-@raul_vicotria_.jpg"
+              src="/assets/img/RaulVictoria.jpg"
               ratio="1by1"
-              class="img-blackwhite"
               @load="loadedImg8"
             ></b-image>
             <div class="text-photo-title two-lines">
@@ -194,7 +191,7 @@
                   RAÚL
                 </span>
                 <br>
-                <span class="puma-regular photo-info2">
+                <span class="puma-bold photo-info2">
                   @raul_victoria_
                 </span>
               </div>
@@ -202,7 +199,7 @@
           </a>
         </div>
         <div class="column is-clickable img-container" ref="coach9" style="position:relative; padding:0">
-          <a href="https://www.instagram.com/nv1ctus/" target="_blank">
+          <a href="https://www.instagram.com/v1cfitness/?igshid=YmMyMTA2M2Y%3D" target="_blank">
             <b-image
               responsive
               src="/assets/img/vlopez.jpg"
@@ -216,8 +213,8 @@
                   Victor López
                 </span>
                 <br>
-                <span class="puma-regular photo-info2">
-                  @nv1ctus
+                <span class="puma-bold photo-info2">
+                  @v1cfitness
                 </span>
               </div>
             </div>
@@ -294,9 +291,9 @@ export default {
           );
       },
       showElement(el, delay){
-          this.gsap.to(
-              el,
-              { autoAlpha: 1, scale:1, duration: 2.5, delay:delay, ease: "elastic.out(1, 0.3)"}
+        this.gsap.to(
+          el,
+            { autoAlpha: 1, scale:1, duration: 2.5, delay:delay, ease: "elastic.out(1, 0.2)"}
           );
       },
   }
@@ -377,7 +374,7 @@ export default {
     // opacity: 0;
     height: 100%;
     text-align: left;
-    background: linear-gradient(transparent, 80%, #110315);
+    background: linear-gradient(transparent, 90%, #000000);
     .photo-info{
       margin: auto;
       position: absolute;
@@ -397,8 +394,8 @@ export default {
     visibility: visible;
     opacity: 1;
   }
-  // .img-blackwhite{
-  //   -webkit-filter: grayscale(60%);
-  //   filter: grayscale(60%);
-  // }
+  .img-blackwhite{
+    -webkit-filter: grayscale(60%);
+    filter: grayscale(100%);
+  }
 </style>

@@ -251,9 +251,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
   mounted: function mounted() {
@@ -309,7 +306,7 @@ __webpack_require__.r(__webpack_exports__);
         scale: 1,
         duration: 2.5,
         delay: delay,
-        ease: "elastic.out(1, 0.3)"
+        ease: "elastic.out(1, 0.2)"
       });
     }
   }
@@ -333,7 +330,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".venues_photos[data-v-1bb7f1a2] {\n  margin: 0 160px;\n  padding: 20px;\n  background-color: black;\n}\n@media screen and (max-width: 768px) {\n.venues_photos[data-v-1bb7f1a2] {\n    margin: 0 40px;\n}\n}\n.venues[data-v-1bb7f1a2] {\n  background: black;\n  overflow-x: hidden;\n}\n.title-venues[data-v-1bb7f1a2] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-1bb7f1a2] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-1bb7f1a2] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-1bb7f1a2] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-1bb7f1a2] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-1bb7f1a2] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-1bb7f1a2] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-1bb7f1a2] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-1bb7f1a2] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-1bb7f1a2] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-1bb7f1a2] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-1bb7f1a2] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.text-photo-title[data-v-1bb7f1a2] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  height: 100%;\n  text-align: left;\n  background: linear-gradient(transparent, 80%, #110315);\n}\n.text-photo-title .photo-info[data-v-1bb7f1a2] {\n  margin: auto;\n  position: absolute;\n  bottom: 0;\n  padding-bottom: 14px;\n  padding-left: 14px;\n}\n.text-photo-title .photo-info1[data-v-1bb7f1a2] {\n  font-size: 40px;\n}\n.text-photo-title .photo-info2[data-v-1bb7f1a2] {\n  font-size: 20px;\n  text-transform: lowercase;\n}\n.img-container:hover .text-photo-title[data-v-1bb7f1a2] {\n  visibility: visible;\n  opacity: 1;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".venues_photos[data-v-1bb7f1a2] {\n  margin: 0 160px;\n  padding: 20px;\n  background-color: black;\n}\n@media screen and (max-width: 768px) {\n.venues_photos[data-v-1bb7f1a2] {\n    margin: 0 40px;\n}\n}\n.venues[data-v-1bb7f1a2] {\n  background: black;\n  overflow-x: hidden;\n}\n.title-venues[data-v-1bb7f1a2] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-1bb7f1a2] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-1bb7f1a2] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-1bb7f1a2] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-1bb7f1a2] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-1bb7f1a2] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-1bb7f1a2] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-1bb7f1a2] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-1bb7f1a2] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-1bb7f1a2] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-1bb7f1a2] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-1bb7f1a2] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.text-photo-title[data-v-1bb7f1a2] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  height: 100%;\n  text-align: left;\n  background: linear-gradient(transparent, 90%, #000000);\n}\n.text-photo-title .photo-info[data-v-1bb7f1a2] {\n  margin: auto;\n  position: absolute;\n  bottom: 0;\n  padding-bottom: 14px;\n  padding-left: 14px;\n}\n.text-photo-title .photo-info1[data-v-1bb7f1a2] {\n  font-size: 40px;\n}\n.text-photo-title .photo-info2[data-v-1bb7f1a2] {\n  font-size: 20px;\n  text-transform: lowercase;\n}\n.img-container:hover .text-photo-title[data-v-1bb7f1a2] {\n  visibility: visible;\n  opacity: 1;\n}\n.img-blackwhite[data-v-1bb7f1a2] {\n  filter: grayscale(100%);\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -620,10 +617,9 @@ var render = function () {
               },
               [
                 _c("b-image", {
-                  staticClass: "img-blackwhite",
                   attrs: {
                     responsive: "",
-                    src: "/assets/img/Homero.png",
+                    src: "/assets/img/HomeroCastillo.png",
                     ratio: "1by1",
                   },
                   on: { load: _vm.loadedImg4 },
@@ -724,10 +720,9 @@ var render = function () {
               },
               [
                 _c("b-image", {
-                  staticClass: "img-blackwhite",
                   attrs: {
                     responsive: "",
-                    src: "/assets/img/PABLO-@pablohutt.jpg",
+                    src: "/assets/img/PabloHutt.jpg",
                     ratio: "1by1",
                   },
                   on: { load: _vm.loadedImg7 },
@@ -758,10 +753,9 @@ var render = function () {
               },
               [
                 _c("b-image", {
-                  staticClass: "img-blackwhite",
                   attrs: {
                     responsive: "",
-                    src: "/assets/img/RAUL-@raul_vicotria_.jpg",
+                    src: "/assets/img/RaulVictoria.jpg",
                     ratio: "1by1",
                   },
                   on: { load: _vm.loadedImg8 },
@@ -786,7 +780,7 @@ var render = function () {
               "a",
               {
                 attrs: {
-                  href: "https://www.instagram.com/nv1ctus/",
+                  href: "https://www.instagram.com/v1cfitness/?igshid=YmMyMTA2M2Y%3D",
                   target: "_blank",
                 },
               },
@@ -840,7 +834,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _c("span", { staticClass: "puma-regular photo-info2" }, [
+        _c("span", { staticClass: "puma-bold photo-info2" }, [
           _vm._v("\n                @charlie.ro22\n              "),
         ]),
       ]),
@@ -858,7 +852,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _c("span", { staticClass: "puma-regular photo-info2" }, [
+        _c("span", { staticClass: "puma-bold photo-info2" }, [
           _vm._v("\n                @dmckniight\n              "),
         ]),
       ]),
@@ -879,7 +873,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("br"),
           _vm._v(" "),
-          _c("span", { staticClass: "puma-regular photo-info2" }, [
+          _c("span", { staticClass: "puma-bold photo-info2" }, [
             _vm._v("\n                @franchescasb\n              "),
           ]),
         ]),
@@ -898,7 +892,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _c("span", { staticClass: "puma-regular photo-info2" }, [
+        _c("span", { staticClass: "puma-bold photo-info2" }, [
           _vm._v("\n                @homerocasgro\n              "),
         ]),
       ]),
@@ -916,7 +910,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _c("span", { staticClass: "puma-regular photo-info2" }, [
+        _c("span", { staticClass: "puma-bold photo-info2" }, [
           _vm._v("\n                @jorgehuo\n              "),
         ]),
       ]),
@@ -934,7 +928,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _c("span", { staticClass: "puma-regular photo-info2" }, [
+        _c("span", { staticClass: "puma-bold photo-info2" }, [
           _vm._v("\n                @maferarreolaa\n              "),
         ]),
       ]),
@@ -952,7 +946,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _c("span", { staticClass: "puma-regular photo-info2" }, [
+        _c("span", { staticClass: "puma-bold photo-info2" }, [
           _vm._v("\n                @pablohutt\n              "),
         ]),
       ]),
@@ -970,7 +964,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _c("span", { staticClass: "puma-regular photo-info2" }, [
+        _c("span", { staticClass: "puma-bold photo-info2" }, [
           _vm._v("\n                @raul_victoria_\n              "),
         ]),
       ]),
@@ -988,8 +982,8 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("br"),
         _vm._v(" "),
-        _c("span", { staticClass: "puma-regular photo-info2" }, [
-          _vm._v("\n                @nv1ctus\n              "),
+        _c("span", { staticClass: "puma-bold photo-info2" }, [
+          _vm._v("\n                @v1cfitness\n              "),
         ]),
       ]),
     ])

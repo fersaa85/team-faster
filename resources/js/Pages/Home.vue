@@ -24,7 +24,7 @@
         <div class="gotica-italic welcome-title">
           Bienvenidos
         </div>
-        <div class="puma-regular welcome-text">
+        <div class="puma-bold welcome-text">
           Aquí comienza la mejor experiencia de entrenamientos en combinación con coaches que te ayudarán a liberar tu potencial
         </div>
       </div>
@@ -61,7 +61,7 @@
               <!-- {{ info.name }} -->
             </div>
 
-            <div class="join-text-r2 puma-regular">
+            <div class="join-text-r2 puma-bold">
               Vuélvete parte de nuestra familia teamfaster y entrena como los grandes en alguna de las sedes que tenemos preparadas para ti
             </div>
             <div ref="buttonRegistrarse">
@@ -179,7 +179,7 @@
             <div class="column is-6" style="padding:0">
               <b-image
                 responsive
-                src="/assets/img/Homero.png"
+                src="/assets/img/HomeroCastillo.png"
                 ratio="1by1"       
               ></b-image>
             </div>
@@ -326,9 +326,9 @@
             ratio="1by1"
           ></b-image>
         </div>
-        <div class="cdmx-gallery gotica-italic">
+        <!-- <div class="cdmx-gallery gotica-italic">
           CDMX
-        </div>
+        </div> -->
       </div>
       <div class="section-galery-up mobile-section">
         <div class="columns">
@@ -620,13 +620,13 @@ export default {
           scaleY:0,
           autoAlpha:0,
         });
-        this.gsap.from(".cdmx-gallery", {
-          scrollTrigger: ".cdmx-gallery", // start the animation when ".box" enters the viewport (once)
-          duration:0.6,
-          autoAlpha:0,
-          delay:0.2,
-          ease: "Power2.easeIn"
-        });
+        // this.gsap.from(".cdmx-gallery", {
+        //   scrollTrigger: ".cdmx-gallery", // start the animation when ".box" enters the viewport (once)
+        //   duration:0.6,
+        //   autoAlpha:0,
+        //   delay:0.2,
+        //   ease: "Power2.easeIn"
+        // });
         this.gsap.from(".section-galery-up-txt3", {
           scrollTrigger: this.$refs.logoGalery, // start the animation when ".box" enters the viewport (once)
           duration:0.6,
@@ -1341,7 +1341,8 @@ export default {
       @media screen and (max-width: 1038px) {
         font-size: 25px;
       }
-      @media screen and (max-width: 980px) {
+      @media screen and (max-width: 768px) {
+        font-size: 22px;
       }
       @media screen and (max-width: 850px) {
       }
@@ -1613,37 +1614,37 @@ export default {
           }
         }
       }
-      .cdmx-gallery{
-        margin-top: -35px;
-        color: #6d6e79;
-        text-shadow: -4px 3px 0px #000000;
-        font-size: 225px;
-        @media screen and (max-width: 1164px) {
-          margin-top: -70px;
-        }
-        @media screen and (max-width: 1092px) {
-          font-size: 215px;
-        }
-        @media screen and (max-width: 987px) {
-          margin-top: -40px;
-          font-size: 150px;
-        }
-        @media screen and (max-width: 890px) {
-          font-size: 150px;
-        }
-        @media screen and (max-width: 845px) {
-          margin-top: -30px;
-          font-size: 125px;
-        }
-        @media screen and (max-width: 768px) {
-          margin-top: -30px;
-          font-size: 100px;
-        }
-        @media screen and (max-width: 768px) {
-          margin-top: -30px;
-          font-size: 100px;
-        }
-      }
+      // .cdmx-gallery{
+      //   margin-top: -35px;
+      //   color: #6d6e79;
+      //   text-shadow: -4px 3px 0px #000000;
+      //   font-size: 225px;
+      //   @media screen and (max-width: 1164px) {
+      //     margin-top: -70px;
+      //   }
+      //   @media screen and (max-width: 1092px) {
+      //     font-size: 215px;
+      //   }
+      //   @media screen and (max-width: 987px) {
+      //     margin-top: -40px;
+      //     font-size: 150px;
+      //   }
+      //   @media screen and (max-width: 890px) {
+      //     font-size: 150px;
+      //   }
+      //   @media screen and (max-width: 845px) {
+      //     margin-top: -30px;
+      //     font-size: 125px;
+      //   }
+      //   @media screen and (max-width: 768px) {
+      //     margin-top: -30px;
+      //     font-size: 100px;
+      //   }
+      //   @media screen and (max-width: 768px) {
+      //     margin-top: -30px;
+      //     font-size: 100px;
+      //   }
+      // }
     }
   .section-galery-up{
     background: black;
@@ -2104,7 +2105,7 @@ export default {
   }
   .welcome{
     position: absolute;
-    bottom: -9vw;
+    bottom: -8vw;
     right: 0;
     width: 30%;
     height: 524px;
@@ -2133,7 +2134,7 @@ export default {
     @media screen and (max-width: 1002px) {
       bottom: 8vw;
     }
-    @media screen and (max-width: 958px) {
+    @media screen and (max-width: 962px) {
       bottom: 11vw;
     }
     @media screen and (max-width: 933px) {
@@ -2147,8 +2148,8 @@ export default {
       bottom: 18vw;
       padding: 14px 16px;
     }
-    @media screen and (max-width: 826px) {
-      bottom: 26vw;
+    @media screen and (max-width: 842px) {
+      bottom: 22vw;
     }
     @media screen and (max-width: 808px) {
       bottom: 28vw;
