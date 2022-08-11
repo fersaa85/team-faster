@@ -20,8 +20,8 @@
       </div>
     </div>
     <div class="venues_photos">
-      <div class="columns ">
-        <div class="column is-clickable img-container coach-1" ref="coach1" style="position:relative; padding:0">
+      <div class="columns is-multiline">
+        <div class="column is-clickable img-container coach-1 is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach1" style="position:relative; padding:0">
           <a href="https://www.instagram.com/charlie.ro22/" target="_blank">
             <b-image
               responsive
@@ -33,7 +33,7 @@
             <div class="text-photo-title venue-active">
               <div class="photo-info">
                 <span class="photo-info1">
-                  CARLOS
+                  CARLOS Aguilar
                 </span>
                 <br>
                 <span class="puma-bold photo-info2">
@@ -43,7 +43,7 @@
             </div>
           </a>
         </div>
-        <div class="column is-clickable img-container" ref="coach2" style="position:relative; padding:0">
+        <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach2" style="position:relative; padding:0">
           <a href="https://www.instagram.com/dmckniight/" target="_blank">
             <b-image
               responsive
@@ -55,7 +55,7 @@
             <div class="text-photo-title venue-active">
               <div class="photo-info">
                 <span class="photo-info1">
-                  DAVID
+                  DAVID McKnight
                 </span>
                 <br>
                 <span class="puma-bold photo-info2">
@@ -65,7 +65,7 @@
             </div>
           </a>
         </div>
-        <div class="column is-clickable img-container" ref="coach3" style="position:relative; padding:0">
+        <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach3" style="position:relative; padding:0">
           <a href="https://www.instagram.com/franchescasb/" target="_blank">
             <b-image
               responsive
@@ -77,7 +77,7 @@
             <div class="text-photo-title two-lines venue-active-third">
               <div class="photo-info">
                 <span class="photo-info1">
-                  FRANCHESCA
+                  Franchesca sb
                 </span>
                 <br>
                 <span class="puma-bold photo-info2">
@@ -87,9 +87,9 @@
             </div>
           </a>
         </div>
-      </div>
-      <div class="columns">
-        <div class="column is-clickable img-container" ref="coach4" style="position:relative; padding:0">
+      <!-- </div> -->
+      <!-- <div class="columns"> -->
+        <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach4" style="position:relative; padding:0">
           <a href="https://www.instagram.com/HOMEROCASGRO" target="_blank">
             <b-image
               responsive
@@ -100,7 +100,7 @@
             <div class="text-photo-title">
               <div class="photo-info">
                 <span class="photo-info1">
-                  HOMERO
+                  HOMERO Castillo
                 </span>
                 <br>
                 <span class="puma-bold photo-info2">
@@ -110,7 +110,7 @@
             </div>
           </a>
         </div>
-        <div class="column is-clickable img-container" ref="coach5" style="position:relative; padding:0">
+        <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach5" style="position:relative; padding:0">
           <a href="https://www.instagram.com/jorgehuo/" target="_blank">
             <b-image
               responsive
@@ -122,7 +122,7 @@
             <div class="text-photo-title">
               <div class="photo-info">
                 <span class="photo-info1">
-                  JORGE
+                  JORGE huo
                 </span>
                 <br>
                 <span class="puma-bold photo-info2">
@@ -132,7 +132,7 @@
             </div>
           </a>
         </div>
-        <div class="column is-clickable img-container" ref="coach6" style="position:relative; padding:0">
+        <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach6" style="position:relative; padding:0">
           <a href="https://www.instagram.com/maferarreolaa/" target="_blank">
             <b-image
               responsive
@@ -144,7 +144,7 @@
             <div class="text-photo-title venue-active">
               <div class="photo-info">
                 <span class="photo-info1">
-                  MAFER
+                  MAFER arreola
                 </span>
                 <br>
                 <span class="puma-bold photo-info2">
@@ -154,9 +154,9 @@
             </div>
           </a>
         </div>
-      </div>
-      <div class="columns">
-        <div class="column is-clickable img-container" ref="coach7" style="position:relative; padding:0">
+      <!-- </div>
+      <div class="columns"> -->
+        <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach7" style="position:relative; padding:0">
           <a href="https://www.instagram.com/pablohutt/" target="_blank">
             <b-image
               responsive
@@ -167,7 +167,7 @@
             <div class="text-photo-title">
               <div class="photo-info">
                 <span class="photo-info1">
-                  PABLO
+                  PABLO Hütt
                 </span>
                 <br>
                 <span class="puma-bold photo-info2">
@@ -177,7 +177,7 @@
             </div>
           </a>
         </div>
-        <div class="column is-clickable img-container" ref="coach8" style="position:relative; padding:0">
+        <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach8" style="position:relative; padding:0">
           <a href="https://www.instagram.com/raul_victoria_/" target="_blank">
             <b-image
               responsive
@@ -188,7 +188,7 @@
             <div class="text-photo-title two-lines">
               <div class="photo-info">
                 <span class="photo-info1">
-                  RAÚL
+                  RAÚL Victoria
                 </span>
                 <br>
                 <span class="puma-bold photo-info2">
@@ -198,7 +198,7 @@
             </div>
           </a>
         </div>
-        <div class="column is-clickable img-container" ref="coach9" style="position:relative; padding:0">
+        <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach9" style="position:relative; padding:0">
           <a href="https://www.instagram.com/v1cfitness/?igshid=YmMyMTA2M2Y%3D" target="_blank">
             <b-image
               responsive
@@ -381,9 +381,26 @@ export default {
       bottom: 0;
       padding-bottom: 14px;
       padding-left: 14px;
+      padding-right: 14px;
     }
     .photo-info1{
-      font-size: 40px;
+      font-size: 38px;
+      line-height: 100%;
+      @media screen and (max-width: 1450px) {
+        font-size: 35px;
+      }
+      @media screen and (max-width: 1350px) {
+        font-size: 33px;
+      }
+      @media screen and (max-width: 1250px) {
+        font-size: 30px;
+      }
+      @media screen and (max-width: 1150px) {
+        font-size: 30px;
+      }
+      @media screen and (max-width: 1100px) {
+        font-size: 25px;
+      }
     }
     .photo-info2{
       font-size: 20px;
