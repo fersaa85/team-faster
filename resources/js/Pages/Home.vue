@@ -92,131 +92,250 @@
     <div class="vertical-sect section-coaches gotica-italic">
       <div class="columns">
         <div class="column coaches1 is-hidden-tablet ">
-          <div class="columns is-multiline" style="margin: 0;">
-            <div class="column is-6" style="padding:0">
+          <div class="columns is-multiline" style="margin: 0;" @click="$router.push('/coaches');">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/RAUL-@raul_vicotria_.jpg"
                 ratio="1by1"
                 class="first-coach"
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info always-on">
+                  <span class="photo-info1">
+                    RAÚL Victoria
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/MAFER-@maferarreolaa.jpg"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info always-on">
+                  <span class="photo-info1">
+                    MAFER arreola
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/FRANCHESCA-@franchescasb.jpg"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info always-on">
+                  <span class="photo-info1">
+                    Franchesca sb
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div ref="coachesImgs" class="column coaches1 is-hidden-mobile">
-          <div class="columns is-multiline" style="margin: 0;">
-            <div class="column is-6" style="padding:0">
+          <div class="columns is-multiline" style="margin: 0;" @click="$router.push('/coaches');">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/RAUL-@raul_vicotria_.jpg"
                 ratio="1by1"
                 class="first-coach"
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    RAÚL Victoria
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/MAFER-@maferarreolaa.jpg"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    MAFER arreola
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/FRANCHESCA-@franchescasb.jpg"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    Franchesca sb
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/PABLO-@pablohutt.jpg"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    PABLO Hütt
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/vlopez.jpg"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    Victor López
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/Jorge.png"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    JORGE huo
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/David.png"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    DAVID McKnight
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/Carloss.png"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    CARLOS Aguilar
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/HomeroCastillo.png"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    HOMERO Castillo
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/Jorge.png"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    JORGE huo
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/PABLO-@pablohutt.jpg"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    PABLO Hutt
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/MAFER-@maferarreolaa.jpg"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    MAFER arreola
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/David.png"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    DAVID McKnight
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="column is-6" style="padding:0">
+            <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
                 src="/assets/img/vlopez.jpg"
                 ratio="1by1"       
               ></b-image>
+              <div class="text-photo-title venue-active">
+                <div class="photo-info">
+                  <span class="photo-info1">
+                    Victor López
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -2236,4 +2355,36 @@ export default {
       margin-top: 54px;
     }
   }
+  .photo-info{
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+    font-family: "FFDINforPUMA-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    color: white;
+    opacity: 0;
+    transition: 0.3s;
+    transform: translateY(50px);
+    cursor: pointer;
+    &:hover, &.always-on {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .photo-info1{
+      background: rgba(0, 0, 0, 0.2);
+      padding: 15px 14px 10px;
+      position: absolute;
+      bottom: 20%;
+      left: 0;
+      font-size: 24px;
+    }
+  }
+  // @keyframes bounce {
+  //   0%   { transform: translateY(0); }
+  //   50%  { transform: translateY(-100px); }
+  //   100% { transform: translateY(0); }
+  // }
 </style>
