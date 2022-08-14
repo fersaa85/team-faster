@@ -58,6 +58,9 @@
             padding: 0px; /* Apply cell padding */
             margin: 0px
         }
+        table, td, div, h1, p {
+            font-family: Arial, sans-serif;
+        }
         @media screen and (max-width: 530px) {
             .unsub {
                 display: block;
@@ -87,11 +90,7 @@
     <table role="presentation" style="width:100%;border:none;border-spacing:0;">
         <tr>
             <td align="center" style="padding:0;">
-                <!--[if mso]>
-                <table role="presentation" align="center" style="width:600px;">
-                    <tr>
-                        <td>
-                <![endif]-->
+                <!--[if mso]> -->
                 <table border="0" style="width:100%;max-width:600px;border:none;border-spacing:0;text-align:left;font-family:Arial,sans-serif;font-size:16px;color:#363636; background-color:#686a72;">
                     <tr valign="bottom" style="background-color:#000000;">
                         <td>
@@ -113,15 +112,16 @@
                                             </a>
                                         </td>
                                         <td>
+
                                             <a href="https://www.instagram.com/pumamexico/" style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
                                                 <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
                                         </td>
                                         <td>
                                             <a href="https://www.youtube.com/puma" style="text-decoration:none; text-align: left; padding-right: 15px; padding-left: 5px;">
-                                                <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
+                                                <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
-                                        </td>
+                                        <td>
                                     </tr>
                             </table>
                         </td>
@@ -210,14 +210,11 @@
                     <tr>
                         <td colspan="2" style="padding:30px; text-align: justify; color: #686a72;background: #000000; ">
                             <b style="color: #ffffff;">Team Faster</b> eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar… somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos
+                        <td colspan="2" style="padding-left: 0px; padding-right: 0px; padding-top:20px;">
+                           <img src="http://tiempocreativo.com.mx/assets/img/PUMA_FONDO_HOME_2.jpg" width="600" alt="" style="width:100%;height:auto;display:block;border:none;text-decoration:none;color:#363636;">
                         </td>
                     </tr>
                 </table>
-                <!--[if mso]>
-                </td>
-                </tr>
-                </table>
-                <![endif]-->
             </td>
         </tr>
     </table>
