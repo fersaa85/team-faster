@@ -95,7 +95,7 @@
                     <tr valign="bottom" style="background-color:#000000;">
                         <td>
                             <a href="http://www.example.com/" style="text-decoration:none;">
-                                <img src="http://tiempocreativo.com.mx/assets/img/logoTeamFaster.png" width="85px" alt="Logo" style="width:85px;height:auto;border:none;text-decoration:none;padding:10px;">
+                                <img src="https://teamfaster.mx/assets/img/logoTeamFaster.png" width="85px" alt="Logo" style="width:85px;height:auto;border:none;text-decoration:none;padding:10px;">
                             </a>
                         </td>
                         <td>
@@ -103,23 +103,23 @@
                                     <tr style="text-align:right;">
                                         <td style="vertical-align:bottom">
                                             <a href="https://www.facebook.com/PUMAMexico" style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
-                                                <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
+                                                <img src="https://teamfaster.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
                                         </td>
                                         <td>
                                             <a href="https://twitter.com/pumamexico/"style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
-                                                <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
+                                                <img src="https://teamfaster.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
                                         </td>
                                         <td>
 
                                             <a href="https://www.instagram.com/pumamexico/" style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
-                                                <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
+                                                <img src="https://teamfaster.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
                                         </td>
                                         <td>
                                             <a href="https://www.youtube.com/puma" style="text-decoration:none; text-align: left; padding-right: 15px; padding-left: 5px;">
-                                                <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
+                                                <img src="https://teamfaster.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
                                         <td>
                                     </tr>
@@ -211,7 +211,7 @@
                         <td colspan="2" style="padding:30px; text-align: justify; color: #686a72;background: #000000; ">
                             <b style="color: #ffffff;">Team Faster</b> eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar… somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos
                         <td colspan="2" style="padding-left: 0px; padding-right: 0px; padding-top:20px;">
-                           <img src="http://tiempocreativo.com.mx/assets/img/PUMA_FONDO_HOME_2.jpg" width="600" alt="" style="width:100%;height:auto;display:block;border:none;text-decoration:none;color:#363636;">
+                           <img src="https://teamfaster.mx/assets/img/PUMA_FONDO_HOME_2.jpg" width="600" alt="" style="width:100%;height:auto;display:block;border:none;text-decoration:none;color:#363636;">
                         </td>
                     </tr>
                 </table>
