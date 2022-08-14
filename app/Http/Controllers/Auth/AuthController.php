@@ -24,7 +24,7 @@ class AuthController extends Controller
      */
     public function signUp($venueId, UserStoreRequest $request)
     {
-        /*$recaptcha = (new GoogleRecaptcha('6LdhsyggAAAAAL0d8vonQxrfI4UdlizR0GHtW7u9'))
+        $recaptcha = (new GoogleRecaptcha('6LfgkUAhAAAAAJKonW3-eGZSgZoDSfjf33_Lq4FF'))
             ->verify($request->input('g-recaptcha-response'), $request->ip());
 
         if (!$recaptcha->isSuccess()) {
@@ -32,7 +32,7 @@ class AuthController extends Controller
                 'message' => $recaptcha->getErrorCodes()
             ], 401);
         }
-*/
+
         $user = User::where("email", $request->email)->first();
 
         if($user === null){

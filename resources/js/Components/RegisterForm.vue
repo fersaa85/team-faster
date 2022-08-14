@@ -102,7 +102,7 @@
       <vue-recaptcha
          id="recaptcha"
          class="recaptcha-container"
-         sitekey="6LdhsyggAAAAACsHnT4M66nGsy0xwI5mT8LDEgdL"
+         sitekey="6LfgkUAhAAAAAMaSoFs6_0VfeAV9aAnQqFcPagQ6"
          @verify="verifyMethod"
          @expired="expiredMethod"
          @render="renderMethod"
@@ -148,7 +148,7 @@
     methods:{
         handleSubmit(){
             axios
-                .post('api/auth/signup/', this.$route.params.venueId, {
+                .post('api/auth/signup/', this.$route.params.slug, {
                     "g-recaptcha-response": this.gRecaptchaResponse,
                     email: this.email,
                     name: this.name,
