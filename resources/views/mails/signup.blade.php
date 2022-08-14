@@ -20,8 +20,43 @@
     </noscript>
     <![endif]-->
     <style>
+        @font-face {
+            font-family: "FFDINforPUMA-Bold";
+            src: url("/assets/fonts/FFDINforPUMA-Bold.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: "GoticaModerna-KK-Italic";
+            src: url("/assets/fonts/GoticaModerna-KK-Italic.ttf") format("truetype");
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .puma-bold{
+            font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .gotica-italic{
+            font-family: 'GoticaModerna-KK-Italic','Helvetica Neue',Helvetica,Arial,sans-serif;
+            font-weight: normal;
+            font-style: normal;
+        }
         table, td, div, h1, p {
             font-family: Arial, sans-serif;
+        }
+        table{
+            border-collapse: collapse; /* Remove cell spacing */
+        }
+        table, th, td{
+            border: 0px;
+        }
+        table th, table td{
+            padding: 0px; /* Apply cell padding */
+            margin: 0px
         }
         @media screen and (max-width: 530px) {
             .unsub {
@@ -57,11 +92,11 @@
                     <tr>
                         <td>
                 <![endif]-->
-                <table role="presentation" style="width:100%;max-width:600px;border:none;border-spacing:0;text-align:left;font-family:Arial,sans-serif;font-size:16px;line-height:22px;color:#363636; background-color:#000000;">
+                <table border="0" style="width:100%;max-width:600px;border:none;border-spacing:0;text-align:left;font-family:Arial,sans-serif;font-size:16px;color:#363636; background-color:#686a72;">
                     <tr valign="bottom" style="background-color:#000000;">
                         <td>
                             <a href="http://www.example.com/" style="text-decoration:none;">
-                                <img src="http://tiempocreativo.com.mx/assets/img/logoTeamFaster.png" width="50px" alt="Logo" style="width:50px;height:auto;border:none;text-decoration:none;padding:10px;">
+                                <img src="http://tiempocreativo.com.mx/assets/img/logoTeamFaster.png" width="85px" alt="Logo" style="width:85px;height:auto;border:none;text-decoration:none;padding:10px;">
                             </a>
                         </td>
                         <td>
@@ -78,12 +113,12 @@
                                             </a>
                                         </td>
                                         <td>
-                                            <a href="https://www.instagram.com/pumamexico/" style="text-decoration:none; text-align: left;vpadding-right: 5px; padding-left: 5px;">
+                                            <a href="https://www.instagram.com/pumamexico/" style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
                                                 <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
+                                        </td>
                                         <td>
-                                        <td>
-                                            <a href="https://www.youtube.com/puma" style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
+                                            <a href="https://www.youtube.com/puma" style="text-decoration:none; text-align: left; padding-right: 15px; padding-left: 5px;">
                                                 <img src="http://tiempocreativo.com.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
                                             </a>
                                         </td>
@@ -92,60 +127,89 @@
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2">
-                            <h1 style="margin-top:0;margin-bottom:16px;font-size:26px;line-height:32px;font-weight:bold;letter-spacing:-0.02em; text-align: center; color: #ffffff;">
-                                ¡Bienvenido {{ $name ?? 'name'}}!
-                            </h1>
-                            <p style="padding-right: 30px; padding-left: 30px; margin:0; line-height:28px; text-align: justify; color:#ffffff">
-                                Aquí comienza la mejor experiencia de entrenamientos en combinación con coaches que te ayudarán a liberar tu potencial
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2" style="padding-top:30px; padding-right: 10px; padding-left: 10px; padding-bottom: 0px; ";>
-                            <h2 style="margin: 0px;font-size:26px;line-height:32px;font-weight:bold;letter-spacing:-0.02em; color: #ffffff;">
-                               Reserva {{ $slug ?? "XXXXXXXX-00" }}
-                            </h2>
-                        </td>
-                    </tr>
-                    <tr valign="top"  style="background-color:#000000;">
-                        <td colspan="2" style="padding:15px";>
-                            <table role="presentation" style="width:100%;border:none;border-spacing:5px;text-align:right;font-family:Arial,sans-serif;line-height:28px;font-weight:bold;color:#ffffff">
-                                <tr valign="top">
-                                    <td style="text-align: left">Edad:</td>
-                                    <td style="text-align: left">{{ $age ?? 'age'}}</td>
-                                    <td style="text-align: left">Talla:</td>
-                                    <td style="text-align: left">{{ $size ?? 'size'}}</td>
-                                </tr>
-                                <tr valign="top">
-                                    <td style="text-align: left">Cuando:</td>
-                                    <td style="text-align: left">{{ $date ?? 'date'}}</td>
-                                    <td style="text-align: left">Donde:</td>
-                                    <td style="text-align: left">{{ $address ?? '$address' }}</td>
-                                </tr>
-                                <tr valign="top">
-                                    <td style="text-align: left">Experiencia:</td>
-                                    <td style="text-align: left">{{ $workout ?? '$workout' }}</td>
-                                    <td style="text-align: left">Coaches:</td>
-                                    <td style="text-align: left">{{ $coathc ?? '$coatch' }}</td>
+                        <td colspan="2" style="background: #686a72; line-height: 0px;">
+                            <table role="presentation" style="width:100%; border:none;border-spacing:0; ">
+                                <tr>
+                                    <td>
+                                        <img src="/assets/img/mailing/PUMA_MAILING_TEAM_FASTER_header.png" />
+                                    </td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" style="padding-left: 0px; padding-right: 0px; padding-top:20px;">
-                           <img src="http://tiempocreativo.com.mx/assets/img/PUMA_FONDO_HOME_2.jpg" width="600" alt="" style="width:100%;height:auto;display:block;border:none;text-decoration:none;color:#363636;">
+                        <td colspan="2" style="background: #686a72;  padding: 35px; ">
+                            <table style="width:100%;border:none;border-spacing:0;">
+                                <tr>
+                                    <td>
+                                        <h1 style="color:#ffffff;font-size: 95px;margin: 0px;line-height: initial;" class="gotica-italic">
+                                            ¡Bienvenido!
+                                        </h1>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <p style="font-size: 55px;margin: 0px;line-height: initial; text-align: justify;" class="gotica-italic">
+                                            Aquí comienza la mejor experiencia <br />
+                                            de entrenamientos en combinación con coaches<br />
+                                            que te ayudarán a liberar tu potencial.
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <h2 style="color:#ffffff;font-size: 25px;margin: 0px;line-height: initial;" class="gotica-italic">
+                                            Reserva <span style="font-size: 35px;">{{ $slug ?? "XXXXXXXX-00" }}</span>
+                                        </h2>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <table style="line-height: 22px; margin-top: 10px; color: #ffffff; width: 100%" class="puma-bold">
+                                            <tr>
+                                                <td width="40%">
+                                                   <b>Nombre:</b> {{ $name ?? '$name' }}
+                                                </td>
+                                                <td width="60%">
+                                                    <b>Edad:</b> {{ $age ?? '$age'}}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40%">
+                                                    <b>Cuando:</b> {{ $date ?? '$date'}}
+                                                </td>
+                                                <td width="60%">
+                                                    <b>Donde:</b> {{ $address ?? '$address' }}
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td width="40%">
+                                                    <b>Experiencia:</b> {{ $workout ?? '$workout' }}
+                                                </td>
+                                                <td width="60%">
+                                                    <b>Coaches:</b> {{ $coathc ?? '$coatch' }}
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" style="padding:30px;line-height:28px;text-align: justify;border-bottom:1px solid #f0f0f5;border-color:rgba(201,201,207,.35); color: #ffffff;">
-                            Team Faster eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar… somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos
+                        <td colspan="2" style="background: #686a72; line-height: 0px;">
+                            <table style="width:100px; border:none;border-spacing:0; ">
+                                <tr>
+                                    <td>
+                                        <img src="/assets/img/mailing/PUMA_MAILING_TEAM_FASTER_footer.png" />
+                                    </td>
+                                </tr>
+                            </table>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="2" style="padding:30px;text-align:center;font-size:12px;background-color:#404040;color:#cccccc;">
-                            <p style="margin:0 0 8px 0;"><a href="http://www.facebook.com/" style="text-decoration:none;"><img src="https://assets.codepen.io/210284/facebook_1.png" width="40" height="40" alt="f" style="display:inline-block;color:#cccccc;"></a> <a href="http://www.twitter.com/" style="text-decoration:none;"><img src="https://assets.codepen.io/210284/twitter_1.png" width="40" height="40" alt="t" style="display:inline-block;color:#cccccc;"></a></p>
-                            <p style="margin:0;font-size:14px;line-height:20px;">&reg; @2022 Puma. Todos los derechos reservados<br></p>
+                        <td colspan="2" style="padding:30px; text-align: justify; color: #686a72;background: #000000; ">
+                            <b style="color: #ffffff;">Team Faster</b> eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar… somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos
                         </td>
                     </tr>
                 </table>
