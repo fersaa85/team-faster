@@ -15,8 +15,7 @@ use Illuminate\Routing\Controller;
 use ReCaptcha\ReCaptcha as GoogleRecaptcha;
 use App\Mail\SignUpEmail;
 use Illuminate\Support\Facades\Mail;
-use Throwable;
-use Log;
+
 
 class AuthController extends Controller
 {
@@ -48,6 +47,9 @@ class AuthController extends Controller
                 'age' => $request->age,
             ]);
         }
+
+        //$workout = Workout::where('date_start', '>', date('Y-m-d H:i:s'))->first();
+        $workout = Workout::where('venue_id', $venueId)->first();
 
         if(WorkoutUser::where('workout_id', $workout->id)->where('user_id', $user->id)->first() === null){
             $slug = "{$workout->venue->slug}-" . (WorkoutUser::where('workout_id', $workout->id)->count() + 1);
