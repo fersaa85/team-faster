@@ -67,7 +67,7 @@ class AuthController extends Controller
             WorkoutUser::create([
                 'workout_id' => $workout->id,
                 'user_id' => $user->id,
-                'slug' => $slug
+                //'slug' => $slug
             ]);
 
             $objData = new \stdClass();
