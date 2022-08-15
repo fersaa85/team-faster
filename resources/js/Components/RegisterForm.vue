@@ -162,7 +162,7 @@
                     phone: this.phone,
                     age: this.age,
                     size: this.size,
-                    venue_id: this.$route.params.venueId
+                    venue_id: this.venueId
             })
                 .then(() => {
                   this.$emit('success', {
