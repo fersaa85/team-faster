@@ -15,6 +15,8 @@ use Illuminate\Routing\Controller;
 use ReCaptcha\ReCaptcha as GoogleRecaptcha;
 use App\Mail\SignUpEmail;
 use Illuminate\Support\Facades\Mail;
+use Throwable;
+use Log;
 
 
 class AuthController extends Controller
