@@ -123,7 +123,6 @@ export default {
             .get('api/workout')
             .then(({ data }) => {
                 this.workout = Object.assign({}, data.data);
-                console.log( this.workout);
             });
 
 

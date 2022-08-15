@@ -126,6 +126,12 @@
       ValidationProvider,
       VueRecaptcha
     },
+    props: {
+        venueId: {
+            type: Number,
+            required: true
+        }
+    },
     data(){
 
       return {
@@ -134,7 +140,7 @@
         name: '',
         lastname: '',
         phone: '',
-        disabled: true,
+        disabled: false,
         gRecaptchaResponse: null,
         sizes: [
             {"id":'S',"label": "Chico"},
@@ -148,7 +154,7 @@
     methods:{
         handleSubmit(){
             axios
-                .post('api/auth/signup/', this.$route.params.slug, {
+                .post('api/auth/signup/'+this.venueId, {
                     "g-recaptcha-response": this.gRecaptchaResponse,
                     email: this.email,
                     name: this.name,

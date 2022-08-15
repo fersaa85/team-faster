@@ -90,12 +90,14 @@
             <b>{{ errorsMsg }}</b>
         </div> -->
         <RegisterForm
+          :venue-id="venueId"
           @success="handleSuccess"
           @errors="handleErrors"
         />
       </div>
       <div class="register-form-tablet is-hidden-tablet">
         <RegisterForm
+          :venue-id="venueId"
           @success="handleSuccess"
           @errors="handleErrors"
         />
@@ -115,6 +117,10 @@ import SuccessModal from '../Components/Success.vue';
       SuccessModal
     },
     props: {
+      venueId: {
+          type: Number,
+          required: true
+      },
       name: {
         type: String,
         required: true

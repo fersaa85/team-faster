@@ -4,6 +4,7 @@
       <div class="column has-text-right column-info is-hidden-tablet">
         <div>
           <RegisterInfo
+            :venue-id="venueId"
             :name="info.name"
             :fecha="info.fecha"
             :lugar="info.lugar"
@@ -45,6 +46,7 @@
       <div class="column has-text-right column-info is-hidden-mobile">
         <div class="info">
           <RegisterInfo
+            :venue-id="venueId"
             :name="info.name"
             :fecha="info.fecha"
             :lugar="info.lugar"
@@ -70,6 +72,7 @@
     },
     data(){
       return {
+        venueId: 0,
         info:{
           name: '',
           fecha: '',
@@ -90,7 +93,7 @@
          axios
              .get('/api/workout/'+this.$route.params.slug)
              .then(({ data: { data } }) => {
-                 console.log(data.coatch);
+                 this.venueId = data.venue.id;
                  this.info = Object.assign({}, {
                      name: data.venue.name,
                      fecha: data.date_start,
