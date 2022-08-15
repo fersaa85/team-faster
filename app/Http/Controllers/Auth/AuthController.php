@@ -15,7 +15,8 @@ use Illuminate\Routing\Controller;
 use ReCaptcha\ReCaptcha as GoogleRecaptcha;
 use App\Mail\SignUpEmail;
 use Illuminate\Support\Facades\Mail;
-
+use Throwable;
+use Log;
 
 class AuthController extends Controller
 {
@@ -48,20 +49,6 @@ class AuthController extends Controller
             ]);
         }
 
-        //$workout = Workout::where('date_start', '>', date('Y-m-d H:i:s'))->first();
-        $workout = Workout::where('venue_id', $venueId)->first();
-
-        $objData = new \stdClass();
-        $objData->name = $user->name;
-        $objData->age = $user->age;
-        $objData->size = $user->size;
-        $objData->size = $user->size;
-        $objData->date = $workout->date_start;
-        $objData->address = $workout->venue->address;
-        $objData->workout = $workout->venue->description;
-        $objData->coatch = $workout->coatch->name;
-        $objData->slug = 123;
-
         if(WorkoutUser::where('workout_id', $workout->id)->where('user_id', $user->id)->first() === null){
             $slug = "{$workout->venue->slug}-" . (WorkoutUser::where('workout_id', $workout->id)->count() + 1);
             WorkoutUser::create([
@@ -70,18 +57,26 @@ class AuthController extends Controller
                 //'slug' => $slug
             ]);
 
-            $objData = new \stdClass();
-            $objData->name = $user->name;
-            $objData->age = $user->age;
-            $objData->size = $user->size;
-            $objData->size = $user->size;
-            $objData->date = $workout->date_start;
-            $objData->address = $workout->venue->address;
-            $objData->workout = $workout->venue->description;
-            $objData->coatch = $workout->coatch->name;
-            $objData->slug = $slug;
+            try {
+                $objData = new \stdClass();
+                $objData->name = $user->name;
+                $objData->age = $user->age;
+                $objData->size = $user->size;
+                $objData->size = $user->size;
+                $objData->date = $workout->date_start;
+                $objData->address = $workout->venue->address;
+                $objData->workout = $workout->venue->description;
+                $objData->coatch = $workout->coatch->name;
+                $objData->slug = $slug;
 
-            Mail::to($user->email)->send(new SignUpEmail($objData));
+
+                Mail::to($user->email)->send(new SignUpEmail($objData));
+
+            } catch (Throwable $exception) {
+
+                Log::error('Mail::to'.$exception);
+
+            }
         }else{
             return response()->json([
                 'message' => 'Ya te encuetras registrado'
