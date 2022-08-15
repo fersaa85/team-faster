@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="3093logoTeamFaster.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
-    <title>{{env('APP_NAME')}}</title>
+    <title>{{env('APP_NAME', 'Team Faster')}}</title>
 </head>
         <body>
         <div id="app">
