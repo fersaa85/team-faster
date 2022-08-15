@@ -39,7 +39,7 @@
                   <div class="column is-9 color-white" style="text-align: left">
                     <div class="text-photo-title venue-active">{{ venue.name }}</div>
                     <div class="contain-register-button">
-                      <b-button rounded class="register-button mt-2"  :data-id="venue.id" @click="handleGoTo(venue.slug)">
+                      <b-button rounded class="register-button mt-2"  :disabled="venue.active == 0"  :data-id="venue.id" @click="handleGoTo(venue.slug)">
                         ¡Regístrate ahora!
                       </b-button>
                     </div>
@@ -100,7 +100,7 @@
                 <div class="column is-9 color-white" style="text-align: left">
                   <div class="text-photo-title venue-active">{{ venue.name }}</div>
                   <div class="contain-register-button">
-                    <b-button rounded class="register-button mt-2"  :data-id="venue.id" @click="handleGoTo(venue.slug)">
+                    <b-button rounded class="register-button mt-2" :disabled="venue.active == 0" :data-id="venue.id" @click="handleGoTo(venue.slug)">
                       ¡Regístrate ahora!
                     </b-button>
                   </div>

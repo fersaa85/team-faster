@@ -140,6 +140,12 @@ __webpack_require__.r(__webpack_exports__);
     ValidationProvider: vee_validate__WEBPACK_IMPORTED_MODULE_1__.ValidationProvider,
     VueRecaptcha: vue_recaptcha__WEBPACK_IMPORTED_MODULE_0__.VueRecaptcha
   },
+  props: {
+    venueId: {
+      type: Number,
+      required: true
+    }
+  },
   data: function data() {
     return {
       age: '',
@@ -147,7 +153,7 @@ __webpack_require__.r(__webpack_exports__);
       name: '',
       lastname: '',
       phone: '',
-      disabled: true,
+      disabled: false,
       gRecaptchaResponse: null,
       sizes: [{
         "id": 'S',
@@ -169,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
     handleSubmit: function handleSubmit() {
       var _this = this;
 
-      axios.post('api/auth/signup/', this.$route.params.venueId, {
+      axios.post('/api/auth/signup/' + this.venueId, {
         "g-recaptcha-response": this.gRecaptchaResponse,
         email: this.email,
         name: this.name,
@@ -177,7 +183,7 @@ __webpack_require__.r(__webpack_exports__);
         phone: this.phone,
         age: this.age,
         size: this.size,
-        venue_id: this.$route.params.venueId
+        venue_id: this.venueId
       }).then(function () {
         _this.$emit('success', {
           email: _this.email,
@@ -336,6 +342,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -345,6 +353,10 @@ __webpack_require__.r(__webpack_exports__);
     SuccessModal: _Components_Success_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   props: {
+    venueId: {
+      type: Number,
+      required: true
+    },
     name: {
       type: String,
       required: true
@@ -721,6 +733,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'registro',
@@ -729,6 +743,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
+      venueId: 0,
       info: {
         name: '',
         fecha: '',
@@ -750,7 +765,7 @@ __webpack_require__.r(__webpack_exports__);
     this.setElement(this.$refs.img2);
     axios.get('/api/workout/' + this.$route.params.slug).then(function (_ref) {
       var data = _ref.data.data;
-      console.log(data.coatch);
+      _this.venueId = data.venue.id;
       _this.info = Object.assign({}, {
         name: data.venue.name,
         fecha: data.date_start,
@@ -1600,7 +1615,7 @@ var render = function () {
             staticClass: "recaptcha-container",
             attrs: {
               id: "recaptcha",
-              sitekey: "6LdhsyggAAAAACsHnT4M66nGsy0xwI5mT8LDEgdL",
+              sitekey: "6LfgkUAhAAAAAMaSoFs6_0VfeAV9aAnQqFcPagQ6",
             },
             on: {
               verify: _vm.verifyMethod,
@@ -1801,6 +1816,7 @@ var render = function () {
             { staticClass: "is-hidden-mobile" },
             [
               _c("RegisterForm", {
+                attrs: { "venue-id": _vm.venueId },
                 on: { success: _vm.handleSuccess, errors: _vm.handleErrors },
               }),
             ],
@@ -1812,6 +1828,7 @@ var render = function () {
             { staticClass: "register-form-tablet is-hidden-tablet" },
             [
               _c("RegisterForm", {
+                attrs: { "venue-id": _vm.venueId },
                 on: { success: _vm.handleSuccess, errors: _vm.handleErrors },
               }),
             ],
@@ -2156,6 +2173,7 @@ var render = function () {
             [
               _c("RegisterInfo", {
                 attrs: {
+                  "venue-id": _vm.venueId,
                   name: _vm.info.name,
                   fecha: _vm.info.fecha,
                   lugar: _vm.info.lugar,
@@ -2249,6 +2267,7 @@ var render = function () {
             [
               _c("RegisterInfo", {
                 attrs: {
+                  "venue-id": _vm.venueId,
                   name: _vm.info.name,
                   fecha: _vm.info.fecha,
                   lugar: _vm.info.lugar,

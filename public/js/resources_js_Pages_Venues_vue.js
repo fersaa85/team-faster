@@ -585,6 +585,7 @@ var render = function () {
                                       staticClass: "register-button mt-2",
                                       attrs: {
                                         rounded: "",
+                                        disabled: true,
                                         "data-id": venue.id,
                                       },
                                       on: {

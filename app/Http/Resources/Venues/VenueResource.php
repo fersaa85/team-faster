@@ -29,6 +29,7 @@ class VenueResource extends JsonResource
             'google_maps' => $this->google_maps,
             'workout' => Workout::where('venue_id', $this->id)->first(),
             'slug' => $this->slug,
+            'active' => $this->active,
         ];
     }
 }

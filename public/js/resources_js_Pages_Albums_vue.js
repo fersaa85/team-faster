@@ -136,7 +136,6 @@ __webpack_require__.r(__webpack_exports__);
     axios.get('api/workout').then(function (_ref) {
       var data = _ref.data;
       _this.workout = Object.assign({}, data.data);
-      console.log(_this.workout);
     });
     axios.get('api/venues').then(function (_ref2) {
       var data = _ref2.data;

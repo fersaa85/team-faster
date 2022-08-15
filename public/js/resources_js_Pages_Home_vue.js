@@ -1627,7 +1627,7 @@ var render = function () {
               _c("b-image", {
                 attrs: {
                   responsive: "",
-                  src: "/assets/img/CarcamoDolores.jpg",
+                  src: "/assets/img/palacio.jpg",
                   ratio: "2by5",
                 },
               }),
