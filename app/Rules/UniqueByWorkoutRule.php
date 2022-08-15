@@ -80,7 +80,7 @@ class UniqueByWorkoutRule implements Rule
         }
 
 
-        if(DB::table($this->table)->where('workout_id', $this->workoutId)->count()  > 60){
+        if(DB::table($this->table)->where('workout_id', $this->workoutId)->count()  > 70){
 
             $this->trans = 'Cupo agotado';
             return false;
