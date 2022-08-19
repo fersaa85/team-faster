@@ -251,6 +251,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
   mounted: function mounted() {
@@ -741,40 +743,6 @@ var render = function () {
         _c(
           "div",
           {
-            ref: "coach8",
-            staticClass:
-              "column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-            staticStyle: { position: "relative", padding: "0" },
-          },
-          [
-            _c(
-              "a",
-              {
-                attrs: {
-                  href: "https://www.instagram.com/raul_victoria_/",
-                  target: "_blank",
-                },
-              },
-              [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/RaulVictoria.jpg",
-                    ratio: "1by1",
-                  },
-                  on: { load: _vm.loadedImg8 },
-                }),
-                _vm._v(" "),
-                _vm._m(8),
-              ],
-              1
-            ),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
             ref: "coach9",
             staticClass:
               "column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd",
@@ -800,7 +768,7 @@ var render = function () {
                   on: { load: _vm.loadedImg9 },
                 }),
                 _vm._v(" "),
-                _vm._m(9),
+                _vm._m(8),
               ],
               1
             ),
@@ -809,7 +777,7 @@ var render = function () {
       ]),
     ]),
     _vm._v(" "),
-    _vm._m(10),
+    _vm._m(9),
   ])
 }
 var staticRenderFns = [
@@ -953,24 +921,6 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("span", { staticClass: "puma-bold photo-info2" }, [
           _vm._v("\n                @pablohutt\n              "),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-photo-title two-lines" }, [
-      _c("div", { staticClass: "photo-info" }, [
-        _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n                RAÚL Victoria\n              "),
-        ]),
-        _vm._v(" "),
-        _c("br"),
-        _vm._v(" "),
-        _c("span", { staticClass: "puma-bold photo-info2" }, [
-          _vm._v("\n                @raul_victoria_\n              "),
         ]),
       ]),
     ])

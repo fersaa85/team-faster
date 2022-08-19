@@ -93,6 +93,7 @@
       <div class="columns">
         <div class="column coaches1 is-hidden-tablet ">
           <div class="columns is-multiline" style="margin: 0;" @click="$router.push('/coaches');">
+            <!--
             <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
@@ -108,6 +109,7 @@
                 </div>
               </div>
             </div>
+            -->
             <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
@@ -140,6 +142,7 @@
         </div>
         <div ref="coachesImgs" class="column coaches1 is-hidden-mobile">
           <div class="columns is-multiline" style="margin: 0;" @click="$router.push('/coaches');">
+            <!--
             <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
@@ -155,6 +158,7 @@
                 </div>
               </div>
             </div>
+            -->
             <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive

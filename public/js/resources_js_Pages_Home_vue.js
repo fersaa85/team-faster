@@ -563,6 +563,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'home',
   data: function data() {
@@ -1151,10 +1155,9 @@ var render = function () {
                 },
                 [
                   _c("b-image", {
-                    staticClass: "first-coach",
                     attrs: {
                       responsive: "",
-                      src: "/assets/img/RAUL-@raul_vicotria_.jpg",
+                      src: "/assets/img/MAFER-@maferarreolaa.jpg",
                       ratio: "1by1",
                     },
                   }),
@@ -1174,32 +1177,12 @@ var render = function () {
                   _c("b-image", {
                     attrs: {
                       responsive: "",
-                      src: "/assets/img/MAFER-@maferarreolaa.jpg",
-                      ratio: "1by1",
-                    },
-                  }),
-                  _vm._v(" "),
-                  _vm._m(3),
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass: "column is-6",
-                  staticStyle: { padding: "0", position: "relative" },
-                },
-                [
-                  _c("b-image", {
-                    attrs: {
-                      responsive: "",
                       src: "/assets/img/FRANCHESCA-@franchescasb.jpg",
                       ratio: "1by1",
                     },
                   }),
                   _vm._v(" "),
-                  _vm._m(4),
+                  _vm._m(3),
                 ],
                 1
               ),
@@ -1234,27 +1217,6 @@ var render = function () {
                   },
                   [
                     _c("b-image", {
-                      staticClass: "first-coach",
-                      attrs: {
-                        responsive: "",
-                        src: "/assets/img/RAUL-@raul_vicotria_.jpg",
-                        ratio: "1by1",
-                      },
-                    }),
-                    _vm._v(" "),
-                    _vm._m(5),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "column is-6",
-                    staticStyle: { padding: "0", position: "relative" },
-                  },
-                  [
-                    _c("b-image", {
                       attrs: {
                         responsive: "",
                         src: "/assets/img/MAFER-@maferarreolaa.jpg",
@@ -1262,7 +1224,7 @@ var render = function () {
                       },
                     }),
                     _vm._v(" "),
-                    _vm._m(6),
+                    _vm._m(4),
                   ],
                   1
                 ),
@@ -1282,7 +1244,7 @@ var render = function () {
                       },
                     }),
                     _vm._v(" "),
-                    _vm._m(7),
+                    _vm._m(5),
                   ],
                   1
                 ),
@@ -1298,6 +1260,46 @@ var render = function () {
                       attrs: {
                         responsive: "",
                         src: "/assets/img/PABLO-@pablohutt.jpg",
+                        ratio: "1by1",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _vm._m(6),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "column is-6",
+                    staticStyle: { padding: "0", position: "relative" },
+                  },
+                  [
+                    _c("b-image", {
+                      attrs: {
+                        responsive: "",
+                        src: "/assets/img/vlopez.jpg",
+                        ratio: "1by1",
+                      },
+                    }),
+                    _vm._v(" "),
+                    _vm._m(7),
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "column is-6",
+                    staticStyle: { padding: "0", position: "relative" },
+                  },
+                  [
+                    _c("b-image", {
+                      attrs: {
+                        responsive: "",
+                        src: "/assets/img/Jorge.png",
                         ratio: "1by1",
                       },
                     }),
@@ -1317,7 +1319,7 @@ var render = function () {
                     _c("b-image", {
                       attrs: {
                         responsive: "",
-                        src: "/assets/img/vlopez.jpg",
+                        src: "/assets/img/David.png",
                         ratio: "1by1",
                       },
                     }),
@@ -1337,7 +1339,7 @@ var render = function () {
                     _c("b-image", {
                       attrs: {
                         responsive: "",
-                        src: "/assets/img/Jorge.png",
+                        src: "/assets/img/Carloss.png",
                         ratio: "1by1",
                       },
                     }),
@@ -1357,7 +1359,7 @@ var render = function () {
                     _c("b-image", {
                       attrs: {
                         responsive: "",
-                        src: "/assets/img/David.png",
+                        src: "/assets/img/HomeroCastillo.png",
                         ratio: "1by1",
                       },
                     }),
@@ -1377,7 +1379,7 @@ var render = function () {
                     _c("b-image", {
                       attrs: {
                         responsive: "",
-                        src: "/assets/img/Carloss.png",
+                        src: "/assets/img/Jorge.png",
                         ratio: "1by1",
                       },
                     }),
@@ -1397,7 +1399,7 @@ var render = function () {
                     _c("b-image", {
                       attrs: {
                         responsive: "",
-                        src: "/assets/img/HomeroCastillo.png",
+                        src: "/assets/img/PABLO-@pablohutt.jpg",
                         ratio: "1by1",
                       },
                     }),
@@ -1417,7 +1419,7 @@ var render = function () {
                     _c("b-image", {
                       attrs: {
                         responsive: "",
-                        src: "/assets/img/Jorge.png",
+                        src: "/assets/img/MAFER-@maferarreolaa.jpg",
                         ratio: "1by1",
                       },
                     }),
@@ -1437,7 +1439,7 @@ var render = function () {
                     _c("b-image", {
                       attrs: {
                         responsive: "",
-                        src: "/assets/img/PABLO-@pablohutt.jpg",
+                        src: "/assets/img/David.png",
                         ratio: "1by1",
                       },
                     }),
@@ -1457,52 +1459,12 @@ var render = function () {
                     _c("b-image", {
                       attrs: {
                         responsive: "",
-                        src: "/assets/img/MAFER-@maferarreolaa.jpg",
-                        ratio: "1by1",
-                      },
-                    }),
-                    _vm._v(" "),
-                    _vm._m(16),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "column is-6",
-                    staticStyle: { padding: "0", position: "relative" },
-                  },
-                  [
-                    _c("b-image", {
-                      attrs: {
-                        responsive: "",
-                        src: "/assets/img/David.png",
-                        ratio: "1by1",
-                      },
-                    }),
-                    _vm._v(" "),
-                    _vm._m(17),
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "column is-6",
-                    staticStyle: { padding: "0", position: "relative" },
-                  },
-                  [
-                    _c("b-image", {
-                      attrs: {
-                        responsive: "",
                         src: "/assets/img/vlopez.jpg",
                         ratio: "1by1",
                       },
                     }),
                     _vm._v(" "),
-                    _vm._m(18),
+                    _vm._m(16),
                   ],
                   1
                 ),
@@ -1533,7 +1495,7 @@ var render = function () {
       ]),
     ]),
     _vm._v(" "),
-    _vm._m(19),
+    _vm._m(17),
     _vm._v(" "),
     _c("div", { staticClass: "section-venues-down gotica-italic" }, [
       _c("div", { staticClass: "section-venues-down-text" }, [
@@ -1656,7 +1618,7 @@ var render = function () {
         ),
       ]),
       _vm._v(" "),
-      _vm._m(20),
+      _vm._m(18),
       _vm._v(" "),
       _c("div", { staticClass: "section-galery-down mobile-section" }, [
         _c("div", { staticClass: "columns" }, [
@@ -1764,7 +1726,7 @@ var render = function () {
       ]),
     ]),
     _vm._v(" "),
-    _vm._m(21),
+    _vm._m(19),
   ])
 }
 var staticRenderFns = [
@@ -1801,18 +1763,6 @@ var staticRenderFns = [
     return _c("div", { staticClass: "text-photo-title venue-active" }, [
       _c("div", { staticClass: "photo-info always-on" }, [
         _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n                  RAÚL Victoria\n                "),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-photo-title venue-active" }, [
-      _c("div", { staticClass: "photo-info always-on" }, [
-        _c("span", { staticClass: "photo-info1" }, [
           _vm._v("\n                  MAFER arreola\n                "),
         ]),
       ]),
@@ -1826,18 +1776,6 @@ var staticRenderFns = [
       _c("div", { staticClass: "photo-info always-on" }, [
         _c("span", { staticClass: "photo-info1" }, [
           _vm._v("\n                  Franchesca sb\n                "),
-        ]),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "text-photo-title venue-active" }, [
-      _c("div", { staticClass: "photo-info" }, [
-        _c("span", { staticClass: "photo-info1" }, [
-          _vm._v("\n                  RAÚL Victoria\n                "),
         ]),
       ]),
     ])

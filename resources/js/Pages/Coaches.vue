@@ -177,6 +177,7 @@
             </div>
           </a>
         </div>
+        <!--
         <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach8" style="position:relative; padding:0">
           <a href="https://www.instagram.com/raul_victoria_/" target="_blank">
             <b-image
@@ -198,6 +199,7 @@
             </div>
           </a>
         </div>
+        -->
         <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach9" style="position:relative; padding:0">
           <a href="https://www.instagram.com/v1cfitness/?igshid=YmMyMTA2M2Y%3D" target="_blank">
             <b-image

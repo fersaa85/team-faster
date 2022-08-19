@@ -469,6 +469,7 @@ var render = function () {
                                       staticClass: "register-button mt-2",
                                       attrs: {
                                         rounded: "",
+                                        disabled: venue.workout.active == 0,
                                         "data-id": venue.id,
                                       },
                                       on: {
@@ -585,7 +586,7 @@ var render = function () {
                                       staticClass: "register-button mt-2",
                                       attrs: {
                                         rounded: "",
-                                        disabled: true,
+                                        disabled: venue.workout.active == 0,
                                         "data-id": venue.id,
                                       },
                                       on: {
