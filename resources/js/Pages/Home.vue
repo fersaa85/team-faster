@@ -93,23 +93,21 @@
       <div class="columns">
         <div class="column coaches1 is-hidden-tablet ">
           <div class="columns is-multiline" style="margin: 0;" @click="$router.push('/coaches');">
-            <!--
             <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
-                src="/assets/img/RAUL-@raul_vicotria_.jpg"
+                src="/assets/img/luis-carlos-origel.png"
                 ratio="1by1"
                 class="first-coach"
               ></b-image>
               <div class="text-photo-title venue-active">
                 <div class="photo-info always-on">
                   <span class="photo-info1">
-                    RAÚL Victoria
+                    Luis Carlos Origel
                   </span>
                 </div>
               </div>
             </div>
-            -->
             <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
@@ -536,29 +534,18 @@
         </div>
       </div>
     </div>
-    <div class="footer-styles">
-      <div class="columns is-vcentered">
-        <div class="column tm-puma footer-1">
-          @2022 puma. Todos los derechos reservados
-        </div>
-        <div class="column tm-puma footer-2">
-
-          <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png"  width="30px"/></a>
-          <a href="https://twitter.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png"  width="30px"/></a>
-          <a href="https://www.instagram.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png"  width="30px"/></a>
-          <a href="https://www.youtube.com/puma" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png"  width="30px"/></a>
-
-        </div>
-      </div>
-    </div>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
+import Footer from '../Components/Footer.vue';
 
 export default {
   name: 'home',
-
+    components: {
+        Footer
+    },
     data(){
       return {
           info:{},

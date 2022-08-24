@@ -60,15 +60,20 @@
         </div>
       </div>
     </div>
+
+    <Footer></Footer>
+
   </div>
 </template>
 
 <script>
-  import RegisterInfo from '../Components/RegisterInfo.vue';
-  export default {
+import Footer from '../Components/Footer.vue';
+import RegisterInfo from '../Components/RegisterInfo.vue';
+export default {
     name: 'registro',
     components: {
-      RegisterInfo
+      RegisterInfo,
+        Footer
     },
     data(){
       return {

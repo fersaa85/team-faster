@@ -36,21 +36,9 @@
         </div>
       </template>
     </div>
-    <div class="footer-styles">
-      <div class="columns is-vcentered" style="margin: 0;">
-        <div class="column tm-puma footer-1" >
-          @2022 puma. Todos los derechos reservados
-        </div>
-        <div class="column tm-puma footer-2">
 
-          <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png"  width="30px"/></a>
-          <a href="https://twitter.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png"  width="30px"/></a>
-          <a href="https://www.instagram.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png"  width="30px"/></a>
-          <a href="https://www.youtube.com/puma" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png"  width="30px"/></a>
+    <Footer></Footer>
 
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -64,45 +52,84 @@ import lgShare from 'lightgallery/plugins/share/lg-share.min.js'
 import lgZoom from 'lightgallery/plugins/zoom/lg-zoom.min.js'
 import 'justifiedGallery/dist/css/justifiedGallery.css'
 import 'justifiedGallery/dist/js/jquery.justifiedGallery.js'
+import Footer from '../Components/Footer.vue';
 
 export default {
   name: 'galeria',
+  components: {
+      Footer
+  },
   data() {
       return {
         items: [
-          "/assets/img/David.png",
-          "/assets/img/FRANCHESCA-@franchescasb.jpg",
-          "/assets/img/Homero.png",
-          "/assets/img/Jorge.png",
-          "/assets/img/MAFER-@maferarreolaa.jpg",
-          "/assets/img/PABLO-@pablohutt.jpg",
-          "/assets/img/RAUL-@raul_vicotria_.jpg",
-          "/assets/img/vlopez.jpg",
-          "/assets/gallery/22AW_RT_Essentials_Mens_Train-All-Day_7697_RGB.jpg",
-          "/assets/gallery/22AW_RT_Essentials_Mens_Train-All-Day_7792_RGB.jpg",
-          "/assets/gallery/22AW_RT_Essentials_Mens_Train-All-Day_7886_RGB.jpg",
-          "/assets/gallery/22AW_RT_Essentials_Train-All-Day-Group_8024_RGB.jpg",
-          "/assets/gallery/22AW_RT_Essentials_Womens_Train-All-Day_7608_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Castlerock-Mens_Q3_Model_1474_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Castlerock-Mens_Q3_Model_1769_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Castlerock-Mens_Q3_Model_1832_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Castlerock-Mens_Q3_Model_1914_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deco-Glam-Wns_Q4_Model_2185_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deco-Glam-Wns_Q4_Model_2579_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deco-Glam-Wns_Q4_Model_2674_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deco-Glam-Wns_Q4_Model_2753_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deep-Olive-Mens_Q4_Model_3227_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_PWRFrame-TR-Deep-Olive-Mens_Q4_Model_3314_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_Q3-Group_0129_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_Q4-Group_3637_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_Q4-Group_3642_RGB.jpg",
-          "/assets/gallery/22AW_RT_Puma-Fit_Q4-Group_3805_RGB.jpg",
-          "/assets/gallery/22SS_RT_Essentials_Mens_PNA-Look-1_088_RGB.jpg",
-          "/assets/gallery/22SS_RT_Essentials_Womens_PNA-Look-1_045_RGB.jpg",
-          "/assets/gallery/22SS_RT_Model_PWRFrame-TR-Black-Cherry-Tomato_Q1_166_RGB.jpg",
-          "/assets/gallery/22SS_RT_Model_PWRFrame-TR-Black-Cherry-Tomato_Q1_1460_RGB.jpg",
-          "/assets/gallery/22SS_RT_Model_PWRFrame-TR-Black-Cherry-Tomato_Q1_1880_RGB.jpg",
-          "/assets/gallery/22SS_RT_Sam-Kwant_Fuse-Puma-Black_Q2_4024_extended.jpg"
+            '/assets/xochipilli/_MG_6388.jpg',
+            '/assets/xochipilli/_MG_6390.jpg',
+            '/assets/xochipilli/_MG_6402.jpg',
+            '/assets/xochipilli/_MG_6409.jpg',
+            '/assets/xochipilli/_MG_6419.jpg',
+            '/assets/xochipilli/_MG_6432.jpg',
+            '/assets/xochipilli/_MG_6436.jpg',
+            '/assets/xochipilli/_MG_6457.jpg',
+            '/assets/xochipilli/_MG_6468.jpg',
+            '/assets/xochipilli/_MG_6477.jpg',
+            '/assets/xochipilli/_MG_6481.jpg',
+            '/assets/xochipilli/_MG_6499.jpg',
+            '/assets/xochipilli/_MG_6510.jpg',
+            '/assets/xochipilli/_MG_6526.jpg',
+            '/assets/xochipilli/_MG_6545.jpg',
+            '/assets/xochipilli/_MG_6550.jpg',
+            '/assets/xochipilli/_MG_6574.jpg',
+            '/assets/xochipilli/_MG_6582.jpg',
+            '/assets/xochipilli/_MG_6591.jpg',
+            '/assets/xochipilli/_MG_6603.jpg',
+            '/assets/xochipilli/_MG_6605.jpg',
+            '/assets/xochipilli/_MG_6628.jpg',
+            '/assets/xochipilli/_MG_6633.jpg',
+            '/assets/xochipilli/_MG_6666.jpg',
+            '/assets/xochipilli/_MG_6701.jpg',
+            '/assets/xochipilli/_MG_6715.jpg',
+            '/assets/xochipilli/_MG_6732.jpg',
+            '/assets/xochipilli/_MG_6765.jpg',
+            '/assets/xochipilli/_MG_6770.jpg',
+            '/assets/xochipilli/_MG_6786.jpg',
+            '/assets/xochipilli/_MG_6795.jpg',
+            '/assets/xochipilli/_MG_6796.jpg',
+            '/assets/xochipilli/_MG_6800.jpg',
+            '/assets/xochipilli/_MG_6801.jpg',
+            '/assets/xochipilli/_MG_6810.jpg',
+            '/assets/xochipilli/_MG_6811.jpg',
+            '/assets/xochipilli/_MG_6836.jpg',
+            '/assets/xochipilli/_MG_6839.jpg',
+            '/assets/xochipilli/_MG_6849.jpg',
+            '/assets/xochipilli/_MG_6854.jpg',
+            '/assets/xochipilli/_MG_6865.jpg',
+            '/assets/xochipilli/_MG_6871.jpg',
+            '/assets/xochipilli/_MG_6873.jpg',
+            '/assets/xochipilli/_MG_6881.jpg',
+            '/assets/xochipilli/_MG_6886.jpg',
+            '/assets/xochipilli/_MG_6892.jpg',
+            '/assets/xochipilli/_MG_6896.jpg',
+            '/assets/xochipilli/_MG_6899.jpg',
+            '/assets/xochipilli/_MG_6900.jpg',
+            '/assets/xochipilli/_MG_6904.jpg',
+            '/assets/xochipilli/_MG_6910.jpg',
+            '/assets/xochipilli/_MG_6916.jpg',
+            '/assets/xochipilli/_MG_6918.jpg',
+            '/assets/xochipilli/_MG_6922.jpg',
+            '/assets/xochipilli/_MG_6927.jpg',
+            '/assets/xochipilli/_MG_6938.jpg',
+            '/assets/xochipilli/_MG_6950.jpg',
+            '/assets/xochipilli/_MG_6953.jpg',
+            '/assets/xochipilli/_MG_6970.jpg',
+            '/assets/xochipilli/_MG_6980.jpg',
+            '/assets/xochipilli/_MG_7006.jpg',
+            '/assets/xochipilli/_MG_7013.jpg',
+            '/assets/xochipilli/_MG_7020.jpg',
+            '/assets/xochipilli/_MG_7031.jpg',
+            '/assets/xochipilli/_MG_7057.jpg',
+            '/assets/xochipilli/_MG_7079.jpg',
+            '/assets/xochipilli/_MG_7089.jpg',
+            '/assets/xochipilli/_MG_7101.jpg',
         ]
       };
     },
