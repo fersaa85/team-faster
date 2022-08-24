@@ -30,7 +30,7 @@
               :data-src="src"
               data-tweet-text="Team Faster"
             >
-              <img class="img-responsive" :src="src" />
+              <img class="img-responsive" :src="src" loading="lazy"/>
             </a>
           </div>
         </div>
