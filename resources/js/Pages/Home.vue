@@ -96,7 +96,7 @@
             <div class="column is-6" style="padding:0; position:relative;">
               <b-image
                 responsive
-                src="/assets/img/luis-carlos-origel.png"
+                src="/assets/img/luis-carlos-origel2.png"
                 ratio="1by1"
                 class="first-coach"
               ></b-image>

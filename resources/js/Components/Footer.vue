@@ -1,15 +1,43 @@
 <template>
     <div class="footer-styles">
+        <div class="tm-puma columns sponsors" style="text-transform: uppercase;">
+            <div class="column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+            </div>
+            <div class="column">
+                Nuestros patrocinadores:
+            </div>
+            <div class="column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd">
+            </div>
+        </div>
+        <!-- <p class="text-center">Nuestros patrocinadores</p> -->
+        <div class="columns is-variable is-8 tm-puma" style="margin-bottom: 60px;">
+            <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
+            </div>
+            <div class="column is-5-mobile" style="margin:auto;">
+                <p class="text-center">
+                    <b-image
+                        responsive
+                        src="/assets/img/G_Logo_Blanco.png"
+                        ratio="1by1"
+                    ></b-image>
+                </p>
+            </div>
+            <div class="column is-5-mobile" style="margin:auto;">
+                <p class="text-center" >
+                    <b-image
+                        responsive
+                        src="/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png"
+                        ratio="1by1"
+                    ></b-image>
+                    <!-- <img src="/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png" width="50px" class="ml-3"> -->
+                </p>
+            </div>
+            <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
+            </div>
+        </div>
         <div class="columns is-vcentered">
             <div class="column tm-puma footer-1">
                 @2022 puma. Todos los derechos reservados
-            </div>
-            <div  class="column tm-puma">
-                <p class="text-center">
-                    <img src="/assets/img/G_Logo_Blanco.png" width="50px" >
-                    <img src="/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png" width="50px" class="ml-3">
-                </p>
-                <p class="text-center">Nuestros patrocinadores</p>
             </div>
             <div class="column tm-puma footer-2">
 
@@ -43,6 +71,16 @@ export default {
         @media screen and (max-width: 768px) {
             margin-top: 20px;
             text-align:center;
+        }
+    }
+    .sponsors{
+        font-size: 24px;
+        margin-bottom: 36px;
+        @media screen and (max-width: 1215px) {
+            font-size: 20px;
+        }
+        @media screen and (max-width: 768px) {
+            margin-bottom: 0px;
         }
     }
 }

@@ -260,8 +260,11 @@ export default {
   }
   .footer-styles{
     padding: 96px 24px 48px;
-    background: linear-gradient( transparent, black 45%, black);
+    background: linear-gradient( transparent, black 32%, black);
     opacity: 1;
+    @media screen and (max-width: 768px) {
+      background: linear-gradient( transparent, black 25%, black);
+    }
     .footer-1{
       text-align: left;
       @media screen and (max-width: 768px) {
