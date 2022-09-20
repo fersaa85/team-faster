@@ -32,6 +32,16 @@
                     <!-- <img src="/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png" width="50px" class="ml-3"> -->
                 </p>
             </div>
+            <div class="column is-5-mobile" style="margin:auto;">
+                <p class="text-center nature" >
+                    <b-image
+                        responsive
+                        src="/assets/img/Logo_NV.png"
+                        ratio="12by10"
+                    ></b-image>
+                    <!-- <img src="/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png" width="50px" class="ml-3"> -->
+                </p>
+            </div>
             <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
             </div>
         </div>
@@ -81,6 +91,11 @@ export default {
         }
         @media screen and (max-width: 768px) {
             margin-bottom: 0px;
+        }
+    }
+    .nature{
+        @media screen and (max-width: 768px) {
+            margin-top: -14px;
         }
     }
 }
