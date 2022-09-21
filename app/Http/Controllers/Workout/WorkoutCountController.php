@@ -11,7 +11,7 @@ class WorkoutCountController extends Controller
 {
     public function __invoke()
     {
-        $workout = Workout::where('date_start', '>', date('Y-m-d H:i:s'))->first();
+        $workout = Workout::where('active', 1)->first();
 
         return response()->json([
             'workout_id' => $workout->id,
