@@ -61,6 +61,9 @@
 <script>
 export default {
    name: 'footer',
+   mounted() {
+    console.log( new Date() );
+   }
 }
 </script>
 <style lang="scss" scoped>
