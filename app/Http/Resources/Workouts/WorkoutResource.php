@@ -5,7 +5,7 @@ namespace App\Http\Resources\Workouts;
 use App\Http\Resources\Coaches\CoacheResource;
 use App\Http\Resources\Venues\VenueResource;
 use Illuminate\Http\Resources\Json\JsonResource;
-use App\Models\Workout;
+use App\Models\WorkoutUser;
 
 
 class WorkoutResource extends JsonResource

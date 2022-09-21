@@ -441,6 +441,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -2292,6 +2293,8 @@ var render = function () {
               ]),
             ]),
           ]),
+          _vm._v(" "),
+          _c("p", [_vm._v("occupation " + _vm._s(_vm.occupation))]),
           _vm._v(" "),
           _vm.occupation < 120
             ? [

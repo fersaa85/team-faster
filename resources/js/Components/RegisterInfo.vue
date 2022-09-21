@@ -82,6 +82,7 @@
 
       </div>
 
+      <p>occupation {{ occupation }}</p>
       <template v-if="occupation < 120">
         <div class="is-hidden-mobile">
           <!-- <div v-if="success" class="alert alert-success" role="alert">
