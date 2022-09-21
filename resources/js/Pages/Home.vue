@@ -767,7 +767,6 @@ export default {
             this.$router.push('/registro');
         },
         loadfondoHome(){
-          console.log('loadfondoHome');
           this.showFondoInicio();
           this.showLogoInicio();
         },
@@ -779,7 +778,6 @@ export default {
           );
         },
         setFondoInicio(){
-          console.log('fondoInicio');
           this.gsap.to(
             this.$refs.fondoInicio,
             {autoAlpha: 0, duration: 0 }
