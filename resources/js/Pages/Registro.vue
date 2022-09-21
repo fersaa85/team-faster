@@ -11,6 +11,7 @@
             :tipo="info.tipo"
             :coach="info.coach"
             :photo="info.photo"
+            :occupation="info.occupation"
             :map="info.map"
             :available="info.available"
           />
@@ -54,6 +55,7 @@
             :coach="info.coach"
             :photo="info.photo"
             :map="info.map"
+            :occupation="info.occupation"
             :couches="info.couches"
             :available="info.available"
           />
@@ -85,6 +87,7 @@ export default {
           tipo: '',
           coach: {},
           photo: '',
+          occupation: 0,
           map: '',
           google_maps: '',
           available:true
@@ -107,6 +110,7 @@ export default {
                      tipo:  data.description,
                      coach: data.coatch,
                      photo: data.venue.image,
+                     occupation: data.occupation,
                      map: data.venue.image_map,
                      google_maps: data.venue.google_maps,
                      available: true

@@ -28,7 +28,7 @@ class WorkoutResource extends JsonResource
             'description' => $this->description,
             'timeline' => $this->timeline,
             'couches' => $this->couches,
-            'occupation' => Workout::where('id', $this->id)->count(),
+            'occupation' => WorkoutUser::where('workout_id', $this->id)->count(),
             'active'=> $this->active,
         ];
     }

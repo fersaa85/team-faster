@@ -59,7 +59,7 @@
                 Experiencia workout
               </p>
               <p class="info-block-text">
-                {{ tipo }}
+                {{ tipo ? tipo : '-' }}
               </p>
             </div>
           </div>
@@ -82,26 +82,44 @@
 
       </div>
 
-      <div class="is-hidden-mobile">
-        <!-- <div v-if="success" class="alert alert-success" role="alert">
-          <b>Gracias por registrarse al evento.¡Te esperamos!</b>
+      <template v-if="occupation < 120">
+        <div class="is-hidden-mobile">
+          <!-- <div v-if="success" class="alert alert-success" role="alert">
+            <b>Gracias por registrarse al evento.¡Te esperamos!</b>
+          </div>
+          <div v-if="errors" class="alert alert-danger" role="alert">
+              <b>{{ errorsMsg }}</b>
+          </div> -->
+          <RegisterForm
+                  :venue-id="venueId"
+                  @success="handleSuccess"
+                  @errors="handleErrors"
+          />
         </div>
-        <div v-if="errors" class="alert alert-danger" role="alert">
-            <b>{{ errorsMsg }}</b>
-        </div> -->
-        <RegisterForm
-          :venue-id="venueId"
-          @success="handleSuccess"
-          @errors="handleErrors"
-        />
-      </div>
-      <div class="register-form-tablet is-hidden-tablet">
-        <RegisterForm
-          :venue-id="venueId"
-          @success="handleSuccess"
-          @errors="handleErrors"
-        />
-      </div>
+        <div class="register-form-tablet is-hidden-tablet">
+          <RegisterForm
+                  :venue-id="venueId"
+                  @success="handleSuccess"
+                  @errors="handleErrors"
+          />
+        </div>
+      </template>
+      <template v-else>
+        <div class="columns">
+          <div class="column is-2" ></div>
+          <div class="column gotica-italic">
+            <div class="info-block">
+             <h3 class="info-block-title" style="font-size: 40px; text-align: center;">¡Gracias por querer ser parte nuestra familia teamfaster!</h3>
+
+              <div class="join-text-r2 puma-bold"style="color: #000000; text-align: center;">
+                El evento se encuentra lleno, espera próximamente nuevos eventos.
+              </div>
+            </div>
+          </div>
+          <div class="column is-2" ></div>
+        </div>
+      </template>
+
     </div>
   </div>
 </template>
@@ -149,7 +167,11 @@ import SuccessModal from '../Components/Success.vue';
       couches: {
           type: Array,
           default: () => []
-      }
+      },
+      occupation: {
+          type: Number,
+          required: true
+      },
     },
     data(){
       return {
