@@ -82,7 +82,6 @@
 
       </div>
 
-      <p>occupation {{ occupation }}</p>
       <template v-if="occupation < 120">
         <div class="is-hidden-mobile">
           <!-- <div v-if="success" class="alert alert-success" role="alert">
@@ -110,7 +109,7 @@
           <div class="column is-2" ></div>
           <div class="column gotica-italic">
             <div class="info-block">
-             <h3 class="info-block-title" style="font-size: 40px; text-align: center;">¡Gracias por querer ser parte nuestra familia teamfaster!</h3>
+             <h3 class="info-block-title" style="font-size: 40px; text-align: center;">¡Gracias por querer ser parte de nuestra familia teamfaster!</h3>
 
               <div class="join-text-r2 puma-bold"style="color: #000000; text-align: center;">
                 El evento se encuentra lleno, espera próximamente nuevos eventos.
