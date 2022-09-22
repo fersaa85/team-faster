@@ -96,6 +96,7 @@
   </div>
 </template>
 
+
 <script>
 import Footer from '../Components/Footer.vue';
 
@@ -111,7 +112,8 @@ export default {
         };
     },
     mounted() {
-      window.scrollTo(0, 0)
+      console.log( "v=1.1.15" );
+      window.scrollTo(0, 0);
         axios
             .get('api/workout')
             .then(({ data }) => {

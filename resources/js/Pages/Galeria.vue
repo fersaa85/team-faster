@@ -42,6 +42,7 @@
   </div>
 </template>
 
+
 <script>
 import $ from "jquery";
 import 'lightgallery/css/lightgallery.css'
@@ -134,7 +135,8 @@ export default {
       };
     },
     mounted() {
-      window.scrollTo(0, 0)
+      console.log( "v=1.1.15" );
+      window.scrollTo(0, 0);
       $("#lightgallery")
         .justifiedGallery({
           captions: false,

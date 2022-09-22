@@ -67,7 +67,6 @@
 
   </div>
 </template>
-
 <script>
 import Footer from '../Components/Footer.vue';
 import RegisterInfo from '../Components/RegisterInfo.vue';
@@ -95,6 +94,7 @@ export default {
       };
     },
     mounted() {
+       console.log( "v=1.1.15" );
        window.scrollTo(0, 0);
        this.setElement(this.$refs.img1);
        this.setElement(this.$refs.img2);

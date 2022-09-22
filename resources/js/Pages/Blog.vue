@@ -36,6 +36,7 @@
 
     </div>
 </template>
+
 <script>
 import Footer from '../Components/Footer.vue';
 
@@ -51,6 +52,7 @@ export default {
         }
     },
     mounted() {
+        console.log( "v=1.1.15" );
         axios
             .get('api/blog')
             .then(({ data }) => {
