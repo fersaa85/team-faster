@@ -37,11 +37,28 @@
                   {{ venue.workout ? handleFormatDay(venue.workout.date_start) : '-' }}
                   {{ venue.workout ? handleFormatMonth(venue.workout.date_start) : '-' }}
                 </div>
-                <div>
-                  <b-button rounded class="register-button" size="is-medium" :disabled="key != 0" :data-id="venue.id" @click="handleGoTo(venue.id)">
-                    Ver Galería
-                  </b-button>
-                </div>
+
+                <template v-if="key==0">
+                  <div>
+                    <b-button rounded class="register-button" size="is-medium"  :data-id="venue.id" @click="handleGoTo(venue.id)">
+                      Ver Galería
+                    </b-button>
+                  </div>
+                </template>
+                <template v-if="key==1">
+                  <div>
+                    <b-button rounded class="register-button" size="is-medium"  :data-id="venue.id" @click="handleGoTo(venue.id)">
+                      Ver Galería
+                    </b-button>
+                  </div>
+                </template>
+                <template v-if="key==2">
+                  <div>
+                    <b-button rounded class="register-button" size="is-medium" :disabled="true" :data-id="venue.id" @click="handleGoTo(venue.id)">
+                      Ver Galería
+                    </b-button>
+                  </div>
+                </template>
               </div>
             </div>
           </div>
