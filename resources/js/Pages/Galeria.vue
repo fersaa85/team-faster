@@ -20,15 +20,31 @@
       </div>
     </div>
     <div class="gallery-container">
-      <template>
+      <template v-if="this.$route.params.venueId == 1">
         <div class="app-container">
           <div id="lightgallery">
             <a
-              v-for="(src, idx) in items"
+              v-for="(src, idx) in xochipilli"
               :key="idx"
               className="gallery-item"
               :data-src="src"
               data-tweet-text="Team Faster"
+            >
+              <img class="img-responsive" :src="src" loading="lazy"/>
+            </a>
+          </div>
+        </div>
+      </template>
+
+      <template v-if="this.$route.params.venueId == 6">
+        <div class="app-container">
+          <div id="lightgallery">
+            <a
+                    v-for="(src, idx) in santafe"
+                    :key="idx"
+                    className="gallery-item"
+                    :data-src="src"
+                    data-tweet-text="Team Faster"
             >
               <img class="img-responsive" :src="src" loading="lazy"/>
             </a>
@@ -62,7 +78,7 @@ export default {
   },
   data() {
       return {
-        items: [
+        xochipilli: [
             '/assets/xochipilli/_MG_6388.jpg',
             '/assets/xochipilli/_MG_6390.jpg',
             '/assets/xochipilli/_MG_6402.jpg',
@@ -131,6 +147,88 @@ export default {
             '/assets/xochipilli/_MG_7079.jpg',
             '/assets/xochipilli/_MG_7089.jpg',
             '/assets/xochipilli/_MG_7101.jpg',
+        ],
+
+        santafe: [
+            '/assets/santafe/DSC09493.JPG',
+            '/assets/santafe/DSC09494.JPG',
+            '/assets/santafe/DSC09495.JPG',
+            '/assets/santafe/DSC09496.JPG',
+            '/assets/santafe/DSC09499.JPG',
+            '/assets/santafe/DSC09503.JPG',
+            '/assets/santafe/DSC09507.JPG',
+            '/assets/santafe/DSC09509.JPG',
+            '/assets/santafe/DSC09515.JPG',
+            '/assets/santafe/DSC09517.JPG',
+            '/assets/santafe/DSC09521.JPG',
+            '/assets/santafe/DSC09529.JPG',
+            '/assets/santafe/DSC09534.JPG',
+            '/assets/santafe/DSC09538.JPG',
+            '/assets/santafe/DSC09547.JPG',
+            '/assets/santafe/DSC09548.JPG',
+            '/assets/santafe/DSC09554.JPG',
+            '/assets/santafe/DSC09556.JPG',
+            '/assets/santafe/DSC09570.JPG',
+            '/assets/santafe/DSC09588.JPG',
+            '/assets/santafe/DSC09596.JPG',
+            '/assets/santafe/DSC09605.JPG',
+            '/assets/santafe/DSC09613.JPG',
+            '/assets/santafe/DSC09645.JPG',
+            '/assets/santafe/DSC09646.JPG',
+            '/assets/santafe/DSC09647.JPG',
+            '/assets/santafe/DSC09651.JPG',
+            '/assets/santafe/DSC09652.JPG',
+            '/assets/santafe/DSC09653.JPG',
+            '/assets/santafe/DSC09655.JPG',
+            '/assets/santafe/DSC09661.JPG',
+            '/assets/santafe/DSC09666.JPG',
+            '/assets/santafe/DSC09674.JPG',
+            '/assets/santafe/DSC09724.JPG',
+            '/assets/santafe/DSC09731.JPG',
+            '/assets/santafe/DSC09732.JPG',
+            '/assets/santafe/DSC09755.JPG',
+            '/assets/santafe/DSC09760.JPG',
+            '/assets/santafe/DSC09768.JPG',
+            '/assets/santafe/DSC09797.JPG',
+            '/assets/santafe/DSC09808.JPG',
+            '/assets/santafe/DSC09811.JPG',
+            '/assets/santafe/DSC09816.JPG',
+            '/assets/santafe/IMG_8680.JPG',
+            '/assets/santafe/IMG_8687.JPG',
+            '/assets/santafe/IMG_8699.JPG',
+            '/assets/santafe/IMG_8703.JPG',
+            '/assets/santafe/IMG_8716.JPG',
+            '/assets/santafe/IMG_8718.JPG',
+            '/assets/santafe/IMG_8720.JPG',
+            '/assets/santafe/IMG_8722.JPG',
+            '/assets/santafe/IMG_8726.JPG',
+            '/assets/santafe/IMG_8732.JPG',
+            '/assets/santafe/IMG_8734.JPG',
+            '/assets/santafe/IMG_8738.JPG',
+            '/assets/santafe/IMG_8748.JPG',
+            '/assets/santafe/IMG_8749.JPG',
+            '/assets/santafe/IMG_8752.JPG',
+            '/assets/santafe/IMG_8754.JPG',
+            '/assets/santafe/IMG_8760.JPG',
+            '/assets/santafe/IMG_8762.JPG',
+            '/assets/santafe/IMG_8780.JPG',
+            '/assets/santafe/IMG_8818.JPG',
+            '/assets/santafe/IMG_8898.JPG',
+            '/assets/santafe/IMG_8899.JPG',
+            '/assets/santafe/IMG_8780.JPG',
+            '/assets/santafe/IMG_8908.JPG',
+            '/assets/santafe/IMG_8911.JPG',
+            '/assets/santafe/IMG_8913.JPG',
+            '/assets/santafe/IMG_8934.JPG',
+            '/assets/santafe/IMG_8936.JPG',
+            '/assets/santafe/IMG_8938.JPG',
+            '/assets/santafe/IMG_8940.JPG',
+            '/assets/santafe/IMG_8945.JPG',
+            '/assets/santafe/IMG_8951.JPG',
+            '/assets/santafe/IMG_8955.JPG',
+            '/assets/santafe/IMG_8958.JPG',
+            '/assets/santafe/IMG_8967.JPG',
+            '/assets/santafe/IMG_8971.JPG',
         ]
       };
     },
