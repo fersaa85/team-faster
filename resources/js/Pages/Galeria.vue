@@ -134,7 +134,7 @@ export default {
         ]
       };
     },
-    
+
     mounted() {
       console.log( "v=1.1.15" );
       window.scrollTo(0, 0);
