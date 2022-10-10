@@ -45,7 +45,6 @@
                     <b-image
                             responsive
                             src="/assets/img/ISDIN-Love-Your-Skin_Blanco.png"
-                            ratio="12by10"
                     ></b-image>
                 </p>
             </div>
