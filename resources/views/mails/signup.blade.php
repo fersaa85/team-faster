@@ -244,7 +244,7 @@
                                         <img src="https://teamfaster.mx/assets/img/Logo_NV.png" width="100px">
                                     </td>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/ISDIN-Love-Your-Skin.png" width="100px">
+                                        <img src="https://teamfaster.mx/assets/img/ISDIN-Love-Your-Skin_Blanco.png" width="100px">
                                     </td>
                                 </tr>
                             </table>

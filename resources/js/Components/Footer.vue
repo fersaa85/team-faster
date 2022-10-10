@@ -44,7 +44,7 @@
                 <p class="text-center nature" >
                     <b-image
                             responsive
-                            src="/assets/img/ISDIN-Love-Your-Skin.png"
+                            src="/assets/img/ISDIN-Love-Your-Skin_Blanco.png"
                             ratio="12by10"
                     ></b-image>
                 </p>
@@ -71,7 +71,7 @@
 export default {
    name: 'footer',
    mounted() {
-       console.log( "v=1.1.18" );
+       console.log( "v=1.1.19" );
    }
 }
 </script>
