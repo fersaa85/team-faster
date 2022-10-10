@@ -65,16 +65,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log(new Date());
+    console.log("v=1.1.20");
   }
 });
 
@@ -322,6 +316,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
@@ -329,6 +324,7 @@ __webpack_require__.r(__webpack_exports__);
     Footer: _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   mounted: function mounted() {
+    console.log("v=1.1.20");
     window.scrollTo(0, 0);
     this.setElement(this.$refs.coach1);
     this.setElement(this.$refs.coach2);
@@ -674,215 +670,195 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "footer-styles" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "columns is-variable is-8 tm-puma",
-        staticStyle: { "margin-bottom": "60px" },
-      },
-      [
-        _c("div", {
-          staticClass:
-            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
-        }),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "column is-5-mobile",
-            staticStyle: { margin: "auto" },
-          },
-          [
-            _c(
-              "p",
-              { staticClass: "text-center" },
-              [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/G_Logo_Blanco.png",
-                    ratio: "1by1",
-                  },
-                }),
-              ],
-              1
-            ),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "column is-5-mobile",
-            staticStyle: { margin: "auto" },
-          },
-          [
-            _c(
-              "p",
-              { staticClass: "text-center" },
-              [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
-                    ratio: "1by1",
-                  },
-                }),
-              ],
-              1
-            ),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "column is-5-mobile",
-            staticStyle: { margin: "auto" },
-          },
-          [
-            _c(
-              "p",
-              { staticClass: "text-center nature" },
-              [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/Logo_NV.png",
-                    ratio: "12by10",
-                  },
-                }),
-              ],
-              1
-            ),
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", {
-          staticClass:
-            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
-        }),
-      ]
-    ),
-    _vm._v(" "),
-    _vm._m(1),
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "tm-puma columns sponsors",
-        staticStyle: { "text-transform": "uppercase" },
-      },
-      [
-        _c("div", {
-          staticClass:
-            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _vm._v("\n            Nuestros patrocinadores:\n        "),
+    return _c("div", { staticClass: "footer-styles" }, [
+      _c(
+        "div",
+        {
+          staticClass: "tm-puma columns sponsors",
+          staticStyle: { "text-transform": "uppercase" },
+        },
+        [
+          _c("div", {
+            staticClass:
+              "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+          }),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _vm._v("\n            Nuestros patrocinadores:\n        "),
+          ]),
+          _vm._v(" "),
+          _c("div", {
+            staticClass:
+              "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+          }),
+        ]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "columns is-variable is-8 tm-puma",
+          staticStyle: { "margin-bottom": "60px" },
+        },
+        [
+          _c("div", {
+            staticClass:
+              "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "column is-5-mobile",
+              staticStyle: { margin: "auto" },
+            },
+            [
+              _c("p", { staticClass: "text-center" }, [
+                _c("img", { attrs: { src: "/assets/img/G_Logo_Blanco.png" } }),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "column is-5-mobile",
+              staticStyle: { margin: "auto" },
+            },
+            [
+              _c("p", { staticClass: "text-center" }, [
+                _c("img", {
+                  attrs: {
+                    src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
+                  },
+                }),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "column is-5-mobile",
+              staticStyle: { margin: "auto" },
+            },
+            [
+              _c("p", { staticClass: "text-center nature" }, [
+                _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "column is-5-mobile",
+              staticStyle: { margin: "auto" },
+            },
+            [
+              _c("p", { staticClass: "text-center nature" }, [
+                _c("img", {
+                  attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
+                }),
+              ]),
+            ]
+          ),
+          _vm._v(" "),
+          _c("div", {
+            staticClass:
+              "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+          }),
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "columns is-vcentered" }, [
+        _c("div", { staticClass: "column tm-puma footer-1" }, [
+          _vm._v(
+            "\n            @2022 puma. Todos los derechos reservados\n        "
+          ),
         ]),
         _vm._v(" "),
-        _c("div", {
-          staticClass:
-            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-        }),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "columns is-vcentered" }, [
-      _c("div", { staticClass: "column tm-puma footer-1" }, [
-        _vm._v(
-          "\n            @2022 puma. Todos los derechos reservados\n        "
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "column tm-puma footer-2" }, [
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: {
-              href: "https://www.facebook.com/PUMAMexico",
-              target: "_blank",
+        _c("div", { staticClass: "column tm-puma footer-2" }, [
+          _c(
+            "a",
+            {
+              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+              attrs: {
+                href: "https://www.facebook.com/PUMAMexico",
+                target: "_blank",
+              },
             },
-          },
-          [
-            _c("img", {
+            [
+              _c("img", {
+                attrs: {
+                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
+                  width: "30px",
+                },
+              }),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
               attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
-                width: "30px",
+                href: "https://twitter.com/pumamexico/",
+                target: "_blank",
               },
-            }),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: {
-              href: "https://twitter.com/pumamexico/",
-              target: "_blank",
             },
-          },
-          [
-            _c("img", {
+            [
+              _c("img", {
+                attrs: {
+                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
+                  width: "30px",
+                },
+              }),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
               attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
-                width: "30px",
+                href: "https://www.instagram.com/pumamexico/",
+                target: "_blank",
               },
-            }),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: {
-              href: "https://www.instagram.com/pumamexico/",
-              target: "_blank",
             },
-          },
-          [
-            _c("img", {
-              attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
-                width: "30px",
-              },
-            }),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: { href: "https://www.youtube.com/puma", target: "_blank" },
-          },
-          [
-            _c("img", {
-              attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
-                width: "30px",
-              },
-            }),
-          ]
-        ),
+            [
+              _c("img", {
+                attrs: {
+                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
+                  width: "30px",
+                },
+              }),
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+              attrs: { href: "https://www.youtube.com/puma", target: "_blank" },
+            },
+            [
+              _c("img", {
+                attrs: {
+                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
+                  width: "30px",
+                },
+              }),
+            ]
+          ),
+        ]),
       ]),
     ])
   },
