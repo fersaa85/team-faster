@@ -40,6 +40,15 @@
                     ></b-image>
                 </p>
             </div>
+            <div class="column is-5-mobile" style="margin:auto;">
+                <p class="text-center nature" >
+                    <b-image
+                            responsive
+                            src="/assets/img/ISDIN-Love-Your-Skin.png"
+                            ratio="12by10"
+                    ></b-image>
+                </p>
+            </div>
             <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
             </div>
         </div>
@@ -62,7 +71,7 @@
 export default {
    name: 'footer',
    mounted() {
-       console.log( "v=1.1.17" );
+       console.log( "v=1.1.18" );
    }
 }
 </script>
