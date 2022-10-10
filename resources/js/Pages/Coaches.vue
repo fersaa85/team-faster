@@ -223,7 +223,31 @@
             </div>
           </a>
         </div>
+
+        <div class="column is-clickable img-container is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd" ref="coach9" style="position:relative; padding:0">
+          <a href="https://www.instagram.com/gracosantaella/" target="_blank">
+            <b-image
+                    responsive
+                    src="/assets/img/graco-santaella.png"
+                    ratio="1by1"
+                    class="img-blackwhite"
+                    @load="loadedImg9"
+            ></b-image>
+            <div class="text-photo-title two-lines">
+              <div class="photo-info">
+                <span class="photo-info1">
+                  Graco Santaella
+                </span>
+                <br>
+                <span class="puma-bold photo-info2">
+                  @gracosantaella
+                </span>
+              </div>
+            </div>
+          </a>
+        </div>
       </div>
+
     </div>
     <Footer></Footer>
   </div>
