@@ -234,7 +234,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=1.1.19" );
+      console.log( "v=1.1.2" );
       window.scrollTo(0, 0);
       $("#lightgallery")
         .justifiedGallery({
