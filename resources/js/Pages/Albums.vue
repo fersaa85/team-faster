@@ -54,7 +54,7 @@
                 </template>
                 <template v-if="key==2">
                   <div>
-                    <b-button rounded class="register-button" size="is-medium" :disabled="true" :data-id="venue.id" @click="handleGoTo(venue.id)">
+                    <b-button rounded class="register-button" size="is-medium"  :data-id="venue.id" @click="handleGoTo(venue.id)">
                       Ver Galería
                     </b-button>
                   </div>
@@ -129,7 +129,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=1.1.22" );
+      console.log( "v=1.1.23" );
       window.scrollTo(0, 0);
         axios
             .get('api/workout')

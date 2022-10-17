@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.20");
+    console.log("v=1.1.22");
   }
 });
 
@@ -640,7 +640,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=1.1.20");
+    console.log("v=1.1.22");
     window.scrollTo(0, 0);
     this.setLogoInicio();
     this.setFondoInicio();

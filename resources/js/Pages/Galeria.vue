@@ -51,6 +51,22 @@
           </div>
         </div>
       </template>
+
+      <template v-if="this.$route.params.venueId == 4">
+        <div class="app-container">
+          <div id="lightgallery">
+            <a
+                    v-for="(src, idx) in jardinbotanico"
+                    :key="idx"
+                    className="gallery-item"
+                    :data-src="src"
+                    data-tweet-text="Team Faster"
+            >
+              <img class="img-responsive" :src="src" loading="lazy"/>
+            </a>
+          </div>
+        </div>
+      </template>
     </div>
 
     <Footer></Footer>
@@ -229,12 +245,96 @@ export default {
             '/assets/santafe/IMG_8958.JPG',
             '/assets/santafe/IMG_8967.JPG',
             '/assets/santafe/IMG_8971.JPG',
-        ]
+        ],
+
+        jardinbotanico: [
+              '/assets/jardinbotanico/IMG_0352.JPG',
+              '/assets/jardinbotanico/IMG_0420.JPG',
+              '/assets/jardinbotanico/IMG_0391.JPG',
+              '/assets/jardinbotanico/IMG_0740.JPG',
+              '/assets/jardinbotanico/IMG_0556.JPG',
+              '/assets/jardinbotanico/IMG_0387.JPG',
+              '/assets/jardinbotanico/IMG_0436.JPG',
+              '/assets/jardinbotanico/IMG_0543.JPG',
+              '/assets/jardinbotanico/IMG_0584.JPG',
+              '/assets/jardinbotanico/IMG_0618.JPG',
+              '/assets/jardinbotanico/IMG_0397.JPG',
+              '/assets/jardinbotanico/IMG_0744.JPG',
+              '/assets/jardinbotanico/IMG_0544.JPG',
+              '/assets/jardinbotanico/IMG_0578.JPG',
+              '/assets/jardinbotanico/IMG_0293.JPG',
+              '/assets/jardinbotanico/IMG_0442.JPG',
+              '/assets/jardinbotanico/IMG_0640.JPG',
+              '/assets/jardinbotanico/IMG_0319.JPG',
+              '/assets/jardinbotanico/IMG_0523.JPG',
+              '/assets/jardinbotanico/IMG_0721.JPG',
+              '/assets/jardinbotanico/IMG_0709.JPG',
+              '/assets/jardinbotanico/IMG_0723.JPG',
+              '/assets/jardinbotanico/IMG_0469.JPG',
+              '/assets/jardinbotanico/IMG_0333.JPG',
+              '/assets/jardinbotanico/IMG_0680.JPG',
+              '/assets/jardinbotanico/IMG_0469.JPG',
+              '/assets/jardinbotanico/IMG_0326.JPG',
+              '/assets/jardinbotanico/IMG_0440.JPG',
+              '/assets/jardinbotanico/IMG_0454.JPG',
+              '/assets/jardinbotanico/IMG_0468.JPG',
+              '/assets/jardinbotanico/IMG_0497.JPG',
+              '/assets/jardinbotanico/IMG_0530.JPG',
+              '/assets/jardinbotanico/IMG_0336.JPG',
+              '/assets/jardinbotanico/IMG_0685.JPG',
+              '/assets/jardinbotanico/IMG_0323.JPG',
+              '/assets/jardinbotanico/IMG_0531.JPG',
+              '/assets/jardinbotanico/IMG_0525.JPG',
+              '/assets/jardinbotanico/IMG_0733.JPG',
+              '/assets/jardinbotanico/IMG_0731.JPG',
+              '/assets/jardinbotanico/IMG_0296.JPG',
+              '/assets/jardinbotanico/IMG_0484.JPG',
+              '/assets/jardinbotanico/IMG_0490.JPG',
+              '/assets/jardinbotanico/IMG_0321.JPG',
+              '/assets/jardinbotanico/IMG_0678.JPG',
+              '/assets/jardinbotanico/IMG_0693.JPG',
+              '/assets/jardinbotanico/IMG_0308.JPG',
+              '/assets/jardinbotanico/IMG_0491.JPG',
+              '/assets/jardinbotanico/IMG_0485.JPG',
+              '/assets/jardinbotanico/IMG_0503.JPG',
+              '/assets/jardinbotanico/IMG_0674.JPG',
+              '/assets/jardinbotanico/IMG_0700.JPG',
+              '/assets/jardinbotanico/IMG_0716.JPG',
+              '/assets/jardinbotanico/IMG_0312.JPG',
+              '/assets/jardinbotanico/IMG_0689.JPG',
+              '/assets/jardinbotanico/IMG_0529.JPG',
+              '/assets/jardinbotanico/IMG_0717.JPG',
+              '/assets/jardinbotanico/IMG_0303.JPG',
+              '/assets/jardinbotanico/IMG_0289.JPG',
+              '/assets/jardinbotanico/IMG_0712.JPG',
+              '/assets/jardinbotanico/IMG_0704.JPG',
+              '/assets/jardinbotanico/IMG_0506.JPG',
+              '/assets/jardinbotanico/IMG_0466.JPG',
+              '/assets/jardinbotanico/IMG_0328.JPG',
+              '/assets/jardinbotanico/IMG_0315.JPG',
+              '/assets/jardinbotanico/IMG_0513.JPG',
+              '/assets/jardinbotanico/IMG_0366.JPG',
+              '/assets/jardinbotanico/IMG_0616.JPG',
+              '/assets/jardinbotanico/IMG_0417.JPG',
+              '/assets/jardinbotanico/IMG_0416.JPG',
+              '/assets/jardinbotanico/IMG_0360.JPG',
+              '/assets/jardinbotanico/IMG_0610.JPG',
+              '/assets/jardinbotanico/IMG_0638.JPG',
+              '/assets/jardinbotanico/IMG_0605.JPG',
+              '/assets/jardinbotanico/IMG_0407.JPG',
+              '/assets/jardinbotanico/IMG_0573.JPG',
+              '/assets/jardinbotanico/IMG_0363.JPG',
+              '/assets/jardinbotanico/IMG_0411.JPG',
+              '/assets/jardinbotanico/IMG_0376.JPG',
+              '/assets/jardinbotanico/IMG_0404.JPG',
+              '/assets/jardinbotanico/IMG_0389.JPG',
+
+      ]
       };
     },
 
     mounted() {
-      console.log( "v=1.1.2" );
+      console.log( "v=1.1.23" );
       window.scrollTo(0, 0);
       $("#lightgallery")
         .justifiedGallery({
