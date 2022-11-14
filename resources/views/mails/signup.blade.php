@@ -132,7 +132,7 @@
                             <table role="presentation" style="width:100%; border:none;border-spacing:0; ">
                                 <tr>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/mailing/PUMA_TEAM_FASTER-700x1000.jpg" />
+                                        <img src="https://teamfaster.mx/assets/img/mailing/team-faster-email.jpg" />
                                     </td>
                                 </tr>
                             </table>
@@ -159,8 +159,8 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h2 style="color:#ffffff;font-size: 25px;margin: 0px;line-height: initial; margin-top: 30px;" class="gotica-italic">
-                                            Reserva <span style="font-size: 35px;">{{ $slug ?? "XXXXXXXX-00" }}</span>
+                                        <h2 style="text-align: center; color:#ffffff;font-size: 25px;margin: 0px;line-height: initial; margin-top: 30px;" class="gotica-italic">
+                                            Reserva <span style="font-size: 35px;">Artz Pedregal</span>
                                         </h2>
                                     </td>
                                 </tr>
@@ -203,10 +203,11 @@
                                 <tr>
                                     <td>
                                         <p style="color:#ffffff; margin: 0px;line-height: initial; text-align: center;" class="gotica-italic">
-                                            En esta ocasión tenemos preparado para ti una prueba con el Gatorade Sweat Patch
-                                            la nueva tecnología de la marca que te ayuda
-                                            a conocer tus pédidads de líquido
-                                            y condentración de sodio
+                                            En esta ocasión tenemos preparado para ti una <br />
+                                            prueba con el Gatorade Sweat Patch <br />
+                                            la nueva tecnología de la marca que te ayuda<br />
+                                            a conocer tus pédidads de líquido <br />
+                                            y condentración de sodio<br />
                                             VIVE LA CIENCIA GATORADE
                                         </p>
                                     </td>
@@ -216,7 +217,7 @@
                     </tr>
                     <tr>
                         <td colspan="2" style="padding:30px; text-align: justify; color: #686a72;background: #000000; ">
-                            <b style="color: #ffffff;">Team Faster</b> eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar… somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos
+                            <b style="color: #ffffff;">Team Faster</b> eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos.
                         </td>
                     </tr>
                     <tr>
