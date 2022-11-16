@@ -48,6 +48,7 @@ class UserRecordsController extends Controller
                 $file = fopen('php://output', 'w');
                 fputcsv($file, $columns);
 
+                dd($users);
                 foreach ($users as $user) {
 
                     fputcsv($file, [
