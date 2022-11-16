@@ -46,19 +46,11 @@ class UserRecordsController extends Controller
             );
 
             $callback = function () use ($users, $columns) {
-                //dd($users);
                 $file = fopen('php://output', 'w');
                 fputcsv($file, $columns);
 
-
                 foreach ($users as $user) {
 
-                    var_dump($user->name);
-                    var_dump($user->last_name);
-                    var_dump($user->email);
-                    var_dump($user->phone);
-                    var_dump($user->age);
-                    var_dump($user->size);
                     fputcsv($file, [
                         isset($user->name) ? $user->name : '-' ,
                         isset($user->last_name) ? $user->last_name : '-' ,
