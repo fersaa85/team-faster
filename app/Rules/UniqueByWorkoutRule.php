@@ -3,6 +3,7 @@
 namespace App\Rules;
 
 use App\Models\User;
+use App\Models\WorkoutLimit;
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Support\Facades\DB;
 
