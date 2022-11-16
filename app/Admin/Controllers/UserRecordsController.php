@@ -22,12 +22,12 @@ class UserRecordsController extends Controller
     {
         $venue_id = $request->get('venue_id');
         $workout = Workout::where('venue_id', $venue_id)->first();
-        dd($workout);
+
         if($workout) {
 
             $users = User::whereIn('id', WorkoutUser::where('workout_id', $workout->id)->pluck('user_id'))->get();
-
-            $fileName = "reporte-venue-$venue_id.csv";
+            dd($users);
+            $fileName = "reporte-venue-{$venue_id}.csv";
             $headers = array(
                 "Content-type" => "text/csv",
                 "Content-Disposition" => "attachment; filename={$fileName}",
