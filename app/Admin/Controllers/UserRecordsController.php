@@ -22,6 +22,7 @@ class UserRecordsController extends Controller
     {
         $venue_id = $request->get('venue_id');
         $workout = Workout::where('venue_id', $venue_id)->first();
+        dd($workout);
         if($workout) {
 
             $users = User::whereIn('id', WorkoutUser::where('workout_id', $workout->id)->pluck('user_id'))->get();
@@ -48,7 +49,7 @@ class UserRecordsController extends Controller
                 $file = fopen('php://output', 'w');
                 fputcsv($file, $columns);
 
-                dd($users);
+
                 foreach ($users as $user) {
 
                     fputcsv($file, [
