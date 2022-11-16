@@ -26,7 +26,7 @@ class UserRecordsController extends Controller
         if($workout) {
 
             $users = User::whereIn('id', WorkoutUser::where('workout_id', $workout->id)->pluck('user_id'))->get();
-            dd($users);
+
             $fileName = "reporte-venue-{$venue_id}.csv";
             $headers = array(
                 "Content-type" => "text/csv",
@@ -52,6 +52,7 @@ class UserRecordsController extends Controller
 
                 foreach ($users as $user) {
 
+                    dd($user);
                     fputcsv($file, [
                         isset($user->name) ? $user->name : '-' ,
                         isset($user->last_name) ? $user->last_name : '-' ,
