@@ -51,13 +51,12 @@ class UserRecordsController extends Controller
                 foreach ($users as $user) {
 
                     fputcsv($file, [
-                        $user->name,
-                        $user->last_name,
-                        $user->email,
-                        $user->phone,
-                        $user->age,
-                        $user->size,
-
+                        isset($user->name) ? $user->name : '-' ,
+                        isset($user->last_name) ? $user->last_name : '-' ,
+                        isset($user->email) ? $user->email : '' ,
+                        isset($user->phone) ? $user->phone : '' ,
+                        isset($user->age) ? $user->age : '' ,
+                        isset($user->size) ? $user->size : '' ,
                     ]);
 
                     fclose($file);
