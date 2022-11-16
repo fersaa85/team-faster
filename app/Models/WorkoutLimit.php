@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 
 
-class Venue extends Model
+class WorkoutLimit extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -15,15 +15,6 @@ class Venue extends Model
      */
     protected $fillable = [
         'id',
-        'name',
+        'limit',
     ];
-
-    /**
-     * Get the user that owns the phone.
-     */
-    public function workout()
-    {
-        return $this->belongsTo(Workout::class, 'id', 'venue_id');
-    }
-
 }
