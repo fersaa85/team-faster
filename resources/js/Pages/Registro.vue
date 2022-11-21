@@ -94,7 +94,7 @@ export default {
       };
     },
     mounted() {
-       console.log( "v=1.1.24" );
+       console.log( "v=1.1.25" );
        window.scrollTo(0, 0);
        this.setElement(this.$refs.img1);
        this.setElement(this.$refs.img2);
