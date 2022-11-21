@@ -53,10 +53,26 @@
       </template>
 
       <template v-if="this.$route.params.venueId == 4">
+      <div class="app-container">
+        <div id="lightgallery">
+          <a
+                  v-for="(src, idx) in jardinbotanico"
+                  :key="idx"
+                  className="gallery-item"
+                  :data-src="src"
+                  data-tweet-text="Team Faster"
+          >
+            <img class="img-responsive" :src="src" loading="lazy"/>
+          </a>
+        </div>
+      </div>
+    </template>
+
+      <template v-if="this.$route.params.venueId == 3">
         <div class="app-container">
           <div id="lightgallery">
             <a
-                    v-for="(src, idx) in jardinbotanico"
+                    v-for="(src, idx) in artzpedregal"
                     :key="idx"
                     className="gallery-item"
                     :data-src="src"
@@ -329,12 +345,77 @@ export default {
               '/assets/jardinbotanico/IMG_0404.JPG',
               '/assets/jardinbotanico/IMG_0389.JPG',
 
-      ]
+      ],
+
+          artzpedregal: [
+              '/assets/artzpedregal/DSC00846.JPG',
+              '/assets/artzpedregal/DSC00848.JPG',
+              '/assets/artzpedregal/DSC00849.JPG',
+              '/assets/artzpedregal/DSC00853.JPG',
+              '/assets/artzpedregal/DSC00864.JPG',
+              '/assets/artzpedregal/DSC00866.JPG',
+              '/assets/artzpedregal/DSC00873.JPG',
+              '/assets/artzpedregal/DSC00876.JPG',
+              '/assets/artzpedregal/DSC00881.JPG',
+              '/assets/artzpedregal/DSC00883.JPG',
+              '/assets/artzpedregal/DSC00885.JPG',
+              '/assets/artzpedregal/DSC00898.JPG',
+              '/assets/artzpedregal/DSC00902.JPG',
+              '/assets/artzpedregal/DSC00906.JPG',
+              '/assets/artzpedregal/DSC00911.JPG',
+              '/assets/artzpedregal/DSC00912.JPG',
+              '/assets/artzpedregal/DSC00915.JPG',
+              '/assets/artzpedregal/DSC00923.JPG',
+              '/assets/artzpedregal/DSC00931.JPG',
+              '/assets/artzpedregal/DSC00935.JPG',
+              '/assets/artzpedregal/DSC00942.JPG',
+              '/assets/artzpedregal/DSC00955.JPG',
+              '/assets/artzpedregal/DSC00957.JPG',
+              '/assets/artzpedregal/DSC00966.JPG',
+              '/assets/artzpedregal/DSC00969.JPG',
+              '/assets/artzpedregal/DSC00973.JPG',
+              '/assets/artzpedregal/DSC00974.JPG',
+              '/assets/artzpedregal/DSC00979.JPG',
+              '/assets/artzpedregal/DSC00980.JPG',
+              '/assets/artzpedregal/DSC00998.JPG',
+              '/assets/artzpedregal/DSC00999.JPG',
+              '/assets/artzpedregal/DSC01003.JPG',
+              '/assets/artzpedregal/DSC01008.JPG',
+              '/assets/artzpedregal/DSC01010.JPG',
+              '/assets/artzpedregal/DSC01022.JPG',
+              '/assets/artzpedregal/DSC01027.JPG',
+              '/assets/artzpedregal/DSC01030.JPG',
+              '/assets/artzpedregal/DSC01036.JPG',
+              '/assets/artzpedregal/DSC01037.JPG',
+              '/assets/artzpedregal/DSC01039.JPG',
+              '/assets/artzpedregal/DSC01047.JPG',
+              '/assets/artzpedregal/DSC01056.JPG',
+              '/assets/artzpedregal/DSC01066.JPG',
+              '/assets/artzpedregal/DSC01077.JPG',
+              '/assets/artzpedregal/DSC01082.JPG',
+              '/assets/artzpedregal/DSC01086.JPG',
+              '/assets/artzpedregal/DSC01099.JPG',
+              '/assets/artzpedregal/DSC01103.JPG',
+              '/assets/artzpedregal/DSC01123.JPG',
+              '/assets/artzpedregal/DSC01128.JPG',
+              '/assets/artzpedregal/DSC01168.JPG',
+              '/assets/artzpedregal/DSC01183.JPG',
+              '/assets/artzpedregal/DSC01185.JPG',
+              '/assets/artzpedregal/DSC01188.JPG',
+              '/assets/artzpedregal/DSC01191.JPG',
+              '/assets/artzpedregal/DSC01196.JPG',
+              '/assets/artzpedregal/DSC01199.JPG',
+              '/assets/artzpedregal/DSC01207.JPG',
+              '/assets/artzpedregal/DSC01209.JPG',
+              '/assets/artzpedregal/DSC01210.JPG',
+              '/assets/artzpedregal/DSC01215.JPG',
+              '/assets/artzpedregal/DSC01217.JPG',
+          ]
       };
     },
 
     mounted() {
-      console.log( "v=1.1.23" );
+      console.log( "v=1.1.24" );
       window.scrollTo(0, 0);
       $("#lightgallery")
         .justifiedGallery({

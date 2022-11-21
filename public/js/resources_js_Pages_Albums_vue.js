@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.22");
+    console.log("v=1.1.2");
   }
 });
 
@@ -201,6 +201,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
@@ -216,7 +227,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=1.1.22");
+    console.log("v=1.1.23");
     window.scrollTo(0, 0);
     axios.get('api/workout').then(function (_ref) {
       var data = _ref.data;
@@ -1039,36 +1050,71 @@ var render = function () {
                                 "\n            "
                             ),
                           ]),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            [
-                              _c(
-                                "b-button",
-                                {
-                                  staticClass: "register-button",
-                                  attrs: {
-                                    rounded: "",
-                                    size: "is-medium",
-                                    disabled: true,
-                                    "data-id": venue.id,
-                                  },
-                                  on: {
-                                    click: function ($event) {
-                                      return _vm.handleGoTo(venue.id)
-                                    },
-                                  },
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                  Ver Galería\n              "
-                                  ),
-                                ]
-                              ),
-                            ],
-                            1
+                          _vm._v(
+                            "\n            " + _vm._s(key) + "\n            "
                           ),
-                        ]
+                          key == 0
+                            ? [
+                                _c(
+                                  "div",
+                                  [
+                                    _c(
+                                      "b-button",
+                                      {
+                                        staticClass: "register-button",
+                                        attrs: {
+                                          rounded: "",
+                                          size: "is-medium",
+                                          "data-id": venue.id,
+                                        },
+                                        on: {
+                                          click: function ($event) {
+                                            return _vm.handleGoTo(venue.id)
+                                          },
+                                        },
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                  Ver Galería\n                "
+                                        ),
+                                      ]
+                                    ),
+                                  ],
+                                  1
+                                ),
+                              ]
+                            : [
+                                _c(
+                                  "div",
+                                  [
+                                    _c(
+                                      "b-button",
+                                      {
+                                        staticClass: "register-button",
+                                        attrs: {
+                                          rounded: "",
+                                          size: "is-medium",
+                                          disabled: true,
+                                          "data-id": venue.id,
+                                        },
+                                        on: {
+                                          click: function ($event) {
+                                            return _vm.handleGoTo(venue.id)
+                                          },
+                                        },
+                                      },
+                                      [
+                                        _vm._v(
+                                          "\n                  Ver Galería\n              "
+                                        ),
+                                      ]
+                                    ),
+                                  ],
+                                  1
+                                ),
+                              ],
+                        ],
+                        2
                       ),
                     ],
                     1

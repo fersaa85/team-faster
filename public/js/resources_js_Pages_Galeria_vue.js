@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.22");
+    console.log("v=1.1.2");
   }
 });
 
@@ -177,6 +177,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -196,11 +212,12 @@ __webpack_require__.r(__webpack_exports__);
     return {
       xochipilli: ['/assets/xochipilli/_MG_6388.jpg', '/assets/xochipilli/_MG_6390.jpg', '/assets/xochipilli/_MG_6402.jpg', '/assets/xochipilli/_MG_6409.jpg', '/assets/xochipilli/_MG_6419.jpg', '/assets/xochipilli/_MG_6432.jpg', '/assets/xochipilli/_MG_6436.jpg', '/assets/xochipilli/_MG_6457.jpg', '/assets/xochipilli/_MG_6468.jpg', '/assets/xochipilli/_MG_6477.jpg', '/assets/xochipilli/_MG_6481.jpg', '/assets/xochipilli/_MG_6499.jpg', '/assets/xochipilli/_MG_6510.jpg', '/assets/xochipilli/_MG_6526.jpg', '/assets/xochipilli/_MG_6545.jpg', '/assets/xochipilli/_MG_6550.jpg', '/assets/xochipilli/_MG_6574.jpg', '/assets/xochipilli/_MG_6582.jpg', '/assets/xochipilli/_MG_6591.jpg', '/assets/xochipilli/_MG_6603.jpg', '/assets/xochipilli/_MG_6605.jpg', '/assets/xochipilli/_MG_6628.jpg', '/assets/xochipilli/_MG_6633.jpg', '/assets/xochipilli/_MG_6666.jpg', '/assets/xochipilli/_MG_6701.jpg', '/assets/xochipilli/_MG_6715.jpg', '/assets/xochipilli/_MG_6732.jpg', '/assets/xochipilli/_MG_6765.jpg', '/assets/xochipilli/_MG_6770.jpg', '/assets/xochipilli/_MG_6786.jpg', '/assets/xochipilli/_MG_6795.jpg', '/assets/xochipilli/_MG_6796.jpg', '/assets/xochipilli/_MG_6800.jpg', '/assets/xochipilli/_MG_6801.jpg', '/assets/xochipilli/_MG_6810.jpg', '/assets/xochipilli/_MG_6811.jpg', '/assets/xochipilli/_MG_6836.jpg', '/assets/xochipilli/_MG_6839.jpg', '/assets/xochipilli/_MG_6849.jpg', '/assets/xochipilli/_MG_6854.jpg', '/assets/xochipilli/_MG_6865.jpg', '/assets/xochipilli/_MG_6871.jpg', '/assets/xochipilli/_MG_6873.jpg', '/assets/xochipilli/_MG_6881.jpg', '/assets/xochipilli/_MG_6886.jpg', '/assets/xochipilli/_MG_6892.jpg', '/assets/xochipilli/_MG_6896.jpg', '/assets/xochipilli/_MG_6899.jpg', '/assets/xochipilli/_MG_6900.jpg', '/assets/xochipilli/_MG_6904.jpg', '/assets/xochipilli/_MG_6910.jpg', '/assets/xochipilli/_MG_6916.jpg', '/assets/xochipilli/_MG_6918.jpg', '/assets/xochipilli/_MG_6922.jpg', '/assets/xochipilli/_MG_6927.jpg', '/assets/xochipilli/_MG_6938.jpg', '/assets/xochipilli/_MG_6950.jpg', '/assets/xochipilli/_MG_6953.jpg', '/assets/xochipilli/_MG_6970.jpg', '/assets/xochipilli/_MG_6980.jpg', '/assets/xochipilli/_MG_7006.jpg', '/assets/xochipilli/_MG_7013.jpg', '/assets/xochipilli/_MG_7020.jpg', '/assets/xochipilli/_MG_7031.jpg', '/assets/xochipilli/_MG_7057.jpg', '/assets/xochipilli/_MG_7079.jpg', '/assets/xochipilli/_MG_7089.jpg', '/assets/xochipilli/_MG_7101.jpg'],
       santafe: ['/assets/santafe/DSC09493.JPG', '/assets/santafe/DSC09494.JPG', '/assets/santafe/DSC09495.JPG', '/assets/santafe/DSC09496.JPG', '/assets/santafe/DSC09499.JPG', '/assets/santafe/DSC09503.JPG', '/assets/santafe/DSC09507.JPG', '/assets/santafe/DSC09509.JPG', '/assets/santafe/DSC09515.JPG', '/assets/santafe/DSC09517.JPG', '/assets/santafe/DSC09521.JPG', '/assets/santafe/DSC09529.JPG', '/assets/santafe/DSC09534.JPG', '/assets/santafe/DSC09538.JPG', '/assets/santafe/DSC09547.JPG', '/assets/santafe/DSC09548.JPG', '/assets/santafe/DSC09554.JPG', '/assets/santafe/DSC09556.JPG', '/assets/santafe/DSC09570.JPG', '/assets/santafe/DSC09588.JPG', '/assets/santafe/DSC09596.JPG', '/assets/santafe/DSC09605.JPG', '/assets/santafe/DSC09613.JPG', '/assets/santafe/DSC09645.JPG', '/assets/santafe/DSC09646.JPG', '/assets/santafe/DSC09647.JPG', '/assets/santafe/DSC09651.JPG', '/assets/santafe/DSC09652.JPG', '/assets/santafe/DSC09653.JPG', '/assets/santafe/DSC09655.JPG', '/assets/santafe/DSC09661.JPG', '/assets/santafe/DSC09666.JPG', '/assets/santafe/DSC09674.JPG', '/assets/santafe/DSC09724.JPG', '/assets/santafe/DSC09731.JPG', '/assets/santafe/DSC09732.JPG', '/assets/santafe/DSC09755.JPG', '/assets/santafe/DSC09760.JPG', '/assets/santafe/DSC09768.JPG', '/assets/santafe/DSC09797.JPG', '/assets/santafe/DSC09808.JPG', '/assets/santafe/DSC09811.JPG', '/assets/santafe/DSC09816.JPG', '/assets/santafe/IMG_8680.JPG', '/assets/santafe/IMG_8687.JPG', '/assets/santafe/IMG_8699.JPG', '/assets/santafe/IMG_8703.JPG', '/assets/santafe/IMG_8716.JPG', '/assets/santafe/IMG_8718.JPG', '/assets/santafe/IMG_8720.JPG', '/assets/santafe/IMG_8722.JPG', '/assets/santafe/IMG_8726.JPG', '/assets/santafe/IMG_8732.JPG', '/assets/santafe/IMG_8734.JPG', '/assets/santafe/IMG_8738.JPG', '/assets/santafe/IMG_8748.JPG', '/assets/santafe/IMG_8749.JPG', '/assets/santafe/IMG_8752.JPG', '/assets/santafe/IMG_8754.JPG', '/assets/santafe/IMG_8760.JPG', '/assets/santafe/IMG_8762.JPG', '/assets/santafe/IMG_8780.JPG', '/assets/santafe/IMG_8818.JPG', '/assets/santafe/IMG_8898.JPG', '/assets/santafe/IMG_8899.JPG', '/assets/santafe/IMG_8780.JPG', '/assets/santafe/IMG_8908.JPG', '/assets/santafe/IMG_8911.JPG', '/assets/santafe/IMG_8913.JPG', '/assets/santafe/IMG_8934.JPG', '/assets/santafe/IMG_8936.JPG', '/assets/santafe/IMG_8938.JPG', '/assets/santafe/IMG_8940.JPG', '/assets/santafe/IMG_8945.JPG', '/assets/santafe/IMG_8951.JPG', '/assets/santafe/IMG_8955.JPG', '/assets/santafe/IMG_8958.JPG', '/assets/santafe/IMG_8967.JPG', '/assets/santafe/IMG_8971.JPG'],
-      jardinbotanico: ['/assets/jardinbotanico/IMG_0352.JPG', '/assets/jardinbotanico/IMG_0420.JPG', '/assets/jardinbotanico/IMG_0391.JPG', '/assets/jardinbotanico/IMG_0740.JPG', '/assets/jardinbotanico/IMG_0556.JPG', '/assets/jardinbotanico/IMG_0387.JPG', '/assets/jardinbotanico/IMG_0436.JPG', '/assets/jardinbotanico/IMG_0543.JPG', '/assets/jardinbotanico/IMG_0584.JPG', '/assets/jardinbotanico/IMG_0618.JPG', '/assets/jardinbotanico/IMG_0397.JPG', '/assets/jardinbotanico/IMG_0744.JPG', '/assets/jardinbotanico/IMG_0544.JPG', '/assets/jardinbotanico/IMG_0578.JPG', '/assets/jardinbotanico/IMG_0293.JPG', '/assets/jardinbotanico/IMG_0442.JPG', '/assets/jardinbotanico/IMG_0640.JPG', '/assets/jardinbotanico/IMG_0319.JPG', '/assets/jardinbotanico/IMG_0523.JPG', '/assets/jardinbotanico/IMG_0721.JPG', '/assets/jardinbotanico/IMG_0709.JPG', '/assets/jardinbotanico/IMG_0723.JPG', '/assets/jardinbotanico/IMG_0469.JPG', '/assets/jardinbotanico/IMG_0333.JPG', '/assets/jardinbotanico/IMG_0680.JPG', '/assets/jardinbotanico/IMG_0469.JPG', '/assets/jardinbotanico/IMG_0326.JPG', '/assets/jardinbotanico/IMG_0440.JPG', '/assets/jardinbotanico/IMG_0454.JPG', '/assets/jardinbotanico/IMG_0468.JPG', '/assets/jardinbotanico/IMG_0497.JPG', '/assets/jardinbotanico/IMG_0530.JPG', '/assets/jardinbotanico/IMG_0336.JPG', '/assets/jardinbotanico/IMG_0685.JPG', '/assets/jardinbotanico/IMG_0323.JPG', '/assets/jardinbotanico/IMG_0531.JPG', '/assets/jardinbotanico/IMG_0525.JPG', '/assets/jardinbotanico/IMG_0733.JPG', '/assets/jardinbotanico/IMG_0731.JPG', '/assets/jardinbotanico/IMG_0296.JPG', '/assets/jardinbotanico/IMG_0484.JPG', '/assets/jardinbotanico/IMG_0490.JPG', '/assets/jardinbotanico/IMG_0321.JPG', '/assets/jardinbotanico/IMG_0678.JPG', '/assets/jardinbotanico/IMG_0693.JPG', '/assets/jardinbotanico/IMG_0308.JPG', '/assets/jardinbotanico/IMG_0491.JPG', '/assets/jardinbotanico/IMG_0485.JPG', '/assets/jardinbotanico/IMG_0503.JPG', '/assets/jardinbotanico/IMG_0674.JPG', '/assets/jardinbotanico/IMG_0700.JPG', '/assets/jardinbotanico/IMG_0716.JPG', '/assets/jardinbotanico/IMG_0312.JPG', '/assets/jardinbotanico/IMG_0689.JPG', '/assets/jardinbotanico/IMG_0529.JPG', '/assets/jardinbotanico/IMG_0717.JPG', '/assets/jardinbotanico/IMG_0303.JPG', '/assets/jardinbotanico/IMG_0289.JPG', '/assets/jardinbotanico/IMG_0712.JPG', '/assets/jardinbotanico/IMG_0704.JPG', '/assets/jardinbotanico/IMG_0506.JPG', '/assets/jardinbotanico/IMG_0466.JPG', '/assets/jardinbotanico/IMG_0328.JPG', '/assets/jardinbotanico/IMG_0315.JPG', '/assets/jardinbotanico/IMG_0513.JPG', '/assets/jardinbotanico/IMG_0366.JPG', '/assets/jardinbotanico/IMG_0616.JPG', '/assets/jardinbotanico/IMG_0417.JPG', '/assets/jardinbotanico/IMG_0416.JPG', '/assets/jardinbotanico/IMG_0360.JPG', '/assets/jardinbotanico/IMG_0610.JPG', '/assets/jardinbotanico/IMG_0638.JPG', '/assets/jardinbotanico/IMG_0605.JPG', '/assets/jardinbotanico/IMG_0407.JPG', '/assets/jardinbotanico/IMG_0573.JPG', '/assets/jardinbotanico/IMG_0363.JPG', '/assets/jardinbotanico/IMG_0411.JPG', '/assets/jardinbotanico/IMG_0376.JPG', '/assets/jardinbotanico/IMG_0404.JPG', '/assets/jardinbotanico/IMG_0389.JPG']
+      jardinbotanico: ['/assets/jardinbotanico/IMG_0352.JPG', '/assets/jardinbotanico/IMG_0420.JPG', '/assets/jardinbotanico/IMG_0391.JPG', '/assets/jardinbotanico/IMG_0740.JPG', '/assets/jardinbotanico/IMG_0556.JPG', '/assets/jardinbotanico/IMG_0387.JPG', '/assets/jardinbotanico/IMG_0436.JPG', '/assets/jardinbotanico/IMG_0543.JPG', '/assets/jardinbotanico/IMG_0584.JPG', '/assets/jardinbotanico/IMG_0618.JPG', '/assets/jardinbotanico/IMG_0397.JPG', '/assets/jardinbotanico/IMG_0744.JPG', '/assets/jardinbotanico/IMG_0544.JPG', '/assets/jardinbotanico/IMG_0578.JPG', '/assets/jardinbotanico/IMG_0293.JPG', '/assets/jardinbotanico/IMG_0442.JPG', '/assets/jardinbotanico/IMG_0640.JPG', '/assets/jardinbotanico/IMG_0319.JPG', '/assets/jardinbotanico/IMG_0523.JPG', '/assets/jardinbotanico/IMG_0721.JPG', '/assets/jardinbotanico/IMG_0709.JPG', '/assets/jardinbotanico/IMG_0723.JPG', '/assets/jardinbotanico/IMG_0469.JPG', '/assets/jardinbotanico/IMG_0333.JPG', '/assets/jardinbotanico/IMG_0680.JPG', '/assets/jardinbotanico/IMG_0469.JPG', '/assets/jardinbotanico/IMG_0326.JPG', '/assets/jardinbotanico/IMG_0440.JPG', '/assets/jardinbotanico/IMG_0454.JPG', '/assets/jardinbotanico/IMG_0468.JPG', '/assets/jardinbotanico/IMG_0497.JPG', '/assets/jardinbotanico/IMG_0530.JPG', '/assets/jardinbotanico/IMG_0336.JPG', '/assets/jardinbotanico/IMG_0685.JPG', '/assets/jardinbotanico/IMG_0323.JPG', '/assets/jardinbotanico/IMG_0531.JPG', '/assets/jardinbotanico/IMG_0525.JPG', '/assets/jardinbotanico/IMG_0733.JPG', '/assets/jardinbotanico/IMG_0731.JPG', '/assets/jardinbotanico/IMG_0296.JPG', '/assets/jardinbotanico/IMG_0484.JPG', '/assets/jardinbotanico/IMG_0490.JPG', '/assets/jardinbotanico/IMG_0321.JPG', '/assets/jardinbotanico/IMG_0678.JPG', '/assets/jardinbotanico/IMG_0693.JPG', '/assets/jardinbotanico/IMG_0308.JPG', '/assets/jardinbotanico/IMG_0491.JPG', '/assets/jardinbotanico/IMG_0485.JPG', '/assets/jardinbotanico/IMG_0503.JPG', '/assets/jardinbotanico/IMG_0674.JPG', '/assets/jardinbotanico/IMG_0700.JPG', '/assets/jardinbotanico/IMG_0716.JPG', '/assets/jardinbotanico/IMG_0312.JPG', '/assets/jardinbotanico/IMG_0689.JPG', '/assets/jardinbotanico/IMG_0529.JPG', '/assets/jardinbotanico/IMG_0717.JPG', '/assets/jardinbotanico/IMG_0303.JPG', '/assets/jardinbotanico/IMG_0289.JPG', '/assets/jardinbotanico/IMG_0712.JPG', '/assets/jardinbotanico/IMG_0704.JPG', '/assets/jardinbotanico/IMG_0506.JPG', '/assets/jardinbotanico/IMG_0466.JPG', '/assets/jardinbotanico/IMG_0328.JPG', '/assets/jardinbotanico/IMG_0315.JPG', '/assets/jardinbotanico/IMG_0513.JPG', '/assets/jardinbotanico/IMG_0366.JPG', '/assets/jardinbotanico/IMG_0616.JPG', '/assets/jardinbotanico/IMG_0417.JPG', '/assets/jardinbotanico/IMG_0416.JPG', '/assets/jardinbotanico/IMG_0360.JPG', '/assets/jardinbotanico/IMG_0610.JPG', '/assets/jardinbotanico/IMG_0638.JPG', '/assets/jardinbotanico/IMG_0605.JPG', '/assets/jardinbotanico/IMG_0407.JPG', '/assets/jardinbotanico/IMG_0573.JPG', '/assets/jardinbotanico/IMG_0363.JPG', '/assets/jardinbotanico/IMG_0411.JPG', '/assets/jardinbotanico/IMG_0376.JPG', '/assets/jardinbotanico/IMG_0404.JPG', '/assets/jardinbotanico/IMG_0389.JPG'],
+      artzpedregal: ['/assets/artzpedregal/DSC00846.JPG', '/assets/artzpedregal/DSC00848.JPG', '/assets/artzpedregal/DSC00849.JPG', '/assets/artzpedregal/DSC00853.JPG', '/assets/artzpedregal/DSC00864.JPG', '/assets/artzpedregal/DSC00866.JPG', '/assets/artzpedregal/DSC00873.JPG', '/assets/artzpedregal/DSC00876.JPG', '/assets/artzpedregal/DSC00881.JPG', '/assets/artzpedregal/DSC00883.JPG', '/assets/artzpedregal/DSC00885.JPG', '/assets/artzpedregal/DSC00898.JPG', '/assets/artzpedregal/DSC00902.JPG', '/assets/artzpedregal/DSC00906.JPG', '/assets/artzpedregal/DSC00911.JPG', '/assets/artzpedregal/DSC00912.JPG', '/assets/artzpedregal/DSC00915.JPG', '/assets/artzpedregal/DSC00923.JPG', '/assets/artzpedregal/DSC00931.JPG', '/assets/artzpedregal/DSC00935.JPG', '/assets/artzpedregal/DSC00942.JPG', '/assets/artzpedregal/DSC00955.JPG', '/assets/artzpedregal/DSC00957.JPG', '/assets/artzpedregal/DSC00966.JPG', '/assets/artzpedregal/DSC00969.JPG', '/assets/artzpedregal/DSC00973.JPG', '/assets/artzpedregal/DSC00974.JPG', '/assets/artzpedregal/DSC00979.JPG', '/assets/artzpedregal/DSC00980.JPG', '/assets/artzpedregal/DSC00998.JPG', '/assets/artzpedregal/DSC00999.JPG', '/assets/artzpedregal/DSC01003.JPG', '/assets/artzpedregal/DSC01008.JPG', '/assets/artzpedregal/DSC01010.JPG', '/assets/artzpedregal/DSC01022.JPG', '/assets/artzpedregal/DSC01027.JPG', '/assets/artzpedregal/DSC01030.JPG', '/assets/artzpedregal/DSC01036.JPG', '/assets/artzpedregal/DSC01037.JPG', '/assets/artzpedregal/DSC01039.JPG', '/assets/artzpedregal/DSC01047.JPG', '/assets/artzpedregal/DSC01056.JPG', '/assets/artzpedregal/DSC01066.JPG', '/assets/artzpedregal/DSC01077.JPG', '/assets/artzpedregal/DSC01082.JPG', '/assets/artzpedregal/DSC01086.JPG', '/assets/artzpedregal/DSC01099.JPG', '/assets/artzpedregal/DSC01103.JPG', '/assets/artzpedregal/DSC01123.JPG', '/assets/artzpedregal/DSC01128.JPG', '/assets/artzpedregal/DSC01168.JPG', '/assets/artzpedregal/DSC01183.JPG', '/assets/artzpedregal/DSC01185.JPG', '/assets/artzpedregal/DSC01188.JPG', '/assets/artzpedregal/DSC01191.JPG', '/assets/artzpedregal/DSC01196.JPG', '/assets/artzpedregal/DSC01199.JPG', '/assets/artzpedregal/DSC01207.JPG', '/assets/artzpedregal/DSC01209.JPG', '/assets/artzpedregal/DSC01210.JPG', '/assets/artzpedregal/DSC01215.JPG', '/assets/artzpedregal/DSC01217.JPG']
     };
   },
   mounted: function mounted() {
-    console.log("v=1.1.2");
+    console.log("v=1.1.23");
     window.scrollTo(0, 0);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("#lightgallery").justifiedGallery({
       captions: false,
@@ -13396,6 +13413,37 @@ var render = function () {
                     "div",
                     { attrs: { id: "lightgallery" } },
                     _vm._l(_vm.jardinbotanico, function (src, idx) {
+                      return _c(
+                        "a",
+                        {
+                          key: idx,
+                          attrs: {
+                            className: "gallery-item",
+                            "data-src": src,
+                            "data-tweet-text": "Team Faster",
+                          },
+                        },
+                        [
+                          _c("img", {
+                            staticClass: "img-responsive",
+                            attrs: { src: src, loading: "lazy" },
+                          }),
+                        ]
+                      )
+                    }),
+                    0
+                  ),
+                ]),
+              ]
+            : _vm._e(),
+          _vm._v(" "),
+          this.$route.params.venueId == 4
+            ? [
+                _c("div", { staticClass: "app-container" }, [
+                  _c(
+                    "div",
+                    { attrs: { id: "lightgallery" } },
+                    _vm._l(_vm.artzpedregal, function (src, idx) {
                       return _c(
                         "a",
                         {

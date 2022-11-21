@@ -263,7 +263,7 @@ export default {
         Footer
     },
   mounted(){
-    console.log( "v=1.1.23" );
+    console.log( "v=1.1.24" );
     window.scrollTo(0, 0);
       this.setElement(this.$refs.coach1);
       

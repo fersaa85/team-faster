@@ -86,11 +86,22 @@
                 {{ venue.workout ? handleFormatDay(venue.workout.date_start) : '-' }}
                 {{ venue.workout ? handleFormatMonth(venue.workout.date_start) : '-' }}
               </div>
+              {{ key }}
+              <template v-if="key==0">
+                <div>
+                  <b-button rounded class="register-button" size="is-medium"  :data-id="venue.id" @click="handleGoTo(venue.id)">
+                    Ver Galería
+                  </b-button>
+                </div>
+              </template>
+              <template v-if="key==1">
               <div>
+
                 <b-button rounded class="register-button" size="is-medium" :disabled="true" :data-id="venue.id" @click="handleGoTo(venue.id)">
                     Ver Galería
                 </b-button>
               </div>
+              </template>
             </div>
             <!-- <div class="text-photo-register">
               ¡registrate ahora!
@@ -129,7 +140,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=1.1.23" );
+      console.log( "v=1.1.24" );
       window.scrollTo(0, 0);
         axios
             .get('api/workout')

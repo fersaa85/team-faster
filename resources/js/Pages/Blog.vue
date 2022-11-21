@@ -52,7 +52,7 @@ export default {
         }
     },
     mounted() {
-        console.log( "v=1.1.23" );
+        console.log( "v=1.1.24" );
         axios
             .get('api/blog')
             .then(({ data }) => {
