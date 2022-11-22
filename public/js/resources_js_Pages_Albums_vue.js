@@ -211,7 +211,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
@@ -227,7 +226,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=1.1.23");
+    console.log("v=1.1.25");
     window.scrollTo(0, 0);
     axios.get('api/workout').then(function (_ref) {
       var data = _ref.data;
@@ -1050,9 +1049,7 @@ var render = function () {
                                 "\n            "
                             ),
                           ]),
-                          _vm._v(
-                            "\n            " + _vm._s(key) + "\n            "
-                          ),
+                          _vm._v(" "),
                           key == 0
                             ? [
                                 _c(
@@ -1083,7 +1080,10 @@ var render = function () {
                                   1
                                 ),
                               ]
-                            : [
+                            : _vm._e(),
+                          _vm._v(" "),
+                          key == 1
+                            ? [
                                 _c(
                                   "div",
                                   [
@@ -1112,7 +1112,8 @@ var render = function () {
                                   ],
                                   1
                                 ),
-                              ],
+                              ]
+                            : _vm._e(),
                         ],
                         2
                       ),

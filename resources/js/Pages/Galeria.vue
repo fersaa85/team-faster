@@ -83,6 +83,22 @@
           </div>
         </div>
       </template>
+
+      <template v-if="this.$route.params.venueId == 5">
+        <div class="app-container">
+          <div id="lightgallery">
+            <a
+                    v-for="(src, idx) in revolucion"
+                    :key="idx"
+                    className="gallery-item"
+                    :data-src="src"
+                    data-tweet-text="Team Faster"
+            >
+              <img class="img-responsive" :src="src" loading="lazy"/>
+            </a>
+          </div>
+        </div>
+      </template>
     </div>
 
     <Footer></Footer>
@@ -410,6 +426,9 @@ export default {
               '/assets/artzpedregal/DSC01210.JPG',
               '/assets/artzpedregal/DSC01215.JPG',
               '/assets/artzpedregal/DSC01217.JPG',
+          ],
+          revolucion: [
+              '/assets/artzpedregal/DSC00846.JPG',
           ]
       };
     },
