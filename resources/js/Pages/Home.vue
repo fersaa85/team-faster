@@ -553,7 +553,7 @@ export default {
       };
     },
     mounted() {
-      console.log( "v=1.1.26" );
+      console.log( "v=1.1.27" );
       window.scrollTo(0, 0);
       this.setLogoInicio();
       this.setFondoInicio();
