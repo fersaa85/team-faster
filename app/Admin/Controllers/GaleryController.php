@@ -65,13 +65,6 @@ class GaleryController extends AdminController
         //$form->hidden('id');
         $form->image('name', 'Imagen');
 
-        $form->saving(function (Form $form) {
-
-            // redirect url
-            return redirect('/admin/galeries');
-
-        });
-
         return $form;
     }
 }
