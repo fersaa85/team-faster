@@ -88,22 +88,23 @@
 
           <div class="app-container">
             <div id="lightgallery">
-              <a
-                      v-for="(src, idx) in galery"
-                      :key="idx"
-                      className="gallery-item"
-                      :data-src="`/${src.name}`"
-                      data-tweet-text="Team Faster"
-              >
-                {{ src.name }}
-                <img class="img-responsive" :src="`/${src.name}`" loading="lazy"/>
-              </a>
+                <a
+                        v-for="(src, idx) in galery"
+                        :key="idx"
+                        className="gallery-item"
+                        :data-src="`https://teamfaster.mx/${src.name}`"
+                        data-tweet-text="Team Faster"
+                >
+                  <img class="img-responsive" :src="`https://teamfaster.mx/${src.name}`" />
+                </a>
+
             </div>
           </div>
 
       </template>
 
-      <template v-else-if="this.$route.params.venueId == 5 && galery.length === 0">
+      <!--
+      <template v-if="this.$route.params.venueId == 5">
 
         <div class="app-container">
                 <div id="lightgallery">
@@ -120,6 +121,7 @@
         </div>
 
       </template>
+      -->
     </div>
 
     <Footer></Footer>
@@ -458,7 +460,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=1.1.27" );
+      console.log( "v=1.1.28" );
 
         axios
             .get('api/galeries')

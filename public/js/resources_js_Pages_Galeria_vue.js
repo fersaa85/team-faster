@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.2");
+    console.log("v=1.1.27");
   }
 });
 
@@ -230,6 +230,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -258,7 +260,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=1.1.26");
+    console.log("v=1.1.27");
     axios.get('api/galeries').then(function (_ref) {
       var data = _ref.data;
       _this.galery = [].concat(data.data);
@@ -13526,48 +13528,14 @@ var render = function () {
                           key: idx,
                           attrs: {
                             className: "gallery-item",
-                            "data-src": "/" + src.name,
-                            "data-tweet-text": "Team Faster",
-                          },
-                        },
-                        [
-                          _vm._v(
-                            "\n              " +
-                              _vm._s(src.name) +
-                              "\n              "
-                          ),
-                          _c("img", {
-                            staticClass: "img-responsive",
-                            attrs: { src: "/" + src.name, loading: "lazy" },
-                          }),
-                        ]
-                      )
-                    }),
-                    0
-                  ),
-                ]),
-              ]
-            : this.$route.params.venueId == 5 && _vm.galery.length === 0
-            ? [
-                _c("div", { staticClass: "app-container" }, [
-                  _c(
-                    "div",
-                    { attrs: { id: "lightgallery" } },
-                    _vm._l(_vm.revolucion, function (src, idx) {
-                      return _c(
-                        "a",
-                        {
-                          key: idx,
-                          attrs: {
-                            className: "gallery-item",
-                            "data-src": src,
+                            "data-src": "https://teamfaster.mx/" + src.name,
                             "data-tweet-text": "Team Faster",
                           },
                         },
                         [
                           _c("img", {
                             staticClass: "img-responsive",
-                            attrs: { src: src, loading: "lazy" },
+                            attrs: { src: "https://teamfaster.mx/" + src.name },
                           }),
                         ]
                       )
