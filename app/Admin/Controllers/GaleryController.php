@@ -62,6 +62,7 @@ class GaleryController extends AdminController
         $form = new Form(new Galery());
 
         //$form->text('name', __('Name'));
+        $form->hidden('id');
         $form->image('name', 'Imagen');
 
 
