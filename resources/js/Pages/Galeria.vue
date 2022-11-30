@@ -84,20 +84,41 @@
         </div>
       </template>
 
-      <template v-if="this.$route.params.venueId == 5">
-        <div class="app-container">
-          <div id="lightgallery">
-            <a
-                    v-for="(src, idx) in revolucion"
-                    :key="idx"
-                    className="gallery-item"
-                    :data-src="src"
-                    data-tweet-text="Team Faster"
-            >
-              <img class="img-responsive" :src="src" loading="lazy"/>
-            </a>
+      <template v-if="this.$route.params.venueId == 5 && galery.length">
+
+          <div class="app-container">
+            <div id="lightgallery">
+              <a
+                      v-for="(src, idx) in galery"
+                      :key="idx"
+                      className="gallery-item"
+                      :data-src="`/${src.name}`"
+                      data-tweet-text="Team Faster"
+              >
+                {{ src.name }}
+                <img class="img-responsive" :src="`/${src.name}`" loading="lazy"/>
+              </a>
+            </div>
           </div>
+
+      </template>
+
+      <template v-else-if="this.$route.params.venueId == 5 && galery.length === 0">
+
+        <div class="app-container">
+                <div id="lightgallery">
+                  <a
+                          v-for="(src, idx) in revolucion"
+                          :key="idx"
+                          className="gallery-item"
+                          :data-src="src"
+                          data-tweet-text="Team Faster"
+                  >
+                    <img class="img-responsive" :src="src" loading="lazy"/>
+                  </a>
+                </div>
         </div>
+
       </template>
     </div>
 
@@ -427,14 +448,25 @@ export default {
               '/assets/artzpedregal/DSC01215.JPG',
               '/assets/artzpedregal/DSC01217.JPG',
           ],
+
           revolucion: [
               '/assets/artzpedregal/DSC00846.JPG',
-          ]
+          ],
+
+          galery: []
       };
     },
 
     mounted() {
-      console.log( "v=1.1.25" );
+      console.log( "v=1.1.26" );
+
+        axios
+            .get('api/galeries')
+            .then(({ data }) => {
+                this.galery = [].concat(data.data);
+            });
+
+
       window.scrollTo(0, 0);
       $("#lightgallery")
         .justifiedGallery({

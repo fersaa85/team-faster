@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
     return {};
   },
   mounted: function mounted() {
-    console.log("v=1.1.25");
+    console.log("v=1.1.26");
     axios.get('/api/blog/' + this.$route.params.slug).then(function (_ref) {
       var data = _ref.data;
       console.log(data);
