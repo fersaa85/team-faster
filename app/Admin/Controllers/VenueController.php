@@ -84,8 +84,12 @@ class VenueController extends AdminController
     {
         $form = new Form(new Venue());
 
-        $form->text('name', __('Name'));
+        $form->text('name', __('Nombre'));
         $form->textarea('address', __('Address'));
+        $form->text('image', __('Imagen'));
+        $form->text('image_map', __('Imagen mapa'));
+        $form->text('thumbnail', __('misma que imagen'));
+        $form->text('google_maps', __('Google Maps'));
 
         $form->text('workout.date_start',  __('Cuando'));
         $form->text('workout.description',  __('Experiencia workout'));
