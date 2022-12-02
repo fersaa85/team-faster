@@ -34,7 +34,7 @@ class VenueController extends AdminController
         $grid->column('address', __('Address'));
         $grid->column('image', __('Imagen'));
         $grid->column('image_map', __('Imagen mapa'));
-        $grid->column('thumbnail', __('misma que imagen'));
+        $grid->column('thumbnail', __('Imagen thumbnail'));
         $grid->column('google_maps', __('Google Maps'));
 
         $grid->column('workout.date_start', 'Cuando');
@@ -93,7 +93,7 @@ class VenueController extends AdminController
         $form->textarea('address', __('Address'));
         $form->text('image', __('Imagen'));
         $form->text('image_map', __('Imagen mapa'));
-        $form->text('thumbnail', __('misma que imagen'));
+        $form->text('thumbnail', __('Imagen thumbnail'));
         $form->text('google_maps', __('Google Maps'));
 
         $form->text('workout.date_start',  __('Cuando'));
