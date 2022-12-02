@@ -32,10 +32,10 @@ class VenueController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
         $grid->column('address', __('Address'));
-        $grid->text('image', __('Imagen'));
-        $grid->text('image_map', __('Imagen mapa'));
-        $grid->text('thumbnail', __('misma que imagen'));
-        $grid->text('google_maps', __('Google Maps'));
+        $grid->column('image', __('Imagen'));
+        $grid->column('image_map', __('Imagen mapa'));
+        $grid->column('thumbnail', __('misma que imagen'));
+        $grid->column('google_maps', __('Google Maps'));
 
         $grid->column('workout.date_start', 'Cuando');
         $grid->column('workout.description', 'Experiencia workout');
