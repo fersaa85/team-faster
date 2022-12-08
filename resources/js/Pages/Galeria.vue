@@ -462,7 +462,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=1.1.29" );
+      console.log( "v=1.1.30" );
 
         axios
             .get('api/galeries')
