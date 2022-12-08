@@ -22,7 +22,7 @@
           <div class="img-blackwhite" ref="img1">
             <b-image
               responsive
-              :src="'/assets/img/' + info.photo"
+              :src="'/assets/img/' + info.photo + '?8017'"
               ratio="14by10"
               @load="load1"
             ></b-image>

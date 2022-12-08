@@ -87,7 +87,7 @@
             <div>
               <b-image
                       responsive
-                      :src="`/assets/img/${venue.image}`"
+                      :src="`/assets/img/${venue.image}?8017`"
                       ratio="1by1"
               ></b-image>
               <div class="columns mt-2">

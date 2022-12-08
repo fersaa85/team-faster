@@ -424,7 +424,7 @@
         <div class="column" style="position: relative;">
           <b-image
             responsive
-            src="/assets/img/MonumentoRevolucion.jpg"
+            src="/assets/img/MonumentoRevolucion.jpg?8017"
             ratio="2by5"
             class="img5-v"
           ></b-image>

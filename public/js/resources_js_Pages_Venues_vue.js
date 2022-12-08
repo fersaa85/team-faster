@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.29");
+    console.log("v=1.1.30");
   }
 });
 
@@ -226,7 +226,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=1.1.29");
+    console.log("v=1.1.30");
     window.scrollTo(0, 0);
     axios.get('api/venues').then(function (_ref) {
       var data = _ref.data;
@@ -947,7 +947,7 @@ var render = function () {
                           _c("b-image", {
                             attrs: {
                               responsive: "",
-                              src: "/assets/img/" + venue.image,
+                              src: "/assets/img/" + venue.image + "?8017",
                               ratio: "1by1",
                             },
                           }),
