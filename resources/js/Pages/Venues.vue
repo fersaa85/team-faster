@@ -139,7 +139,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=1.1.28" );
+      console.log( "v=1.1.29" );
       window.scrollTo(0, 0);
 
         axios
@@ -150,7 +150,8 @@ export default {
     },
     methods:  {
         handleGoTo(slug){
-            this.$router.push('/registro/'+slug);
+          if(slug== 'Revolucion') this.$router.push('/registro/ParqueBicentenario');
+          else this.$router.push('/registro/'+slug);
         },
         setElement(el){
             this.gsap.to(

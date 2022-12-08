@@ -84,6 +84,8 @@
         </div>
       </template>
 
+      <!-- Funciona con el servicio -->
+
       <template v-if="this.$route.params.venueId == 5 && galery.length">
 
           <div class="app-container">
@@ -460,7 +462,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=1.1.28" );
+      console.log( "v=1.1.29" );
 
         axios
             .get('api/galeries')

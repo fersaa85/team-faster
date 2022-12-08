@@ -94,12 +94,14 @@ export default {
       };
     },
     mounted() {
-       console.log( "v=1.1.28" );
+      let slug = this.$route.params.slug;
+      if(slug== 'ParqueBicentenario') slug='Revolucion';
+       console.log( "v=1.1.29" );
        window.scrollTo(0, 0);
        this.setElement(this.$refs.img1);
        this.setElement(this.$refs.img2);
          axios
-             .get('/api/workout/'+this.$route.params.slug)
+             .get('/api/workout/'+slug)
              .then(({ data: { data } }) => {
                  this.venueId = data.venue.id;
                  this.info = Object.assign({}, {

@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.27");
+    console.log("v=1.1.28");
   }
 });
 
@@ -226,7 +226,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=1.1.27");
+    console.log("v=1.1.28");
     window.scrollTo(0, 0);
     axios.get('api/venues').then(function (_ref) {
       var data = _ref.data;
@@ -235,7 +235,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     handleGoTo: function handleGoTo(slug) {
-      this.$router.push('/registro/' + slug);
+      if (slug == 'Revolucion') this.$router.push('/registro/ParqueBicentenario');else this.$router.push('/registro/' + slug);
     },
     setElement: function setElement(el) {
       this.gsap.to(el, {
