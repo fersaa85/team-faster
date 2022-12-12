@@ -82,7 +82,7 @@
 
       </div>
 
-      <template v-if="occupation < 120">
+      <template v-if="occupation < 250">
         <div class="is-hidden-mobile">
           <!-- <div v-if="success" class="alert alert-success" role="alert">
             <b>Gracias por registrarse al evento.¡Te esperamos!</b>

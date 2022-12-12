@@ -139,7 +139,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=1.1.31" );
+      console.log( "v=1.1.32" );
       window.scrollTo(0, 0);
 
         axios
