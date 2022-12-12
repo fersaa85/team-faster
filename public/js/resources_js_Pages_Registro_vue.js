@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.30");
+    console.log("v=1.1.32");
   }
 });
 
@@ -865,7 +865,7 @@ __webpack_require__.r(__webpack_exports__);
 
     var slug = this.$route.params.slug;
     if (slug == 'ParqueBicentenario') slug = 'Revolucion';
-    console.log("v=1.1.30");
+    console.log("v=1.1.32");
     window.scrollTo(0, 0);
     this.setElement(this.$refs.img1);
     this.setElement(this.$refs.img2);
@@ -2269,7 +2269,7 @@ var render = function () {
             ]),
           ]),
           _vm._v(" "),
-          _vm.occupation < 120
+          _vm.occupation < 250
             ? [
                 _c(
                   "div",
