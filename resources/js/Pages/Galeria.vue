@@ -86,7 +86,7 @@
 
       <!-- Funciona con el servicio -->
 
-      <template v-if="this.$route.params.venueId == 5 && galery.length">
+      <!-- <template v-if="this.$route.params.venueId == 5 && galery.length">
 
           <div class="app-container">
             <div id="lightgallery">
@@ -103,9 +103,9 @@
             </div>
           </div>
 
-      </template>
+      </template> -->
 
-      <!--
+      
       <template v-if="this.$route.params.venueId == 5">
 
         <div class="app-container">
@@ -123,7 +123,7 @@
         </div>
 
       </template>
-      -->
+     
     </div>
 
     <Footer></Footer>
@@ -454,7 +454,44 @@ export default {
           ],
 
           revolucion: [
-              '/assets/artzpedregal/DSC00846.JPG',
+              '/assets/revolucion/IMG_1240.JPG',
+              '/assets/revolucion/IMG_1252.JPG',
+              '/assets/revolucion/IMG_1255.JPG',
+              '/assets/revolucion/IMG_1260.JPG',
+              '/assets/revolucion/IMG_1272.JPG',
+              '/assets/revolucion/IMG_1274.JPG',
+              '/assets/revolucion/IMG_1285.JPG',
+              '/assets/revolucion/IMG_1308.JPG',
+              '/assets/revolucion/IMG_1315.JPG',
+              '/assets/revolucion/IMG_1318.JPG',
+              '/assets/revolucion/IMG_1320.JPG',
+              '/assets/revolucion/IMG_1330.JPG',
+              '/assets/revolucion/IMG_1336.JPG',
+              '/assets/revolucion/IMG_1363.JPG',
+              '/assets/revolucion/IMG_1373.JPG',
+              '/assets/revolucion/IMG_1374.JPG',
+              '/assets/revolucion/IMG_1378.JPG',
+              '/assets/revolucion/IMG_1380.JPG',
+              '/assets/revolucion/IMG_1384.JPG',
+              '/assets/revolucion/IMG_1387.JPG',
+              '/assets/revolucion/IMG_1409.JPG',
+              '/assets/revolucion/IMG_1416.JPG',
+              '/assets/revolucion/IMG_1423.JPG',
+              '/assets/revolucion/IMG_1428.JPG',
+              '/assets/revolucion/IMG_1431.JPG',
+              '/assets/revolucion/IMG_1435.JPG',
+              '/assets/revolucion/IMG_1436.JPG',
+              '/assets/revolucion/IMG_1443.JPG',
+              '/assets/revolucion/IMG_1447.JPG',
+              '/assets/revolucion/IMG_1451.JPG',
+              '/assets/revolucion/IMG_1454.JPG',
+              '/assets/revolucion/IMG_1455.JPG',
+              '/assets/revolucion/IMG_1460.JPG',
+              '/assets/revolucion/IMG_1463.JPG',
+              '/assets/revolucion/IMG_1466.JPG',
+              '/assets/revolucion/IMG_1470.JPG',
+              '/assets/revolucion/IMG_1472.JPG',
+              '/assets/revolucion/IMG_1477.JPG'
           ],
 
           galery: []
@@ -462,7 +499,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=1.1.33" );
+      console.log( "v=1.1.34" );
 
         axios
             .get('api/galeries')

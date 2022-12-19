@@ -21,7 +21,7 @@
     </div>
     <div class="venues_photos">
       <div class="columns " style="margin-bottom: 60px;">
-        <template v-if="venues.length && Object.keys(workout).length">
+        <template v-if="venues.length">
           <div v-for="(venue, key) in venues.slice(0, 3)" :key="key" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
             <div @click="handleGoTo(venue.id)">
               <b-image
@@ -73,14 +73,14 @@
         </template>
       </div>
       <div class="columns is-centered">
-        <template v-if="venues.length && Object.keys(workout).length">
+        <template v-if="venues.length">
           <div v-for="(venue, key)  in venues.slice(3, 6)" :key="key" class="column is-clickable is-4" :class="`venue${key}`"  style="position:relative;">
             <b-image
                     responsive
                     :src="`/assets/img/${venue.thumbnail}`"
                     ratio="2by1"
             ></b-image>
-            <div class="text-photo-title venue-active" :class="{'venue-active': venue.id == workout.venue.id}">
+            <div class="text-photo-title venue-active">
               {{ venue.name }}
               <div class="text-photo-date">
                 {{ venue.workout ? handleFormatDay(venue.workout.date_start) : '-' }}
@@ -96,7 +96,7 @@
               <template v-if="key==1">
               <div>
 
-                <b-button rounded class="register-button" size="is-medium" :disabled="true" :data-id="venue.id" @click="handleGoTo(venue.id)">
+                <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.id)">
                     Ver Galería
                 </b-button>
               </div>
@@ -139,13 +139,13 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=1.1.33" );
+      console.log( "v=1.1.34" );
       window.scrollTo(0, 0);
-        axios
-            .get('api/workout')
-            .then(({ data }) => {
-                this.workout = Object.assign({}, data.data);
-            });
+        // axios
+        //     .get('api/workout')
+        //     .then(({ data }) => {
+        //         this.workout = Object.assign({}, data.data);
+        //     });
 
 
         axios
