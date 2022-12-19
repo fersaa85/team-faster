@@ -96,7 +96,7 @@ export default {
     mounted() {
       let slug = this.$route.params.slug;
       if(slug== 'ParqueBicentenario') slug='Revolucion';
-       console.log( "v=1.1.35" );
+       console.log( "v=1.1.36" );
        window.scrollTo(0, 0);
        this.setElement(this.$refs.img1);
        this.setElement(this.$refs.img2);

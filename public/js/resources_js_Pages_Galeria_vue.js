@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.35");
+    console.log("v=1.1.36");
   }
 });
 
@@ -262,7 +262,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=1.1.35");
+    console.log("v=1.1.36");
     axios.get('api/galeries').then(function (_ref) {
       var data = _ref.data;
       _this.galery = [].concat(data.data);

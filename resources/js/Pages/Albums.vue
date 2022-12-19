@@ -77,7 +77,7 @@
           <div v-for="(venue, key)  in venues.slice(3, 6)" :key="key" class="column is-clickable is-4" :class="`venue${key}`"  style="position:relative;">
             <b-image
                     responsive
-                    :src="`/assets/img/${venue.thumbnail}`"
+                    :src="`/assets/img/${venue.thumbnail}?8017`"
                     ratio="2by1"
             ></b-image>
             <div class="text-photo-title venue-active">
@@ -139,7 +139,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=1.1.35" );
+      console.log( "v=1.1.36" );
       window.scrollTo(0, 0);
         // axios
         //     .get('api/workout')

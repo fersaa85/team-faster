@@ -56,7 +56,7 @@
 export default {
    name: 'footer',
    mounted() {
-       console.log( "v=1.1.35" );
+       console.log( "v=1.1.36" );
    }
 }
 </script>
