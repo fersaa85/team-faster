@@ -491,7 +491,15 @@ export default {
               '/assets/revolucion/IMG_1466.JPG',
               '/assets/revolucion/IMG_1470.JPG',
               '/assets/revolucion/IMG_1472.JPG',
-              '/assets/revolucion/IMG_1477.JPG'
+              '/assets/revolucion/IMG_1477.JPG',
+              '/assets/revolucion/IMG_1225.JPG',
+              '/assets/revolucion/IMG_1262.JPG',
+              '/assets/revolucion/IMG_1325.JPG',
+              '/assets/revolucion/IMG_1340.JPG',
+              '/assets/revolucion/IMG_1359.JPG',
+              '/assets/revolucion/IMG_1368.JPG',
+              '/assets/revolucion/IMG_1418.JPG',
+              '/assets/revolucion/IMG_1425.JPG'
           ],
 
           galery: []
@@ -499,7 +507,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=1.1.36" );
+      console.log( "v=1.1.37" );
 
         axios
             .get('api/galeries')

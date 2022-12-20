@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.36");
+    console.log("v=1.1.37");
   }
 });
 
@@ -348,7 +348,7 @@ __webpack_require__.r(__webpack_exports__);
     Footer: _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   mounted: function mounted() {
-    console.log("v=1.1.36");
+    console.log("v=1.1.37");
     window.scrollTo(0, 0);
     this.setElement(this.$refs.coach1);
     this.setElement(this.$refs.coach2);
