@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.27");
+    console.log("v=2.0.0");
   }
 });
 
@@ -863,11 +863,13 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=1.1.27");
+    console.log("v=2.0.0");
+    var slug = this.$route.params.slug;
+    if (slug == 'ParqueBicentenario') slug = 'Revolucion';
     window.scrollTo(0, 0);
     this.setElement(this.$refs.img1);
     this.setElement(this.$refs.img2);
-    axios.get('/api/workout/' + this.$route.params.slug).then(function (_ref) {
+    axios.get('/api/workout/' + slug).then(function (_ref) {
       var data = _ref.data.data;
       _this.venueId = data.venue.id;
       _this.info = Object.assign({}, {
@@ -2267,7 +2269,7 @@ var render = function () {
             ]),
           ]),
           _vm._v(" "),
-          _vm.occupation < 120
+          _vm.occupation < 200
             ? [
                 _c(
                   "div",
@@ -2723,7 +2725,7 @@ var render = function () {
                   _c("b-image", {
                     attrs: {
                       responsive: "",
-                      src: "/assets/img/" + _vm.info.photo,
+                      src: "/assets/img/" + _vm.info.photo + "?8017",
                       ratio: "14by10",
                     },
                     on: { load: _vm.load1 },

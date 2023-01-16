@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=1.1.27");
+    console.log("v=2.0.0");
   }
 });
 
@@ -226,14 +226,15 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=1.1.2");
-    window.scrollTo(0, 0);
-    axios.get('api/workout').then(function (_ref) {
+    console.log("v=2.0.0");
+    window.scrollTo(0, 0); // axios
+    //     .get('api/workout')
+    //     .then(({ data }) => {
+    //         this.workout = Object.assign({}, data.data);
+    //     });
+
+    axios.get('api/venues').then(function (_ref) {
       var data = _ref.data;
-      _this.workout = Object.assign({}, data.data);
-    });
-    axios.get('api/venues').then(function (_ref2) {
-      var data = _ref2.data;
       _this.venues = [].concat(data.data);
     });
   },
@@ -816,7 +817,7 @@ var render = function () {
           "div",
           { staticClass: "columns ", staticStyle: { "margin-bottom": "60px" } },
           [
-            _vm.venues.length && Object.keys(_vm.workout).length
+            _vm.venues.length
               ? _vm._l(_vm.venues.slice(0, 3), function (venue, key) {
                   return _c(
                     "div",
@@ -995,7 +996,7 @@ var render = function () {
           "div",
           { staticClass: "columns is-centered" },
           [
-            _vm.venues.length && Object.keys(_vm.workout).length
+            _vm.venues.length
               ? _vm._l(_vm.venues.slice(3, 6), function (venue, key) {
                   return _c(
                     "div",
@@ -1009,19 +1010,14 @@ var render = function () {
                       _c("b-image", {
                         attrs: {
                           responsive: "",
-                          src: "/assets/img/" + venue.thumbnail,
+                          src: "/assets/img/" + venue.thumbnail + "?8017",
                           ratio: "2by1",
                         },
                       }),
                       _vm._v(" "),
                       _c(
                         "div",
-                        {
-                          staticClass: "text-photo-title venue-active",
-                          class: {
-                            "venue-active": venue.id == _vm.workout.venue.id,
-                          },
-                        },
+                        { staticClass: "text-photo-title venue-active" },
                         [
                           _vm._v(
                             "\n            " +
@@ -1094,7 +1090,6 @@ var render = function () {
                                         attrs: {
                                           rounded: "",
                                           size: "is-medium",
-                                          disabled: true,
                                           "data-id": venue.id,
                                         },
                                         on: {

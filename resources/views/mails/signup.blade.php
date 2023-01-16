@@ -160,7 +160,7 @@
                                 <tr>
                                     <td>
                                         <h2 style="text-align: center; color:#ffffff;font-size: 25px;margin: 0px;line-height: initial; margin-top: 30px;" class="gotica-italic">
-                                            Reserva <span style="font-size: 35px;">Artz Pedregal</span>
+                                            Reserva <span style="font-size: 35px;">Parque Bicentenario</span>
                                         </h2>
                                     </td>
                                 </tr>
@@ -185,10 +185,10 @@
                                             </tr>
                                             <tr>
                                                 <td width="40%">
-                                                    <b>Experiencia:</b> {{ $workout ?? '$workout' }}
+                                                    <b>Experiencia:</b> Workout
                                                 </td>
                                                 <td width="60%">
-                                                    <b>Coaches:</b> {{ $coathc ?? '$coatch' }}
+                                                    <b>Coach:</b> Luis Carlos Origel
                                                 </td>
                                             </tr>
                                         </table>

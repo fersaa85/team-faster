@@ -87,7 +87,7 @@
             <div>
               <b-image
                       responsive
-                      :src="`/assets/img/${venue.image}`"
+                      :src="`/assets/img/${venue.image}?8017`"
                       ratio="1by1"
               ></b-image>
               <div class="columns mt-2">
@@ -150,7 +150,8 @@ export default {
     },
     methods:  {
         handleGoTo(slug){
-            this.$router.push('/registro/'+slug);
+          if(slug== 'Revolucion') this.$router.push('/registro/ParqueBicentenario');
+          else this.$router.push('/registro/'+slug);
         },
         setElement(el){
             this.gsap.to(

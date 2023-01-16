@@ -14,6 +14,10 @@
         <app></app>
         </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<<<<<<< HEAD
         <script src="{{ mix('js/app.js') }}?v=2.0.0"></script>
+=======
+        <script src="{{ mix('js/app.js') }}?v=1.1.37"></script>
+>>>>>>> 59ba78924a1c383c5479d8293e4d518bb7357695
     </body>
 </html>

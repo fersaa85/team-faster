@@ -22,7 +22,7 @@
           <div class="img-blackwhite" ref="img1">
             <b-image
               responsive
-              :src="'/assets/img/' + info.photo"
+              :src="'/assets/img/' + info.photo + '?8017'"
               ratio="14by10"
               @load="load1"
             ></b-image>
@@ -95,11 +95,13 @@ export default {
     },
     mounted() {
        console.log( "v=2.0.0" );
+      let slug = this.$route.params.slug;
+      if(slug== 'ParqueBicentenario') slug='Revolucion';
        window.scrollTo(0, 0);
        this.setElement(this.$refs.img1);
        this.setElement(this.$refs.img2);
          axios
-             .get('/api/workout/'+this.$route.params.slug)
+             .get('/api/workout/'+slug)
              .then(({ data: { data } }) => {
                  this.venueId = data.venue.id;
                  this.info = Object.assign({}, {
