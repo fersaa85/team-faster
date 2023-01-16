@@ -13,6 +13,7 @@ import "./vee-validate";
 import { gsap } from "gsap";
 
 import ScrollTrigger from "gsap/ScrollTrigger";
+import ScrollToPlugin from "gsap/ScrollToPlugin";
 
 import 'viewerjs/dist/viewer.css'
 import VueViewer from 'v-viewer'
@@ -20,11 +21,12 @@ import VueViewer from 'v-viewer'
 var AddToCalendar = require('vue-add-to-calendar');
 Vue.use(AddToCalendar);
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 Vue.mixin({
     created: function () {
       this.gsap = gsap;
+      this.scrollTrigger = ScrollTrigger;
     }
   });
 

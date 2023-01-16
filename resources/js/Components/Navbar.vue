@@ -1,5 +1,5 @@
 <template>
-  <b-navbar centered fixed-top spaced class="gradient-bar">
+  <b-navbar centered fixed-top spaced transparent class="gradient-bar">
     <template #brand>
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <img
@@ -30,11 +30,11 @@
         Galería
       </b-navbar-item>
     </template>
-    <template #end>
+    <!-- <template #end>
       <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
         ¡Inscríbete aquí!
       </b-button>
-    </template>
+    </template> -->
   </b-navbar>
 </template>
 
@@ -53,7 +53,7 @@ export default {
   .gradient-bar{
     background: rgb(96,169,247);
     // background: linear-gradient(90deg, rgba(96,169,247,1) 0%, rgba(144,106,245,1) 38%, rgba(215,0,251,1) 100%);
-    background: black;
+    background: transparent;
     color: white;
   }
   a{
@@ -76,7 +76,7 @@ export default {
       }
       .nav-bar-button{
         font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
-        font-size: 20px;
+        font-size: 30px;
         padding-top: 0.5rem !important;
         background-color: transparent !important;
         color:#a8a5af;

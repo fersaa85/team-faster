@@ -8,8 +8,21 @@ $font-color: #555555;
 }
 
 @font-face {
+  font-family: "FFDINforPUMA-Regular";
+  src: url("/assets/fonts/FFDINforPUMA-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "GoticaModerna-KK-Italic";
   src: url("/assets/fonts/GoticaModerna-KK-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.puma-regular{
+  font-family: 'FFDINforPUMA-Regular','Helvetica Neue',Helvetica,Arial,sans-serif;
   font-weight: normal;
   font-style: normal;
 }
