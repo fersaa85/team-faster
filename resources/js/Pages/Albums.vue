@@ -139,7 +139,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=1.1.2" );
+      console.log( "v=2.0.0" );
       window.scrollTo(0, 0);
         axios
             .get('api/workout')
