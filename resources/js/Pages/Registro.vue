@@ -94,7 +94,7 @@ export default {
       };
     },
     mounted() {
-       console.log( "v=2.0.0" );
+       console.log( "v=2.0.1" );
       let slug = this.$route.params.slug;
       if(slug== 'ParqueBicentenario') slug='Revolucion';
        window.scrollTo(0, 0);
