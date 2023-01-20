@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="{{ mix('css/app.css') }}?v=2.0.0" />
     <title>{{env('APP_NAME', 'Team Faster')}}</title>
 </head>
-        <body>
-        <div id="app">
-        <app></app>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="{{ mix('js/app.js') }}?v=2.0.0"></script>
+<body>
+<div id="app">
+    <app></app>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="{{ mix('js/app.js') }}?v=2.0.0"></script>
 
-    </body>
+</body>
 </html>

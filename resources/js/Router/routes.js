@@ -5,6 +5,11 @@ const routes = [
     name: 'home'
   },
   {
+        path: '/v2',
+        component: () => import('../Pages/Home-v2.vue'),
+        name: 'home-v2'
+  },
+  {
     path: '/registro/:slug',
     component: () => import('../Pages/Registro.vue'),
   },
