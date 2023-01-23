@@ -1799,7 +1799,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Styles_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Styles/app.scss */ "./resources/js/Styles/app.scss");
+/* harmony import */ var _Styles_app_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Styles/app.scss */ "./resources/js/Styles/app.scss");
+//
 //
 //
 //
@@ -1879,71 +1880,91 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/*
+const routes = [
+  {
+    path: '',
+    component: () => import('../Pages/Home.vue'),
+    name: 'home'
+  },
+  {
+    path: '/registro/:slug',
+    component: () => import('../Pages/Registro.vue'),
+  },
+  {
+    path: '/coaches',
+    component: () => import('../Pages/Coaches.vue'),
+    name: 'coaches'
+  },
+  {
+    path: '/registro',
+    component: () => import('../Pages/Venues.vue'),
+    name: 'registro'
+  },
+  {
+    path: '/galeria/:venueId',
+    component: () => import('../Pages/Galeria.vue'),
+    name: 'galeria'
+  },
+  {
+     path: '/blog',
+     name: 'blog',
+     component: () => import('../Pages/Blog.vue'),
+     meta: { scrollToTop: true }
+  },
+  {
+     path: '/blog/:slug',
+     name: 'post',
+     component: () => import('../Pages/Post.vue'),
+     meta: { scrollToTop: true }
+  },
+  {
+     path: '/albums',
+     name: 'albums',
+     component: () => import('../Pages/Albums.vue'),
+     meta: { scrollToTop: true }
+  },
+  { path: '*', redirect: '/' }
+]
+*/
 var routes = [{
-  path: '',
+  path: '/v2',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Home_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Home.vue */ "./resources/js/Pages/Home.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Home_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Home.vue */ "./resources/js/Pages/v2/Home.vue"));
   },
   name: 'home'
 }, {
-  path: '/v2',
+  path: '/v2/coaches',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Home-v2_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Home-v2.vue */ "./resources/js/Pages/Home-v2.vue"));
-  },
-  name: 'home-v2'
-}, {
-  path: '/registro/:slug',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Registro_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Registro.vue */ "./resources/js/Pages/Registro.vue"));
-  }
-}, {
-  path: '/coaches',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Coaches_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Coaches.vue */ "./resources/js/Pages/Coaches.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Coaches_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Coaches.vue */ "./resources/js/Pages/v2/Coaches.vue"));
   },
   name: 'coaches'
 }, {
-  path: '/registro',
+  path: '/v2/galeria',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Venues_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Venues.vue */ "./resources/js/Pages/Venues.vue"));
-  },
-  name: 'registro'
-}, {
-  path: '/galeria/:venueId',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Galeria_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Galeria.vue */ "./resources/js/Pages/Galeria.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Galeria_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Galeria.vue */ "./resources/js/Pages/v2/Galeria.vue"));
   },
   name: 'galeria'
 }, {
-  path: '/blog',
-  name: 'blog',
+  path: '/v2/blog',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Blog_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Blog.vue */ "./resources/js/Pages/Blog.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Blog_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Blog.vue */ "./resources/js/Pages/v2/Blog.vue"));
   },
-  meta: {
-    scrollToTop: true
-  }
+  name: 'blog'
 }, {
-  path: '/blog/:slug',
+  path: '/v2/blog/:slug',
   name: 'post',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Post_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Post.vue */ "./resources/js/Pages/Post.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Post_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Post.vue */ "./resources/js/Pages/v2/Post.vue"));
   },
   meta: {
     scrollToTop: true
   }
 }, {
-  path: '/albums',
-  name: 'albums',
+  path: '/v2/registro',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_Albums_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/Albums.vue */ "./resources/js/Pages/Albums.vue"));
-  },
-  meta: {
-    scrollToTop: true
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Registro_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Registro.vue */ "./resources/js/Pages/v2/Registro.vue"));
   }
-}, {
-  path: '*',
-  redirect: '/'
 }];
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (routes);
 
@@ -2031,6 +2052,15 @@ vue__WEBPACK_IMPORTED_MODULE_7__["default"].mixin({
 vue__WEBPACK_IMPORTED_MODULE_7__["default"].use(vue_router__WEBPACK_IMPORTED_MODULE_11__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_7__["default"].use(buefy__WEBPACK_IMPORTED_MODULE_12__["default"]);
 vue__WEBPACK_IMPORTED_MODULE_7__["default"].use((v_viewer__WEBPACK_IMPORTED_MODULE_6___default()));
+/*
+const app = new Vue({
+  el: '#app',
+  router,
+  store,
+  components: { App }
+});
+*/
+
 var app = new vue__WEBPACK_IMPORTED_MODULE_7__["default"]({
   el: '#app',
   router: _Router_index__WEBPACK_IMPORTED_MODULE_0__["default"],
@@ -2057,7 +2087,7 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-window.axios.defaults.baseURL = 'https://teamfaster.mx/'; //window.axios.defaults.baseURL = 'http://team-faster.test/';
+window.axios.defaults.baseURL = 'https://teamfaster.mx/'; //window.axios.defaults.baseURL = 'http://team-faster.test';
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
@@ -22630,7 +22660,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".menu[data-v-f348271a] {\n  position: fixed;\n  width: 100%;\n  z-index: 1;\n  color: white;\n  font-size: 30px;\n  text-transform: uppercase;\n  padding: 40px 306px 10px 40px;\n  cursor: pointer;\n}\n.button-container[data-v-f348271a] {\n  margin-top: -60px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".menu[data-v-f348271a] {\n  position: fixed;\n  width: 100%;\n  z-index: 1;\n  color: white;\n  font-size: 30px;\n  text-transform: uppercase;\n  padding: 40px 306px 10px 40px;\n}\n.button-container[data-v-f348271a] {\n  margin-top: -60px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -56996,7 +57026,69 @@ var render = function () {
   return _c(
     "div",
     { staticClass: "app" },
-    [_vm._m(0), _vm._v(" "), _c("router-view")],
+    [
+      _c("div", { staticClass: "menu" }, [
+        _c(
+          "div",
+          { staticClass: "level" },
+          [
+            _vm._m(0),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass: "level-item button-container",
+                staticStyle: { "padding-left": "145px" },
+              },
+              [_vm._v("\n        Inicio\n      ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "b-navbar-item",
+              {
+                staticClass: "level-item button-container nav-bar-button",
+                class: { "button-active": _vm.$route.name == "coaches" },
+                attrs: { tag: "router-link", to: { path: "/v2/registro" } },
+              },
+              [_vm._v("\n        Registro\n      ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "b-navbar-item",
+              {
+                staticClass: "level-item button-container nav-bar-button",
+                class: { "button-active": _vm.$route.name == "coaches" },
+                attrs: { tag: "router-link", to: { path: "/v2/coaches" } },
+              },
+              [_vm._v("\n        Coaches\n      ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "b-navbar-item",
+              {
+                staticClass: "level-item button-container nav-bar-button",
+                class: { "button-active": _vm.$route.name == "coaches" },
+                attrs: { tag: "router-link", to: { path: "/v2/blog" } },
+              },
+              [_vm._v("\n        Blog\n      ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "b-navbar-item",
+              {
+                staticClass: "level-item button-container nav-bar-button",
+                class: { "button-active": _vm.$route.name == "coaches" },
+                attrs: { tag: "router-link", to: { path: "/v2/galeria" } },
+              },
+              [_vm._v("\n        Galería\n      ")]
+            ),
+          ],
+          1
+        ),
+      ]),
+      _vm._v(" "),
+      _c("router-view"),
+    ],
     1
   )
 }
@@ -57005,40 +57097,11 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "menu" }, [
-      _c("div", { staticClass: "level" }, [
-        _c("div", { staticClass: "level-item" }, [
-          _c("img", {
-            staticStyle: { width: "182px" },
-            attrs: { src: "/assets/img/SITE_PUMA_LOGO_PUMA.png" },
-          }),
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "level-item button-container",
-            staticStyle: { "padding-left": "145px" },
-          },
-          [_vm._v("\n        Inicio\n      ")]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "level-item button-container" }, [
-          _vm._v("\n        Registro\n      "),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "level-item button-container" }, [
-          _vm._v("\n        Coaches\n      "),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "level-item button-container" }, [
-          _vm._v("\n        Blog\n      "),
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "level-item button-container" }, [
-          _vm._v("\n        Galería\n      "),
-        ]),
-      ]),
+    return _c("div", { staticClass: "level-item" }, [
+      _c("img", {
+        staticStyle: { width: "182px" },
+        attrs: { src: "/assets/img/SITE_PUMA_LOGO_PUMA.png" },
+      }),
     ])
   },
 ]
@@ -73745,7 +73808,7 @@ var index = {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_Home_vue":1,"resources_js_Pages_Home-v2_vue":1,"resources_js_Pages_Registro_vue":1,"resources_js_Pages_Coaches_vue":1,"resources_js_Pages_Venues_vue":1,"resources_js_Pages_Galeria_vue":1,"resources_js_Pages_Blog_vue":1,"resources_js_Pages_Post_vue":1,"resources_js_Pages_Albums_vue":1,"resources_js_Components_Navbar_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_v2_Home_vue":1,"resources_js_Pages_v2_Coaches_vue":1,"resources_js_Pages_v2_Galeria_vue":1,"resources_js_Pages_v2_Blog_vue":1,"resources_js_Pages_v2_Post_vue":1,"resources_js_Pages_v2_Registro_vue":1,"resources_js_Components_Navbar_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

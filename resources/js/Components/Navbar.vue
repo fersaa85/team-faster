@@ -9,13 +9,13 @@
       </b-navbar-item>
     </template>
     <template #start>
-      <b-navbar-item tag="router-link" :to="{ path: '/' }" class="nav-bar-button" :class="{'button-active':  $route.name =='home'}">
+      <b-navbar-item tag="router-link" :href="{ path: '/' }" :to="{ path: '/' }" class="nav-bar-button" :class="{'button-active':  $route.name =='home'}">
         Inicio
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/registro' }" class="nav-bar-button" :class="{'button-active':  $route.name =='registro'}">
         Registro
       </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/coaches' }" class="nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
+      <b-navbar-item tag="router-link" :to="{ path: '/v2/coaches' }" class="nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
         Coaches
       </b-navbar-item>
       <!--
@@ -30,11 +30,11 @@
         Galería
       </b-navbar-item>
     </template>
-    <!-- <template #end>
+     <template #end>
       <b-button rounded class="register-button" size="is-medium" @click="handleGoTo">
         ¡Inscríbete aquí!
       </b-button>
-    </template> -->
+    </template>
   </b-navbar>
 </template>
 

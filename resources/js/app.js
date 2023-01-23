@@ -34,9 +34,18 @@ Vue.use(VueRouter);
 Vue.use(Buefy);
 Vue.use(VueViewer);
 
+/*
 const app = new Vue({
   el: '#app',
   router,
   store,
   components: { App }
+});
+*/
+
+const app = new Vue({
+    el: '#app',
+    router,
+    store,
+    components: { App }
 });

@@ -246,7 +246,11 @@ var render = function () {
               {
                 staticClass: "nav-bar-button",
                 class: { "button-active": _vm.$route.name == "home" },
-                attrs: { tag: "router-link", to: { path: "/" } },
+                attrs: {
+                  tag: "router-link",
+                  href: { path: "/" },
+                  to: { path: "/" },
+                },
               },
               [_vm._v("\n      Inicio\n    ")]
             ),
@@ -266,7 +270,7 @@ var render = function () {
               {
                 staticClass: "nav-bar-button",
                 class: { "button-active": _vm.$route.name == "coaches" },
-                attrs: { tag: "router-link", to: { path: "/coaches" } },
+                attrs: { tag: "router-link", to: { path: "/v2/coaches" } },
               },
               [_vm._v("\n      Coaches\n    ")]
             ),
@@ -289,6 +293,23 @@ var render = function () {
                 attrs: { tag: "router-link", to: { path: "/albums" } },
               },
               [_vm._v("\n      Galería\n    ")]
+            ),
+          ]
+        },
+        proxy: true,
+      },
+      {
+        key: "end",
+        fn: function () {
+          return [
+            _c(
+              "b-button",
+              {
+                staticClass: "register-button",
+                attrs: { rounded: "", size: "is-medium" },
+                on: { click: _vm.handleGoTo },
+              },
+              [_vm._v("\n      ¡Inscríbete aquí!\n    ")]
             ),
           ]
         },

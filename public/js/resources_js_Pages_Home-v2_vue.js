@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=2.0.0");
+    console.log("v=2.0.1");
   }
 });
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../Components/Footer.vue */ "./resources/js/Components/Footer.vue");
+/* harmony import */ var _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Components/Footer.vue */ "./resources/js/Components/Footer.vue");
 //
 //
 //
@@ -211,33 +211,33 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
-    var _this = this;
+    console.log("v=2.0.1");
+    window.scrollTo(0, 0); //this.setLogoInicio();
+    //this.setFondoInicio();
+    //this.setWelcome();
+    // this.setuneteAl();
+    //this.setTeamFaster();
+    //this.setTitleVenue();
+    //this.setCoachesText();
+    //this.setCoachesImg();
+    //this.setVive();
 
-    console.log("v=2.0.0");
-    window.scrollTo(0, 0);
-    this.setLogoInicio();
-    this.setFondoInicio();
-    this.setWelcome(); // this.setuneteAl();
-
-    this.setTeamFaster();
-    this.setTitleVenue();
-    this.setCoachesText();
-    this.setCoachesImg();
-    this.setVive();
-    axios.get('api/workout').then(function (_ref) {
-      var data = _ref.data.data;
-      _this.slug = data.venue.slug;
-      _this.info = Object.assign({}, {
-        name: data.venue.name,
-        fecha: data.date_start,
-        lugar: data.venue.address,
-        tipo: data.description,
-        coach: data.coatch.name,
-        photo: data.venue.image,
-        map: data.venue.image_map,
-        available: true
-      });
-    });
+    /*  axios
+          .get('api/workout')
+          .then(({ data: { data } }) => {
+              this.slug = data.venue.slug;
+              this.info = Object.assign({}, {
+                  name: data.venue.name,
+                  fecha: data.date_start,
+                  lugar: data.venue.address,
+                  tipo:  data.description,
+                  coach:  data.coatch.name,
+                  photo: data.venue.image,
+                  map: data.venue.image_map,
+                  available: true
+              });
+          });
+          */
   },
   methods: {
     // goToSection(i) {

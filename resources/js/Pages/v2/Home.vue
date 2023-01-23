@@ -112,7 +112,7 @@
   </div>
 </template>
 <script>
-import Footer from '../Components/Footer.vue';
+import Footer from '@/Components/Footer.vue';
 
 export default {
   name: 'home',
@@ -128,16 +128,16 @@ export default {
     mounted() {
       console.log( "v=2.0.1" );
       window.scrollTo(0, 0);
-      this.setLogoInicio();
-      this.setFondoInicio();
-      this.setWelcome();
+      //this.setLogoInicio();
+      //this.setFondoInicio();
+      //this.setWelcome();
       // this.setuneteAl();
-      this.setTeamFaster();
-      this.setTitleVenue();
-      this.setCoachesText();
-      this.setCoachesImg();
-      this.setVive();
-        axios
+      //this.setTeamFaster();
+      //this.setTitleVenue();
+      //this.setCoachesText();
+      //this.setCoachesImg();
+      //this.setVive();
+      /*  axios
             .get('api/workout')
             .then(({ data: { data } }) => {
                 this.slug = data.venue.slug;
@@ -152,6 +152,7 @@ export default {
                     available: true
                 });
             });
+            */
     },
     
 

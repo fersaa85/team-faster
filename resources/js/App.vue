@@ -12,18 +12,19 @@
         <div class="level-item button-container" style="padding-left: 145px;">
           Inicio
         </div>
-        <div class="level-item button-container">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/registro' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
           Registro
-        </div>
-        <div class="level-item button-container">
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/coaches' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
           Coaches
-        </div>
-        <div class="level-item button-container">
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/blog' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
           Blog
-        </div>
-        <div class="level-item button-container">
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/galeria' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
           Galería
-        </div>
+        </b-navbar-item>
+
       </div>
     </div>
     
@@ -32,7 +33,7 @@
 </template>
 
 <script>
-import './Styles/app.scss'
+import '@/Styles/app.scss'
 
 export default {
   name: 'app',
@@ -50,7 +51,6 @@ export default {
     font-size: 30px;
     text-transform: uppercase;
     padding: 40px 306px 10px 40px;
-    cursor: pointer;
   }
   .button-container{
     margin-top: -60px;
