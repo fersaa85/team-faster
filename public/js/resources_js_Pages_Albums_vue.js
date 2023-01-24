@@ -68,7 +68,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   mounted: function mounted() {
-    console.log("v=2.0.0");
+    console.log("v=2.0.1");
   }
 });
 
@@ -226,7 +226,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.0.0");
+    console.log("v=2.0.1");
     window.scrollTo(0, 0); // axios
     //     .get('api/workout')
     //     .then(({ data }) => {

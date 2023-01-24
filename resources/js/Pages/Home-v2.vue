@@ -10,7 +10,7 @@
             ></b-image>
         </div>
         <div class="columns" style="margin: 0;">
-          <div class="column">
+          <div class="column panel1-column1">
             <div class="welcome-img">
               <b-image
                 responsive
@@ -21,11 +21,7 @@
             <div class="puma-regular welcome-text">
               <div>
                 Aquí comienza la mejor experiencia de
-              </div>
-              <div>
                 entrenamientos en combinación con coaches
-              </div>
-              <div>
                 que te ayudarán a liberar tu potencial
               </div>
             </div>
@@ -48,8 +44,8 @@
     </section>
     <section class="panel dos">
       <div>
-        <div class="columns" style="margin: 0;">
-          <div class="column is-5" style="padding-top:31vh;">
+        <div class="columns panel2-columns" style="margin: 0;">
+          <div class="column is-5 panel2-column1">
             <div class="unete">
               <div>
                 !Únete
@@ -66,7 +62,7 @@
               ></b-image>
             </div>
           </div>
-          <div class="column" style="padding-top:35vh;">
+          <div class="column panel2-column2">
             <div class="vuelvete">
               <div>
                 Vuélvete parte de nuestra familia
@@ -188,19 +184,22 @@ export default {
   // }
 
   .panel {
-    height: 100vh;
+    min-height: 100vh;
+    border-radius: 0;
     // position: sticky;
     // top: 0;
   }
   .uno{
     background-color: black;
     background-image: url("/assets/img/puma-web1.png");
+    background-position-x: center;
   }
   .dos{
     background-color: black;
     background-image: url("/assets/img/puma-web2.png");
-    position: sticky;
-    top: 0;
+    // position: sticky;
+    background-position-x: right;
+    // top: 0;
   }
   .tres{
     background-color: black;
@@ -210,19 +209,62 @@ export default {
   }
   .unete{
     font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
-    font-size: 140px;
+    font-size: 120px;
     text-transform: uppercase;
-    line-height: 140px;
+    line-height: 120px;
     text-align: center;
     color: white;
     border-bottom: 10px solid #b99571;
     margin-left: 130px;
     width: fit-content;
+    @media screen and (min-width: 1216px) and (max-width: 1408px) {
+      font-size: 100px;
+      line-height: 100px;
+    }
+    @media screen and (min-width: 1134px) and (max-width: 1215px) {
+      font-size: 80px;
+      line-height: 80px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1133px) {
+      font-size: 80px;
+      line-height: 80px;
+      margin-left: 100px;
+    }
+    @media screen and (max-width: 1023px) {
+      font-size: 70px;
+      line-height: 70px;
+      margin-left: 80px;
+    }
+    @media screen and (max-width: 870px) {
+      font-size: 60px;
+      line-height: 60px;
+      margin-left: 60px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 80px;
+      line-height: 80px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .logo-simple{
     width: 354px;
     padding-left: 139px;
     padding-top: 54px;
+    padding-bottom: 54px;
+    @media screen and (max-width: 1023px) {
+      padding-left: 80px;
+    }
+    @media screen and (max-width: 870px) {
+      padding-left: 60px;
+      width: 300px;
+    }
+    @media screen and (max-width: 768px) {
+      width: 300px;
+      padding-left: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .vuelvete{
     font-family: 'FFDINforPUMA-Regular"','Helvetica Neue',Helvetica,Arial,sans-serif;
@@ -231,21 +273,59 @@ export default {
     line-height: 42px;
     color: white;
     padding-left: 15px;
-    padding-top: 4px;
+    @media screen and (min-width: 1216px) and (max-width: 1408px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 1134px) and (max-width: 1215px) {
+      font-size: 26px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1133px) {
+      font-size: 26px;
+    }
+    @media screen and (max-width: 1023px) {
+      font-size: 26px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+      padding-left: 0;
+      margin: auto;
+      text-align: center;
+    }
   }
   .coaches{
     font-family: 'GoticaModerna-KK-Italic';
     color: white;
     font-size: 132px;
-    padding-top: 136px;
+    padding-top: 199px;
+    @media screen and (max-width: 1133px) {
+      font-size: 120px;
+    }
+    @media screen and (max-width: 1024px) {
+      font-size: 100px;
+      padding-left: 30px;
+      padding-right: 30px;
+      line-height: 90px;
+    }
   }
   .tu-style{
-    width: 27%;
+    width: 25%;
     text-align: center;
     margin: auto;
     margin-top: -47px;
     padding-right: 26px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    @media screen and (max-width: 1215px) {
+      width: 30%;
+      margin-top: -30px;
+    }
+    @media screen and (max-width: 1024px) {
+      width: 30%;
+      margin-top: 0;
+    }
+    @media screen and (max-width: 768px) {
+      width: 60%;
+      margin-top: 0;
+    }
   }
   .photos-models{
     padding: 40px 89px;
@@ -262,14 +342,34 @@ export default {
     background-color: #b99571;
     width: fit-content;
     margin-top: 69px;
+    margin-bottom: 70px;
     cursor: pointer;
-    margin-left: 184px;
+    margin-left: 1px;
+    @media screen and (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   .welcome-text{
     color: white;
     font-size: 33px;
     text-align: left;
-    padding-left: 183px;
+    // padding-left: 183px;
+    @media screen and (min-width: 1216px) and (max-width: 1408px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 1134px) and (max-width: 1215px) {
+      font-size: 30px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1133px) {
+      font-size: 30px;
+    }
+    @media screen and (max-width: 1023px) {
+      font-size: 26px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 26px;
+    }
   }
   .netw-style{
     width: 65px;
@@ -279,13 +379,48 @@ export default {
   }
   .welcome-img{
     width: 100%;
-    padding-left: 183px;
     padding-bottom: 40px;
     padding-top: 68px;
   }
   .logo-style{
-    width: 80%;
-    padding-left: 178px;
+    width: 70%;
     margin-top: -51px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 768px){
+      padding-bottom: 60px;
+      width: 40%;
+    }
+  }
+  .panel:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .panel1-column1{
+    padding-left: 183px;
+    @media screen and (max-width: 1023px) {
+      padding-left: 140px;
+    }
+    @media screen and (max-width: 768px){
+      padding-left: 19vw;
+      padding-right: 19vw;
+      margin: auto;
+      margin-top: -209px;
+    }
+  }
+  .panel2-columns{
+    padding-top: 55px;
+  }
+  .panel2-column1{
+    padding-top:31vh;
+    @media screen and (max-width: 768px){
+      padding-top:95px;
+    }
+  }
+  .panel2-column2{
+    padding-top:35vh;
+    @media screen and (max-width: 768px){
+      padding-top:0;
+      padding-bottom:50px;
+    }
   }
 </style>
