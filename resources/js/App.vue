@@ -14,23 +14,19 @@
         <div class="level-item button-container is-hidden-touch first-menu-item">
           Inicio
         </div>
-        <div class="level-item button-container is-hidden-touch">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/registro' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
           Registro
-        </div>
-        <div class="level-item button-container is-hidden-touch">
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/coaches' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
           Coaches
-        </div>
-        <div class="level-item button-container is-hidden-touch">
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/blog' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
           Blog
-        </div>
-        <div class="level-item button-container is-hidden-touch">
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/galeria' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
           Galería
-        </div>
-        <div class="level-right is-hidden-desktop">
-          <div class="level-item">
-            <i class="fas fa-bars"></i>
-          </div>
-        </div>
+        </b-navbar-item>
+
       </div>
     </div>
     
@@ -39,7 +35,7 @@
 </template>
 
 <script>
-import './Styles/app.scss'
+import '@/Styles/app.scss'
 
 export default {
   name: 'app',

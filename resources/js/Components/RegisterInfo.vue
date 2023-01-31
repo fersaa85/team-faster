@@ -16,15 +16,7 @@
           </template>
     </b-modal>
     <div class="gotica-italic info-margin">
-      <p v-if="available" class="title-1">
-        Reserva sin costo,
-      </p>
-      <p v-if="available" class="title-2">
-        Un lugar con el team faster
-      </p>
-      <p class="title-3" :class="{notAvailable: !available}">
-        {{ name }}
-      </p>
+     <br /><br /><br />
     </div>
     <div class="puma-bold" style="padding-top: 36px;">
       <div class="info-margin">
@@ -125,8 +117,8 @@
 </template>
 
 <script>
-import RegisterForm from '../Components/RegisterForm.vue';
-import SuccessModal from '../Components/Success.vue';
+import RegisterForm from '@/Components/RegisterForm.vue';
+import SuccessModal from '@/Components/Success.vue';
 
   export default {
     name: 'registerInfo',

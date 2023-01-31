@@ -126,7 +126,7 @@
   </div>
 </template>
 <script>
-import Footer from '../Components/Footer.vue';
+import Footer from '@/Components/Footer.vue';
 
 export default {
   name: 'home',
@@ -156,22 +156,22 @@ export default {
       setTimeout(() => {
         this.showWelcome();
       }, 500);
-      this.setVive();
-        axios
-            .get('api/workout')
-            .then(({ data: { data } }) => {
-                this.slug = data.venue.slug;
-                this.info = Object.assign({}, {
-                    name: data.venue.name,
-                    fecha: data.date_start,
-                    lugar: data.venue.address,
-                    tipo:  data.description,
-                    coach:  data.coatch.name,
-                    photo: data.venue.image,
-                    map: data.venue.image_map,
-                    available: true
-                });
-            });
+      // this.setVive();
+      //   axios
+      //       .get('api/workout')
+      //       .then(({ data: { data } }) => {
+      //           this.slug = data.venue.slug;
+      //           this.info = Object.assign({}, {
+      //               name: data.venue.name,
+      //               fecha: data.date_start,
+      //               lugar: data.venue.address,
+      //               tipo:  data.description,
+      //               coach:  data.coatch.name,
+      //               photo: data.venue.image,
+      //               map: data.venue.image_map,
+      //               available: true
+      //           });
+      //       });
     },
     
 
