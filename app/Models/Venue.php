@@ -23,7 +23,12 @@ class Venue extends Model
      */
     public function workout()
     {
-        return $this->belongsTo(Workout::class, 'id', 'venue_id');
+        return $this->hasOne(Workout::class, 'id', 'venue_id');
     }
 
+
+    public function getShowImageAttribute()
+    {
+        return \Storage::disk('public')->url('venues/'. $this->attributes['image']);
+    }
 }

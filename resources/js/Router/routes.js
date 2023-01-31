@@ -54,6 +54,11 @@ const routes = [
         name: 'home'
     },
     {
+        path: '/v2/sedes',
+        component: () => import('../Pages/v2/Venues.vue'),
+        name: 'sedes'
+    },
+    {
         path: '/v2/coaches',
         component: () => import('../Pages/v2/Coaches.vue'),
         name: 'coaches'
@@ -75,7 +80,7 @@ const routes = [
         meta: { scrollToTop: true }
     },
     {
-        path: '/v2/registro',
+        path: '/v2/registro/:slug',
         component: () => import('../Pages/v2/Registro.vue'),
     }
 ];

@@ -51,6 +51,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'navbar',
   methods: {
@@ -253,6 +256,16 @@ var render = function () {
                 },
               },
               [_vm._v("\n      Inicio\n    ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "b-navbar-item",
+              {
+                staticClass: "nav-bar-button",
+                class: { "button-active": _vm.$route.name == "cedes" },
+                attrs: { tag: "router-link", to: { path: "/cedes" } },
+              },
+              [_vm._v("\n      Registro\n    ")]
             ),
             _vm._v(" "),
             _c(
