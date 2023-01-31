@@ -96,12 +96,11 @@ export default {
     mounted() {
        console.log( "v=2.0.1" );
       let slug = this.$route.params.slug;
-      if(slug== 'ParqueBicentenario') slug='Revolucion';
        window.scrollTo(0, 0);
        this.setElement(this.$refs.img1);
        this.setElement(this.$refs.img2);
          axios
-             .get('/api/workout/ParqueBicentenario')
+             .get(`/api/workout/${slug}`)
              .then(({ data: { data } }) => {
                  this.venueId = data.venue.id;
                  this.info = Object.assign({}, {

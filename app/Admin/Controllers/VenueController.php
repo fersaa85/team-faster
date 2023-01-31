@@ -89,17 +89,29 @@ class VenueController extends AdminController
     {
         $form = new Form(new Venue());
 
+        $form->display('id', 'ID');
+
         $form->text('name', __('Nombre'));
         $form->textarea('address', __('Address'));
-        $form->text('image', __('Imagen'));
-        $form->text('image_map', __('Imagen mapa'));
-        $form->text('thumbnail', __('Imagen thumbnail'));
+        $form->image('image', 'Imagen')->move('/venues');
+        //$form->text('image_map', __('Imagen mapa'));
+        //$form->text('thumbnail', __('Imagen thumbnail'));
         $form->text('google_maps', __('Google Maps'));
 
-        $form->text('workout.date_start',  __('Cuando'));
         $form->text('workout.description',  __('Experiencia workout'));
-        $form->text('workout.coatch_id',  __('Coatch'));
+        $form->select('workout.coatch_id',  __('Coatch'))->options(function ($id) {
+             return Coatch::pluck('name', 'id');
+        });
+        $form->date('workout.date_start',  __('Cuando'))->format('YYYY-MM-DD');
         $form->text('workout.active', 'Activo');
+
+        $form->text('workout.venue_id', __('venue_id'));
+
+        /*$form->hidden('workout.venue_id')->saving(function (Form $form) {;
+            //$form->workout->venue_id = $form->id;
+            return  $form->id;
+        });
+        */
 
         return $form;
     }

@@ -1934,6 +1934,12 @@ var routes = [{
   },
   name: 'home'
 }, {
+  path: '/v2/sedes',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Venues_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Venues.vue */ "./resources/js/Pages/v2/Venues.vue"));
+  },
+  name: 'sedes'
+}, {
   path: '/v2/coaches',
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Coaches_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Coaches.vue */ "./resources/js/Pages/v2/Coaches.vue"));
@@ -1961,7 +1967,7 @@ var routes = [{
     scrollToTop: true
   }
 }, {
-  path: '/v2/registro',
+  path: '/v2/registro/:slug',
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Registro_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Registro.vue */ "./resources/js/Pages/v2/Registro.vue"));
   }
@@ -2086,9 +2092,9 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
  */
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-window.axios.defaults.baseURL = 'https://teamfaster.mx/'; //window.axios.defaults.baseURL = 'http://team-faster.test';
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'; //window.axios.defaults.baseURL = 'https://teamfaster.mx/';
 
+window.axios.defaults.baseURL = 'http://team-faster.test';
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
@@ -73808,7 +73814,7 @@ var index = {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_v2_Home_vue":1,"resources_js_Pages_v2_Coaches_vue":1,"resources_js_Pages_v2_Galeria_vue":1,"resources_js_Pages_v2_Blog_vue":1,"resources_js_Pages_v2_Post_vue":1,"resources_js_Pages_v2_Registro_vue":1,"resources_js_Components_Navbar_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_v2_Home_vue":1,"resources_js_Pages_v2_Venues_vue":1,"resources_js_Pages_v2_Coaches_vue":1,"resources_js_Pages_v2_Galeria_vue":1,"resources_js_Pages_v2_Blog_vue":1,"resources_js_Pages_v2_Post_vue":1,"resources_js_Pages_v2_Registro_vue":1,"resources_js_Components_Navbar_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

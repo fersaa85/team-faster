@@ -857,11 +857,10 @@ __webpack_require__.r(__webpack_exports__);
 
     console.log("v=2.0.1");
     var slug = this.$route.params.slug;
-    if (slug == 'ParqueBicentenario') slug = 'Revolucion';
     window.scrollTo(0, 0);
     this.setElement(this.$refs.img1);
     this.setElement(this.$refs.img2);
-    axios.get('/api/workout/ParqueBicentenario').then(function (_ref) {
+    axios.get("/api/workout/".concat(slug)).then(function (_ref) {
       var data = _ref.data.data;
       _this.venueId = data.venue.id;
       _this.info = Object.assign({}, {
