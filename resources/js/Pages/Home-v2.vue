@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <section class="description panel uno">
       <div>
         <div class="netw-style">
@@ -30,7 +30,7 @@
             </div>
           </div>
           <div class="column">
-            <div class="logo-style">
+            <div class="logo-style" ref="logoInicio">
               <b-image
               responsive
               src="/assets/img/logoTeamFaster.png"
@@ -96,13 +96,31 @@
           ></b-image>
       </div>
       </div>
-      <div class="photos-models" style="margin: 0;">
+      <div class="photos-models columns" style="margin: 0;">
+        <div class="column models1">
           <b-image
-              responsive
-              src="/assets/img/models.png"
-              ratio="1622by339"
-              class="model-2"
-            ></b-image>
+            responsive
+            src="/assets/img/models.png"
+            ratio="512by339"
+            class="model-2"
+          ></b-image>
+        </div>
+        <div class="column models2">
+          <b-image
+            responsive
+            src="/assets/img/models2.png"
+            ratio="512by339"
+            class="model-2"
+          ></b-image>
+        </div>
+        <div class="column models3">
+          <b-image
+            responsive
+            src="/assets/img/models3.png"
+            ratio="512by339"
+            class="model-2"
+          ></b-image>
+        </div>
       </div>
     </section>
   </div>
@@ -125,13 +143,19 @@ export default {
       console.log( "v=2.0.1" );
       window.scrollTo(0, 0);
       this.setLogoInicio();
-      this.setFondoInicio();
+      // this.setFondoInicio();
       this.setWelcome();
-      // this.setuneteAl();
-      this.setTeamFaster();
-      this.setTitleVenue();
-      this.setCoachesText();
-      this.setCoachesImg();
+      this.setWelcomeText();
+      // this.setPage1();
+      this.setPage2();
+      this.setPage3();
+      // this.setTeamFaster();
+      // this.setTitleVenue();
+      // this.setCoachesText();
+      // this.setCoachesImg();
+      setTimeout(() => {
+        this.showWelcome();
+      }, 500);
       this.setVive();
         axios
             .get('api/workout')
@@ -169,7 +193,135 @@ export default {
         let items = document.querySelectorAll('section');
 
         // cssScrollSnapPolyfill();
-      }
+      },
+      // showLogoInicio(){
+      //   this.gsap.to(
+      //     this.$refs.logoInicio,
+      //     {autoAlpha: 1, duration: 0.8, scaleX:1, scaleY:1, delay:0, ease: "Power2.easeOut", onComplete: this.showWelcomeText  }
+      //   );
+      // },
+      setWelcome(){
+        this.gsap.to(
+          ".welcome-img",
+          {autoAlpha: 0, duration: 0, y:400, }
+        );
+      },
+      setWelcomeText(){
+        this.gsap.to(
+          ".welcome-text",
+          {autoAlpha: 0, duration: 0 }
+        );
+        this.gsap.to(
+          ".registrarme-button",
+          {autoAlpha: 0, duration: 0 }
+        );
+      },
+      setLogoInicio(){
+        this.gsap.to(
+          this.$refs.logoInicio,
+          {autoAlpha: 0, duration: 0, scaleX:0, scaleY:0 }
+        );
+      },
+      showWelcome(){
+        this.gsap.to(
+          ".welcome-img",
+          {autoAlpha: 1, duration: 1, y:0, ease: "Power2.easeOut", onComplete: this.setPage1 }
+        );
+      },
+      // showWelcomeText(){
+      //   this.gsap.to(
+      //     ".welcome-text",
+      //     {autoAlpha: 1, duration: 0.8, ease: "Power2.easeIn" }
+      //   );
+      //   this.gsap.to(
+      //     ".registrarme-button",
+      //     {autoAlpha: 1, duration: 1, ease: "Power2.easeIn" }
+      //   );
+      // },
+      setPage1(){
+        this.gsap.to(
+          ".welcome-text",{
+          scrollTrigger: ".welcome-text",
+          autoAlpha: 1, duration: 0.8, delay:0.5, ease: "Power2.easeIn" }
+        );
+        this.gsap.to(
+          ".registrarme-button",{
+          scrollTrigger: ".registrarme-button",
+          autoAlpha: 1, duration: 1, delay:0.5, ease: "Power2.easeIn" }
+        );
+        this.gsap.to(
+          this.$refs.logoInicio,{
+          scrollTrigger: this.$refs.logoInicio,
+          autoAlpha: 1, duration: 0.8, scaleX:1, scaleY:1, delay:0, ease: "Power2.easeOut" }
+        );
+      },
+      setPage2(){
+        this.gsap.from(".unete", {
+          scrollTrigger: ".unete", // start the animation when ".box" enters the viewport (once)
+          x:-100,
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.5,
+          ease: "Power2.easeOut"
+        });
+        this.gsap.from(".vuelvete", {
+          scrollTrigger: ".vuelvete", // start the animation when ".box" enters the viewport (once)
+          x:100,
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.5,
+          ease: "Power2.easeOut"
+        });
+        this.gsap.from(".logo-simple", {
+          scrollTrigger: ".logo-simple", // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.5,
+          ease: "Power2.easeIn"
+        });
+      },
+      setPage3(){
+        this.gsap.from(".coaches", {
+          scrollTrigger: ".coaches", // start the animation when ".box" enters the viewport (once)
+          x:-100,
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.8,
+          ease: "Power2.easeOut"
+        });
+        this.gsap.from(".tu-style", {
+          scrollTrigger: ".tu-style", // start the animation when ".box" enters the viewport (once)
+          scaleX:0,
+          scaleY:0,
+          autoAlpha:0,
+          duration:1,
+          delay:0.5,
+          ease: "Power2.easeOut"
+        });
+        this.gsap.from(".models1", {
+          scrollTrigger: ".models1", // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          x:-100,
+          duration:0.8,
+          delay:0.8,
+          ease: "Power2.easeIn"
+        });
+        this.gsap.from(".models2", {
+          scrollTrigger: ".models2", // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          duration:0.8,
+          delay:0.8,
+          ease: "Power2.easeIn"
+        });
+        this.gsap.from(".models3", {
+          scrollTrigger: ".models3", // start the animation when ".box" enters the viewport (once)
+          autoAlpha:0,
+          x:100,
+          duration:0.8,
+          delay:0.8,
+          ease: "Power2.easeIn"
+        });
+      },
     }
 }
 </script>
@@ -182,6 +334,10 @@ export default {
   // .panel:not(:last-child) {
   //   margin-bottom: 0;
   // }
+  .home{
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
 
   .panel {
     min-height: 100vh;
@@ -286,8 +442,9 @@ export default {
       font-size: 26px;
     }
     @media screen and (max-width: 768px) {
-      font-size: 26px;
-      padding-left: 0;
+      font-size: 23px;
+      padding-left: 10px;
+      padding-right: 10px;
       margin: auto;
       text-align: center;
     }
@@ -348,6 +505,7 @@ export default {
     @media screen and (max-width: 768px) {
       margin-left: auto;
       margin-right: auto;
+      max-width: 81vw;
     }
   }
   .welcome-text{
@@ -423,4 +581,5 @@ export default {
       padding-bottom:50px;
     }
   }
+  
 </style>
