@@ -9,8 +9,8 @@ window._ = require('lodash');
 window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
-//window.axios.defaults.baseURL = 'https://teamfaster.mx/';
-window.axios.defaults.baseURL = 'http://team-faster.test';
+window.axios.defaults.baseURL = 'https://teamfaster.mx/';
+//window.axios.defaults.baseURL = 'http://team-faster.test';
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
