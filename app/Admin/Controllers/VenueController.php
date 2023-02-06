@@ -114,6 +114,12 @@ class VenueController extends AdminController
         });
         */
 
+        $form->saving(function (Form $form) {
+
+            $form->slug = $form->name;
+
+        });
+
         return $form;
     }
 }

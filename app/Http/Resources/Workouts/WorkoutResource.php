@@ -29,7 +29,7 @@ class WorkoutResource extends JsonResource
             'description' => isset($this->description) ? $this->description : '',
             'timeline' => $this->timeline,
             'couches' => $this->couches,
-            'limit' => WorkoutUser::where('workout_id', $this->id)->count() >= $limit->limit_user,
+            'limit' => WorkoutUser::where('workout_id', $this->id)->whereYear('created_at', date('Y'))->count() >= $limit->limit_user,
             'active'=> $this->active,
         ];
     }

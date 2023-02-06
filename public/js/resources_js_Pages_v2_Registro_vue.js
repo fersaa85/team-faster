@@ -2989,7 +2989,7 @@ var render = function () {
                   _c("b-image", {
                     attrs: {
                       responsive: "",
-                      src: "/assets/img/" + _vm.info.photo + "?8017",
+                      src: _vm.info.photo,
                       ratio: "14by10",
                     },
                     on: { load: _vm.load1 },
@@ -3006,7 +3006,7 @@ var render = function () {
                     _c("b-image", {
                       attrs: {
                         responsive: "",
-                        src: "/assets/img/" + _vm.info.map,
+                        src: _vm.info.map,
                         ratio: "15by13",
                       },
                       on: { load: _vm.load2 },

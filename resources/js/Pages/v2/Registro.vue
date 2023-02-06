@@ -38,7 +38,7 @@
           <div class="img-blackwhite" ref="img1">
             <b-image
               responsive
-              :src="'/assets/img/' + info.photo + '?8017'"
+              :src="info.photo"
               ratio="14by10"
               @load="load1"
             ></b-image>
@@ -47,7 +47,7 @@
             <a :href="info.google_maps" target="_blank">
               <b-image
                       responsive
-                      :src="'/assets/img/'+ info.map"
+                      :src="info.map"
                       ratio="15by13"
                       @load="load2"
               ></b-image>

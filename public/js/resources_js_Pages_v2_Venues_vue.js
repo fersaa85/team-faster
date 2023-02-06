@@ -156,29 +156,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
@@ -229,6 +206,12 @@ __webpack_require__.r(__webpack_exports__);
       var datetime = date.split(' ');
       var splitDate = datetime[0].split('-');
       var months = {
+        '01': 'ene',
+        '02': 'feb',
+        '03': 'mar',
+        '04': 'abr',
+        '05': 'may',
+        '06': 'jun',
         '07': 'jul',
         '08': 'ago',
         '09': 'sep',
@@ -788,7 +771,7 @@ var render = function () {
           { staticClass: "columns" },
           [
             _vm.venues.length
-              ? _vm._l(_vm.venues.slice(0, 3), function (venue, key) {
+              ? _vm._l(_vm.venues, function (venue, key) {
                   return _c(
                     "div",
                     {
