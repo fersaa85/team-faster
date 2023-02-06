@@ -263,9 +263,9 @@ var render = function () {
               {
                 staticClass: "nav-bar-button",
                 class: { "button-active": _vm.$route.name == "cedes" },
-                attrs: { tag: "router-link", to: { path: "/cedes" } },
+                attrs: { tag: "router-link", to: { path: "/sedes" } },
               },
-              [_vm._v("\n      Registro\n    ")]
+              [_vm._v("\n      Sedes\n    ")]
             ),
             _vm._v(" "),
             _c(

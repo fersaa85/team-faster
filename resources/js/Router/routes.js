@@ -80,6 +80,10 @@ const routes = [
         meta: { scrollToTop: true }
     },
     {
+        path: '/v2/registro',
+        component: () => import('../Pages/v2/Registro.vue'),
+    },
+    {
         path: '/v2/registro/:slug',
         component: () => import('../Pages/v2/Registro.vue'),
     }

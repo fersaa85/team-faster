@@ -94,9 +94,10 @@ class VenueController extends AdminController
         $form->text('name', __('Nombre'));
         $form->textarea('address', __('Address'));
         $form->image('image', 'Imagen')->move('/venues');
+        $form->image('image_map', 'Imagen mapa')->move('/venues');
         //$form->text('image_map', __('Imagen mapa'));
-        //$form->text('thumbnail', __('Imagen thumbnail'));
         $form->text('google_maps', __('Google Maps'));
+        $form->text('order', __('Orden'));
 
         $form->text('workout.description',  __('Experiencia workout'));
         $form->select('workout.coatch_id',  __('Coatch'))->options(function ($id) {

@@ -74,7 +74,22 @@
 
       </div>
 
-      <template v-if="occupation < 200">
+      <template v-if="limit">
+        <div class="columns">
+          <div class="column is-2" ></div>
+          <div class="column gotica-italic">
+            <div class="info-block">
+              <h3 class="info-block-title" style="font-size: 40px; text-align: center;">¡Gracias por querer ser parte de nuestra familia teamfaster!</h3>
+
+              <div class="join-text-r2 puma-bold"style="color: #000000; text-align: center;">
+                El evento se encuentra lleno, espera próximamente nuevos eventos.
+              </div>
+            </div>
+          </div>
+          <div class="column is-2" ></div>
+        </div>
+      </template>
+      <template v-else>
         <div class="is-hidden-mobile">
           <!-- <div v-if="success" class="alert alert-success" role="alert">
             <b>Gracias por registrarse al evento.¡Te esperamos!</b>
@@ -94,21 +109,6 @@
                   @success="handleSuccess"
                   @errors="handleErrors"
           />
-        </div>
-      </template>
-      <template v-else>
-        <div class="columns">
-          <div class="column is-2" ></div>
-          <div class="column gotica-italic">
-            <div class="info-block">
-             <h3 class="info-block-title" style="font-size: 40px; text-align: center;">¡Gracias por querer ser parte de nuestra familia teamfaster!</h3>
-
-              <div class="join-text-r2 puma-bold"style="color: #000000; text-align: center;">
-                El evento se encuentra lleno, espera próximamente nuevos eventos.
-              </div>
-            </div>
-          </div>
-          <div class="column is-2" ></div>
         </div>
       </template>
 
@@ -160,8 +160,8 @@ import SuccessModal from '@/Components/Success.vue';
           type: Array,
           default: () => []
       },
-      occupation: {
-          type: Number,
+      limit: {
+          type: Boolean,
           required: true
       },
     },

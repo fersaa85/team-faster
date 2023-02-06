@@ -13,6 +13,13 @@
         <div class="columns is-variable is-8 tm-puma" style="margin-bottom: 60px;">
             <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
             </div>
+            <template v-if="sponsors.length">
+                <div v-for="(item, index) in sponsors" class="column is-5-mobile" style="margin:auto;">
+                    <p class="text-center">
+                        <img :src="item.image" width="100px" />
+                    </p>
+                </div>
+            </template>
             <div class="column is-5-mobile" style="margin:auto;">
                 <p class="text-center">
                     <img src="/assets/img/G_Logo_Blanco.png" />
@@ -55,8 +62,21 @@
 <script>
 export default {
    name: 'footer',
+    data(){
+        return {
+            isErrors: false,
+            sponsors: [],
+        };
+    },
    mounted() {
        console.log( "v=2.0.1" );
+       axios
+           .get(`/api/sponsors`)
+           .then(({ data: { data } }) => {
+               this.sponsors = [].concat(data);
+           }).catch( () => {
+           this.isErrors = true;
+       });
    }
 }
 </script>

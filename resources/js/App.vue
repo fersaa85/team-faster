@@ -17,6 +17,9 @@
         <b-navbar-item tag="router-link" :to="{ path: '/v2/registro' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
           Registro
         </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/sedes' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
+          Sedes
+        </b-navbar-item>
         <b-navbar-item tag="router-link" :to="{ path: '/v2/coaches' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
           Coaches
         </b-navbar-item>
@@ -40,7 +43,7 @@ import '@/Styles/app.scss'
 export default {
   name: 'app',
   components: {
-    Navbar: () => import('./Components/Navbar.vue')
+    Navbar: () => import('@/Components/Navbar.vue')
   }
 }
 </script>

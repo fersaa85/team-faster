@@ -66,3 +66,9 @@ Route::group([
     Route::get('/', \App\Http\Controllers\Blog\BlogListsController::class);
     Route::get('/{slug}', \App\Http\Controllers\Blog\PostController::class);
 });
+
+Route::group([
+    'prefix' => 'sponsors',
+], function() {
+    Route::get('/', \App\Http\Controllers\Sponsors\SponsorsController::class);
+});
