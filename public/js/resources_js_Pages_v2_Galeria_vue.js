@@ -65,10 +65,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
+  data: function data() {
+    return {
+      isErrors: false,
+      sponsors: []
+    };
+  },
   mounted: function mounted() {
+    var _this = this;
+
     console.log("v=2.0.1");
+    axios.get("/api/sponsors").then(function (_ref) {
+      var data = _ref.data.data;
+      _this.sponsors = [].concat(data);
+    })["catch"](function () {
+      _this.isErrors = true;
+    });
   }
 });
 
@@ -143,14 +164,7 @@ __webpack_require__.r(__webpack_exports__);
     Footer: _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_9__["default"]
   },
   data: function data() {
-    return {
-      xochipilli: ['/assets/xochipilli/_MG_6388.jpg', '/assets/xochipilli/_MG_6390.jpg', '/assets/xochipilli/_MG_6402.jpg', '/assets/xochipilli/_MG_6409.jpg', '/assets/xochipilli/_MG_6419.jpg', '/assets/xochipilli/_MG_6432.jpg', '/assets/xochipilli/_MG_6436.jpg', '/assets/xochipilli/_MG_6457.jpg', '/assets/xochipilli/_MG_6468.jpg', '/assets/xochipilli/_MG_6477.jpg', '/assets/xochipilli/_MG_6481.jpg', '/assets/xochipilli/_MG_6499.jpg', '/assets/xochipilli/_MG_6510.jpg', '/assets/xochipilli/_MG_6526.jpg', '/assets/xochipilli/_MG_6545.jpg', '/assets/xochipilli/_MG_6550.jpg', '/assets/xochipilli/_MG_6574.jpg', '/assets/xochipilli/_MG_6582.jpg', '/assets/xochipilli/_MG_6591.jpg', '/assets/xochipilli/_MG_6603.jpg', '/assets/xochipilli/_MG_6605.jpg', '/assets/xochipilli/_MG_6628.jpg', '/assets/xochipilli/_MG_6633.jpg', '/assets/xochipilli/_MG_6666.jpg', '/assets/xochipilli/_MG_6701.jpg', '/assets/xochipilli/_MG_6715.jpg', '/assets/xochipilli/_MG_6732.jpg', '/assets/xochipilli/_MG_6765.jpg', '/assets/xochipilli/_MG_6770.jpg', '/assets/xochipilli/_MG_6786.jpg', '/assets/xochipilli/_MG_6795.jpg', '/assets/xochipilli/_MG_6796.jpg', '/assets/xochipilli/_MG_6800.jpg', '/assets/xochipilli/_MG_6801.jpg', '/assets/xochipilli/_MG_6810.jpg', '/assets/xochipilli/_MG_6811.jpg', '/assets/xochipilli/_MG_6836.jpg', '/assets/xochipilli/_MG_6839.jpg', '/assets/xochipilli/_MG_6849.jpg', '/assets/xochipilli/_MG_6854.jpg', '/assets/xochipilli/_MG_6865.jpg', '/assets/xochipilli/_MG_6871.jpg', '/assets/xochipilli/_MG_6873.jpg', '/assets/xochipilli/_MG_6881.jpg', '/assets/xochipilli/_MG_6886.jpg', '/assets/xochipilli/_MG_6892.jpg', '/assets/xochipilli/_MG_6896.jpg', '/assets/xochipilli/_MG_6899.jpg', '/assets/xochipilli/_MG_6900.jpg', '/assets/xochipilli/_MG_6904.jpg', '/assets/xochipilli/_MG_6910.jpg', '/assets/xochipilli/_MG_6916.jpg', '/assets/xochipilli/_MG_6918.jpg', '/assets/xochipilli/_MG_6922.jpg', '/assets/xochipilli/_MG_6927.jpg', '/assets/xochipilli/_MG_6938.jpg', '/assets/xochipilli/_MG_6950.jpg', '/assets/xochipilli/_MG_6953.jpg', '/assets/xochipilli/_MG_6970.jpg', '/assets/xochipilli/_MG_6980.jpg', '/assets/xochipilli/_MG_7006.jpg', '/assets/xochipilli/_MG_7013.jpg', '/assets/xochipilli/_MG_7020.jpg', '/assets/xochipilli/_MG_7031.jpg', '/assets/xochipilli/_MG_7057.jpg', '/assets/xochipilli/_MG_7079.jpg', '/assets/xochipilli/_MG_7089.jpg', '/assets/xochipilli/_MG_7101.jpg'],
-      santafe: ['/assets/santafe/DSC09493.JPG', '/assets/santafe/DSC09494.JPG', '/assets/santafe/DSC09495.JPG', '/assets/santafe/DSC09496.JPG', '/assets/santafe/DSC09499.JPG', '/assets/santafe/DSC09503.JPG', '/assets/santafe/DSC09507.JPG', '/assets/santafe/DSC09509.JPG', '/assets/santafe/DSC09515.JPG', '/assets/santafe/DSC09517.JPG', '/assets/santafe/DSC09521.JPG', '/assets/santafe/DSC09529.JPG', '/assets/santafe/DSC09534.JPG', '/assets/santafe/DSC09538.JPG', '/assets/santafe/DSC09547.JPG', '/assets/santafe/DSC09548.JPG', '/assets/santafe/DSC09554.JPG', '/assets/santafe/DSC09556.JPG', '/assets/santafe/DSC09570.JPG', '/assets/santafe/DSC09588.JPG', '/assets/santafe/DSC09596.JPG', '/assets/santafe/DSC09605.JPG', '/assets/santafe/DSC09613.JPG', '/assets/santafe/DSC09645.JPG', '/assets/santafe/DSC09646.JPG', '/assets/santafe/DSC09647.JPG', '/assets/santafe/DSC09651.JPG', '/assets/santafe/DSC09652.JPG', '/assets/santafe/DSC09653.JPG', '/assets/santafe/DSC09655.JPG', '/assets/santafe/DSC09661.JPG', '/assets/santafe/DSC09666.JPG', '/assets/santafe/DSC09674.JPG', '/assets/santafe/DSC09724.JPG', '/assets/santafe/DSC09731.JPG', '/assets/santafe/DSC09732.JPG', '/assets/santafe/DSC09755.JPG', '/assets/santafe/DSC09760.JPG', '/assets/santafe/DSC09768.JPG', '/assets/santafe/DSC09797.JPG', '/assets/santafe/DSC09808.JPG', '/assets/santafe/DSC09811.JPG', '/assets/santafe/DSC09816.JPG', '/assets/santafe/IMG_8680.JPG', '/assets/santafe/IMG_8687.JPG', '/assets/santafe/IMG_8699.JPG', '/assets/santafe/IMG_8703.JPG', '/assets/santafe/IMG_8716.JPG', '/assets/santafe/IMG_8718.JPG', '/assets/santafe/IMG_8720.JPG', '/assets/santafe/IMG_8722.JPG', '/assets/santafe/IMG_8726.JPG', '/assets/santafe/IMG_8732.JPG', '/assets/santafe/IMG_8734.JPG', '/assets/santafe/IMG_8738.JPG', '/assets/santafe/IMG_8748.JPG', '/assets/santafe/IMG_8749.JPG', '/assets/santafe/IMG_8752.JPG', '/assets/santafe/IMG_8754.JPG', '/assets/santafe/IMG_8760.JPG', '/assets/santafe/IMG_8762.JPG', '/assets/santafe/IMG_8780.JPG', '/assets/santafe/IMG_8818.JPG', '/assets/santafe/IMG_8898.JPG', '/assets/santafe/IMG_8899.JPG', '/assets/santafe/IMG_8780.JPG', '/assets/santafe/IMG_8908.JPG', '/assets/santafe/IMG_8911.JPG', '/assets/santafe/IMG_8913.JPG', '/assets/santafe/IMG_8934.JPG', '/assets/santafe/IMG_8936.JPG', '/assets/santafe/IMG_8938.JPG', '/assets/santafe/IMG_8940.JPG', '/assets/santafe/IMG_8945.JPG', '/assets/santafe/IMG_8951.JPG', '/assets/santafe/IMG_8955.JPG', '/assets/santafe/IMG_8958.JPG', '/assets/santafe/IMG_8967.JPG', '/assets/santafe/IMG_8971.JPG'],
-      jardinbotanico: ['/assets/jardinbotanico/IMG_0352.JPG', '/assets/jardinbotanico/IMG_0420.JPG', '/assets/jardinbotanico/IMG_0391.JPG', '/assets/jardinbotanico/IMG_0740.JPG', '/assets/jardinbotanico/IMG_0556.JPG', '/assets/jardinbotanico/IMG_0387.JPG', '/assets/jardinbotanico/IMG_0436.JPG', '/assets/jardinbotanico/IMG_0543.JPG', '/assets/jardinbotanico/IMG_0584.JPG', '/assets/jardinbotanico/IMG_0618.JPG', '/assets/jardinbotanico/IMG_0397.JPG', '/assets/jardinbotanico/IMG_0744.JPG', '/assets/jardinbotanico/IMG_0544.JPG', '/assets/jardinbotanico/IMG_0578.JPG', '/assets/jardinbotanico/IMG_0293.JPG', '/assets/jardinbotanico/IMG_0442.JPG', '/assets/jardinbotanico/IMG_0640.JPG', '/assets/jardinbotanico/IMG_0319.JPG', '/assets/jardinbotanico/IMG_0523.JPG', '/assets/jardinbotanico/IMG_0721.JPG', '/assets/jardinbotanico/IMG_0709.JPG', '/assets/jardinbotanico/IMG_0723.JPG', '/assets/jardinbotanico/IMG_0469.JPG', '/assets/jardinbotanico/IMG_0333.JPG', '/assets/jardinbotanico/IMG_0680.JPG', '/assets/jardinbotanico/IMG_0469.JPG', '/assets/jardinbotanico/IMG_0326.JPG', '/assets/jardinbotanico/IMG_0440.JPG', '/assets/jardinbotanico/IMG_0454.JPG', '/assets/jardinbotanico/IMG_0468.JPG', '/assets/jardinbotanico/IMG_0497.JPG', '/assets/jardinbotanico/IMG_0530.JPG', '/assets/jardinbotanico/IMG_0336.JPG', '/assets/jardinbotanico/IMG_0685.JPG', '/assets/jardinbotanico/IMG_0323.JPG', '/assets/jardinbotanico/IMG_0531.JPG', '/assets/jardinbotanico/IMG_0525.JPG', '/assets/jardinbotanico/IMG_0733.JPG', '/assets/jardinbotanico/IMG_0731.JPG', '/assets/jardinbotanico/IMG_0296.JPG', '/assets/jardinbotanico/IMG_0484.JPG', '/assets/jardinbotanico/IMG_0490.JPG', '/assets/jardinbotanico/IMG_0321.JPG', '/assets/jardinbotanico/IMG_0678.JPG', '/assets/jardinbotanico/IMG_0693.JPG', '/assets/jardinbotanico/IMG_0308.JPG', '/assets/jardinbotanico/IMG_0491.JPG', '/assets/jardinbotanico/IMG_0485.JPG', '/assets/jardinbotanico/IMG_0503.JPG', '/assets/jardinbotanico/IMG_0674.JPG', '/assets/jardinbotanico/IMG_0700.JPG', '/assets/jardinbotanico/IMG_0716.JPG', '/assets/jardinbotanico/IMG_0312.JPG', '/assets/jardinbotanico/IMG_0689.JPG', '/assets/jardinbotanico/IMG_0529.JPG', '/assets/jardinbotanico/IMG_0717.JPG', '/assets/jardinbotanico/IMG_0303.JPG', '/assets/jardinbotanico/IMG_0289.JPG', '/assets/jardinbotanico/IMG_0712.JPG', '/assets/jardinbotanico/IMG_0704.JPG', '/assets/jardinbotanico/IMG_0506.JPG', '/assets/jardinbotanico/IMG_0466.JPG', '/assets/jardinbotanico/IMG_0328.JPG', '/assets/jardinbotanico/IMG_0315.JPG', '/assets/jardinbotanico/IMG_0513.JPG', '/assets/jardinbotanico/IMG_0366.JPG', '/assets/jardinbotanico/IMG_0616.JPG', '/assets/jardinbotanico/IMG_0417.JPG', '/assets/jardinbotanico/IMG_0416.JPG', '/assets/jardinbotanico/IMG_0360.JPG', '/assets/jardinbotanico/IMG_0610.JPG', '/assets/jardinbotanico/IMG_0638.JPG', '/assets/jardinbotanico/IMG_0605.JPG', '/assets/jardinbotanico/IMG_0407.JPG', '/assets/jardinbotanico/IMG_0573.JPG', '/assets/jardinbotanico/IMG_0363.JPG', '/assets/jardinbotanico/IMG_0411.JPG', '/assets/jardinbotanico/IMG_0376.JPG', '/assets/jardinbotanico/IMG_0404.JPG', '/assets/jardinbotanico/IMG_0389.JPG'],
-      artzpedregal: ['/assets/artzpedregal/DSC00846.JPG', '/assets/artzpedregal/DSC00848.JPG', '/assets/artzpedregal/DSC00849.JPG', '/assets/artzpedregal/DSC00853.JPG', '/assets/artzpedregal/DSC00864.JPG', '/assets/artzpedregal/DSC00866.JPG', '/assets/artzpedregal/DSC00873.JPG', '/assets/artzpedregal/DSC00876.JPG', '/assets/artzpedregal/DSC00881.JPG', '/assets/artzpedregal/DSC00883.JPG', '/assets/artzpedregal/DSC00885.JPG', '/assets/artzpedregal/DSC00898.JPG', '/assets/artzpedregal/DSC00902.JPG', '/assets/artzpedregal/DSC00906.JPG', '/assets/artzpedregal/DSC00911.JPG', '/assets/artzpedregal/DSC00912.JPG', '/assets/artzpedregal/DSC00915.JPG', '/assets/artzpedregal/DSC00923.JPG', '/assets/artzpedregal/DSC00931.JPG', '/assets/artzpedregal/DSC00935.JPG', '/assets/artzpedregal/DSC00942.JPG', '/assets/artzpedregal/DSC00955.JPG', '/assets/artzpedregal/DSC00957.JPG', '/assets/artzpedregal/DSC00966.JPG', '/assets/artzpedregal/DSC00969.JPG', '/assets/artzpedregal/DSC00973.JPG', '/assets/artzpedregal/DSC00974.JPG', '/assets/artzpedregal/DSC00979.JPG', '/assets/artzpedregal/DSC00980.JPG', '/assets/artzpedregal/DSC00998.JPG', '/assets/artzpedregal/DSC00999.JPG', '/assets/artzpedregal/DSC01003.JPG', '/assets/artzpedregal/DSC01008.JPG', '/assets/artzpedregal/DSC01010.JPG', '/assets/artzpedregal/DSC01022.JPG', '/assets/artzpedregal/DSC01027.JPG', '/assets/artzpedregal/DSC01030.JPG', '/assets/artzpedregal/DSC01036.JPG', '/assets/artzpedregal/DSC01037.JPG', '/assets/artzpedregal/DSC01039.JPG', '/assets/artzpedregal/DSC01047.JPG', '/assets/artzpedregal/DSC01056.JPG', '/assets/artzpedregal/DSC01066.JPG', '/assets/artzpedregal/DSC01077.JPG', '/assets/artzpedregal/DSC01082.JPG', '/assets/artzpedregal/DSC01086.JPG', '/assets/artzpedregal/DSC01099.JPG', '/assets/artzpedregal/DSC01103.JPG', '/assets/artzpedregal/DSC01123.JPG', '/assets/artzpedregal/DSC01128.JPG', '/assets/artzpedregal/DSC01168.JPG', '/assets/artzpedregal/DSC01183.JPG', '/assets/artzpedregal/DSC01185.JPG', '/assets/artzpedregal/DSC01188.JPG', '/assets/artzpedregal/DSC01191.JPG', '/assets/artzpedregal/DSC01196.JPG', '/assets/artzpedregal/DSC01199.JPG', '/assets/artzpedregal/DSC01207.JPG', '/assets/artzpedregal/DSC01209.JPG', '/assets/artzpedregal/DSC01210.JPG', '/assets/artzpedregal/DSC01215.JPG', '/assets/artzpedregal/DSC01217.JPG'],
-      revolucion: ['/assets/revolucion/IMG_1240.JPG', '/assets/revolucion/IMG_1252.JPG', '/assets/revolucion/IMG_1255.JPG', '/assets/revolucion/IMG_1260.JPG', '/assets/revolucion/IMG_1272.JPG', '/assets/revolucion/IMG_1274.JPG', '/assets/revolucion/IMG_1285.JPG', '/assets/revolucion/IMG_1308.JPG', '/assets/revolucion/IMG_1315.JPG', '/assets/revolucion/IMG_1318.JPG', '/assets/revolucion/IMG_1320.JPG', '/assets/revolucion/IMG_1330.JPG', '/assets/revolucion/IMG_1336.JPG', '/assets/revolucion/IMG_1363.JPG', '/assets/revolucion/IMG_1373.JPG', '/assets/revolucion/IMG_1374.JPG', '/assets/revolucion/IMG_1378.JPG', '/assets/revolucion/IMG_1380.JPG', '/assets/revolucion/IMG_1384.JPG', '/assets/revolucion/IMG_1387.JPG', '/assets/revolucion/IMG_1409.JPG', '/assets/revolucion/IMG_1416.JPG', '/assets/revolucion/IMG_1423.JPG', '/assets/revolucion/IMG_1428.JPG', '/assets/revolucion/IMG_1431.JPG', '/assets/revolucion/IMG_1435.JPG', '/assets/revolucion/IMG_1436.JPG', '/assets/revolucion/IMG_1443.JPG', '/assets/revolucion/IMG_1447.JPG', '/assets/revolucion/IMG_1451.JPG', '/assets/revolucion/IMG_1454.JPG', '/assets/revolucion/IMG_1455.JPG', '/assets/revolucion/IMG_1460.JPG', '/assets/revolucion/IMG_1463.JPG', '/assets/revolucion/IMG_1466.JPG', '/assets/revolucion/IMG_1470.JPG', '/assets/revolucion/IMG_1472.JPG', '/assets/revolucion/IMG_1477.JPG', '/assets/revolucion/IMG_1225.JPG', '/assets/revolucion/IMG_1262.JPG', '/assets/revolucion/IMG_1325.JPG', '/assets/revolucion/IMG_1340.JPG', '/assets/revolucion/IMG_1359.JPG', '/assets/revolucion/IMG_1368.JPG', '/assets/revolucion/IMG_1418.JPG', '/assets/revolucion/IMG_1425.JPG'],
-      galery: []
-    };
+    return {};
   },
   mounted: function mounted() {
     var _this = this;
@@ -258,7 +272,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".gallery-container[data-v-3634e7ed] {\n  margin: 0 40px;\n}\n.gallery[data-v-3634e7ed] {\n  background: black;\n  min-height: 100vh;\n}\n.title-venues[data-v-3634e7ed] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-3634e7ed] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-venues2[data-v-3634e7ed] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-3634e7ed] {\n    font-size: 115px;\n}\n}\n.title-image[data-v-3634e7ed] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-3634e7ed] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-3634e7ed] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.footer-styles[data-v-3634e7ed] {\n  width: 100%;\n  margin: 0;\n  padding: 96px 20px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-3634e7ed] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3634e7ed] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3634e7ed] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3634e7ed] {\n    margin-top: 20px;\n    text-align: center;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".gallery[data-v-3634e7ed] {\n  background: url(https://teamfaster.mx/assets/img/fondo-galeria-web-puma.png);\n  background-size: cover;\n}\n.gallery-container[data-v-3634e7ed] {\n  margin: 0 40px;\n}\n.gallery[data-v-3634e7ed] {\n  background: black;\n  min-height: 100vh;\n}\n.title-venues[data-v-3634e7ed] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-3634e7ed] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-venues2[data-v-3634e7ed] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-3634e7ed] {\n    font-size: 115px;\n}\n}\n.title-image[data-v-3634e7ed] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-3634e7ed] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-3634e7ed] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.footer-styles[data-v-3634e7ed] {\n  width: 100%;\n  margin: 0;\n  padding: 96px 20px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-3634e7ed] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3634e7ed] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3634e7ed] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3634e7ed] {\n    margin-top: 20px;\n    text-align: center;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -13031,195 +13045,231 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "footer-styles" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "columns is-variable is-8 tm-puma",
+        staticStyle: { "margin-bottom": "60px" },
+      },
+      [
+        _c("div", {
+          staticClass:
+            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+        }),
+        _vm._v(" "),
+        _vm.sponsors.length
+          ? _vm._l(_vm.sponsors, function (item, index) {
+              return _c(
+                "div",
+                {
+                  staticClass: "column is-5-mobile",
+                  staticStyle: { margin: "auto" },
+                },
+                [
+                  _c("p", { staticClass: "text-center" }, [
+                    _c("img", { attrs: { src: item.image, width: "100px" } }),
+                  ]),
+                ]
+              )
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _c("div", {
+          staticClass:
+            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+        }),
+      ],
+      2
+    ),
+    _vm._v(" "),
+    _vm._m(5),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "footer-styles" }, [
-      _c(
-        "div",
-        {
-          staticClass: "tm-puma columns sponsors",
-          staticStyle: { "text-transform": "uppercase" },
-        },
-        [
-          _c("div", {
-            staticClass:
-              "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _vm._v("\n            Nuestros patrocinadores:\n        "),
-          ]),
-          _vm._v(" "),
-          _c("div", {
-            staticClass:
-              "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-          }),
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "columns is-variable is-8 tm-puma",
-          staticStyle: { "margin-bottom": "60px" },
-        },
-        [
-          _c("div", {
-            staticClass:
-              "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
-          }),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "column is-5-mobile",
-              staticStyle: { margin: "auto" },
-            },
-            [
-              _c("p", { staticClass: "text-center" }, [
-                _c("img", { attrs: { src: "/assets/img/G_Logo_Blanco.png" } }),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "column is-5-mobile",
-              staticStyle: { margin: "auto" },
-            },
-            [
-              _c("p", { staticClass: "text-center" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
-                  },
-                }),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "column is-5-mobile",
-              staticStyle: { margin: "auto" },
-            },
-            [
-              _c("p", { staticClass: "text-center nature" }, [
-                _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "column is-5-mobile",
-              staticStyle: { margin: "auto" },
-            },
-            [
-              _c("p", { staticClass: "text-center nature" }, [
-                _c("img", {
-                  attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
-                }),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", {
-            staticClass:
-              "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
-          }),
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "columns is-vcentered" }, [
-        _c("div", { staticClass: "column tm-puma footer-1" }, [
-          _vm._v(
-            "\n            @2022 puma. Todos los derechos reservados\n        "
-          ),
+    return _c(
+      "div",
+      {
+        staticClass: "tm-puma columns sponsors",
+        staticStyle: { "text-transform": "uppercase" },
+      },
+      [
+        _c("div", {
+          staticClass:
+            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "column" }, [
+          _vm._v("\n            Nuestros patrocinadores:\n        "),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column tm-puma footer-2" }, [
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: {
-                href: "https://www.facebook.com/PUMAMexico",
-                target: "_blank",
-              },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
-                  width: "30px",
-                },
-              }),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: {
-                href: "https://twitter.com/pumamexico/",
-                target: "_blank",
-              },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
-                  width: "30px",
-                },
-              }),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: {
-                href: "https://www.instagram.com/pumamexico/",
-                target: "_blank",
-              },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
-                  width: "30px",
-                },
-              }),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: { href: "https://www.youtube.com/puma", target: "_blank" },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
-                  width: "30px",
-                },
-              }),
-            ]
-          ),
+        _c("div", {
+          staticClass:
+            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center" }, [
+          _c("img", { attrs: { src: "/assets/img/G_Logo_Blanco.png" } }),
         ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center" }, [
+          _c("img", {
+            attrs: {
+              src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
+            },
+          }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", {
+            attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
+          }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "columns is-vcentered" }, [
+      _c("div", { staticClass: "column tm-puma footer-1" }, [
+        _vm._v(
+          "\n            @2022 puma. Todos los derechos reservados\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column tm-puma footer-2" }, [
+        _c(
+          "a",
+          {
+            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+            attrs: {
+              href: "https://www.facebook.com/PUMAMexico",
+              target: "_blank",
+            },
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
+                width: "30px",
+              },
+            }),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+            attrs: {
+              href: "https://twitter.com/pumamexico/",
+              target: "_blank",
+            },
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
+                width: "30px",
+              },
+            }),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+            attrs: {
+              href: "https://www.instagram.com/pumamexico/",
+              target: "_blank",
+            },
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
+                width: "30px",
+              },
+            }),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+            attrs: { href: "https://www.youtube.com/puma", target: "_blank" },
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
+                width: "30px",
+              },
+            }),
+          ]
+        ),
       ]),
     ])
   },

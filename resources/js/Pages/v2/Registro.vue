@@ -1,5 +1,21 @@
 <template>
   <div class="registro">
+    <b-modal
+            v-model="isErrors"
+            has-modal-card
+            trap-focus
+            :destroy-on-hide="true"
+            aria-role="dialog"
+            aria-label="Example Modal"
+            close-button-aria-label="Close"
+            :can-cancel="['escape']"
+            aria-modal
+    >
+      <template #default="props">
+        <ErrorsModal @close="props.close"/>
+      </template>
+    </b-modal>
+
     <div class="columns clip-section">
       <div class="column has-text-right column-info is-hidden-tablet">
         <div>
@@ -11,7 +27,7 @@
             :tipo="info.tipo"
             :coach="info.coach"
             :photo="info.photo"
-            :occupation="info.occupation"
+            :limit="info.limit"
             :map="info.map"
             :available="info.available"
           />
@@ -22,7 +38,7 @@
           <div class="img-blackwhite" ref="img1">
             <b-image
               responsive
-              :src="'/assets/img/' + info.photo + '?8017'"
+              :src="info.photo"
               ratio="14by10"
               @load="load1"
             ></b-image>
@@ -31,7 +47,7 @@
             <a :href="info.google_maps" target="_blank">
               <b-image
                       responsive
-                      :src="'/assets/img/'+ info.map"
+                      :src="info.map"
                       ratio="15by13"
                       @load="load2"
               ></b-image>
@@ -55,7 +71,7 @@
             :coach="info.coach"
             :photo="info.photo"
             :map="info.map"
-            :occupation="info.occupation"
+            :limit="info.limit"
             :couches="info.couches"
             :available="info.available"
           />
@@ -70,14 +86,18 @@
 <script>
 import Footer from '@/Components/Footer.vue';
 import RegisterInfo from '@/Components/RegisterInfo.vue';
+import ErrorsModal from '@/Components/ErrorsModal.vue';
+
 export default {
     name: 'registro',
     components: {
       RegisterInfo,
-        Footer
+      Footer,
+      ErrorsModal
     },
     data(){
       return {
+        isErrors: false,
         venueId: 0,
         info:{
           name: '',
@@ -86,7 +106,7 @@ export default {
           tipo: '',
           coach: {},
           photo: '',
-          occupation: 0,
+          limit: false,
           map: '',
           google_maps: '',
           available:true
@@ -96,11 +116,14 @@ export default {
     mounted() {
        console.log( "v=2.0.1" );
       let slug = this.$route.params.slug;
+
        window.scrollTo(0, 0);
        this.setElement(this.$refs.img1);
        this.setElement(this.$refs.img2);
+
+       let endpoint = slug ? `/api/workout/${slug}` : `/api/workout`;
          axios
-             .get(`/api/workout/${slug}`)
+             .get(endpoint)
              .then(({ data: { data } }) => {
                  this.venueId = data.venue.id;
                  this.info = Object.assign({}, {
@@ -111,13 +134,15 @@ export default {
                      tipo:  data.description,
                      coach: data.coatch,
                      photo: data.venue.image,
-                     occupation: data.occupation,
+                     limit: data.limit,
                      map: data.venue.image_map,
                      google_maps: data.venue.google_maps,
                      available: true
                  });
 
-             });
+             }).catch( () => {
+              this.isErrors = true;
+         });
     },
 
     methods:{

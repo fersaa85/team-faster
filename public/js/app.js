@@ -1844,7 +1844,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'app',
   components: {
     Navbar: function Navbar() {
-      return __webpack_require__.e(/*! import() */ "resources_js_Components_Navbar_vue").then(__webpack_require__.bind(__webpack_require__, /*! ./Components/Navbar.vue */ "./resources/js/Components/Navbar.vue"));
+      return __webpack_require__.e(/*! import() */ "resources_js_Components_Navbar_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/Components/Navbar.vue */ "./resources/js/Components/Navbar.vue"));
     }
   }
 });
@@ -1970,6 +1970,11 @@ var routes = [{
   },
   meta: {
     scrollToTop: true
+  }
+}, {
+  path: '/v2/registro',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Registro_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Registro.vue */ "./resources/js/Pages/v2/Registro.vue"));
   }
 }, {
   path: '/v2/registro/:slug',
@@ -2098,7 +2103,11 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+<<<<<<< HEAD
 window.axios.defaults.baseURL = 'https://teamfaster.mx/'; // window.axios.defaults.baseURL = 'http://team-faster.test';
+=======
+window.axios.defaults.baseURL = 'https://teamfaster.mx/'; //window.axios.defaults.baseURL = 'http://team-faster.test';
+>>>>>>> c6d7e8ed5407afa0f9123513d71697250a03332c
 
 /**
  * Echo exposes an expressive API for subscribing to channels and listening
@@ -22671,7 +22680,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
+<<<<<<< HEAD
 ___CSS_LOADER_EXPORT___.push([module.id, ".menu[data-v-f348271a] {\n  position: fixed;\n  width: 100%;\n  z-index: 1;\n  color: white;\n  font-size: 30px;\n  text-transform: uppercase;\n  padding: 40px 306px 10px 40px;\n  cursor: pointer;\n}\n@media screen and (max-width: 1023px) {\n.menu[data-v-f348271a] {\n    padding: 40px;\n}\n}\n.button-container[data-v-f348271a] {\n  margin-top: -60px;\n  padding-left: 24px;\n  padding-right: 24px;\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.button-container[data-v-f348271a] {\n    padding-top: 24px;\n}\n}\n.button-container[data-v-f348271a]:hover {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container[data-v-f348271a]:focus {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container[data-v-f348271a]:focus-within {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container.button-active[data-v-f348271a] {\n  color: white;\n  background-color: transparent !important;\n}\n.logo-style[data-v-f348271a] {\n  width: 182px;\n}\n@media screen and (min-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 15vw;\n    margin-left: 53px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 15vw;\n    margin-left: 20px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.logo-style[data-v-f348271a] {\n    width: 15vw;\n    margin-left: 20px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.logo-style[data-v-f348271a] {\n    width: 10vw;\n    margin-left: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.logo-style[data-v-f348271a] {\n    width: 8vw;\n    margin-left: 0;\n}\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-f348271a] {\n    width: 10vw;\n    margin-left: 0;\n}\n}\n@media screen and (min-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 145px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 100px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1215px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 50px;\n}\n}", ""]);
+=======
+___CSS_LOADER_EXPORT___.push([module.id, ".menu[data-v-f348271a] {\n  position: fixed;\n  width: 100%;\n  z-index: 1;\n  color: white;\n  font-size: 30px;\n  text-transform: uppercase;\n  padding: 40px 306px 10px 40px;\n  cursor: pointer;\n}\n@media screen and (max-width: 1023px) {\n.menu[data-v-f348271a] {\n    padding: 40px;\n}\n}\n.button-container[data-v-f348271a] {\n  margin-top: -60px;\n  padding-left: 24px;\n  padding-right: 24px;\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.button-container[data-v-f348271a] {\n    padding-top: 24px;\n}\n}\n.logo-style[data-v-f348271a] {\n  width: 182px;\n}\n@media screen and (min-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 15vw;\n    margin-left: 53px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 15vw;\n    margin-left: 20px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.logo-style[data-v-f348271a] {\n    width: 15vw;\n    margin-left: 20px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.logo-style[data-v-f348271a] {\n    width: 10vw;\n    margin-left: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.logo-style[data-v-f348271a] {\n    width: 8vw;\n    margin-left: 0;\n}\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-f348271a] {\n    width: 10vw;\n    margin-left: 0;\n}\n}\n@media screen and (min-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 145px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 100px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1215px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 50px;\n}\n}", ""]);
+>>>>>>> c6d7e8ed5407afa0f9123513d71697250a03332c
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -57049,9 +57062,13 @@ var render = function () {
               "b-navbar-item",
               {
                 staticClass:
+<<<<<<< HEAD
                   "level-item button-container nav-bar-butto is-hidden-touch first-menu-item",
                 class: { "button-active": _vm.$route.name == "coaches" },
                 attrs: { tag: "router-link", to: { path: "/v2" } },
+=======
+                  "level-item button-container is-hidden-touch first-menu-item",
+>>>>>>> c6d7e8ed5407afa0f9123513d71697250a03332c
               },
               [_vm._v("\n        Inicio\n      ")]
             ),
@@ -57072,6 +57089,16 @@ var render = function () {
               {
                 staticClass:
                   "level-item button-container nav-bar-button is-hidden-touch",
+                class: { "button-active": _vm.$route.name == "coaches" },
+                attrs: { tag: "router-link", to: { path: "/v2/sedes" } },
+              },
+              [_vm._v("\n        Sedes\n      ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "b-navbar-item",
+              {
+                staticClass: "level-item button-container nav-bar-button",
                 class: { "button-active": _vm.$route.name == "coaches" },
                 attrs: { tag: "router-link", to: { path: "/v2/coaches" } },
               },

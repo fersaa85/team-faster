@@ -4,6 +4,7 @@ namespace App\Admin\Controllers;
 
 use App\Models\Venue;
 use App\Models\Coatch;
+use App\Models\Workout;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -94,9 +95,10 @@ class VenueController extends AdminController
         $form->text('name', __('Nombre'));
         $form->textarea('address', __('Address'));
         $form->image('image', 'Imagen')->move('/venues');
+        $form->image('image_map', 'Imagen mapa')->move('/venues');
         //$form->text('image_map', __('Imagen mapa'));
-        //$form->text('thumbnail', __('Imagen thumbnail'));
         $form->text('google_maps', __('Google Maps'));
+        $form->text('order', __('Orden'));
 
         $form->text('workout.description',  __('Experiencia workout'));
         $form->select('workout.coatch_id',  __('Coatch'))->options(function ($id) {
@@ -107,11 +109,10 @@ class VenueController extends AdminController
 
         $form->text('workout.venue_id', __('venue_id'));
 
-        /*$form->hidden('workout.venue_id')->saving(function (Form $form) {;
-            //$form->workout->venue_id = $form->id;
-            return  $form->id;
+        // callback before save
+        $form->submitted(function (Form $form) {
+            Workout::where('venue_id', $form->model()->id)->delete();
         });
-        */
 
         return $form;
     }

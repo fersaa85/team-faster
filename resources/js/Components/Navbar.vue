@@ -12,8 +12,8 @@
       <b-navbar-item tag="router-link" :href="{ path: '/' }" :to="{ path: '/' }" class="nav-bar-button" :class="{'button-active':  $route.name =='home'}">
         Inicio
       </b-navbar-item>
-      <b-navbar-item tag="router-link" :to="{ path: '/cedes' }" class="nav-bar-button" :class="{'button-active':  $route.name =='cedes'}">
-        Registro
+      <b-navbar-item tag="router-link" :to="{ path: '/sedes' }" class="nav-bar-button" :class="{'button-active':  $route.name =='cedes'}">
+        Sedes
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/registro' }" class="nav-bar-button" :class="{'button-active':  $route.name =='registro'}">
         Registro

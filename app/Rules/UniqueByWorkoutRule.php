@@ -83,7 +83,7 @@ class UniqueByWorkoutRule implements Rule
 
         $workoutLimit = WorkoutLimit::where('id', 1)->first();
 
-        if(DB::table($this->table)->where('workout_id', $this->workoutId)->count()  >= $workoutLimit->limit_user){
+        if(DB::table($this->table)->where('workout_id', $this->workoutId)->whereYear('created_at', date('Y'))->count()  >= $workoutLimit->limit_user){
 
             $this->trans = 'Cupo agotado';
             return false;

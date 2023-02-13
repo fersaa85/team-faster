@@ -17,5 +17,7 @@ Route::group([
 
     $router->resource('venue', VenueController::class);
     $router->resource('coatches', CoatchController::class);
-    $router->resource('galeries', GaleryController::class);
+    $router->resource('galeries', GalleryController::class);
+    $router->resource('sponsors', SponsorsController::class);
+    $router->resource('posts', PostController::class);
 });

@@ -65,10 +65,31 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
+  data: function data() {
+    return {
+      isErrors: false,
+      sponsors: []
+    };
+  },
   mounted: function mounted() {
+    var _this = this;
+
     console.log("v=2.0.1");
+    axios.get("/api/sponsors").then(function (_ref) {
+      var data = _ref.data.data;
+      _this.sponsors = [].concat(data);
+    })["catch"](function () {
+      _this.isErrors = true;
+    });
   }
 });
 
@@ -85,29 +106,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Components_Footer_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Components/Footer.vue */ "./resources/js/Components/Footer.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -208,6 +206,12 @@ __webpack_require__.r(__webpack_exports__);
       var datetime = date.split(' ');
       var splitDate = datetime[0].split('-');
       var months = {
+        '01': 'ene',
+        '02': 'feb',
+        '03': 'mar',
+        '04': 'abr',
+        '05': 'may',
+        '06': 'jun',
         '07': 'jul',
         '08': 'ago',
         '09': 'sep',
@@ -261,7 +265,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".date[data-v-45cd8784] {\n  font-size: 26px;\n  font-weight: bold;\n  text-transform: uppercase;\n}\n.register-button[data-v-45cd8784] {\n  border-color: white;\n  padding: 3px 36px 0;\n}\n@media screen and (max-width: 1024px) {\n.register-button[data-v-45cd8784] {\n    font-size: 1rem !important;\n}\n}\n@media screen and (max-width: 940px) {\n.register-button[data-v-45cd8784] {\n    font-size: 0.9rem !important;\n}\n}\n@media screen and (max-width: 768px) {\n.register-button[data-v-45cd8784] {\n    font-size: 1.25rem !important;\n}\n}\n.color-white[data-v-45cd8784] {\n  color: #ffffff;\n}\n.venues_photos[data-v-45cd8784] {\n  margin: 0 20px;\n  padding: 20px;\n  background-color: black;\n}\n.venues[data-v-45cd8784] {\n  background: linear-gradient(90deg, #6d6e79, #ebebed);\n  overflow-x: hidden;\n}\n.title-venues[data-v-45cd8784] {\n  font-size: 100px;\n  color: black;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-45cd8784] {\n    font-size: 90px;\n    color: black;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-45cd8784] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-45cd8784] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-45cd8784] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-45cd8784] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-45cd8784] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-45cd8784] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, black 32%, black);\n  opacity: 1;\n}\n@media screen and (max-width: 768px) {\n.footer-styles[data-v-45cd8784] {\n    background: linear-gradient(transparent, black 25%, black);\n}\n}\n.footer-styles .footer-1[data-v-45cd8784] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-45cd8784] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-45cd8784] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-45cd8784] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n@media screen and (max-width: 768px) {\n.contain-register-button[data-v-45cd8784] {\n    text-align: center;\n    margin-bottom: 24px;\n}\n}\n.text-photo-title[data-v-45cd8784] {\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding: 0 12px;\n}\n@media screen and (max-width: 768px) {\n.text-photo-title[data-v-45cd8784] {\n    text-align: center;\n}\n}\n.text-photo-date[data-v-45cd8784] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: right;\n  left: 0;\n  bottom: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-right: 20px;\n  padding-bottom: 12px;\n}\n.text-photo-register[data-v-45cd8784] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: left;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-left: 20px;\n  padding-top: 20px;\n}\n.venue0[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 1s;\n  -moz-animation: fadein-data-v-45cd8784 1s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 1s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 1s; /* Opera */\n}\n.venue1[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 2s;\n  -moz-animation: fadein-data-v-45cd8784 2s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 2s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 2s; /* Opera */\n}\n.venue2[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 3s;\n  -moz-animation: fadein-data-v-45cd8784 3s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 3s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 3s; /* Opera */\n}\n.empty[data-v-45cd8784] {\n  height: 30vw;\n}\n@keyframes fadein-data-v-45cd8784 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@-webkit-keyframes fadein-data-v-45cd8784 { /* Safari and Chrome */\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".venues[data-v-45cd8784] {\n  background: url(https://teamfaster.mx/assets/img/fondo-registro-web-puma.png);\n  background-size: cover;\n}\n.date[data-v-45cd8784] {\n  font-size: 26px;\n  font-weight: bold;\n  text-transform: uppercase;\n}\n.register-button[data-v-45cd8784] {\n  border-color: white;\n  padding: 3px 36px 0;\n}\n@media screen and (max-width: 1024px) {\n.register-button[data-v-45cd8784] {\n    font-size: 1rem !important;\n}\n}\n@media screen and (max-width: 940px) {\n.register-button[data-v-45cd8784] {\n    font-size: 0.9rem !important;\n}\n}\n@media screen and (max-width: 768px) {\n.register-button[data-v-45cd8784] {\n    font-size: 1.25rem !important;\n}\n}\n.color-white[data-v-45cd8784] {\n  color: #ffffff;\n}\n.venues_photos[data-v-45cd8784] {\n  margin: 0 20px;\n  padding: 20px;\n  background-color: black;\n}\n.venues[data-v-45cd8784] {\n  background: linear-gradient(90deg, #6d6e79, #ebebed);\n  overflow-x: hidden;\n}\n.title-venues[data-v-45cd8784] {\n  font-size: 100px;\n  color: black;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-45cd8784] {\n    font-size: 90px;\n    color: black;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-45cd8784] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-45cd8784] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-45cd8784] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-45cd8784] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-45cd8784] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-45cd8784] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, black 32%, black);\n  opacity: 1;\n}\n@media screen and (max-width: 768px) {\n.footer-styles[data-v-45cd8784] {\n    background: linear-gradient(transparent, black 25%, black);\n}\n}\n.footer-styles .footer-1[data-v-45cd8784] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-45cd8784] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-45cd8784] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-45cd8784] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n@media screen and (max-width: 768px) {\n.contain-register-button[data-v-45cd8784] {\n    text-align: center;\n    margin-bottom: 24px;\n}\n}\n.text-photo-title[data-v-45cd8784] {\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding: 0 12px;\n}\n@media screen and (max-width: 768px) {\n.text-photo-title[data-v-45cd8784] {\n    text-align: center;\n}\n}\n.text-photo-date[data-v-45cd8784] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: right;\n  left: 0;\n  bottom: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-right: 20px;\n  padding-bottom: 12px;\n}\n.text-photo-register[data-v-45cd8784] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: left;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-left: 20px;\n  padding-top: 20px;\n}\n.venue0[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 1s;\n  -moz-animation: fadein-data-v-45cd8784 1s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 1s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 1s; /* Opera */\n}\n.venue1[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 2s;\n  -moz-animation: fadein-data-v-45cd8784 2s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 2s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 2s; /* Opera */\n}\n.venue2[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 3s;\n  -moz-animation: fadein-data-v-45cd8784 3s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 3s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 3s; /* Opera */\n}\n.empty[data-v-45cd8784] {\n  height: 30vw;\n}\n@keyframes fadein-data-v-45cd8784 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@-webkit-keyframes fadein-data-v-45cd8784 { /* Safari and Chrome */\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -507,195 +511,231 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "footer-styles" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "columns is-variable is-8 tm-puma",
+        staticStyle: { "margin-bottom": "60px" },
+      },
+      [
+        _c("div", {
+          staticClass:
+            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+        }),
+        _vm._v(" "),
+        _vm.sponsors.length
+          ? _vm._l(_vm.sponsors, function (item, index) {
+              return _c(
+                "div",
+                {
+                  staticClass: "column is-5-mobile",
+                  staticStyle: { margin: "auto" },
+                },
+                [
+                  _c("p", { staticClass: "text-center" }, [
+                    _c("img", { attrs: { src: item.image, width: "100px" } }),
+                  ]),
+                ]
+              )
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _c("div", {
+          staticClass:
+            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+        }),
+      ],
+      2
+    ),
+    _vm._v(" "),
+    _vm._m(5),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "footer-styles" }, [
-      _c(
-        "div",
-        {
-          staticClass: "tm-puma columns sponsors",
-          staticStyle: { "text-transform": "uppercase" },
-        },
-        [
-          _c("div", {
-            staticClass:
-              "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "column" }, [
-            _vm._v("\n            Nuestros patrocinadores:\n        "),
-          ]),
-          _vm._v(" "),
-          _c("div", {
-            staticClass:
-              "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-          }),
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        {
-          staticClass: "columns is-variable is-8 tm-puma",
-          staticStyle: { "margin-bottom": "60px" },
-        },
-        [
-          _c("div", {
-            staticClass:
-              "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
-          }),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "column is-5-mobile",
-              staticStyle: { margin: "auto" },
-            },
-            [
-              _c("p", { staticClass: "text-center" }, [
-                _c("img", { attrs: { src: "/assets/img/G_Logo_Blanco.png" } }),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "column is-5-mobile",
-              staticStyle: { margin: "auto" },
-            },
-            [
-              _c("p", { staticClass: "text-center" }, [
-                _c("img", {
-                  attrs: {
-                    src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
-                  },
-                }),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "column is-5-mobile",
-              staticStyle: { margin: "auto" },
-            },
-            [
-              _c("p", { staticClass: "text-center nature" }, [
-                _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            {
-              staticClass: "column is-5-mobile",
-              staticStyle: { margin: "auto" },
-            },
-            [
-              _c("p", { staticClass: "text-center nature" }, [
-                _c("img", {
-                  attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
-                }),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", {
-            staticClass:
-              "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
-          }),
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "columns is-vcentered" }, [
-        _c("div", { staticClass: "column tm-puma footer-1" }, [
-          _vm._v(
-            "\n            @2022 puma. Todos los derechos reservados\n        "
-          ),
+    return _c(
+      "div",
+      {
+        staticClass: "tm-puma columns sponsors",
+        staticStyle: { "text-transform": "uppercase" },
+      },
+      [
+        _c("div", {
+          staticClass:
+            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "column" }, [
+          _vm._v("\n            Nuestros patrocinadores:\n        "),
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "column tm-puma footer-2" }, [
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: {
-                href: "https://www.facebook.com/PUMAMexico",
-                target: "_blank",
-              },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
-                  width: "30px",
-                },
-              }),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: {
-                href: "https://twitter.com/pumamexico/",
-                target: "_blank",
-              },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
-                  width: "30px",
-                },
-              }),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: {
-                href: "https://www.instagram.com/pumamexico/",
-                target: "_blank",
-              },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
-                  width: "30px",
-                },
-              }),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-              attrs: { href: "https://www.youtube.com/puma", target: "_blank" },
-            },
-            [
-              _c("img", {
-                attrs: {
-                  src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
-                  width: "30px",
-                },
-              }),
-            ]
-          ),
+        _c("div", {
+          staticClass:
+            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center" }, [
+          _c("img", { attrs: { src: "/assets/img/G_Logo_Blanco.png" } }),
         ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center" }, [
+          _c("img", {
+            attrs: {
+              src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
+            },
+          }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", {
+            attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
+          }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "columns is-vcentered" }, [
+      _c("div", { staticClass: "column tm-puma footer-1" }, [
+        _vm._v(
+          "\n            @2022 puma. Todos los derechos reservados\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column tm-puma footer-2" }, [
+        _c(
+          "a",
+          {
+            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+            attrs: {
+              href: "https://www.facebook.com/PUMAMexico",
+              target: "_blank",
+            },
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
+                width: "30px",
+              },
+            }),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+            attrs: {
+              href: "https://twitter.com/pumamexico/",
+              target: "_blank",
+            },
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
+                width: "30px",
+              },
+            }),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+            attrs: {
+              href: "https://www.instagram.com/pumamexico/",
+              target: "_blank",
+            },
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
+                width: "30px",
+              },
+            }),
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
+            attrs: { href: "https://www.youtube.com/puma", target: "_blank" },
+          },
+          [
+            _c("img", {
+              attrs: {
+                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
+                width: "30px",
+              },
+            }),
+          ]
+        ),
       ]),
     ])
   },
@@ -731,7 +771,7 @@ var render = function () {
           { staticClass: "columns" },
           [
             _vm.venues.length
-              ? _vm._l(_vm.venues.slice(0, 3), function (venue, key) {
+              ? _vm._l(_vm.venues, function (venue, key) {
                   return _c(
                     "div",
                     {

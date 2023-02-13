@@ -6,6 +6,7 @@ use App\Http\Resources\Coaches\CoacheResource;
 use App\Http\Resources\Venues\VenueResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 use App\Models\WorkoutUser;
+use App\Models\WorkoutLimit;
 
 
 class WorkoutResource extends JsonResource
@@ -19,16 +20,16 @@ class WorkoutResource extends JsonResource
      */
     public function toArray($request)
     {
-
+        $limit = WorkoutLimit::first();
         return [
             'id' => $this->id,
             'venue' => new VenueResource($this->venue),
             'coatch' => new CoacheResource($this->coatch),
             'date_start' => $this->date_start,
-            'description' => $this->description,
+            'description' => isset($this->description) ? $this->description : '',
             'timeline' => $this->timeline,
             'couches' => $this->couches,
-            'occupation' => WorkoutUser::where('workout_id', $this->id)->count(),
+            'limit' => WorkoutUser::where('workout_id', $this->id)->whereYear('created_at', date('Y'))->count() >= $limit->limit_user,
             'active'=> $this->active,
         ];
     }

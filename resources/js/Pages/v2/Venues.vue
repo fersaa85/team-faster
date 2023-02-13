@@ -4,7 +4,7 @@
     <div class="venues_photos">
       <div class="columns">
         <template v-if="venues.length">
-          <div v-for="(venue, key) in venues.slice(0, 3)" :key="key" class="column is-4" :class="`venue${key}`"  style="position:relative;">
+          <div v-for="(venue, key) in venues" :key="key" class="column is-4" :class="`venue${key}`"  style="position:relative;">
               <div>
                 <b-image
                         responsive
@@ -32,29 +32,6 @@
               </div>
 
           </div>
-          <!--
-          <div v-for="(venue, key) in venues.slice(0, 3)" :key="key" class="column is-clickable" :class="`venue${key}`"  style="position:relative;">
-            <div>
-              <b-image
-                      responsive
-                      :src="`/assets/img/${venue.thumbnail}`"
-                      ratio="1by1"
-              ></b-image>
-              <div class="text-photo-title venue-active">
-                {{ venue.name }}
-                <br>
-
-                <b-button rounded class="register-button" size="is-medium" :data-id="venue.id" @click="handleGoTo(venue.slug)">
-                  ¡Regístrate ahora!
-                </b-button>
-
-              </div>
-              <div class="text-photo-date">
-                {{ venue.workout ? venue.workout.date_start : '-' }}
-              </div>
-            </div>
-          </div>
-          -->
         </template>
         <template v-else>
           <div class="column empty">
@@ -122,12 +99,7 @@ export default {
             let splitDate = datetime[0].split('-');
 
             let months = {
-                '07': 'jul',
-                '08': 'ago',
-                '09': 'sep',
-                '10': 'oct',
-                '11': 'nov',
-                '12': 'dic'
+                '01': 'ene', '02': 'feb', '03': 'mar', '04': 'abr', '05': 'may', '06': 'jun', '07': 'jul', '08': 'ago', '09': 'sep', '10': 'oct', '11': 'nov', '12': 'dic'
             };
             return months[splitDate[1]];
         }
@@ -136,6 +108,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+  .venues{
+    background: url(https://teamfaster.mx/assets/img/fondo-registro-web-puma.png);
+    background-size: cover;
+
+  }
   .date{
     font-size: 26px;
     font-weight: bold;

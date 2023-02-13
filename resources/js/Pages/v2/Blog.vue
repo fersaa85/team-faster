@@ -1,16 +1,18 @@
 <template>
-    <div class="venues">
-<br /><br /><br />
-        <h1 class="puma-bold" style="color: #ffffff; padding-top: 80px; font-size: 40px; min-height: 45vh;">Próximamente</h1>
+    <div class="blog">
 
-        <!--
-        <div v-for="post in posts">
-            <p>{{ post.title }}</p>
-            <b-navbar-item tag="router-link" :to="{ path: '/blog/'+post.slug }" class="nav-bar-button" :class="{'button-active':  $route.name =='blog'}">
-                {{ post.title }}
-            </b-navbar-item>
-        </div>
-         -->
+        <template v-if="posts.length">
+            <div v-for="post in posts">
+                <p>{{ post.title }}</p>
+                <b-navbar-item tag="router-link" :to="{ path: '/blog/'+post.slug }" class="nav-bar-button" :class="{'button-active':  $route.name =='blog'}">
+                    {{ post.title }}
+                </b-navbar-item>
+            </div>
+        </template>
+        <template v-else>
+            <br /><br /><br />
+            <h1 class="puma-bold" style="color: #ffffff; padding-top: 80px; font-size: 40px; min-height: 45vh;">Próximamente</h1>
+        </template>
 
         <Footer></Footer>
 
@@ -61,6 +63,10 @@ export default {
     .venues{
         background: black;
         overflow-x: hidden;
+    }
+    .blog{
+        background: url(https://teamfaster.mx/assets/img/fondo-blog-puma.png);
+        background-size: cover;
     }
     .title-venues{
         font-size: 100px;
