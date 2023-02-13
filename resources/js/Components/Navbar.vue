@@ -85,15 +85,20 @@ export default {
         color:#a8a5af;
         &:hover{
           color: white;
+          background-color: transparent !important;
         }
         &:focus{
           color: white;
+          background-color: transparent !important;
+
         }
         &:focus-within{
           color: white;
+          background-color: transparent !important;
         }
         &.button-active{
           color: white;
+          background-color: transparent !important;
         }
       }
     }

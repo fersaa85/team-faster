@@ -11,19 +11,22 @@
             />
           </div>
         </div>
-        <div class="level-item button-container is-hidden-touch first-menu-item">
+        <!-- <div class="level-item button-container is-hidden-touch first-menu-item">
           Inicio
-        </div>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/registro' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
+        </div> -->
+        <b-navbar-item tag="router-link" :to="{ path: '/v2' }" class="level-item button-container nav-bar-butto is-hidden-touch first-menu-item" :class="{'button-active':  $route.name =='coaches'}">
+          Inicio
+        </b-navbar-item>
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/registro' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='coaches'}">
           Registro
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/coaches' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/coaches' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='coaches'}">
           Coaches
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/blog' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/blog' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='coaches'}">
           Blog
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/galeria' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/galeria' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='coaches'}">
           Galería
         </b-navbar-item>
 
@@ -65,6 +68,23 @@ export default {
     @media screen and (min-width: 1024px) and (max-width: 1133px) {
       padding-top: 24px;
     }
+    &:hover{
+      color: white;
+      background-color: transparent !important;
+    }
+        &:focus{
+          color: white;
+          background-color: transparent !important;
+
+        }
+        &:focus-within{
+          color: white;
+          background-color: transparent !important;
+        }
+        &.button-active{
+          color: white;
+          background-color: transparent !important;
+        }
   }
   .logo-style{
     width:182px;
