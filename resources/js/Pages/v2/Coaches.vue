@@ -91,6 +91,10 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+  .coaches{
+    background: url(https://teamfaster.mx/assets/img/fondo-coaches-web-puma.png);
+    background-size: cover;
+  }
   .venues_photos{
     margin: 0 160px;
     padding: 20px;

@@ -4,6 +4,7 @@ namespace App\Admin\Controllers;
 
 use App\Models\Venue;
 use App\Models\Coatch;
+use App\Models\Workout;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
@@ -108,16 +109,9 @@ class VenueController extends AdminController
 
         $form->text('workout.venue_id', __('venue_id'));
 
-        /*$form->hidden('workout.venue_id')->saving(function (Form $form) {;
-            //$form->workout->venue_id = $form->id;
-            return  $form->id;
-        });
-        */
-
-        $form->saving(function (Form $form) {
-
-            $form->slug = $form->name;
-
+        // callback before save
+        $form->submitted(function (Form $form) {
+            Workout::where('venue_id', $form->model()->id)->delete();
         });
 
         return $form;

@@ -108,6 +108,11 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+  .venues{
+    background: url(https://teamfaster.mx/assets/img/fondo-registro-web-puma.png);
+    background-size: cover;
+
+  }
   .date{
     font-size: 26px;
     font-weight: bold;
