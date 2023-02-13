@@ -10,13 +10,9 @@ window.axios = require('axios');
 
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 window.axios.defaults.baseURL = 'https://teamfaster.mx/';
-<<<<<<< HEAD
-// window.axios.defaults.baseURL = 'http://team-faster.test';
-=======
 //window.axios.defaults.baseURL = 'http://team-faster.test';
->>>>>>> c6d7e8ed5407afa0f9123513d71697250a03332c
 
-/**
+/**s
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
  * allows your team to easily build robust real-time web applications.
