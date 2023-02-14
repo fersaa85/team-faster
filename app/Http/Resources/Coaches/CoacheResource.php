@@ -20,7 +20,7 @@ class CoacheResource extends JsonResource
             'id' => $this->id,
             'name' => $this->name,
             'description' => $this->description,
-            'image' => $this->image,
+            'image' => '/'.$this->image,
             'instagram' => $this->instagram,
         ];
     }
