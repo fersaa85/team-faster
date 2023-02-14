@@ -2,7 +2,7 @@
   <div class="venues">
 
     <div class="venues_photos">
-      <div class="columns">
+      <div class="columns is-multiline">
         <template v-if="venues.length">
           <div v-for="(venue, key) in venues" :key="key" class="column is-4" :class="`venue${key}`"  style="position:relative;">
               <div>
@@ -109,9 +109,11 @@ export default {
 </script>
 <style lang="scss" scoped>
   .venues{
-    background: url(https://teamfaster.mx/assets/img/fondo-registro-web-puma.png);
+    background: url(/assets/img/fondo-registro-web-puma.jpg);
     background-size: cover;
-
+    overflow-x: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
   }
   .date{
     font-size: 26px;
@@ -119,15 +121,14 @@ export default {
     text-transform: uppercase;
   }
   .register-button{
-    // background-color: #c624f1;
-    border-color: white;
-    // color: white;
-    // font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
-    // text-transform: uppercase;
     padding: 3px 36px 0;
-    // span{
-    //   line-height: 1.25rem;
-    // }
+    color: white;
+    background-color: #b99571;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    font-size: 19px !important;
+    border-radius: 0;
     @media screen and (max-width: 1024px) {
       font-size: 1rem !important;
     }
@@ -144,12 +145,8 @@ export default {
   .venues_photos{
     margin: 212px 20px 0;
     padding: 20px;
-    background-color: black;
   }
-  .venues{
-    background: linear-gradient(90deg, #6d6e79, #ebebed);
-    overflow-x: hidden;
-  }
+
   .title-venues{
     font-size: 100px;
     color: black;
@@ -181,28 +178,29 @@ export default {
       font-size: 115px;
     }
   }
-  .footer-styles{
-    padding: 96px 24px 48px;
-    background: linear-gradient( transparent, black 32%, black);
-    opacity: 1;
-    @media screen and (max-width: 768px) {
-      background: linear-gradient( transparent, black 25%, black);
-    }
-    .footer-1{
-      text-align: left;
-      @media screen and (max-width: 768px) {
-        text-align:center;
-      }
-    }
-    .footer-2{
-      text-align: right;
-      @media screen and (max-width: 768px) {
-        margin-top: 20px;
-        text-align:center;
-      }
-    }
-  }
+  // .footer-styles{
+  //   padding: 96px 24px 48px;
+  //   background: linear-gradient( transparent, black 32%, black);
+  //   opacity: 1;
+  //   @media screen and (max-width: 768px) {
+  //     background: linear-gradient( transparent, black 25%, black);
+  //   }
+  //   .footer-1{
+  //     text-align: left;
+  //     @media screen and (max-width: 768px) {
+  //       text-align:center;
+  //     }
+  //   }
+  //   .footer-2{
+  //     text-align: right;
+  //     @media screen and (max-width: 768px) {
+  //       margin-top: 20px;
+  //       text-align:center;
+  //     }
+  //   }
+  // }
   .contain-register-button{
+    margin-bottom: 24px;
     @media screen and (max-width: 768px) {
       text-align:center;
       margin-bottom: 24px;
@@ -213,7 +211,7 @@ export default {
     font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     width: 100%;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 19px;
     padding: 0 12px;
     @media screen and (max-width: 768px) {
       text-align:center;

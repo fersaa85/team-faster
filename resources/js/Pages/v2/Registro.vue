@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <Footer></Footer>
+    <!-- <Footer class="footer-style"></Footer> -->
 
   </div>
 </template>
@@ -169,7 +169,8 @@ export default {
 </script>
 <style lang="scss" scoped>
   .registro{
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 212px;
   }
   .img-blackwhite{
     -webkit-filter: grayscale(60%);
@@ -185,7 +186,7 @@ export default {
   }
   .column-info{
     padding: 0;
-    background-image: linear-gradient(45deg, #6d6e79, #ebebed);
+    background: url(/assets/img/Fondo-Registro-form.jpg);
     @media screen and (min-width: 769px) {
       min-height: 100vh;
     }
@@ -212,5 +213,11 @@ export default {
   }
   .emptyPhoto{
     height: 50vw;
+  }
+  .footer-style{
+    position: relative;
+    width: 100%;
+    background-color: transparent;
+    bottom: 165px;
   }
 </style>

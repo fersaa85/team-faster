@@ -204,13 +204,20 @@
 </script>
 <style lang="scss" scoped>
   .register-button{
-    background-color: #66676e;
-    border-color: #66676e;
     color: white;
     font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     text-transform: uppercase;
     padding: 3px 36px 0;
     margin-top: 26px;
+    
+    padding: 3px 36px 0;
+    color: white;
+    background-color: #b99571;
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    font-size: 19px !important;
+    border-radius: 0;
   }
   .form-styles{
     padding-left: 7%;
@@ -227,7 +234,7 @@
   }
   .form-title{
     font-size: 18px;
-    color: white;
+    color: #b99571;
     text-align: left;
     text-transform: uppercase;
     padding-bottom: 12px;

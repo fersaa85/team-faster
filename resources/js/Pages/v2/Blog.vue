@@ -1,20 +1,20 @@
 <template>
     <div class="blog">
 
-        <template v-if="posts.length">
+        <!-- <template v-if="posts.length">
             <div v-for="post in posts">
                 <p>{{ post.title }}</p>
                 <b-navbar-item tag="router-link" :to="{ path: '/blog/'+post.slug }" class="nav-bar-button" :class="{'button-active':  $route.name =='blog'}">
                     {{ post.title }}
                 </b-navbar-item>
             </div>
-        </template>
-        <template v-else>
+        </template> -->
+        <template>
             <br /><br /><br />
             <h1 class="puma-bold" style="color: #ffffff; padding-top: 80px; font-size: 40px; min-height: 45vh;">Próximamente</h1>
         </template>
 
-        <Footer></Footer>
+        <Footer class="footer-style"></Footer>
 
     </div>
 </template>
@@ -52,6 +52,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.footer-style{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
     .venues_photos{
         margin: 0 160px;
         padding: 20px;
@@ -60,13 +65,11 @@ export default {
             margin: 0 40px;
         }
     }
-    .venues{
-        background: black;
-        overflow-x: hidden;
-    }
     .blog{
-        background: url(https://teamfaster.mx/assets/img/fondo-blog-puma.png);
+        background: url(/assets/img/fondo-blog-puma.jpg);
         background-size: cover;
+        overflow-x: hidden;
+        min-height: 100vh;
     }
     .title-venues{
         font-size: 100px;
@@ -98,24 +101,7 @@ export default {
             font-size: 115px;
         }
     }
-    .footer-styles{
-        padding: 96px 24px 48px;
-        background: linear-gradient(transparent, 35%, #110315);
-        opacity: 1;
-        .footer-1{
-        text-align: left;
-        @media screen and (max-width: 768px) {
-            text-align:center;
-        }
-        }
-        .footer-2{
-        text-align: right;
-        @media screen and (max-width: 768px) {
-            margin-top: 20px;
-            text-align:center;
-        }
-        }
-    }
+
     .text-photo-title{
         position: absolute;
         color: white;

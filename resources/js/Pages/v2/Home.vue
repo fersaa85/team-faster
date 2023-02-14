@@ -2,6 +2,41 @@
   <div class="home">
     <section class="description panel uno">
       <div>
+        <div class="columns" style="margin: 0;">
+          <div class="column is-12 panel1-column1">
+            <div class="logo-style" ref="logoInicio">
+              <b-image
+                responsive
+                src="/assets/img/logo_train.png"
+                ratio="565by123"
+              ></b-image>
+            </div>
+            <div class="welcome-img is-hidden-touch">
+              <b-image
+                responsive
+                src="/assets/img/welcome.png"
+                ratio="1609by136"
+              ></b-image>
+            </div>
+            <div class="welcome-img is-hidden-desktop">
+              <b-image
+                responsive
+                src="/assets/img/welcome_mobl.png"
+                ratio="995by136"
+              ></b-image>
+            </div>
+            <!-- <div class="puma-regular welcome-text">
+              <div>
+                Aquí comienza la mejor experiencia de
+                entrenamientos en combinación con coaches
+                que te ayudarán a liberar tu potencial
+              </div>
+            </div> -->
+            <div class="puma-bold registrarme-button">
+              Registrarme
+            </div>
+          </div>
+        </div>
         <div class="netw-style">
           <b-image
               responsive
@@ -9,37 +44,6 @@
               ratio="74by348"
             ></b-image>
         </div>
-        <div class="columns" style="margin: 0;">
-          <div class="column panel1-column1">
-            <div class="welcome-img">
-              <b-image
-                responsive
-                src="/assets/img/welcome.png"
-                ratio="753by209"
-              ></b-image>
-            </div>
-            <div class="puma-regular welcome-text">
-              <div>
-                Aquí comienza la mejor experiencia de
-                entrenamientos en combinación con coaches
-                que te ayudarán a liberar tu potencial
-              </div>
-            </div>
-            <div class="puma-bold registrarme-button">
-              Registrarme
-            </div>
-          </div>
-          <div class="column">
-            <div class="logo-style" ref="logoInicio">
-              <b-image
-              responsive
-              src="/assets/img/logoTeamFaster.png"
-              ratio="1by1"
-            ></b-image>
-            </div>
-          </div>
-        </div>
-        
       </div>
     </section>
     <section class="panel dos">
@@ -57,8 +61,8 @@
             <div class="logo-simple">
               <b-image
                 responsive
-                src="/assets/img/LOGO-TEAMFASTER.jpg"
-                ratio="1by1"
+                src="/assets/img/logo_train.png"
+                ratio="565by123"
               ></b-image>
             </div>
           </div>
@@ -91,7 +95,7 @@
           <b-image
               responsive
               src="/assets/img/ytu.png"
-              ratio="519by225"
+              ratio="537by221"
               class="model-2"
           ></b-image>
       </div>
@@ -207,10 +211,10 @@ export default {
         );
       },
       setWelcomeText(){
-        this.gsap.to(
-          ".welcome-text",
-          {autoAlpha: 0, duration: 0 }
-        );
+        // this.gsap.to(
+        //   ".welcome-text",
+        //   {autoAlpha: 0, duration: 0 }
+        // );
         this.gsap.to(
           ".registrarme-button",
           {autoAlpha: 0, duration: 0 }
@@ -239,11 +243,11 @@ export default {
       //   );
       // },
       setPage1(){
-        this.gsap.to(
-          ".welcome-text",{
-          scrollTrigger: ".welcome-text",
-          autoAlpha: 1, duration: 0.8, delay:0.5, ease: "Power2.easeIn" }
-        );
+        // this.gsap.to(
+        //   ".welcome-text",{
+        //   scrollTrigger: ".welcome-text",
+        //   autoAlpha: 1, duration: 0.8, delay:0.5, ease: "Power2.easeIn" }
+        // );
         this.gsap.to(
           ".registrarme-button",{
           scrollTrigger: ".registrarme-button",
@@ -337,6 +341,10 @@ export default {
   .home{
     max-width: 100vw;
     overflow-x: hidden;
+    @media screen and (max-width: 768px) {
+      min-width: 100vw;
+      max-width: unset;
+    }
   }
 
   .panel {
@@ -355,8 +363,11 @@ export default {
     background-color: black;
     background-image: url("/assets/img/puma-web2.jpg");
     // position: sticky;
-    background-position-x: right;
+    background-position-x: center;
     background-size: cover;
+    // @media screen and (min-width: 769px){
+    //   background-size: cover;
+    // }
     // top: 0;
   }
   .tres{
@@ -377,21 +388,21 @@ export default {
     margin-left: 130px;
     width: fit-content;
     @media screen and (min-width: 1216px) and (max-width: 1408px) {
-      font-size: 100px;
+      font-size: 90px;
       line-height: 100px;
     }
     @media screen and (min-width: 1134px) and (max-width: 1215px) {
-      font-size: 80px;
+      font-size: 70px;
       line-height: 80px;
     }
     @media screen and (min-width: 1024px) and (max-width: 1133px) {
-      font-size: 80px;
+      font-size: 70px;
       line-height: 80px;
       margin-left: 100px;
     }
     @media screen and (max-width: 1023px) {
-      font-size: 70px;
-      line-height: 70px;
+      font-size: 65px;
+      line-height: 65px;
       margin-left: 80px;
     }
     @media screen and (max-width: 870px) {
@@ -400,26 +411,34 @@ export default {
       margin-left: 60px;
     }
     @media screen and (max-width: 768px) {
-      font-size: 80px;
-      line-height: 80px;
+      font-size: 65px;
+      line-height: 65px;
       margin-left: auto;
       margin-right: auto;
     }
   }
   .logo-simple{
-    width: 354px;
-    padding-left: 139px;
-    padding-top: 54px;
+    width: 567px;
+    padding-left: 126px;
+    padding-top: 94px;
     padding-bottom: 54px;
+    @media screen and (max-width: 1407px) {
+      width: 460px;
+    }
+    @media screen and (max-width: 1133px) {
+      width: 400px;
+      padding-left: 100px;
+    }
     @media screen and (max-width: 1023px) {
       padding-left: 80px;
+      width: 380px;
     }
     @media screen and (max-width: 870px) {
       padding-left: 60px;
       width: 300px;
     }
     @media screen and (max-width: 768px) {
-      width: 300px;
+      width: 70%;
       padding-left: 0;
       margin-left: auto;
       margin-right: auto;
@@ -445,7 +464,8 @@ export default {
       font-size: 26px;
     }
     @media screen and (max-width: 768px) {
-      font-size: 23px;
+      font-size: 21px;
+      line-height: 29px;
       padding-left: 10px;
       padding-right: 10px;
       margin: auto;
@@ -453,38 +473,39 @@ export default {
     }
   }
   .coaches{
-    font-family: 'GoticaModerna-KK-Italic';
+    font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     color: white;
-    font-size: 132px;
+    font-size: 90px;
     padding-top: 199px;
+    text-transform: uppercase;
+    line-height: 102px;
+    padding: 199px 40px 0;
     @media screen and (max-width: 1133px) {
-      font-size: 120px;
+      font-size: 90px;
     }
     @media screen and (max-width: 1024px) {
-      font-size: 100px;
+      font-size: 56px;
       padding-left: 30px;
       padding-right: 30px;
-      line-height: 90px;
+      line-height: 70px;
     }
   }
   .tu-style{
-    width: 25%;
+    width: 24%;
     text-align: center;
     margin: auto;
-    margin-top: -47px;
     padding-right: 26px;
     margin-bottom: 10px;
     @media screen and (max-width: 1215px) {
-      width: 30%;
-      margin-top: -30px;
+      width: 25%;
     }
     @media screen and (max-width: 1024px) {
-      width: 30%;
+      width: 25%;
       margin-top: 0;
     }
     @media screen and (max-width: 768px) {
-      width: 60%;
-      margin-top: 0;
+      width: 90%;
+      margin-top: 20px;
     }
   }
   .photos-models{
@@ -492,6 +513,9 @@ export default {
     margin: auto;
     figure{
       width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 40px 29px;
     }
   }
   .registrarme-button{
@@ -501,70 +525,69 @@ export default {
     padding: 11px 61px 8px;
     background-color: #b99571;
     width: fit-content;
-    margin-top: 69px;
+    // margin-top: 69px;
     margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
-    margin-left: 1px;
     @media screen and (max-width: 768px) {
       margin-left: auto;
       margin-right: auto;
-      max-width: 81vw;
-    }
-  }
-  .welcome-text{
-    color: white;
-    font-size: 33px;
-    text-align: left;
-    // padding-left: 183px;
-    @media screen and (min-width: 1216px) and (max-width: 1408px) {
-      font-size: 30px;
-    }
-    @media screen and (min-width: 1134px) and (max-width: 1215px) {
-      font-size: 30px;
-    }
-    @media screen and (min-width: 1024px) and (max-width: 1133px) {
-      font-size: 30px;
-    }
-    @media screen and (max-width: 1023px) {
-      font-size: 26px;
-    }
-    @media screen and (max-width: 768px) {
-      font-size: 26px;
+      max-width: 58vw;
+      padding: 11px 30px 8px;
+      font-size: 20px;
+      margin-top: 25px;
     }
   }
   .netw-style{
     width: 65px;
     position: relative;
-    top: 581px;
+    top: -53px;
     cursor: pointer;
+    margin-top: -200px;
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      position: initial;
+      top: 581px;
+      cursor: pointer;
+      margin-top: 0;
+      padding-bottom: 40px;
+    }
   }
   .welcome-img{
-    width: 100%;
+    width: 88%;
     padding-bottom: 40px;
-    padding-top: 68px;
-  }
-  .logo-style{
-    width: 70%;
-    margin-top: -51px;
+    padding-top: 176px;
     margin-left: auto;
     margin-right: auto;
     @media screen and (max-width: 768px){
-      padding-bottom: 60px;
-      width: 40%;
+      width: 100%;
+      padding-top: 95px;
+    }
+  }
+  .logo-style{
+    width: 30%;
+    margin-top: -51px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 237px;
+    @media screen and (max-width: 768px){
+      margin-top: 355px;
+      padding-bottom: 0;
+      width: 80%;
     }
   }
   .panel:not(:last-child) {
     margin-bottom: 0;
   }
   .panel1-column1{
-    padding-left: 183px;
-    @media screen and (max-width: 1023px) {
-      padding-left: 140px;
-    }
+    // padding-left: 183px;
+    // @media screen and (max-width: 1023px) {
+    //   padding-left: 140px;
+    // }
+    margin: auto;
+    text-align: center;
     @media screen and (max-width: 768px){
-      padding-left: 19vw;
-      padding-right: 19vw;
-      margin: auto;
       margin-top: -209px;
     }
   }

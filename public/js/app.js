@@ -1852,6 +1852,40 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'app',
@@ -1859,6 +1893,11 @@ __webpack_require__.r(__webpack_exports__);
     Navbar: function Navbar() {
       return __webpack_require__.e(/*! import() */ "resources_js_Components_Navbar_vue").then(__webpack_require__.bind(__webpack_require__, /*! @/Components/Navbar.vue */ "./resources/js/Components/Navbar.vue"));
     }
+  },
+  data: function data() {
+    return {
+      show: false
+    };
   }
 });
 
@@ -22689,7 +22728,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".menu[data-v-f348271a] {\n  position: fixed;\n  width: 100%;\n  z-index: 1;\n  color: white;\n  font-size: 30px;\n  text-transform: uppercase;\n  padding: 40px 306px 10px 40px;\n  cursor: pointer;\n}\n@media screen and (max-width: 1023px) {\n.menu[data-v-f348271a] {\n    padding: 40px;\n}\n}\n.button-container[data-v-f348271a] {\n  position: relative;\n  margin-top: -60px;\n  padding-left: 24px;\n  padding-right: 24px;\n  color: white;\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.button-container[data-v-f348271a] {\n    padding-top: 24px;\n}\n}\n.button-container[data-v-f348271a]:hover {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container[data-v-f348271a]:focus {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container:focus .line-below[data-v-f348271a] {\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n.button-container:focus .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container[data-v-f348271a]:focus-within {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container:focus-within .line-below[data-v-f348271a] {\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n.button-container:focus-within .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active[data-v-f348271a] {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container.button-active .line-below[data-v-f348271a] {\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n.button-container.button-active .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.logo-style[data-v-f348271a] {\n  width: 182px;\n}\n@media screen and (min-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 11vw;\n    margin-left: 53px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 11vw;\n    margin-left: 20px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.logo-style[data-v-f348271a] {\n    width: 11vw;\n    margin-left: 20px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.logo-style[data-v-f348271a] {\n    width: 10vw;\n    margin-left: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.logo-style[data-v-f348271a] {\n    width: 8vw;\n    margin-left: 0;\n}\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-f348271a] {\n    width: 10vw;\n    margin-left: 0;\n}\n}\n@media screen and (min-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 145px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 100px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1215px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 50px;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".app[data-v-f348271a] {\n  background-color: black;\n}\n.menu[data-v-f348271a] {\n  position: absolute;\n  width: 100%;\n  z-index: 1;\n  color: white;\n  font-size: 30px;\n  text-transform: uppercase;\n  padding: 40px 306px 10px 40px;\n  cursor: pointer;\n}\n@media screen and (max-width: 1023px) {\n.menu[data-v-f348271a] {\n    padding: 40px;\n}\n}\n.button-container[data-v-f348271a] {\n  position: relative;\n  margin-top: -60px;\n  padding-left: 24px;\n  padding-right: 24px;\n  color: white;\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.button-container[data-v-f348271a] {\n    padding-top: 24px;\n}\n}\n.button-container[data-v-f348271a]:hover {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container[data-v-f348271a]:focus {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container:focus .line-below[data-v-f348271a] {\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n.button-container:focus .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container[data-v-f348271a]:focus-within {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container:focus-within .line-below[data-v-f348271a] {\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n.button-container:focus-within .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active[data-v-f348271a] {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container.button-active .line-below[data-v-f348271a] {\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n.button-container.button-active .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.logo-style[data-v-f348271a] {\n  width: 182px;\n}\n@media screen and (min-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 11vw;\n    margin-left: 53px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 11vw;\n    margin-left: 20px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.logo-style[data-v-f348271a] {\n    width: 11vw;\n    margin-left: 20px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.logo-style[data-v-f348271a] {\n    width: 10vw;\n    margin-left: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.logo-style[data-v-f348271a] {\n    width: 8vw;\n    margin-left: 0;\n}\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-f348271a] {\n    width: 10vw;\n    margin-left: 0;\n}\n}\n@media screen and (min-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 145px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 100px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1215px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 50px;\n}\n}\n.menu-mobile[data-v-f348271a] {\n  background-color: black;\n  padding-top: 8px;\n  padding-bottom: 8px;\n}\n.button-container-mbl[data-v-f348271a] {\n  color: white;\n}\n.button-container-mbl[data-v-f348271a]:hover {\n  background-color: transparent !important;\n  color: #b99571;\n}\n.button-container-mbl[data-v-f348271a]:focus {\n  color: white;\n  background-color: transparent !important;\n  color: #b99571;\n}\n.button-container-mbl[data-v-f348271a]:focus-within {\n  background-color: transparent !important;\n  color: #b99571;\n}\n.button-container-mbl.button-active[data-v-f348271a] {\n  background-color: transparent !important;\n  color: #b99571;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -57147,10 +57186,195 @@ var render = function () {
               ]
             ),
             _vm._v(" "),
-            _vm._m(1),
+            _c("div", { staticClass: "level-right is-hidden-desktop" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "level-item",
+                  on: {
+                    click: function ($event) {
+                      _vm.show = !_vm.show
+                    },
+                  },
+                },
+                [
+                  _c(
+                    "span",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: !_vm.show,
+                          expression: "!show",
+                        },
+                      ],
+                    },
+                    [_c("i", { staticClass: "fas fa-bars" })]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "span",
+                    {
+                      directives: [
+                        {
+                          name: "show",
+                          rawName: "v-show",
+                          value: _vm.show,
+                          expression: "show",
+                        },
+                      ],
+                    },
+                    [_c("i", { staticClass: "fas fa-times" })]
+                  ),
+                ]
+              ),
+            ]),
           ],
           1
         ),
+        _vm._v(" "),
+        _vm.show
+          ? _c("div", { staticClass: "is-hidden-desktop menu-mobile" }, [
+              _c(
+                "div",
+                {
+                  on: {
+                    click: function ($event) {
+                      _vm.show = false
+                    },
+                  },
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "button-container-mbl nav-bar-button",
+                      class: { "button-active": _vm.$route.name == "home" },
+                      attrs: { to: { path: "/v2" } },
+                    },
+                    [_vm._v("\n          Inicio\n        ")]
+                  ),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  on: {
+                    click: function ($event) {
+                      _vm.show = false
+                    },
+                  },
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "button-container-mbl nav-bar-button",
+                      class: { "button-active": _vm.$route.name == "registro" },
+                      attrs: { to: { path: "/v2/registro" } },
+                    },
+                    [_vm._v("\n          Registro\n        ")]
+                  ),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  on: {
+                    click: function ($event) {
+                      _vm.show = false
+                    },
+                  },
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "button-container-mbl nav-bar-button",
+                      class: { "button-active": _vm.$route.name == "sedes" },
+                      attrs: { to: { path: "/v2/sedes" } },
+                    },
+                    [_vm._v("\n          Sedes\n        ")]
+                  ),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  on: {
+                    click: function ($event) {
+                      _vm.show = false
+                    },
+                  },
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "button-container-mbl nav-bar-button",
+                      class: { "button-active": _vm.$route.name == "coaches" },
+                      attrs: { to: { path: "/v2/coaches" } },
+                    },
+                    [_vm._v("\n          Coaches\n        ")]
+                  ),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  on: {
+                    click: function ($event) {
+                      _vm.show = false
+                    },
+                  },
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "button-container-mbl nav-bar-button",
+                      class: { "button-active": _vm.$route.name == "blog" },
+                      attrs: { to: { path: "/v2/blog" } },
+                    },
+                    [_vm._v("\n          Blog\n        ")]
+                  ),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  on: {
+                    click: function ($event) {
+                      _vm.show = false
+                    },
+                  },
+                },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "button-container-mbl nav-bar-button",
+                      class: { "button-active": _vm.$route.name == "galeria" },
+                      attrs: { to: { path: "/v2/galeria" } },
+                    },
+                    [_vm._v("\n          Galería\n        ")]
+                  ),
+                ],
+                1
+              ),
+            ])
+          : _vm._e(),
       ]),
       _vm._v(" "),
       _c("router-view"),
@@ -57169,16 +57393,6 @@ var staticRenderFns = [
           staticClass: "logo-style",
           attrs: { src: "/assets/img/SITE_PUMA_LOGO_PUMA.png" },
         }),
-      ]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "level-right is-hidden-desktop" }, [
-      _c("div", { staticClass: "level-item" }, [
-        _c("i", { staticClass: "fas fa-bars" }),
       ]),
     ])
   },

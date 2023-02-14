@@ -1,6 +1,6 @@
 <template>
   <div class="app">
-    <!-- <Navbar class="is-hidden-touch"></Navbar> -->
+    <!-- <Navbar class="is-hidden-desktop"></Navbar> -->
     <div class="menu">
       <div class="level is-mobile">
         <div class="level-left">
@@ -11,9 +11,6 @@
             />
           </div>
         </div>
-        <!-- <div class="level-item button-container is-hidden-touch first-menu-item">
-          Inicio
-        </div> -->
         <b-navbar-item tag="router-link" :to="{ path: '/v2' }" class="level-item button-container nav-bar-button is-hidden-touch first-menu-item" :class="{'button-active':  $route.name =='home'}">
           Inicio
           <div class="line-below line-1"></div>
@@ -39,9 +36,46 @@
           <div class="line-below line-5"></div>
         </b-navbar-item>
         <div class="level-right is-hidden-desktop">
-          <div class="level-item">
-            <i class="fas fa-bars"></i>
+          <div class="level-item" @click="show= !show">
+            <span v-show="!show">
+              <i class="fas fa-bars"></i>
+            </span>
+            <span v-show="show">
+              <i class="fas fa-times"></i>
+            </span>
           </div>
+        </div>
+      </div>
+      <div v-if="show" class="is-hidden-desktop menu-mobile">
+        <div @click="show = false">
+          <router-link :to="{ path: '/v2' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='home'}">
+            Inicio
+          </router-link >
+        </div>
+        <div @click="show = false">
+          <router-link :to="{ path: '/v2/registro' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='registro'}">
+            Registro
+          </router-link >
+        </div>
+        <div @click="show = false">
+          <router-link :to="{ path: '/v2/sedes' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='sedes'}">
+            Sedes
+          </router-link >
+        </div>
+        <div @click="show = false">
+          <router-link :to="{ path: '/v2/coaches' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
+            Coaches
+          </router-link >
+        </div>
+        <div @click="show = false">
+          <router-link :to="{ path: '/v2/blog' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='blog'}">
+            Blog
+          </router-link >
+        </div>
+        <div @click="show = false">
+          <router-link :to="{ path: '/v2/galeria' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='galeria'}">
+            Galería
+          </router-link >
         </div>
       </div>
     </div>
@@ -57,12 +91,20 @@ export default {
   name: 'app',
   components: {
     Navbar: () => import('@/Components/Navbar.vue')
-  }
+  },
+  data() {
+    return {
+      show: false
+    };
+  },
 }
 </script>
 <style lang="scss" scoped>
+.app{
+  background-color: black;
+}
   .menu{
-    position:fixed;
+    position:absolute;
     width:100%;
     z-index: 1;
     color: white;
@@ -194,6 +236,31 @@ export default {
     @media screen and (min-width: 1024px) and (max-width: 1215px) {
       padding-left: 50px;
     }
+  }
+  .menu-mobile{
+    background-color: black;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .button-container-mbl{
+    color: white;
+    &:hover{
+      background-color: transparent !important;
+      color: #b99571;
+    }
+        &:focus{
+          color: white;
+          background-color: transparent !important;
+          color: #b99571;
+        }
+        &:focus-within{
+          background-color: transparent !important;
+          color: #b99571;
+        }
+        &.button-active{
+          background-color: transparent !important;
+          color: #b99571;
+        }
   }
 </style>
 

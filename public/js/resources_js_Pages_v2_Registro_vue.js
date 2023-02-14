@@ -996,7 +996,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".footer-styles[data-v-3c0d6e26] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-3c0d6e26] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3c0d6e26] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3c0d6e26] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3c0d6e26] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.footer-styles .sponsors[data-v-3c0d6e26] {\n  font-size: 24px;\n  margin-bottom: 36px;\n}\n@media screen and (max-width: 1215px) {\n.footer-styles .sponsors[data-v-3c0d6e26] {\n    font-size: 20px;\n}\n}\n@media screen and (max-width: 768px) {\n.footer-styles .sponsors[data-v-3c0d6e26] {\n    margin-bottom: 0px;\n}\n}\n@media screen and (max-width: 768px) {\n.footer-styles .nature[data-v-3c0d6e26] {\n    margin-top: -14px;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".footer-styles[data-v-3c0d6e26] {\n  padding: 96px 24px 48px;\n  opacity: 1;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3c0d6e26] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3c0d6e26] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3c0d6e26] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.footer-styles .sponsors[data-v-3c0d6e26] {\n  font-size: 24px;\n  margin-bottom: 36px;\n}\n@media screen and (max-width: 1215px) {\n.footer-styles .sponsors[data-v-3c0d6e26] {\n    font-size: 20px;\n}\n}\n@media screen and (max-width: 768px) {\n.footer-styles .sponsors[data-v-3c0d6e26] {\n    margin-bottom: 0px;\n}\n}\n@media screen and (max-width: 768px) {\n.footer-styles .nature[data-v-3c0d6e26] {\n    margin-top: -14px;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1019,7 +1019,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".register-button[data-v-4f20a652] {\n  background-color: #66676e;\n  border-color: #66676e;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  text-transform: uppercase;\n  padding: 3px 36px 0;\n  margin-top: 26px;\n}\n.form-styles[data-v-4f20a652] {\n  padding-left: 7%;\n  padding-right: 7%;\n  padding-bottom: 48px;\n  padding-top: 48px;\n  max-width: 600px;\n  margin-left: auto;\n  margin-right: auto;\n}\n.form-styles .field-style[data-v-4f20a652] {\n  padding-top: 12px;\n  position: relative;\n}\n.form-title[data-v-4f20a652] {\n  font-size: 18px;\n  color: white;\n  text-align: left;\n  text-transform: uppercase;\n  padding-bottom: 12px;\n  padding-top: 12px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".register-button[data-v-4f20a652] {\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  text-transform: uppercase;\n  padding: 3px 36px 0;\n  margin-top: 26px;\n  padding: 3px 36px 0;\n  color: white;\n  background-color: #b99571;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  cursor: pointer;\n  border: none;\n  font-size: 19px !important;\n  border-radius: 0;\n}\n.form-styles[data-v-4f20a652] {\n  padding-left: 7%;\n  padding-right: 7%;\n  padding-bottom: 48px;\n  padding-top: 48px;\n  max-width: 600px;\n  margin-left: auto;\n  margin-right: auto;\n}\n.form-styles .field-style[data-v-4f20a652] {\n  padding-top: 12px;\n  position: relative;\n}\n.form-title[data-v-4f20a652] {\n  font-size: 18px;\n  color: #b99571;\n  text-align: left;\n  text-transform: uppercase;\n  padding-bottom: 12px;\n  padding-top: 12px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1042,7 +1042,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".info-margin[data-v-3d7ff93c] {\n  padding-right: 7%;\n}\n.soldOut[data-v-3d7ff93c] {\n  color: white;\n  padding-left: 7%;\n  margin-top: 40px;\n  padding-bottom: 40px;\n  font-size: 43px;\n}\n@media screen and (max-width: 1407px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 33px;\n}\n}\n@media screen and (max-width: 1023px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 30px;\n}\n}\n.title-1[data-v-3d7ff93c] {\n  font-size: 125px;\n  padding-top: 50px;\n  color: #66676e;\n  line-height: 125px;\n}\n@media screen and (max-width: 1407px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 100px;\n    line-height: 100px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 90px;\n    line-height: 90px;\n}\n}\n.title-2[data-v-3d7ff93c] {\n  font-size: 90px;\n  color: black;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 65px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3[data-v-3d7ff93c] {\n  font-size: 100px;\n  color: black;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 75px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3.notAvailable[data-v-3d7ff93c] {\n  padding-top: 50px;\n}\n.info-block[data-v-3d7ff93c] {\n  padding-top: 20px;\n  font-size: 20px;\n}\n@media screen and (max-width: 1407px) {\n.info-block[data-v-3d7ff93c] {\n    padding-top: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.info-block[data-v-3d7ff93c] {\n    font-size: 18px;\n}\n}\n.info-block .info-block-title[data-v-3d7ff93c] {\n  color: white;\n}\n.info-block .info-block-text[data-v-3d7ff93c] {\n  color: black;\n}\n@media screen and (max-width: 1407px) {\n.info-block .info-block-text[data-v-3d7ff93c] {\n    padding-left: 7%;\n}\n}\n.info-block .button[data-v-3d7ff93c] {\n  margin-bottom: 80px;\n  background-color: #46aaff;\n  border-color: #46aaff;\n  color: white;\n  text-transform: uppercase;\n  font-size: 18px;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  padding: 5px 36px 0;\n}\n@media screen and (max-width: 1407px) {\n.info-block .button[data-v-3d7ff93c] {\n    padding: 4px 36px 0;\n    font-size: 16px;\n}\n}\n.register-form[data-v-3d7ff93c], .register-form-tablet[data-v-3d7ff93c] {\n  background-color: black;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  padding-top: 125px;\n  margin-top: 29px;\n  min-height: 61vh;\n}\n.alert[data-v-3d7ff93c] {\n  position: relative;\n  padding: 0.75rem 1.25rem;\n  margin-bottom: 1rem;\n  border: 1px solid transparent;\n  border-radius: 0.25rem;\n  text-align: center;\n}\n.alert-success[data-v-3d7ff93c] {\n  color: #155724;\n  background-color: #d4edda;\n  border-color: #c3e6cb;\n}\n.alert-danger[data-v-3d7ff93c] {\n  color: #721c24;\n  background-color: #f8d7da;\n  border-color: #f5c6cb;\n}\n.color-black[data-v-3d7ff93c] {\n  font-weight: bold;\n  color: #000000;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".info-margin[data-v-3d7ff93c] {\n  padding-right: 7%;\n}\n.soldOut[data-v-3d7ff93c] {\n  color: white;\n  padding-left: 7%;\n  margin-top: 40px;\n  padding-bottom: 40px;\n  font-size: 43px;\n}\n@media screen and (max-width: 1407px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 33px;\n}\n}\n@media screen and (max-width: 1023px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 30px;\n}\n}\n.title-1[data-v-3d7ff93c] {\n  font-size: 125px;\n  padding-top: 50px;\n  color: #66676e;\n  line-height: 125px;\n}\n@media screen and (max-width: 1407px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 100px;\n    line-height: 100px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 90px;\n    line-height: 90px;\n}\n}\n.title-2[data-v-3d7ff93c] {\n  font-size: 90px;\n  color: black;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 65px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3[data-v-3d7ff93c] {\n  font-size: 100px;\n  color: white;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 75px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3.notAvailable[data-v-3d7ff93c] {\n  padding-top: 50px;\n}\n.info-block[data-v-3d7ff93c] {\n  padding-top: 20px;\n  font-size: 20px;\n}\n@media screen and (max-width: 1407px) {\n.info-block[data-v-3d7ff93c] {\n    padding-top: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.info-block[data-v-3d7ff93c] {\n    font-size: 18px;\n}\n}\n.info-block .info-block-title[data-v-3d7ff93c] {\n  color: #b99571;\n}\n.info-block .info-block-text[data-v-3d7ff93c] {\n  color: white;\n}\n@media screen and (max-width: 1407px) {\n.info-block .info-block-text[data-v-3d7ff93c] {\n    padding-left: 7%;\n}\n}\n.info-block .button[data-v-3d7ff93c] {\n  margin-bottom: 80px;\n  background-color: #46aaff;\n  border-color: #46aaff;\n  color: white;\n  text-transform: uppercase;\n  font-size: 18px;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  padding: 5px 36px 0;\n}\n@media screen and (max-width: 1407px) {\n.info-block .button[data-v-3d7ff93c] {\n    padding: 4px 36px 0;\n    font-size: 16px;\n}\n}\n.register-form[data-v-3d7ff93c], .register-form-tablet[data-v-3d7ff93c] {\n  background-color: black;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  padding-top: 125px;\n  margin-top: 29px;\n  min-height: 61vh;\n}\n.alert[data-v-3d7ff93c] {\n  position: relative;\n  padding: 0.75rem 1.25rem;\n  margin-bottom: 1rem;\n  border: 1px solid transparent;\n  border-radius: 0.25rem;\n  text-align: center;\n}\n.alert-success[data-v-3d7ff93c] {\n  color: #155724;\n  background-color: #d4edda;\n  border-color: #c3e6cb;\n}\n.alert-danger[data-v-3d7ff93c] {\n  color: #721c24;\n  background-color: #f8d7da;\n  border-color: #f5c6cb;\n}\n.color-black[data-v-3d7ff93c] {\n  font-weight: bold;\n  color: white;\n}\na[data-v-3d7ff93c] {\n  color: white;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1088,7 +1088,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-db0a3ee6] {\n  height: 100vh;\n}\n.img-blackwhite[data-v-db0a3ee6] {\n  filter: grayscale(60%);\n}\n.clip[data-v-db0a3ee6] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-db0a3ee6] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-db0a3ee6] {\n  padding: 0;\n  background-image: linear-gradient(45deg, #6d6e79, #ebebed);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-db0a3ee6] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-db0a3ee6] {\n  margin: 0;\n}\n.registro[data-v-db0a3ee6] {\n  background: black;\n}\n.tm-puma[data-v-db0a3ee6] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-db0a3ee6] {\n  height: 50vw;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-db0a3ee6] {\n  min-height: 100vh;\n  padding-top: 212px;\n}\n.img-blackwhite[data-v-db0a3ee6] {\n  filter: grayscale(60%);\n}\n.clip[data-v-db0a3ee6] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-db0a3ee6] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-db0a3ee6] {\n  padding: 0;\n  background: url(/assets/img/Fondo-Registro-form.jpg);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-db0a3ee6] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-db0a3ee6] {\n  margin: 0;\n}\n.registro[data-v-db0a3ee6] {\n  background: black;\n}\n.tm-puma[data-v-db0a3ee6] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-db0a3ee6] {\n  height: 50vw;\n}\n.footer-style[data-v-db0a3ee6] {\n  position: relative;\n  width: 100%;\n  background-color: transparent;\n  bottom: 165px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1809,231 +1809,20 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "footer-styles" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "columns is-variable is-8 tm-puma",
-        staticStyle: { "margin-bottom": "60px" },
-      },
-      [
-        _c("div", {
-          staticClass:
-            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
-        }),
-        _vm._v(" "),
-        _vm.sponsors.length
-          ? _vm._l(_vm.sponsors, function (item, index) {
-              return _c(
-                "div",
-                {
-                  staticClass: "column is-5-mobile",
-                  staticStyle: { margin: "auto" },
-                },
-                [
-                  _c("p", { staticClass: "text-center" }, [
-                    _c("img", { attrs: { src: item.image, width: "100px" } }),
-                  ]),
-                ]
-              )
-            })
-          : _vm._e(),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _vm._m(3),
-        _vm._v(" "),
-        _vm._m(4),
-        _vm._v(" "),
-        _c("div", {
-          staticClass:
-            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
-        }),
-      ],
-      2
-    ),
-    _vm._v(" "),
-    _vm._m(5),
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "tm-puma columns sponsors",
-        staticStyle: { "text-transform": "uppercase" },
-      },
-      [
-        _c("div", {
-          staticClass:
-            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _vm._v("\n            Nuestros patrocinadores:\n        "),
+    return _c("div", { staticClass: "footer-styles" }, [
+      _c("div", { staticClass: "columns is-vcentered" }, [
+        _c("div", { staticClass: "column tm-puma footer-1" }, [
+          _vm._v(
+            "\n            @2022 puma. Todos los derechos reservados\n        "
+          ),
         ]),
-        _vm._v(" "),
-        _c("div", {
-          staticClass:
-            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-        }),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
-        _c("p", { staticClass: "text-center" }, [
-          _c("img", { attrs: { src: "/assets/img/G_Logo_Blanco.png" } }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
-        _c("p", { staticClass: "text-center" }, [
-          _c("img", {
-            attrs: {
-              src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
-            },
-          }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
-        _c("p", { staticClass: "text-center nature" }, [
-          _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
-        _c("p", { staticClass: "text-center nature" }, [
-          _c("img", {
-            attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
-          }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "columns is-vcentered" }, [
-      _c("div", { staticClass: "column tm-puma footer-1" }, [
-        _vm._v(
-          "\n            @2022 puma. Todos los derechos reservados\n        "
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "column tm-puma footer-2" }, [
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: {
-              href: "https://www.facebook.com/PUMAMexico",
-              target: "_blank",
-            },
-          },
-          [
-            _c("img", {
-              attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
-                width: "30px",
-              },
-            }),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: {
-              href: "https://twitter.com/pumamexico/",
-              target: "_blank",
-            },
-          },
-          [
-            _c("img", {
-              attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
-                width: "30px",
-              },
-            }),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: {
-              href: "https://www.instagram.com/pumamexico/",
-              target: "_blank",
-            },
-          },
-          [
-            _c("img", {
-              attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
-                width: "30px",
-              },
-            }),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: { href: "https://www.youtube.com/puma", target: "_blank" },
-          },
-          [
-            _c("img", {
-              attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
-                width: "30px",
-              },
-            }),
-          ]
-        ),
       ]),
     ])
   },
@@ -2478,7 +2267,7 @@ var render = function () {
                     _c(
                       "a",
                       {
-                        staticClass: "puma-bold photo-info2 color-black",
+                        staticClass: "puma-bold photo-info2",
                         attrs: { href: _vm.coach.instagram, target: "_blank" },
                       },
                       [
@@ -3066,8 +2855,6 @@ var render = function () {
           ]
         ),
       ]),
-      _vm._v(" "),
-      _c("Footer"),
     ],
     1
   )

@@ -63,7 +63,7 @@
                 </p>
                 <p class="info-block-text">
                   {{ coach.name }}<br />
-                  <a :href="coach.instagram" target="_blank" class="puma-bold photo-info2 color-black">
+                  <a :href="coach.instagram" target="_blank" class="puma-bold photo-info2">
                       {{ coach.description }}
                   </a>
                 </p>
@@ -297,7 +297,7 @@ import SuccessModal from '@/Components/Success.vue';
   }
   .title-3{
     font-size: 100px;
-    color: black;
+    color: white;
     line-height: 100px;
     @media screen and (max-width: 1407px) {
       font-size: 75px;
@@ -321,10 +321,10 @@ import SuccessModal from '@/Components/Success.vue';
       font-size: 18px;
     }
     .info-block-title{
-      color:white;
+      color:#b99571;
     }
     .info-block-text{
-      color:black;
+      color:white;
       @media screen and (max-width: 1407px) {
         padding-left: 7%;
       }
@@ -375,6 +375,9 @@ import SuccessModal from '@/Components/Success.vue';
 
   .color-black{
     font-weight: bold;
-    color: #000000;
+    color:white;
+  }
+  a{
+    color: white;
   }
 </style>

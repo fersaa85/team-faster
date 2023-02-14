@@ -92,22 +92,20 @@ export default {
 </script>
 <style lang="scss" scoped>
   .coaches{
-    background: url(https://teamfaster.mx/assets/img/fondo-coaches-web-puma.png);
+    background: url(/assets/img/fondo-coaches-web-puma.jpg);
     background-size: cover;
+    overflow-x: hidden;
+    min-height: 100vh;
   }
   .venues_photos{
     margin: 0 160px; 
     padding: 20px;
-    padding-top: 212px;
-    background-color: black;
+    padding-top: 244px;
     @media screen and (max-width: 768px) {
       margin: 0 40px;
     }
   }
-  .venues{
-    background: black;
-    overflow-x: hidden;
-  }
+
   .title-venues{
     font-size: 100px;
     color: white;

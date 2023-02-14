@@ -19,7 +19,7 @@
      
     </div>
 
-    <Footer></Footer>
+    <Footer class="footer-style"></Footer>
 
   </div>
 </template>
@@ -128,17 +128,19 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.footer-style{
+  position: absolute;
+  bottom: 0;
+}
   .gallery{
-    background: url(https://teamfaster.mx/assets/img/fondo-galeria-web-puma.png);
+    background: url(/assets/img/fondo-galeria-web-puma.jpg);
     background-size: cover;
+    min-height: 100vh;
   }
   .gallery-container{
     margin: 0 40px;
   }
-  .gallery{
-    background: black;
-    min-height: 100vh;
-  }
+
   .title-venues{
     font-size: 100px;
     color: white;

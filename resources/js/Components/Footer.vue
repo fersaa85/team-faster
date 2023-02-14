@@ -1,6 +1,6 @@
 <template>
     <div class="footer-styles">
-        <div class="tm-puma columns sponsors" style="text-transform: uppercase;">
+        <!-- <div class="tm-puma columns sponsors" style="text-transform: uppercase;">
             <div class="column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd">
             </div>
             <div class="column">
@@ -8,9 +8,9 @@
             </div>
             <div class="column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd">
             </div>
-        </div>
+        </div> -->
         <!-- <p class="text-center">Nuestros patrocinadores</p> -->
-        <div class="columns is-variable is-8 tm-puma" style="margin-bottom: 60px;">
+        <!-- <div class="columns is-variable is-8 tm-puma" style="margin-bottom: 60px;">
             <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
             </div>
             <template v-if="sponsors.length">
@@ -43,19 +43,19 @@
             </div>
             <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
             </div>
-        </div>
+        </div> -->
         <div class="columns is-vcentered">
             <div class="column tm-puma footer-1">
                 @2022 puma. Todos los derechos reservados
             </div>
-            <div class="column tm-puma footer-2">
+            <!-- <div class="column tm-puma footer-2">
 
                 <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png"  width="30px"/></a>
                 <a href="https://twitter.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png"  width="30px"/></a>
                 <a href="https://www.instagram.com/pumamexico/" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png"  width="30px"/></a>
                 <a href="https://www.youtube.com/puma" target="_blank" style="margin-left: 5px; margin-right: 5px;"><img src="/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png"  width="30px"/></a>
 
-            </div>
+            </div> -->
         </div>
     </div>
 </template>
@@ -83,10 +83,9 @@ export default {
 <style lang="scss" scoped>
 .footer-styles{
     padding: 96px 24px 48px;
-    background: linear-gradient(transparent, 35%, #110315);
+    // background: linear-gradient(transparent, 35%, #110315);
     opacity: 1;
     .footer-1{
-        text-align: left;
         @media screen and (max-width: 768px) {
                 text-align:center;
         }

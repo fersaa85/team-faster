@@ -169,7 +169,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".footer-styles[data-v-3c0d6e26] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-3c0d6e26] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3c0d6e26] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3c0d6e26] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3c0d6e26] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.footer-styles .sponsors[data-v-3c0d6e26] {\n  font-size: 24px;\n  margin-bottom: 36px;\n}\n@media screen and (max-width: 1215px) {\n.footer-styles .sponsors[data-v-3c0d6e26] {\n    font-size: 20px;\n}\n}\n@media screen and (max-width: 768px) {\n.footer-styles .sponsors[data-v-3c0d6e26] {\n    margin-bottom: 0px;\n}\n}\n@media screen and (max-width: 768px) {\n.footer-styles .nature[data-v-3c0d6e26] {\n    margin-top: -14px;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".footer-styles[data-v-3c0d6e26] {\n  padding: 96px 24px 48px;\n  opacity: 1;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3c0d6e26] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3c0d6e26] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3c0d6e26] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.footer-styles .sponsors[data-v-3c0d6e26] {\n  font-size: 24px;\n  margin-bottom: 36px;\n}\n@media screen and (max-width: 1215px) {\n.footer-styles .sponsors[data-v-3c0d6e26] {\n    font-size: 20px;\n}\n}\n@media screen and (max-width: 768px) {\n.footer-styles .sponsors[data-v-3c0d6e26] {\n    margin-bottom: 0px;\n}\n}\n@media screen and (max-width: 768px) {\n.footer-styles .nature[data-v-3c0d6e26] {\n    margin-top: -14px;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -192,7 +192,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".venues_photos[data-v-1e60fd08] {\n  margin: 0 160px;\n  padding: 20px;\n  background-color: black;\n}\n@media screen and (max-width: 768px) {\n.venues_photos[data-v-1e60fd08] {\n    margin: 0 40px;\n}\n}\n.venues[data-v-1e60fd08] {\n  background: black;\n  overflow-x: hidden;\n}\n.blog[data-v-1e60fd08] {\n  background: url(https://teamfaster.mx/assets/img/fondo-blog-puma.png);\n  background-size: cover;\n}\n.title-venues[data-v-1e60fd08] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-1e60fd08] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-1e60fd08] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-1e60fd08] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-1e60fd08] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-1e60fd08] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-1e60fd08] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-1e60fd08] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-1e60fd08] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-1e60fd08] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-1e60fd08] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-1e60fd08] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.text-photo-title[data-v-1e60fd08] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  height: 100%;\n  text-align: left;\n  background: linear-gradient(transparent, 80%, #110315);\n}\n.text-photo-title .photo-info[data-v-1e60fd08] {\n  margin: auto;\n  position: absolute;\n  bottom: 0;\n  padding-bottom: 14px;\n  padding-left: 14px;\n}\n.text-photo-title .photo-info1[data-v-1e60fd08] {\n  font-size: 40px;\n}\n.text-photo-title .photo-info2[data-v-1e60fd08] {\n  font-size: 20px;\n}\n.img-container:hover .text-photo-title[data-v-1e60fd08] {\n  visibility: visible;\n  opacity: 1;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".footer-style[data-v-1e60fd08] {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n}\n.venues_photos[data-v-1e60fd08] {\n  margin: 0 160px;\n  padding: 20px;\n  background-color: black;\n}\n@media screen and (max-width: 768px) {\n.venues_photos[data-v-1e60fd08] {\n    margin: 0 40px;\n}\n}\n.blog[data-v-1e60fd08] {\n  background: url(/assets/img/fondo-blog-puma.jpg);\n  background-size: cover;\n  overflow-x: hidden;\n  min-height: 100vh;\n}\n.title-venues[data-v-1e60fd08] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-1e60fd08] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-1e60fd08] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-1e60fd08] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-1e60fd08] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-1e60fd08] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-1e60fd08] {\n    font-size: 115px;\n}\n}\n.text-photo-title[data-v-1e60fd08] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  height: 100%;\n  text-align: left;\n  background: linear-gradient(transparent, 80%, #110315);\n}\n.text-photo-title .photo-info[data-v-1e60fd08] {\n  margin: auto;\n  position: absolute;\n  bottom: 0;\n  padding-bottom: 14px;\n  padding-left: 14px;\n}\n.text-photo-title .photo-info1[data-v-1e60fd08] {\n  font-size: 40px;\n}\n.text-photo-title .photo-info2[data-v-1e60fd08] {\n  font-size: 20px;\n}\n.img-container:hover .text-photo-title[data-v-1e60fd08] {\n  visibility: visible;\n  opacity: 1;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -438,231 +438,20 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "footer-styles" }, [
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "columns is-variable is-8 tm-puma",
-        staticStyle: { "margin-bottom": "60px" },
-      },
-      [
-        _c("div", {
-          staticClass:
-            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
-        }),
-        _vm._v(" "),
-        _vm.sponsors.length
-          ? _vm._l(_vm.sponsors, function (item, index) {
-              return _c(
-                "div",
-                {
-                  staticClass: "column is-5-mobile",
-                  staticStyle: { margin: "auto" },
-                },
-                [
-                  _c("p", { staticClass: "text-center" }, [
-                    _c("img", { attrs: { src: item.image, width: "100px" } }),
-                  ]),
-                ]
-              )
-            })
-          : _vm._e(),
-        _vm._v(" "),
-        _vm._m(1),
-        _vm._v(" "),
-        _vm._m(2),
-        _vm._v(" "),
-        _vm._m(3),
-        _vm._v(" "),
-        _vm._m(4),
-        _vm._v(" "),
-        _c("div", {
-          staticClass:
-            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
-        }),
-      ],
-      2
-    ),
-    _vm._v(" "),
-    _vm._m(5),
-  ])
+  return _vm._m(0)
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      {
-        staticClass: "tm-puma columns sponsors",
-        staticStyle: { "text-transform": "uppercase" },
-      },
-      [
-        _c("div", {
-          staticClass:
-            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "column" }, [
-          _vm._v("\n            Nuestros patrocinadores:\n        "),
+    return _c("div", { staticClass: "footer-styles" }, [
+      _c("div", { staticClass: "columns is-vcentered" }, [
+        _c("div", { staticClass: "column tm-puma footer-1" }, [
+          _vm._v(
+            "\n            @2022 puma. Todos los derechos reservados\n        "
+          ),
         ]),
-        _vm._v(" "),
-        _c("div", {
-          staticClass:
-            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
-        }),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
-        _c("p", { staticClass: "text-center" }, [
-          _c("img", { attrs: { src: "/assets/img/G_Logo_Blanco.png" } }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
-        _c("p", { staticClass: "text-center" }, [
-          _c("img", {
-            attrs: {
-              src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
-            },
-          }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
-        _c("p", { staticClass: "text-center nature" }, [
-          _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
-        _c("p", { staticClass: "text-center nature" }, [
-          _c("img", {
-            attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
-          }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "columns is-vcentered" }, [
-      _c("div", { staticClass: "column tm-puma footer-1" }, [
-        _vm._v(
-          "\n            @2022 puma. Todos los derechos reservados\n        "
-        ),
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "column tm-puma footer-2" }, [
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: {
-              href: "https://www.facebook.com/PUMAMexico",
-              target: "_blank",
-            },
-          },
-          [
-            _c("img", {
-              attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png",
-                width: "30px",
-              },
-            }),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: {
-              href: "https://twitter.com/pumamexico/",
-              target: "_blank",
-            },
-          },
-          [
-            _c("img", {
-              attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png",
-                width: "30px",
-              },
-            }),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: {
-              href: "https://www.instagram.com/pumamexico/",
-              target: "_blank",
-            },
-          },
-          [
-            _c("img", {
-              attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png",
-                width: "30px",
-              },
-            }),
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "a",
-          {
-            staticStyle: { "margin-left": "5px", "margin-right": "5px" },
-            attrs: { href: "https://www.youtube.com/puma", target: "_blank" },
-          },
-          [
-            _c("img", {
-              attrs: {
-                src: "/assets/img/socials/SITE_TEAM_PUMA_ICONO_YOUT.png",
-                width: "30px",
-              },
-            }),
-          ]
-        ),
       ]),
     ])
   },
@@ -692,56 +481,27 @@ var render = function () {
     "div",
     { staticClass: "blog" },
     [
-      _vm.posts.length
-        ? _vm._l(_vm.posts, function (post) {
-            return _c(
-              "div",
-              [
-                _c("p", [_vm._v(_vm._s(post.title))]),
-                _vm._v(" "),
-                _c(
-                  "b-navbar-item",
-                  {
-                    staticClass: "nav-bar-button",
-                    class: { "button-active": _vm.$route.name == "blog" },
-                    attrs: {
-                      tag: "router-link",
-                      to: { path: "/blog/" + post.slug },
-                    },
-                  },
-                  [
-                    _vm._v(
-                      "\n                " +
-                        _vm._s(post.title) +
-                        "\n            "
-                    ),
-                  ]
-                ),
-              ],
-              1
-            )
-          })
-        : [
-            _c("br"),
-            _c("br"),
-            _c("br"),
-            _vm._v(" "),
-            _c(
-              "h1",
-              {
-                staticClass: "puma-bold",
-                staticStyle: {
-                  color: "#ffffff",
-                  "padding-top": "80px",
-                  "font-size": "40px",
-                  "min-height": "45vh",
-                },
-              },
-              [_vm._v("Próximamente")]
-            ),
-          ],
+      [
+        _c("br"),
+        _c("br"),
+        _c("br"),
+        _vm._v(" "),
+        _c(
+          "h1",
+          {
+            staticClass: "puma-bold",
+            staticStyle: {
+              color: "#ffffff",
+              "padding-top": "80px",
+              "font-size": "40px",
+              "min-height": "45vh",
+            },
+          },
+          [_vm._v("Próximamente")]
+        ),
+      ],
       _vm._v(" "),
-      _c("Footer"),
+      _c("Footer", { staticClass: "footer-style" }),
     ],
     2
   )
