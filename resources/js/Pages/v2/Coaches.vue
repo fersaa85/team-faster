@@ -12,7 +12,7 @@
               <a :href="item.instagram" target="_blank">
                 <b-image
                         responsive
-                        :src="{{ item.image }}"
+                        :src="item.image"
                         ratio="1by1"
                         class="img-blackwhite"
                 ></b-image>
