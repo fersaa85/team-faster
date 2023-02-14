@@ -3,9 +3,8 @@
 namespace App\Http\Resources\Galeries;
 
 use Illuminate\Http\Resources\Json\JsonResource;
-use App\Models\Workout;
 
-class GaleryResource extends JsonResource
+class GalleryResource extends JsonResource
 {
 
     /**
