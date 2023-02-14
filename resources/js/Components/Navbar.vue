@@ -82,7 +82,7 @@ export default {
         font-size: 30px;
         padding-top: 0.5rem !important;
         background-color: transparent !important;
-        color:#a8a5af;
+        color:white !important;
         &:hover{
           color: white;
           background-color: transparent !important;

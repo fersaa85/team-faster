@@ -142,7 +142,7 @@ export default {
     color: #ffffff;
   }
   .venues_photos{
-    margin: 0 20px;
+    margin: 212px 20px 0;
     padding: 20px;
     background-color: black;
   }

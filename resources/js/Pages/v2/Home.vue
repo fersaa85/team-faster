@@ -347,19 +347,22 @@ export default {
   }
   .uno{
     background-color: black;
-    background-image: url("/assets/img/puma-web1.png");
+    background-image: url("/assets/img/puma-web1.jpg");
     background-position-x: center;
+    background-size: cover;
   }
   .dos{
     background-color: black;
-    background-image: url("/assets/img/puma-web2.png");
+    background-image: url("/assets/img/puma-web2.jpg");
     // position: sticky;
     background-position-x: right;
+    background-size: cover;
     // top: 0;
   }
   .tres{
     background-color: black;
-    background-image: url("/assets/img/puma-web3.png");
+    background-image: url("/assets/img/puma-web3.jpg");
+    background-size: cover;
     position: sticky;
     top: 0;
   }

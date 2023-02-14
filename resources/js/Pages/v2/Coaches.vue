@@ -96,8 +96,9 @@ export default {
     background-size: cover;
   }
   .venues_photos{
-    margin: 0 160px;
+    margin: 0 160px; 
     padding: 20px;
+    padding-top: 212px;
     background-color: black;
     @media screen and (max-width: 768px) {
       margin: 0 40px;

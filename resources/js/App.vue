@@ -14,25 +14,35 @@
         <!-- <div class="level-item button-container is-hidden-touch first-menu-item">
           Inicio
         </div> -->
-        <b-navbar-item tag="router-link" :to="{ path: '/v2' }" class="level-item button-container nav-bar-butto is-hidden-touch first-menu-item" :class="{'button-active':  $route.name =='coaches'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2' }" class="level-item button-container nav-bar-button is-hidden-touch first-menu-item" :class="{'button-active':  $route.name =='home'}">
           Inicio
+          <div class="line-below line-1"></div>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/registro' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='coaches'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/registro' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='registro'}">
           Registro
+          <div class="line-below line-2"></div>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/sedes' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/sedes' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='sedes'}">
           Sedes
+          <div class="line-below line-3"></div>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/coaches' }" class="level-item button-container nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/coaches' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='coaches'}">
           Coaches
+          <div class="line-below line-4"></div>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/blog' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='coaches'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/blog' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='blog'}">
           Blog
+          <div class="line-below line-5"></div>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/galeria' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='coaches'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/v2/galeria' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='galeria'}">
           Galería
+          <div class="line-below line-5"></div>
         </b-navbar-item>
-
+        <div class="level-right is-hidden-desktop">
+          <div class="level-item">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
       </div>
     </div>
     
@@ -65,9 +75,11 @@ export default {
     }
   }
   .button-container{
+    position: relative;
     margin-top: -60px;
     padding-left: 24px;
     padding-right: 24px;
+    color: white;
     @media screen and (min-width: 1024px) and (max-width: 1133px) {
       padding-top: 24px;
     }
@@ -78,29 +90,85 @@ export default {
         &:focus{
           color: white;
           background-color: transparent !important;
-
+          .line-below{
+            background-color: #b99571;
+            width: calc(100% - 175px);
+            height: 5px;
+            position: absolute;
+            bottom: 0;
+            &.line-2{
+              width: calc(100% - 63px);
+            }
+            &.line-3{
+              width: calc(100% - 63px);
+            }
+            &.line-4{
+              width: calc(100% - 63px);
+            }
+            &.line-5{
+              width: calc(100% - 63px);
+            }
+          }
         }
         &:focus-within{
           color: white;
           background-color: transparent !important;
+          .line-below{
+            background-color: #b99571;
+            width: calc(100% - 175px);
+            height: 5px;
+            position: absolute;
+            bottom: 0;
+            &.line-2{
+              width: calc(100% - 63px);
+            }
+            &.line-3{
+              width: calc(100% - 63px);
+            }
+            &.line-4{
+              width: calc(100% - 63px);
+            }
+            &.line-5{
+              width: calc(100% - 63px);
+            }
+          }
         }
         &.button-active{
           color: white;
           background-color: transparent !important;
+          .line-below{
+            background-color: #b99571;
+            width: calc(100% - 175px);
+            height: 5px;
+            position: absolute;
+            bottom: 0;
+            &.line-2{
+              width: calc(100% - 63px);
+            }
+            &.line-3{
+              width: calc(100% - 63px);
+            }
+            &.line-4{
+              width: calc(100% - 63px);
+            }
+            &.line-5{
+              width: calc(100% - 63px);
+            }
+          }
         }
   }
   .logo-style{
     width:182px;
     @media screen and (min-width: 1408px) {
-      width:15vw;
+      width:11vw;
       margin-left: 53px;
     }
     @media screen and (min-width: 1216px) and (max-width: 1408px) {
-      width:15vw;
+      width:11vw;
       margin-left: 20px;
     }
     @media screen and (min-width: 1134px) and (max-width: 1215px) {
-      width:15vw;
+      width:11vw;
       margin-left: 20px;
     }
     @media screen and (min-width: 1024px) and (max-width: 1133px) {
