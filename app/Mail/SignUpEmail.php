@@ -43,6 +43,7 @@ class SignUpEmail extends Mailable
                     'age' => $this->data->age,
                     'size' => $this->data->size,
                     'date' => $this->data->date,
+                    'venue' => $this->data->venue,
                     'address' => $this->data->address,
                     'workout' => $this->data->workout,
                     'coatch' => $this->data->coatch,

@@ -95,35 +95,35 @@
                 <table border="0" style="width:100%;max-width:600px;border:none;border-spacing:0;text-align:left;font-family:Arial,sans-serif;font-size:16px;color:#363636; background-color:#686a72;">
                     <tr valign="bottom" style="background-color:#000000;">
                         <td>
-                            <a href="http://www.example.com/" style="text-decoration:none;">
-                                <img src="https://teamfaster.mx/assets/img/logoTeamFaster.png" width="85px" alt="Logo" style="width:85px;height:auto;border:none;text-decoration:none;padding:10px;">
+                            <a href="https://teamfaster.mx/" style="text-decoration:none; padding: 10px">
+                                <img src="https://teamfaster.mx/assets/img/logo_train.png" alt="Logo" style="width:150px;height:auto;border:none;text-decoration:none;">
                             </a>
                         </td>
                         <td>
-                            <table role="presentation" style="float: right; width:100px;border:none;border-spacing:0;text-align:right;font-family:Arial,sans-serif";>
-                                    <tr style="text-align:right;">
-                                        <td style="vertical-align:bottom">
-                                            <a href="https://www.facebook.com/PUMAMexico" style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
-                                                <img src="https://teamfaster.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_FACE.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="https://twitter.com/pumamexico/"style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
-                                                <img src="https://teamfaster.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_TWITT.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
-                                            </a>
-                                        </td>
-                                        <td>
+                            <table role="presentation" style="float: right; border:none;border-spacing:0;border-collapse: collapse;">
+                                <tr style="text-align:right;">
+                                    <td style="vertical-align:bottom">
+                                        <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="text-decoration:none;">
+                                            <img src="https://teamfaster.mx/assets/img/brown-twitter.png" width="50px" alt="Logo" style="height:auto;border:none;">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://twitter.com/pumamexico/" target="_blank" style="text-decoration:none;">
+                                            <img src="https://teamfaster.mx/assets/img/brown-facebook.png" width="50px" alt="Logo" style="height:auto;border:none;">
+                                        </a>
+                                    </td>
+                                    <td>
 
-                                            <a href="https://www.instagram.com/pumamexico/" style="text-decoration:none; text-align: left; padding-right: 5px; padding-left: 5px;">
-                                                <img src="https://teamfaster.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
-                                            </a>
-                                        </td>
-                                        <td>
-                                            <a href="https://www.youtube.com/puma" style="text-decoration:none; text-align: left; padding-right: 15px; padding-left: 5px;">
-                                                <img src="https://teamfaster.mx/assets/img/socials/SITE_TEAM_PUMA_ICONO_INST.png" width="25px" alt="Logo" style="width:25px;height:auto;border:none;text-decoration:none;">
-                                            </a>
-                                        <td>
-                                    </tr>
+                                        <a href="https://www.instagram.com/pumamexico/" target="_blank" style="text-decoration:none; text-align: left;">
+                                            <img src="https://teamfaster.mx/assets/img/brown-instagram.png" width="50px" alt="Logo" style="height:auto;">
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.youtube.com/puma" target="_blank" style="text-decoration:none;">
+                                            <img src="https://teamfaster.mx/assets/img/brown-youtube.png" width="50px" alt="Logo" style="height:auto;">
+                                        </a>
+                                    <td>
+                                </tr>
                             </table>
                         </td>
                     </tr>
@@ -132,7 +132,7 @@
                             <table role="presentation" style="width:100%; border:none;border-spacing:0; ">
                                 <tr>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/mailing/team-faster-email.jpg" />
+                                        <img src="https://teamfaster.mx/assets/img/puma-web1.jpg" width="700px"/>
                                     </td>
                                 </tr>
                             </table>
@@ -159,8 +159,8 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <h2 style="text-align: center; color:#ffffff;font-size: 25px;margin: 0px;line-height: initial; margin-top: 30px;" class="gotica-italic">
-                                            Reserva <span style="font-size: 35px;">Parque Bicentenario</span>
+                                        <h2 style="border-bottom: 4px solid #b99571; color:#ffffff;font-size: 25px;margin: 0px;line-height: initial; margin-top: 30px;" class="gotica-italic">
+                                            Reserva <span style="font-size: 35px;">{{ $venue ?? '$venue' }}</span>
                                         </h2>
                                     </td>
                                 </tr>
@@ -185,10 +185,10 @@
                                             </tr>
                                             <tr>
                                                 <td width="40%">
-                                                    <b>Experiencia:</b> Workout
+                                                    <b>Experiencia:</b> {{ $workout ?? '-' }}
                                                 </td>
                                                 <td width="60%">
-                                                    <b>Coach:</b> Luis Carlos Origel
+                                                    <b>Coach:</b> {{ $coatch ?? '-' }}
                                                 </td>
                                             </tr>
                                         </table>
@@ -197,6 +197,7 @@
                             </table>
                         </td>
                     </tr>
+                    <!--
                     <tr>
                         <td colspan="2" style="background: #000000;  padding: 30px; ">
                             <table style="width:100%;border:none;border-spacing:0;">
@@ -215,11 +216,41 @@
                             </table>
                         </td>
                     </tr>
+                    -->
                     <tr>
                         <td colspan="2" style="padding:30px; text-align: justify; color: #686a72;background: #000000; ">
                             <b style="color: #ffffff;">Team Faster</b> eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos.
                         </td>
                     </tr>
+                    <tr>
+                        <td colspan="2" style="background: #000000;  padding: 30px; text-align: center;">
+                            <table style="width:100%;border:none;border-spacing:0;">
+                                <tr>
+                                    <td>
+                                        <b style="color: #ffffff;  font-size: 23px">¡NUESTROS COACHES ESTÁN LISTOS! ¿Y TU?</b>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding-bottom: 30px; background: #000000; text-align: center;">
+                            <table style="width:100%;border:none;border-spacing:0;">
+                                <tr>
+                                    <td>
+                                        <img src="https://teamfaster.mx/assets/img/models.png" width="200px">
+                                    </td>
+                                    <td>
+                                        <img src="https://teamfaster.mx/assets/img/models2.png" width="200px">
+                                    </td>
+                                    <td>
+                                        <img src="https://teamfaster.mx/assets/img/models3.png" width="200px">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--
                     <tr>
                         <td colspan="2" style="background: #000000;  padding: 30px; text-align: center;">
                             <table style="width:100%;border:none;border-spacing:0;">
@@ -251,22 +282,23 @@
                             </table>
                         </td>
                     </tr>
+                    -->
                     <tr>
                         <td colspan="2" style="background: #404040;  padding: 30px; text-align: center;">
                             <table style="width:100%;border:none;border-spacing:0;">
                                 <tr>
                                     <td>
-                                        <a href="https://www.facebook.com/PUMAMexico">
+                                        <a href="https://www.facebook.com/PUMAMexico" target="_blank">
                                             <img src="https://teamfaster.mx/assets/img/mailing/facebook-gris.png" width="50px">
                                         </a>
-                                        <a href="https://twitter.com/pumamexico/">
+                                        <a href="https://twitter.com/pumamexico/" target="_blank">
                                             <img src="https://teamfaster.mx/assets/img/mailing/twitter-gris.png" width="50px">
                                         </a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td style="color: #ffffff;  padding-bottom: 30px;">
-                                        @ 2022 Puma. Todos los derechos reservados.
+                                        @2023 Puma. Todos los derechos reservados.
                                     </td>
                                 </tr>
                             </table>
