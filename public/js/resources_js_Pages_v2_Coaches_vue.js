@@ -161,7 +161,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.0.1");
+    console.log("v=2.0.2");
     window.scrollTo(0, 0);
     axios.get('api/coaches').then(function (_ref) {
       var data = _ref.data;
@@ -559,7 +559,7 @@ var render = function () {
                             staticClass: "img-blackwhite",
                             attrs: {
                               responsive: "",
-                              src: "/assets/img/Carloss.png",
+                              src: item.image,
                               ratio: "1by1",
                             },
                           }),

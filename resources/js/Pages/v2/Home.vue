@@ -37,12 +37,8 @@
             </div>
           </div>
         </div>
-        <div class="netw-style">
-          <b-image
-              responsive
-              src="/assets/img/socnet.png"
-              ratio="74by348"
-            ></b-image>
+        <div class="netw-style ">
+          <SocialNetwork></SocialNetwork>
         </div>
       </div>
     </section>
@@ -131,11 +127,13 @@
 </template>
 <script>
 import Footer from '@/Components/Footer.vue';
+import SocialNetwork from '@/Components/SocialNetwork.vue';
 
 export default {
   name: 'home',
     components: {
-        Footer
+        Footer,
+        SocialNetwork
     },
     data(){
       return {
@@ -543,7 +541,6 @@ export default {
     width: 65px;
     position: relative;
     top: -53px;
-    cursor: pointer;
     margin-top: -200px;
     @media screen and (max-width: 768px) {
       width: 60px;
