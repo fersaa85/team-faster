@@ -33,7 +33,9 @@
               </div>
             </div> -->
             <div class="puma-bold registrarme-button">
-              Registrarme
+              <b-navbar-item tag="router-link" :to="{ path: '/v2/registro' }">
+                Registrarme
+              </b-navbar-item>
             </div>
           </div>
         </div>
@@ -142,7 +144,7 @@ export default {
       };
     },
     mounted() {
-      console.log( "v=2.0.2" );
+      console.log( "v=2.0.3" );
       window.scrollTo(0, 0);
       this.setLogoInicio();
       // this.setFondoInicio();
@@ -344,7 +346,13 @@ export default {
       max-width: unset;
     }
   }
-
+  .navbar-item, .navbar-link{
+    color: #ffffff;
+  }
+  a.navbar-item:hover{
+    background: #b99571;
+    color: #ffffff;
+  }
   .panel {
     min-height: 100vh;
     border-radius: 0;

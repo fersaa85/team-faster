@@ -904,6 +904,39 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -935,7 +968,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.0.2");
+    console.log("v=2.0.3");
     var slug = this.$route.params.slug;
     window.scrollTo(0, 0);
     this.setElement(this.$refs.img1);
@@ -1093,7 +1126,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-db0a3ee6] {\n  min-height: 100vh;\n}\n.img-blackwhite[data-v-db0a3ee6] {\n  filter: grayscale(60%);\n}\n.clip[data-v-db0a3ee6] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-db0a3ee6] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-db0a3ee6] {\n  padding: 0;\n  background: url(/assets/img/Fondo-Registro-form.jpg);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-db0a3ee6] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-db0a3ee6] {\n  margin: 0;\n}\n.registro[data-v-db0a3ee6] {\n  background: black;\n}\n.tm-puma[data-v-db0a3ee6] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-db0a3ee6] {\n  height: 50vw;\n}\n.footer-style[data-v-db0a3ee6] {\n  position: relative;\n  width: 100%;\n  background-color: transparent;\n  bottom: 165px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-db0a3ee6] {\n  min-height: 100vh;\n}\n.registro-empty[data-v-db0a3ee6] {\n  background: url(/assets/img/fondo-blog-puma.jpg);\n  background-size: cover;\n  overflow-x: hidden;\n  min-height: 100vh;\n  padding-top: 244px;\n}\n.img-blackwhite[data-v-db0a3ee6] {\n  filter: grayscale(60%);\n}\n.clip[data-v-db0a3ee6] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-db0a3ee6] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-db0a3ee6] {\n  padding: 0;\n  background: url(/assets/img/Fondo-Registro-form.jpg);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-db0a3ee6] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-db0a3ee6] {\n  margin: 0;\n}\n.registro[data-v-db0a3ee6] {\n  background: black;\n}\n.tm-puma[data-v-db0a3ee6] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-db0a3ee6] {\n  height: 50vw;\n}\n.footer-style[data-v-db0a3ee6] {\n  position: relative;\n  width: 100%;\n  background-color: transparent;\n  bottom: 165px;\n}\n.text-title[data-v-db0a3ee6] {\n  text-align: right;\n  text-transform: uppercase;\n  color: white;\n  line-height: 121px;\n  margin-right: -10px;\n}\n.text-title1[data-v-db0a3ee6] {\n  font-size: 90px;\n}\n.container-title[data-v-db0a3ee6] {\n  margin-bottom: 95px;\n}\n.line-middle[data-v-db0a3ee6] {\n  height: 100px;\n  width: 12px;\n  background-color: #b99571;\n  margin: auto;\n  margin-top: 1px;\n  border-radius: 7px;\n}\n.logo-style[data-v-db0a3ee6] {\n  padding-top: 7px;\n  margin-left: -15px;\n}\n.soon-style[data-v-db0a3ee6] {\n  width: 30%;\n  margin: -23px auto 0;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2704,165 +2737,212 @@ var render = function () {
     "div",
     { staticClass: "registro" },
     [
-      _c("b-modal", {
-        attrs: {
-          "has-modal-card": "",
-          "trap-focus": "",
-          "destroy-on-hide": true,
-          "aria-role": "dialog",
-          "aria-label": "Example Modal",
-          "close-button-aria-label": "Close",
-          "can-cancel": ["escape"],
-          "aria-modal": "",
-        },
-        scopedSlots: _vm._u([
-          {
-            key: "default",
-            fn: function (props) {
-              return [_c("ErrorsModal", { on: { close: props.close } })]
-            },
-          },
-        ]),
-        model: {
-          value: _vm.isErrors,
-          callback: function ($$v) {
-            _vm.isErrors = $$v
-          },
-          expression: "isErrors",
-        },
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "columns clip-section" }, [
-        _c(
-          "div",
-          { staticClass: "column has-text-right column-info is-hidden-tablet" },
-          [
-            _c(
-              "div",
-              [
-                _c("RegisterInfo", {
-                  attrs: {
-                    "venue-id": _vm.venueId,
-                    name: _vm.info.name,
-                    fecha: _vm.info.fecha,
-                    lugar: _vm.info.lugar,
-                    tipo: _vm.info.tipo,
-                    coach: _vm.info.coach,
-                    photo: _vm.info.photo,
-                    limit: _vm.info.limit,
-                    map: _vm.info.map,
-                    available: _vm.info.available,
-                  },
-                }),
-              ],
-              1
-            ),
+      _vm.isErrors
+        ? [
+            _c("div", { staticClass: "registro-empty" }, [
+              _c("div", { staticClass: "columns container-title" }, [
+                _c("div", { staticClass: "column" }),
+                _vm._v(" "),
+                _vm._m(0),
+                _vm._v(" "),
+                _vm._m(1),
+                _vm._v(" "),
+                _c("div", { staticClass: "column" }, [
+                  _c(
+                    "div",
+                    { ref: "logoInicio", staticClass: "logo-style" },
+                    [
+                      _c("b-image", {
+                        attrs: {
+                          responsive: "",
+                          src: "/assets/img/logo_train.png",
+                          ratio: "565by123",
+                        },
+                      }),
+                    ],
+                    1
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "column" }),
+              ]),
+              _vm._v(" "),
+              _vm._m(2),
+            ]),
           ]
-        ),
-        _vm._v(" "),
-        _c("div", { staticClass: "column column-imgs" }, [
-          _c(
-            "div",
-            {
-              directives: [
-                {
-                  name: "show",
-                  rawName: "v-show",
-                  value: _vm.info && _vm.info.photo,
-                  expression: "info && info.photo",
-                },
-              ],
-            },
-            [
+        : [
+            _c("div", { staticClass: "columns clip-section" }, [
               _c(
                 "div",
-                { ref: "img1", staticClass: "img-blackwhite" },
+                {
+                  staticClass:
+                    "column has-text-right column-info is-hidden-tablet",
+                },
                 [
-                  _c("b-image", {
-                    attrs: {
-                      responsive: "",
-                      src: _vm.info.photo,
-                      ratio: "14by10",
-                    },
-                    on: { load: _vm.load1 },
-                  }),
-                ],
-                1
+                  _c(
+                    "div",
+                    [
+                      _c("RegisterInfo", {
+                        attrs: {
+                          "venue-id": _vm.venueId,
+                          name: _vm.info.name,
+                          fecha: _vm.info.fecha,
+                          lugar: _vm.info.lugar,
+                          tipo: _vm.info.tipo,
+                          coach: _vm.info.coach,
+                          photo: _vm.info.photo,
+                          limit: _vm.info.limit,
+                          map: _vm.info.map,
+                          available: _vm.info.available,
+                        },
+                      }),
+                    ],
+                    1
+                  ),
+                ]
               ),
               _vm._v(" "),
-              _c("div", { ref: "img2", staticClass: "clip" }, [
+              _c("div", { staticClass: "column column-imgs" }, [
                 _c(
-                  "a",
-                  { attrs: { href: _vm.info.google_maps, target: "_blank" } },
-                  [
-                    _c("b-image", {
-                      attrs: {
-                        responsive: "",
-                        src: _vm.info.map,
-                        ratio: "15by13",
+                  "div",
+                  {
+                    directives: [
+                      {
+                        name: "show",
+                        rawName: "v-show",
+                        value: _vm.info && _vm.info.photo,
+                        expression: "info && info.photo",
                       },
-                      on: { load: _vm.load2 },
-                    }),
-                  ],
-                  1
-                ),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", {
-            directives: [
-              {
-                name: "show",
-                rawName: "v-show",
-                value: !_vm.info || !_vm.info.photo,
-                expression: "!info || !info.photo",
-              },
-            ],
-            staticClass: "emptyPhoto",
-          }),
-          _vm._v(" "),
-          _c("div", { staticClass: "tm-puma has-text-right" }, [
-            _vm._v(
-              "\n        @2022 puma. Todos los derechos reservados\n      "
-            ),
-          ]),
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "column has-text-right column-info is-hidden-mobile" },
-          [
-            _c(
-              "div",
-              { staticClass: "info" },
-              [
-                _c("RegisterInfo", {
-                  attrs: {
-                    "venue-id": _vm.venueId,
-                    name: _vm.info.name,
-                    fecha: _vm.info.fecha,
-                    lugar: _vm.info.lugar,
-                    tipo: _vm.info.tipo,
-                    coach: _vm.info.coach,
-                    photo: _vm.info.photo,
-                    map: _vm.info.map,
-                    limit: _vm.info.limit,
-                    couches: _vm.info.couches,
-                    available: _vm.info.available,
+                    ],
                   },
+                  [
+                    _c(
+                      "div",
+                      { ref: "img1", staticClass: "img-blackwhite" },
+                      [
+                        _c("b-image", {
+                          attrs: {
+                            responsive: "",
+                            src: _vm.info.photo,
+                            ratio: "14by10",
+                          },
+                          on: { load: _vm.load1 },
+                        }),
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("div", { ref: "img2", staticClass: "clip" }, [
+                      _c(
+                        "a",
+                        {
+                          attrs: {
+                            href: _vm.info.google_maps,
+                            target: "_blank",
+                          },
+                        },
+                        [
+                          _c("b-image", {
+                            attrs: {
+                              responsive: "",
+                              src: _vm.info.map,
+                              ratio: "15by13",
+                            },
+                            on: { load: _vm.load2 },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", {
+                  directives: [
+                    {
+                      name: "show",
+                      rawName: "v-show",
+                      value: !_vm.info || !_vm.info.photo,
+                      expression: "!info || !info.photo",
+                    },
+                  ],
+                  staticClass: "emptyPhoto",
                 }),
-              ],
-              1
-            ),
-          ]
-        ),
-      ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "tm-puma has-text-right" }, [
+                  _vm._v(
+                    "\n          @2022 puma. Todos los derechos reservados\n        "
+                  ),
+                ]),
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "column has-text-right column-info is-hidden-mobile",
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "info" },
+                    [
+                      _c("RegisterInfo", {
+                        attrs: {
+                          "venue-id": _vm.venueId,
+                          name: _vm.info.name,
+                          fecha: _vm.info.fecha,
+                          lugar: _vm.info.lugar,
+                          tipo: _vm.info.tipo,
+                          coach: _vm.info.coach,
+                          photo: _vm.info.photo,
+                          map: _vm.info.map,
+                          limit: _vm.info.limit,
+                          couches: _vm.info.couches,
+                          available: _vm.info.available,
+                        },
+                      }),
+                    ],
+                    1
+                  ),
+                ]
+              ),
+            ]),
+          ],
     ],
-    1
+    2
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column puma-bold text-title" }, [
+      _c("div", { staticClass: "text-title1" }, [_vm._v("Registro")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column is-1" }, [
+      _c("div", { staticClass: "line-middle" }),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "columns" }, [
+      _c("div", { staticClass: "column is-12" }, [
+        _c("h1", { staticStyle: { "font-size": "35px", color: "#ffffff" } }, [
+          _vm._v("Espera muy pronto nuestro proximo evento"),
+        ]),
+      ]),
+    ])
+  },
+]
 render._withStripped = true
 
 

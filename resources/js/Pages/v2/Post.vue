@@ -39,7 +39,7 @@ export default {
        };
     },
     mounted() {
-        console.log( "v=2.0.2" );
+        console.log( "v=2.0.3" );
         axios
             .get('/api/blog/'+this.$route.params.slug)
             .then(({ data }) => {
