@@ -482,6 +482,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -1042,7 +1047,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".info-margin[data-v-3d7ff93c] {\n  padding-right: 7%;\n}\n.soldOut[data-v-3d7ff93c] {\n  color: white;\n  padding-left: 7%;\n  margin-top: 40px;\n  padding-bottom: 40px;\n  font-size: 43px;\n}\n@media screen and (max-width: 1407px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 33px;\n}\n}\n@media screen and (max-width: 1023px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 30px;\n}\n}\n.title-1[data-v-3d7ff93c] {\n  font-size: 125px;\n  padding-top: 50px;\n  color: #66676e;\n  line-height: 125px;\n}\n@media screen and (max-width: 1407px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 100px;\n    line-height: 100px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 90px;\n    line-height: 90px;\n}\n}\n.title-2[data-v-3d7ff93c] {\n  font-size: 90px;\n  color: black;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 65px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3[data-v-3d7ff93c] {\n  font-size: 100px;\n  color: white;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 75px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3.notAvailable[data-v-3d7ff93c] {\n  padding-top: 50px;\n}\n.info-block[data-v-3d7ff93c] {\n  padding-top: 20px;\n  font-size: 20px;\n}\n@media screen and (max-width: 1407px) {\n.info-block[data-v-3d7ff93c] {\n    padding-top: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.info-block[data-v-3d7ff93c] {\n    font-size: 18px;\n}\n}\n.info-block .info-block-title[data-v-3d7ff93c] {\n  color: #b99571;\n}\n.info-block .info-block-text[data-v-3d7ff93c] {\n  color: white;\n}\n@media screen and (max-width: 1407px) {\n.info-block .info-block-text[data-v-3d7ff93c] {\n    padding-left: 7%;\n}\n}\n.info-block .button[data-v-3d7ff93c] {\n  margin-bottom: 80px;\n  background-color: #46aaff;\n  border-color: #46aaff;\n  color: white;\n  text-transform: uppercase;\n  font-size: 18px;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  padding: 5px 36px 0;\n}\n@media screen and (max-width: 1407px) {\n.info-block .button[data-v-3d7ff93c] {\n    padding: 4px 36px 0;\n    font-size: 16px;\n}\n}\n.register-form[data-v-3d7ff93c], .register-form-tablet[data-v-3d7ff93c] {\n  background-color: black;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  padding-top: 125px;\n  margin-top: 29px;\n  min-height: 61vh;\n}\n.alert[data-v-3d7ff93c] {\n  position: relative;\n  padding: 0.75rem 1.25rem;\n  margin-bottom: 1rem;\n  border: 1px solid transparent;\n  border-radius: 0.25rem;\n  text-align: center;\n}\n.alert-success[data-v-3d7ff93c] {\n  color: #155724;\n  background-color: #d4edda;\n  border-color: #c3e6cb;\n}\n.alert-danger[data-v-3d7ff93c] {\n  color: #721c24;\n  background-color: #f8d7da;\n  border-color: #f5c6cb;\n}\n.color-black[data-v-3d7ff93c] {\n  font-weight: bold;\n  color: white;\n}\na[data-v-3d7ff93c] {\n  color: white;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".info-margin[data-v-3d7ff93c] {\n  padding-right: 7%;\n}\n.soldOut[data-v-3d7ff93c] {\n  color: white;\n  padding-left: 7%;\n  margin-top: 40px;\n  padding-bottom: 40px;\n  font-size: 43px;\n}\n@media screen and (max-width: 1407px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 33px;\n}\n}\n@media screen and (max-width: 1023px) {\n.soldOut[data-v-3d7ff93c] {\n    font-size: 30px;\n}\n}\n.title-1[data-v-3d7ff93c] {\n  font-size: 125px;\n  padding-top: 50px;\n  color: #66676e;\n  line-height: 125px;\n}\n@media screen and (max-width: 1407px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 100px;\n    line-height: 100px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-1[data-v-3d7ff93c] {\n    font-size: 90px;\n    line-height: 90px;\n}\n}\n.title-2[data-v-3d7ff93c] {\n  font-size: 90px;\n  color: black;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 65px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-2[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3[data-v-3d7ff93c] {\n  font-size: 100px;\n  color: white;\n  line-height: 100px;\n}\n@media screen and (max-width: 1407px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 75px;\n    line-height: 75px;\n}\n}\n@media screen and (max-width: 1023px) {\n.title-3[data-v-3d7ff93c] {\n    font-size: 55px;\n    line-height: 65px;\n}\n}\n.title-3.notAvailable[data-v-3d7ff93c] {\n  padding-top: 50px;\n}\n.info-block[data-v-3d7ff93c] {\n  padding-top: 20px;\n  font-size: 20px;\n}\n@media screen and (max-width: 1407px) {\n.info-block[data-v-3d7ff93c] {\n    padding-top: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.info-block[data-v-3d7ff93c] {\n    font-size: 18px;\n}\n}\n.info-block .info-block-title[data-v-3d7ff93c] {\n  color: #b99571;\n}\n.info-block .info-block-text[data-v-3d7ff93c] {\n  color: white;\n}\n@media screen and (max-width: 1407px) {\n.info-block .info-block-text[data-v-3d7ff93c] {\n    padding-left: 7%;\n}\n}\n.info-block .button[data-v-3d7ff93c] {\n  margin-bottom: 80px;\n  background-color: #46aaff;\n  border-color: #46aaff;\n  color: white;\n  text-transform: uppercase;\n  font-size: 18px;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  padding: 5px 36px 0;\n}\n@media screen and (max-width: 1407px) {\n.info-block .button[data-v-3d7ff93c] {\n    padding: 4px 36px 0;\n    font-size: 16px;\n}\n}\n.register-form[data-v-3d7ff93c], .register-form-tablet[data-v-3d7ff93c] {\n  background-color: black;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 100%, 0% 100%);\n  padding-top: 125px;\n  margin-top: 29px;\n  min-height: 61vh;\n}\n.alert[data-v-3d7ff93c] {\n  position: relative;\n  padding: 0.75rem 1.25rem;\n  margin-bottom: 1rem;\n  border: 1px solid transparent;\n  border-radius: 0.25rem;\n  text-align: center;\n}\n.alert-success[data-v-3d7ff93c] {\n  color: #155724;\n  background-color: #d4edda;\n  border-color: #c3e6cb;\n}\n.alert-danger[data-v-3d7ff93c] {\n  color: #721c24;\n  background-color: #f8d7da;\n  border-color: #f5c6cb;\n}\n.color-black[data-v-3d7ff93c] {\n  font-weight: bold;\n  color: white;\n}\na[data-v-3d7ff93c] {\n  color: white;\n}\n.title-style[data-v-3d7ff93c] {\n  padding-top: 239px;\n  text-transform: uppercase;\n  line-height: 65px;\n  padding-bottom: 50px;\n}\n.title1[data-v-3d7ff93c] {\n  color: white;\n  font-size: 60px;\n}\n.title2[data-v-3d7ff93c] {\n  color: #b99571;\n  font-size: 60px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1088,7 +1093,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-db0a3ee6] {\n  min-height: 100vh;\n  padding-top: 212px;\n}\n.img-blackwhite[data-v-db0a3ee6] {\n  filter: grayscale(60%);\n}\n.clip[data-v-db0a3ee6] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-db0a3ee6] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-db0a3ee6] {\n  padding: 0;\n  background: url(/assets/img/Fondo-Registro-form.jpg);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-db0a3ee6] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-db0a3ee6] {\n  margin: 0;\n}\n.registro[data-v-db0a3ee6] {\n  background: black;\n}\n.tm-puma[data-v-db0a3ee6] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-db0a3ee6] {\n  height: 50vw;\n}\n.footer-style[data-v-db0a3ee6] {\n  position: relative;\n  width: 100%;\n  background-color: transparent;\n  bottom: 165px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-db0a3ee6] {\n  min-height: 100vh;\n}\n.img-blackwhite[data-v-db0a3ee6] {\n  filter: grayscale(60%);\n}\n.clip[data-v-db0a3ee6] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-db0a3ee6] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-db0a3ee6] {\n  padding: 0;\n  background: url(/assets/img/Fondo-Registro-form.jpg);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-db0a3ee6] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-db0a3ee6] {\n  margin: 0;\n}\n.registro[data-v-db0a3ee6] {\n  background: black;\n}\n.tm-puma[data-v-db0a3ee6] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-db0a3ee6] {\n  height: 50vw;\n}\n.footer-style[data-v-db0a3ee6] {\n  position: relative;\n  width: 100%;\n  background-color: transparent;\n  bottom: 165px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2198,7 +2203,15 @@ var render = function () {
         },
       }),
       _vm._v(" "),
-      _vm._m(0),
+      _c("div", { staticClass: "puma-bold info-margin title-style" }, [
+        _c("div", { staticClass: "title1" }, [
+          _vm._v("\n      reserva sin costo\n    "),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "title2" }, [
+          _vm._v("\n      " + _vm._s(_vm.name) + "\n    "),
+        ]),
+      ]),
       _vm._v(" "),
       _c(
         "div",
@@ -2285,7 +2298,7 @@ var render = function () {
           ]),
           _vm._v(" "),
           _vm.limit
-            ? [_vm._m(1)]
+            ? [_vm._m(0)]
             : [
                 _c(
                   "div",
@@ -2325,16 +2338,6 @@ var render = function () {
   )
 }
 var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "gotica-italic info-margin" }, [
-      _c("br"),
-      _c("br"),
-      _c("br"),
-    ])
-  },
   function () {
     var _vm = this
     var _h = _vm.$createElement

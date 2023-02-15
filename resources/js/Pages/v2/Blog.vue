@@ -1,6 +1,24 @@
 <template>
     <div class="blog">
-
+        <div class="columns container-title">
+        <div class="column"></div>
+        <div class="column puma-bold text-title">
+          <div class="text-title1">Blog</div>
+        </div>
+        <div class="column is-1">
+          <div class="line-middle"></div>
+        </div>
+        <div class="column">
+          <div class="logo-style" ref="logoInicio">
+            <b-image
+              responsive
+              src="/assets/img/logo_train.png"
+              ratio="565by123"
+            ></b-image>
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
         <!-- <template v-if="posts.length">
             <div v-for="post in posts">
                 <p>{{ post.title }}</p>
@@ -10,8 +28,13 @@
             </div>
         </template> -->
         <template>
-            <br /><br /><br />
-            <h1 class="puma-bold" style="color: #ffffff; padding-top: 80px; font-size: 40px; min-height: 45vh;">Próximamente</h1>
+            <div class="soon-style">
+                <b-image
+                responsive
+                src="/assets/img/soon.png"
+                ratio="1051by145"
+                ></b-image>
+            </div>
         </template>
 
         <Footer class="footer-style"></Footer>
@@ -70,6 +93,7 @@ export default {
         background-size: cover;
         overflow-x: hidden;
         min-height: 100vh;
+        padding-top: 244px;
     }
     .title-venues{
         font-size: 100px;
@@ -134,8 +158,33 @@ export default {
         visibility: visible;
         opacity: 1;
     }
-    // .img-blackwhite{
-    //   -webkit-filter: grayscale(60%);
-    //   filter: grayscale(60%);
-    // }
+    .text-title{
+    text-align: right;
+    text-transform: uppercase;
+    color: white;
+    line-height: 121px;
+    margin-right: -10px;
+  }
+  .text-title1{
+    font-size:90px;
+  }
+  .container-title{
+    margin-bottom: 95px;
+  }
+  .line-middle{
+    height: 100px;
+    width: 12px;
+    background-color: #b99571;
+    margin: auto;
+    margin-top: 1px;
+    border-radius: 7px;
+  }
+  .logo-style{
+    padding-top: 7px;
+    margin-left: -15px;
+  }
+  .soon-style{
+    width: 30%;
+    margin: -23px auto 0;
+  }
 </style>

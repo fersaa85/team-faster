@@ -148,6 +148,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -272,7 +292,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".footer-style[data-v-3634e7ed] {\n  position: absolute;\n  bottom: 0;\n}\n.gallery[data-v-3634e7ed] {\n  background: url(/assets/img/fondo-galeria-web-puma.jpg);\n  background-size: cover;\n  min-height: 100vh;\n}\n.gallery-container[data-v-3634e7ed] {\n  margin: 0 40px;\n}\n.title-venues[data-v-3634e7ed] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-3634e7ed] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-venues2[data-v-3634e7ed] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-3634e7ed] {\n    font-size: 115px;\n}\n}\n.title-image[data-v-3634e7ed] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-3634e7ed] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-3634e7ed] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.footer-styles[data-v-3634e7ed] {\n  width: 100%;\n  margin: 0;\n  padding: 96px 20px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-3634e7ed] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3634e7ed] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3634e7ed] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3634e7ed] {\n    margin-top: 20px;\n    text-align: center;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".footer-style[data-v-3634e7ed] {\n  position: absolute;\n  bottom: 0;\n}\n.gallery[data-v-3634e7ed] {\n  background: url(/assets/img/fondo-galeria-web-puma.jpg);\n  background-size: cover;\n  min-height: 100vh;\n  padding-top: 244px;\n}\n.gallery-container[data-v-3634e7ed] {\n  margin: 0 40px;\n}\n.title-venues[data-v-3634e7ed] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-3634e7ed] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-venues2[data-v-3634e7ed] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-3634e7ed] {\n    font-size: 115px;\n}\n}\n.title-image[data-v-3634e7ed] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-3634e7ed] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-3634e7ed] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.footer-styles[data-v-3634e7ed] {\n  width: 100%;\n  margin: 0;\n  padding: 96px 20px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-3634e7ed] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3634e7ed] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3634e7ed] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3634e7ed] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.text-title[data-v-3634e7ed] {\n  text-align: right;\n  text-transform: uppercase;\n  color: white;\n  line-height: 61px;\n  margin-right: -10px;\n}\n.text-title1[data-v-3634e7ed] {\n  font-size: 66px;\n}\n.text-title2[data-v-3634e7ed] {\n  font-size: 50px;\n}\n.container-title[data-v-3634e7ed] {\n  margin-bottom: 95px;\n}\n.line-middle[data-v-3634e7ed] {\n  height: 100px;\n  width: 12px;\n  background-color: #b99571;\n  margin: auto;\n  margin-top: 1px;\n  border-radius: 7px;\n}\n.logo-style[data-v-3634e7ed] {\n  padding-top: 7px;\n  margin-left: -15px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -13089,6 +13109,33 @@ var render = function () {
     "div",
     { staticClass: "gallery" },
     [
+      _c("div", { staticClass: "columns container-title" }, [
+        _c("div", { staticClass: "column" }),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _c("div", { staticClass: "column" }, [
+          _c(
+            "div",
+            { ref: "logoInicio", staticClass: "logo-style" },
+            [
+              _c("b-image", {
+                attrs: {
+                  responsive: "",
+                  src: "/assets/img/logo_train.png",
+                  ratio: "565by123",
+                },
+              }),
+            ],
+            1
+          ),
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "column" }),
+      ]),
+      _vm._v(" "),
       _c(
         "div",
         { staticClass: "gallery-container" },
@@ -13132,7 +13179,26 @@ var render = function () {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column puma-bold text-title" }, [
+      _c("div", { staticClass: "text-title1" }, [_vm._v("Galería")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "text-title2" }, [_vm._v("De fotos")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column is-1" }, [
+      _c("div", { staticClass: "line-middle" }),
+    ])
+  },
+]
 render._withStripped = true
 
 

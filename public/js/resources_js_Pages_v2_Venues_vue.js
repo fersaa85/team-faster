@@ -156,6 +156,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'venues',
@@ -265,7 +284,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".venues[data-v-45cd8784] {\n  background: url(/assets/img/fondo-registro-web-puma.jpg);\n  background-size: cover;\n  overflow-x: hidden;\n  min-height: 100vh;\n  min-width: 100vw;\n}\n.date[data-v-45cd8784] {\n  font-size: 26px;\n  font-weight: bold;\n  text-transform: uppercase;\n}\n.register-button[data-v-45cd8784] {\n  padding: 3px 36px 0;\n  color: white;\n  background-color: #b99571;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  cursor: pointer;\n  border: none;\n  font-size: 19px !important;\n  border-radius: 0;\n}\n@media screen and (max-width: 1024px) {\n.register-button[data-v-45cd8784] {\n    font-size: 1rem !important;\n}\n}\n@media screen and (max-width: 940px) {\n.register-button[data-v-45cd8784] {\n    font-size: 0.9rem !important;\n}\n}\n@media screen and (max-width: 768px) {\n.register-button[data-v-45cd8784] {\n    font-size: 1.25rem !important;\n}\n}\n.color-white[data-v-45cd8784] {\n  color: #ffffff;\n}\n.venues_photos[data-v-45cd8784] {\n  margin: 212px 20px 0;\n  padding: 20px;\n}\n.title-venues[data-v-45cd8784] {\n  font-size: 100px;\n  color: black;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-45cd8784] {\n    font-size: 90px;\n    color: black;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-45cd8784] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-45cd8784] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-45cd8784] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-45cd8784] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-45cd8784] {\n    font-size: 115px;\n}\n}\n.contain-register-button[data-v-45cd8784] {\n  margin-bottom: 24px;\n}\n@media screen and (max-width: 768px) {\n.contain-register-button[data-v-45cd8784] {\n    text-align: center;\n    margin-bottom: 24px;\n}\n}\n.text-photo-title[data-v-45cd8784] {\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-transform: uppercase;\n  font-size: 19px;\n  padding: 0 12px;\n}\n@media screen and (max-width: 768px) {\n.text-photo-title[data-v-45cd8784] {\n    text-align: center;\n}\n}\n.text-photo-date[data-v-45cd8784] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: right;\n  left: 0;\n  bottom: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-right: 20px;\n  padding-bottom: 12px;\n}\n.text-photo-register[data-v-45cd8784] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: left;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-left: 20px;\n  padding-top: 20px;\n}\n.venue0[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 1s;\n  -moz-animation: fadein-data-v-45cd8784 1s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 1s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 1s; /* Opera */\n}\n.venue1[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 2s;\n  -moz-animation: fadein-data-v-45cd8784 2s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 2s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 2s; /* Opera */\n}\n.venue2[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 3s;\n  -moz-animation: fadein-data-v-45cd8784 3s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 3s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 3s; /* Opera */\n}\n.empty[data-v-45cd8784] {\n  height: 30vw;\n}\n@keyframes fadein-data-v-45cd8784 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@-webkit-keyframes fadein-data-v-45cd8784 { /* Safari and Chrome */\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".venues[data-v-45cd8784] {\n  background: url(/assets/img/fondo-registro-web-puma.jpg);\n  background-size: cover;\n  overflow-x: hidden;\n  min-height: 100vh;\n  min-width: 100vw;\n}\n.date[data-v-45cd8784] {\n  font-size: 26px;\n  font-weight: bold;\n  text-transform: uppercase;\n}\n.register-button[data-v-45cd8784] {\n  padding: 3px 36px 0;\n  color: white;\n  background-color: #b99571;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  cursor: pointer;\n  border: none;\n  font-size: 19px !important;\n  border-radius: 0;\n}\n@media screen and (max-width: 1024px) {\n.register-button[data-v-45cd8784] {\n    font-size: 1rem !important;\n}\n}\n@media screen and (max-width: 940px) {\n.register-button[data-v-45cd8784] {\n    font-size: 0.9rem !important;\n}\n}\n@media screen and (max-width: 768px) {\n.register-button[data-v-45cd8784] {\n    font-size: 1.25rem !important;\n}\n}\n.color-white[data-v-45cd8784] {\n  color: #ffffff;\n}\n.venues_photos[data-v-45cd8784] {\n  margin: 212px 20px 0;\n  padding: 32px;\n}\n.title-venues[data-v-45cd8784] {\n  font-size: 100px;\n  color: black;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-45cd8784] {\n    font-size: 90px;\n    color: black;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-45cd8784] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-45cd8784] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-45cd8784] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-45cd8784] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-45cd8784] {\n    font-size: 115px;\n}\n}\n.contain-register-button[data-v-45cd8784] {\n  margin-bottom: 24px;\n}\n@media screen and (max-width: 768px) {\n.contain-register-button[data-v-45cd8784] {\n    text-align: center;\n    margin-bottom: 24px;\n}\n}\n.text-photo-title[data-v-45cd8784] {\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-transform: uppercase;\n  font-size: 19px;\n  padding: 0 12px;\n}\n@media screen and (max-width: 768px) {\n.text-photo-title[data-v-45cd8784] {\n    text-align: center;\n}\n}\n.text-photo-date[data-v-45cd8784] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: right;\n  left: 0;\n  bottom: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-right: 20px;\n  padding-bottom: 12px;\n}\n.text-photo-register[data-v-45cd8784] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  text-align: left;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  padding-left: 20px;\n  padding-top: 20px;\n}\n.venue0[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 1s;\n  -moz-animation: fadein-data-v-45cd8784 1s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 1s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 1s; /* Opera */\n}\n.venue1[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 2s;\n  -moz-animation: fadein-data-v-45cd8784 2s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 2s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 2s; /* Opera */\n}\n.venue2[data-v-45cd8784] {\n  animation: fadein-data-v-45cd8784 3s;\n  -moz-animation: fadein-data-v-45cd8784 3s; /* Firefox */\n  -webkit-animation: fadein-data-v-45cd8784 3s; /* Safari and Chrome */\n  -o-animation: fadein-data-v-45cd8784 3s; /* Opera */\n}\n.empty[data-v-45cd8784] {\n  height: 30vw;\n}\n@keyframes fadein-data-v-45cd8784 {\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n@-webkit-keyframes fadein-data-v-45cd8784 { /* Safari and Chrome */\nfrom {\n    opacity: 0;\n}\nto {\n    opacity: 1;\n}\n}\n.text-title[data-v-45cd8784] {\n  text-align: right;\n  text-transform: uppercase;\n  color: white;\n  line-height: 61px;\n  margin-right: -10px;\n}\n.text-title1[data-v-45cd8784] {\n  font-size: 66px;\n}\n.text-title2[data-v-45cd8784] {\n  font-size: 50px;\n}\n.container-title[data-v-45cd8784] {\n  margin-bottom: 95px;\n}\n.line-middle[data-v-45cd8784] {\n  height: 100px;\n  width: 12px;\n  background-color: #b99571;\n  margin: auto;\n  margin-top: 1px;\n  border-radius: 7px;\n}\n.logo-style[data-v-45cd8784] {\n  padding-top: 7px;\n  margin-left: -15px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -555,6 +574,33 @@ var render = function () {
     { staticClass: "venues" },
     [
       _c("div", { staticClass: "venues_photos" }, [
+        _c("div", { staticClass: "columns container-title" }, [
+          _c("div", { staticClass: "column" }),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c(
+              "div",
+              { ref: "logoInicio", staticClass: "logo-style" },
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/logo_train.png",
+                    ratio: "565by123",
+                  },
+                }),
+              ],
+              1
+            ),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }),
+        ]),
+        _vm._v(" "),
         _c(
           "div",
           { staticClass: "columns is-multiline" },
@@ -699,7 +745,26 @@ var render = function () {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column puma-bold text-title" }, [
+      _c("div", { staticClass: "text-title1" }, [_vm._v("Vive la")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "text-title2" }, [_vm._v("Experiencia")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column is-1" }, [
+      _c("div", { staticClass: "line-middle" }),
+    ])
+  },
+]
 render._withStripped = true
 
 

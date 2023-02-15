@@ -147,6 +147,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'coaches',
@@ -246,7 +265,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".coaches[data-v-0dc1bc44] {\n  background: url(/assets/img/fondo-coaches-web-puma.jpg);\n  background-size: cover;\n  overflow-x: hidden;\n  min-height: 100vh;\n}\n.venues_photos[data-v-0dc1bc44] {\n  margin: 0 160px;\n  padding: 20px;\n  padding-top: 244px;\n}\n@media screen and (max-width: 768px) {\n.venues_photos[data-v-0dc1bc44] {\n    margin: 0 40px;\n}\n}\n.title-venues[data-v-0dc1bc44] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-0dc1bc44] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-0dc1bc44] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-0dc1bc44] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-0dc1bc44] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-0dc1bc44] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-0dc1bc44] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-0dc1bc44] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-0dc1bc44] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-0dc1bc44] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-0dc1bc44] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-0dc1bc44] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.text-photo-title[data-v-0dc1bc44] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  height: 100%;\n  text-align: left;\n  background: linear-gradient(transparent, 90%, #000000);\n}\n.text-photo-title .photo-info[data-v-0dc1bc44] {\n  margin: auto;\n  position: absolute;\n  bottom: 0;\n  padding-bottom: 14px;\n  padding-left: 14px;\n  padding-right: 14px;\n}\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n  font-size: 38px;\n  line-height: 100%;\n}\n@media screen and (max-width: 1450px) {\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n    font-size: 35px;\n}\n}\n@media screen and (max-width: 1350px) {\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n    font-size: 33px;\n}\n}\n@media screen and (max-width: 1250px) {\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n    font-size: 30px;\n}\n}\n@media screen and (max-width: 1150px) {\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n    font-size: 30px;\n}\n}\n@media screen and (max-width: 1100px) {\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n    font-size: 25px;\n}\n}\n.text-photo-title .photo-info2[data-v-0dc1bc44] {\n  font-size: 20px;\n  text-transform: lowercase;\n}\n.img-container:hover .text-photo-title[data-v-0dc1bc44] {\n  visibility: visible;\n  opacity: 1;\n}\n.img-blackwhite[data-v-0dc1bc44] {\n  filter: grayscale(100%);\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".coaches[data-v-0dc1bc44] {\n  background: url(/assets/img/fondo-coaches-web-puma.jpg);\n  background-size: cover;\n  overflow-x: hidden;\n  min-height: 100vh;\n}\n.venues_photos[data-v-0dc1bc44] {\n  margin: 0 160px;\n  padding: 20px;\n  padding-top: 244px;\n}\n@media screen and (max-width: 768px) {\n.venues_photos[data-v-0dc1bc44] {\n    margin: 0 40px;\n}\n}\n.title-venues[data-v-0dc1bc44] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-0dc1bc44] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-image[data-v-0dc1bc44] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-0dc1bc44] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-0dc1bc44] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.title-venues2[data-v-0dc1bc44] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-0dc1bc44] {\n    font-size: 115px;\n}\n}\n.footer-styles[data-v-0dc1bc44] {\n  padding: 96px 24px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-0dc1bc44] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-0dc1bc44] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-0dc1bc44] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-0dc1bc44] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.text-photo-title[data-v-0dc1bc44] {\n  position: absolute;\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  width: 100%;\n  left: 0;\n  top: 0;\n  text-transform: uppercase;\n  font-size: 18px;\n  height: 100%;\n  text-align: left;\n  background: linear-gradient(transparent, 90%, #000000);\n}\n.text-photo-title .photo-info[data-v-0dc1bc44] {\n  margin: auto;\n  position: absolute;\n  bottom: 0;\n  padding-bottom: 14px;\n  padding-left: 14px;\n  padding-right: 14px;\n}\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n  font-size: 38px;\n  line-height: 100%;\n}\n@media screen and (max-width: 1450px) {\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n    font-size: 35px;\n}\n}\n@media screen and (max-width: 1350px) {\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n    font-size: 33px;\n}\n}\n@media screen and (max-width: 1250px) {\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n    font-size: 30px;\n}\n}\n@media screen and (max-width: 1150px) {\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n    font-size: 30px;\n}\n}\n@media screen and (max-width: 1100px) {\n.text-photo-title .photo-info1[data-v-0dc1bc44] {\n    font-size: 25px;\n}\n}\n.text-photo-title .photo-info2[data-v-0dc1bc44] {\n  font-size: 20px;\n  text-transform: lowercase;\n}\n.img-container:hover .text-photo-title[data-v-0dc1bc44] {\n  visibility: visible;\n  opacity: 1;\n}\n.img-blackwhite[data-v-0dc1bc44] {\n  filter: grayscale(100%);\n}\n.text-title[data-v-0dc1bc44] {\n  text-align: right;\n  text-transform: uppercase;\n  color: white;\n  line-height: 61px;\n  margin-right: -10px;\n}\n.text-title1[data-v-0dc1bc44] {\n  font-size: 66px;\n}\n.text-title2[data-v-0dc1bc44] {\n  font-size: 50px;\n}\n.container-title[data-v-0dc1bc44] {\n  margin-bottom: 95px;\n}\n.line-middle[data-v-0dc1bc44] {\n  height: 100px;\n  width: 12px;\n  background-color: #b99571;\n  margin: auto;\n  margin-top: 1px;\n  border-radius: 7px;\n}\n.logo-style[data-v-0dc1bc44] {\n  padding-top: 7px;\n  margin-left: -15px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -536,6 +555,33 @@ var render = function () {
     { staticClass: "coaches" },
     [
       _c("div", { staticClass: "venues_photos" }, [
+        _c("div", { staticClass: "columns container-title" }, [
+          _c("div", { staticClass: "column" }),
+          _vm._v(" "),
+          _vm._m(0),
+          _vm._v(" "),
+          _vm._m(1),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }, [
+            _c(
+              "div",
+              { ref: "logoInicio", staticClass: "logo-style" },
+              [
+                _c("b-image", {
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/logo_train.png",
+                    ratio: "565by123",
+                  },
+                }),
+              ],
+              1
+            ),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "column" }),
+        ]),
+        _vm._v(" "),
         _c(
           "div",
           { staticClass: "columns is-multiline" },
@@ -559,7 +605,7 @@ var render = function () {
                             staticClass: "img-blackwhite",
                             attrs: {
                               responsive: "",
-                              src: "/assets/img/Carloss.png",
+                              src: item.image,
                               ratio: "1by1",
                             },
                           }),
@@ -610,7 +656,26 @@ var render = function () {
     1
   )
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column puma-bold text-title" }, [
+      _c("div", { staticClass: "text-title1" }, [_vm._v("Nuestros")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "text-title2" }, [_vm._v("Coaches")]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "column is-1" }, [
+      _c("div", { staticClass: "line-middle" }),
+    ])
+  },
+]
 render._withStripped = true
 
 

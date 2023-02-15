@@ -1,5 +1,25 @@
 <template>
   <div class="gallery">
+    <div class="columns container-title">
+        <div class="column"></div>
+        <div class="column puma-bold text-title">
+          <div class="text-title1">Galería</div>
+          <div class="text-title2">De fotos</div>
+        </div>
+        <div class="column is-1">
+          <div class="line-middle"></div>
+        </div>
+        <div class="column">
+          <div class="logo-style" ref="logoInicio">
+            <b-image
+              responsive
+              src="/assets/img/logo_train.png"
+              ratio="565by123"
+            ></b-image>
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
     <div class="gallery-container">
       <template v-if=" true ">
         <div class="app-container">
@@ -136,6 +156,7 @@ export default {
     background: url(/assets/img/fondo-galeria-web-puma.jpg);
     background-size: cover;
     min-height: 100vh;
+    padding-top: 244px;
   }
   .gallery-container{
     margin: 0 40px;
@@ -190,5 +211,33 @@ export default {
         text-align:center;
       }
     }
+  }
+  .text-title{
+    text-align: right;
+    text-transform: uppercase;
+    color: white;
+    line-height: 61px;
+    margin-right: -10px;
+  }
+  .text-title1{
+    font-size:66px;
+  }
+  .text-title2{
+    font-size:50px;
+  }
+  .container-title{
+    margin-bottom: 95px;
+  }
+  .line-middle{
+    height: 100px;
+    width: 12px;
+    background-color: #b99571;
+    margin: auto;
+    margin-top: 1px;
+    border-radius: 7px;
+  }
+  .logo-style{
+    padding-top: 7px;
+    margin-left: -15px;
   }
 </style>

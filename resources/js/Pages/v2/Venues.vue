@@ -1,7 +1,26 @@
 <template>
   <div class="venues">
-
     <div class="venues_photos">
+      <div class="columns container-title">
+        <div class="column"></div>
+        <div class="column puma-bold text-title">
+          <div class="text-title1">Vive la</div>
+          <div class="text-title2">Experiencia</div>
+        </div>
+        <div class="column is-1">
+          <div class="line-middle"></div>
+        </div>
+        <div class="column">
+          <div class="logo-style" ref="logoInicio">
+            <b-image
+              responsive
+              src="/assets/img/logo_train.png"
+              ratio="565by123"
+            ></b-image>
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
       <div class="columns is-multiline">
         <template v-if="venues.length">
           <div v-for="(venue, key) in venues" :key="key" class="column is-4" :class="`venue${key}`"  style="position:relative;">
@@ -144,7 +163,7 @@ export default {
   }
   .venues_photos{
     margin: 212px 20px 0;
-    padding: 20px;
+    padding: 32px;
   }
 
   .title-venues{
@@ -299,5 +318,33 @@ export default {
     to {
       opacity: 1;
     }
+  }
+  .text-title{
+    text-align: right;
+    text-transform: uppercase;
+    color: white;
+    line-height: 61px;
+    margin-right: -10px;
+  }
+  .text-title1{
+    font-size:66px;
+  }
+  .text-title2{
+    font-size:50px;
+  }
+  .container-title{
+    margin-bottom: 95px;
+  }
+  .line-middle{
+    height: 100px;
+    width: 12px;
+    background-color: #b99571;
+    margin: auto;
+    margin-top: 1px;
+    border-radius: 7px;
+  }
+  .logo-style{
+    padding-top: 7px;
+    margin-left: -15px;
   }
 </style>

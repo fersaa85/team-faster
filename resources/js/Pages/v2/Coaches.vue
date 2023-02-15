@@ -2,9 +2,28 @@
   <div class="coaches">
 
     <div class="venues_photos">
+      <div class="columns container-title">
+        <div class="column"></div>
+        <div class="column puma-bold text-title">
+          <div class="text-title1">Nuestros</div>
+          <div class="text-title2">Coaches</div>
+        </div>
+        <div class="column is-1">
+          <div class="line-middle"></div>
+        </div>
+        <div class="column">
+          <div class="logo-style" ref="logoInicio">
+            <b-image
+              responsive
+              src="/assets/img/logo_train.png"
+              ratio="565by123"
+            ></b-image>
+          </div>
+        </div>
+        <div class="column"></div>
+      </div>
       <div class="columns is-multiline">
         <template v-if="coaches.length">
-
           <div v-for="(item, index) in coaches"
                class="column is-clickable img-container coach-1 is-6-tablet is-4-desktop is-4-widescreen is-4-fullhd"
                :class="`coach${index}`"
@@ -207,5 +226,33 @@ export default {
   .img-blackwhite{
     -webkit-filter: grayscale(60%);
     filter: grayscale(100%);
+  }
+  .text-title{
+    text-align: right;
+    text-transform: uppercase;
+    color: white;
+    line-height: 61px;
+    margin-right: -10px;
+  }
+  .text-title1{
+    font-size:66px;
+  }
+  .text-title2{
+    font-size:50px;
+  }
+  .container-title{
+    margin-bottom: 95px;
+  }
+  .line-middle{
+    height: 100px;
+    width: 12px;
+    background-color: #b99571;
+    margin: auto;
+    margin-top: 1px;
+    border-radius: 7px;
+  }
+  .logo-style{
+    padding-top: 7px;
+    margin-left: -15px;
   }
 </style>

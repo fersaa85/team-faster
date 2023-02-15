@@ -170,7 +170,6 @@ export default {
 <style lang="scss" scoped>
   .registro{
     min-height: 100vh;
-    padding-top: 212px;
   }
   .img-blackwhite{
     -webkit-filter: grayscale(60%);

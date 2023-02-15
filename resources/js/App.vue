@@ -133,6 +133,7 @@ export default {
           color: white;
           background-color: transparent !important;
           .line-below{
+            border-radius: 4px;
             background-color: #b99571;
             width: calc(100% - 175px);
             height: 5px;
@@ -156,6 +157,7 @@ export default {
           color: white;
           background-color: transparent !important;
           .line-below{
+            border-radius: 4px;
             background-color: #b99571;
             width: calc(100% - 175px);
             height: 5px;
@@ -179,6 +181,7 @@ export default {
           color: white;
           background-color: transparent !important;
           .line-below{
+            border-radius: 4px;
             background-color: #b99571;
             width: calc(100% - 175px);
             height: 5px;

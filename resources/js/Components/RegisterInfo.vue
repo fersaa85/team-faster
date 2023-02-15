@@ -15,8 +15,13 @@
               <SuccessModal :info="{name, fecha, lugar, tipo, coach, nameUser, mail}" @close="props.close"/>
           </template>
     </b-modal>
-    <div class="gotica-italic info-margin">
-     <br /><br /><br />
+    <div class="puma-bold info-margin title-style">
+      <div class="title1">
+        reserva sin costo
+      </div>
+      <div class="title2">
+        {{ name }}
+      </div>
     </div>
     <div class="puma-bold" style="padding-top: 36px;">
       <div class="info-margin">
@@ -379,5 +384,19 @@ import SuccessModal from '@/Components/Success.vue';
   }
   a{
     color: white;
+  }
+  .title-style{
+    padding-top: 239px;
+    text-transform: uppercase;
+    line-height: 65px;
+    padding-bottom: 50px;
+  }
+  .title1{
+    color: white;
+    font-size: 60px;
+  }
+  .title2{
+    color: #b99571;
+    font-size: 60px;
   }
 </style>
