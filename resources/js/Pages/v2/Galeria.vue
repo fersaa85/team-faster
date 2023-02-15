@@ -156,7 +156,7 @@ export default {
     background: url(/assets/img/fondo-galeria-web-puma.jpg);
     background-size: cover;
     min-height: 100vh;
-    padding-top: 244px;
+    padding-top: 144px;
   }
   .gallery-container{
     margin: 0 40px;
@@ -218,12 +218,23 @@ export default {
     color: white;
     line-height: 61px;
     margin-right: -10px;
+    @media screen and (max-width: 768px) {
+      text-align:center;
+      margin: auto;
+      line-height: 61px;
+    }
   }
   .text-title1{
     font-size:66px;
+    @media screen and (max-width: 768px) {
+      font-size:45px;
+    }
   }
   .text-title2{
     font-size:50px;
+    @media screen and (max-width: 768px) {
+      font-size:40px;
+    }
   }
   .container-title{
     margin-bottom: 95px;
@@ -235,9 +246,19 @@ export default {
     margin: auto;
     margin-top: 1px;
     border-radius: 7px;
+    @media screen and (max-width: 768px) {
+      width: 100px;
+      height: 12px;
+    }
   }
   .logo-style{
     padding-top: 7px;
     margin-left: -15px;
+    @media screen and (max-width: 768px) {
+      width:60%;
+      margin-left: 0;
+      margin: auto;
+    }
   }
+
 </style>

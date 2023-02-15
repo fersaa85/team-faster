@@ -93,7 +93,7 @@ export default {
         background-size: cover;
         overflow-x: hidden;
         min-height: 100vh;
-        padding-top: 244px;
+        padding-top: 144px;
     }
     .title-venues{
         font-size: 100px;
@@ -158,15 +158,24 @@ export default {
         visibility: visible;
         opacity: 1;
     }
-    .text-title{
+  .text-title{
     text-align: right;
     text-transform: uppercase;
     color: white;
-    line-height: 121px;
+    line-height: 61px;
     margin-right: -10px;
+    @media screen and (max-width: 768px) {
+      text-align:center;
+      margin: auto;
+      line-height: 61px;
+
+    }
   }
   .text-title1{
     font-size:90px;
+    @media screen and (max-width: 768px) {
+      font-size:60px;
+    }
   }
   .container-title{
     margin-bottom: 95px;
@@ -178,13 +187,27 @@ export default {
     margin: auto;
     margin-top: 1px;
     border-radius: 7px;
+    @media screen and (max-width: 768px) {
+      width: 100px;
+      height: 12px;
+    }
   }
   .logo-style{
     padding-top: 7px;
     margin-left: -15px;
+    @media screen and (max-width: 768px) {
+      width:60%;
+      margin-left: 0;
+      margin: auto;
+    }
   }
   .soon-style{
     width: 30%;
     margin: -23px auto 0;
+    @media screen and (max-width: 768px) {
+      width:80%;
+      margin-left: 0;
+      margin: -40px auto 0;
+    }
   }
 </style>
