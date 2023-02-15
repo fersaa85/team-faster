@@ -112,6 +112,9 @@
       </div>
 
     </template>
+    <div class="netw-style ">
+      <SocialNetwork></SocialNetwork>
+    </div>
     <!-- <Footer class="footer-style"></Footer> -->
 
   </div>
@@ -120,13 +123,15 @@
 import Footer from '@/Components/Footer.vue';
 import RegisterInfo from '@/Components/RegisterInfo.vue';
 import ErrorsModal from '@/Components/ErrorsModal.vue';
+import SocialNetwork from '@/Components/SocialNetwork.vue';
 
 export default {
     name: 'registro',
     components: {
       RegisterInfo,
       Footer,
-      ErrorsModal
+      ErrorsModal,
+      SocialNetwork
     },
     data(){
       return {
@@ -289,5 +294,17 @@ export default {
   .soon-style{
     width: 30%;
     margin: -23px auto 0;
+  }
+  .netw-style{
+    width: 65px;
+    position: absolute;
+    top: 337px;
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      top: 1778px;
+    }
+    .socialnetwork{
+      width: 60px;
+    }
   }
 </style>

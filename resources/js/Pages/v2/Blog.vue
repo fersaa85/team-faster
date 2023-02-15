@@ -38,16 +38,19 @@
         </template>
 
         <Footer class="footer-style"></Footer>
-
+        <div class="netw-style ">
+            <SocialNetwork></SocialNetwork>
+        </div>
     </div>
 </template>
 
 <script>
 import Footer from '@/Components/Footer.vue';
+import SocialNetwork from '@/Components/SocialNetwork.vue';
 
 export default {
     components: {
-        Footer
+        Footer, SocialNetwork
     },
     data() {
         return {
@@ -93,7 +96,10 @@ export default {
         background-size: cover;
         overflow-x: hidden;
         min-height: 100vh;
-        padding-top: 144px;
+        padding-top: 244px;
+        @media screen and (max-width: 768px) {
+            padding-top: 144px;
+        }
     }
     .title-venues{
         font-size: 100px;
@@ -162,8 +168,10 @@ export default {
     text-align: right;
     text-transform: uppercase;
     color: white;
-    line-height: 61px;
+    font-size:90px;
     margin-right: -10px;
+    line-height: 114px;
+
     @media screen and (max-width: 768px) {
       text-align:center;
       margin: auto;
@@ -208,6 +216,19 @@ export default {
       width:80%;
       margin-left: 0;
       margin: -40px auto 0;
+    }
+  }
+  .netw-style{
+    width: 65px;
+    position: absolute;
+    top: 400px;
+    @media screen and (max-width: 768px) {
+    display: none;
+      width: 60px;
+      top: 530px;
+    }
+    .socialnetwork{
+      width: 60px;
     }
   }
 </style>

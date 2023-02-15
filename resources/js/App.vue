@@ -122,8 +122,17 @@ export default {
     padding-left: 24px;
     padding-right: 24px;
     color: white;
+    @media screen and (max-width: 1408px) {
+      margin-top: -20px;
+      margin-right: 0 !important;
+      padding-left: 18px;
+      padding-right: 18px;
+    }
     @media screen and (min-width: 1024px) and (max-width: 1133px) {
       padding-top: 24px;
+      margin-right: 0 !important;
+      padding-left: 12px;
+      padding-right: 12px;
     }
     &:hover{
       color: white;
@@ -139,6 +148,9 @@ export default {
             height: 5px;
             position: absolute;
             bottom: 0;
+            @media screen and (max-width: 1408px) {
+              width: calc(100% - 63px);
+            }
             &.line-2{
               width: calc(100% - 63px);
             }
@@ -163,6 +175,9 @@ export default {
             height: 5px;
             position: absolute;
             bottom: 0;
+            @media screen and (max-width: 1408px) {
+              width: calc(100% - 63px);
+            }
             &.line-2{
               width: calc(100% - 63px);
             }
@@ -187,6 +202,9 @@ export default {
             height: 5px;
             position: absolute;
             bottom: 0;
+            @media screen and (max-width: 1408px) {
+              width: calc(100% - 63px);
+            }
             &.line-2{
               width: calc(100% - 63px);
             }
@@ -209,19 +227,21 @@ export default {
       margin-left: 53px;
     }
     @media screen and (min-width: 1216px) and (max-width: 1408px) {
-      width:11vw;
+      width:5vw;
       margin-left: 20px;
+      margin-right: 20px;
     }
     @media screen and (min-width: 1134px) and (max-width: 1215px) {
-      width:11vw;
+      width:5vw;
       margin-left: 20px;
+      margin-right: 20px;
     }
     @media screen and (min-width: 1024px) and (max-width: 1133px) {
-      width:10vw;
+      width:5vw;
       margin-left: 10px;
     }
     @media screen and (max-width: 1023px) {
-      width:8vw;
+      width:5vw;
       margin-left: 0;
     }
     @media screen and (max-width: 768px) {
@@ -234,7 +254,7 @@ export default {
       padding-left: 145px;
     }
     @media screen and (min-width: 1216px) and (max-width: 1408px) {
-      padding-left: 100px;
+      padding-left: 50px;
     }
     @media screen and (min-width: 1024px) and (max-width: 1215px) {
       padding-left: 50px;

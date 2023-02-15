@@ -64,16 +64,19 @@
     </div>
 
     <Footer></Footer>
-
+    <div class="netw-style ">
+      <SocialNetwork></SocialNetwork>
+    </div>
   </div>
 </template>
 <script>
 import Footer from '@/Components/Footer.vue';
+import SocialNetwork from '@/Components/SocialNetwork.vue';
 
 export default {
     name: 'venues',
     components: {
-        Footer
+        Footer, SocialNetwork
     },
     data() {
         return {
@@ -369,6 +372,18 @@ export default {
       width:90%;
       margin-left: 0;
       margin: auto;
+    }
+  }
+  .netw-style{
+    width: 65px;
+    position: absolute;
+    top: 400px;
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      top: 500px;
+    }
+    .socialnetwork{
+      width: 60px;
     }
   }
 </style>

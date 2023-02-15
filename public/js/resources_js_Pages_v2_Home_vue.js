@@ -529,7 +529,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".socialnetwork[data-v-59834574] {\n  width: 74px;\n  height: 348px;\n  background: url(/assets/img/background-rs.png);\n  background-size: cover;\n}\n.socialnetwork-content[data-v-59834574] {\n  position: relative;\n  top: 50px;\n}\n.socialnetwork-content > a[data-v-59834574] {\n  margin: 2px 0px;\n  display: block;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".socialnetwork[data-v-59834574] {\n  width: 74px;\n  height: 348px;\n  background-color: #c79777;\n  border-bottom-right-radius: 10px;\n  border-top-right-radius: 10px;\n}\n.socialnetwork-content[data-v-59834574] {\n  position: relative;\n  top: 58px;\n}\n.socialnetwork-content > a[data-v-59834574] {\n  margin: 2px 0px;\n  display: block;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -54,17 +54,21 @@
     </div>
 
     <Footer></Footer>
+    <div class="netw-style ">
+      <SocialNetwork></SocialNetwork>
+    </div>
   </div>
 </template>
 
 
 <script>
 import Footer from '@/Components/Footer.vue';
+import SocialNetwork from '@/Components/SocialNetwork.vue';
 
 export default {
   name: 'coaches',
   components: {
-        Footer
+    Footer, SocialNetwork
   },
   data() {
     return {
@@ -119,9 +123,10 @@ export default {
   .venues_photos{
     margin: 0 160px; 
     padding: 20px;
-    padding-top: 144px;
+    padding-top: 244px;
     @media screen and (max-width: 768px) {
       margin: 0 40px;
+      padding-top: 144px;
     }
   }
 
@@ -274,6 +279,18 @@ export default {
       width:90%;
       margin-left: 0;
       margin: auto;
+    }
+  }
+  .netw-style{
+    width: 65px;
+    position: absolute;
+    top: 400px;
+    @media screen and (max-width: 768px) {
+      width: 60px;
+      top: 500px;
+    }
+    .socialnetwork{
+      width: 60px;
     }
   }
 </style>

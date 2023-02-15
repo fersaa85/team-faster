@@ -17,7 +17,10 @@
     </b-modal>
     <div class="puma-bold info-margin title-style">
       <div class="title1">
-        reserva sin costo
+        reserva sin costo,
+      </div>
+      <div class="title2">
+        un lugar en train puma
       </div>
       <div class="title2">
         {{ name }}
@@ -390,13 +393,23 @@ import SuccessModal from '@/Components/Success.vue';
     text-transform: uppercase;
     line-height: 65px;
     padding-bottom: 50px;
+    @media screen and (max-width: 768px) {
+      padding-top: 166px;
+    }
   }
   .title1{
     color: white;
     font-size: 60px;
+    @media screen and (max-width: 768px) {
+      font-size: 45px;
+    }
   }
   .title2{
     color: #b99571;
     font-size: 60px;
+    @media screen and (max-width: 768px) {
+      font-size: 45px;
+    }
   }
+  
 </style>

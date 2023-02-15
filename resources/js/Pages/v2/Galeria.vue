@@ -38,9 +38,20 @@
       </template>
      
     </div>
+    <template>
+            <div class="soon-style">
+                <b-image
+                responsive
+                src="/assets/img/soon.png"
+                ratio="1051by145"
+                ></b-image>
+            </div>
+        </template>
 
     <Footer class="footer-style"></Footer>
-
+    <div class="netw-style ">
+      <SocialNetwork></SocialNetwork>
+    </div>
   </div>
 </template>
 
@@ -56,11 +67,12 @@ import lgZoom from 'lightgallery/plugins/zoom/lg-zoom.min.js'
 import 'justifiedGallery/dist/css/justifiedGallery.css'
 import 'justifiedGallery/dist/js/jquery.justifiedGallery.js'
 import Footer from '@/Components/Footer.vue';
+import SocialNetwork from '@/Components/SocialNetwork.vue';
 
 export default {
   name: 'galeria',
   components: {
-      Footer
+      Footer, SocialNetwork
   },
   data() {
       return {};
@@ -156,7 +168,11 @@ export default {
     background: url(/assets/img/fondo-galeria-web-puma.jpg);
     background-size: cover;
     min-height: 100vh;
-    padding-top: 144px;
+    padding-top: 244px;
+    overflow: hidden;
+    @media screen and (max-width: 768px) {
+            padding-top: 144px;
+    }
   }
   .gallery-container{
     margin: 0 40px;
@@ -260,5 +276,26 @@ export default {
       margin: auto;
     }
   }
-
+  .soon-style{
+    width: 30%;
+    margin: -23px auto 0;
+    @media screen and (max-width: 768px) {
+      width:80%;
+      margin-left: 0;
+      margin: -40px auto 0;
+    }
+  }
+  .netw-style{
+    width: 65px;
+    position: absolute;
+    top: 400px;
+    @media screen and (max-width: 768px) {
+    display: none;
+      width: 60px;
+      top: 530px;
+    }
+    .socialnetwork{
+      width: 60px;
+    }
+  }
 </style>

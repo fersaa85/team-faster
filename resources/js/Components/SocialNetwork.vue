@@ -28,13 +28,15 @@
     .socialnetwork{
         width: 74px;
         height: 348px;
-        background: url(/assets/img/background-rs.png);
-        background-size: cover;
+        // background: url(/assets/img/background-rs.png);
+        background-color: #c79777;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
     }
 
     .socialnetwork-content{
         position: relative;
-        top: 50px;
+        top: 58px;
     }
     .socialnetwork-content > a {
         margin: 2px 0px;
