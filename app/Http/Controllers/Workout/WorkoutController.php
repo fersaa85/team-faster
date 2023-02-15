@@ -14,6 +14,6 @@ class WorkoutController extends Controller
     {
         return new WorkoutResource( $slug ?
             Workout::join('venues', 'workouts.venue_id', '=',  'venues.id')->where('venues.slug',$slug )->select('workouts.*')->first() :
-            Workout::join('venues', 'workouts.venue_id', '=',  'venues.id')->where('active', 1)->first() );
+            Workout::join('venues', 'workouts.venue_id', '=',  'venues.id')->where('workouts.active', 1)->first() );
     }
 }

@@ -1,5 +1,6 @@
 <template>
   <div class="registro">
+    <!--
     <b-modal
             v-model="isErrors"
             has-modal-card
@@ -15,70 +16,102 @@
         <ErrorsModal @close="props.close"/>
       </template>
     </b-modal>
-
-    <div class="columns clip-section">
-      <div class="column has-text-right column-info is-hidden-tablet">
-        <div>
-          <RegisterInfo
-            :venue-id="venueId"
-            :name="info.name"
-            :fecha="info.fecha"
-            :lugar="info.lugar"
-            :tipo="info.tipo"
-            :coach="info.coach"
-            :photo="info.photo"
-            :limit="info.limit"
-            :map="info.map"
-            :available="info.available"
-          />
-        </div>
-      </div>
-      <div class="column column-imgs">
-        <div v-show="info && info.photo">
-          <div class="img-blackwhite" ref="img1">
-            <b-image
-              responsive
-              :src="info.photo"
-              ratio="14by10"
-              @load="load1"
-            ></b-image>
+    -->
+    <template v-if="isErrors">
+      <div class="registro-empty">
+        <div class="columns container-title">
+          <div class="column"></div>
+          <div class="column puma-bold text-title">
+            <div class="text-title1">Registro</div>
           </div>
-          <div class="clip" ref="img2">
-            <a :href="info.google_maps" target="_blank">
+          <div class="column is-1">
+            <div class="line-middle"></div>
+          </div>
+          <div class="column">
+            <div class="logo-style" ref="logoInicio">
               <b-image
                       responsive
-                      :src="info.map"
-                      ratio="15by13"
-                      @load="load2"
+                      src="/assets/img/logo_train.png"
+                      ratio="565by123"
               ></b-image>
-            </a>
+            </div>
+          </div>
+          <div class="column"></div>
+        </div>
+        <div class="columns">
+          <div class="column is-12">
+            <h1 style="font-size: 35px;color: #ffffff;">Espera muy pronto nuestro proximo evento</h1>
           </div>
         </div>
-        <div v-show="!info || !info.photo" class="emptyPhoto">
-        </div>
-        <div class="tm-puma has-text-right">
-          @2022 puma. Todos los derechos reservados
-        </div>
       </div>
-      <div class="column has-text-right column-info is-hidden-mobile">
-        <div class="info">
-          <RegisterInfo
-            :venue-id="venueId"
-            :name="info.name"
-            :fecha="info.fecha"
-            :lugar="info.lugar"
-            :tipo="info.tipo"
-            :coach="info.coach"
-            :photo="info.photo"
-            :map="info.map"
-            :limit="info.limit"
-            :couches="info.couches"
-            :available="info.available"
-          />
-        </div>
-      </div>
-    </div>
 
+
+    </template>
+    <template v-else>
+      <div class="columns clip-section">
+        <div class="column has-text-right column-info is-hidden-tablet">
+          <div>
+            <RegisterInfo
+              :venue-id="venueId"
+              :name="info.name"
+              :fecha="info.fecha"
+              :lugar="info.lugar"
+              :tipo="info.tipo"
+              :coach="info.coach"
+              :photo="info.photo"
+              :limit="info.limit"
+              :map="info.map"
+              :available="info.available"
+            />
+          </div>
+        </div>
+        <div class="column column-imgs">
+          <div v-show="info && info.photo">
+            <div class="img-blackwhite" ref="img1">
+              <b-image
+                responsive
+                :src="info.photo"
+                ratio="14by10"
+                @load="load1"
+              ></b-image>
+            </div>
+            <div class="clip" ref="img2">
+              <a :href="info.google_maps" target="_blank">
+                <b-image
+                        responsive
+                        :src="info.map"
+                        ratio="15by13"
+                        @load="load2"
+                ></b-image>
+              </a>
+            </div>
+          </div>
+          <div v-show="!info || !info.photo" class="emptyPhoto">
+          </div>
+          <div class="tm-puma has-text-right">
+            @2022 puma. Todos los derechos reservados
+          </div>
+        </div>
+        <div class="column has-text-right column-info is-hidden-mobile">
+          <div class="info">
+            <RegisterInfo
+              :venue-id="venueId"
+              :name="info.name"
+              :fecha="info.fecha"
+              :lugar="info.lugar"
+              :tipo="info.tipo"
+              :coach="info.coach"
+              :photo="info.photo"
+              :map="info.map"
+              :limit="info.limit"
+              :couches="info.couches"
+              :available="info.available"
+            />
+          </div>
+        </div>
+      </div>
+
+    </template>
     <!-- <Footer class="footer-style"></Footer> -->
 
   </div>
@@ -171,6 +204,13 @@ export default {
   .registro{
     min-height: 100vh;
   }
+  .registro-empty{
+    background: url(/assets/img/fondo-blog-puma.jpg);
+    background-size: cover;
+    overflow-x: hidden;
+    min-height: 100vh;
+    padding-top: 244px;
+  }
   .img-blackwhite{
     -webkit-filter: grayscale(60%);
     filter: grayscale(60%);
@@ -218,5 +258,36 @@ export default {
     width: 100%;
     background-color: transparent;
     bottom: 165px;
+  }
+
+
+  .text-title{
+    text-align: right;
+    text-transform: uppercase;
+    color: white;
+    line-height: 121px;
+    margin-right: -10px;
+  }
+  .text-title1{
+    font-size:90px;
+  }
+  .container-title{
+    margin-bottom: 95px;
+  }
+  .line-middle{
+    height: 100px;
+    width: 12px;
+    background-color: #b99571;
+    margin: auto;
+    margin-top: 1px;
+    border-radius: 7px;
+  }
+  .logo-style{
+    padding-top: 7px;
+    margin-left: -15px;
+  }
+  .soon-style{
+    width: 30%;
+    margin: -23px auto 0;
   }
 </style>
