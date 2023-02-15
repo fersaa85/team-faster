@@ -1,24 +1,25 @@
 <template>
   <div class="gallery">
-    <div class="columns" style="padding-top: 40px; padding-bottom: 40px; margin: 0;">
-      <div class="column gotica-italic title-venues">
-        <div class="title-venues2">
-          Galería
+    <div class="columns container-title">
+        <div class="column"></div>
+        <div class="column puma-bold text-title">
+          <div class="text-title1">Galería</div>
+          <div class="text-title2">De fotos</div>
         </div>
-        <div>
-          De fotos
+        <div class="column is-1">
+          <div class="line-middle"></div>
         </div>
+        <div class="column">
+          <div class="logo-style" ref="logoInicio">
+            <b-image
+              responsive
+              src="/assets/img/logo_train.png"
+              ratio="565by123"
+            ></b-image>
+          </div>
+        </div>
+        <div class="column"></div>
       </div>
-      <div class="column">
-        <div class="title-image">
-          <b-image
-            responsive
-            src="/assets/img/logoTeamFaster.png"
-            ratio="1by1"
-          ></b-image>
-        </div>
-      </div>
-    </div>
     <div class="gallery-container">
       <template v-if="this.$route.params.venueId == 1">
         <div class="app-container">
