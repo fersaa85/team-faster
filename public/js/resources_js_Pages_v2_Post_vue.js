@@ -83,7 +83,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.0.1");
+    console.log("v=2.0.5");
     axios.get("/api/sponsors").then(function (_ref) {
       var data = _ref.data.data;
       _this.sponsors = [].concat(data);
@@ -144,7 +144,7 @@ __webpack_require__.r(__webpack_exports__);
     return {};
   },
   mounted: function mounted() {
-    console.log("v=2.0.4");
+    console.log("v=2.0.5");
     axios.get('/api/blog/' + this.$route.params.slug).then(function (_ref) {
       var data = _ref.data;
       console.log(data);

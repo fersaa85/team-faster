@@ -7,7 +7,7 @@
             <div class="logo-style" ref="logoInicio">
               <b-image
                 responsive
-                src="/assets/img/logo_train.png"
+                src="/assets/img/logo_train.png?8017"
                 ratio="565by123"
               ></b-image>
             </div>
@@ -145,7 +145,7 @@ export default {
       };
     },
     mounted() {
-      console.log( "v=2.0.4" );
+      console.log( "v=2.0.5" );
       window.scrollTo(0, 0);
       this.setLogoInicio();
       // this.setFondoInicio();
@@ -362,13 +362,13 @@ export default {
   }
   .uno{
     background-color: black;
-    background-image: url("/assets/img/puma-web1.jpg");
+    background-image: url("/assets/img/puma-web1.jpg?8017");
     background-position-x: center;
     background-size: cover;
   }
   .dos{
     background-color: black;
-    background-image: url("/assets/img/puma-web2.jpg");
+    background-image: url("/assets/img/puma-web2.jpg?8017");
     // position: sticky;
     background-position-x: center;
     background-size: cover;
@@ -379,7 +379,7 @@ export default {
   }
   .tres{
     background-color: black;
-    background-image: url("/assets/img/puma-web3.jpg");
+    background-image: url("/assets/img/puma-web3.jpg?8017");
     background-size: cover;
     position: sticky;
     top: 0;
