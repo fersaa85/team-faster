@@ -102,28 +102,29 @@
         <div class="column models1">
           <b-image
             responsive
-            src="/assets/img/models.png"
-            ratio="512by339"
+            src="/assets/img/coach-imagen1-.png"
+            ratio="397by263"
             class="model-2"
           ></b-image>
         </div>
         <div class="column models2">
           <b-image
             responsive
-            src="/assets/img/models2.png"
-            ratio="512by339"
+            src="/assets/img/coach-imagen2-.png"
+            ratio="397by263"
             class="model-2"
           ></b-image>
         </div>
         <div class="column models3">
           <b-image
             responsive
-            src="/assets/img/models3.png"
-            ratio="512by339"
+            src="/assets/img/coach-imagen3-.png"
+            ratio="397by263"
             class="model-2"
           ></b-image>
         </div>
       </div>
+      <Footer class="footer-style"></Footer>
     </section>
   </div>
 </template>

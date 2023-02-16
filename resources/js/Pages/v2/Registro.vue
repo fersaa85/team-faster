@@ -88,9 +88,9 @@
           </div>
           <div v-show="!info || !info.photo" class="emptyPhoto">
           </div>
-          <div class="tm-puma has-text-right">
+          <!-- <div class="tm-puma has-text-right">
             @2022 puma. Todos los derechos reservados
-          </div>
+          </div> -->
         </div>
         <div class="column has-text-right column-info is-hidden-mobile">
           <div class="info">
@@ -115,7 +115,7 @@
     <div class="netw-style ">
       <SocialNetwork></SocialNetwork>
     </div>
-    <!-- <Footer class="footer-style"></Footer> -->
+    <Footer class="footer-style"></Footer>
 
   </div>
 </template>
@@ -258,13 +258,16 @@ export default {
   .emptyPhoto{
     height: 50vw;
   }
-  .footer-style{
-    position: relative;
-    width: 100%;
-    background-color: transparent;
-    bottom: 165px;
-  }
-
+  // .footer-style{
+  //   position: relative;
+  //   width: 100%;
+  //   background-color: transparent;
+  //   bottom: 0;
+  //   margin-top: -388px;
+  //   @media screen and (max-width: 768px) {
+  //     margin-top: -433px;
+  //   }
+  // }
 
   .text-title{
     text-align: right;

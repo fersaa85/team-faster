@@ -227,6 +227,7 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
     .field-style{
       padding-top: 12px;
       position: relative;

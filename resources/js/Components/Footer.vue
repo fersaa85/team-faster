@@ -1,6 +1,6 @@
 <template>
     <div class="footer-styles">
-        <!-- <div class="tm-puma columns sponsors" style="text-transform: uppercase;">
+        <div class="tm-puma columns sponsors" style="text-transform: uppercase;">
             <div class="column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd">
             </div>
             <div class="column">
@@ -8,9 +8,9 @@
             </div>
             <div class="column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd">
             </div>
-        </div> -->
+        </div>
         <!-- <p class="text-center">Nuestros patrocinadores</p> -->
-        <!-- <div class="columns is-variable is-8 tm-puma" style="margin-bottom: 60px;">
+        <div class="columns is-variable is-8 tm-puma" style="margin-bottom: 60px;">
             <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
             </div>
             <template v-if="sponsors.length">
@@ -43,7 +43,7 @@
             </div>
             <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
             </div>
-        </div> -->
+        </div>
         <div class="columns is-vcentered">
             <div class="column tm-puma footer-1">
                 @2022 puma. Todos los derechos reservados

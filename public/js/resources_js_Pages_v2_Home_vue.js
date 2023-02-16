@@ -271,6 +271,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -288,7 +289,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.0.3");
+    console.log("v=2.0.4");
     window.scrollTo(0, 0);
     this.setLogoInicio(); // this.setFondoInicio();
 
@@ -910,20 +911,156 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "footer-styles" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "columns is-variable is-8 tm-puma",
+        staticStyle: { "margin-bottom": "60px" },
+      },
+      [
+        _c("div", {
+          staticClass:
+            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+        }),
+        _vm._v(" "),
+        _vm.sponsors.length
+          ? _vm._l(_vm.sponsors, function (item, index) {
+              return _c(
+                "div",
+                {
+                  staticClass: "column is-5-mobile",
+                  staticStyle: { margin: "auto" },
+                },
+                [
+                  _c("p", { staticClass: "text-center" }, [
+                    _c("img", { attrs: { src: item.image, width: "100px" } }),
+                  ]),
+                ]
+              )
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _c("div", {
+          staticClass:
+            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+        }),
+      ],
+      2
+    ),
+    _vm._v(" "),
+    _vm._m(5),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "footer-styles" }, [
-      _c("div", { staticClass: "columns is-vcentered" }, [
-        _c("div", { staticClass: "column tm-puma footer-1" }, [
-          _vm._v(
-            "\n            @2022 puma. Todos los derechos reservados\n        "
-          ),
+    return _c(
+      "div",
+      {
+        staticClass: "tm-puma columns sponsors",
+        staticStyle: { "text-transform": "uppercase" },
+      },
+      [
+        _c("div", {
+          staticClass:
+            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "column" }, [
+          _vm._v("\n            Nuestros patrocinadores:\n        "),
         ]),
+        _vm._v(" "),
+        _c("div", {
+          staticClass:
+            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center" }, [
+          _c("img", { attrs: { src: "/assets/img/G_Logo_Blanco.png" } }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center" }, [
+          _c("img", {
+            attrs: {
+              src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
+            },
+          }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", {
+            attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
+          }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "columns is-vcentered" }, [
+      _c("div", { staticClass: "column tm-puma footer-1" }, [
+        _vm._v(
+          "\n            @2022 puma. Todos los derechos reservados\n        "
+        ),
       ]),
     ])
   },
@@ -1126,83 +1263,93 @@ var render = function () {
       ]),
     ]),
     _vm._v(" "),
-    _c("section", { staticClass: "panel tres" }, [
-      _c("div", { staticClass: "coaches" }, [
-        _c("div", [
-          _vm._v("\n        ¡Nuestros coaches están listos!\n      "),
+    _c(
+      "section",
+      { staticClass: "panel tres" },
+      [
+        _c("div", { staticClass: "coaches" }, [
+          _c("div", [
+            _vm._v("\n        ¡Nuestros coaches están listos!\n      "),
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "tu-style" },
+            [
+              _c("b-image", {
+                staticClass: "model-2",
+                attrs: {
+                  responsive: "",
+                  src: "/assets/img/ytu.png",
+                  ratio: "537by221",
+                },
+              }),
+            ],
+            1
+          ),
         ]),
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "tu-style" },
+          {
+            staticClass: "photos-models columns",
+            staticStyle: { margin: "0" },
+          },
           [
-            _c("b-image", {
-              staticClass: "model-2",
-              attrs: {
-                responsive: "",
-                src: "/assets/img/ytu.png",
-                ratio: "537by221",
-              },
-            }),
-          ],
-          1
+            _c(
+              "div",
+              { staticClass: "column models1" },
+              [
+                _c("b-image", {
+                  staticClass: "model-2",
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/coach-imagen1-.png",
+                    ratio: "397by263",
+                  },
+                }),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "column models2" },
+              [
+                _c("b-image", {
+                  staticClass: "model-2",
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/coach-imagen2-.png",
+                    ratio: "397by263",
+                  },
+                }),
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "column models3" },
+              [
+                _c("b-image", {
+                  staticClass: "model-2",
+                  attrs: {
+                    responsive: "",
+                    src: "/assets/img/coach-imagen3-.png",
+                    ratio: "397by263",
+                  },
+                }),
+              ],
+              1
+            ),
+          ]
         ),
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "photos-models columns", staticStyle: { margin: "0" } },
-        [
-          _c(
-            "div",
-            { staticClass: "column models1" },
-            [
-              _c("b-image", {
-                staticClass: "model-2",
-                attrs: {
-                  responsive: "",
-                  src: "/assets/img/models.png",
-                  ratio: "512by339",
-                },
-              }),
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "column models2" },
-            [
-              _c("b-image", {
-                staticClass: "model-2",
-                attrs: {
-                  responsive: "",
-                  src: "/assets/img/models2.png",
-                  ratio: "512by339",
-                },
-              }),
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "column models3" },
-            [
-              _c("b-image", {
-                staticClass: "model-2",
-                attrs: {
-                  responsive: "",
-                  src: "/assets/img/models3.png",
-                  ratio: "512by339",
-                },
-              }),
-            ],
-            1
-          ),
-        ]
-      ),
-    ]),
+        _vm._v(" "),
+        _c("Footer", { staticClass: "footer-style" }),
+      ],
+      1
+    ),
   ])
 }
 var staticRenderFns = [

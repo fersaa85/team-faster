@@ -239,7 +239,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.0.3");
+    console.log("v=2.0.4");
     axios.get('api/galeries').then(function (_ref) {
       var data = _ref.data;
       _this.galery = [].concat(data.data);
@@ -366,7 +366,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".footer-style[data-v-3634e7ed] {\n  position: absolute;\n  bottom: 0;\n}\n.gallery[data-v-3634e7ed] {\n  background: url(/assets/img/fondo-galeria-web-puma.jpg);\n  background-size: cover;\n  min-height: 100vh;\n  padding-top: 244px;\n  overflow: hidden;\n}\n@media screen and (max-width: 768px) {\n.gallery[data-v-3634e7ed] {\n    padding-top: 144px;\n}\n}\n.gallery-container[data-v-3634e7ed] {\n  margin: 0 40px;\n}\n.title-venues[data-v-3634e7ed] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-3634e7ed] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-venues2[data-v-3634e7ed] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-3634e7ed] {\n    font-size: 115px;\n}\n}\n.title-image[data-v-3634e7ed] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-3634e7ed] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-3634e7ed] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.footer-styles[data-v-3634e7ed] {\n  width: 100%;\n  margin: 0;\n  padding: 96px 20px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-3634e7ed] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3634e7ed] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3634e7ed] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3634e7ed] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.text-title[data-v-3634e7ed] {\n  text-align: right;\n  text-transform: uppercase;\n  color: white;\n  line-height: 61px;\n  margin-right: -10px;\n}\n@media screen and (max-width: 768px) {\n.text-title[data-v-3634e7ed] {\n    text-align: center;\n    margin: auto;\n    line-height: 61px;\n}\n}\n.text-title1[data-v-3634e7ed] {\n  font-size: 66px;\n}\n@media screen and (max-width: 768px) {\n.text-title1[data-v-3634e7ed] {\n    font-size: 45px;\n}\n}\n.text-title2[data-v-3634e7ed] {\n  font-size: 50px;\n}\n@media screen and (max-width: 768px) {\n.text-title2[data-v-3634e7ed] {\n    font-size: 40px;\n}\n}\n.container-title[data-v-3634e7ed] {\n  margin-bottom: 95px;\n}\n.line-middle[data-v-3634e7ed] {\n  height: 100px;\n  width: 12px;\n  background-color: #b99571;\n  margin: auto;\n  margin-top: 1px;\n  border-radius: 7px;\n}\n@media screen and (max-width: 768px) {\n.line-middle[data-v-3634e7ed] {\n    width: 100px;\n    height: 12px;\n}\n}\n.logo-style[data-v-3634e7ed] {\n  padding-top: 7px;\n  margin-left: -15px;\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-3634e7ed] {\n    width: 60%;\n    margin-left: 0;\n    margin: auto;\n}\n}\n.soon-style[data-v-3634e7ed] {\n  width: 30%;\n  margin: -23px auto 0;\n}\n@media screen and (max-width: 768px) {\n.soon-style[data-v-3634e7ed] {\n    width: 80%;\n    margin-left: 0;\n    margin: -40px auto 0;\n}\n}\n.netw-style[data-v-3634e7ed] {\n  width: 65px;\n  position: absolute;\n  top: 400px;\n}\n@media screen and (max-width: 768px) {\n.netw-style[data-v-3634e7ed] {\n    display: none;\n    width: 60px;\n    top: 530px;\n}\n}\n.netw-style .socialnetwork[data-v-3634e7ed] {\n  width: 60px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".footer-style[data-v-3634e7ed] {\n  bottom: 0;\n}\n.gallery[data-v-3634e7ed] {\n  background: url(/assets/img/fondo-galeria-web-puma.jpg);\n  background-size: cover;\n  min-height: 100vh;\n  padding-top: 244px;\n  overflow: hidden;\n}\n@media screen and (max-width: 768px) {\n.gallery[data-v-3634e7ed] {\n    padding-top: 144px;\n}\n}\n.gallery-container[data-v-3634e7ed] {\n  margin: 0 40px;\n}\n.title-venues[data-v-3634e7ed] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-3634e7ed] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-venues2[data-v-3634e7ed] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-3634e7ed] {\n    font-size: 115px;\n}\n}\n.title-image[data-v-3634e7ed] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-3634e7ed] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-3634e7ed] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.footer-styles[data-v-3634e7ed] {\n  width: 100%;\n  margin: 0;\n  padding: 96px 20px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-3634e7ed] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3634e7ed] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3634e7ed] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3634e7ed] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.text-title[data-v-3634e7ed] {\n  text-align: right;\n  text-transform: uppercase;\n  color: white;\n  line-height: 61px;\n  margin-right: -10px;\n}\n@media screen and (max-width: 768px) {\n.text-title[data-v-3634e7ed] {\n    text-align: center;\n    margin: auto;\n    line-height: 61px;\n}\n}\n.text-title1[data-v-3634e7ed] {\n  font-size: 66px;\n}\n@media screen and (max-width: 768px) {\n.text-title1[data-v-3634e7ed] {\n    font-size: 45px;\n}\n}\n.text-title2[data-v-3634e7ed] {\n  font-size: 50px;\n}\n@media screen and (max-width: 768px) {\n.text-title2[data-v-3634e7ed] {\n    font-size: 40px;\n}\n}\n.container-title[data-v-3634e7ed] {\n  margin-bottom: 95px;\n}\n.line-middle[data-v-3634e7ed] {\n  height: 100px;\n  width: 12px;\n  background-color: #b99571;\n  margin: auto;\n  margin-top: 1px;\n  border-radius: 7px;\n}\n@media screen and (max-width: 768px) {\n.line-middle[data-v-3634e7ed] {\n    width: 100px;\n    height: 12px;\n}\n}\n.logo-style[data-v-3634e7ed] {\n  padding-top: 7px;\n  margin-left: -15px;\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-3634e7ed] {\n    width: 60%;\n    margin-left: 0;\n    margin: auto;\n}\n}\n.soon-style[data-v-3634e7ed] {\n  width: 30%;\n  margin: -23px auto 140px;\n}\n@media screen and (max-width: 768px) {\n.soon-style[data-v-3634e7ed] {\n    width: 80%;\n    margin-left: 0;\n    margin: -40px auto 140px;\n}\n}\n.netw-style[data-v-3634e7ed] {\n  width: 65px;\n  position: absolute;\n  top: 400px;\n}\n@media screen and (max-width: 768px) {\n.netw-style[data-v-3634e7ed] {\n    display: none;\n    width: 60px;\n    top: 530px;\n}\n}\n.netw-style .socialnetwork[data-v-3634e7ed] {\n  width: 60px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -13256,20 +13256,156 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "footer-styles" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "columns is-variable is-8 tm-puma",
+        staticStyle: { "margin-bottom": "60px" },
+      },
+      [
+        _c("div", {
+          staticClass:
+            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+        }),
+        _vm._v(" "),
+        _vm.sponsors.length
+          ? _vm._l(_vm.sponsors, function (item, index) {
+              return _c(
+                "div",
+                {
+                  staticClass: "column is-5-mobile",
+                  staticStyle: { margin: "auto" },
+                },
+                [
+                  _c("p", { staticClass: "text-center" }, [
+                    _c("img", { attrs: { src: item.image, width: "100px" } }),
+                  ]),
+                ]
+              )
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _c("div", {
+          staticClass:
+            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+        }),
+      ],
+      2
+    ),
+    _vm._v(" "),
+    _vm._m(5),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "footer-styles" }, [
-      _c("div", { staticClass: "columns is-vcentered" }, [
-        _c("div", { staticClass: "column tm-puma footer-1" }, [
-          _vm._v(
-            "\n            @2022 puma. Todos los derechos reservados\n        "
-          ),
+    return _c(
+      "div",
+      {
+        staticClass: "tm-puma columns sponsors",
+        staticStyle: { "text-transform": "uppercase" },
+      },
+      [
+        _c("div", {
+          staticClass:
+            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "column" }, [
+          _vm._v("\n            Nuestros patrocinadores:\n        "),
         ]),
+        _vm._v(" "),
+        _c("div", {
+          staticClass:
+            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center" }, [
+          _c("img", { attrs: { src: "/assets/img/G_Logo_Blanco.png" } }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center" }, [
+          _c("img", {
+            attrs: {
+              src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
+            },
+          }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", {
+            attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
+          }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "columns is-vcentered" }, [
+      _c("div", { staticClass: "column tm-puma footer-1" }, [
+        _vm._v(
+          "\n            @2022 puma. Todos los derechos reservados\n        "
+        ),
       ]),
     ])
   },

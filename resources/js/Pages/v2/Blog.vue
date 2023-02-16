@@ -79,7 +79,7 @@ export default {
 
 <style lang="scss" scoped>
 .footer-style{
-  position: absolute;
+  // position: absolute;
   bottom: 0;
   width: 100%;
 }
@@ -211,11 +211,11 @@ export default {
   }
   .soon-style{
     width: 30%;
-    margin: -23px auto 0;
+    margin: -23px auto 140px;
     @media screen and (max-width: 768px) {
       width:80%;
       margin-left: 0;
-      margin: -40px auto 0;
+      margin: -40px auto 140px;
     }
   }
   .netw-style{

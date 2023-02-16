@@ -1012,7 +1012,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.0.3");
+    console.log("v=2.0.4");
     var slug = this.$route.params.slug;
     window.scrollTo(0, 0);
     this.setElement(this.$refs.img1);
@@ -1101,7 +1101,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".register-button[data-v-4f20a652] {\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  text-transform: uppercase;\n  padding: 3px 36px 0;\n  margin-top: 26px;\n  padding: 3px 36px 0;\n  color: white;\n  background-color: #b99571;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  cursor: pointer;\n  border: none;\n  font-size: 19px !important;\n  border-radius: 0;\n}\n.form-styles[data-v-4f20a652] {\n  padding-left: 7%;\n  padding-right: 7%;\n  padding-bottom: 48px;\n  padding-top: 48px;\n  max-width: 600px;\n  margin-left: auto;\n  margin-right: auto;\n}\n.form-styles .field-style[data-v-4f20a652] {\n  padding-top: 12px;\n  position: relative;\n}\n.form-title[data-v-4f20a652] {\n  font-size: 18px;\n  color: #b99571;\n  text-align: left;\n  text-transform: uppercase;\n  padding-bottom: 12px;\n  padding-top: 12px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".register-button[data-v-4f20a652] {\n  color: white;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  text-transform: uppercase;\n  padding: 3px 36px 0;\n  margin-top: 26px;\n  padding: 3px 36px 0;\n  color: white;\n  background-color: #b99571;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  cursor: pointer;\n  border: none;\n  font-size: 19px !important;\n  border-radius: 0;\n}\n.form-styles[data-v-4f20a652] {\n  padding-left: 7%;\n  padding-right: 7%;\n  padding-bottom: 48px;\n  padding-top: 48px;\n  max-width: 600px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-bottom: 40px;\n}\n.form-styles .field-style[data-v-4f20a652] {\n  padding-top: 12px;\n  position: relative;\n}\n.form-title[data-v-4f20a652] {\n  font-size: 18px;\n  color: #b99571;\n  text-align: left;\n  text-transform: uppercase;\n  padding-bottom: 12px;\n  padding-top: 12px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1193,7 +1193,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-db0a3ee6] {\n  min-height: 100vh;\n}\n.registro-empty[data-v-db0a3ee6] {\n  background: url(/assets/img/fondo-blog-puma.jpg);\n  background-size: cover;\n  overflow-x: hidden;\n  min-height: 100vh;\n  padding-top: 244px;\n}\n.img-blackwhite[data-v-db0a3ee6] {\n  filter: grayscale(60%);\n}\n.clip[data-v-db0a3ee6] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-db0a3ee6] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-db0a3ee6] {\n  padding: 0;\n  background: url(/assets/img/Fondo-Registro-form.jpg);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-db0a3ee6] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-db0a3ee6] {\n  margin: 0;\n}\n.registro[data-v-db0a3ee6] {\n  background: black;\n}\n.tm-puma[data-v-db0a3ee6] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-db0a3ee6] {\n  height: 50vw;\n}\n.footer-style[data-v-db0a3ee6] {\n  position: relative;\n  width: 100%;\n  background-color: transparent;\n  bottom: 165px;\n}\n.text-title[data-v-db0a3ee6] {\n  text-align: right;\n  text-transform: uppercase;\n  color: white;\n  line-height: 121px;\n  margin-right: -10px;\n}\n.text-title1[data-v-db0a3ee6] {\n  font-size: 90px;\n}\n.container-title[data-v-db0a3ee6] {\n  margin-bottom: 95px;\n}\n.line-middle[data-v-db0a3ee6] {\n  height: 100px;\n  width: 12px;\n  background-color: #b99571;\n  margin: auto;\n  margin-top: 1px;\n  border-radius: 7px;\n}\n.logo-style[data-v-db0a3ee6] {\n  padding-top: 7px;\n  margin-left: -15px;\n}\n.soon-style[data-v-db0a3ee6] {\n  width: 30%;\n  margin: -23px auto 0;\n}\n.netw-style[data-v-db0a3ee6] {\n  width: 65px;\n  position: absolute;\n  top: 337px;\n}\n@media screen and (max-width: 768px) {\n.netw-style[data-v-db0a3ee6] {\n    width: 60px;\n    top: 1778px;\n}\n}\n.netw-style .socialnetwork[data-v-db0a3ee6] {\n  width: 60px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".registro[data-v-db0a3ee6] {\n  min-height: 100vh;\n}\n.registro-empty[data-v-db0a3ee6] {\n  background: url(/assets/img/fondo-blog-puma.jpg);\n  background-size: cover;\n  overflow-x: hidden;\n  min-height: 100vh;\n  padding-top: 244px;\n}\n.img-blackwhite[data-v-db0a3ee6] {\n  filter: grayscale(60%);\n}\n.clip[data-v-db0a3ee6] {\n  margin-top: -17%;\n  -webkit-clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n          clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%);\n}\n.column-imgs[data-v-db0a3ee6] {\n  background: black;\n  padding: 0;\n}\n.column-info[data-v-db0a3ee6] {\n  padding: 0;\n  background: url(/assets/img/Fondo-Registro-form.jpg);\n}\n@media screen and (min-width: 769px) {\n.column-info[data-v-db0a3ee6] {\n    min-height: 100vh;\n}\n}\n.clip-section[data-v-db0a3ee6] {\n  margin: 0;\n}\n.registro[data-v-db0a3ee6] {\n  background: black;\n}\n.tm-puma[data-v-db0a3ee6] {\n  margin-right: 24px;\n  padding-bottom: 24px;\n}\n@media screen and (min-width: 769px) and (max-width: 1023px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: 24px;\n}\n}\n@media screen and (min-width: 1200px) {\n.tm-puma[data-v-db0a3ee6] {\n    margin-top: -24px;\n}\n}\n.emptyPhoto[data-v-db0a3ee6] {\n  height: 50vw;\n}\n.text-title[data-v-db0a3ee6] {\n  text-align: right;\n  text-transform: uppercase;\n  color: white;\n  line-height: 121px;\n  margin-right: -10px;\n}\n.text-title1[data-v-db0a3ee6] {\n  font-size: 90px;\n}\n.container-title[data-v-db0a3ee6] {\n  margin-bottom: 95px;\n}\n.line-middle[data-v-db0a3ee6] {\n  height: 100px;\n  width: 12px;\n  background-color: #b99571;\n  margin: auto;\n  margin-top: 1px;\n  border-radius: 7px;\n}\n.logo-style[data-v-db0a3ee6] {\n  padding-top: 7px;\n  margin-left: -15px;\n}\n.soon-style[data-v-db0a3ee6] {\n  width: 30%;\n  margin: -23px auto 0;\n}\n.netw-style[data-v-db0a3ee6] {\n  width: 65px;\n  position: absolute;\n  top: 337px;\n}\n@media screen and (max-width: 768px) {\n.netw-style[data-v-db0a3ee6] {\n    width: 60px;\n    top: 1778px;\n}\n}\n.netw-style .socialnetwork[data-v-db0a3ee6] {\n  width: 60px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2026,20 +2026,156 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "footer-styles" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      {
+        staticClass: "columns is-variable is-8 tm-puma",
+        staticStyle: { "margin-bottom": "60px" },
+      },
+      [
+        _c("div", {
+          staticClass:
+            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+        }),
+        _vm._v(" "),
+        _vm.sponsors.length
+          ? _vm._l(_vm.sponsors, function (item, index) {
+              return _c(
+                "div",
+                {
+                  staticClass: "column is-5-mobile",
+                  staticStyle: { margin: "auto" },
+                },
+                [
+                  _c("p", { staticClass: "text-center" }, [
+                    _c("img", { attrs: { src: item.image, width: "100px" } }),
+                  ]),
+                ]
+              )
+            })
+          : _vm._e(),
+        _vm._v(" "),
+        _vm._m(1),
+        _vm._v(" "),
+        _vm._m(2),
+        _vm._v(" "),
+        _vm._m(3),
+        _vm._v(" "),
+        _vm._m(4),
+        _vm._v(" "),
+        _c("div", {
+          staticClass:
+            "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
+        }),
+      ],
+      2
+    ),
+    _vm._v(" "),
+    _vm._m(5),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "footer-styles" }, [
-      _c("div", { staticClass: "columns is-vcentered" }, [
-        _c("div", { staticClass: "column tm-puma footer-1" }, [
-          _vm._v(
-            "\n            @2022 puma. Todos los derechos reservados\n        "
-          ),
+    return _c(
+      "div",
+      {
+        staticClass: "tm-puma columns sponsors",
+        staticStyle: { "text-transform": "uppercase" },
+      },
+      [
+        _c("div", {
+          staticClass:
+            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+        }),
+        _vm._v(" "),
+        _c("div", { staticClass: "column" }, [
+          _vm._v("\n            Nuestros patrocinadores:\n        "),
         ]),
+        _vm._v(" "),
+        _c("div", {
+          staticClass:
+            "column is-1-tablet is-4-desktop is-4-widescreen is-4-fullhd",
+        }),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center" }, [
+          _c("img", { attrs: { src: "/assets/img/G_Logo_Blanco.png" } }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center" }, [
+          _c("img", {
+            attrs: {
+              src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
+            },
+          }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", {
+            attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
+          }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "columns is-vcentered" }, [
+      _c("div", { staticClass: "column tm-puma footer-1" }, [
+        _vm._v(
+          "\n            @2022 puma. Todos los derechos reservados\n        "
+        ),
       ]),
     ])
   },
@@ -3123,12 +3259,6 @@ var render = function () {
                   ],
                   staticClass: "emptyPhoto",
                 }),
-                _vm._v(" "),
-                _c("div", { staticClass: "tm-puma has-text-right" }, [
-                  _vm._v(
-                    "\n          @2022 puma. Todos los derechos reservados\n        "
-                  ),
-                ]),
               ]),
               _vm._v(" "),
               _c(
@@ -3166,6 +3296,8 @@ var render = function () {
           ],
       _vm._v(" "),
       _c("div", { staticClass: "netw-style " }, [_c("SocialNetwork")], 1),
+      _vm._v(" "),
+      _c("Footer", { staticClass: "footer-style" }),
     ],
     2
   )
