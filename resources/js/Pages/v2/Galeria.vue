@@ -79,7 +79,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=2.1.1" );
+      console.log( "v=2.1.2" );
 
         axios
             .get('api/galeries')
