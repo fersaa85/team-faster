@@ -299,6 +299,9 @@ __webpack_require__.r(__webpack_exports__);
       size: null
     };
   },
+  mounted: function mounted() {
+    console.log("v=2.0.9");
+  },
   methods: {
     handleSubmit: function handleSubmit() {
       var _this = this;
@@ -825,13 +828,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'SuccessModal',
   props: {
@@ -839,6 +835,9 @@ __webpack_require__.r(__webpack_exports__);
       type: Object,
       required: true
     }
+  },
+  mounted: function mounted() {
+    console.log("v=2.0.9");
   }
 });
 
@@ -1012,7 +1011,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.0.5");
+    console.log("v=2.0.10");
     var slug = this.$route.params.slug;
     window.scrollTo(0, 0);
     this.setElement(this.$refs.img1);
@@ -1170,7 +1169,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@media screen and (min-width: 769px) {\n.card[data-v-89a547f0] {\n    max-height: 92vh;\n    overflow-y: auto;\n}\n}\n@media screen and (max-width: 768px) {\n.card[data-v-89a547f0] {\n    padding-top: 268px;\n}\n}\n@media screen and (max-height: 740px) {\n.card[data-v-89a547f0] {\n    padding-top: 425px;\n}\n}\n.logoCointainer[data-v-89a547f0] {\n  width: 100%;\n}\n@media screen and (max-width: 768px) {\n.logoCointainer[data-v-89a547f0] {\n    text-align: center;\n}\n}\n.logoTeamFaster[data-v-89a547f0] {\n  width: 20%;\n}\n@media screen and (max-width: 768px) {\n.logoTeamFaster[data-v-89a547f0] {\n    width: 15%;\n    margin: auto;\n}\n}\n.info-block[data-v-89a547f0] {\n  color: black;\n  padding-top: 20px;\n  font-size: 20px;\n}\n@media screen and (max-width: 1407px) {\n.info-block[data-v-89a547f0] {\n    padding-top: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.info-block[data-v-89a547f0] {\n    font-size: 18px;\n}\n}\n.info-block .info-block-text[data-v-89a547f0] {\n  color: black;\n}\n.info-block .button[data-v-89a547f0] {\n  margin-bottom: 80px;\n  background-color: #46aaff;\n  border-color: #46aaff;\n  text-transform: uppercase;\n  font-size: 18px;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  padding: 5px 36px 0;\n}\n@media screen and (max-width: 1407px) {\n.info-block .button[data-v-89a547f0] {\n    padding: 4px 36px 0;\n    font-size: 16px;\n}\n}\n.title-venues[data-v-89a547f0] {\n  font-size: 65px;\n  line-height: 65px;\n  text-align: right;\n  color: black;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-89a547f0] {\n    font-size: 55px;\n    line-height: 55px;\n    text-align: center;\n}\n}\n.title-image[data-v-89a547f0] {\n  width: 150px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-89a547f0] {\n    width: 100px;\n    margin: auto;\n}\n}\n.title-venues2[data-v-89a547f0] {\n  font-size: 78px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-89a547f0] {\n    font-size: 65px;\n}\n}\n.thanks[data-v-89a547f0] {\n  font-size: 26px;\n  color: black;\n  padding: 32px 0;\n}\n.info-margin[data-v-89a547f0] {\n  text-align: left;\n  padding: 24px;\n}\n.calendars[data-v-89a547f0] {\n  margin: 40px 0 32px;\n}\n.calendars a[data-v-89a547f0] {\n  color: #5fa9f7;\n}\n.close-button[data-v-89a547f0] {\n  position: absolute;\n  top: 24px;\n  right: 24px;\n  padding-left: 14px;\n  padding-right: 14px;\n}\n@media screen and (max-width: 768px) {\n.close-button[data-v-89a547f0] {\n    position: fixed;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".card[data-v-89a547f0] {\n  background: #000000;\n}\n@media screen and (min-width: 769px) {\n.card[data-v-89a547f0] {\n    max-height: 92vh;\n    overflow-y: auto;\n}\n}\n@media screen and (max-width: 768px) {\n.card[data-v-89a547f0] {\n    padding-top: 268px;\n}\n}\n.logoCointainer[data-v-89a547f0] {\n  width: 100%;\n}\n@media screen and (max-width: 768px) {\n.logoCointainer[data-v-89a547f0] {\n    text-align: center;\n}\n}\n.logoTeamFaster[data-v-89a547f0] {\n  width: 20%;\n}\n@media screen and (max-width: 768px) {\n.logoTeamFaster[data-v-89a547f0] {\n    width: 15%;\n    margin: auto;\n}\n}\n.color-brown[data-v-89a547f0] {\n  color: #b99571;\n}\n.info-block[data-v-89a547f0] {\n  padding-top: 20px;\n  font-size: 20px;\n}\n@media screen and (max-width: 1407px) {\n.info-block[data-v-89a547f0] {\n    padding-top: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.info-block[data-v-89a547f0] {\n    font-size: 18px;\n}\n}\n.info-block .button[data-v-89a547f0] {\n  margin-bottom: 80px;\n  background-color: #46aaff;\n  border-color: #46aaff;\n  text-transform: uppercase;\n  font-size: 18px;\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  padding: 5px 36px 0;\n}\n@media screen and (max-width: 1407px) {\n.info-block .button[data-v-89a547f0] {\n    padding: 4px 36px 0;\n    font-size: 16px;\n}\n}\n.title-venues[data-v-89a547f0] {\n  font-size: 65px;\n  line-height: 65px;\n  text-align: center;\n  border-bottom: #b99571 solid;\n  color: #ffffff;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-89a547f0] {\n    font-size: 55px;\n    line-height: 55px;\n    text-align: center;\n}\n}\n.title-image[data-v-89a547f0] {\n  width: 150px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-89a547f0] {\n    width: 100px;\n    margin: auto;\n}\n}\n.title-venues2[data-v-89a547f0] {\n  font-size: 78px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-89a547f0] {\n    font-size: 65px;\n}\n}\n.thanks[data-v-89a547f0] {\n  font-size: 26px;\n  padding: 5px 0;\n  color: #ffffff;\n}\n.info-margin[data-v-89a547f0] {\n  text-align: left;\n  padding: 24px;\n  color: #ffffff;\n}\n.calendars[data-v-89a547f0] {\n  margin: 40px 0 32px;\n}\n.calendars a[data-v-89a547f0], .calendars a[data-v-89a547f0]:hover {\n  color: #b99571 !important;\n}\n.close-button[data-v-89a547f0] {\n  padding-left: 14px;\n  padding-right: 14px;\n}\n@media screen and (max-width: 768px) {\n.close-button[data-v-89a547f0] {\n    position: fixed;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -2457,7 +2456,7 @@ var render = function () {
             staticClass: "recaptcha-container",
             attrs: {
               id: "recaptcha",
-              sitekey: "6LfgkUAhAAAAAMaSoFs6_0VfeAV9aAnQqFcPagQ6",
+              sitekey: "6LdDSI8kAAAAAD2YJ7RWK7qSc2qA6JA3gYchSQJ3",
             },
             on: {
               verify: _vm.verifyMethod,
@@ -2824,270 +2823,249 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "card" },
-    [
-      _c(
-        "b-button",
-        {
-          staticClass: "close-button",
-          attrs: { rounded: "" },
-          on: {
-            click: function ($event) {
-              return _vm.$emit("close")
-            },
-          },
-        },
-        [_c("i", { staticClass: "fas fa-times" })]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-content" }, [
+  return _c("div", { staticClass: "card" }, [
+    _c("div", { staticClass: "columns" }, [
+      _c("div", { staticClass: "column" }, [
         _c(
           "div",
-          {
-            staticClass: "columns is-vcentered",
-            staticStyle: { "margin-top": "29px" },
-          },
+          { staticStyle: { width: "180px", padding: "10px" } },
           [
-            _c("div", { staticClass: "column is-hidden-tablet" }, [
-              _c(
-                "div",
-                { staticClass: "title-image" },
-                [
-                  _c("b-image", {
-                    attrs: {
-                      responsive: "",
-                      src: "/assets/img/logoTeamFaster.png",
-                      ratio: "1by1",
-                    },
-                  }),
-                ],
-                1
-              ),
-            ]),
-            _vm._v(" "),
+            _c("b-image", {
+              attrs: { responsive: "", src: "/assets/img/logo_train.png" },
+            }),
+          ],
+          1
+        ),
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "column" }, [
+        _c(
+          "div",
+          { staticStyle: { padding: "10px" } },
+          [
             _c(
-              "div",
-              { staticClass: "column is-7 gotica-italic title-venues" },
-              [
-                _c("div", { staticClass: "title-venues1" }, [
+              "b-button",
+              {
+                staticClass: "close-button",
+                attrs: { rounded: "" },
+                on: {
+                  click: function ($event) {
+                    return _vm.$emit("close")
+                  },
+                },
+              },
+              [_c("i", { staticClass: "fas fa-times" })]
+            ),
+          ],
+          1
+        ),
+      ]),
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "card-content" }, [
+      _c("div", { staticClass: "columns is-vcentered" }, [
+        _c("div", { staticClass: "column is-12 gotica-italic title-venues" }, [
+          _c("div", { staticClass: "title-venues1" }, [
+            _vm._v(
+              "\n                    Te esperamos en " +
+                _vm._s(_vm.info.name) +
+                "\n                "
+            ),
+          ]),
+        ]),
+      ]),
+      _vm._v(" "),
+      _c("div", [
+        _c("div", { staticClass: "info-margin" }, [
+          _c("div", { staticClass: "columns" }, [
+            _c("div", { staticClass: "column is-5" }, [
+              _c("div", { staticClass: "info-block" }, [
+                _c("p", { staticClass: "info-block-title puma-bold" }, [
                   _vm._v(
-                    "\n                    Te esperamos en\n                "
+                    "\n                                Nombre\n                            "
                   ),
                 ]),
                 _vm._v(" "),
-                _c("div", { staticClass: "title-venues2" }, [
+                _c("p", { staticClass: "info-block-text" }, [
                   _vm._v(
-                    "\n                    " +
-                      _vm._s(_vm.info.name) +
-                      "\n                "
+                    "\n                                " +
+                      _vm._s(_vm.info.nameUser || "") +
+                      "\n                            "
                   ),
                 ]),
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "column is-hidden-mobile" }, [
-              _c(
-                "div",
-                { staticClass: "title-image" },
-                [
-                  _c("b-image", {
-                    attrs: {
-                      responsive: "",
-                      src: "/assets/img/logoTeamFaster.png",
-                      ratio: "1by1",
-                    },
-                  }),
-                ],
-                1
-              ),
-            ]),
-          ]
-        ),
-        _vm._v(" "),
-        _c("div", [
-          _c("div", { staticClass: "info-margin" }, [
-            _c("div", { staticClass: "columns" }, [
-              _c("div", { staticClass: "column is-5" }, [
-                _c("div", { staticClass: "info-block" }, [
-                  _c("p", { staticClass: "info-block-title puma-bold" }, [
-                    _vm._v(
-                      "\n                        Nombre\n                    "
-                    ),
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "info-block-text" }, [
-                    _vm._v(
-                      "\n                        " +
-                        _vm._s(_vm.info.nameUser || "") +
-                        "\n                    "
-                    ),
-                  ]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column" }, [
-                _c("div", { staticClass: "info-block" }, [
-                  _c("p", { staticClass: "info-block-title puma-bold" }, [
-                    _vm._v(
-                      "\n                        Correo\n                    "
-                    ),
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "info-block-text" }, [
-                    _vm._v(
-                      "\n                        " +
-                        _vm._s(_vm.info.mail || "") +
-                        "\n                    "
-                    ),
-                  ]),
-                ]),
               ]),
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "columns" }, [
-              _c("div", { staticClass: "column is-5" }, [
-                _c("div", { staticClass: "info-block" }, [
-                  _c("p", { staticClass: "info-block-title puma-bold" }, [
-                    _vm._v("\n                    ¿Cuándo?\n                "),
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "info-block-text" }, [
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(_vm.info.fecha) +
-                        "\n                "
-                    ),
-                  ]),
+            _c("div", { staticClass: "column" }, [
+              _c("div", { staticClass: "info-block" }, [
+                _c("p", { staticClass: "info-block-title puma-bold" }, [
+                  _vm._v(
+                    "\n                                Correo\n                            "
+                  ),
                 ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column" }, [
-                _c("div", { staticClass: "info-block" }, [
-                  _c("p", { staticClass: "info-block-title puma-bold" }, [
-                    _vm._v("\n                    Dónde?\n                "),
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "info-block-text" }, [
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(_vm.info.lugar) +
-                        "\n                "
-                    ),
-                  ]),
-                ]),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "columns" }, [
-              _c("div", { staticClass: "column is-5" }, [
-                _c("div", { staticClass: "info-block" }, [
-                  _c("p", { staticClass: "info-block-title puma-bold" }, [
-                    _vm._v(
-                      "\n                    Experiencia workout\n                "
-                    ),
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "info-block-text" }, [
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(_vm.info.tipo) +
-                        "\n                "
-                    ),
-                  ]),
-                ]),
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "column" }, [
-                _c("div", { staticClass: "info-block" }, [
-                  _c("p", { staticClass: "info-block-title puma-bold" }, [
-                    _vm._v(
-                      "\n                    Coach participante\n                    "
-                    ),
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "info-block-text" }, [
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(_vm.info.coach.name) +
-                        " \n                    "
-                    ),
-                  ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "info-block-text" }, [
+                  _vm._v(
+                    "\n                                " +
+                      _vm._s(_vm.info.mail || "") +
+                      "\n                            "
+                  ),
                 ]),
               ]),
             ]),
           ]),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "has-text-centered" },
-            [
-              _c("add-to-calendar", {
-                attrs: {
-                  title: "Team Faster - " + _vm.info.tipo,
-                  location: _vm.info.lugar,
-                  start: new Date(_vm.info.fecha),
-                  end: new Date(
-                    new Date(_vm.info.fecha).setHours(
-                      new Date(_vm.info.fecha).getHours() + 2
-                    )
+          _c("div", { staticClass: "columns" }, [
+            _c("div", { staticClass: "column is-5" }, [
+              _c("div", { staticClass: "info-block" }, [
+                _c("p", { staticClass: "info-block-title puma-bold" }, [
+                  _vm._v(
+                    "\n                                ¿Cuándo?\n                            "
                   ),
-                  details: _vm.info.name + " - " + _vm.info.coach,
-                },
-                inlineTemplate: {
-                  render: function () {
-                    var _vm = this
-                    var _h = _vm.$createElement
-                    var _c = _vm._self._c || _h
-                    return _c(
-                      "div",
-                      { staticClass: "puma-bold calendars" },
-                      [
-                        _c(
-                          "google-calendar",
-                          {
-                            staticStyle: { "padding-right": "16px" },
-                            attrs: { id: "google-calendar" },
-                          },
-                          [
-                            _c("i", { staticClass: "fab fa-google" }),
-                            _vm._v(
-                              "\n                        Añadir a Google calendar\n                    "
-                            ),
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "office365-calendar",
-                          {
-                            staticStyle: { "padding-right": "16px" },
-                            attrs: { id: "office365-calendar" },
-                          },
-                          [
-                            _c("i", { staticClass: "fab fa-windows" }),
-                            _vm._v(
-                              " Añadir a Microsoft Outlook calendar\n                    "
-                            ),
-                          ]
-                        ),
-                      ],
-                      1
-                    )
-                  },
-                  staticRenderFns: [],
-                },
-              }),
-            ],
-            1
-          ),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "info-block-text" }, [
+                  _vm._v(
+                    "\n                                " +
+                      _vm._s(_vm.info.fecha) +
+                      "\n                            "
+                  ),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c("div", { staticClass: "info-block" }, [
+                _c("p", { staticClass: "info-block-title puma-bold" }, [
+                  _vm._v(
+                    "\n                                Dónde?\n                            "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "info-block-text" }, [
+                  _vm._v(
+                    "\n                                " +
+                      _vm._s(_vm.info.lugar) +
+                      "\n                            "
+                  ),
+                ]),
+              ]),
+            ]),
+          ]),
           _vm._v(" "),
-          _vm._m(0),
+          _c("div", { staticClass: "columns" }, [
+            _c("div", { staticClass: "column is-5" }, [
+              _c("div", { staticClass: "info-block" }, [
+                _c("p", { staticClass: "info-block-title puma-bold" }, [
+                  _vm._v(
+                    "\n                                Experiencia workout\n                            "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "info-block-text" }, [
+                  _vm._v(
+                    "\n                                " +
+                      _vm._s(_vm.info.tipo) +
+                      "\n                            "
+                  ),
+                ]),
+              ]),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "column" }, [
+              _c("div", { staticClass: "info-block" }, [
+                _c("p", { staticClass: "info-block-title puma-bold" }, [
+                  _vm._v(
+                    "\n                                Coach participante\n                            "
+                  ),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "info-block-text" }, [
+                  _vm._v(
+                    "\n                                " +
+                      _vm._s(_vm.info.coach.name) +
+                      "\n                            "
+                  ),
+                ]),
+              ]),
+            ]),
+          ]),
         ]),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "has-text-centered" },
+          [
+            _c("add-to-calendar", {
+              attrs: {
+                title: "Team Faster - " + _vm.info.tipo,
+                location: _vm.info.lugar,
+                start: new Date(_vm.info.fecha),
+                end: new Date(
+                  new Date(_vm.info.fecha).setHours(
+                    new Date(_vm.info.fecha).getHours() + 2
+                  )
+                ),
+                details: _vm.info.name + " - " + _vm.info.coach,
+              },
+              inlineTemplate: {
+                render: function () {
+                  var _vm = this
+                  var _h = _vm.$createElement
+                  var _c = _vm._self._c || _h
+                  return _c(
+                    "div",
+                    { staticClass: "puma-bold calendars color-brown" },
+                    [
+                      _c(
+                        "google-calendar",
+                        {
+                          staticStyle: {
+                            "padding-right": "16px",
+                            color: "#b99571",
+                          },
+                          attrs: { id: "google-calendar" },
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-google" }),
+                          _vm._v(
+                            "\n                            Añadir a Google calendar\n                        "
+                          ),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "office365-calendar",
+                        {
+                          staticClass: "color-brown",
+                          staticStyle: {
+                            "padding-right": "16px",
+                            color: "#b99571",
+                          },
+                          attrs: { id: "office365-calendar" },
+                        },
+                        [
+                          _c("i", { staticClass: "fab fa-windows" }),
+                          _vm._v(
+                            " Añadir a Microsoft Outlook calendar\n                        "
+                          ),
+                        ]
+                      ),
+                    ],
+                    1
+                  )
+                },
+                staticRenderFns: [],
+              },
+            }),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _vm._m(0),
       ]),
-    ],
-    1
-  )
+    ]),
+  ])
 }
 var staticRenderFns = [
   function () {
@@ -3097,7 +3075,7 @@ var staticRenderFns = [
     return _c("div", { staticClass: "has-text-centered" }, [
       _c("div", { staticClass: "thanks puma-bold" }, [
         _vm._v(
-          "\n                Gracias por registrarte al evento. \n            "
+          "\n                    Gracias por registrarte al evento.\n                "
         ),
       ]),
     ])

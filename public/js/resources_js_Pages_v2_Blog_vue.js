@@ -204,7 +204,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.0.5");
+    console.log("v=2.1.1");
     axios.get('api/blog').then(function (_ref) {
       var data = _ref.data;
       console.log(data);
