@@ -11,27 +11,27 @@
             />
           </div>
         </div>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2' }" class="level-item button-container nav-bar-button is-hidden-touch first-menu-item" :class="{'button-active':  $route.name =='home'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/' }" class="level-item button-container nav-bar-button is-hidden-touch first-menu-item" :class="{'button-active':  $route.name =='home'}">
           Inicio
           <div class="line-below line-1"></div>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/registro' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='registro'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/registro' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='registro'}">
           Registro
           <div class="line-below line-2"></div>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/sedes' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='sedes'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/sedes' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='sedes'}">
           Sedes
           <div class="line-below line-3"></div>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/coaches' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='coaches'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/coaches' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='coaches'}">
           Coaches
           <div class="line-below line-4"></div>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/blog' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='blog'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/blog' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='blog'}">
           Blog
           <div class="line-below line-5"></div>
         </b-navbar-item>
-        <b-navbar-item tag="router-link" :to="{ path: '/v2/galeria' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='galeria'}">
+        <b-navbar-item tag="router-link" :to="{ path: '/galeria' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='galeria'}">
           Galería
           <div class="line-below line-5"></div>
         </b-navbar-item>
@@ -48,32 +48,32 @@
       </div>
       <div v-if="show" class="is-hidden-desktop menu-mobile">
         <div @click="show = false">
-          <router-link :to="{ path: '/v2' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='home'}">
+          <router-link :to="{ path: '/' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='home'}">
             Inicio
           </router-link >
         </div>
         <div @click="show = false">
-          <router-link :to="{ path: '/v2/registro' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='registro'}">
+          <router-link :to="{ path: '/registro' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='registro'}">
             Registro
           </router-link >
         </div>
         <div @click="show = false">
-          <router-link :to="{ path: '/v2/sedes' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='sedes'}">
+          <router-link :to="{ path: '/sedes' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='sedes'}">
             Sedes
           </router-link >
         </div>
         <div @click="show = false">
-          <router-link :to="{ path: '/v2/coaches' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
+          <router-link :to="{ path: '/coaches' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='coaches'}">
             Coaches
           </router-link >
         </div>
         <div @click="show = false">
-          <router-link :to="{ path: '/v2/blog' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='blog'}">
+          <router-link :to="{ path: '/blog' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='blog'}">
             Blog
           </router-link >
         </div>
         <div @click="show = false">
-          <router-link :to="{ path: '/v2/galeria' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='galeria'}">
+          <router-link :to="{ path: '/galeria' }" class="button-container-mbl nav-bar-button" :class="{'button-active':  $route.name =='galeria'}">
             Galería
           </router-link >
         </div>
