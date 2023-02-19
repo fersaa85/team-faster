@@ -76,7 +76,7 @@ export default {
     }
   },
   mounted(){
-    console.log( "v=2.0.9" );
+    console.log( "v=2.0.10" );
     window.scrollTo(0, 0);
     axios
         .get('api/coaches')
