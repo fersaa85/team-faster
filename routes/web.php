@@ -17,10 +17,11 @@ Route::get('/signup-email', function () {
     return view('mails.signup');
 });
 
-Route::get('/v2/{any?}', function () {
+Route::get('/{any?}', function () {
     return view('index');
 })->where('any','.*');
-
+/*
 Route::get('/', function () {
     return view('teamfaster');
 });
+*/

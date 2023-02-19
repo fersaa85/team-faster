@@ -49,42 +49,42 @@ const routes = [
 
 const routes = [
     {
-        path: '/v2',
+        path: '/',
         component: () => import('../Pages/v2/Home.vue'),
         name: 'home'
     },
     {
-        path: '/v2/sedes',
+        path: '/sedes',
         component: () => import('../Pages/v2/Venues.vue'),
         name: 'sedes'
     },
     {
-        path: '/v2/coaches',
+        path: '/coaches',
         component: () => import('../Pages/v2/Coaches.vue'),
         name: 'coaches'
     },
     {
-        path: '/v2/galeria',
+        path: '/galeria',
         component: () => import('../Pages/v2/Galeria.vue'),
         name: 'galeria'
     },
     {
-        path: '/v2/blog',
+        path: '/blog',
         component: () => import('../Pages/v2/Blog.vue'),
         name: 'blog'
     },
     {
-        path: '/v2/blog/:slug',
+        path: '/blog/:slug',
         name: 'post',
         component: () => import('../Pages/v2/Post.vue'),
         meta: { scrollToTop: true }
     },
     {
-        path: '/v2/registro',
+        path: '/registro',
         component: () => import('../Pages/v2/Registro.vue'),
     },
     {
-        path: '/v2/registro/:slug',
+        path: '/registro/:slug',
         component: () => import('../Pages/v2/Registro.vue'),
     }
 ];
