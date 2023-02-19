@@ -152,7 +152,7 @@ export default {
       };
     },
     mounted() {
-       console.log( "v=2.0.7" );
+       console.log( "v=2.0.8" );
       let slug = this.$route.params.slug;
 
        window.scrollTo(0, 0);

@@ -26,7 +26,7 @@ class AuthController extends Controller
      */
     public function signUp($venueId, UserStoreRequest $request)
     {
-        $recaptcha = (new GoogleRecaptcha('6LfgkUAhAAAAAJKonW3-eGZSgZoDSfjf33_Lq4FF'))
+        $recaptcha = (new GoogleRecaptcha('6LdDSI8kAAAAAK-3OkoFv1gMWd1czMCLsarf0RsJ'))
             ->verify($request->input('g-recaptcha-response'), $request->ip());
 
         if (!$recaptcha->isSuccess()) {

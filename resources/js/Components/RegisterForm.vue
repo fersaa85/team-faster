@@ -102,7 +102,7 @@
       <vue-recaptcha
          id="recaptcha"
          class="recaptcha-container"
-         sitekey="6LfgkUAhAAAAAMaSoFs6_0VfeAV9aAnQqFcPagQ6"
+         sitekey="6LdDSI8kAAAAAD2YJ7RWK7qSc2qA6JA3gYchSQJ3"
          @verify="verifyMethod"
          @expired="expiredMethod"
          @render="renderMethod"
@@ -150,6 +150,9 @@
         ],
         size: null
       };
+    },
+    mounted() {
+          console.log("v=2.0.8");
     },
     methods:{
         handleSubmit(){
