@@ -84,7 +84,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=2.1.5" );
+      console.log( "v=2.1.6" );
       window.scrollTo(0, 0);
 
         axios
