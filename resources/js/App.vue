@@ -8,6 +8,7 @@
             <img
               src="/assets/img/SITE_PUMA_LOGO_PUMA.png"
               class="logo-style"
+              @click="$router.push('/');"
             />
           </div>
         </div>
@@ -222,6 +223,7 @@ export default {
   }
   .logo-style{
     width:182px;
+    cursor: pointer;
     @media screen and (min-width: 1408px) {
       width:11vw;
       margin-left: 53px;

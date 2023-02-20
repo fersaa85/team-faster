@@ -1886,6 +1886,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'app',
@@ -2154,9 +2155,9 @@ window._ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
  */
 
 window.axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest'; //window.axios.defaults.baseURL = 'https://trainpuma.com/';
+window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+window.axios.defaults.baseURL = 'https://trainpuma.com/'; //window.axios.defaults.baseURL = 'http://team-faster.test';
 
-window.axios.defaults.baseURL = 'http://team-faster.test';
 /**s
  * Echo exposes an expressive API for subscribing to channels and listening
  * for events that are broadcast by Laravel. Echo and event broadcasting
@@ -22728,7 +22729,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".app[data-v-f348271a] {\n  background-color: black;\n}\n.menu[data-v-f348271a] {\n  position: absolute;\n  width: 100%;\n  z-index: 1;\n  color: white;\n  font-size: 30px;\n  text-transform: uppercase;\n  padding: 40px 306px 10px 40px;\n  cursor: pointer;\n}\n@media screen and (max-width: 1023px) {\n.menu[data-v-f348271a] {\n    padding: 40px;\n}\n}\n.button-container[data-v-f348271a] {\n  position: relative;\n  margin-top: -60px;\n  padding-left: 24px;\n  padding-right: 24px;\n  color: white;\n}\n@media screen and (max-width: 1408px) {\n.button-container[data-v-f348271a] {\n    margin-top: -20px;\n    margin-right: 0 !important;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.button-container[data-v-f348271a] {\n    padding-top: 24px;\n    margin-right: 0 !important;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n}\n.button-container[data-v-f348271a]:hover {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container[data-v-f348271a]:focus {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container:focus .line-below[data-v-f348271a] {\n  border-radius: 4px;\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n@media screen and (max-width: 1408px) {\n.button-container:focus .line-below[data-v-f348271a] {\n    width: calc(100% - 63px);\n}\n}\n.button-container:focus .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container[data-v-f348271a]:focus-within {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container:focus-within .line-below[data-v-f348271a] {\n  border-radius: 4px;\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n@media screen and (max-width: 1408px) {\n.button-container:focus-within .line-below[data-v-f348271a] {\n    width: calc(100% - 63px);\n}\n}\n.button-container:focus-within .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active[data-v-f348271a] {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container.button-active .line-below[data-v-f348271a] {\n  border-radius: 4px;\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n@media screen and (max-width: 1408px) {\n.button-container.button-active .line-below[data-v-f348271a] {\n    width: calc(100% - 63px);\n}\n}\n.button-container.button-active .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.logo-style[data-v-f348271a] {\n  width: 182px;\n}\n@media screen and (min-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 11vw;\n    margin-left: 53px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 5vw;\n    margin-left: 20px;\n    margin-right: 20px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.logo-style[data-v-f348271a] {\n    width: 5vw;\n    margin-left: 20px;\n    margin-right: 20px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.logo-style[data-v-f348271a] {\n    width: 5vw;\n    margin-left: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.logo-style[data-v-f348271a] {\n    width: 5vw;\n    margin-left: 0;\n}\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-f348271a] {\n    width: 10vw;\n    margin-left: 0;\n}\n}\n@media screen and (min-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 145px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 50px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1215px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 50px;\n}\n}\n.menu-mobile[data-v-f348271a] {\n  background-color: black;\n  padding-top: 8px;\n  padding-bottom: 8px;\n}\n.button-container-mbl[data-v-f348271a] {\n  color: white;\n}\n.button-container-mbl[data-v-f348271a]:hover {\n  background-color: transparent !important;\n  color: #b99571;\n}\n.button-container-mbl[data-v-f348271a]:focus {\n  color: white;\n  background-color: transparent !important;\n  color: #b99571;\n}\n.button-container-mbl[data-v-f348271a]:focus-within {\n  background-color: transparent !important;\n  color: #b99571;\n}\n.button-container-mbl.button-active[data-v-f348271a] {\n  background-color: transparent !important;\n  color: #b99571;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".app[data-v-f348271a] {\n  background-color: black;\n}\n.menu[data-v-f348271a] {\n  position: absolute;\n  width: 100%;\n  z-index: 1;\n  color: white;\n  font-size: 30px;\n  text-transform: uppercase;\n  padding: 40px 306px 10px 40px;\n  cursor: pointer;\n}\n@media screen and (max-width: 1023px) {\n.menu[data-v-f348271a] {\n    padding: 40px;\n}\n}\n.button-container[data-v-f348271a] {\n  position: relative;\n  margin-top: -60px;\n  padding-left: 24px;\n  padding-right: 24px;\n  color: white;\n}\n@media screen and (max-width: 1408px) {\n.button-container[data-v-f348271a] {\n    margin-top: -20px;\n    margin-right: 0 !important;\n    padding-left: 18px;\n    padding-right: 18px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.button-container[data-v-f348271a] {\n    padding-top: 24px;\n    margin-right: 0 !important;\n    padding-left: 12px;\n    padding-right: 12px;\n}\n}\n.button-container[data-v-f348271a]:hover {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container[data-v-f348271a]:focus {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container:focus .line-below[data-v-f348271a] {\n  border-radius: 4px;\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n@media screen and (max-width: 1408px) {\n.button-container:focus .line-below[data-v-f348271a] {\n    width: calc(100% - 63px);\n}\n}\n.button-container:focus .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container[data-v-f348271a]:focus-within {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container:focus-within .line-below[data-v-f348271a] {\n  border-radius: 4px;\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n@media screen and (max-width: 1408px) {\n.button-container:focus-within .line-below[data-v-f348271a] {\n    width: calc(100% - 63px);\n}\n}\n.button-container:focus-within .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container:focus-within .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active[data-v-f348271a] {\n  color: white;\n  background-color: transparent !important;\n}\n.button-container.button-active .line-below[data-v-f348271a] {\n  border-radius: 4px;\n  background-color: #b99571;\n  width: calc(100% - 175px);\n  height: 5px;\n  position: absolute;\n  bottom: 0;\n}\n@media screen and (max-width: 1408px) {\n.button-container.button-active .line-below[data-v-f348271a] {\n    width: calc(100% - 63px);\n}\n}\n.button-container.button-active .line-below.line-2[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-3[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-4[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.button-container.button-active .line-below.line-5[data-v-f348271a] {\n  width: calc(100% - 63px);\n}\n.logo-style[data-v-f348271a] {\n  width: 182px;\n  cursor: pointer;\n}\n@media screen and (min-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 11vw;\n    margin-left: 53px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.logo-style[data-v-f348271a] {\n    width: 5vw;\n    margin-left: 20px;\n    margin-right: 20px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.logo-style[data-v-f348271a] {\n    width: 5vw;\n    margin-left: 20px;\n    margin-right: 20px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.logo-style[data-v-f348271a] {\n    width: 5vw;\n    margin-left: 10px;\n}\n}\n@media screen and (max-width: 1023px) {\n.logo-style[data-v-f348271a] {\n    width: 5vw;\n    margin-left: 0;\n}\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-f348271a] {\n    width: 10vw;\n    margin-left: 0;\n}\n}\n@media screen and (min-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 145px;\n}\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 50px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1215px) {\n.first-menu-item[data-v-f348271a] {\n    padding-left: 50px;\n}\n}\n.menu-mobile[data-v-f348271a] {\n  background-color: black;\n  padding-top: 8px;\n  padding-bottom: 8px;\n}\n.button-container-mbl[data-v-f348271a] {\n  color: white;\n}\n.button-container-mbl[data-v-f348271a]:hover {\n  background-color: transparent !important;\n  color: #b99571;\n}\n.button-container-mbl[data-v-f348271a]:focus {\n  color: white;\n  background-color: transparent !important;\n  color: #b99571;\n}\n.button-container-mbl[data-v-f348271a]:focus-within {\n  background-color: transparent !important;\n  color: #b99571;\n}\n.button-container-mbl.button-active[data-v-f348271a] {\n  background-color: transparent !important;\n  color: #b99571;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -57100,7 +57101,19 @@ var render = function () {
           "div",
           { staticClass: "level is-mobile" },
           [
-            _vm._m(0),
+            _c("div", { staticClass: "level-left" }, [
+              _c("div", { staticClass: "level-item" }, [
+                _c("img", {
+                  staticClass: "logo-style",
+                  attrs: { src: "/assets/img/SITE_PUMA_LOGO_PUMA.png" },
+                  on: {
+                    click: function ($event) {
+                      return _vm.$router.push("/")
+                    },
+                  },
+                }),
+              ]),
+            ]),
             _vm._v(" "),
             _c(
               "b-navbar-item",
@@ -57382,21 +57395,7 @@ var render = function () {
     1
   )
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "level-left" }, [
-      _c("div", { staticClass: "level-item" }, [
-        _c("img", {
-          staticClass: "logo-style",
-          attrs: { src: "/assets/img/SITE_PUMA_LOGO_PUMA.png" },
-        }),
-      ]),
-    ])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 

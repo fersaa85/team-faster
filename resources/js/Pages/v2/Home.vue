@@ -145,7 +145,7 @@ export default {
       };
     },
     mounted() {
-      console.log( "v=2.1.7" );
+      console.log( "v=2.1.8" );
       window.scrollTo(0, 0);
       this.setLogoInicio();
       // this.setFondoInicio();
@@ -346,6 +346,9 @@ export default {
       min-width: 100vw;
       max-width: unset;
     }
+  }
+  .cursor{
+    cursor: pointer;
   }
   .navbar-item, .navbar-link{
     color: #ffffff;
@@ -577,6 +580,7 @@ export default {
     margin-left: auto;
     margin-right: auto;
     margin-top: 237px;
+    cursor: pointer;
     @media screen and (max-width: 768px){
       margin-top: 355px;
       padding-bottom: 0;
