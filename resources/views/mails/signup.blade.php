@@ -95,8 +95,8 @@
                 <table border="0" style="width:100%;max-width:600px;border:none;border-spacing:0;text-align:left;font-family:Arial,sans-serif;font-size:16px;color:#363636; background-color:#686a72;">
                     <tr valign="bottom" style="background-color:#000000;">
                         <td>
-                            <a href="https://teamfaster.mx/" style="text-decoration:none; padding: 10px">
-                                <img src="https://teamfaster.mx/assets/img/logo_train.png" alt="Logo" style="width:150px;height:auto;border:none;text-decoration:none;">
+                            <a href="https://trainpuma.com/" style="text-decoration:none; padding: 10px">
+                                <img src="https://trainpuma.com/assets/img/logo_train.png" alt="Logo" style="width:150px;height:auto;border:none;text-decoration:none;">
                             </a>
                         </td>
                         <td>
@@ -104,23 +104,23 @@
                                 <tr style="text-align:right;">
                                     <td style="vertical-align:bottom">
                                         <a href="https://www.facebook.com/PUMAMexico" target="_blank" style="text-decoration:none;">
-                                            <img src="https://teamfaster.mx/assets/img/brown-twitter.png" width="50px" alt="Logo" style="height:auto;border:none;">
+                                            <img src="https://trainpuma.com/assets/img/brown-twitter.png" width="50px" alt="Logo" style="height:auto;border:none;">
                                         </a>
                                     </td>
                                     <td>
                                         <a href="https://twitter.com/pumamexico/" target="_blank" style="text-decoration:none;">
-                                            <img src="https://teamfaster.mx/assets/img/brown-facebook.png" width="50px" alt="Logo" style="height:auto;border:none;">
+                                            <img src="https://trainpuma.com/assets/img/brown-facebook.png" width="50px" alt="Logo" style="height:auto;border:none;">
                                         </a>
                                     </td>
                                     <td>
 
                                         <a href="https://www.instagram.com/pumamexico/" target="_blank" style="text-decoration:none; text-align: left;">
-                                            <img src="https://teamfaster.mx/assets/img/brown-instagram.png" width="50px" alt="Logo" style="height:auto;">
+                                            <img src="https://trainpuma.com/assets/img/brown-instagram.png" width="50px" alt="Logo" style="height:auto;">
                                         </a>
                                     </td>
                                     <td>
                                         <a href="https://www.youtube.com/puma" target="_blank" style="text-decoration:none;">
-                                            <img src="https://teamfaster.mx/assets/img/brown-youtube.png" width="50px" alt="Logo" style="height:auto;">
+                                            <img src="https://trainpuma.com/assets/img/brown-youtube.png" width="50px" alt="Logo" style="height:auto;">
                                         </a>
                                     <td>
                                 </tr>
@@ -132,7 +132,7 @@
                             <table role="presentation" style="width:100%; border:none;border-spacing:0; ">
                                 <tr>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/puma-web1.jpg" width="700px"/>
+                                        <img src="https://trainpuma.com/assets/img/puma-web1.jpg" width="700px"/>
                                     </td>
                                 </tr>
                             </table>
@@ -219,7 +219,7 @@
                     -->
                     <tr>
                         <td colspan="2" style="padding:30px; text-align: justify; color: #686a72;background: #000000; ">
-                            <b style="color: #ffffff;">Team Faster</b> eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos.
+                            <b style="color: #ffffff;">Train Puma</b> eres tú, ella, tu amigo, tu pareja o el vecino que encuentras en el elevador a las 6 am en el elevador para ir a entrenar somos todos aquellos que nos gusta mostrar la mejor versión de nosotros mismos.
                         </td>
                     </tr>
                     <tr>
@@ -238,13 +238,44 @@
                             <table style="width:100%;border:none;border-spacing:0;">
                                 <tr>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/models.png" width="200px">
+                                        <img src="https://trainpuma.com/assets/img/models.png" width="200px">
                                     </td>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/models2.png" width="200px">
+                                        <img src="https://trainpuma.com/assets/img/models2.png" width="200px">
                                     </td>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/models3.png" width="200px">
+                                        <img src="https://trainpuma.com/assets/img/models3.png" width="200px">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="background: #000000;  padding: 30px; text-align: center;">
+                            <table style="width:100%;border:none;border-spacing:0;">
+                                <tr>
+                                    <td>
+                                        <b style="color: #ffffff;  font-size: 23px">¡NUESTROS PATROCINADORES</b>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" style="padding-bottom: 30px; background: #000000; text-align: center;">
+                            <table style="width:100%;border:none;border-spacing:0;">
+                                <tr>
+                                    <td>
+                                        <img src="https://trainpuma.com/assets/img/G_Logo_Blanco.png" width="100px">
+                                    </td>
+                                    <td>
+                                        <img src="https://trainpuma.com/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png" width="100px">
+                                    </td>
+                                    <td>
+                                        <img src="https://trainpuma.com/assets/img/Logo_NV.png" width="100px">
+                                    </td>
+                                    <td>
+                                        <img src="https://trainpuma.com/assets/img/ISDIN-Love-Your-Skin_Blanco.png" width="100px">
                                     </td>
                                 </tr>
                             </table>
@@ -267,16 +298,16 @@
                             <table style="width:100%;border:none;border-spacing:0;">
                                 <tr>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/G_Logo_Blanco.png" width="100px">
+                                        <img src="https://trainpuma.com/assets/img/G_Logo_Blanco.png" width="100px">
                                     </td>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png" width="100px">
+                                        <img src="https://trainpuma.com/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png" width="100px">
                                     </td>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/Logo_NV.png" width="100px">
+                                        <img src="https://trainpuma.com/assets/img/Logo_NV.png" width="100px">
                                     </td>
                                     <td>
-                                        <img src="https://teamfaster.mx/assets/img/ISDIN-Love-Your-Skin_Blanco.png" width="100px">
+                                        <img src="https://trainpuma.com/assets/img/ISDIN-Love-Your-Skin_Blanco.png" width="100px">
                                     </td>
                                 </tr>
                             </table>
@@ -289,10 +320,10 @@
                                 <tr>
                                     <td>
                                         <a href="https://www.facebook.com/PUMAMexico" target="_blank">
-                                            <img src="https://teamfaster.mx/assets/img/mailing/facebook-gris.png" width="50px">
+                                            <img src="https://trainpuma.com/assets/img/mailing/facebook-gris.png" width="50px">
                                         </a>
                                         <a href="https://twitter.com/pumamexico/" target="_blank">
-                                            <img src="https://teamfaster.mx/assets/img/mailing/twitter-gris.png" width="50px">
+                                            <img src="https://trainpuma.com/assets/img/mailing/twitter-gris.png" width="50px">
                                         </a>
                                     </td>
                                 </tr>
