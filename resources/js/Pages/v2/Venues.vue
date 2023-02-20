@@ -84,7 +84,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=2.1.2" );
+      console.log( "v=2.1.3" );
       window.scrollTo(0, 0);
 
         axios
@@ -95,7 +95,7 @@ export default {
     },
     methods:  {
         handleGoTo(slug){
-           this.$router.push('/v2/registro/'+slug);
+           this.$router.push('/registro/'+slug);
         },
         setElement(el){
             this.gsap.to(
