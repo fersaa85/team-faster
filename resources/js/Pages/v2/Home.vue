@@ -70,7 +70,7 @@
                 Vuélvete parte de nuestra familia
               </div>
               <div>
-                Team Faster y entrena como los
+                Train Puma y entrena como los
               </div>
               <div>
                 grandes en alguna de las sedes
@@ -145,7 +145,7 @@ export default {
       };
     },
     mounted() {
-      console.log( "v=2.1.6" );
+      console.log( "v=2.1.7" );
       window.scrollTo(0, 0);
       this.setLogoInicio();
       // this.setFondoInicio();
