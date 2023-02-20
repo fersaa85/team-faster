@@ -100,7 +100,7 @@ class VenueController extends AdminController
         $form->text('google_maps', __('Google Maps'));
         $form->text('order', __('Orden'));
 
-        $form->text('workout.description',  __('Experiencia workout'));
+        /*$form->text('workout.description',  __('Experiencia workout'));
         $form->select('workout.coatch_id',  __('Coatch'))->options(function ($id) {
              return Coatch::pluck('name', 'id');
         });
@@ -113,6 +113,7 @@ class VenueController extends AdminController
         $form->submitted(function (Form $form) {
             Workout::where('venue_id', $form->model()->id)->delete();
         });
+        */
 
         return $form;
     }

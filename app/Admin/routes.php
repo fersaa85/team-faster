@@ -20,4 +20,5 @@ Route::group([
     $router->resource('galeries', GalleryController::class);
     $router->resource('sponsors', SponsorsController::class);
     $router->resource('posts', PostController::class);
+    $router->resource('workouts', WorkoutController::class);
 });
