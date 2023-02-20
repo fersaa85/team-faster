@@ -33,7 +33,7 @@
               </div>
             </div> -->
             <div class="puma-bold registrarme-button">
-              <b-navbar-item tag="router-link" :to="{ path: '/v2/registro' }">
+              <b-navbar-item tag="router-link" :to="{ path: '/registro' }">
                 Registrarme
               </b-navbar-item>
             </div>

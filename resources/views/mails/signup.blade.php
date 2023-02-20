@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="x-apple-disable-message-reformatting">
-    <title>Team Faster</title>
+    <title>Train Puma</title>
     <!--[if mso]>
     <style>
         table {border-collapse:collapse;border-spacing:0;border:none;margin:0;}

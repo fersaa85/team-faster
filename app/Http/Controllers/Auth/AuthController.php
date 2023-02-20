@@ -70,7 +70,7 @@ class AuthController extends Controller
                 $objData->date = $workout->date_start;
                 $objData->venue = $workout->venue->name;
                 $objData->address = $workout->venue->address;
-                $objData->workout = $workout->venue->description;
+                $objData->workout = $workout->description;
                 $objData->coatch = $workout->coatch->name;
                 $objData->slug = $slug;
 

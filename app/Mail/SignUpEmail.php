@@ -37,6 +37,7 @@ class SignUpEmail extends Mailable
     {
         return $this->from(env('MAIL_FROM_ADDRESS'))
             ->view('mails.signup')
+            ->subject("Registro Train Puma")
             ->with(
                 [
                     'name' =>  $this->data->name,
