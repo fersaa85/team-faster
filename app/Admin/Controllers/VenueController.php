@@ -33,12 +33,16 @@ class VenueController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
         $grid->column('address', __('Address'));
-        $grid->column('image', __('Imagen'));
-        $grid->column('image_map', __('Imagen mapa'));
-        $grid->column('thumbnail', __('Imagen thumbnail'));
-        $grid->column('google_maps', __('Google Maps'));
+        $grid->column('image', __('Imagen'))->image();
+        $grid->column('image_map', __('Imagen mapa'))->image();;
+        //$grid->column('thumbnail', __('Imagen thumbnail'));
+        $grid->column('google_maps', __('Google Maps'))->display(function ($googleMaps) {
 
-        $grid->column('workout.date_start', 'Cuando');
+            return $googleMaps ? "<a href='{$googleMaps}' style='color:blue'>Mapa</a>" : '';
+
+        });;
+
+        /*$grid->column('workout.date_start', 'Cuando');
         $grid->column('workout.description', 'Experiencia workout');
         $grid->column('workout.coatch_id', 'Coatch');
         $grid->column('workout.active', 'Activo');
@@ -98,7 +102,7 @@ class VenueController extends AdminController
         $form->image('image_map', 'Imagen mapa')->move('/venues');
         //$form->text('image_map', __('Imagen mapa'));
         $form->text('google_maps', __('Google Maps'));
-        $form->text('order', __('Orden'));
+        //$form->text('order', __('Orden'));
 
         /*$form->text('workout.description',  __('Experiencia workout'));
         $form->select('workout.coatch_id',  __('Coatch'))->options(function ($id) {
@@ -114,6 +118,8 @@ class VenueController extends AdminController
             Workout::where('venue_id', $form->model()->id)->delete();
         });
         */
+
+
 
         return $form;
     }

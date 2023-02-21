@@ -2,10 +2,9 @@
     <div class="row">
         <div class="col-md">
             <p class="text-center">
-                <img src="{{ asset('assets/img/logoTeamFaster.png') }}" width="150px;"/>
-            <h2 class="text-center">Administrador Team Faster</h2>
+                <img src="{{ asset('assets/img/SITE_PUMA_LOGO_PUMA.png') }}" width="150px;"/>
+                <h2 class="text-center">Administrador Train Puma</h2>
             </p>
-
         </div>
     </div>
     <div class="row">

@@ -87,9 +87,9 @@
           <div class="column is-2" ></div>
           <div class="column gotica-italic">
             <div class="info-block">
-              <h3 class="info-block-title" style="font-size: 40px; text-align: center;">¡Gracias por querer ser parte de nuestra familia teamfaster!</h3>
+              <h3 class="info-block-title" style="font-size: 40px; text-align: center;">¡Gracias por querer ser parte de nuestra familia Train Puma!</h3>
 
-              <div class="join-text-r2 puma-bold"style="color: #000000; text-align: center;">
+              <div class="join-text-r2 puma-bold"style="color: #ffffff; text-align: center; font-size: 30px;">
                 El evento se encuentra lleno, espera próximamente nuevos eventos.
               </div>
             </div>

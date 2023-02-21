@@ -29,8 +29,8 @@ class CoatchController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
         $grid->column('description', __('Description'));
-        $grid->column('image', __('Image'));
-        $grid->column('instagram', __('Instagram'));
+        $grid->column('image', __('Image'))->image();
+        $grid->column('instagram', __('Instagram'))->link();
 
         return $grid;
     }
