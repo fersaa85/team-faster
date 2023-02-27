@@ -28,7 +28,7 @@
               v-for="(src, idx) in galery"
               :key="idx"
               className="gallery-item"
-              :data-src="`/${src}`"
+              :data-src="`https://trainpuma.com/${src}`"
               data-tweet-text="Team Faster"
             >
               <img class="img-responsive" :src="src" loading="lazy"/>
