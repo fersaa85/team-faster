@@ -31,7 +31,7 @@
               :data-src="`https://trainpuma.com/${src}`"
               data-tweet-text="Team Faster"
             >
-              <img class="img-responsive" :src="src" loading="lazy"/>
+              <img class="img-responsive" :src="`/${src}`" loading="lazy"/>
             </a>
           </div>
         </div>
@@ -79,7 +79,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=2.2.1" );
+      console.log( "v=2.2.2" );
 
         axios
             .get('api/galeries/'+this.$route.params.workoutId)

@@ -239,7 +239,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.2.0");
+    console.log("v=2.2.2");
     axios.get('api/galeries/' + this.$route.params.workoutId).then(function (_ref) {
       var data = _ref.data;
       _this.galery = [].concat(JSON.parse(data.data[0].name));
@@ -13553,14 +13553,14 @@ var render = function () {
                           key: idx,
                           attrs: {
                             className: "gallery-item",
-                            "data-src": "/" + src,
+                            "data-src": "https://trainpuma.com/" + src,
                             "data-tweet-text": "Team Faster",
                           },
                         },
                         [
                           _c("img", {
                             staticClass: "img-responsive",
-                            attrs: { src: src, loading: "lazy" },
+                            attrs: { src: "/" + src, loading: "lazy" },
                           }),
                         ]
                       )

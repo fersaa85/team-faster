@@ -289,7 +289,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.2.0");
+    console.log("v=2.2.2");
     window.scrollTo(0, 0);
     this.setLogoInicio(); // this.setFondoInicio();
 
