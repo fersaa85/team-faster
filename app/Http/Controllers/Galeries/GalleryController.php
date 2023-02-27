@@ -9,8 +9,8 @@ use Illuminate\Routing\Controller;
 
 class GalleryController extends Controller
 {
-    public function __invoke()
+    public function __invoke($woroutId)
     {
-        return (GalleryResource::collection(Gallery::get()));
+        return GalleryResource::collection(Gallery::where('workout_id',$woroutId)->get());
     }
 }

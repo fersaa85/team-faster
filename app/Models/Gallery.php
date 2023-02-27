@@ -18,4 +18,11 @@ class Gallery extends Model
         'id',
         'name',
     ];
+
+    public function setNameAttribute($pictures)
+    {
+        if (is_array($pictures)) {
+            $this->attributes['name'] = json_encode($pictures);
+        }
+    }
 }

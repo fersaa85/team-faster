@@ -1011,7 +1011,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.1.8");
+    console.log("v=2.2.0");
     var slug = this.$route.params.slug;
     window.scrollTo(0, 0);
     this.setElement(this.$refs.img1);
@@ -2706,7 +2706,7 @@ var staticRenderFns = [
             },
             [
               _vm._v(
-                "¡Gracias por querer ser parte de nuestra familia teamfaster!"
+                "¡Gracias por querer ser parte de nuestra familia Train Puma!"
               ),
             ]
           ),
@@ -2715,7 +2715,11 @@ var staticRenderFns = [
             "div",
             {
               staticClass: "join-text-r2 puma-bold",
-              staticStyle: { color: "#000000", "text-align": "center" },
+              staticStyle: {
+                color: "#ffffff",
+                "text-align": "center",
+                "font-size": "30px",
+              },
             },
             [
               _vm._v(

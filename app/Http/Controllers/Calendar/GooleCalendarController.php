@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Calendar;
 
-use App\Http\Resources\Venues\VenueResourceCollection;
+use App\Http\Resources\Venues\VenueGalleryResourceCollection;
 use App\Models\Venue;
 use Illuminate\Routing\Controller;
 

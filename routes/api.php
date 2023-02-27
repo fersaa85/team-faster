@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\Venues\VenuesController;
 use App\Http\Controllers\Galeries\GalleryController;
+use App\Http\Controllers\Galeries\VenuesGalleryController;
 
 
 /*
@@ -43,7 +44,8 @@ Route::group([
     'prefix' => 'galeries',
     //'middleware' => 'auth:api'
 ], function() {
-    Route::get('/', GalleryController::class);
+    Route::get('/', VenuesGalleryController::class);
+    Route::get('/{gallery}', GalleryController::class);
 });
 
 Route::group([

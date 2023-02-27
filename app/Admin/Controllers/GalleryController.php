@@ -65,10 +65,12 @@ class GalleryController extends AdminController
 
         //$form->text('name', __('Name'));
         //$form->hidden('id');
-        $form->image('name', 'Imagen');
+        //$form->image('name', 'Imagen');
+        $form->multipleImage('name', 'imagenes')->move('galeria/la_mexicana/');
         $form->select('workout_id',  __('Evento'))->options(function ($id) {
-            return Workout::where( DB::raw('YEAR(created_at)'), '=', '2023' )->pluck('date_start', 'id');
+            return Workout::where( DB::raw('YEAR(date_start)'), '=', '2023' )->where('active', 1)->pluck('date_start', 'id');
         });
+
 
         return $form;
     }

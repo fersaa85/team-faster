@@ -65,6 +65,11 @@ const routes = [
     },
     {
         path: '/galeria',
+        component: () => import('../Pages/v2/VenuesGallery.vue'),
+        name: 'galeria'
+    },
+    {
+        path: '/galeria/:workoutId',
         component: () => import('../Pages/v2/Galeria.vue'),
         name: 'galeria'
     },
@@ -86,7 +91,8 @@ const routes = [
     {
         path: '/registro/:slug',
         component: () => import('../Pages/v2/Registro.vue'),
-    }
+    },
+    { path: '*', redirect: '/' }
 ];
 
 

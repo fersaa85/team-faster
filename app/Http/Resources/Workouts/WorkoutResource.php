@@ -3,7 +3,7 @@
 namespace App\Http\Resources\Workouts;
 
 use App\Http\Resources\Coaches\CoacheResource;
-use App\Http\Resources\Venues\VenueResource;
+use App\Http\Resources\Venues\VenueGalleryResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 use App\Models\WorkoutUser;
 use App\Models\WorkoutLimit;
@@ -23,7 +23,7 @@ class WorkoutResource extends JsonResource
         $limit = WorkoutLimit::first();
         return [
             'id' => $this->id,
-            'venue' => new VenueResource($this->venue),
+            'venue' => new VenueGalleryResource($this->venue),
             'coatch' => new CoacheResource($this->coatch),
             'date_start' => $this->date_start,
             'description' => isset($this->description) ? $this->description : '',
