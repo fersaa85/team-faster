@@ -214,8 +214,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 
@@ -234,15 +232,17 @@ __webpack_require__.r(__webpack_exports__);
     SocialNetwork: _Components_SocialNetwork_vue__WEBPACK_IMPORTED_MODULE_10__["default"]
   },
   data: function data() {
-    return {};
+    return {
+      galery: []
+    };
   },
   mounted: function mounted() {
     var _this = this;
 
     console.log("v=2.2.0");
-    axios.get('api/galeries').then(function (_ref) {
+    axios.get('api/galeries/' + this.$route.params.workoutId).then(function (_ref) {
       var data = _ref.data;
-      _this.galery = [].concat(data.data);
+      _this.galery = [].concat(JSON.parse(data.data[0].name));
     });
     window.scrollTo(0, 0);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("#lightgallery").justifiedGallery({
@@ -13540,20 +13540,20 @@ var render = function () {
         "div",
         { staticClass: "gallery-container" },
         [
-           true
+          _vm.galery.length
             ? [
                 _c("div", { staticClass: "app-container" }, [
                   _c(
                     "div",
                     { attrs: { id: "lightgallery" } },
-                    _vm._l(_vm.xochipilli, function (src, idx) {
+                    _vm._l(_vm.galery, function (src, idx) {
                       return _c(
                         "a",
                         {
                           key: idx,
                           attrs: {
                             className: "gallery-item",
-                            "data-src": src,
+                            "data-src": "/" + src,
                             "data-tweet-text": "Team Faster",
                           },
                         },
@@ -13569,33 +13569,31 @@ var render = function () {
                   ),
                 ]),
               ]
-            : 0,
+            : [
+                _c(
+                  "div",
+                  { staticClass: "soon-style" },
+                  [
+                    _c("b-image", {
+                      attrs: {
+                        responsive: "",
+                        src: "/assets/img/soon.png",
+                        ratio: "1051by145",
+                      },
+                    }),
+                  ],
+                  1
+                ),
+              ],
         ],
         2
       ),
-      _vm._v(" "),
-      [
-        _c(
-          "div",
-          { staticClass: "soon-style" },
-          [
-            _c("b-image", {
-              attrs: {
-                responsive: "",
-                src: "/assets/img/soon.png",
-                ratio: "1051by145",
-              },
-            }),
-          ],
-          1
-        ),
-      ],
       _vm._v(" "),
       _c("Footer", { staticClass: "footer-style" }),
       _vm._v(" "),
       _c("div", { staticClass: "netw-style " }, [_c("SocialNetwork")], 1),
     ],
-    2
+    1
   )
 }
 var staticRenderFns = [

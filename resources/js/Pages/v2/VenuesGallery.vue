@@ -94,8 +94,8 @@ export default {
             });
     },
     methods: {
-        handleGoTo(slug){
-            this.$router.push('/gallery/'+slug);
+        handleGoTo(id){
+            this.$router.push('/galeria/'+id);
         },
         setElement(el){
             this.gsap.to(
@@ -133,6 +133,9 @@ export default {
 <style lang="scss" scoped>
     .footer-style{
       bottom: 0;
+    }
+    .venue-active{
+      color: #ffffff;
     }
   .gallery{
     background: url(/assets/img/fondo-galeria-web-puma.jpg);

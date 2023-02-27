@@ -21,14 +21,14 @@
         <div class="column"></div>
       </div>
     <div class="gallery-container">
-      <template v-if=" true ">
+      <template v-if=" galery.length ">
         <div class="app-container">
           <div id="lightgallery">
             <a
-              v-for="(src, idx) in xochipilli"
+              v-for="(src, idx) in galery"
               :key="idx"
               className="gallery-item"
-              :data-src="src"
+              :data-src="`/${src}`"
               data-tweet-text="Team Faster"
             >
               <img class="img-responsive" :src="src" loading="lazy"/>
@@ -36,9 +36,7 @@
           </div>
         </div>
       </template>
-     
-    </div>
-    <template>
+      <template v-else>
             <div class="soon-style">
                 <b-image
                 responsive
@@ -47,7 +45,7 @@
                 ></b-image>
             </div>
         </template>
-
+    </div>
     <Footer class="footer-style"></Footer>
     <div class="netw-style ">
       <SocialNetwork></SocialNetwork>
@@ -75,16 +73,18 @@ export default {
       Footer, SocialNetwork
   },
   data() {
-      return {};
+      return {
+          galery: []
+      };
     },
 
     mounted() {
       console.log( "v=2.2.0" );
 
         axios
-            .get('api/galeries')
+            .get('api/galeries/'+this.$route.params.workoutId)
             .then(({ data }) => {
-                this.galery = [].concat(data.data);
+                this.galery = [].concat(JSON.parse(data.data[0].name));
             });
 
 
