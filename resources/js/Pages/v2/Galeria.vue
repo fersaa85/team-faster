@@ -187,7 +187,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=2.2.4" );
+      console.log( "v=2.2.5" );
         /*
         axios
             .get('api/galeries/'+this.$route.params.workoutId)
@@ -277,6 +277,7 @@ export default {
     background-size: auto;
     min-height: 100vh;
     overflow: hidden;
+    padding-top: 244px;
     @media screen and (max-width: 768px) {
             padding-top: 144px;
     }

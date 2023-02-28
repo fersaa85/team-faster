@@ -83,7 +83,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=2.2.4" );
+      console.log( "v=2.2.5" );
       window.scrollTo(0, 0);
 
 
@@ -141,13 +141,10 @@ export default {
     background: url(/assets/img/fondo-galeria-web-puma.jpg);
     background-size: cover;
     min-height: 100vh;
-    padding: 32px;
     padding-top: 244px;
     overflow: hidden;
-    margin: 212px 20px 0;
     @media screen and (max-width: 768px) {
       padding-top: 144px;
-      margin: 112px 20px 0;
     }
   }
   .gallery-container{
