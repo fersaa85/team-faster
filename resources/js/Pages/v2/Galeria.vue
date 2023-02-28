@@ -21,7 +21,7 @@
         <div class="column"></div>
       </div>
     <div class="gallery-container">
-      <template v-if=" galery.length ">
+
         <div class="app-container">
           <div id="lightgallery">
             <a
@@ -29,13 +29,14 @@
               :key="idx"
               className="gallery-item"
               :data-src="`https://trainpuma.com/${src}`"
-              data-tweet-text="Team Faster"
+              data-tweet-text="Train Puma"
             >
-              <img class="img-responsive" :src="`/${src}`" loading="lazy"/>
+              <img class="img-responsive" :src="`https://trainpuma.com/${src}`" loading="lazy"/>
             </a>
           </div>
         </div>
-      </template>
+
+        <!--
       <template v-else>
             <div class="soon-style">
                 <b-image
@@ -45,6 +46,7 @@
                 ></b-image>
             </div>
         </template>
+        -->
     </div>
     <Footer class="footer-style"></Footer>
     <div class="netw-style ">
@@ -74,18 +76,125 @@ export default {
   },
   data() {
       return {
-          galery: []
+          galery: [
+              'gallery/la_mexicana/IMG_5882.JPG',
+              'gallery/la_mexicana/IMG_5887.JPG',
+              'gallery/la_mexicana/IMG_5889.JPG',
+              'gallery/la_mexicana/IMG_5892.JPG',
+              'gallery/la_mexicana/IMG_5896.JPG',
+              'gallery/la_mexicana/IMG_5902.JPG',
+              'gallery/la_mexicana/IMG_5906.JPG',
+              'gallery/la_mexicana/IMG_5911.JPG',
+              'gallery/la_mexicana/IMG_5919.JPG',
+              'gallery/la_mexicana/IMG_5926.JPG',
+              'gallery/la_mexicana/IMG_5928.JPG',
+              'gallery/la_mexicana/IMG_5929.JPG',
+              'gallery/la_mexicana/IMG_5931.JPG',
+              'gallery/la_mexicana/IMG_5935.JPG',
+              'gallery/la_mexicana/IMG_5939.JPG',
+              'gallery/la_mexicana/IMG_5943.JPG',
+              'gallery/la_mexicana/IMG_5946.JPG',
+              'gallery/la_mexicana/IMG_5947.JPG',
+              'gallery/la_mexicana/IMG_5949.JPG',
+
+              'gallery/la_mexicana/IMG_5952.JPG',
+              'gallery/la_mexicana/IMG_5955.JPG',
+              'gallery/la_mexicana/IMG_5965.JPG',
+              'gallery/la_mexicana/IMG_5971.JPG',
+              'gallery/la_mexicana/IMG_5972.JPG',
+              'gallery/la_mexicana/IMG_5977.JPG',
+              'gallery/la_mexicana/IMG_5981.JPG',
+              'gallery/la_mexicana/IMG_5984.JPG',
+              'gallery/la_mexicana/IMG_5986.JPG',
+              'gallery/la_mexicana/IMG_5993.JPG',
+              'gallery/la_mexicana/IMG_5996.JPG',
+              'gallery/la_mexicana/IMG_6000.JPG',
+              'gallery/la_mexicana/IMG_6004.JPG',
+              'gallery/la_mexicana/IMG_6007.JPG',
+              'gallery/la_mexicana/IMG_6010.JPG',
+              'gallery/la_mexicana/IMG_6016.JPG',
+              'gallery/la_mexicana/IMG_6018.JPG',
+              'gallery/la_mexicana/IMG_6024.JPG',
+              'gallery/la_mexicana/IMG_6026.JPG',
+
+              'gallery/la_mexicana/IMG_6028.JPG',
+              'gallery/la_mexicana/IMG_6031.JPG',
+              'gallery/la_mexicana/IMG_6034.JPG',
+              'gallery/la_mexicana/IMG_6035.JPG',
+              'gallery/la_mexicana/IMG_6036.JPG',
+              'gallery/la_mexicana/IMG_6038.JPG',
+              'gallery/la_mexicana/IMG_6040.JPG',
+              'gallery/la_mexicana/IMG_6046.JPG',
+              'gallery/la_mexicana/IMG_6047.JPG',
+              'gallery/la_mexicana/IMG_6049.JPG',
+              'gallery/la_mexicana/IMG_6051.JPG',
+              'gallery/la_mexicana/IMG_6054.JPG',
+              'gallery/la_mexicana/IMG_6055.JPG',
+              'gallery/la_mexicana/IMG_6056.JPG',
+              'gallery/la_mexicana/IMG_6057.JPG',
+              'gallery/la_mexicana/IMG_6060.JPG',
+              'gallery/la_mexicana/IMG_6067.JPG',
+              'gallery/la_mexicana/IMG_6070.JPG',
+              'gallery/la_mexicana/IMG_6071.JPG',
+
+              'gallery/la_mexicana/IMG_6072.JPG',
+              'gallery/la_mexicana/IMG_6075.JPG',
+              'gallery/la_mexicana/IMG_6079.JPG',
+              'gallery/la_mexicana/IMG_6082.JPG',
+              'gallery/la_mexicana/IMG_6083.JPG',
+              'gallery/la_mexicana/IMG_6084.JPG',
+              'gallery/la_mexicana/IMG_6086.JPG',
+              'gallery/la_mexicana/IMG_6087.JPG',
+              'gallery/la_mexicana/IMG_6089.JPG',
+              'gallery/la_mexicana/IMG_6092.JPG',
+              'gallery/la_mexicana/IMG_6094.JPG',
+              'gallery/la_mexicana/IMG_6095.JPG',
+              'gallery/la_mexicana/IMG_6096.JPG',
+              'gallery/la_mexicana/IMG_6097.JPG',
+              'gallery/la_mexicana/IMG_6103.JPG',
+              'gallery/la_mexicana/IMG_6105.JPG',
+              'gallery/la_mexicana/IMG_6106.JPG',
+              'gallery/la_mexicana/IMG_6111.JPG',
+
+              'gallery/la_mexicana/IMG_6114.JPG',
+              'gallery/la_mexicana/IMG_6118.JPG',
+              'gallery/la_mexicana/IMG_6120.JPG',
+              'gallery/la_mexicana/IMG_6122.JPG',
+              'gallery/la_mexicana/IMG_6125.JPG',
+              'gallery/la_mexicana/IMG_6128.JPG',
+              'gallery/la_mexicana/IMG_6132.JPG',
+              'gallery/la_mexicana/IMG_6133.JPG',
+              'gallery/la_mexicana/IMG_6135.JPG',
+              'gallery/la_mexicana/IMG_6136.JPG',
+              'gallery/la_mexicana/IMG_6139.JPG',
+              'gallery/la_mexicana/IMG_6140.JPG',
+              'gallery/la_mexicana/IMG_6143.JPG',
+              'gallery/la_mexicana/IMG_6145.JPG',
+              'gallery/la_mexicana/IMG_6147.JPG',
+              'gallery/la_mexicana/IMG_6151.JPG',
+              'gallery/la_mexicana/IMG_6153.JPG',
+              'gallery/la_mexicana/IMG_6156.JPG',
+              'gallery/la_mexicana/IMG_6158.JPG',
+              'gallery/la_mexicana/IMG_6162.JPG',
+              'gallery/la_mexicana/IMG_6164.JPG',
+              'gallery/la_mexicana/IMG_6167.JPG',
+              'gallery/la_mexicana/IMG_6169.JPG',
+              'gallery/la_mexicana/IMG_6171.JPG',
+
+
+          ]
       };
     },
 
     mounted() {
-      console.log( "v=2.2.2" );
-
+      console.log( "v=2.2.3" );
+        /*
         axios
             .get('api/galeries/'+this.$route.params.workoutId)
             .then(({ data }) => {
                 this.galery = [].concat(JSON.parse(data.data[0].name));
             });
+            */
 
 
       window.scrollTo(0, 0);
@@ -165,7 +274,7 @@ export default {
 }
   .gallery{
     background: url(/assets/img/fondo-galeria-web-puma.jpg);
-    background-size: cover;
+    background-size: auto;
     min-height: 100vh;
     padding-top: 244px;
     overflow: hidden;

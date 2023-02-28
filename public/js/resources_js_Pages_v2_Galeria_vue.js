@@ -214,6 +214,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -233,17 +235,19 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      galery: []
+      galery: ['gallery/la_mexicana/IMG_5882.JPG', 'gallery/la_mexicana/IMG_5887.JPG', 'gallery/la_mexicana/IMG_5889.JPG', 'gallery/la_mexicana/IMG_5892.JPG', 'gallery/la_mexicana/IMG_5896.JPG', 'gallery/la_mexicana/IMG_5902.JPG', 'gallery/la_mexicana/IMG_5906.JPG', 'gallery/la_mexicana/IMG_5911.JPG', 'gallery/la_mexicana/IMG_5919.JPG', 'gallery/la_mexicana/IMG_5926.JPG', 'gallery/la_mexicana/IMG_5928.JPG', 'gallery/la_mexicana/IMG_5929.JPG', 'gallery/la_mexicana/IMG_5931.JPG', 'gallery/la_mexicana/IMG_5935.JPG', 'gallery/la_mexicana/IMG_5939.JPG', 'gallery/la_mexicana/IMG_5943.JPG', 'gallery/la_mexicana/IMG_5946.JPG', 'gallery/la_mexicana/IMG_5947.JPG', 'gallery/la_mexicana/IMG_5949.JPG', 'gallery/la_mexicana/IMG_5952.JPG', 'gallery/la_mexicana/IMG_5955.JPG', 'gallery/la_mexicana/IMG_5965.JPG', 'gallery/la_mexicana/IMG_5971.JPG', 'gallery/la_mexicana/IMG_5972.JPG', 'gallery/la_mexicana/IMG_5977.JPG', 'gallery/la_mexicana/IMG_5981.JPG', 'gallery/la_mexicana/IMG_5984.JPG', 'gallery/la_mexicana/IMG_5986.JPG', 'gallery/la_mexicana/IMG_5993.JPG', 'gallery/la_mexicana/IMG_5996.JPG', 'gallery/la_mexicana/IMG_6000.JPG', 'gallery/la_mexicana/IMG_6004.JPG', 'gallery/la_mexicana/IMG_6007.JPG', 'gallery/la_mexicana/IMG_6010.JPG', 'gallery/la_mexicana/IMG_6016.JPG', 'gallery/la_mexicana/IMG_6018.JPG', 'gallery/la_mexicana/IMG_6024.JPG', 'gallery/la_mexicana/IMG_6026.JPG', 'gallery/la_mexicana/IMG_6028.JPG', 'gallery/la_mexicana/IMG_6031.JPG', 'gallery/la_mexicana/IMG_6034.JPG', 'gallery/la_mexicana/IMG_6035.JPG', 'gallery/la_mexicana/IMG_6036.JPG', 'gallery/la_mexicana/IMG_6038.JPG', 'gallery/la_mexicana/IMG_6040.JPG', 'gallery/la_mexicana/IMG_6046.JPG', 'gallery/la_mexicana/IMG_6047.JPG', 'gallery/la_mexicana/IMG_6049.JPG', 'gallery/la_mexicana/IMG_6051.JPG', 'gallery/la_mexicana/IMG_6054.JPG', 'gallery/la_mexicana/IMG_6055.JPG', 'gallery/la_mexicana/IMG_6056.JPG', 'gallery/la_mexicana/IMG_6057.JPG', 'gallery/la_mexicana/IMG_6060.JPG', 'gallery/la_mexicana/IMG_6067.JPG', 'gallery/la_mexicana/IMG_6070.JPG', 'gallery/la_mexicana/IMG_6071.JPG', 'gallery/la_mexicana/IMG_6072.JPG', 'gallery/la_mexicana/IMG_6075.JPG', 'gallery/la_mexicana/IMG_6079.JPG', 'gallery/la_mexicana/IMG_6082.JPG', 'gallery/la_mexicana/IMG_6083.JPG', 'gallery/la_mexicana/IMG_6084.JPG', 'gallery/la_mexicana/IMG_6086.JPG', 'gallery/la_mexicana/IMG_6087.JPG', 'gallery/la_mexicana/IMG_6089.JPG', 'gallery/la_mexicana/IMG_6092.JPG', 'gallery/la_mexicana/IMG_6094.JPG', 'gallery/la_mexicana/IMG_6095.JPG', 'gallery/la_mexicana/IMG_6096.JPG', 'gallery/la_mexicana/IMG_6097.JPG', 'gallery/la_mexicana/IMG_6103.JPG', 'gallery/la_mexicana/IMG_6105.JPG', 'gallery/la_mexicana/IMG_6106.JPG', 'gallery/la_mexicana/IMG_6111.JPG', 'gallery/la_mexicana/IMG_6114.JPG', 'gallery/la_mexicana/IMG_6118.JPG', 'gallery/la_mexicana/IMG_6120.JPG', 'gallery/la_mexicana/IMG_6122.JPG', 'gallery/la_mexicana/IMG_6125.JPG', 'gallery/la_mexicana/IMG_6128.JPG', 'gallery/la_mexicana/IMG_6132.JPG', 'gallery/la_mexicana/IMG_6133.JPG', 'gallery/la_mexicana/IMG_6135.JPG', 'gallery/la_mexicana/IMG_6136.JPG', 'gallery/la_mexicana/IMG_6139.JPG', 'gallery/la_mexicana/IMG_6140.JPG', 'gallery/la_mexicana/IMG_6143.JPG', 'gallery/la_mexicana/IMG_6145.JPG', 'gallery/la_mexicana/IMG_6147.JPG', 'gallery/la_mexicana/IMG_6151.JPG', 'gallery/la_mexicana/IMG_6153.JPG', 'gallery/la_mexicana/IMG_6156.JPG', 'gallery/la_mexicana/IMG_6158.JPG', 'gallery/la_mexicana/IMG_6162.JPG', 'gallery/la_mexicana/IMG_6164.JPG', 'gallery/la_mexicana/IMG_6167.JPG', 'gallery/la_mexicana/IMG_6169.JPG', 'gallery/la_mexicana/IMG_6171.JPG']
     };
   },
   mounted: function mounted() {
-    var _this = this;
-
     console.log("v=2.2.2");
-    axios.get('api/galeries/' + this.$route.params.workoutId).then(function (_ref) {
-      var data = _ref.data;
-      _this.galery = [].concat(JSON.parse(data.data[0].name));
-    });
+    /*
+    axios
+        .get('api/galeries/'+this.$route.params.workoutId)
+        .then(({ data }) => {
+            this.galery = [].concat(JSON.parse(data.data[0].name));
+        });
+        */
+
     window.scrollTo(0, 0);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("#lightgallery").justifiedGallery({
       captions: false,
@@ -366,7 +370,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".footer-style[data-v-3634e7ed] {\n  bottom: 0;\n}\n.gallery[data-v-3634e7ed] {\n  background: url(/assets/img/fondo-galeria-web-puma.jpg);\n  background-size: cover;\n  min-height: 100vh;\n  padding-top: 244px;\n  overflow: hidden;\n}\n@media screen and (max-width: 768px) {\n.gallery[data-v-3634e7ed] {\n    padding-top: 144px;\n}\n}\n.gallery-container[data-v-3634e7ed] {\n  margin: 0 40px;\n}\n.title-venues[data-v-3634e7ed] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-3634e7ed] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-venues2[data-v-3634e7ed] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-3634e7ed] {\n    font-size: 115px;\n}\n}\n.title-image[data-v-3634e7ed] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-3634e7ed] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-3634e7ed] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.footer-styles[data-v-3634e7ed] {\n  width: 100%;\n  margin: 0;\n  padding: 96px 20px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-3634e7ed] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3634e7ed] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3634e7ed] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3634e7ed] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.text-title[data-v-3634e7ed] {\n  text-align: right;\n  text-transform: uppercase;\n  color: white;\n  line-height: 61px;\n  margin-right: -10px;\n}\n@media screen and (max-width: 768px) {\n.text-title[data-v-3634e7ed] {\n    text-align: center;\n    margin: auto;\n    line-height: 61px;\n}\n}\n.text-title1[data-v-3634e7ed] {\n  font-size: 66px;\n}\n@media screen and (max-width: 768px) {\n.text-title1[data-v-3634e7ed] {\n    font-size: 45px;\n}\n}\n.text-title2[data-v-3634e7ed] {\n  font-size: 50px;\n}\n@media screen and (max-width: 768px) {\n.text-title2[data-v-3634e7ed] {\n    font-size: 40px;\n}\n}\n.container-title[data-v-3634e7ed] {\n  margin-bottom: 95px;\n}\n.line-middle[data-v-3634e7ed] {\n  height: 100px;\n  width: 12px;\n  background-color: #b99571;\n  margin: auto;\n  margin-top: 1px;\n  border-radius: 7px;\n}\n@media screen and (max-width: 768px) {\n.line-middle[data-v-3634e7ed] {\n    width: 100px;\n    height: 12px;\n}\n}\n.logo-style[data-v-3634e7ed] {\n  padding-top: 7px;\n  margin-left: -15px;\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-3634e7ed] {\n    width: 60%;\n    margin-left: 0;\n    margin: auto;\n}\n}\n.soon-style[data-v-3634e7ed] {\n  width: 30%;\n  margin: -23px auto 140px;\n}\n@media screen and (max-width: 768px) {\n.soon-style[data-v-3634e7ed] {\n    width: 80%;\n    margin-left: 0;\n    margin: -40px auto 140px;\n}\n}\n.netw-style[data-v-3634e7ed] {\n  width: 65px;\n  position: absolute;\n  top: 400px;\n}\n@media screen and (max-width: 768px) {\n.netw-style[data-v-3634e7ed] {\n    display: none;\n    width: 60px;\n    top: 530px;\n}\n}\n.netw-style .socialnetwork[data-v-3634e7ed] {\n  width: 60px;\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".footer-style[data-v-3634e7ed] {\n  bottom: 0;\n}\n.gallery[data-v-3634e7ed] {\n  background: url(/assets/img/fondo-galeria-web-puma.jpg);\n  background-size: auto;\n  min-height: 100vh;\n  padding-top: 244px;\n  overflow: hidden;\n}\n@media screen and (max-width: 768px) {\n.gallery[data-v-3634e7ed] {\n    padding-top: 144px;\n}\n}\n.gallery-container[data-v-3634e7ed] {\n  margin: 0 40px;\n}\n.title-venues[data-v-3634e7ed] {\n  font-size: 100px;\n  color: white;\n  line-height: 90px;\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.title-venues[data-v-3634e7ed] {\n    font-size: 90px;\n    line-height: 80px;\n    text-align: center;\n}\n}\n.title-venues2[data-v-3634e7ed] {\n  font-size: 125px;\n}\n@media screen and (max-width: 768px) {\n.title-venues2[data-v-3634e7ed] {\n    font-size: 115px;\n}\n}\n.title-image[data-v-3634e7ed] {\n  width: 158px;\n}\n@media screen and (max-width: 768px) {\n.title-image[data-v-3634e7ed] {\n    text-align: right;\n    margin-left: auto;\n    margin-right: auto;\n    width: 35%;\n}\n}\n@media screen and (min-width: 769px) {\n.title-image[data-v-3634e7ed] {\n    margin-left: 48px;\n    padding-top: 14px;\n}\n}\n.footer-styles[data-v-3634e7ed] {\n  width: 100%;\n  margin: 0;\n  padding: 96px 20px 48px;\n  background: linear-gradient(transparent, 35%, #110315);\n  opacity: 1;\n}\n.footer-styles .footer-1[data-v-3634e7ed] {\n  text-align: left;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-1[data-v-3634e7ed] {\n    text-align: center;\n}\n}\n.footer-styles .footer-2[data-v-3634e7ed] {\n  text-align: right;\n}\n@media screen and (max-width: 768px) {\n.footer-styles .footer-2[data-v-3634e7ed] {\n    margin-top: 20px;\n    text-align: center;\n}\n}\n.text-title[data-v-3634e7ed] {\n  text-align: right;\n  text-transform: uppercase;\n  color: white;\n  line-height: 61px;\n  margin-right: -10px;\n}\n@media screen and (max-width: 768px) {\n.text-title[data-v-3634e7ed] {\n    text-align: center;\n    margin: auto;\n    line-height: 61px;\n}\n}\n.text-title1[data-v-3634e7ed] {\n  font-size: 66px;\n}\n@media screen and (max-width: 768px) {\n.text-title1[data-v-3634e7ed] {\n    font-size: 45px;\n}\n}\n.text-title2[data-v-3634e7ed] {\n  font-size: 50px;\n}\n@media screen and (max-width: 768px) {\n.text-title2[data-v-3634e7ed] {\n    font-size: 40px;\n}\n}\n.container-title[data-v-3634e7ed] {\n  margin-bottom: 95px;\n}\n.line-middle[data-v-3634e7ed] {\n  height: 100px;\n  width: 12px;\n  background-color: #b99571;\n  margin: auto;\n  margin-top: 1px;\n  border-radius: 7px;\n}\n@media screen and (max-width: 768px) {\n.line-middle[data-v-3634e7ed] {\n    width: 100px;\n    height: 12px;\n}\n}\n.logo-style[data-v-3634e7ed] {\n  padding-top: 7px;\n  margin-left: -15px;\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-3634e7ed] {\n    width: 60%;\n    margin-left: 0;\n    margin: auto;\n}\n}\n.soon-style[data-v-3634e7ed] {\n  width: 30%;\n  margin: -23px auto 140px;\n}\n@media screen and (max-width: 768px) {\n.soon-style[data-v-3634e7ed] {\n    width: 80%;\n    margin-left: 0;\n    margin: -40px auto 140px;\n}\n}\n.netw-style[data-v-3634e7ed] {\n  width: 65px;\n  position: absolute;\n  top: 400px;\n}\n@media screen and (max-width: 768px) {\n.netw-style[data-v-3634e7ed] {\n    display: none;\n    width: 60px;\n    top: 530px;\n}\n}\n.netw-style .socialnetwork[data-v-3634e7ed] {\n  width: 60px;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -13536,58 +13540,37 @@ var render = function () {
         _c("div", { staticClass: "column" }),
       ]),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "gallery-container" },
-        [
-          _vm.galery.length
-            ? [
-                _c("div", { staticClass: "app-container" }, [
-                  _c(
-                    "div",
-                    { attrs: { id: "lightgallery" } },
-                    _vm._l(_vm.galery, function (src, idx) {
-                      return _c(
-                        "a",
-                        {
-                          key: idx,
-                          attrs: {
-                            className: "gallery-item",
-                            "data-src": "https://trainpuma.com/" + src,
-                            "data-tweet-text": "Team Faster",
-                          },
-                        },
-                        [
-                          _c("img", {
-                            staticClass: "img-responsive",
-                            attrs: { src: "/" + src, loading: "lazy" },
-                          }),
-                        ]
-                      )
-                    }),
-                    0
-                  ),
-                ]),
-              ]
-            : [
-                _c(
-                  "div",
-                  { staticClass: "soon-style" },
-                  [
-                    _c("b-image", {
-                      attrs: {
-                        responsive: "",
-                        src: "/assets/img/soon.png",
-                        ratio: "1051by145",
-                      },
-                    }),
-                  ],
-                  1
-                ),
-              ],
-        ],
-        2
-      ),
+      _c("div", { staticClass: "gallery-container" }, [
+        _c("div", { staticClass: "app-container" }, [
+          _c(
+            "div",
+            { attrs: { id: "lightgallery" } },
+            _vm._l(_vm.galery, function (src, idx) {
+              return _c(
+                "a",
+                {
+                  key: idx,
+                  attrs: {
+                    className: "gallery-item",
+                    "data-src": "https://trainpuma.com/" + src,
+                    "data-tweet-text": "Team Faster",
+                  },
+                },
+                [
+                  _c("img", {
+                    staticClass: "img-responsive",
+                    attrs: {
+                      src: "https://trainpuma.com/" + src,
+                      loading: "lazy",
+                    },
+                  }),
+                ]
+              )
+            }),
+            0
+          ),
+        ]),
+      ]),
       _vm._v(" "),
       _c("Footer", { staticClass: "footer-style" }),
       _vm._v(" "),

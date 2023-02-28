@@ -32,11 +32,11 @@
             ></b-image>
             <div class="columns mt-2">
               <template v-if="venue.workout">
-                <div class="column is-3">
+                <!-- <div class="column is-3">
                   <h3 class="color-white date">
                   </h3>
-                </div>
-                <div class="column is-9 color-white" style="text-align: left">
+                </div> -->
+                <div class="column color-white" style="text-align: right">
                   <div class="text-photo-title venue-active">{{ venue.name }}</div>
                   <div class="contain-register-button">
                     <b-button rounded class="register-button mt-2"  :disabled="venue.gallery == 0"  :data-id="venue.id" @click="handleGoTo(venue.workout_id)">
@@ -83,7 +83,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=2.2.2" );
+      console.log( "v=2.2.3" );
       window.scrollTo(0, 0);
 
 
@@ -141,10 +141,13 @@ export default {
     background: url(/assets/img/fondo-galeria-web-puma.jpg);
     background-size: cover;
     min-height: 100vh;
+    padding: 32px;
     padding-top: 244px;
     overflow: hidden;
+    margin: 212px 20px 0;
     @media screen and (max-width: 768px) {
       padding-top: 144px;
+      margin: 112px 20px 0;
     }
   }
   .gallery-container{
