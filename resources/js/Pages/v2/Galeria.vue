@@ -276,7 +276,6 @@ export default {
     background: url(/assets/img/fondo-galeria-web-puma.jpg);
     background-size: auto;
     min-height: 100vh;
-    padding-top: 244px;
     overflow: hidden;
     @media screen and (max-width: 768px) {
             padding-top: 144px;
