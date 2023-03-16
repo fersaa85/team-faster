@@ -185,6 +185,7 @@ import SuccessModal from '@/Components/Success.vue';
       };
     },
     mounted(){
+      console.log("v=2.3.1");
       this.setForm();
       this.setText1();
       this.setText2();

@@ -69,7 +69,7 @@ export default {
         };
     },
    mounted() {
-       console.log( "v=2.0.5" );
+       console.log( "v=2.3.1" );
        axios
            .get(`/api/sponsors`)
            .then(({ data: { data } }) => {

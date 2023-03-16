@@ -187,7 +187,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=2.3.0" );
+      console.log( "v=2.3.1" );
         /*
         axios
             .get('api/galeries/'+this.$route.params.workoutId)

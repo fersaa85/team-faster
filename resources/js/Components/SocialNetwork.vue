@@ -22,6 +22,9 @@
         props: {
 
         },
+        mounted() {
+            console.log("v=2.3.1");
+        },
     }
 </script>
 <style lang="scss" scoped>

@@ -117,7 +117,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.0.5");
+    console.log("v=2.3.1");
     axios.get("/api/sponsors").then(function (_ref) {
       var data = _ref.data.data;
       _this.sponsors = [].concat(data);
@@ -300,7 +300,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
-    console.log("v=2.0.9");
+    console.log("v=2.3.1");
   },
   methods: {
     handleSubmit: function handleSubmit() {
@@ -558,6 +558,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
+    console.log("v=2.3.1");
     this.setForm();
     this.setText1();
     this.setText2();
@@ -679,7 +680,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'socialnetwork',
-  props: {}
+  props: {},
+  mounted: function mounted() {
+    console.log("v=2.3.1");
+  }
 });
 
 /***/ }),
@@ -1011,7 +1015,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.2.2");
+    console.log("v=2.3.1");
     var slug = this.$route.params.slug;
     window.scrollTo(0, 0);
     this.setElement(this.$refs.img1);
@@ -2456,7 +2460,7 @@ var render = function () {
             staticClass: "recaptcha-container",
             attrs: {
               id: "recaptcha",
-              sitekey: "6LdDSI8kAAAAAD2YJ7RWK7qSc2qA6JA3gYchSQJ3",
+              sitekey: "6LdyTAklAAAAAPJlz9WxSzPiz3oqDcfnk8kP71z5",
             },
             on: {
               verify: _vm.verifyMethod,

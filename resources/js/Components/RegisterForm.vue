@@ -152,7 +152,7 @@
       };
     },
     mounted() {
-          console.log("v=2.3.0");
+          console.log("v=2.3.1");
     },
     methods:{
         handleSubmit(){
