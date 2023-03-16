@@ -145,7 +145,7 @@ export default {
       };
     },
     mounted() {
-      console.log( "v=2.2.5" );
+      console.log( "v=2.3.0" );
       window.scrollTo(0, 0);
       this.setLogoInicio();
       // this.setFondoInicio();

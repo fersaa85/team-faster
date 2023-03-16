@@ -28,10 +28,10 @@
               v-for="(src, idx) in galery"
               :key="idx"
               className="gallery-item"
-              :data-src="`https://trainpuma.com/${src}`"
+              :data-src="`https://trainpuma.mx/${src}`"
               data-tweet-text="Train Puma"
             >
-              <img class="img-responsive" :src="`https://trainpuma.com/${src}`" loading="lazy"/>
+              <img class="img-responsive" :src="`https://trainpuma.mx/${src}`" loading="lazy"/>
             </a>
           </div>
         </div>
@@ -187,7 +187,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=2.2.5" );
+      console.log( "v=2.3.0" );
         /*
         axios
             .get('api/galeries/'+this.$route.params.workoutId)
