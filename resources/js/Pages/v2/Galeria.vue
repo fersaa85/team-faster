@@ -21,7 +21,7 @@
         <div class="column"></div>
       </div>
     <div class="gallery-container">
-        <template v-if="this.$route.params.venueId == 20">
+        <template v-if="this.$route.params.workoutId == 20">
             <div class="app-container">
               <div id="lightgallery">
                 <a
@@ -36,7 +36,7 @@
               </div>
             </div>
         </template>
-        <template v-if="this.$route.params.venueId == 12">
+        <template v-if="this.$route.params.workoutId == 12">
             <div class="app-container">
                 <div id="lightgallery">
                     <a
@@ -261,7 +261,7 @@ export default {
     },
 
     mounted() {
-      console.log( "v=2.3.2" );
+      console.log( "v=2.3.3" );
         /*
         axios
             .get('api/galeries/'+this.$route.params.workoutId)
