@@ -21,21 +21,36 @@
         <div class="column"></div>
       </div>
     <div class="gallery-container">
-
-        <div class="app-container">
-          <div id="lightgallery">
-            <a
-              v-for="(src, idx) in galery"
-              :key="idx"
-              className="gallery-item"
-              :data-src="`https://trainpuma.mx/${src}`"
-              data-tweet-text="Train Puma"
-            >
-              <img class="img-responsive" :src="`https://trainpuma.mx/${src}`" loading="lazy"/>
-            </a>
-          </div>
-        </div>
-
+        <template v-if="this.$route.params.venueId == 20">
+            <div class="app-container">
+              <div id="lightgallery">
+                <a
+                  v-for="(src, idx) in galery"
+                  :key="idx"
+                  className="gallery-item"
+                  :data-src="`https://trainpuma.mx/${src}`"
+                  data-tweet-text="Train Puma"
+                >
+                  <img class="img-responsive" :src="`https://trainpuma.mx/${src}`" loading="lazy"/>
+                </a>
+              </div>
+            </div>
+        </template>
+        <template v-if="this.$route.params.venueId == 12">
+            <div class="app-container">
+                <div id="lightgallery">
+                    <a
+                            v-for="(src, idx) in mazatlan"
+                            :key="idx"
+                            className="gallery-item"
+                            :data-src="`https://trainpuma.mx/${src}`"
+                            data-tweet-text="Train Puma"
+                    >
+                        <img class="img-responsive" :src="`https://trainpuma.mx/${src}`" loading="lazy"/>
+                    </a>
+                </div>
+            </div>
+        </template>
         <!--
       <template v-else>
             <div class="soon-style">
@@ -182,12 +197,71 @@ export default {
               'gallery/la_mexicana/IMG_6171.JPG',
 
 
+          ],
+
+          mazatlan: [
+              'gallery/mazatlan/IMG_0001.jpg',
+              'gallery/mazatlan/IMG_0002.jpg',
+              'gallery/mazatlan/IMG_0005.jpg',
+              'gallery/mazatlan/IMG_0007.jpg',
+              'gallery/mazatlan/IMG_0010.jpg',
+              'gallery/mazatlan/IMG_0013.jpg',
+              'gallery/mazatlan/IMG_0020.jpg',
+              'gallery/mazatlan/IMG_0021.jpg',
+              'gallery/mazatlan/IMG_0026.jpg',
+              'gallery/mazatlan/IMG_0030.jpg',
+              'gallery/mazatlan/IMG_0034.jpg',
+              'gallery/mazatlan/IMG_0036.jpg',
+              'gallery/mazatlan/IMG_0040.jpg',
+              'gallery/mazatlan/IMG_0042.jpg',
+              'gallery/mazatlan/IMG_0043.jpg',
+              'gallery/mazatlan/IMG_0046.jpg',
+              'gallery/mazatlan/IMG_0052.jpg',
+              'gallery/mazatlan/IMG_0054.jpg',
+              'gallery/mazatlan/IMG_0057.jpg',
+              'gallery/mazatlan/IMG_0060.jpg',
+              'gallery/mazatlan/IMG_0063.jpg',
+              'gallery/mazatlan/IMG_0066.jpg',
+              'gallery/mazatlan/IMG_0069.jpg',
+              'gallery/mazatlan/IMG_0072.jpg',
+              'gallery/mazatlan/IMG_0075.jpg',
+              'gallery/mazatlan/IMG_0079.jpg',
+              'gallery/mazatlan/IMG_0086.jpg',
+              'gallery/mazatlan/IMG_0089.jpg',
+              'gallery/mazatlan/IMG_0093.jpg',
+              'gallery/mazatlan/IMG_0095.jpg',
+              'gallery/mazatlan/IMG_0098.jpg',
+              'gallery/mazatlan/IMG_0107.jpg',
+              'gallery/mazatlan/IMG_9470.jpg',
+              'gallery/mazatlan/IMG_9475.jpg',
+              'gallery/mazatlan/IMG_9477.jpg',
+              'gallery/mazatlan/IMG_9480.jpg',
+              'gallery/mazatlan/IMG_9481.jpg',
+              'gallery/mazatlan/IMG_9485.jpg',
+              'gallery/mazatlan/IMG_9489.jpg',
+              'gallery/mazatlan/IMG_9490.jpg',
+              'gallery/mazatlan/IMG_9494.jpg',
+              'gallery/mazatlan/IMG_9501.jpg',
+              'gallery/mazatlan/IMG_9507.jpg',
+              'gallery/mazatlan/IMG_9510.jpg',
+              'gallery/mazatlan/IMG_9516.jpg',
+              'gallery/mazatlan/IMG_9519.jpg',
+              'gallery/mazatlan/IMG_9529.jpg',
+              'gallery/mazatlan/IMG_9542.jpg',
+              'gallery/mazatlan/IMG_9545.jpg',
+              'gallery/mazatlan/IMG_9570.jpg',
+              'gallery/mazatlan/IMG_9586.jpg',
+              'gallery/mazatlan/IMG_9607.jpg',
+              'gallery/mazatlan/IMG_9616.jpg',
+              'gallery/mazatlan/IMG_9621.jpg',
+              'gallery/mazatlan/IMG_9629.jpg',
+              'gallery/mazatlan/IMG_9637.jpg',
           ]
       };
     },
 
     mounted() {
-      console.log( "v=2.3.1" );
+      console.log( "v=2.3.2" );
         /*
         axios
             .get('api/galeries/'+this.$route.params.workoutId)
