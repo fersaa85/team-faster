@@ -3,6 +3,7 @@
 namespace App\Admin\Controllers;
 
 use App\Models\Gallery;
+use App\Models\Venue;
 use App\Models\Workout;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
@@ -47,7 +48,14 @@ class GalleryController extends AdminController
         $show = new Show(Gallery::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('name', __('Name'));
+        //$show->field('name', __('Name'));
+        // show multiple images
+        $show->column('pictures')->display(function ($pictures) {
+
+            return json_decode($pictures, true);
+
+        })->image('http://xxx.com', 100, 100);
+
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -63,10 +71,12 @@ class GalleryController extends AdminController
     {
         $form = new Form(new Gallery());
 
+        $first = Workout::where( DB::raw('YEAR(date_start)'), '=', '2023' )->where('active', 1)->first(['venue_id']);
+        $venue = Venue::find($first->venue_id);
         //$form->text('name', __('Name'));
         //$form->hidden('id');
         //$form->image('name', 'Imagen');
-        $form->multipleImage('name', 'imagenes')->move('galeria/la_mexicana');
+        $form->multipleImage('name', 'imagenes')->move("gallery/{$venue->slug}");
         $form->select('workout_id',  __('Evento'))->options(function ($id) {
             return Workout::where( DB::raw('YEAR(date_start)'), '=', '2023' )->where('active', 1)->pluck('date_start', 'id');
         });
