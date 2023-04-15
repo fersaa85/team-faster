@@ -268,14 +268,19 @@
                                     <td>
                                         <img src="https://trainpuma.mx/assets/img/G_Logo_Blanco.png" width="100px">
                                     </td>
+                                    <!--
                                     <td>
                                         <img src="https://trainpuma.mx/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png" width="100px">
                                     </td>
+                                    -->
                                     <td>
                                         <img src="https://trainpuma.mx/assets/img/Logo_NV.png" width="100px">
                                     </td>
                                     <td>
                                         <img src="https://trainpuma.mx/assets/img/ISDIN-Love-Your-Skin_Blanco.png" width="100px">
+                                    </td>
+                                    <td>
+                                        <img src="https://trainpuma.mx/assets/img/logo_animal.png" width="100px">
                                     </td>
                                 </tr>
                             </table>

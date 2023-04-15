@@ -72,6 +72,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   data: function data() {
@@ -224,7 +232,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.3.1");
+    console.log("v=2.3.5");
     window.scrollTo(0, 0);
     axios.get('api/coaches').then(function (_ref) {
       var data = _ref.data;
@@ -791,24 +799,6 @@ var staticRenderFns = [
       "div",
       { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
       [
-        _c("p", { staticClass: "text-center" }, [
-          _c("img", {
-            attrs: {
-              src: "/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png",
-            },
-          }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
         _c("p", { staticClass: "text-center nature" }, [
           _c("img", { attrs: { src: "/assets/img/Logo_NV.png" } }),
         ]),
@@ -827,6 +817,20 @@ var staticRenderFns = [
           _c("img", {
             attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
           }),
+        ]),
+      ]
+    )
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
+      [
+        _c("p", { staticClass: "text-center nature" }, [
+          _c("img", { attrs: { src: "/assets/img/logo_animal.png" } }),
         ]),
       ]
     )

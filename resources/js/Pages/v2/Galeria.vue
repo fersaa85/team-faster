@@ -25,7 +25,7 @@
             <div class="app-container">
               <div id="lightgallery">
                 <a
-                  v-for="(src, idx) in galery"
+                  v-for="(src, idx) in laMexicana"
                   :key="idx"
                   className="gallery-item"
                   :data-src="`https://trainpuma.mx/${src}`"
@@ -51,17 +51,23 @@
                 </div>
             </div>
         </template>
-        <!--
-      <template v-else>
-            <div class="soon-style">
-                <b-image
-                responsive
-                src="/assets/img/soon.png"
-                ratio="1051by145"
-                ></b-image>
+
+        <template v-if="galeries.length">
+            <div class="app-container">
+                <div id="lightgallery">
+                    <a
+                            v-for="(src, idx) in galeries"
+                            :key="idx"
+                            className="gallery-item"
+                            :data-src="`https://trainpuma.mx/${src}`"
+                            data-tweet-text="Train Puma"
+                    >
+                        <img class="img-responsive" :src="`https://trainpuma.mx/${src}`" loading="lazy"/>
+                    </a>
+                </div>
             </div>
         </template>
-        -->
+
     </div>
     <Footer class="footer-style"></Footer>
     <div class="netw-style ">
@@ -91,7 +97,8 @@ export default {
   },
   data() {
       return {
-          galery: [
+          galeries: [],
+          laMexicana: [
               'gallery/la_mexicana/IMG_5882.JPG',
               'gallery/la_mexicana/IMG_5887.JPG',
               'gallery/la_mexicana/IMG_5889.JPG',
@@ -250,13 +257,12 @@ export default {
 
     mounted() {
       console.log( "v=2.3.5" );
-        /*
+
         axios
             .get('api/galeries/'+this.$route.params.workoutId)
             .then(({ data }) => {
-                this.galery = [].concat(JSON.parse(data.data[0].name));
+                this.galeries = [].concat(JSON.parse(data.data[0].name));
             });
-            */
 
 
       window.scrollTo(0, 0);

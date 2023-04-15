@@ -25,11 +25,13 @@
                     <img src="/assets/img/G_Logo_Blanco.png" />
                 </p>
             </div>
+            <!--
             <div class="column is-5-mobile" style="margin:auto;">
                 <p class="text-center" >
                     <img src="/assets/img/FCEAD3F3-B3B4-4191-AC0F-F59D13D38564.png" />
                 </p>
             </div>
+            -->
             <div class="column is-5-mobile" style="margin:auto;">
                 <p class="text-center nature" >
                     <img src="/assets/img/Logo_NV.png" />
@@ -39,6 +41,12 @@
             <div class="column is-5-mobile" style="margin:auto;">
                 <p class="text-center nature" >
                     <img src="/assets/img/ISDIN-Love-Your-Skin_Blanco.png" />
+                </p>
+            </div>
+            <div class="column is-5-mobile" style="margin:auto;">
+                <p class="text-center nature" >
+                    <img src="/assets/img/logo_animal.png" />
+
                 </p>
             </div>
             <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
