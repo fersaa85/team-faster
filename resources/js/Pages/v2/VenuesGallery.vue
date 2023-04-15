@@ -83,7 +83,7 @@ export default {
         };
     },
     mounted() {
-      console.log( "v=2.3.5" );
+      console.log( "v=2.3.6" );
       window.scrollTo(0, 0);
 
 
