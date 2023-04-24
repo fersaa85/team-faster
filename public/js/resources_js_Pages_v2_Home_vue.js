@@ -91,7 +91,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.3.1");
+    console.log("v=2.3.6");
     axios.get("/api/sponsors").then(function (_ref) {
       var data = _ref.data.data;
       _this.sponsors = [].concat(data);
@@ -300,7 +300,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.3.5");
+    console.log("v=2.3.6");
     window.scrollTo(0, 0);
     this.setLogoInicio(); // this.setFondoInicio();
 

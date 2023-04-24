@@ -91,7 +91,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.3.1");
+    console.log("v=2.3.6");
     axios.get("/api/sponsors").then(function (_ref) {
       var data = _ref.data.data;
       _this.sponsors = [].concat(data);
@@ -275,10 +275,11 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.3.5");
+    console.log("v=2.3.6");
     axios.get('api/galeries/' + this.$route.params.workoutId).then(function (_ref) {
       var data = _ref.data;
-      _this.galeries = [].concat(JSON.parse(data.data[0].name));
+      console.log(data);
+      _this.galeries = [].concat(data.data[0].name);
     });
     window.scrollTo(0, 0);
     jquery__WEBPACK_IMPORTED_MODULE_0___default()("#lightgallery").justifiedGallery({

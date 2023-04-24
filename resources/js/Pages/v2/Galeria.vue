@@ -256,12 +256,13 @@ export default {
     },
 
     mounted() {
-      console.log( "v=2.3.6" );
+      console.log( "v=2.3.7" );
 
         axios
             .get('api/galeries/'+this.$route.params.workoutId)
             .then(({ data }) => {
-                this.galeries = [].concat(JSON.parse(data.data[0].name));
+                console.log(data);
+                this.galeries = [].concat(data.data[0].name);
             });
 
 
