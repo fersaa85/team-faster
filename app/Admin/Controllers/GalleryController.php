@@ -76,7 +76,8 @@ class GalleryController extends AdminController
         //$form->text('name', __('Name'));
         //$form->hidden('id');
         //$form->image('name', 'Imagen');
-        $form->multipleImage('name', 'imagenes')->move("gallery/{$venue->slug}");
+        $slug = str_replace("-", "_", $venue->slug);
+        $form->multipleImage('name', 'imagenes')->move("gallery/{$slug}");
         $form->select('workout_id',  __('Evento'))->options(function ($id) {
             return Workout::where( DB::raw('YEAR(date_start)'), '=', '2023' )->where('active', 1)->pluck('date_start', 'id');
         });
