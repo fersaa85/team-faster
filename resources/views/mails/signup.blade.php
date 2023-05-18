@@ -279,9 +279,12 @@
                                     <td>
                                         <img src="https://trainpuma.mx/assets/img/ISDIN-Love-Your-Skin_Blanco.png" width="100px">
                                     </td>
+
+                                    <!--
                                     <td>
                                         <img src="https://trainpuma.mx/assets/img/logo_animal.png" width="100px">
                                     </td>
+                                    -->
                                 </tr>
                             </table>
                         </td>

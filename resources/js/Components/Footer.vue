@@ -43,12 +43,14 @@
                     <img src="/assets/img/ISDIN-Love-Your-Skin_Blanco.png" />
                 </p>
             </div>
+            <!--
             <div class="column is-5-mobile" style="margin:auto;">
                 <p class="text-center nature" >
                     <img src="/assets/img/logo_animal.png" />
 
                 </p>
             </div>
+            -->
             <div class="column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd">
             </div>
         </div>
@@ -77,7 +79,7 @@ export default {
         };
     },
    mounted() {
-       console.log( "v=2.3.6" );
+       console.log( "v=2.3.8" );
        axios
            .get(`/api/sponsors`)
            .then(({ data: { data } }) => {
