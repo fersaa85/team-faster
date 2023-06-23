@@ -11,32 +11,30 @@
                 ratio="565by123"
               ></b-image>
             </div>
-            <div class="welcome-img is-hidden-touch">
+            <div class="open-soon">
+              <div>
+                Próximamente
+              </div>
+            </div>
+            <!-- <div class="welcome-img is-hidden-touch">
               <b-image
                 responsive
                 src="/assets/img/welcome.png"
                 ratio="1609by136"
               ></b-image>
-            </div>
-            <div class="welcome-img is-hidden-desktop">
+            </div> -->
+            <!-- <div class="welcome-img is-hidden-desktop">
               <b-image
                 responsive
                 src="/assets/img/welcome_mobl.png"
                 ratio="995by136"
               ></b-image>
             </div>
-            <!-- <div class="puma-regular welcome-text">
-              <div>
-                Aquí comienza la mejor experiencia de
-                entrenamientos en combinación con coaches
-                que te ayudarán a liberar tu potencial
-              </div>
-            </div> -->
             <div class="puma-bold registrarme-button">
               <b-navbar-item tag="router-link" :to="{ path: '/registro' }">
                 Registrarme
               </b-navbar-item>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="netw-style ">
@@ -44,7 +42,7 @@
         </div>
       </div>
     </section>
-    <section class="panel dos">
+    <!-- <section class="panel dos">
       <div>
         <div class="columns panel2-columns" style="margin: 0;">
           <div class="column is-5 panel2-column1">
@@ -79,12 +77,12 @@
                 que tenemos para ti.
               </div>
             </div>
-            
+
           </div>
         </div>
       </div>
-    </section>
-    <section class="panel tres">
+    </section> -->
+    <!-- <section class="panel tres">
       <div class="coaches">
         <div>
           ¡Nuestros coaches están listos!
@@ -125,7 +123,7 @@
         </div>
       </div>
       <Footer class="footer-style"></Footer>
-    </section>
+    </section> -->
   </div>
 </template>
 <script>
@@ -145,66 +143,29 @@ export default {
       };
     },
     mounted() {
-      console.log( "v=2.3.8" );
+      console.log( "v=2.3.9" );
       window.scrollTo(0, 0);
-      this.setLogoInicio();
-      // this.setFondoInicio();
-      this.setWelcome();
-      this.setWelcomeText();
-      // this.setPage1();
-      this.setPage2();
-      this.setPage3();
-      // this.setTeamFaster();
-      // this.setTitleVenue();
-      // this.setCoachesText();
-      // this.setCoachesImg();
-      setTimeout(() => {
-        this.showWelcome();
-      }, 500);
-      // this.setVive();
-      //   axios
-      //       .get('api/workout')
-      //       .then(({ data: { data } }) => {
-      //           this.slug = data.venue.slug;
-      //           this.info = Object.assign({}, {
-      //               name: data.venue.name,
-      //               fecha: data.date_start,
-      //               lugar: data.venue.address,
-      //               tipo:  data.description,
-      //               coach:  data.coatch.name,
-      //               photo: data.venue.image,
-      //               map: data.venue.image_map,
-      //               available: true
-      //           });
-      //       });
+    //   this.setLogoInicio();
+    //   this.setWelcome();
+    //   this.setWelcomeText();
+    //   this.setPage2();
+    //   this.setPage3();
+    //   setTimeout(() => {
+    //     this.showWelcome();
+    //   }, 500);
+
     },
-    
+
 
     methods:{
-      // goToSection(i) {
-      //   console.log('goToSection', i);
-      //   console.log('window.innerHeight', window.innerHeight);
-      //   this.scrollTween = this.gsap.to(window, {
-      //     scrollTo: {y: i * window.innerHeight, autoKill: false},
-      //     duration: 1,
-      //     onComplete: () => this.scrollTween = null,
-      //     overwrite: true
-      //   });
-      // }
       gra(min, max){
         return Math.random() * (max - min) + min;
       },
       init(){
         let items = document.querySelectorAll('section');
 
-        // cssScrollSnapPolyfill();
       },
-      // showLogoInicio(){
-      //   this.gsap.to(
-      //     this.$refs.logoInicio,
-      //     {autoAlpha: 1, duration: 0.8, scaleX:1, scaleY:1, delay:0, ease: "Power2.easeOut", onComplete: this.showWelcomeText  }
-      //   );
-      // },
+
       setWelcome(){
         this.gsap.to(
           ".welcome-img",
@@ -212,10 +173,7 @@ export default {
         );
       },
       setWelcomeText(){
-        // this.gsap.to(
-        //   ".welcome-text",
-        //   {autoAlpha: 0, duration: 0 }
-        // );
+
         this.gsap.to(
           ".registrarme-button",
           {autoAlpha: 0, duration: 0 }
@@ -233,22 +191,9 @@ export default {
           {autoAlpha: 1, duration: 1, y:0, ease: "Power2.easeOut", onComplete: this.setPage1 }
         );
       },
-      // showWelcomeText(){
-      //   this.gsap.to(
-      //     ".welcome-text",
-      //     {autoAlpha: 1, duration: 0.8, ease: "Power2.easeIn" }
-      //   );
-      //   this.gsap.to(
-      //     ".registrarme-button",
-      //     {autoAlpha: 1, duration: 1, ease: "Power2.easeIn" }
-      //   );
-      // },
+
       setPage1(){
-        // this.gsap.to(
-        //   ".welcome-text",{
-        //   scrollTrigger: ".welcome-text",
-        //   autoAlpha: 1, duration: 0.8, delay:0.5, ease: "Power2.easeIn" }
-        // );
+
         this.gsap.to(
           ".registrarme-button",{
           scrollTrigger: ".registrarme-button",
@@ -331,14 +276,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  // html {
-  //   scroll-snap-type: mandatory;
-  //   scroll-snap-points-y: repeat(100vh);
-  //   scroll-snap-type: y mandatory;
-  // }
-  // .panel:not(:last-child) {
-  //   margin-bottom: 0;
-  // }
+
   .home{
     max-width: 100vw;
     overflow-x: hidden;
@@ -360,8 +298,7 @@ export default {
   .panel {
     min-height: 100vh;
     border-radius: 0;
-    // position: sticky;
-    // top: 0;
+
   }
   .uno{
     background-color: black;
@@ -372,13 +309,9 @@ export default {
   .dos{
     background-color: black;
     background-image: url("/assets/img/puma-web2.jpg?8017");
-    // position: sticky;
     background-position-x: center;
     background-size: cover;
-    // @media screen and (min-width: 769px){
-    //   background-size: cover;
-    // }
-    // top: 0;
+
   }
   .tres{
     background-color: black;
@@ -387,6 +320,52 @@ export default {
     position: sticky;
     top: 0;
   }
+
+.open-soon{
+    font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 120px;
+    text-transform: uppercase;
+    line-height: 120px;
+    text-align: center;
+    color: white;
+    border-bottom: 10px solid #b99571;
+    width: fit-content;
+    margin: 80px auto 0;
+    @media screen and (min-width: 1216px) and (max-width: 1408px) {
+      font-size: 90px;
+      line-height: 100px;
+    }
+    @media screen and (min-width: 1134px) and (max-width: 1215px) {
+      font-size: 70px;
+      line-height: 80px;
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1133px) {
+      font-size: 70px;
+      line-height: 80px;
+    }
+    @media screen and (max-width: 1023px) {
+      font-size: 65px;
+      line-height: 65px;
+    }
+    @media screen and (max-width: 870px) {
+      font-size: 60px;
+      line-height: 60px;
+    }
+    @media screen and (max-width: 768px) {
+      font-size: 65px;
+      line-height: 65px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (max-width: 530px) {
+      font-size: 40px;
+      line-height: 65px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
+
   .unete{
     font-family: 'FFDINforPUMA-Bold','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-size: 120px;
@@ -591,10 +570,6 @@ export default {
     margin-bottom: 0;
   }
   .panel1-column1{
-    // padding-left: 183px;
-    // @media screen and (max-width: 1023px) {
-    //   padding-left: 140px;
-    // }
     margin: auto;
     text-align: center;
     @media screen and (max-width: 768px){
@@ -617,5 +592,5 @@ export default {
       padding-bottom:50px;
     }
   }
-  
+
 </style>

@@ -1991,56 +1991,46 @@ var routes = [{
     return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Home_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Home.vue */ "./resources/js/Pages/v2/Home.vue"));
   },
   name: 'home'
-}, {
-  path: '/sedes',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Venues_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Venues.vue */ "./resources/js/Pages/v2/Venues.vue"));
-  },
-  name: 'sedes'
-}, {
-  path: '/coaches',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Coaches_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Coaches.vue */ "./resources/js/Pages/v2/Coaches.vue"));
-  },
-  name: 'coaches'
-}, {
-  path: '/galeria',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_VenuesGallery_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/VenuesGallery.vue */ "./resources/js/Pages/v2/VenuesGallery.vue"));
-  },
-  name: 'galeria'
-}, {
-  path: '/galeria/:workoutId',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Galeria_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Galeria.vue */ "./resources/js/Pages/v2/Galeria.vue"));
-  },
-  name: 'galeria'
-}, {
-  path: '/blog',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Blog_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Blog.vue */ "./resources/js/Pages/v2/Blog.vue"));
-  },
-  name: 'blog'
-}, {
-  path: '/blog/:slug',
-  name: 'post',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Post_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Post.vue */ "./resources/js/Pages/v2/Post.vue"));
-  },
-  meta: {
-    scrollToTop: true
-  }
-}, {
-  path: '/registro',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Registro_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Registro.vue */ "./resources/js/Pages/v2/Registro.vue"));
-  }
-}, {
-  path: '/registro/:slug',
-  component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_Pages_v2_Registro_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../Pages/v2/Registro.vue */ "./resources/js/Pages/v2/Registro.vue"));
-  }
-}, {
+}, // {
+//     path: '/sedes',
+//     component: () => import('../Pages/v2/Venues.vue'),
+//     name: 'sedes'
+// },
+// {
+//     path: '/coaches',
+//     component: () => import('../Pages/v2/Coaches.vue'),
+//     name: 'coaches'
+// },
+// {
+//     path: '/galeria',
+//     component: () => import('../Pages/v2/VenuesGallery.vue'),
+//     name: 'galeria'
+// },
+// {
+//     path: '/galeria/:workoutId',
+//     component: () => import('../Pages/v2/Galeria.vue'),
+//     name: 'galeria'
+// },
+// {
+//     path: '/blog',
+//     component: () => import('../Pages/v2/Blog.vue'),
+//     name: 'blog'
+// },
+// {
+//     path: '/blog/:slug',
+//     name: 'post',
+//     component: () => import('../Pages/v2/Post.vue'),
+//     meta: { scrollToTop: true }
+// },
+// {
+//     path: '/registro',
+//     component: () => import('../Pages/v2/Registro.vue'),
+// },
+// {
+//     path: '/registro/:slug',
+//     component: () => import('../Pages/v2/Registro.vue'),
+// },
+{
   path: '*',
   redirect: '/'
 }];
@@ -57106,155 +57096,21 @@ var render = function () {
     { staticClass: "app" },
     [
       _c("div", { staticClass: "menu" }, [
-        _c(
-          "div",
-          { staticClass: "level is-mobile" },
-          [
-            _c("div", { staticClass: "level-left" }, [
-              _c("div", { staticClass: "level-item" }, [
-                _c("img", {
-                  staticClass: "logo-style",
-                  attrs: { src: "/assets/img/SITE_PUMA_LOGO_PUMA.png" },
-                  on: {
-                    click: function ($event) {
-                      return _vm.$router.push("/")
-                    },
-                  },
-                }),
-              ]),
-            ]),
-            _vm._v(" "),
-            _c(
-              "b-navbar-item",
-              {
-                staticClass:
-                  "level-item button-container nav-bar-button is-hidden-touch first-menu-item",
-                class: { "button-active": _vm.$route.name == "home" },
-                attrs: { tag: "router-link", to: { path: "/" } },
-              },
-              [
-                _vm._v("\n        Inicio\n        "),
-                _c("div", { staticClass: "line-below line-1" }),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "b-navbar-item",
-              {
-                staticClass:
-                  "level-item button-container nav-bar-button is-hidden-touch",
-                class: { "button-active": _vm.$route.name == "registro" },
-                attrs: { tag: "router-link", to: { path: "/registro" } },
-              },
-              [
-                _vm._v("\n        Registro\n        "),
-                _c("div", { staticClass: "line-below line-2" }),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "b-navbar-item",
-              {
-                staticClass:
-                  "level-item button-container nav-bar-button is-hidden-touch",
-                class: { "button-active": _vm.$route.name == "sedes" },
-                attrs: { tag: "router-link", to: { path: "/sedes" } },
-              },
-              [
-                _vm._v("\n        Sedes\n        "),
-                _c("div", { staticClass: "line-below line-3" }),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "b-navbar-item",
-              {
-                staticClass:
-                  "level-item button-container nav-bar-button is-hidden-touch",
-                class: { "button-active": _vm.$route.name == "coaches" },
-                attrs: { tag: "router-link", to: { path: "/coaches" } },
-              },
-              [
-                _vm._v("\n        Coaches\n        "),
-                _c("div", { staticClass: "line-below line-4" }),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "b-navbar-item",
-              {
-                staticClass:
-                  "level-item button-container nav-bar-button is-hidden-touch",
-                class: { "button-active": _vm.$route.name == "blog" },
-                attrs: { tag: "router-link", to: { path: "/blog" } },
-              },
-              [
-                _vm._v("\n        Blog\n        "),
-                _c("div", { staticClass: "line-below line-5" }),
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "b-navbar-item",
-              {
-                staticClass:
-                  "level-item button-container nav-bar-button is-hidden-touch",
-                class: { "button-active": _vm.$route.name == "galeria" },
-                attrs: { tag: "router-link", to: { path: "/galeria" } },
-              },
-              [
-                _vm._v("\n        Galería\n        "),
-                _c("div", { staticClass: "line-below line-5" }),
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", { staticClass: "level-right is-hidden-desktop" }, [
-              _c(
-                "div",
-                {
-                  staticClass: "level-item",
-                  on: {
-                    click: function ($event) {
-                      _vm.show = !_vm.show
-                    },
+        _c("div", { staticClass: "level is-mobile" }, [
+          _c("div", { staticClass: "level-left" }, [
+            _c("div", { staticClass: "level-item" }, [
+              _c("img", {
+                staticClass: "logo-style",
+                attrs: { src: "/assets/img/SITE_PUMA_LOGO_PUMA.png" },
+                on: {
+                  click: function ($event) {
+                    return _vm.$router.push("/")
                   },
                 },
-                [
-                  _c(
-                    "span",
-                    {
-                      directives: [
-                        {
-                          name: "show",
-                          rawName: "v-show",
-                          value: !_vm.show,
-                          expression: "!show",
-                        },
-                      ],
-                    },
-                    [_c("i", { staticClass: "fas fa-bars" })]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "span",
-                    {
-                      directives: [
-                        {
-                          name: "show",
-                          rawName: "v-show",
-                          value: _vm.show,
-                          expression: "show",
-                        },
-                      ],
-                    },
-                    [_c("i", { staticClass: "fas fa-times" })]
-                  ),
-                ]
-              ),
+              }),
             ]),
-          ],
-          1
-        ),
+          ]),
+        ]),
         _vm._v(" "),
         _vm.show
           ? _c("div", { staticClass: "is-hidden-desktop menu-mobile" }, [
@@ -74108,7 +73964,7 @@ var index = {
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_Pages_v2_Home_vue":1,"resources_js_Pages_v2_Venues_vue":1,"resources_js_Pages_v2_Coaches_vue":1,"resources_js_Pages_v2_VenuesGallery_vue":1,"resources_js_Pages_v2_Galeria_vue":1,"resources_js_Pages_v2_Blog_vue":1,"resources_js_Pages_v2_Post_vue":1,"resources_js_Pages_v2_Registro_vue":1,"resources_js_Components_Navbar_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_Pages_v2_Home_vue":1,"resources_js_Components_Navbar_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

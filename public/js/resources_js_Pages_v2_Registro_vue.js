@@ -114,6 +114,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   data: function data() {
@@ -125,7 +127,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.3.6");
+    console.log("v=2.3.8");
     axios.get("/api/sponsors").then(function (_ref) {
       var data = _ref.data.data;
       _this.sponsors = [].concat(data);
@@ -308,7 +310,7 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
-    console.log("v=2.3.1");
+    console.log("v=2.3.8");
   },
   methods: {
     handleSubmit: function handleSubmit() {
@@ -566,7 +568,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.3.1");
+    console.log("v=2.3.8");
     this.setForm();
     this.setText1();
     this.setText2();
@@ -690,7 +692,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'socialnetwork',
   props: {},
   mounted: function mounted() {
-    console.log("v=2.3.1");
+    console.log("v=2.3.8");
   }
 });
 
@@ -1023,7 +1025,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.3.6");
+    console.log("v=2.3.8");
     var slug = this.$route.params.slug;
     window.scrollTo(0, 0);
     this.setElement(this.$refs.img1);
@@ -2075,8 +2077,6 @@ var render = function () {
         _vm._v(" "),
         _vm._m(3),
         _vm._v(" "),
-        _vm._m(4),
-        _vm._v(" "),
         _c("div", {
           staticClass:
             "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
@@ -2085,7 +2085,7 @@ var render = function () {
       2
     ),
     _vm._v(" "),
-    _vm._m(5),
+    _vm._m(4),
   ])
 }
 var staticRenderFns = [
@@ -2156,20 +2156,6 @@ var staticRenderFns = [
           _c("img", {
             attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
           }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
-        _c("p", { staticClass: "text-center nature" }, [
-          _c("img", { attrs: { src: "/assets/img/logo_animal.png" } }),
         ]),
       ]
     )

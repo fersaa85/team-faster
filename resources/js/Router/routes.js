@@ -53,45 +53,45 @@ const routes = [
         component: () => import('../Pages/v2/Home.vue'),
         name: 'home'
     },
-    {
-        path: '/sedes',
-        component: () => import('../Pages/v2/Venues.vue'),
-        name: 'sedes'
-    },
-    {
-        path: '/coaches',
-        component: () => import('../Pages/v2/Coaches.vue'),
-        name: 'coaches'
-    },
-    {
-        path: '/galeria',
-        component: () => import('../Pages/v2/VenuesGallery.vue'),
-        name: 'galeria'
-    },
-    {
-        path: '/galeria/:workoutId',
-        component: () => import('../Pages/v2/Galeria.vue'),
-        name: 'galeria'
-    },
-    {
-        path: '/blog',
-        component: () => import('../Pages/v2/Blog.vue'),
-        name: 'blog'
-    },
-    {
-        path: '/blog/:slug',
-        name: 'post',
-        component: () => import('../Pages/v2/Post.vue'),
-        meta: { scrollToTop: true }
-    },
-    {
-        path: '/registro',
-        component: () => import('../Pages/v2/Registro.vue'),
-    },
-    {
-        path: '/registro/:slug',
-        component: () => import('../Pages/v2/Registro.vue'),
-    },
+    // {
+    //     path: '/sedes',
+    //     component: () => import('../Pages/v2/Venues.vue'),
+    //     name: 'sedes'
+    // },
+    // {
+    //     path: '/coaches',
+    //     component: () => import('../Pages/v2/Coaches.vue'),
+    //     name: 'coaches'
+    // },
+    // {
+    //     path: '/galeria',
+    //     component: () => import('../Pages/v2/VenuesGallery.vue'),
+    //     name: 'galeria'
+    // },
+    // {
+    //     path: '/galeria/:workoutId',
+    //     component: () => import('../Pages/v2/Galeria.vue'),
+    //     name: 'galeria'
+    // },
+    // {
+    //     path: '/blog',
+    //     component: () => import('../Pages/v2/Blog.vue'),
+    //     name: 'blog'
+    // },
+    // {
+    //     path: '/blog/:slug',
+    //     name: 'post',
+    //     component: () => import('../Pages/v2/Post.vue'),
+    //     meta: { scrollToTop: true }
+    // },
+    // {
+    //     path: '/registro',
+    //     component: () => import('../Pages/v2/Registro.vue'),
+    // },
+    // {
+    //     path: '/registro/:slug',
+    //     component: () => import('../Pages/v2/Registro.vue'),
+    // },
     { path: '*', redirect: '/' }
 ];
 

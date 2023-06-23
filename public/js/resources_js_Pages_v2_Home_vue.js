@@ -80,6 +80,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: 'footer',
   data: function data() {
@@ -91,7 +93,7 @@ __webpack_require__.r(__webpack_exports__);
   mounted: function mounted() {
     var _this = this;
 
-    console.log("v=2.3.6");
+    console.log("v=2.3.8");
     axios.get("/api/sponsors").then(function (_ref) {
       var data = _ref.data.data;
       _this.sponsors = [].concat(data);
@@ -135,7 +137,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'socialnetwork',
   props: {},
   mounted: function mounted() {
-    console.log("v=2.3.1");
+    console.log("v=2.3.8");
   }
 });
 
@@ -281,8 +283,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -298,63 +298,23 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   mounted: function mounted() {
-    var _this = this;
-
-    console.log("v=2.3.6");
-    window.scrollTo(0, 0);
-    this.setLogoInicio(); // this.setFondoInicio();
-
-    this.setWelcome();
-    this.setWelcomeText(); // this.setPage1();
-
-    this.setPage2();
-    this.setPage3(); // this.setTeamFaster();
-    // this.setTitleVenue();
-    // this.setCoachesText();
-    // this.setCoachesImg();
-
-    setTimeout(function () {
-      _this.showWelcome();
-    }, 500); // this.setVive();
-    //   axios
-    //       .get('api/workout')
-    //       .then(({ data: { data } }) => {
-    //           this.slug = data.venue.slug;
-    //           this.info = Object.assign({}, {
-    //               name: data.venue.name,
-    //               fecha: data.date_start,
-    //               lugar: data.venue.address,
-    //               tipo:  data.description,
-    //               coach:  data.coatch.name,
-    //               photo: data.venue.image,
-    //               map: data.venue.image_map,
-    //               available: true
-    //           });
-    //       });
+    console.log("v=2.3.9");
+    window.scrollTo(0, 0); //   this.setLogoInicio();
+    //   this.setWelcome();
+    //   this.setWelcomeText();
+    //   this.setPage2();
+    //   this.setPage3();
+    //   setTimeout(() => {
+    //     this.showWelcome();
+    //   }, 500);
   },
   methods: {
-    // goToSection(i) {
-    //   console.log('goToSection', i);
-    //   console.log('window.innerHeight', window.innerHeight);
-    //   this.scrollTween = this.gsap.to(window, {
-    //     scrollTo: {y: i * window.innerHeight, autoKill: false},
-    //     duration: 1,
-    //     onComplete: () => this.scrollTween = null,
-    //     overwrite: true
-    //   });
-    // }
     gra: function gra(min, max) {
       return Math.random() * (max - min) + min;
     },
     init: function init() {
-      var items = document.querySelectorAll('section'); // cssScrollSnapPolyfill();
+      var items = document.querySelectorAll('section');
     },
-    // showLogoInicio(){
-    //   this.gsap.to(
-    //     this.$refs.logoInicio,
-    //     {autoAlpha: 1, duration: 0.8, scaleX:1, scaleY:1, delay:0, ease: "Power2.easeOut", onComplete: this.showWelcomeText  }
-    //   );
-    // },
     setWelcome: function setWelcome() {
       this.gsap.to(".welcome-img", {
         autoAlpha: 0,
@@ -363,10 +323,6 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     setWelcomeText: function setWelcomeText() {
-      // this.gsap.to(
-      //   ".welcome-text",
-      //   {autoAlpha: 0, duration: 0 }
-      // );
       this.gsap.to(".registrarme-button", {
         autoAlpha: 0,
         duration: 0
@@ -389,22 +345,7 @@ __webpack_require__.r(__webpack_exports__);
         onComplete: this.setPage1
       });
     },
-    // showWelcomeText(){
-    //   this.gsap.to(
-    //     ".welcome-text",
-    //     {autoAlpha: 1, duration: 0.8, ease: "Power2.easeIn" }
-    //   );
-    //   this.gsap.to(
-    //     ".registrarme-button",
-    //     {autoAlpha: 1, duration: 1, ease: "Power2.easeIn" }
-    //   );
-    // },
     setPage1: function setPage1() {
-      // this.gsap.to(
-      //   ".welcome-text",{
-      //   scrollTrigger: ".welcome-text",
-      //   autoAlpha: 1, duration: 0.8, delay:0.5, ease: "Power2.easeIn" }
-      // );
       this.gsap.to(".registrarme-button", {
         scrollTrigger: ".registrarme-button",
         autoAlpha: 1,
@@ -564,7 +505,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".home[data-v-09793f8e] {\n  max-width: 100vw;\n  overflow-x: hidden;\n}\n@media screen and (max-width: 768px) {\n.home[data-v-09793f8e] {\n    min-width: 100vw;\n    max-width: unset;\n}\n}\n.cursor[data-v-09793f8e] {\n  cursor: pointer;\n}\n.navbar-item[data-v-09793f8e], .navbar-link[data-v-09793f8e] {\n  color: #ffffff;\n}\na.navbar-item[data-v-09793f8e]:hover {\n  background: #b99571;\n  color: #ffffff;\n}\n.panel[data-v-09793f8e] {\n  min-height: 100vh;\n  border-radius: 0;\n}\n.uno[data-v-09793f8e] {\n  background-color: black;\n  background-image: url(\"/assets/img/puma-web1.jpg?8017\");\n  background-position-x: center;\n  background-size: cover;\n}\n.dos[data-v-09793f8e] {\n  background-color: black;\n  background-image: url(\"/assets/img/puma-web2.jpg?8017\");\n  background-position-x: center;\n  background-size: cover;\n}\n.tres[data-v-09793f8e] {\n  background-color: black;\n  background-image: url(\"/assets/img/puma-web3.jpg?8017\");\n  background-size: cover;\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n}\n.unete[data-v-09793f8e] {\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 120px;\n  text-transform: uppercase;\n  line-height: 120px;\n  text-align: center;\n  color: white;\n  border-bottom: 10px solid #b99571;\n  margin-left: 130px;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.unete[data-v-09793f8e] {\n    font-size: 90px;\n    line-height: 100px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.unete[data-v-09793f8e] {\n    font-size: 70px;\n    line-height: 80px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.unete[data-v-09793f8e] {\n    font-size: 70px;\n    line-height: 80px;\n    margin-left: 100px;\n}\n}\n@media screen and (max-width: 1023px) {\n.unete[data-v-09793f8e] {\n    font-size: 65px;\n    line-height: 65px;\n    margin-left: 80px;\n}\n}\n@media screen and (max-width: 870px) {\n.unete[data-v-09793f8e] {\n    font-size: 60px;\n    line-height: 60px;\n    margin-left: 60px;\n}\n}\n@media screen and (max-width: 768px) {\n.unete[data-v-09793f8e] {\n    font-size: 65px;\n    line-height: 65px;\n    margin-left: auto;\n    margin-right: auto;\n}\n}\n.logo-simple[data-v-09793f8e] {\n  width: 567px;\n  padding-left: 126px;\n  padding-top: 94px;\n  padding-bottom: 54px;\n}\n@media screen and (max-width: 1407px) {\n.logo-simple[data-v-09793f8e] {\n    width: 460px;\n}\n}\n@media screen and (max-width: 1133px) {\n.logo-simple[data-v-09793f8e] {\n    width: 400px;\n    padding-left: 100px;\n}\n}\n@media screen and (max-width: 1023px) {\n.logo-simple[data-v-09793f8e] {\n    padding-left: 80px;\n    width: 380px;\n}\n}\n@media screen and (max-width: 870px) {\n.logo-simple[data-v-09793f8e] {\n    padding-left: 60px;\n    width: 300px;\n}\n}\n@media screen and (max-width: 768px) {\n.logo-simple[data-v-09793f8e] {\n    width: 70%;\n    padding-left: 0;\n    margin-left: auto;\n    margin-right: auto;\n}\n}\n.vuelvete[data-v-09793f8e] {\n  font-family: 'FFDINforPUMA-Regular\"', \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  text-align: left;\n  font-size: 35px;\n  line-height: 42px;\n  color: white;\n  padding-left: 15px;\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.vuelvete[data-v-09793f8e] {\n    font-size: 30px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.vuelvete[data-v-09793f8e] {\n    font-size: 26px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.vuelvete[data-v-09793f8e] {\n    font-size: 26px;\n}\n}\n@media screen and (max-width: 1023px) {\n.vuelvete[data-v-09793f8e] {\n    font-size: 26px;\n}\n}\n@media screen and (max-width: 768px) {\n.vuelvete[data-v-09793f8e] {\n    font-size: 21px;\n    line-height: 29px;\n    padding-left: 10px;\n    padding-right: 10px;\n    margin: auto;\n    text-align: center;\n}\n}\n.coaches[data-v-09793f8e] {\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  color: white;\n  font-size: 90px;\n  padding-top: 199px;\n  text-transform: uppercase;\n  line-height: 102px;\n  padding: 199px 40px 0;\n}\n@media screen and (max-width: 1133px) {\n.coaches[data-v-09793f8e] {\n    font-size: 90px;\n}\n}\n@media screen and (max-width: 1024px) {\n.coaches[data-v-09793f8e] {\n    font-size: 56px;\n    padding-left: 30px;\n    padding-right: 30px;\n    line-height: 70px;\n}\n}\n.tu-style[data-v-09793f8e] {\n  width: 24%;\n  text-align: center;\n  margin: auto;\n  padding-right: 26px;\n  margin-bottom: 10px;\n}\n@media screen and (max-width: 1215px) {\n.tu-style[data-v-09793f8e] {\n    width: 25%;\n}\n}\n@media screen and (max-width: 1024px) {\n.tu-style[data-v-09793f8e] {\n    width: 25%;\n    margin-top: 0;\n}\n}\n@media screen and (max-width: 768px) {\n.tu-style[data-v-09793f8e] {\n    width: 90%;\n    margin-top: 20px;\n}\n}\n.photos-models[data-v-09793f8e] {\n  padding: 40px 89px;\n  margin: auto;\n}\n.photos-models figure[data-v-09793f8e] {\n  width: 100%;\n}\n@media screen and (max-width: 768px) {\n.photos-models[data-v-09793f8e] {\n    padding: 40px 29px;\n}\n}\n.registrarme-button[data-v-09793f8e] {\n  color: white;\n  text-transform: uppercase;\n  font-size: 28px;\n  padding: 11px 61px 8px;\n  background-color: #b99571;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  margin-bottom: 70px;\n  margin-left: auto;\n  margin-right: auto;\n  cursor: pointer;\n}\n@media screen and (max-width: 768px) {\n.registrarme-button[data-v-09793f8e] {\n    margin-left: auto;\n    margin-right: auto;\n    max-width: 58vw;\n    padding: 11px 30px 8px;\n    font-size: 20px;\n    margin-top: 25px;\n}\n}\n.netw-style[data-v-09793f8e] {\n  width: 65px;\n  position: relative;\n  top: -53px;\n  margin-top: -200px;\n}\n@media screen and (max-width: 768px) {\n.netw-style[data-v-09793f8e] {\n    width: 60px;\n    position: initial;\n    top: 581px;\n    cursor: pointer;\n    margin-top: 0;\n    padding-bottom: 40px;\n}\n}\n.welcome-img[data-v-09793f8e] {\n  width: 88%;\n  padding-bottom: 40px;\n  padding-top: 176px;\n  margin-left: auto;\n  margin-right: auto;\n}\n@media screen and (max-width: 768px) {\n.welcome-img[data-v-09793f8e] {\n    width: 100%;\n    padding-top: 95px;\n}\n}\n.logo-style[data-v-09793f8e] {\n  width: 30%;\n  margin-top: -51px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 237px;\n  cursor: pointer;\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-09793f8e] {\n    margin-top: 355px;\n    padding-bottom: 0;\n    width: 80%;\n}\n}\n.panel[data-v-09793f8e]:not(:last-child) {\n  margin-bottom: 0;\n}\n.panel1-column1[data-v-09793f8e] {\n  margin: auto;\n  text-align: center;\n}\n@media screen and (max-width: 768px) {\n.panel1-column1[data-v-09793f8e] {\n    margin-top: -209px;\n}\n}\n.panel2-columns[data-v-09793f8e] {\n  padding-top: 55px;\n}\n.panel2-column1[data-v-09793f8e] {\n  padding-top: 31vh;\n}\n@media screen and (max-width: 768px) {\n.panel2-column1[data-v-09793f8e] {\n    padding-top: 95px;\n}\n}\n.panel2-column2[data-v-09793f8e] {\n  padding-top: 35vh;\n}\n@media screen and (max-width: 768px) {\n.panel2-column2[data-v-09793f8e] {\n    padding-top: 0;\n    padding-bottom: 50px;\n}\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".home[data-v-09793f8e] {\n  max-width: 100vw;\n  overflow-x: hidden;\n}\n@media screen and (max-width: 768px) {\n.home[data-v-09793f8e] {\n    min-width: 100vw;\n    max-width: unset;\n}\n}\n.cursor[data-v-09793f8e] {\n  cursor: pointer;\n}\n.navbar-item[data-v-09793f8e], .navbar-link[data-v-09793f8e] {\n  color: #ffffff;\n}\na.navbar-item[data-v-09793f8e]:hover {\n  background: #b99571;\n  color: #ffffff;\n}\n.panel[data-v-09793f8e] {\n  min-height: 100vh;\n  border-radius: 0;\n}\n.uno[data-v-09793f8e] {\n  background-color: black;\n  background-image: url(\"/assets/img/puma-web1.jpg?8017\");\n  background-position-x: center;\n  background-size: cover;\n}\n.dos[data-v-09793f8e] {\n  background-color: black;\n  background-image: url(\"/assets/img/puma-web2.jpg?8017\");\n  background-position-x: center;\n  background-size: cover;\n}\n.tres[data-v-09793f8e] {\n  background-color: black;\n  background-image: url(\"/assets/img/puma-web3.jpg?8017\");\n  background-size: cover;\n  position: -webkit-sticky;\n  position: sticky;\n  top: 0;\n}\n.open-soon[data-v-09793f8e] {\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 120px;\n  text-transform: uppercase;\n  line-height: 120px;\n  text-align: center;\n  color: white;\n  border-bottom: 10px solid #b99571;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  margin: 80px auto 0;\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.open-soon[data-v-09793f8e] {\n    font-size: 90px;\n    line-height: 100px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.open-soon[data-v-09793f8e] {\n    font-size: 70px;\n    line-height: 80px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.open-soon[data-v-09793f8e] {\n    font-size: 70px;\n    line-height: 80px;\n}\n}\n@media screen and (max-width: 1023px) {\n.open-soon[data-v-09793f8e] {\n    font-size: 65px;\n    line-height: 65px;\n}\n}\n@media screen and (max-width: 870px) {\n.open-soon[data-v-09793f8e] {\n    font-size: 60px;\n    line-height: 60px;\n}\n}\n@media screen and (max-width: 768px) {\n.open-soon[data-v-09793f8e] {\n    font-size: 65px;\n    line-height: 65px;\n    margin-left: auto;\n    margin-right: auto;\n}\n}\n@media screen and (max-width: 530px) {\n.open-soon[data-v-09793f8e] {\n    font-size: 40px;\n    line-height: 65px;\n    margin-left: auto;\n    margin-right: auto;\n}\n}\n.unete[data-v-09793f8e] {\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  font-size: 120px;\n  text-transform: uppercase;\n  line-height: 120px;\n  text-align: center;\n  color: white;\n  border-bottom: 10px solid #b99571;\n  margin-left: 130px;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.unete[data-v-09793f8e] {\n    font-size: 90px;\n    line-height: 100px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.unete[data-v-09793f8e] {\n    font-size: 70px;\n    line-height: 80px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.unete[data-v-09793f8e] {\n    font-size: 70px;\n    line-height: 80px;\n    margin-left: 100px;\n}\n}\n@media screen and (max-width: 1023px) {\n.unete[data-v-09793f8e] {\n    font-size: 65px;\n    line-height: 65px;\n    margin-left: 80px;\n}\n}\n@media screen and (max-width: 870px) {\n.unete[data-v-09793f8e] {\n    font-size: 60px;\n    line-height: 60px;\n    margin-left: 60px;\n}\n}\n@media screen and (max-width: 768px) {\n.unete[data-v-09793f8e] {\n    font-size: 65px;\n    line-height: 65px;\n    margin-left: auto;\n    margin-right: auto;\n}\n}\n.logo-simple[data-v-09793f8e] {\n  width: 567px;\n  padding-left: 126px;\n  padding-top: 94px;\n  padding-bottom: 54px;\n}\n@media screen and (max-width: 1407px) {\n.logo-simple[data-v-09793f8e] {\n    width: 460px;\n}\n}\n@media screen and (max-width: 1133px) {\n.logo-simple[data-v-09793f8e] {\n    width: 400px;\n    padding-left: 100px;\n}\n}\n@media screen and (max-width: 1023px) {\n.logo-simple[data-v-09793f8e] {\n    padding-left: 80px;\n    width: 380px;\n}\n}\n@media screen and (max-width: 870px) {\n.logo-simple[data-v-09793f8e] {\n    padding-left: 60px;\n    width: 300px;\n}\n}\n@media screen and (max-width: 768px) {\n.logo-simple[data-v-09793f8e] {\n    width: 70%;\n    padding-left: 0;\n    margin-left: auto;\n    margin-right: auto;\n}\n}\n.vuelvete[data-v-09793f8e] {\n  font-family: 'FFDINforPUMA-Regular\"', \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  text-align: left;\n  font-size: 35px;\n  line-height: 42px;\n  color: white;\n  padding-left: 15px;\n}\n@media screen and (min-width: 1216px) and (max-width: 1408px) {\n.vuelvete[data-v-09793f8e] {\n    font-size: 30px;\n}\n}\n@media screen and (min-width: 1134px) and (max-width: 1215px) {\n.vuelvete[data-v-09793f8e] {\n    font-size: 26px;\n}\n}\n@media screen and (min-width: 1024px) and (max-width: 1133px) {\n.vuelvete[data-v-09793f8e] {\n    font-size: 26px;\n}\n}\n@media screen and (max-width: 1023px) {\n.vuelvete[data-v-09793f8e] {\n    font-size: 26px;\n}\n}\n@media screen and (max-width: 768px) {\n.vuelvete[data-v-09793f8e] {\n    font-size: 21px;\n    line-height: 29px;\n    padding-left: 10px;\n    padding-right: 10px;\n    margin: auto;\n    text-align: center;\n}\n}\n.coaches[data-v-09793f8e] {\n  font-family: \"FFDINforPUMA-Bold\", \"Helvetica Neue\", Helvetica, Arial, sans-serif;\n  color: white;\n  font-size: 90px;\n  padding-top: 199px;\n  text-transform: uppercase;\n  line-height: 102px;\n  padding: 199px 40px 0;\n}\n@media screen and (max-width: 1133px) {\n.coaches[data-v-09793f8e] {\n    font-size: 90px;\n}\n}\n@media screen and (max-width: 1024px) {\n.coaches[data-v-09793f8e] {\n    font-size: 56px;\n    padding-left: 30px;\n    padding-right: 30px;\n    line-height: 70px;\n}\n}\n.tu-style[data-v-09793f8e] {\n  width: 24%;\n  text-align: center;\n  margin: auto;\n  padding-right: 26px;\n  margin-bottom: 10px;\n}\n@media screen and (max-width: 1215px) {\n.tu-style[data-v-09793f8e] {\n    width: 25%;\n}\n}\n@media screen and (max-width: 1024px) {\n.tu-style[data-v-09793f8e] {\n    width: 25%;\n    margin-top: 0;\n}\n}\n@media screen and (max-width: 768px) {\n.tu-style[data-v-09793f8e] {\n    width: 90%;\n    margin-top: 20px;\n}\n}\n.photos-models[data-v-09793f8e] {\n  padding: 40px 89px;\n  margin: auto;\n}\n.photos-models figure[data-v-09793f8e] {\n  width: 100%;\n}\n@media screen and (max-width: 768px) {\n.photos-models[data-v-09793f8e] {\n    padding: 40px 29px;\n}\n}\n.registrarme-button[data-v-09793f8e] {\n  color: white;\n  text-transform: uppercase;\n  font-size: 28px;\n  padding: 11px 61px 8px;\n  background-color: #b99571;\n  width: -webkit-fit-content;\n  width: -moz-fit-content;\n  width: fit-content;\n  margin-bottom: 70px;\n  margin-left: auto;\n  margin-right: auto;\n  cursor: pointer;\n}\n@media screen and (max-width: 768px) {\n.registrarme-button[data-v-09793f8e] {\n    margin-left: auto;\n    margin-right: auto;\n    max-width: 58vw;\n    padding: 11px 30px 8px;\n    font-size: 20px;\n    margin-top: 25px;\n}\n}\n.netw-style[data-v-09793f8e] {\n  width: 65px;\n  position: relative;\n  top: -53px;\n  margin-top: -200px;\n}\n@media screen and (max-width: 768px) {\n.netw-style[data-v-09793f8e] {\n    width: 60px;\n    position: initial;\n    top: 581px;\n    cursor: pointer;\n    margin-top: 0;\n    padding-bottom: 40px;\n}\n}\n.welcome-img[data-v-09793f8e] {\n  width: 88%;\n  padding-bottom: 40px;\n  padding-top: 176px;\n  margin-left: auto;\n  margin-right: auto;\n}\n@media screen and (max-width: 768px) {\n.welcome-img[data-v-09793f8e] {\n    width: 100%;\n    padding-top: 95px;\n}\n}\n.logo-style[data-v-09793f8e] {\n  width: 30%;\n  margin-top: -51px;\n  margin-left: auto;\n  margin-right: auto;\n  margin-top: 237px;\n  cursor: pointer;\n}\n@media screen and (max-width: 768px) {\n.logo-style[data-v-09793f8e] {\n    margin-top: 355px;\n    padding-bottom: 0;\n    width: 80%;\n}\n}\n.panel[data-v-09793f8e]:not(:last-child) {\n  margin-bottom: 0;\n}\n.panel1-column1[data-v-09793f8e] {\n  margin: auto;\n  text-align: center;\n}\n@media screen and (max-width: 768px) {\n.panel1-column1[data-v-09793f8e] {\n    margin-top: -209px;\n}\n}\n.panel2-columns[data-v-09793f8e] {\n  padding-top: 55px;\n}\n.panel2-column1[data-v-09793f8e] {\n  padding-top: 31vh;\n}\n@media screen and (max-width: 768px) {\n.panel2-column1[data-v-09793f8e] {\n    padding-top: 95px;\n}\n}\n.panel2-column2[data-v-09793f8e] {\n  padding-top: 35vh;\n}\n@media screen and (max-width: 768px) {\n.panel2-column2[data-v-09793f8e] {\n    padding-top: 0;\n    padding-bottom: 50px;\n}\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -960,8 +901,6 @@ var render = function () {
         _vm._v(" "),
         _vm._m(3),
         _vm._v(" "),
-        _vm._m(4),
-        _vm._v(" "),
         _c("div", {
           staticClass:
             "column is-2-tablet is-3-desktop is-3-widescreen is-4-fullhd",
@@ -970,7 +909,7 @@ var render = function () {
       2
     ),
     _vm._v(" "),
-    _vm._m(5),
+    _vm._m(4),
   ])
 }
 var staticRenderFns = [
@@ -1041,20 +980,6 @@ var staticRenderFns = [
           _c("img", {
             attrs: { src: "/assets/img/ISDIN-Love-Your-Skin_Blanco.png" },
           }),
-        ]),
-      ]
-    )
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column is-5-mobile", staticStyle: { margin: "auto" } },
-      [
-        _c("p", { staticClass: "text-center nature" }, [
-          _c("img", { attrs: { src: "/assets/img/logo_animal.png" } }),
         ]),
       ]
     )
@@ -1185,176 +1110,13 @@ var render = function () {
               1
             ),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "welcome-img is-hidden-touch" },
-              [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/welcome.png",
-                    ratio: "1609by136",
-                  },
-                }),
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "welcome-img is-hidden-desktop" },
-              [
-                _c("b-image", {
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/welcome_mobl.png",
-                    ratio: "995by136",
-                  },
-                }),
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "puma-bold registrarme-button" },
-              [
-                _c(
-                  "b-navbar-item",
-                  { attrs: { tag: "router-link", to: { path: "/registro" } } },
-                  [_vm._v("\n              Registrarme\n            ")]
-                ),
-              ],
-              1
-            ),
+            _vm._m(0),
           ]),
         ]),
         _vm._v(" "),
         _c("div", { staticClass: "netw-style " }, [_c("SocialNetwork")], 1),
       ]),
     ]),
-    _vm._v(" "),
-    _c("section", { staticClass: "panel dos" }, [
-      _c("div", [
-        _c(
-          "div",
-          {
-            staticClass: "columns panel2-columns",
-            staticStyle: { margin: "0" },
-          },
-          [
-            _c("div", { staticClass: "column is-5 panel2-column1" }, [
-              _vm._m(0),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "logo-simple" },
-                [
-                  _c("b-image", {
-                    attrs: {
-                      responsive: "",
-                      src: "/assets/img/logo_train.png",
-                      ratio: "565by123",
-                    },
-                  }),
-                ],
-                1
-              ),
-            ]),
-            _vm._v(" "),
-            _vm._m(1),
-          ]
-        ),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c(
-      "section",
-      { staticClass: "panel tres" },
-      [
-        _c("div", { staticClass: "coaches" }, [
-          _c("div", [
-            _vm._v("\n        ¡Nuestros coaches están listos!\n      "),
-          ]),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "tu-style" },
-            [
-              _c("b-image", {
-                staticClass: "model-2",
-                attrs: {
-                  responsive: "",
-                  src: "/assets/img/ytu.png",
-                  ratio: "537by221",
-                },
-              }),
-            ],
-            1
-          ),
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "photos-models columns",
-            staticStyle: { margin: "0" },
-          },
-          [
-            _c(
-              "div",
-              { staticClass: "column models1" },
-              [
-                _c("b-image", {
-                  staticClass: "model-2",
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/coach-imagen1-.png",
-                    ratio: "397by263",
-                  },
-                }),
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "column models2" },
-              [
-                _c("b-image", {
-                  staticClass: "model-2",
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/coach-imagen2-.png",
-                    ratio: "397by263",
-                  },
-                }),
-              ],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "column models3" },
-              [
-                _c("b-image", {
-                  staticClass: "model-2",
-                  attrs: {
-                    responsive: "",
-                    src: "/assets/img/coach-imagen3-.png",
-                    ratio: "397by263",
-                  },
-                }),
-              ],
-              1
-            ),
-          ]
-        ),
-        _vm._v(" "),
-        _c("Footer", { staticClass: "footer-style" }),
-      ],
-      1
-    ),
   ])
 }
 var staticRenderFns = [
@@ -1362,38 +1124,8 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "unete" }, [
-      _c("div", [_vm._v("\n              !Únete\n            ")]),
-      _vm._v(" "),
-      _c("div", [_vm._v("\n              Al reto!\n            ")]),
-    ])
-  },
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "column panel2-column2" }, [
-      _c("div", { staticClass: "vuelvete" }, [
-        _c("div", [
-          _vm._v(
-            "\n              Vuélvete parte de nuestra familia\n            "
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _vm._v("\n              Train Puma y entrena como los\n            "),
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _vm._v(
-            "\n              grandes en alguna de las sedes\n            "
-          ),
-        ]),
-        _vm._v(" "),
-        _c("div", [
-          _vm._v("\n              que tenemos para ti.\n            "),
-        ]),
-      ]),
+    return _c("div", { staticClass: "open-soon" }, [
+      _c("div", [_vm._v("\n              Próximamente\n            ")]),
     ])
   },
 ]

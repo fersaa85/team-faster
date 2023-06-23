@@ -12,7 +12,7 @@
             />
           </div>
         </div>
-        <b-navbar-item tag="router-link" :to="{ path: '/' }" class="level-item button-container nav-bar-button is-hidden-touch first-menu-item" :class="{'button-active':  $route.name =='home'}">
+        <!-- <b-navbar-item tag="router-link" :to="{ path: '/' }" class="level-item button-container nav-bar-button is-hidden-touch first-menu-item" :class="{'button-active':  $route.name =='home'}">
           Inicio
           <div class="line-below line-1"></div>
         </b-navbar-item>
@@ -35,8 +35,8 @@
         <b-navbar-item tag="router-link" :to="{ path: '/galeria' }" class="level-item button-container nav-bar-button is-hidden-touch" :class="{'button-active':  $route.name =='galeria'}">
           Galería
           <div class="line-below line-5"></div>
-        </b-navbar-item>
-        <div class="level-right is-hidden-desktop">
+        </b-navbar-item> -->
+        <!-- <div class="level-right is-hidden-desktop">
           <div class="level-item" @click="show= !show">
             <span v-show="!show">
               <i class="fas fa-bars"></i>
@@ -45,7 +45,7 @@
               <i class="fas fa-times"></i>
             </span>
           </div>
-        </div>
+        </div> -->
       </div>
       <div v-if="show" class="is-hidden-desktop menu-mobile">
         <div @click="show = false">
@@ -80,7 +80,7 @@
         </div>
       </div>
     </div>
-    
+
     <router-view></router-view>
   </div>
 </template>
